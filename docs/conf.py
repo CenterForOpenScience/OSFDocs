@@ -56,7 +56,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'COS Development'
+project = 'OSF Feature Docs'
 copyright = '2014-2015, Center for Open Science'
 
 # The version info for the project you're documenting, acts as replacement for

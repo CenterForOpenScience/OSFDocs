@@ -1,3 +1,8 @@
 Commenting
 ***************
 
+has to provide justification: cancel or report
+hides it from the reporter:"comment reported"  "not abuse" opens a cancel or save button
+writer can still see it
+other users can still see it
+if someone replies to a comment you marked as spam you can still see the reply on expansion of the parent
