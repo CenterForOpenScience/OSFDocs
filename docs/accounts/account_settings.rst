@@ -46,6 +46,22 @@ Clicking “Add Email” before entering text into the address field produces a 
 
     ! Please fill out this field.
 
+If the user enters text without an @ symbol, a popover on the field reads::
+
+    ! Please include an '@' in the email address. [Entered text] is missing an '@'.
+
+If the user enters an email address with an '@' symbol but no subsequent text, a popover on the field reads::
+
+    ! Please enter a part following '@'. [Entered text] is incomplete.
+
+If the user enters an email address with characters preceding and following an @ symbol, but it is not a valid email address (e.g. includes
+no ".com"), after submitting their entry a red dismissable error message appears in the top right corner of the page::
+
+    Error
+    Invalid Email
+
+If the user submits multiple such invalid email addresses, another identical message appears above the last alert.
+
 After successfully adding an email, it is listed below “Unconfirmed Emails” and above the email address field. A green, dismissable growlbox alert appears at the top of the page that reads::
 
     [Secondary Email] added to your account.

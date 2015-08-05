@@ -5,6 +5,7 @@ Accounts
 
 .. include:: sign_up.rst
 .. include:: login.rst
+.. include:: profiles.rst
 .. include:: account_settings.rst
 .. include:: user_addon.rst
 .. include:: user_notification.rst

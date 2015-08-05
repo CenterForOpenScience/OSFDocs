@@ -10,7 +10,6 @@ The OSF has an extensive (and growing!) list of features. These documents provid
     navigation/navigation_index
     pages/pages_index
     accounts/accounts_index
-    profiles/profiles_index
     projects/projects_index
 
 

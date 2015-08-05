@@ -99,6 +99,8 @@ If the user has confirmed their account and is signed into the OSF, but follows 
 
 If the user has confirmed their account and is not signed into the OSF, but follows the email’s link again, they are brought to a page that informs them that the account has already been claimed.
 
+.. todo:: what if they do it right?
+
 Claiming an Account Via the OSF
 ^^^^^^^^^^
 **Purpose:** Claiming an account via the OSF allows a person who does not have an OSF account to identify themselves as a contributor on a project.
@@ -129,7 +131,11 @@ The user who added the unclaimed account as a contributor is also sent an email.
     Sincerely,
     The OSF Team
 
- After being forwarded the email, the user claiming the account is sent to a “Set Password” page. This page asks the user to “set a password to claim your account.” The email they are registering with is shown, but not editable. The user is asked to create a password and confirm it. There is a note that reads, “If you are not [User name], or if you were erroneously added as a contributor to the project described in the email invitation, please email contact@osf.io.” The user can save their input and is then brought to their :doc:`profile information <../profiles/profiles_index>` page.
+ After being forwarded the email, the user claiming the account is sent to a “Set Password” page. This page asks the user to “set a password to claim your account.” The email they are registering with is shown, but not editable. The user is asked to create a password and confirm it. There is a note that reads::
+
+    If you are not [User name], or if you were erroneously added as a contributor to the project described in the email invitation, please email contact@osf.io.
+
+The user can save their input and is then brought to their :doc:`profile information <profiles>` page.
 
 Login
 ------------
