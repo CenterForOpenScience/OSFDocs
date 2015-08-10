@@ -1,4 +1,3 @@
-Wikis
-***************
+
 
 https://github.com/CenterForOpenScience/osf.io/pull/3504

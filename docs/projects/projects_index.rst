@@ -1,21 +1,115 @@
 Projects
 ===============
+**Purpose:** A project is the fundamental means of organization and content sharing on the OSF.
 
-.. include:: activity.rst
-.. include:: citations.rst
-.. include:: commenting.rst
-.. include:: components.rst
-.. include:: contributors.rst
-.. include:: forks.rst
+To store or share any documents or other content on the OSF, a user must create a project. :ref:`Project creation <quick-tasks>`
+can be done from the "My Dashboard" page. Users can find their own projects and navigate to them via their :ref:`Project Organizer <organizer>`
+and can discover public projects through the :ref:`search function <search>`.
+
+Projects can be nested within one another, creating a tree structure. Users can create the structure of their choice by creating
+projects and components and organizing them within one another.
+
+.. _overview:
+
+Project Overview
+***************
+
 .. include:: overview.rst
-.. include:: privacy.rst
-.. include:: registrations.rst
-.. include:: settings.rst
-.. include:: statistics.rst
-.. include:: storage.rst
-.. include:: tags.rst
-.. include:: templates.rst
-.. include:: view_only.rst
+
+.. _contributors:
+
+Contributors and Sharing
+************
+
+.. include:: sharing.rst
+
+.. _wiki:
+
+Wikis
+***************
+
 .. include:: wiki.rst
 
+.. _storage:
 
+File Storage
+***************
+
+.. include:: storage.rst
+
+.. _citations:
+
+Citations
+*********
+
+.. include:: citations.rst
+
+.. _tags:
+
+Tags
+***************
+
+.. include:: tags.rst
+
+.. _registrations:
+
+Registrations
+***************
+
+.. include:: registrations.rst
+
+.. _forks:
+
+Forks
+***************
+
+.. include:: forks.rst
+
+.. _templates:
+
+Templates
+***************
+
+.. include:: templates.rst
+
+.. _statistics:
+
+Statistics
+**********
+
+.. include:: statistics.rst
+
+.. _components:
+
+Components
+***************
+
+.. include:: components.rst
+
+.. _recent-activity:
+
+Recent Activity
+***************
+
+.. include:: recent-activity.rst
+
+.. _privacy:
+
+Privacy Settings
+**************
+
+.. include:: privacy.rst
+
+.. _commenting:
+
+Commenting
+***********
+
+.. include:: commenting.rst
+
+.. _project-settings:
+
+Project Settings
+***************
+
+.. include:: settings.rst

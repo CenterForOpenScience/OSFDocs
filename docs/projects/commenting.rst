@@ -1,5 +1,3 @@
-Commenting
-***************
 
 has to provide justification: cancel or report
 hides it from the reporter:"comment reported"  "not abuse" opens a cancel or save button

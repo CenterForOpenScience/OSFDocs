@@ -1,6 +1,3 @@
-Distinguishing Search Results
-*************************
-
 https://github.com/CenterForOpenScience/osf.io/pull/3911
 **Purpose:** Results returned include projects, components, users, registrations, and SHARE results. Each is distinguished from one another so that the user can best find the appropriate resource.
 

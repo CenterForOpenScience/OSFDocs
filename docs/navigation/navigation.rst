@@ -1,6 +1,3 @@
-OSF Navigation Bar
-***************
-
 **Purpose:** The navigation bar links the user to the primary pages they will need to access while on the OSF.
 
 The navigation bar appears at the top of the page at all times. When scrolling down, the navigation bar stays stuck to the top of the page.

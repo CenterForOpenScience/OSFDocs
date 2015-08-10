@@ -1,24 +1,30 @@
-User Level Add-on Settings
-****************************
 
-**Purpose:** Accessing add-on settings through the user’s settings allows the user to have a complete view of their add-on use and can disable an add-on globally.
+**Purpose:** Accessing add-on settings through the user’s settings allows the user to have a complete view of their add-on
+use and can disable an add-on globally.
 
-To get to the user level add-on settings, the user must visit their settings by clicking on the gear in the :doc:`navigation bar <../navigation/navigation>`. Then, in the left hand navigation the user must click on “Configure Add-on Accounts.” From this page, users can connect their OSF account to third-party services, disconnect those services, and view the project that have specific add-ons associated with them.
+To get to the user level add-on settings, the user must visit their settings by clicking on the gear in the
+:ref:`navigation bar <navigation-bar>`. Then, in the left hand navigation the user must click on “Configure Add-on Accounts.”
+From this page, users can connect their OSF account to third-party services, disconnect those services, and view the project
+that have specific add-ons associated with them.
 
-Connections to particular projects must be managed through the :doc:`project’s settings <../projects/settings>`.
+Connections to particular projects must be managed through the :ref:`project’s settings <project-settings>`.
 
 Amazon S3
 -----------
 **Purpose:** Configuring Amazon S3 from the user’s settings page allows the user to manage their connection between the OSF and Amazon S3.
-To connect Amazon S3 to an OSF account via the user settings page, the user must enter their Access Key and Secret Key. Empty fields for each are available below the Amazon S3 title. Clicking the “Save” button or hitting the return key allows the user to submit their keys.
+To connect Amazon S3 to an OSF account via the user settings page, the user must enter their Access Key and Secret Key.
+Empty fields for each are available below the Amazon S3 title. Clicking the “Save” button or hitting the return key allows
+the user to submit their keys.
 
-When the user types in the Access Key field, the text is visible. When they enter text into the Secret Key field, the text is obfuscated so that each character appears as a dot.
+When the user types in the Access Key field, the text is visible. When they enter text into the Secret Key field, the text
+is obfuscated so that each character appears as a dot.
 
 If the user submits the correct keys, a green inline alert appears below the “Save” button that reads::
 
     Settings updated
 
-The save button is still active and can be repressed, producing the same alert. On refresh, the key fields are gone. Next to the Amazon S3 title is muted text that reads::
+The save button is still active and can be repressed, producing the same alert. On refresh, the key fields are gone.
+Next to the Amazon S3 title is muted text that reads::
 
     authorized by [OSF user name]
 
@@ -42,19 +48,24 @@ If the user enters incorrect keys, a red inline alert appears below the “Save�
 
 Refreshing the page empties the fields.
 
-After the add-on has been configured a user can connect it to a project. If it has been connected to a project, below the Amazon S3 title is a table titled “Authorized Projects.” In this table are the titles of all connected projects. The titles are links to the project overview page. To the right of the titles is a column with red ‘x’s. Clicking an ‘x’ pulls up a modal that reads::
+After the add-on has been configured a user can connect it to a project. If it has been connected to a project, below the
+Amazon S3 title is a table titled “Authorized Projects.” In this table are the titles of all connected projects. The titles
+are links to the project overview page. To the right of the titles is a column with red ‘x’s. Clicking an ‘x’ pulls up a modal that reads::
 
     Remove addon?
     Are you sure you want to disconnect the Amazon S3 account from this project?
     [Cancel][Remove]
 
-Clicking “Remove” disconnects the add-on from the project. If all projects are disconnected, the table is no longer visible. If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
+Clicking “Remove” disconnects the add-on from the project. If all projects are disconnected, the table is no longer visible.
+If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
 
 Box
 --------
 **Purpose:** Configuring Box from the user’s settings page allows the user to manage their connection between the OSF and Box.
 
-To connect a Box account via the user settings page, the user must click the blue “Connect Account” link to the right of the Box title. This will bring the user to a new page where they provide their Box login information and confirm the connection. After submitting their login information, they are brought back to the OSF.
+To connect a Box account via the user settings page, the user must click the blue “Connect Account” link to the right of
+the Box title. This will bring the user to a new page where they provide their Box login information and confirm the connection.
+After submitting their login information, they are brought back to the OSF.
 
 Next to the Box title is muted text that reads::
 
@@ -62,7 +73,8 @@ Next to the Box title is muted text that reads::
 
 Green text appears below the Box title::
 
-    Add-on successfully authorized. To link this add-on to an OSF project, go to the settings page of the project, enable Box, and choose content to connect.
+    Add-on successfully authorized. To link this add-on to an OSF project, go to the settings page of the project, enable
+    Box, and choose content to connect.
 
 To the right of the title is a red link titled “Disconnect Account.” Clicking this link pulls up a modal that reads::
 
@@ -84,7 +96,8 @@ the 'x' opens a modal that reads::
     Are you sure you want to disconnect the Amazon S3 account from this project?
     [Cancel][Remove]
 
-Clicking “Remove” disconnects the add-on from the project. If all projects are disconnected, the table is no longer visible. If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
+Clicking “Remove” disconnects the add-on from the project. If all projects are disconnected, the table is no longer visible.
+If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
 
 
 Dataverse
@@ -111,13 +124,15 @@ and there is blue information text below that reads:
 If the user has selected the "Other" option but does not specify a web address or provides an invalid one, a red inline alert appears
 below the three fields::
 
-    Sorry, but there was a problem connecting to that instance of Dataverse. It is likely that the instance hasn't been upgraded to Dataverse 4.0. If you have any questions or believe this to be an error, please contact support@osf.io.
+    Sorry, but there was a problem connecting to that instance of Dataverse. It is likely that the instance hasn't been
+    upgraded to Dataverse 4.0. If you have any questions or believe this to be an error, please contact support@osf.io.
 
 .. todo:: Log this as a bug—if it's empty, it should not say that it's likely that it's because it hasn't been updated.
 
 If the user types in the web address of one of the dropdown options, the entry is still valid.
 
-If the user tries to save the form without filling in the API token but has provided a valid Dataverse repository, a red inline alert appears below the dropdown::
+If the user tries to save the form without filling in the API token but has provided a valid Dataverse repository, a red
+inline alert appears below the dropdown::
 
     Your Dataverse API token is invalid.
 
@@ -136,7 +151,8 @@ that is already connected, saving simply produces no changes. Each new repositor
 
 .. todo:: You shouldn't have the option of connecting to a repo that is already connected. Log this bug.
 
-Users can disconnect repositories by clicking the "Disconnect Account" link to the right of the repository name. Clicking there opens a modal that reads::
+Users can disconnect repositories by clicking the "Disconnect Account" link to the right of the repository name. Clicking
+there opens a modal that reads::
 
     Disconnect Dataverse Account?
     Are you sure you want to disconnect the Dataverse account on [Dataverse Repository URL]? This will revoke access to Dataverse
@@ -145,7 +161,8 @@ Users can disconnect repositories by clicking the "Disconnect Account" link to t
 
 Clicking "Disconnect" removes the repository from the table list.
 
-When the user has a project that is connected to Dataverse, it is listed below the appropriate "Authorized on" row. Clicking the project name sends you to the
+When the user has a project that is connected to Dataverse, it is listed below the appropriate "Authorized on" row.
+Clicking the project name sends you to the
 project's overview page. On the right side of the table is a red 'x.' Clicking the 'x' opens a modal that reads::
 
     Remove addon?
@@ -153,7 +170,8 @@ project's overview page. On the right side of the table is a red 'x.' Clicking t
     [Cancel][Remove]
 
 Clicking “Remove” disconnects the add-on from the project. If a Dataverse has no connected projects but it is still
-authorized to connect to the user's account, the "Authorized On" row is still visible. If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
+authorized to connect to the user's account, the "Authorized On" row is still visible. If the user visits a disconnected
+project’s settings page, they will see that the add-on is still selected but is not configured.
 
 
 Dropbox
@@ -168,7 +186,10 @@ Dropbox title is muted text that reads::
     authorized by [Dropbox Username]
 
 Below this is green text that reads::
-    Add-on successfully authorized. To link this add-on to an OSF project, go to the settings page of the project, enable Dropbox, and choose content to connect.
+
+    Add-on successfully authorized. To link this add-on to an OSF project, go to the settings page of the project, enable Dropbox,
+
+and choose content to connect.
 
 When the user has a project that is connected to Dropbox, a table appears below the Dropbox title. The header reads::
 
@@ -182,7 +203,8 @@ the 'x' opens a modal that reads::
     Are you sure you want to disconnect the Dropbox account from this project?
     [Cancel][Remove]
 
-Clicking “Remove” disconnects the add-on from the project. If all projects are disconnected, the table is no longer visible. If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
+Clicking “Remove” disconnects the add-on from the project. If all projects are disconnected, the table is no longer visible.
+If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
 
 figshare
 ----------
@@ -275,7 +297,8 @@ To the right, a red "Disconnect Account" link allows the user to cancel the conn
 
 Below the table is green text that reads::
 
-    Add-on successfully authorized. To link this add-on to an OSF project, go to the settings page of the project, enable Mendeley, and choose content to connect.
+    Add-on successfully authorized. To link this add-on to an OSF project, go to the settings page of the project, enable Mendeley,
+    and choose content to connect.
 
 Clicking on the "Disconnect Account" link opens a modal::
 
@@ -292,7 +315,8 @@ Users can connect to multiple Mendeley accounts. To connect to an additional acc
 and authorize a new connection. The new connection will add another row to the table, listing the "Authorized by" information for the
 appropriate username. If the user tries to connect to the same Mendeley account twice, no error is shown but no changes are made.
 
-When the user has a project that is connected to Mendeley, it is listed below the appropriate "Authorized on" row. Clicking the project name sends you to the
+When the user has a project that is connected to Mendeley, it is listed below the appropriate "Authorized on" row. Clicking the project
+name sends you to the
 project's overview page. On the right side of the table is a red 'x.' Clicking the 'x' opens a modal that reads::
 
     Remove addon?
@@ -319,7 +343,8 @@ To the right, a red "Disconnect Account" link allows the user to cancel the conn
 
 Below the table is green text that reads::
 
-    Add-on successfully authorized. To link this add-on to an OSF project, go to the settings page of the project, enable Zotero, and choose content to connect.
+    Add-on successfully authorized. To link this add-on to an OSF project, go to the settings page of the project, enable Zotero,
+    and choose content to connect.
 
 Clicking on the "Disconnect Account" link opens a modal::
 
@@ -336,7 +361,8 @@ Users can connect to multiple Zotero accounts. To connect to an additional accou
 and authorize a new connection. The new connection will add another row to the table, listing the "Authorized by" information for the
 appropriate username. If the user tries to connect to the same Zotero account twice, no error is shown but no changes are made.
 
-When the user has a project that is connected to Zotero, it is listed below the appropriate "Authorized on" row. Clicking the project name sends you to the
+When the user has a project that is connected to Zotero, it is listed below the appropriate "Authorized on" row. Clicking the
+project name sends you to the
 project's overview page. On the right side of the table is a red 'x.' Clicking the 'x' opens a modal that reads::
 
     Remove addon?

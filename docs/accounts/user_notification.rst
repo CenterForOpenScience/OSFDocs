@@ -1,8 +1,7 @@
-User Level Notification Settings
-*********************************
+
 **Purpose:** A user's notification settings allow them to manage their email preferences regarding newsletters and comments.
 
-To configure the their notifications, the user must first click the gear in the right hand side of the :doc:`navigation bar<../navigation/navigation>`
+To configure the their notifications, the user must first click the gear in the right hand side of the :ref:`navigation bar<navigation-bar>`
 and then click on "Notifications" in the left hand menu bar.
 
 Two sections are available on this page: Configure Email Preferences and Configure Notification Preferences.
@@ -40,12 +39,12 @@ By default, there are no project notifications to configure.
 
 Under "User Notifications" there is a dropdown to manage the frequency of emails regarding "replies to your comments." In the
 dropdown next to this category, there are three options: "none," "emails," and "email digest." Selecting "none"—the default choice—will
-ensure that the user does not receive any email :doc:`notifications <../projects/notifications>` about replies to their
-:doc:`comments <../projects/commenting>`. Selecting "emails" will mean that they will receive immediate notification via
+ensure that the user does not receive any email notifications about replies to their
+:ref:`comments <commenting>`. Selecting "emails" will mean that they will receive immediate notification via
 email about replies to their comments. Finally, selecting "email digest" will send them an email with a summary of the commenting
 activity for that day—if any comments have been left.
 
-Under "Project Notifications" no projects will appear unless the user has visited a :doc:`project's settings <../projects/settings>`
+Under "Project Notifications" no projects will appear unless the user has visited a :ref:`project's settings <project-settings>`
 and configured its notification settings. By default, when no projects are listed, yellow text to the right of the "Project Notifications"
 title reads::
 

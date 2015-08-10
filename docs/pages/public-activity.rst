@@ -1,5 +1,3 @@
-Public Activity
-***************
 
 **Purpose:** The public activity page is a summary of recent and popular OSF projects and registrations.
 

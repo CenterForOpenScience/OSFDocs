@@ -1,10 +1,7 @@
-Public Profiles
-****************
-
 **Purpose:**  A user's public profile is a homepage for information about the user and their public OSF projects.
 
 The contents of public profiles are visible to any OSF visitor or user. An OSF user can access their public profile by clicking
-on their name in the :doc:`navigation bar <../navigation/navigation>` or by visiting osf.io/profile. Every user is assigned a
+on their name in the :ref:`navigation bar <navigation-bar>` or by visiting osf.io/profile. Every user is assigned a
 unique URL that can also be used to view their public profile. This URL is listed on the public profile page
 below the user's name. Searching the OSF for a user and clicking on their name in the search results will direct you to their profile,
 using the unique URL.
@@ -78,7 +75,7 @@ If the user enters their name as "Last name, First name" then the words precedin
 The user can edit the four individual name fields (i.e. given, middle, family, and suffix) individually, rather than using the auto-fill function.
 To do so, the user clicks into the field and saves their changes. These four fields do not affect the username—what is shown in
 contributor lists and the navigation bar—but they do affect citations. Any or all of these fields can be left blank. There is no character limit.
-As the user updates and saves these fields, the citation preview is updated, indicating what a :doc:`citation <../projects/citations>` of their
+As the user updates and saves these fields, the citation preview is updated, indicating what a :ref:`citation <citations>` of their
 work will look like. After saving changes to any of these fields, a green text alert is shown below the "Save" button::
 
     Settings updated

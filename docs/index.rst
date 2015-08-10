@@ -5,6 +5,9 @@ The OSF has an extensive (and growing!) list of features. These documents provid
 
 **Note:** Think something is missing or out of date? `Submit a pull request <https://github.com/CenterForOpenScience/COSDev>`_ with your suggested changes!
 
+To Do items are available :doc:`here <todo>`.
+
+
 .. toctree::
 
     navigation/navigation_index
@@ -12,6 +15,7 @@ The OSF has an extensive (and growing!) list of features. These documents provid
     accounts/accounts_index
     dashboard/dashboard_index
     projects/projects_index
+    add-ons/add-ons_index
     search/search_index
 
 .. Indices and tables

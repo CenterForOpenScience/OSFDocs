@@ -1,5 +1,4 @@
-OSF for Meetings
-***************
+
 
 **Purpose:** The OSF for Meetings page shows information about the OSF for Meetings service as well as links to meetings that have had more than five submissions.
 

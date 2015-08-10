@@ -1,5 +1,3 @@
-Getting Started
-***************
 
 **Purpose:** The Getting Started page gives instructions on how to use OSF features.
 
