@@ -186,7 +186,21 @@ Only a "Cancel" button is available on the modal until a result has been put in 
 a green "Add" button becomes visible to the right of the "Cancel" button. Clicking "Add" refreshes the page to show the newly linked projects
 listed in the Components widget.
 
-Projects, components, and links in the Components widget
+Projects, components, and links are listed in the Components widget with their title, contributors, number of contributions, category and privacy symbols,
+and a collapsible recent activity section. If one of the items is private, to the left of the title and category symbol is a lock. If the element
+is public, there is no symbol. Titles link to the project/component/link's overview page. Below the titles are the names of the first three contributors;
+if there are more contributors, they are indicated by the addition of "& __ more." Clicking on a contributor's name brings the user to the contributor's
+public profile. Clicking on "& __ more" brings the user to the overview page for the project/component/link.
+
+Below the list of contributors is a bar indicating the number of contributions. The bars are proportional to one another, meaning that
+the component with the most contributions to it is full, and every other bar is a percentage of that longest bar. Blue portions of the bar
+indicate contributions made by other users. Green portions indicate contributions made by the user themself. The number of contributions
+is listed below the bar—these numbers only account for contributions to that project/component/link, not the cumulative number of contributions
+to that element and its children.
+
+To the right of the element's title is a caret indicating that there is expandable content. Clicking the caret expands the element's information
+to include a "Recent Activity" section. In this section, on the left, are dates and times of logged actions. On the right is a description of each action.
+Only the three most recent actions are listed in the "Recent Activity" section.
 
 Components are listed in the order in which they were added. Components can be dragged and dropped to re-order. After re-ordering components,
 the user can refresh the page and the changes will still be visible.
@@ -195,4 +209,37 @@ Tags Widget
 ----------------
 **Purpose:** The Tags widget allows users to provide keywords relevant to their project, helping OSF visitors more easily find their work.
 
-The Tags widget is located below the components widget.
+The Tags widget is located below the components widget. When no tags are added, users with read+write or admin permissions
+see text that reads "Add a tag." If the user is not a contributor on the project, or only has read permissions, and no
+tags have been added the Tags widget is not visible.
+
+Contributors with read+write or admin permissions can add a tag by clicking in the "Add a tag" field and typing a keyword.
+Pressing the return key will add the tag. Adding a comma after a tag and pressing the space bar, as if making a list, will
+also add a tag. Tags appear in blue boxes with a black 'x' to the right of the text. Clicking the 'x' allows the user to remove the tag.
+
+Hovering over a tag darkens the background color. Clicking on a tag brings the user to search results page, where the query was the
+tag name.
+
+Recent Activity Widget
+--------------------
+**Purpose:** The Recent Activity widget shows users the logged actions for the viewed project or component and its children.
+
+The Recent Activity widget appears below the Tags widget. Below the panel title, "Recent Activity," is muted text that reads::
+
+    All times displayed at ____ UTC offset.
+
+Times are displayed in local time, and the correct offset is indicated in the above text.
+
+Below this is a list of all logged actions on the project or component and its children, displayed in chronological order with the most recent
+action listed at the top. Actions are listed in two columns—the left shows the date and time (YYYY-MM-DD HH:MM AM/PM).
+Hovering over a time shows a tooltip with the date and time in UTC.
+
+In the right column is a description of the log, first listing the user who committed the action, then the action and the
+affected component or project. For example::
+
+    [Username] tagged [project] as [tag]
+    [Username] added [Username] as contributor(s) to [project name]
+
+User, file, project, component, registration, and wiki names are linked to the relevant pages.
+
+Only the ten most recent logs are shown at once. Pagination behavior is described in detail :ref:`here <pagination>`.

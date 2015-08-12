@@ -50,11 +50,8 @@ Register a Project
 Users can search for a project or component of their own, in order to register it. Users enter text into the empty
 field to begin a search, using the keyboard arrow keys or their mouse to select a result from the dropdown. Clicking
 “Continue registration” or hitting enter brings the user to the registration template selection page. Users can clear the
-field by clicking the ‘x’ on the right side of the text field.
-
-Any project or component that the user is a contributor on—regardless of permissions—will show as a search result. If
-the user does not have :ref:`admin permissions <permissions>`, continuing the registration will bring them to a page that informs them the
-action is forbidden.
+field by clicking the ‘x’ on the right side of the text field. Any project or component that the user has admin permissions
+on will show as a search result.
 
 Public projects that were added to the Project Organizer, but that the user is not a contributor on do not get listed
 in the search results.

@@ -19,6 +19,7 @@ Employment information is listed in a table. Table headers include "institution,
 "title," "start date," and "end date." If no employment information is shared, only the table headers are visible.
 
 .. todo:: describe each display format for social.
+.. todo:: describe empty columns for projects/ components and breadcrumbs
 
 To edit profile information, users can visit their User Settings. Alternatively, they can visit their public profile
 and then click the "Edit your profile" link. By default, the "Profile Information" page is shown, and the "Name" tab

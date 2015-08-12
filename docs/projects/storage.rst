@@ -94,7 +94,9 @@ Clicking on a folder shows the "Upload," "Create Folder," "Search," and "i" butt
 
 Clicking "Rename" opens a text field with the current folder title editable within it. A "Rename" button
 allows the user to confirm the changes and an 'x' button cancels the changes. If the user attempts to rename the folder but leaves
-the text field empty, no changes are saved.
+the text field empty, no changes are saved. After renaming a folder, before showing the newly renamed folder, the folder's row in the table reads::
+
+    Successfully renamed.
 
 Clicking the "Delete Folder" option opens a modal within the Files Browser::
 
@@ -115,7 +117,9 @@ Selecting a single file from any add-on or folder adds four additional buttons t
 
 Clicking the "Rename" button when a file is selected opens a text field with the current folder title editable within it. A "Rename" button
 allows the user to confirm the changes and an 'x' button cancels the changes. If the user attempts to rename the file but leaves
-the text field empty, no changes are saved.
+the text field empty, no changes are saved. After renaming a file, before showing the newly renamed file, the file's row in the table reads::
+
+    Successfully renamed.
 
 .. todo:: you can change file types by renaming the file but it corrupts them
 

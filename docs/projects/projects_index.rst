@@ -37,20 +37,6 @@ File Storage
 
 .. include:: storage.rst
 
-.. _citations:
-
-Citations
-*********
-
-.. include:: citations.rst
-
-.. _tags:
-
-Tags
-***************
-
-.. include:: tags.rst
-
 .. _registrations:
 
 Registrations
@@ -85,13 +71,6 @@ Components
 ***************
 
 .. include:: components.rst
-
-.. _recent-activity:
-
-Recent Activity
-***************
-
-.. include:: recent-activity.rst
 
 .. _privacy:
 
