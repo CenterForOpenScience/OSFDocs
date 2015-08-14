@@ -186,6 +186,9 @@ Only a "Cancel" button is available on the modal until a result has been put in 
 a green "Add" button becomes visible to the right of the "Cancel" button. Clicking "Add" refreshes the page to show the newly linked projects
 listed in the Components widget.
 
+
+.. _component-format:
+
 Projects, components, and links are listed in the Components widget with their title, contributors, number of contributions, category and privacy symbols,
 and a collapsible recent activity section. If one of the items is private, to the left of the title and category symbol is a lock. If the element
 is public, there is no symbol. Titles link to the project/component/link's overview page. Below the titles are the names of the first three contributors;

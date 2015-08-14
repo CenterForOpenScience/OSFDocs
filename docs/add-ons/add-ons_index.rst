@@ -8,7 +8,7 @@ For information on linking an OSF account to an add-on, visit :ref:`User Level A
 
 Include linking to add-on, overview widget, files browser behavior, file detail page.
 
-
+registration
 
 Dataverse: if they have multiple linked to their user profile then when the connect the account they can choose from a dropdown (if they don't have multiple connected...)
 
