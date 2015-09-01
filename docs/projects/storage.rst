@@ -159,6 +159,7 @@ Only files and folders from within the same project or component can be multi-se
 Multiple files cannot be downloaded at once unless they are in a :ref:`folder <folders>`.
 
 
+
 Storage Add-Ons
 ----------
 **Purpose:** Storage add-ons can be used to connect a user's OSF account to another file storage system, increasing their

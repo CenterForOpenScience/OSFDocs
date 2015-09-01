@@ -28,6 +28,8 @@ into the empty field and pressing the down key shows a dropdown with the project
 exist. The user can select a component with their mouse or the arrow keys. This is an optional field. Entering a component
 here and hitting enter or clicking “Go” will send the user to the component.
 
+.. _quick-project:
+
 Create a Project
 -------------
 **Purpose:** "Create a Project" is the only means of making a new OSF project.

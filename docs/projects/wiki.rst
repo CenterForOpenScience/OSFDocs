@@ -82,3 +82,8 @@ contents of the field, the user can click on a small ‘x’ within the text fie
 of the text box without saving the edits, the changes are lost.
 
 
+Publicly Editable Wikis
+^^^^^^^^^^^^^^
+**Purpose:** Publicly editable wikis allow users who are not listed as contributors on a project to edit the wiki contents.
+
+.. _todo: Update with .48 release

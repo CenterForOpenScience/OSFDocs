@@ -19,17 +19,19 @@ The next link in the Project Navigation Bar is to the Files page. This page show
 
 The next link is to the :ref:`Wiki <wiki>`. This page shows wiki content and allows for wiki editing.
 
-The next link is to the :ref:`Statistics page <statistics>`. This page shows analytics about the project and its visitors.
+The next link is to the :ref:`Analytics page <analytics>`. This page shows analytics about the project and its visitors.
 
 The next link is to the :ref:`Registrations page <registrations>`. This page lists all registrations of the viewed project.
 
 The next link is to the :ref:`Forks page <forks>`. This page lists all the forks of the viewed project.
 
-The next link is to the :ref:`Sharing page <contributors>`. This page lists the project's contributors and allows the user to create
+The next link is to the :ref:`Contributors page <contributors>`. This page lists the project's contributors and allows the user to create
 :ref:`view-only links <view-only>`. This page is not visible to non-contributors.
 
 The final link is to the :ref:`Settings page <project-settings>`. This page allows admins to configure the project. This page
 is not visible to non-contributors.
+
+.. _overview-metadata:
 
 Metadata
 -------
@@ -45,7 +47,7 @@ must click the green check button to the right of the field. To cancel the chang
 to the right of the check button. To clear the contents of the field, the user can click on a small 'x' within the text field.
 If the user makes changes but clicks out of the text box without saving the edits, the changes are lost.
 
-The :ref:`contributors <contributors>` list is preceded by a title that reads "Contributors:" This title is a link to the "Sharing" page. Following
+The :ref:`contributors <contributors>` list is preceded by a title that reads "Contributors:" This title is a link to the "Contributors" page. Following
 this title is a list of each bibliographic contributor added to that particular component. By default, contributors are listed
 in the order they were added in. Each contributor is listed by their OSF :ref:`username <account-settings>`. Each name is a link
 to the user's :ref:`public profile <profiles>`.
@@ -125,6 +127,8 @@ If the user collapses the citation widget with an alternative format selected fr
 and the citation is still provided.
 
 Any user visiting a public project can view the Citation widget and select an additional citation style from the dropdown.
+
+.. _component-widget:
 
 Components Widget
 ---------------
@@ -222,6 +226,8 @@ also add a tag. Tags appear in blue boxes with a black 'x' to the right of the t
 
 Hovering over a tag darkens the background color. Clicking on a tag brings the user to search results page, where the query was the
 tag name.
+
+.. _activity:
 
 Recent Activity Widget
 --------------------

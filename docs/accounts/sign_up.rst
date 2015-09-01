@@ -1,4 +1,4 @@
-
+.. _todo: update from 0.47—new flow on login for the first time.
 
 **Purpose:** The sign-up form creates an OSF account.
 

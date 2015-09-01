@@ -18,10 +18,10 @@ Project Overview
 
 .. _contributors:
 
-Contributors and Sharing
+Contributors
 ************
 
-.. include:: sharing.rst
+.. include:: contributors.rst
 
 .. _wiki:
 
@@ -58,19 +58,12 @@ Templates
 
 .. include:: templates.rst
 
-.. _statistics:
+.. _analytics:
 
-Statistics
+Analytics
 **********
 
-.. include:: statistics.rst
-
-.. _components:
-
-Components
-***************
-
-.. include:: components.rst
+.. include:: analytics.rst
 
 .. _privacy:
 
@@ -79,12 +72,12 @@ Privacy Settings
 
 .. include:: privacy.rst
 
-.. _commenting:
+.. _components:
 
-Commenting
-***********
+Components
+***************
 
-.. include:: commenting.rst
+.. include:: components.rst
 
 .. _project-settings:
 
@@ -92,3 +85,10 @@ Project Settings
 ***************
 
 .. include:: settings.rst
+
+.. _commenting:
+
+Commenting
+***********
+
+.. include:: commenting.rst

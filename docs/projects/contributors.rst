@@ -1,16 +1,16 @@
-**Purpose:** The Sharing page allows users to configure contributors' permissions and create View-only Links.
+**Purpose:** The Contributors page allows users to configure contributors' permissions and create View-only Links.
 
-The Sharing page is accessible via the grey navigation bar within a project or component. All contributors on a project can
-see this link. Non-contributors cannot access a project or component's sharing page.
+The Contributors page is accessible via the grey navigation bar within a project or component. All contributors on a project can
+see this link. Non-contributors cannot access a project or component's Contributors page.
 
-The top half of the Sharing page is devoted to managing contributors. The bottom half allows configuration of View-only Links.
+The top half of the Contributors page is devoted to managing contributors. The bottom half allows configuration of View-only Links.
 
 Contributors
 --------------
 **Purpose:** Contributors to a project or component can make changes to the project/component's content and can be included in the
 citation.
 
-The Contributors section of the Sharing page has an "Add" button to the right of the title. Below the title are instructions
+The Contributors section of the Contributors page has an "Add" button to the right of the title. Below the title are instructions
 referring to the table below them::
 
     Drag and Drop contributors to change listing order.
@@ -59,8 +59,8 @@ In addition to managing project settings and contributor permissions, admins on 
 that project regardless of the privacy setting—even if they are not explicitly made a contributor on the child components or projects.
 
 When an admin on a parent project visits a child that they are not a contributor to, they see the project as if they were a
-read only contributor, meaning they have no access to the Sharing page and have limited settings options. Contributors to
-the child project, when visiting the sharing page, see an additional section under the "Contributors" section. This section is
+read only contributor, meaning they have no access to the Contributors page and have limited settings options. Contributors to
+the child project, when visiting the Contributors page, see an additional section under the "Contributors" section. This section is
 labeled "Admins on Parent Project." Hovering over the '?' to the right of this title shows a popover that reads::
 
     Admins on Parent Projects
@@ -70,6 +70,8 @@ labeled "Admins on Parent Project." Hovering over the '?' to the right of this t
 Below the heading is a list of admins on the parent project. Their profile picture and user name are listed, linking to their public
 profile. To the right of their name, under the "Permissions" column is muted text that reads "Read." Below the "Bibliographic Contributor"
 column is a deactivated, emtpy checkbox. This checkbox cannot be filled in.
+
+.. _permissions:
 
 Changing Permissions
 ^^^^^^^^^^^^^^^^^^^^
@@ -154,7 +156,7 @@ Adding Contributors
 **Purpose:** Adding contributors allows additional OSF users to be cited on a project or to make edits to that project.
 
 To add a contributor, the user must be an admin on the project. The user first clicks the green "Add" button to the right of the "Contributors"
-title on the Sharing page. A modal appears::
+title on the Contributors page. A modal appears::
 
     Add Contributors
     [text field: Search by name][Search]
@@ -236,7 +238,7 @@ Newly added contributors receive an email notifying them of the change::
     Hello [username],
 
     You have been added as a contributor to the project "[project name]" on the Open Science Framework: URL
-    If you are erroneously being associated with "[project name]" then you may visit the project sharing page and remove yourself as a contributor.
+    If you are erroneously being associated with "[project name]" then you may visit the project contributors page and remove yourself as a contributor.
 
     Sincerely,
 
@@ -294,7 +296,7 @@ View-only Links
 --------------
 **Purpose:** View-only Links allow users to share the contents of private projects.
 
-Only admins on a project can see the View-only Links section on the Sharing page. The section is below the Contributors table.
+Only admins on a project can see the View-only Links section on the Contributors page. The section is below the Contributors table.
 To the right of the "View-only Links" title is a green "Add" button. Below the title are instructions::
 
     Create a link to share this project so those who have the link can view—but not edit—the project.
