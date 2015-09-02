@@ -113,8 +113,7 @@ If a user clicks on the ‘Disconnect Account’ option, a pop-up appears saying
 	Are you sure you want to remove this figshare account? 
 	[Cancel][Disconnect]
 
-If the user clicks “Cancel” the pop-up goes away. If they click “Disconnect” the folders under the add-on disappear and the ‘Import Account from Profile’ option re-appears.
-
+If the user clicks “Cancel” the pop-up goes away. If they click “Disconnect” the folders under the add-on disappear and the ‘Import Account from Profile’ option re-appears. This behavior is identically whether the user is disconnected a figshare add-on connect by them, or by another contributor on the project.
 
 
 
@@ -127,7 +126,11 @@ File Tree Page (as admin & read-write contributors)
 **As an admin & read-write contributor**
 When a user selects the figshare add-on storage, “Upload” and “Search” buttons appear. Clicking on “Upload” causes a pop-up to appear which allows you to select files from within your computer to upload. Uploading a file adds it to that project on figshare. If a new version of an already existent file is uploaded, two files with the exact same name will appear in the add-on folder. Both these files will also appear in Figshare. Clicking on “Seach” causes a search bar to appear just above the file tree, which searches through file names from any part of the project (not just the figshare add-on section).
 
-When a user selects a file within figshare storage, “View”, “Delete”, and “Search” buttons appear. Clicking on “View” takes you to the file view page for that particular file. Clicking on the “Delete” button brings up a pop-u which says::
+For published figshare file seres, when a users selects a specific file, “Download”, “View”, “View on figshare” and “Search” buttons appear. 
+
+For non-published figshare projects or file sets, when a user selects a file within figshare storage, “View”, “Delete”, and “Search” buttons appear. 
+
+Clicking on “View” takes you to the file view page for that particular file. Clicking on “View on figshare” takes you to the file on figshare. Clicking on “Download” downloads the file. Clicking on the “Delete” button brings up a pop-u which says::
 
 	Delete "week6d_time_sharing.sas"?
 	This action is irreversible.
@@ -135,10 +138,12 @@ When a user selects a file within figshare storage, “View”, “Delete”, an
 
 Clicking on “Cancel” makes the pop-up go away makes the pop-up disappear. Clicking “Delete” deletes the file from figshare.
 
-Files can be moved into figshare projects from OSF storage. If you move a file with multiple versions into figshare, only the current version will be moved in. All other versions will be lost. If the figshare project has not been published, and you attempt to move a from figshare to OSF storage, an error message will appear saying::
+For non-published projects and datasets, files can be moved into figshare projects from OSF storage. If you move a file with multiple versions into figshare, only the current version will be moved in. All other versions will be lost. If you attempt to move a from figshare to OSF storage, an error message will appear saying::
 
 	Copy failed
 	Cannot download private files.
+
+For published figshare datasets, moving a file from figshare to OSF storage will retain the file in figshare and create another copy of the file in OSF storage. Copying a file from OSF storage to figshare appears to work (the file moves), but it does not show up in the published figshare project on figshare, and unlike published files on figshare shows a “Delete” option.
 
 **As a visitor**
 
@@ -162,6 +167,12 @@ For non-published figshare files, users see the following message::
 
 	The file "inflammation-01.csv" is still a draft on figshare. 
 	To view it on the OSF publish it on figshare.
+
+For published figshare files, the file renders (if OSF supports that format). Above the rendered file, users see the options to::
+	
+	View this file on figshare
+
+Clicking on the link will take them to the content on figshare.
 
 
 .. _github:
