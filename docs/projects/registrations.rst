@@ -411,3 +411,26 @@ Both identifiers link to an EZID page for the registration.
 
 When a DOI has been created for a project, the citation widget updates to reflect the doi.org URL instead of the registration's osf.io
 URL.
+
+
+Registering with Add-ons
+----------------
+**Purpose:** The OSF can archive the contents of add-ons to include them in registrations.
+
+Add-on contents can often be copied and included in registrations, but certain limits affect how complete this action is.
+
+Draft figshare files cannot be copied. If a registration is begun for a project that contains draft figshare files, an alert is
+shown to the user after they click the "Register" button::
+
+    Before you continue...
+    The figshare project settings test contains private content that we cannot copy to the registration. If this content
+    is made public on figshare we should then be able to copy those files. You can view those files here.
+    If you choose to continue with the registration at this time we will exclude the contents of any addons that are not copyable.
+    These files will not appear in the final registration.
+    [Cancel][Continue]
+
+Continuing will register the project—no archive of the figshare files will be present.
+
+If the figshare add-on contains only public figshare files, they will be copied and included in the registration.
+
+Copies of the most recent version of Amazon S3 files are archived in registrations.

@@ -401,139 +401,87 @@ changes.
 
 .. _figshare:
 
-figshare
+Configuring figshare
 ***********
 **Purpose:** Connecting to figshare allows users to create a two way connection between the OSF and figshare.
 
 
-**Purpose:** Figshare is a particular third party storage service users can connect to the OSF to house a variety of file types, either publicly or privately
+Users who choose to connect their figshare account to the OSF can check appropriate box. They are presented with a
+modal::
 
-Settings page
->>>>>>>>>>>>>
+    figshare Add-on Terms
+    Function | Status
+    Permissions: Making an OSF project public or private is independent of making figshare content public or private. The OSF does not alter the permissions of linked figshare content.
+    View / download file versions: figshare content can be viewed and downloaded via OSF provided it is "published" on figshare.
+    Add / update files: Files can be added but not updated.
+    Delete files: figshare files cannot be deleted via OSF.
+    Logs: OSF keeps track of changes you make to your figshare content through OSF, but not for changes made using figshare directly.
+    Forking: Forking a project or component does not copy figshare authorization unless the user forking the project is the same user who authorized the figshare add-on in the source project being forked.
+    Registering: figshare content will be registered, but version history will not be copied to the registration.
 
-**Purpose:** The settings page is where you connect add-ons to a specific project. This can be done by Admin and Read-Write contributors. Read only contributors cannot connect add-ons, nor can they see that this is even an option.
+    This add-on connects your OSF project to an external service. Use of this service is bound by its terms and conditions. The OSF is not responsible for the service or for your use thereof.
+    This add-on allows you to store files using an external service. Files added to this add-on are not stored within the OSF.
+    [Cancel][Confirm]
 
-Admins will see a list of potential add-ons with check-boxes next to them. After clicking on the check-box next to figshare, they will see the following pop-up::
+On this modal, users can click “Cancel” to cancel this action and close the window or “Confirm” to continue configuring figshare.
 
-	figshare Add-on Terms
-	Function	Status
-	Permissions	Making an OSF project public or private is independent of making figshare content public or private. The OSF does not alter the permissions of linked figshare content.
-	View / download file versions	figshare content can be viewed and downloaded via OSF provided it is "published" on figshare.
-	Add / update files	Files can be added but not updated.
-	Delete files	figshare files cannot be deleted via OSF.
-	Logs	OSF keeps track of changes you make to your figshare content through OSF, but not for changes made using figshare directly.
-	Forking	Forking a project or component does not copy figshare authorization unless the user forking the project is the same user who authorized the figshare add-on in the source project being forked.
-	Registering	figshare content will be registered, but version history will not be copied to the registration.
-	This add-on connects your OSF project to an external service. Use of this service is bound by its terms and conditions. The OSF is not responsible for the service or for your use thereof.
-	This add-on allows you to store files using an external service. Files added to this add-on are not stored within the OSF.
-	[Cancel][Confirm]
+If user clicks “Confirm” but does not click “Apply,” and navigates away from page, a browser popup appears asking user to
+confirm navigation away from the page because pending add-on changes were not saved.
 
-Users can either click “Cancel” to cancel the action, or “Confirm” to continue configuring the add-on. No matter which option they choose, the pop-up disappears. 
+After confirming, users will see a green “Apply” button appear at the bottom of the Select Add-ons panel. Clicking “Apply”
+will apply the settings. Green inline text appears for a few seconds below the "Apply" button:
 
-If they try to leave the page at this point, they will get a pop-up (from the browser, not OSF) which says::
+    Settings updated
 
-	Are you sure you want to leave this page?
-	The changes on addon setting are not submitted!
+If the user has not connected figshare to their account previously, a row titled "figshare" is listed in the
+Configure Add-ons panel with a link—"connect account."
 
-There will be no notice on the project page that figshare has not been configured. This is the same for contributors and visitors. 
+When users click the "connect account" link, they will be navigated to a new window where they can “Allow” the connecting
+of figshare and the OSF. Upon clicking “Allow,” users are then taken back to the Settings page on the OSF.
 
-If they click on the green “Apply” button, the page will update and a new section will appear called ‘Configure Add-ons’ with the figshare logo and figshare underneath it. If the user does not click the ‘Apply’ button
+If the user has connected figshare to their account previously, the link in the figshare row reads "Import Account from Profile."
+Clicking opens a modal that reads::
 
-**If figshare has already been added to the User account**, to right of the figshare logo, users have the options to ‘Import Account from Profile’. Clicking on this opens up a pop-up that reads::
+    Import figshare Account?
+    Are you sure you want to link your figshare account with this project?
+    [Cancel][Import]
 
-	Import figshare Account?
-	Are you sure you want to link your figshare account with this project?
+Importing or connecting an account loads the users' figshare information.
 
-Users can either ‘Cancel’ this action which makes the pop-up go away, or ‘Import’. This causes the page to change and a list of their figshare folders appear, with radial buttons to the right of them so they can choose which folder to connect to their account. They can only choose one folder. Note that in this case, what the OSF lists as ‘folders’ correspond to figshare ‘Projects’ or ‘Filesets’. Individual pieces from ‘My data’ on figshare are not listed as possible things to connect to the OSF. Additionally, to the right of the figshare logo is shows who authorized the add-on, and admins/read-write contributors have an option to ‘Disconnect Account’ listed in red.
+To the right of the the figshare title is text that reads::
 
-**If figshare has not been added to the user account***, users have the option to ‘Connect Account’. Clicking on this takes them to figshare, where they have to login. After loving in, they see::
+    figshare authorized by [user who configured add-on]
 
-	Allow Open Science Framework to:Read & write draft dataRead & write private dataRead & write public data [Deny][Allow]
+The "Connect Account" link is replaced by a red "Disconnect Account" link.
 
-Clicking ‘Allow’ take the user back to their OSF project settings page. Users see the ‘Change’ button, but the folders section is not visible until after users click on the ‘Change’ button. Then the page appears as above.
+Below that row is bold text that reads "Current Folder: None." This is updated when the user selects a folder. A blue button labeled
+"Change" is below the "Current Folder" text. Clicking this button expands and collapses a table below.
 
+The table has two columns—"Folders" and "Select." Under "Folders" is a list of all top level figshare folders the user has.
+Folders can be expanded and collapsed. Each folder has a corresponding radio button in the "Select" column. When the user
+selects a folder, text appears at the bottom of the table::
 
-Once a user clicks on a particular radial button, a message appears in blue saying::
+    Connect [folder title]?
 
-	Connect “<name of folder>”?
+Two buttons, "Cancel" and "Save" appear below the table. Cancelling removes the two buttons and confirmatory text but the folder
+is still selected.
 
-Users can either ‘Cancel’ this, which makes the message go away, or ’Save’. If the click on ‘Cancel’ and only have one folder, that radial button will still be selected, and clicking on it again will not bring back the ‘Cancel’ and ‘Save’ options. If you refresh the page, the folder section area will not show up automatically, just the ‘Change’ button and nothing underneath it. If you click on ‘Change’ the folder selection area will reappear. 
+Clicking "Save" updates the "Current Folder" text and green inline text appears below the table, replacing the buttons::
 
-If the user clicks on ‘Cancel’ or does not click on anything, the file tree on the project page does not show the add-on, or does it show any warning message. Visitors see the same thing. 
+    Successfully linked "[folder title]". Go to the Files page to view your content.
 
-If the user clicks ‘Save’, the following shows up below this area::
+To disconnect figshare, the user clicks the red "Disconnect Account" link. This opens a modal::
 
-	Successfully linked "Documentation testing". Go to the Files page to view your content.
+    Disconnect figshare Account?
+    Are you sure you want to remove this figshare account?
+    [Cancel][Disconnect]
 
+Clicking "Disconnect" removes the table and connected folder information. The "Disconnect Account" link is replaced by a link
+that reads "Import Account from Profile."
 
-**Disconnecting an add-on***
-
-If a user clicks on the ‘Disconnect Account’ option, a pop-up appears saying::
-
-	Disconnect figshare Account?
-	Are you sure you want to remove this figshare account? 
-	[Cancel][Disconnect]
-
-If the user clicks “Cancel” the pop-up goes away. If they click “Disconnect” the folders under the add-on disappear and the ‘Import Account from Profile’ option re-appears. This behavior is identically whether the user is disconnected a figshare add-on connect by them, or by another contributor on the project.
-
-
-
-File Tree Page (as admin & read-write contributors)
->>>>>>>>>>>>>>
-
-**Purpose:** The file tree page allows users to see and interact with only the file-tree of the project. 
-
-
-**As an admin & read-write contributor**
-When a user selects the figshare add-on storage, “Upload” and “Search” buttons appear. Clicking on “Upload” causes a pop-up to appear which allows you to select files from within your computer to upload. Uploading a file adds it to that project on figshare. If a new version of an already existent file is uploaded, two files with the exact same name will appear in the add-on folder. Both these files will also appear in Figshare. Clicking on “Seach” causes a search bar to appear just above the file tree, which searches through file names from any part of the project (not just the figshare add-on section).
-
-For published figshare file seres, when a users selects a specific file, “Download”, “View”, “View on figshare” and “Search” buttons appear. 
-
-For non-published figshare projects or file sets, when a user selects a file within figshare storage, “View”, “Delete”, and “Search” buttons appear. 
-
-Clicking on “View” takes you to the file view page for that particular file. Clicking on “View on figshare” takes you to the file on figshare. Clicking on “Download” downloads the file. Clicking on the “Delete” button brings up a pop-u which says::
-
-	Delete "week6d_time_sharing.sas"?
-	This action is irreversible.
-	[Cancel][Delete]
-
-Clicking on “Cancel” makes the pop-up go away makes the pop-up disappear. Clicking “Delete” deletes the file from figshare.
-
-For non-published projects and datasets, files can be moved into figshare projects from OSF storage. If you move a file with multiple versions into figshare, only the current version will be moved in. All other versions will be lost. If you attempt to move a from figshare to OSF storage, an error message will appear saying::
-
-	Copy failed
-	Cannot download private files.
-
-For published figshare datasets, moving a file from figshare to OSF storage will retain the file in figshare and create another copy of the file in OSF storage. Copying a file from OSF storage to figshare appears to work (the file moves), but it does not show up in the published figshare project on figshare, and unlike published files on figshare shows a “Delete” option.
-
-**As a visitor**
-
-When a visitor selects the figshare add-on storage, nothing changes. The “Search” buttons is still visible.
-
-When a visitor selects a file within figshare storage, “View” and “Search” buttons appear. Clicking on “View” takes you to the file view page for that particular file.
-
-
-File View Page
->>>>>>>>>>>>>>
-
-**Purpose:** The file view page allows users to see and, for some, interact with files uploaded to add-ons/OSF storage.
-
-The revisions tab reads::
-
-	Revisions
-	figshare does not support file revisions.
-
-
-For non-published figshare files, users see the following message::
-
-	The file "inflammation-01.csv" is still a draft on figshare. 
-	To view it on the OSF publish it on figshare.
-
-For published figshare files, the file renders (if OSF supports that format). Above the rendered file, users see the options to::
-	
-	View this file on figshare
-
-Clicking on the link will take them to the content on figshare.
+If a figshare account is connected, only the user who connected the account can change the selected folder. Other Admins can
+remove the add-on and connect another.  Alternatively, the user can uncheck the add-on from the "Select Add-ons" list and save their
+changes.
 
 
 .. _github:
@@ -712,10 +660,443 @@ changes.
 
 .. _mendeley:
 
-Mendeley
+Configuring Mendeley
 *************
 
 .. _zotero:
 
-Zotero
+Configuring Zotero
 **************
+
+Viewing Amazon S3 Files
+***********
+**Purpose:** The file tree and file details pages allow users to view and interact with Amazon S3 files.
+
+Amazon S3 appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
+The tree identifies the project::
+
+    Amazon S3: [bucket name]
+
+File names from an Amazon S3 bucket are shown in the file tree on the OSF.
+
+Selecting the Amazon S3 add-on in the file tree shows a "Download as zip" button in the toolbar. Clicking downloads the entire
+contents of the bucket as a zip folder.
+
+A "Create Folder" button is also shown when the add-on is selected. The user types a folder name and confirms creation. The folder
+is then shown inside the Amazon S3 add-on. Files can be moved into and out of the folder. Folders can be removed by selecting the
+folder and clicking "Delete Folder" in the toolbar. A modal opens::
+
+    Delete "folder"?
+    This folder and ALL its contents will be deleted. This action is irreversible.
+    [Cancel][Delete]
+
+Users with editing permissions can select an Amazon S3 file to rename it. Clicking the "Rename" button that appears in the file
+tree's toolbar opens a text box where the new name can be entered and saved.
+
+When a user with editing permissions selects Amazon S3 in the file tree, an “Upload” button appears. Clicking on “Upload”
+opens a modal that allows you to select files from within your computer to upload. Admins and read+write contributors
+can also drag and drop files onto the Amazon S3 add-on to upload a file.
+
+If a new version of an already existent file is uploaded, the new version will replace the existing one.
+
+If an Amazon S3 file is selected by a user, a "View" button appears in the toolbar. Clicking this button or clicking the file title
+brings the user to the details (rendering) page where the file is rendered. No link is provided to view the file on Amazon S3.
+
+On the file's detail page, the image is rendered in the default "view" pane. Users with editing permissions see a "Delete"
+button in the top right.
+
+    Delete file?
+    Are you sure you want to delete [file name]?
+    [Cancel][Delete]
+
+Confirming the deletion brings the user to the file tree page where that file has been removed.
+
+A blue "Download" button is also available on the detail page. Clicking downloads the file.
+
+Text and code files can be edited from the file detail page by users with edit permissions. Clicking "Edit" opens a pane
+to the right of the rendered text where the user can revise the contents of the file. Saving updates the contents of the file.
+Edits are not rendered in the view of the file on the left. No formatting options are available.
+
+Selecting the "Revisions" button on the detail page opens the revisions pane. Only the most recent version of the Amazon S3 file
+is listed. The date of the upload is available, and a download button is shown on the right side of the pane.
+
+Selecting a file from the file tree shows a "Download" button in the toolbar.  No "Download Multiple" button
+is ever available, even if multiple Amazon S3 files are selected. Download counts are not available for Amazon S3.
+
+If the user has editing privileges, clicking on an Amazon S3 file in the file tree shows a "Delete" button in the toolbar.
+Clicking this button opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+    [Cancel][Delete]
+
+If the user selects multiple files, a "Delete Multiple" button appears in the toolbar. Clicking opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+
+    [list of file titles]
+
+    [Cancel][Delete]
+
+After confirming, the files are removed from the OSF and Amazon S3.
+
+Files from other storage add-ons can be moved into Amazon S3 by dragging and dropping. Files from Amazon S3 can be moved
+into other add-ons as well.
+
+Viewing Box Files
+***********
+**Purpose:** The file tree and file details pages allow users to view and interact with Box files.
+
+Box appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
+The tree identifies the project::
+
+    Box: [folder name]
+
+File names from the indicated Box folder are shown in the file tree on the OSF.
+
+Selecting the Box add-on in the file tree shows a "Download as zip" button in the toolbar. Clicking downloads the entire
+contents of the folder as a zip file.
+
+A "Create Folder" button is also shown when the add-on is selected. The user types a folder name and confirms creation. The folder
+is then shown inside the Box add-on. Files can be moved into and out of the folder. Folders can be removed by selecting the
+folder and clicking "Delete Folder" in the toolbar. A modal opens::
+
+    Delete "folder"?
+    This folder and ALL its contents will be deleted. This action is irreversible.
+    [Cancel][Delete]
+
+Users with editing permissions can select a Box file to rename it. Clicking the "Rename" button that appears in the file
+tree's toolbar opens a text box where the new name can be entered and saved.
+
+When a user with editing permissions selects Box in the file tree, an “Upload” button appears. Clicking on “Upload”
+opens a modal that allows you to select files from within your computer to upload. Admins and read+write contributors
+can also drag and drop files onto the Box add-on to upload a file.
+
+If a new version of an already existent file is uploaded, the new version will replace the existing one.
+
+If a Box file is selected by a user, a "View" button appears in the toolbar. Clicking this button or clicking the file title
+brings the user to the details (rendering) page where the file is rendered. No link is provided to view the file on Box.
+
+On the file's detail page, the image is rendered in the default "view" pane. Users with editing permissions see a "Delete"
+button in the top right.
+
+    Delete file?
+    Are you sure you want to delete [file name]?
+    [Cancel][Delete]
+
+Confirming the deletion brings the user to the file tree page where that file has been removed.
+
+A blue "Download" button is also available on the detail page. Clicking downloads the file.
+
+Text and code files can be edited from the file detail page by users with edit permissions. Clicking "Edit" opens a pane
+to the right of the rendered text where the user can revise the contents of the file. Saving updates the contents of the file.
+No formatting options are available.
+
+Selecting the "Revisions" button on the detail page opens the revisions pane. Only the most recent version of the Box file
+is listed. The date of the upload is available, and a download button is shown on the right side of the pane.
+
+Selecting a file from the file tree shows a "Download" button in the toolbar.  No "Download Multiple" button
+is ever available, even if multiple Box files are selected. Download counts are not available for Box.
+
+If the user has editing privileges, clicking on a Box file in the file tree shows a "Delete" button in the toolbar.
+Clicking this button opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+    [Cancel][Delete]
+
+If the user selects multiple files, a "Delete Multiple" button appears in the toolbar. Clicking opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+
+    [list of file titles]
+
+    [Cancel][Delete]
+
+After confirming, the files are removed from the OSF and Box.
+
+Files from other storage add-ons can be moved into Box by dragging and dropping. Files from Box can be moved
+into other add-ons as well.
+
+Viewing Dataverse Files
+***********
+**Purpose:** The file tree and file details pages allow users to view and interact with Dataverse files.
+
+Dataverse appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
+The tree identifies the project::
+
+    Dataverse: [Dataset name] (Draft)[Draft]
+
+File names from the indicated Dataset are shown in the file tree on the OSF. By default, the draft Dataset is shown.
+
+Selecting the Dataverse add-on in the file tree shows a dropdown in the toolbar titled "Version:" From the dropdown, the user can
+select the published Dataset or the draft Dataset. Changing the selection will show the appropriate Dataset. If the published
+version is selected, but there is no published version, the OSF will show an error in the line for the add-on:
+
+    Dataverse: OSF couldn't load [Retry]
+
+When the add-on is selected and the Dataverse and Dataset have not been published, a "Publish" button is shown in the toolbar.
+Clicking opens a modal::
+
+    Publish this Dataverse and dataset?
+    This dataset cannot be published until [Dataverse title] is published.
+    By publishing this Dataverse and dataset, all content will be made available through the Harvard Dataverse
+    using their internal privacy settings, regardless of your OSF project settings.
+    Do you want to publish this Dataverse AND this dataset?
+
+    [Cancel][Publish Dataverse and dataset]
+
+asd;fjl'waeporiewopirpoeireorjemgj
+"Download as zip" button in the toolbar. Clicking downloads the entire
+contents of the folder as a zip file.
+
+A "Create Folder" button is also shown when the add-on is selected. The user types a folder name and confirms creation. The folder
+is then shown inside the Dropbox add-on. Files can be moved into and out of the folder. Folders can be removed by selecting the
+folder and clicking "Delete Folder" in the toolbar. A modal opens::
+
+    Delete "folder"?
+    This folder and ALL its contents will be deleted. This action is irreversible.
+    [Cancel][Delete]
+
+Users with editing permissions can select a Dropbox file to rename it. Clicking the "Rename" button that appears in the file
+tree's toolbar opens a text box where the new name can be entered and saved.
+
+When a user with editing permissions selects Dropbox in the file tree, an “Upload” button appears. Clicking on “Upload”
+opens a modal that allows you to select files from within your computer to upload. Admins and read+write contributors
+can also drag and drop files onto the Box add-on to upload a file.
+
+If a new version of an already existent file is uploaded, the new version will replace the existing one.
+
+If a Dropbox file is selected by a user, a "View" button appears in the toolbar. Clicking this button or clicking the file title
+brings the user to the details (rendering) page where the file is rendered. No link is provided to view the file on Dropbox.
+
+On the file's detail page, the image is rendered in the default "view" pane. Users with editing permissions see a "Delete"
+button in the top right.
+
+    Delete file?
+    Are you sure you want to delete [file name]?
+    [Cancel][Delete]
+
+Confirming the deletion brings the user to the file tree page where that file has been removed.
+
+A blue "Download" button is also available on the detail page. Clicking downloads the file.
+
+Text and code files can be edited from the file detail page by users with edit permissions. Clicking "Edit" opens a pane
+to the right of the rendered text where the user can revise the contents of the file. Saving updates the contents of the file.
+No formatting options are available.
+
+Selecting the "Revisions" button on the detail page opens the revisions pane. Revisions from the last 30 days are available.
+The date of upload for each version is shown, and a download button is shown on the right side of the pane.
+
+Selecting a file from the file tree shows a "Download" button in the toolbar.  No "Download Multiple" button
+is ever available, even if multiple Dropbox files are selected. Download counts are not available for Box.
+
+If the user has editing privileges, clicking on a Dropbox file in the file tree shows a "Delete" button in the toolbar.
+Clicking this button opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+    [Cancel][Delete]
+
+If the user selects multiple files, a "Delete Multiple" button appears in the toolbar. Clicking opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+
+    [list of file titles]
+
+    [Cancel][Delete]
+
+After confirming, the files are removed from the OSF and Dropbox.
+
+Files from other storage add-ons can be moved into Dropbox by dragging and dropping. Files from Dropbox can be moved
+into other add-ons as well.
+
+Viewing Dropbox Files
+***********
+**Purpose:** The file tree and file details pages allow users to view and interact with Dropbox files.
+
+Dropbox appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
+The tree identifies the project::
+
+    Dropbox: /[folder name]
+
+File names from the indicated Dropbox folder are shown in the file tree on the OSF.
+
+Selecting the Dropbox add-on in the file tree shows a "Download as zip" button in the toolbar. Clicking downloads the entire
+contents of the folder as a zip file.
+
+A "Create Folder" button is also shown when the add-on is selected. The user types a folder name and confirms creation. The folder
+is then shown inside the Dropbox add-on. Files can be moved into and out of the folder. Folders can be removed by selecting the
+folder and clicking "Delete Folder" in the toolbar. A modal opens::
+
+    Delete "folder"?
+    This folder and ALL its contents will be deleted. This action is irreversible.
+    [Cancel][Delete]
+
+Users with editing permissions can select a Dropbox file to rename it. Clicking the "Rename" button that appears in the file
+tree's toolbar opens a text box where the new name can be entered and saved.
+
+When a user with editing permissions selects Dropbox in the file tree, an “Upload” button appears. Clicking on “Upload”
+opens a modal that allows you to select files from within your computer to upload. Admins and read+write contributors
+can also drag and drop files onto the Box add-on to upload a file.
+
+If a new version of an already existent file is uploaded, the new version will replace the existing one.
+
+If a Dropbox file is selected by a user, a "View" button appears in the toolbar. Clicking this button or clicking the file title
+brings the user to the details (rendering) page where the file is rendered. No link is provided to view the file on Dropbox.
+
+On the file's detail page, the image is rendered in the default "view" pane. Users with editing permissions see a "Delete"
+button in the top right.
+
+    Delete file?
+    Are you sure you want to delete [file name]?
+    [Cancel][Delete]
+
+Confirming the deletion brings the user to the file tree page where that file has been removed.
+
+A blue "Download" button is also available on the detail page. Clicking downloads the file.
+
+Text and code files can be edited from the file detail page by users with edit permissions. Clicking "Edit" opens a pane
+to the right of the rendered text where the user can revise the contents of the file. Saving updates the contents of the file.
+No formatting options are available.
+
+Selecting the "Revisions" button on the detail page opens the revisions pane. Revisions from the last 30 days are available.
+The date of upload for each version is shown, and a download button is shown on the right side of the pane.
+
+Selecting a file from the file tree shows a "Download" button in the toolbar.  No "Download Multiple" button
+is ever available, even if multiple Dropbox files are selected. Download counts are not available for Box.
+
+If the user has editing privileges, clicking on a Dropbox file in the file tree shows a "Delete" button in the toolbar.
+Clicking this button opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+    [Cancel][Delete]
+
+If the user selects multiple files, a "Delete Multiple" button appears in the toolbar. Clicking opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+
+    [list of file titles]
+
+    [Cancel][Delete]
+
+After confirming, the files are removed from the OSF and Dropbox.
+
+Files from other storage add-ons can be moved into Dropbox by dragging and dropping. Files from Dropbox can be moved
+into other add-ons as well.
+
+
+Viewing figshare Files
+***********
+**Purpose:** The file tree and file details pages allow users to view and interact with figshare files.
+
+figshare appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
+The tree identifies the project::
+
+    figshare: [project title]
+
+File names from a figshare project are shown in the file tree on the OSF—not the names assigned to them on figshare. Names of
+both published, public files and private, draft files are shown in the tree. figshare files cannot be renamed. Folders cannot
+be created within the figshare add-on.
+
+If an OSF project is private and figshare is connected, a nondismissable blue alert is visible at the top of each page, regardless
+of the privacy of the figshare files::
+
+    Warning: This OSF component is private but figshare project 5022 may contain some public files or filesets.
+
+If the OSF project is public, no alert is shown, regardless of the privacy of the figshare files. The titles of all figshare files are shown
+in public projects.
+
+If a figshare project is deleted from the figshare website, it no longer appears in the file tree, but is still visible as the
+selected project on the project settings page.
+
+When a user with admin or read+write permissions selects figshare in the file tree a “Upload” button appears. Clicking on “Upload”
+opens a modal that allows you to select files from within your computer to upload. Admins and read+write contributors
+can also drag and drop files onto the figshare add-on to upload a file. Uploading a file adds it to that
+project on figshare as a draft.
+
+If a new version of an already existent file is uploaded, two files with the exact same name will
+appear in the add-on folder—they are not combined. Both these files will also appear in Figshare.
+
+If a figshare file is selected by a user, a "View" button appears in the toolbar. Clicking this button or clicking the file title
+brings the user to the details (rendering) page. Draft figshare files cannot be rendered. If the user clicks to render
+a draft figshare file, in place of the rendered image is a blue alert::
+
+    The file "[file name]" is still a draft on figshare.
+    To view it on the OSF publish it on figshare.
+
+No link is provided to view the file on figshare.
+
+Public, published files on figshare are rendered on the OSF. Above the rendering is a link that reads::
+
+    View this file on figshare.
+
+Clicking this link sends the user to the figshare website.
+
+When on the details page of a draft figshare file, no Download" button available. Users with editing permissions see a "Delete"
+button on the details page of a draft file; clicking opens a confirmation modal::
+
+    Delete file?
+    Are you sure you want to delete [file name]?
+    [Cancel][Delete]
+
+Confirming the deletion brings the user to the file tree page where that file has been removed.
+
+Public, published files cannot be deleted from the details page. A "Download" button is available.
+
+If the user has editing privileges, clicking on a draft figshare file in the file tree shows a "Delete" button in the toolbar.
+Clicking this button opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+    [Cancel][Delete]
+
+If the user selects multiple draft files, a "Delete Multiple" button appears in the toolbar. Clicking opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+
+    [list of file titles]
+
+    [Cancel][Delete]
+
+After confirming, the files are removed from the OSF and figshare.
+
+If the file is published, no "Delete" button is ever available from the file tree page. Two additional buttons
+do show instead: "Download" and "View on figshare." Clicking "Download" will download a copy of the file.
+Download counts are not available for figshare files. Clicking "View on figshare" will send the user to figshare
+in that same browser window.
+
+If multiple published files are selected, a "Download Multiple" button is available.
+
+The user cannot select multiple published and draft files at once.
+
+If the user attempts to move a draft file from figshare to OSF Storage, a red dismissable growlbox alert message will appear saying::
+
+	Copy failed
+	Cannot download private files.
+
+The user receives an email as well::
+
+    Hello,
+
+    An error has occurred, and the file from [prject title] on The Open Science Framework was not successfully copied. Please
+    log in and try this action again. If the problem persists, please email support@osf.io.
+
+    The Open Science Framework Robot
+
+Public, published figshare files can be copied to OSF storage. A copy of the file will be available in the figshare add-on and
+the OSF Storage folders.
+
+Files from other storage add-ons can be moved into figshare. These files are moved—not copied.
+
+If the user moves a file with multiple versions into figshare, only the current version will be saved. All other versions will be lost.
+Visiting the "revisions" view on a file's detail page shows a yellow alert in the revisions panel::
+
+    figshare does not support file revisions.
+
