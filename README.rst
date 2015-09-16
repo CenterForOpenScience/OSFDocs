@@ -51,7 +51,7 @@ Once you are done making your edits, send a pull request on Github to the `OSFDo
 .. _`reStructured Text`: http://docutils.sourceforge.net/rst.html
 
 
-Header Conventions
+Style Conventions
 ******************
 
 Use the following underlining conventions for heading levels:
@@ -60,3 +60,12 @@ Use the following underlining conventions for heading levels:
 - ``*`` for h2
 - ``-`` for h3
 - ``^`` for h4
+
+Refer to the person doing the action as "the user." For example: "If the user clicks..." or "The user can upload..."
+
+Separate all modal content by introducing it with a double colon. For example: "A modal opens that reads::"
+Keep a line of space between the content and the introductory line and indent all content. Your text should be formatted like this::
+
+    Woah, cool!
+
+Refer to buttons by their title in quotes. For example: the "Upload" button.
