@@ -1,7 +1,6 @@
 Navigating the OSF
 ==================
-
-.. todo:: Add purpose here.
+**Purpose:** Navigation bars allow users to move through OSF content and projects.
 
 .. _navigation-bar:
 

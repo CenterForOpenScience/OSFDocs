@@ -18,9 +18,7 @@ To Do items are available :doc:`here <todo>`.
     add-ons/add-ons_index
     search/search_index
 
-.. Indices and tables
-.. ==================
 
-.. * :ref:`genindex`
+
 .. * :ref:`search`
 

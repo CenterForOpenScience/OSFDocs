@@ -160,7 +160,6 @@ title on the Contributors page. A modal appears::
 
     Add Contributors
     [text field: Search by name][Search]
-    Show my recent collaborators, most frequent collaborators
 
 Below the search bar and links are two columns, one labeled "Results" and one labeled "Adding."
 

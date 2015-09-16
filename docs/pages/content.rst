@@ -7,4 +7,4 @@ the project :ref:`public <privacy>`, adding it to the public content on the OSF.
 
 This content is accessible by searching the OSF, following links to public projects, or by visiting the :ref:`Public Activity page <public-activity>`.
 
-:ref:`User profiles <>` are public content as well and can be viewed by any OSF user or visitor.
+:ref:`User profiles <profiles>` are public content as well and can be viewed by any OSF user or visitor.

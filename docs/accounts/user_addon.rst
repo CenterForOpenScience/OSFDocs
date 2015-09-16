@@ -38,13 +38,13 @@ Confirming the disconnect refreshes the page and the empty fields are visible ag
 
 If the user enters only their Access Key or only their Secret Key, a red inline alert appears below the “Save” button that reads::
 
-    Error: All the fields above are required.
+    All the fields above are required.
 
 Refreshing the page empties the fields.
 
 If the user enters incorrect keys, a red inline alert appears below the “Save” button that reads::
 
-    Error: Unable to list buckets. Listing buckets is required permission that can be changed via IAM
+    Unable to list buckets. Listing buckets is required permission that can be changed via IAM
 
 Refreshing the page empties the fields.
 

@@ -25,7 +25,7 @@ reads::
 
     A top-level project's category cannot be changed.
 
-Component categories can be changed. Prior to editing the category, two deactivated buttons are visible below the dropdown:
+Component categories can be changed. Prior to editing the category, two deactivated buttons are visible below the dropdown::
 
     [Cancel][Change]
 
@@ -65,6 +65,7 @@ If users type the wrong word into the text field, a red, dismissable growlbox al
     Strings did not match
 
 If a user attempts to delete a project or component with children, a red, dismissable growlbox alert appears in te upper right corner of the page::
+
     Error
     Could not delete component: Any child components must be deleted prior to deleting this project.
 

@@ -307,6 +307,7 @@ Visiting the settings page of the parent registration shows a panel where the ad
     [Retract Registration]
 
 Clicking "Retract Registration" brings the user to a page where they must provide a justification::
+
     Retract Registration
     Retracting a registration will remove its content from the OSF, but leave basic metadata behind. The title of a retracted
     registration and its contributor list will remain, as will justification or explanation of the retraction, should you
@@ -433,6 +434,7 @@ Continuing will register the project—no archive of the figshare files will be 
 
 If the figshare add-on contains only public figshare files, they will be copied and included in the registration.
 
-Copies of the most recent version of Amazon S3 files are archived in registrations.
+No other add-on produces a similar warning during registration, though they are presented to the user in a final confirmation modal
+before completing the registration.
 
-.. todo:: what about Dataverse? was failing when tested.
+Copies of the most recent version of all other add-ons will be present. OSF Storage maintains complete version history.
