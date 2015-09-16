@@ -662,11 +662,167 @@ changes.
 
 Configuring Mendeley
 *************
+**Purpose:** Connecting to Mendeley allows users to create a two way connection between the OSF and Mendeley.
+
+Users who choose to connect their Mendeley account to the OSF can check appropriate box. They are presented with a
+modal::
+
+    Mendeley Add-on Terms
+    Function | Status
+    Permissions: Making an OSF project public or private is independent of making a Mendeley folder public or private.
+    The OSF does not alter the permissions of a linked Mendeley folder.
+    Forking: Forking a project or component does not copy Mendeley authorization unless the user forking the project is
+    the same user who authorized the Mendeley add-on in the source project being forked.
+    Registering: Mendeley content will not be registered.
+
+    This add-on connects your OSF project to an external service. Use of this service is bound by its terms and conditions.
+    The OSF is not responsible for the service or for your use thereof.
+    This add-on allows you to store files using an external service. Files added to this add-on are not stored within the OSF.
+    [Cancel][Confirm]
+
+On this modal, users can click “Cancel” to cancel this action and close the window or “Confirm” to continue configuring Box.
+
+If user clicks “Confirm” but does not click “Apply,” and navigates away from page, a browser popup appears asking user to
+confirm navigation away from the page because pending add-on changes were not saved.
+
+After confirming, users will see a green “Apply” button appear at the bottom of the Select Add-ons panel. Clicking “Apply”
+will apply the settings. Green inline text appears for a few seconds below the "Apply" button::
+
+    Settings updated
+
+If the user has not connected Mendeley to their account previously, a row titled "Mendeley" is listed in the
+Configure Add-ons panel with a link—"connect account."
+
+When users click the "connect account" link, they will be navigated to a new window where they can confirm the
+connection with Mendeley before being taken back to the Settings page on the OSF. When they return to the OSF a modal appears::
+
+    Import Mendeley access token
+    Are you sure you want to link your Mendeley account with this project?
+    [Cancel][Import]
+
+If the user has connected Mendeley to their account previously, the link in the Mendeley row reads "Import Account from Profile."
+Clicking opens a modal that reads::
+
+    Import Mendeley access token
+    Are you sure you want to link your Mendeley account with this project?
+    [Cancel][Import]
+
+Importing an account loads the users' Mendeley information.
+
+To the right of the the Mendeley title is text that reads::
+
+    authorized by [user who configured add-on]
+
+The "Connect Account" link is replaced by a red "Disconnect Account" link.
+
+Below that row is bold text that reads "Current Folder: None." This is updated when the user selects a folder. A blue button labeled
+"Change" is below the "Current Folder" text. Clicking this button expands and collapses a table below.
+
+The table has two columns—"Folders" and "Select." Under "Folders" is a list of all top level Mendeley folders the user has.
+Folders can be expanded and collapsed. Each folder has a corresponding radio button in the "Select" column. When the user
+selects a folder, text appears at the bottom of the table::
+
+    Connect [folder title]?
+
+Two buttons, "Cancel" and "Save" appear below the table. Cancelling removes the two buttons and confirmatory text but the folder
+is still selected.
+
+Clicking "Save" updates the "Current Folder" text and green inline text appears below the table, replacing the buttons::
+
+    Successfully linked "[folder title]". Go to the Overview page to view your citations.
+
+To disconnect Mendeley, the user clicks the red "Disconnect Account" link. This opens a modal::
+
+    Disconnect Mendeley Account?
+    Are you sure you want to remove this Mendeley account?
+    [Cancel][Disconnect]
+
+Clicking "Disconnect" removes the table and connected folder information. The "Disconnect Account" link is replaced by a link
+that reads "Import Account from Profile." Alternatively, the user can uncheck the add-on from the "Select Add-ons" list and save their
+changes.
 
 .. _zotero:
 
 Configuring Zotero
 **************
+**Purpose:** Connecting to Zotero allows users to create a two way connection between the OSF and Zotero.
+
+Users who choose to connect their v account to the OSF can check appropriate box. They are presented with a
+modal::
+
+    Zotero Add-on Terms
+    Function | Status
+    Permissions: Making an OSF project public or private is independent of making a Zotero folder public or private.
+    The OSF does not alter the permissions of a linked Zotero folder.
+    Forking: Forking a project or component does not copy Zotero authorization unless the user forking the project is
+    the same user who authorized the Zotero add-on in the source project being forked.
+    Registering: Zotero content will not be registered.
+
+    This add-on connects your OSF project to an external service. Use of this service is bound by its terms and conditions.
+    The OSF is not responsible for the service or for your use thereof.
+    This add-on allows you to store files using an external service. Files added to this add-on are not stored within the OSF.
+    [Cancel][Confirm]
+
+On this modal, users can click “Cancel” to cancel this action and close the window or “Confirm” to continue configuring Box.
+
+If user clicks “Confirm” but does not click “Apply,” and navigates away from page, a browser popup appears asking user to
+confirm navigation away from the page because pending add-on changes were not saved.
+
+After confirming, users will see a green “Apply” button appear at the bottom of the Select Add-ons panel. Clicking “Apply”
+will apply the settings. Green inline text appears for a few seconds below the "Apply" button::
+
+    Settings updated
+
+If the user has not connected Zotero to their account previously, a row titled "Zotero" is listed in the
+Configure Add-ons panel with a link—"connect account."
+
+When users click the "connect account" link, they will be navigated to a new window where they can confirm the
+connection with Zotero before being taken back to the Settings page on the OSF. When they return to the OSF a modal appears::
+
+    Import Zotero access token
+    Are you sure you want to link your Zotero account with this project?
+    [Cancel][Import]
+
+If the user has connected Zotero to their account previously, the link in the Zotero row reads "Import Account from Profile."
+Clicking opens a modal that reads::
+
+    Import Zotero access token
+    Are you sure you want to link your Zotero account with this project?
+    [Cancel][Import]
+
+Importing an account loads the users' Zotero collections.
+
+To the right of the the Zotero title is text that reads::
+
+    authorized by [user who configured add-on]
+
+The "Connect Account" link is replaced by a red "Disconnect Account" link.
+
+Below that row is bold text that reads "Current Folder: None." This is updated when the user selects a folder. A blue button labeled
+"Change" is below the "Current Folder" text. Clicking this button expands and collapses a table below.
+
+The table has two columns—"Folders" and "Select." Under "Folders" is a list of all top level Zotero folders the user has.
+Folders can be expanded and collapsed. Each folder has a corresponding radio button in the "Select" column. When the user
+selects a folder, text appears at the bottom of the table::
+
+    Connect [folder title]?
+
+Two buttons, "Cancel" and "Save" appear below the table. Cancelling removes the two buttons and confirmatory text but the folder
+is still selected.
+
+Clicking "Save" updates the "Current Folder" text and green inline text appears below the table, replacing the buttons::
+
+    Successfully linked "[folder title]". Go to the Overview page to view your citations.
+
+To disconnect Zotero, the user clicks the red "Disconnect Account" link. This opens a modal::
+
+    Disconnect Zotero Account?
+    Are you sure you want to remove this Zotero account?
+    [Cancel][Disconnect]
+
+Clicking "Disconnect" removes the table and connected folder information. The "Disconnect Account" link is replaced by a link
+that reads "Import Account from Profile." Alternatively, the user can uncheck the add-on from the "Select Add-ons" list and save their
+changes.
 
 Viewing Amazon S3 Files
 ***********
@@ -837,6 +993,8 @@ version is selected, but there is no published version, the OSF will show an err
 
     Dataverse: OSF couldn't load [Retry]
 
+The dropdown is no longer available in the toolbar, requiring the user to refresh the page to see their draft files.
+
 When the add-on is selected and the Dataverse and Dataset have not been published, a "Publish" button is shown in the toolbar.
 Clicking opens a modal::
 
@@ -848,32 +1006,87 @@ Clicking opens a modal::
 
     [Cancel][Publish Dataverse and dataset]
 
-asd;fjl'waeporiewopirpoeireorjemgj
-"Download as zip" button in the toolbar. Clicking downloads the entire
-contents of the folder as a zip file.
+When the add-on is selected and the Dataverse  has been published but the Dataset has not, a "Publish" button is shown in the toolbar.
+Clicking opens a modal::
 
-A "Create Folder" button is also shown when the add-on is selected. The user types a folder name and confirms creation. The folder
-is then shown inside the Dropbox add-on. Files can be moved into and out of the folder. Folders can be removed by selecting the
-folder and clicking "Delete Folder" in the toolbar. A modal opens::
+    Publish this Dataverse and dataset?
+    By publishing this dataset, all content will be made available through the Harvard Dataverse using their internal
+    privacy settings, regardless of your OSF project settings.
+    Are you sure you want to publish this dataset?
 
-    Delete "folder"?
-    This folder and ALL its contents will be deleted. This action is irreversible.
+    [Cancel][Publish dataset]
+
+Confirming the choice to publish opens another modal::
+
+    Your content has been published.
+    [Okay]
+
+When a draft dataset is selected, the "Publish" button is available even if it has been published. If the user clicks "Publish"
+for a draft that has been published, the confirmation modal appears. On confirming, another modal appears::
+
+    This dataset version has already been published.
+    [Okay]
+
+When a draft dataset from a published Dataverse is selected, the add-on row in the file tree reads::
+
+    Dataverse: [Dataset] (Draft)
+
+When a published dataset from a published Dataverse is selected, the add-on row in the file tree reads::
+
+    Dataverse: [Dataset] (Published)
+
+"Version:" dropdown is available for published Datasets, but no other add-on specific buttons are available in the toolbar.
+
+If the user selects a published file in the file tree, a "Download" button is added to the toolbar. Clicking will download the
+file. No "Download Multiple" button is ever available, even if multiple Dataverse files are selected. Download
+counts are not available for Dataverse.
+
+No "Upload" is available for published Datasets. Attempting to drag and drop onto a published dataset produces no action.
+
+On the file tree, when a draft Dataset is selected by a contributor with editing privileges, an "Upload" button is
+available in the toolbar to the left of the "Publish" button. Clicking opens the file selector. Files can also be
+dragged and dropped into the file tree by users with editing privileges.
+
+If a file cannot be uploaded, a red growlbox error shows in the upper right corner::
+
+    Error
+    Unable to reach the provider, please try again later. If the problem persists, please contact support@osf.io.
+
+Even if an error was shown, if the user refreshes, the file may be uploaded to the draft Dataverse.
+
+Files from other storage add-ons cannot be moved into Dataverse, nor can any Dataverse files be moved out.
+
+If a new version of an already existent file is uploaded, the versions will not combine. Two identically titled files will be shown;
+on refresh, the newer file will have an integer appended to the end to identify it as a subsequent copy.
+
+If the user has editing privileges, clicking on a draft Dataverse file in the file tree shows a "Delete" button in the toolbar.
+Clicking this button opens a modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
     [Cancel][Delete]
 
-Users with editing permissions can select a Dropbox file to rename it. Clicking the "Rename" button that appears in the file
-tree's toolbar opens a text box where the new name can be entered and saved.
+If the user selects multiple draft files, a "Delete Multiple" button appears in the toolbar. Clicking opens a modal::
 
-When a user with editing permissions selects Dropbox in the file tree, an “Upload” button appears. Clicking on “Upload”
-opens a modal that allows you to select files from within your computer to upload. Admins and read+write contributors
-can also drag and drop files onto the Box add-on to upload a file.
+    Delete "[file title]"?
+    This action is irreversible.
 
-If a new version of an already existent file is uploaded, the new version will replace the existing one.
+    [list of file titles]
 
-If a Dropbox file is selected by a user, a "View" button appears in the toolbar. Clicking this button or clicking the file title
-brings the user to the details (rendering) page where the file is rendered. No link is provided to view the file on Dropbox.
+    [Cancel][Delete]
 
-On the file's detail page, the image is rendered in the default "view" pane. Users with editing permissions see a "Delete"
-button in the top right.
+After confirming, the files are removed from the OSF and Dataverse.
+
+If any Dataverse file is selected by a user in the file tree, a "View" button appears in the toolbar. Clicking this button or clicking the file title
+brings the user to the details (rendering) page where the file is rendered. No link is provided to view the file on Dataverse.
+
+When viewing the detail page of a published file, a red "Delete" button is available in the top right. Clicking this button results
+in a red growlbox error::
+
+    Error
+    Could not delete file
+
+Draft files can be deleted. Clicking "Delete" opens a confirmation modal::
 
     Delete file?
     Are you sure you want to delete [file name]?
@@ -883,36 +1096,17 @@ Confirming the deletion brings the user to the file tree page where that file ha
 
 A blue "Download" button is also available on the detail page. Clicking downloads the file.
 
-Text and code files can be edited from the file detail page by users with edit permissions. Clicking "Edit" opens a pane
-to the right of the rendered text where the user can revise the contents of the file. Saving updates the contents of the file.
-No formatting options are available.
+The revisions view shows up to two versions: published and draft. The options present depend on if the file has ever been published and
+if a draft version has been deleted. Clicking on the draft version shows the draft of the file, clicking on published shows the published version.
+The "Delete" and "Download" buttons are available on the detail page for both published and draft files.
 
-Selecting the "Revisions" button on the detail page opens the revisions pane. Revisions from the last 30 days are available.
-The date of upload for each version is shown, and a download button is shown on the right side of the pane.
+From the detail page of a file, the left hand panel displaying the file tree will show the Dataset that the viewed file belongs to—
+draft or published. If the user visits a different version by selecting it in the revisions pane, the file tree will update to reflect
+the current dataset.
 
-Selecting a file from the file tree shows a "Download" button in the toolbar.  No "Download Multiple" button
-is ever available, even if multiple Dropbox files are selected. Download counts are not available for Box.
+To non-contributors, draft Dataverse files cannot be seen. If a dataset is completely unpublished, this means that the Dataverse add-on
+does not appear in the file tree. Published files can be viewed and downloaded.
 
-If the user has editing privileges, clicking on a Dropbox file in the file tree shows a "Delete" button in the toolbar.
-Clicking this button opens a modal::
-
-    Delete "[file title]"?
-    This action is irreversible.
-    [Cancel][Delete]
-
-If the user selects multiple files, a "Delete Multiple" button appears in the toolbar. Clicking opens a modal::
-
-    Delete "[file title]"?
-    This action is irreversible.
-
-    [list of file titles]
-
-    [Cancel][Delete]
-
-After confirming, the files are removed from the OSF and Dropbox.
-
-Files from other storage add-ons can be moved into Dropbox by dragging and dropping. Files from Dropbox can be moved
-into other add-ons as well.
 
 Viewing Dropbox Files
 ***********
@@ -967,7 +1161,7 @@ Selecting the "Revisions" button on the detail page opens the revisions pane. Re
 The date of upload for each version is shown, and a download button is shown on the right side of the pane.
 
 Selecting a file from the file tree shows a "Download" button in the toolbar.  No "Download Multiple" button
-is ever available, even if multiple Dropbox files are selected. Download counts are not available for Box.
+is ever available, even if multiple Dropbox files are selected. Download counts are not available for Dropbox.
 
 If the user has editing privileges, clicking on a Dropbox file in the file tree shows a "Delete" button in the toolbar.
 Clicking this button opens a modal::
@@ -989,6 +1183,11 @@ After confirming, the files are removed from the OSF and Dropbox.
 
 Files from other storage add-ons can be moved into Dropbox by dragging and dropping. Files from Dropbox can be moved
 into other add-ons as well.
+
+From the :ref:`project overview <overview>` a Dataverse panel is visible below the file tree. The panel displays four
+fields: Dataset, Global ID, Dataverse, and Citation. The titles and DOI assigned by Dataverse are available in the appropriate fields.
+The citation generated by Dataverse is available in the Citation field. The DOI ("Global ID") and Dataverse fields
+link to the dataset on the Dataverse website.
 
 
 Viewing figshare Files
@@ -1100,3 +1299,233 @@ Visiting the "revisions" view on a file's detail page shows a yellow alert in th
 
     figshare does not support file revisions.
 
+
+Viewing GitHub Files
+***********
+**Purpose:** The file tree and file details pages allow users to view and interact with GitHub files.
+
+GitHub appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
+The tree identifies the project::
+
+    GitHub: [repo name] (branch)
+
+File names from the indicated GitHub repo are shown in the file tree on the OSF.
+
+Selecting the GitHub repo shows an "Open" button in the toolbar. Clicking sends the user to the GitHub website where the repo's
+contents are shown.
+
+A "Download" button appears when any user selects the GitHub repo. Clicking downloads the contents of the repo as a zip file.
+
+A "Create Folder" button is shown when the add-on is selected by a user with editing permission. The user types a
+folder name and confirms creation. The folder is then shown inside the GitHub add-on. Files can be moved into and out
+of the folder. If moving a file fails, a red growlbox alert appears::
+
+    Move failed.
+    Please refresh the page or contact support@cos.io if the problem persists.
+
+Depending on the error, a different alert may appear::
+
+    Move failed.
+    Update is not a fast forward
+
+Even if an error is shown, refreshing the page may show the file has been successfully moved.
+
+Folders cannot be deleted.
+
+If a file from a folder in GitHub is moved elsewhere or a new file is uploaded to a location in GitHub where a file
+of the same name exists, a modal appears::
+
+    Replace "[file name]"?
+    An item named "[file name]" already exists in this location.
+    [Cancel][Keep Both][Replace]
+
+Choosing "Replace" creates a new version of the file. Choosing "Keep Both" adds an integer to the end of the moved file's title
+to indicate the difference.
+
+When a user with editing permissions selects GitHub in the file tree, an “Upload” button appears. Clicking on “Upload”
+opens a modal that allows you to select files from within your computer to upload. Admins and read+write contributors
+can also drag and drop files onto the GitHub add-on to upload a file. If a new version of an already existent file is
+uploaded, the new version will replace the existing one.
+
+Selecting the GitHub add-on also shows a "Branch:" dropdown. The dropdown lists all existing branches of the repo. It is visible
+even if only one branch is available.
+
+Selecting a file from the file tree shows a "Download" button in the toolbar.  No "Download Multiple" button
+is ever available, even if multiple GitHub files are selected. Download counts are not available for GitHub.
+
+If the user has editing privileges, clicking on a GitHub file in the file tree shows a "Delete" button in the toolbar.
+Clicking this button opens a modal::
+
+    Delete "[file title]"
+    This action is irreversible.
+    [Cancel][Delete]
+
+After confirming, the file is removed from the OSF and GitHub.
+
+Files from other storage add-ons cannot be moved into GitHub. Files from GitHub can be copied into other add-ons by dragging
+and dropping, however.
+
+Users with editing permissions can select a GitHub file to rename it. Clicking the "Rename" button that appears in the file
+tree's toolbar opens a text box where the new name can be entered and saved.
+
+If the connected repo is public, any user can select a file and see the "View on GitHub" button in the toolbar. Clicking
+sends the user to the GitHub website where the file is displayed. If the repo is private, neither contributors nor visitors
+see this button.
+
+If a GitHub file is selected by a user, a "View" button appears in the toolbar. Clicking this button or clicking the file title
+brings the user to the details (rendering) page where the file is rendered. No link is provided to view the file on Box.
+
+No actions can be performed if the user selects multiple files.
+
+On the file's detail page, the image is rendered in the default "view" pane. Users with editing permissions see a "Delete"
+button in the top right.
+
+    Delete file?
+    Are you sure you want to delete [file name]?
+    [Cancel][Delete]
+
+Confirming the deletion brings the user to the file tree page where that file has been removed.
+
+A blue "Download" button is also available on the detail page. Clicking downloads the file.
+
+Text and code files can be edited from the file detail page by users with edit permissions. Clicking "Edit" opens a pane
+to the right of the rendered text where the user can revise the contents of the file. Saving updates the contents of the file.
+No formatting options are available.
+
+Selecting the "Revisions" button on the detail page opens the revisions pane. All commited versions of the file are listed.
+The version ID, the date of the commit, and the user name of the editor is available. A download button is shown on the
+right side of the pane.
+
+All changes to GitHub via the OSF are logged as individual commits.
+
+If a private repo is connected to a private project that is then made public, a warning appears in the confirmation modal
+for making the project public::
+
+    This component is connected to a private GitHub repository. Users (other than contributors) will not be able to see
+    the contents of this repo unless it is made public on GitHub.
+
+When the user confirms, contributors see a non-dismissable blue alert at the top of the page::
+
+    Warning: This OSF component is public, but the GitHub repo [repo name] is private. Users can
+    view the contents of this private GitHub repository through this public project.
+
+If the GitHub repo connected is public, but the OSF project is private, a blue non-dismissable alert is visible at the top
+of the page for all contributors::
+
+    Warning: This OSF component is private, but the GitHub repo [repo name] is public. The files in this GitHub repo can
+    be viewed on GitHub here.
+
+Viewing Google Drive Files
+***********
+**Purpose:** The file tree and file details pages allow users to view and interact with Google Drive files.
+
+Google Drive appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
+The tree identifies the project::
+
+    Google Drive: [folder name]
+
+File names from the indicated Google Drive repo are shown in the file tree on the OSF.
+
+A "Download as zip" button appears when any user selects the Google Drive add-on. Clicking downloads the contents of the folder as a zip file.
+
+A "Create Folder" button is shown when the add-on is selected by a user with editing permission. The user types a
+folder name and confirms creation. The folder is then shown inside the Google Drive add-on. Files can be moved into and out
+of the folder. To delete a folder, users with editing permissions must select the folder and click on the "Delete Folder" button in the toolbar.
+A modal opens::
+
+    Delete "[folder]"?
+    This folder and ALL its contents will be deleted. This action is irreversible.
+    [Cancel][Delete]
+
+When a user with editing permissions selects GitHub in the file tree, an “Upload” button appears. Clicking on “Upload”
+opens a modal that allows you to select files from within your computer to upload. Admins and read+write contributors
+can also drag and drop files onto the Google Drive add-on to upload a file. If a new version of an already existent file is
+uploaded, the new version will replace the existing one.
+
+Selecting a file from the file tree shows a "Download" button in the toolbar.  No "Download Multiple" button
+is ever available, even if multiple Google Drive files are selected. Download counts are not available for Google Drive.
+
+If the user has editing privileges, clicking on a Google Drive file in the file tree shows a "Delete" button in the toolbar.
+Clicking this button opens a modal::
+
+    Delete "[file title]"
+    This action is irreversible.
+    [Cancel][Delete]
+
+If the user selects multiple files, a "Delete Multiple" button is shown in the toolbar. Clicking opens a confirmation modal::
+
+    Delete "[file title]"?
+    This action is irreversible.
+    [list of file titles]
+    [Cancel][Delete]
+
+After confirming, the files are removed from the OSF and Google Drive.
+
+Files from other storage add-ons can be dragged and dropped into Google Drive. Google Drive files can also be moved into other
+add-ons, though the versions will not be kept (no warning is given).
+
+Users with editing permissions can select a Google Drive file to rename it. Clicking the "Rename" button that appears in the file
+tree's toolbar opens a text box where the new name can be entered and saved.
+
+Any user can select a file and see the "View on Google Drive" button in the toolbar. Clicking
+sends the user to the Google Drive website where the file is displayed.
+
+If a Google Drive file is selected by a user, a "View" button appears in the toolbar. Clicking this button or clicking the file title
+brings the user to the details (rendering) page where the file is rendered.
+
+On the file's detail page, the file is rendered in the default "view" pane. Users with editing permissions see a "Delete"
+button in the top right.
+
+    Delete file?
+    Are you sure you want to delete [file name]?
+    [Cancel][Delete]
+
+Confirming the deletion brings the user to the file tree page where that file has been removed.
+
+A blue "Download" button is also available on the detail page. Clicking downloads the file.
+
+Text and code files can be edited from the file detail page by users with edit permissions. Clicking "Edit" opens a pane
+to the right of the rendered text where the user can revise the contents of the file. Saving updates the contents of the file.
+No formatting options are available.
+
+Selecting the "Revisions" button on the detail page opens the revisions pane. All saved versions of the file are listed.
+The version ID and the date of the commit are available. A download button is shown on the right side of the pane.
+
+
+Viewing Mendeley Content
+******
+**Purpose:** Users can share their citations associated with a project using Mendeley.
+
+From a project's :ref:`overview page <overview>`, Mendeley content can be viewed in a panel below the file tree. The panel is
+titled "Mendeley."
+
+At the top of the panel is a dropdown with placeholder text::
+    Citation STyle (e.g."APA")
+
+Below this are the citations that the user who connected the add-on has stored in the linked folder. Citations are listed in a table.
+Below the "Citation" column is the citation for each resource, formatted according to the style selected in the dropdown.
+In the "Actions" column there is a paper icon. Hovering over the icon shows a tooltip that reads "Copy Citation." Clicking the paper icon
+copies the citation to the user's clipboard.
+
+Users can change the citation style from the default APA by clicking in the dropdown and beginning to type a citation style. Suggestions
+based on the input will appear as items in the dropdown. If the user selects one, the citations in the Citation column are
+reformatted accordingly.
+
+Viewing Zotero Content
+******
+**Purpose:** Users can share their citations associated with a project using Zotero.
+
+From a project's :ref:`overview page <overview>`, Zotero content can be viewed in a panel below the file tree. The panel is
+titled "Zotero."
+
+At the top of the panel is a dropdown with placeholder text::
+    Citation STyle (e.g."APA")
+
+Below this are the citations that the user who connected the add-on has stored in the linked folder. Citations are listed in a table.
+Below the "Citation" column is the citation for each resource, formatted according to the style selected in the dropdown.
+In the "Actions" column there is a paper icon. Hovering over the icon shows a tooltip that reads "Copy Citation." Clicking the paper icon
+copies the citation to the user's clipboard.
+
+Users can change the citation style from the default APA by clicking in the dropdown and beginning to type a citation style. Suggestions
+based on the input will appear as items in the dropdown. If the user selects one, the citations in the Citation column are
+reformatted accordingly.

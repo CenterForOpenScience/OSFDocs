@@ -434,3 +434,5 @@ Continuing will register the project—no archive of the figshare files will be 
 If the figshare add-on contains only public figshare files, they will be copied and included in the registration.
 
 Copies of the most recent version of Amazon S3 files are archived in registrations.
+
+.. todo:: what about Dataverse? was failing when tested.
