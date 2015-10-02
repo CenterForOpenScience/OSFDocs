@@ -29,7 +29,7 @@ are in red strikethrough text.
 
 Contributors with read+write or admin permissions can edit the wiki. These contributors see a third option in the upper right toggle: "Edit."
 Selecting "Edit" opens an additional panel on the page. Within this panel is a text box the user can type into. Formatting options are available
-at the top of the page, or the user can make use of Markdown syntax. While editing, if the View panel is open, it displays a preview
+at the top of the page, or the user can make use of Markdown syntax. While the user types, the editor will suggest Markdown syntax. While editing, if the View panel is open, it displays a preview
 of the changes. The user can change this via the dropdown, however.
 
 Users can save their changes by clicking the "Save" button below the text-edit box. Saving refreshes the page and closes all panels
