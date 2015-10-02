@@ -13,9 +13,17 @@ Email Preferences
 
 To subscribe or unsubscribe from an email newsletter, the user can select or unselect the checkbox next to the the relevant topic.
 
-At present, only one option is listed: "Open Science Framework General." Below this option is muted text that reads::
+At present, there are two options listed: 
+
+"Open Science Framework General," 
+Below this option is muted text that reads::
 
     Receive general notifications about the OSF every 2-3 weeks.
+
+"Open Science Framework Help,"  
+Below this option is muted text that reads::
+
+	Receive helpful tips on how to make the most of the OSF, up to once per week. 
 
 If the user checks the box and clicks the "Save" button below the option, then they will subscribe themselves to the newsletter. If the user
 unchecks the box and saves, they will be unsubscribed and will no longer receive the periodic emails. If the user checks or unchecks the box but does not

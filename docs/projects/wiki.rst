@@ -28,7 +28,7 @@ Additions made to the wiki since the version being viewed was saved are highligh
 are in red strikethrough text.
 
 Contributors with read+write or admin permissions can edit the wiki. These contributors see a third option in the upper right toggle: "Edit."
-Selecting "Edit" opens an additional panel on the page. Within this panel is a text box the user can type into. Formatting options are available
+Selecting "Edit" opens an additional panel on the page. Within this panel is a text box the user can type into. Line numbers appear on the left hand side of the edit pane and the preview pane. Formatting options are available
 at the top of the page, or the user can make use of Markdown syntax. While the user types, the editor will suggest Markdown syntax. While editing, if the View panel is open, it displays a preview
 of the changes. The user can change this via the dropdown, however.
 
