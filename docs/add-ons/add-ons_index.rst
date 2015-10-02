@@ -988,12 +988,7 @@ The tree identifies the project::
 File names from the indicated Dataset are shown in the file tree on the OSF. By default, the draft Dataset is shown.
 
 Selecting the Dataverse add-on in the file tree shows a dropdown in the toolbar titled "Version:" From the dropdown, the user can
-select the published Dataset or the draft Dataset. Changing the selection will show the appropriate Dataset. If the published
-version is selected, but there is no published version, the OSF will show an error in the line for the add-on:
-
-    Dataverse: OSF couldn't load [Retry]
-
-The dropdown is no longer available in the toolbar, requiring the user to refresh the page to see their draft files.
+select the published Dataset or the draft Dataset. Changing the selection will show the appropriate Dataset. User will only see the options relevant to the dataset (if there is no draft version, only "published" will display, and vice versa).
 
 When the add-on is selected and the Dataverse and Dataset have not been published, a "Publish" button is shown in the toolbar.
 Clicking opens a modal::
