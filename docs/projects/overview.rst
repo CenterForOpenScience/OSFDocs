@@ -39,7 +39,7 @@ Metadata
 The metadata is displayed at the top of the Project Overview to orient users to the project's basic information.
 
 At the top of the Project Overview is the project's title. Below the title is the list of contributors. Below this is a row listing
-the "Date Created" and "Last Updated" date. Below these two dates is the "Category" field. Below this is the project description.
+the "Date Created" and "Last Updated" date. Below these two dates is the "Category" field. Below this is the License. Below this is the project description.
 
 The project title can be updated by a contributor with administrative or read+write :ref:`permissions <contributors>`. These
 contributors can click on the title. This opens a text entry field where the user can revise the title. To submit changes, the user
@@ -75,7 +75,12 @@ If the user makes changes but clicks out of the text box without saving the edit
 the length of a description. If the user leaves a blank link between paragraphs, the space will be shown upon submitting the changes.
 Any HTML is scrubbed from the contents, disappearing on save. Markdown does not format the text. After the changes are saved, the page refreshes.
 
-Below the description, the page is populated by widgets—panels that contain information and allow actions for specific parts of a project.
+The "License" field can be left empty or can contain a license. An admin contributor selects a license by clicking on the field, which opens a widget containing "Choose a field" and a dropdown list of licenses. 
+
+.. todo:: Add licenses.  
+If left empty, the License field only displays for Admin contributors. 
+
+Below the license, the page is populated by widgets—panels that contain information and allow actions for specific parts of a project.
 
 Wiki Widget
 -----------

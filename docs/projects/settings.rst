@@ -17,7 +17,7 @@ is visible on the settings page.
 
 Configure Project/Component
 ^^^^^^^^^^^^^^^^^
-**Purpose:** Configuring the project or component allows the user to update the category or delete the project/component.
+**Purpose:** Configuring the project or component allows the user to update the category, edit the title or description, or delete the project/component.
 
 The first item in the Configure Project panel is "Category." A dropdown allows admins to select a category to assign to the project.
 Projects cannot change their category—the dropdown is visible but inactive and set to "Project." Muted text below a project's dropdown
