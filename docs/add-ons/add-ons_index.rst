@@ -1529,3 +1529,29 @@ copies the citation to the user's clipboard.
 Users can change the citation style from the default APA by clicking in the dropdown and beginning to type a citation style. Suggestions
 based on the input will appear as items in the dropdown. If the user selects one, the citations in the Citation column are
 reformatted accordingly.
+
+Viewing OSF Storage Files
+******
+**Purpose**: OSF Storage allows users to store and share files. 
+
+Users can obtain and distribute links for their documents in public projects on the OSF so others can then view the same rendered files. In addition, users are provided two different methods of embedding those documents, one in which the iFrame is dynamically rendered and another which provides the iFrame directly.
+
+On the *file details* page, the user sees buttons across the top right::
+
+    Delete
+    Share
+    Download
+    View
+    Revisions
+
+The user clicks the Share button and a popover appears with two tabs::
+    Share
+    Embed
+
+The Share Tab provides a URL and a button to copy the URL to the user's clipboard.
+The Embed Tab provides two entries::
+    Dynamically Render iFrame with JavaScript (with the associated javascript in a box below)
+    Direct iFrame with Fixed Height and Width (with the assocated HTML in a box below)
+
+
+.. todo:: Update OSF storage
