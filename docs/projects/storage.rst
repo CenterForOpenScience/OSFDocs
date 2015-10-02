@@ -109,7 +109,7 @@ element. On refresh, the download count for each file in the folder is increment
 Single File Actions
 ^^^^^^^^^^^^^
 Selecting a single file from any add-on or folder adds four additional buttons to the toolbar, beyond the default "Search" and "i:"
-"Download," "View," "Delete," and "Rename."
+"Download," "View," "Delete," "Check-out file," and "Rename."
 
 Clicking the "Rename" button when a file is selected opens a text field with the current folder title editable within it. A "Rename" button
 allows the user to confirm the changes and an 'x' button cancels the changes. If the user attempts to rename the file but leaves
@@ -118,6 +118,26 @@ the text field empty, no changes are saved. After renaming a file, before showin
     Successfully renamed.
 
 .. todo:: you can change file types by renaming the file but it corrupts them
+
+Clicking the "Check-out file" button when a file is selected opens a modal::
+
+    Confirm file check-out?
+    This would mean other contributors cannot edit, delete or upload new versions of this file as long as it is checked out. You can check it back in at any time.
+    [Cancel][Check-out file]
+
+Upon checking out the file, the "Check-out" button changes to a "Check-in" for the user who has checked the file out. For an edit contributor who has not checked the file out, a growl box appears::
+    
+    File is checked-out. This file has been checked out by a [collaborator]. It needs to be checked back in before any changes can be made. 
+
+For an ADMIN contributor who has not checked the file out, the "Check-out" button becomes "Force Check-in"
+
+.. TODO:: what does this look like for read-only contributors?
+
+Clicking the "Force Check-in" button brings up a modal::
+    
+    Force check-in file? This will allow all users to edit again.
+    [cancel][Force check-in]
+
 
 Clicking the "Delete" button when a file is selected opens a modal within the Files Browser::
 
