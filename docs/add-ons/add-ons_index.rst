@@ -1373,7 +1373,7 @@ sends the user to the GitHub website where the file is displayed. If the repo is
 see this button.
 
 If a GitHub file is selected by a user, a "View" button appears in the toolbar. Clicking this button or clicking the file title
-brings the user to the details (rendering) page where the file is rendered. No link is provided to view the file on Box.
+brings the user to the details (rendering) page where the file is rendered. No link is provided to view the file on GitHub. The file detail page will show the branch on the left hand file navigation bar. 
 
 No actions can be performed if the user selects multiple files.
 
