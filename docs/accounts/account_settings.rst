@@ -40,8 +40,7 @@ Adding an Alternate Email
 **Purpose:** Adding an alternate email initiates the merge process.
 
 Users can merge their accounts by logging into the account they wish to make primary and visiting their Account Settings.
-Under “Connected Accounts” the user enters the login email for the account they wish to merge into (alternate) the primary
-account under “Unconfirmed Emails” and clicks “Add Email” or hits the return key.
+Under “Connected Accounts,” and then "Unconfirmed emails," the user sees the message "Users can merge their accounts by logging." Here the user enters the login email for the account they wish to merge into (alternate) the primary account under “Unconfirmed Emails” and clicks “Add Email” or hits the return key.
 
 Users cannot add the primary email as an alternate email; attempting to do so produces an inline error, below the “Add Email” button::
 
