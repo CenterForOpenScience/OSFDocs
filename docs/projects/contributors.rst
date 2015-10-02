@@ -168,7 +168,11 @@ their query. The "Results" column shows up to five recent collaborators by defau
 a query has been submitted. If multiple pages of results are returned pagination appears in the same way that it does on the
 :ref:`Watchlist <pagination>`.
 
-To the left of each OSF user returned as a result is a green square button marked with a ‘+’ sign. Hovering over the '+' button
+To the left of each OSF user returned as a result is either a white box with a gray check mark, indicating that the user is already a contributor on the project, or a green square button marked with a ‘+’ sign. Hovering over the checkmark shows a tooltip that reads::
+
+    Already a contributor
+
+Hovering over the '+' button
 shows a tooltip that reads::
 
     Add contributor
