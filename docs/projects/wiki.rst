@@ -9,7 +9,7 @@ The Menu lists all visible wiki pages for the viewed project/component and all c
 by default. The menu itself can be collapsed to the left so that none of its content shows. When collapsed, admins and read+write
 contributors can still see the options to create a new page or delete the current one.
 
-The majority of the page is covered by the View panel. Below the "View" title is the wiki's contents. When a wiki is empty its body reads::
+The majority of the page is covered by the View panel. At the top of the "View" panel is a dropdown to select which version of the wiki the user would like to see. The dropdown indicates the name of the user who saved that version of the wiki as well as a timestamp of when the edits were saved. Below the "View" title is the wiki's contents. When a wiki is empty its body reads::
 
     No wiki content
 
