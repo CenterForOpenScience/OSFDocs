@@ -125,7 +125,9 @@ Personal Site
 ^^^^^^^^^^^^
 **Purpose:** Personal websites can be provided to link users and visitors to a user's personal webpage.
 
-To update the "Personal Site" field, the user clicks into the field and enters a web address. If the user enters a web address
+To update the "Your website" field, the user clicks into the field and enters a web address. By default, there is an empty field for one website. Below the field is a button labeled "Add website" to add additional fields. The order of the websites can be adjusted by dragging and dropping. 
+
+If the user enters a web address
 with no protocol indicated, when they click out of the field the protocol will be automatically added. Entering a domain with no TLD (e.g. .com or .org)
 or entering a TLD and no domain and attempting to save the changes by clicking the "Save" button produces red text below the button::
 
@@ -145,6 +147,7 @@ button::
     Could not update settings
 
 There is no validation that the webpage belongs to the user.
+
 
 ORCID
 ^^^^^^^^
