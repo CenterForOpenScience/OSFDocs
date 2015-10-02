@@ -102,7 +102,7 @@ Clicking the "Delete Folder" option opens a modal within the Files Browser::
 
 Confirming the deletion removes the folder and all contained files from the Files Browser.
 
-Clicking on an expanded folder or OSF Storage folder that has files contained within it adds one additional button to the toolbar—"Download as zip."
+Clicking on any folder or OSF Storage folder that has files contained within it adds one additional button to the toolbar—"Download as zip."
 Clicking this button immediately issues the download of a zip file containing all files and folders that were housed within the selected
 element. On refresh, the download count for each file in the folder is incremented by one.
 
