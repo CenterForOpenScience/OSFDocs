@@ -75,9 +75,30 @@ If the user makes changes but clicks out of the text box without saving the edit
 the length of a description. If the user leaves a blank link between paragraphs, the space will be shown upon submitting the changes.
 Any HTML is scrubbed from the contents, disappearing on save. Markdown does not format the text. After the changes are saved, the page refreshes.
 
-The "License" field can be left empty or can contain a license. An admin contributor selects a license by clicking on the field, which opens a widget containing "Choose a field" and a dropdown list of licenses. 
+The "License" field can be left empty or can contain a license. An admin contributor selects a license by clicking on the field, which opens a widget containing "Choose a field" and a dropdown list of licenses. The available licenses are::
 
-.. todo:: Add licenses.  
+    No License
+    Content:
+        CC0 1.0 Universal
+        CC-By Attribution 4.0 International
+    Code - Permissive
+        MIT License
+        Apache License 2.0
+        BSD 2-Clause "Simplified License"
+        BSD 3-Clause "New"/"Revised" License
+    Code - Copyleft:
+        GNU General Public License (GPL) 3.0
+        GNU General Public License (GPL) 2.0
+    Code - Other:
+        Artistic License 2.0
+        Eclipse Publice License 1.0
+        GNU Lesser General Public License (LGPL) 3.0
+        GNU Lesser General Public License (LGPL) 2.1
+        Mozilla Public License 2.0
+    License - Other
+
+Choosing a license causes the details of the license (full text) to appear below the License selector. 
+
 If left empty, the License field only displays for Admin contributors. 
 
 Below the license, the page is populated by widgets—panels that contain information and allow actions for specific parts of a project.
