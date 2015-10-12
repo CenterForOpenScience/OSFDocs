@@ -38,8 +38,12 @@ Leaving the page without cancelling or clicking "Change" does not produce a warn
 
 .. _todo: log above as enhancement
 
-For admins on a project or component, another section is visible in the Configure Project panel. Below the Category
-field is text that explains::
+For admins and read+write contributors on a project or component, the next section allows users to edit the title and description. There is one field for "Title" and one field for "Description," followed by "Save Changes" and "Cancel" buttons. 
+
+.. TODO:: add in information about read-only permissions (likely not visible at all) and what happens if you make a change + don't save.
+
+For admins on a project or component, another section is visible in the Configure Project panel. Below the Title and Description
+fields is text that explains::
 
     A project cannot be deleted if it has any components within it. To delete a parent project, you must first delete
     all child components by visiting their settings pages.
