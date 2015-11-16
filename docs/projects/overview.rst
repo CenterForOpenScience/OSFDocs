@@ -75,7 +75,9 @@ If the user makes changes but clicks out of the text box without saving the edit
 the length of a description. If the user leaves a blank link between paragraphs, the space will be shown upon submitting the changes.
 Any HTML is scrubbed from the contents, disappearing on save. Markdown does not format the text. After the changes are saved, the page refreshes.
 
-The "License" field can be left empty or can contain a license. An admin contributor selects a license by clicking on the field, which opens a widget containing "Choose a field" and a dropdown list of licenses. The available licenses are::
+The "License" field can be left empty or can contain a license. 
+
+An ADMIN contributor selects a license by clicking on the field, which opens a widget containing "Choose a field" and a dropdown list of licenses. The available licenses are::
 
     No License
     Content:
@@ -97,7 +99,9 @@ The "License" field can be left empty or can contain a license. An admin contrib
         Mozilla Public License 2.0
     License - Other
 
-Choosing a license causes the details of the license (full text) to appear below the License selector. 
+Choosing a license causes the details of the license (full text) to appear below the License selector. Depending on the particular License selected, the ADMIN may be presented with text fields to enter a year and/or Copyright Owners' names. To choose a license, the user clicks the green [Save] button. To exit without selecting making a change to the license, the user clicks the gray "X" on the top right of the license widget.
+
+For a READ+WRITE or READ contributor, or non-contributor (viewer of a public project), if there is no license applied to the project, the License field does not appear in the metadata field. For these users, if a license is applied, the title of the license appears in the License field along with an information icon. Clicking on the information icon displays the full text of the license. Clicking a second time collapses the text. 
 
 If left empty, the License field only displays for Admin contributors. 
 

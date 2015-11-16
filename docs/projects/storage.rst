@@ -175,7 +175,8 @@ Only files and folders from within the same project or component can be multi-se
 
 Multiple files cannot be downloaded at once unless they are in a :ref:`folder <folders>`.
 
-
+File Detail Page
+-----------
 
 Storage Add-Ons
 ----------
