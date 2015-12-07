@@ -14,8 +14,11 @@ When no registrations have been made, non-contributors see text explaining this:
 
 The link provided sends the user to the :ref:`Public Activity page <public-activity>`.
 
-Contributors who do not have permissions to register the project or component see the same message. If it is a sub-project or component,
-however, they see additional text::
+Contributors who do not have permissions to register the project or component see the same message. Contributors who do have permissions to register the project or component see the message:: 
+
+    There have been no completed registrations of this project. You can start a new registration by clicking the “New Registration” button, and you have the option of saving as a draft registration before submission. For a list of the most viewed and most recent public registrations on the Open Science Framework, click here.
+
+If it is a sub-project or component, however, they see additional text::
 
     To register the entire project "[project name]" instead, click here.
 
@@ -27,7 +30,7 @@ Only contributors can comment or view comments on a registration.
 
 Registration Overview
 ---------------
-**Purpose:** A registration's Overview shows the stat eof the project at the time of registration and links to the supplement.
+**Purpose:** A registration's Overview shows the state of the project at the time of registration and links to the supplement.
 
 The Registration Overview has all the components of a :ref:`Project Overview <overview>`. A watermark in the background
 says "read-only" repeatedly. At the top of the page is a non-dismissable blue alert::
@@ -47,61 +50,41 @@ titled "Archive of [storage add-on]." These folders are collapsed by default.
 
 Creating a Registration
 -----------------
-Clicking "New Registration" on a project's registrations pageopens a modal. If the project is the top level project of a
-tree, the modal reads::
 
-    Register [project name]
-    You are about to register the component [project name] including all components and data within it.
-    Registration creates a permanent, time-stamped, uneditable version of the project. If you would prefer to register
-    only one particular component, please navigate to that component and then initiate registration. After clicking Register,
-    you will next select a registration form.
-    [Cancel][Register]
+**The following describes creating a registration from the project page. Subsequent documentation covers the Preregistration Challenge workflow**
 
-If the user is attempting to register a sub-project or component, however, the modal reads::
 
-    Register [project name]
-    You are about to register the component [project name] including all components and data within it. This will not
-    register its parent, [project name]. If you want to register the parent, please go here. After clicking Register,
-    you will next select a registration form.
-    [Cancel][Register]
+Clicking "New Registration" on a project's registrations page opens a modal that reads::
 
-The link provided sends the user to the parent project's Registrations page.
+    Register
+    Registration creates a frozen version of the project that can never be edited or deleted but can be retracted. Your original project remains editable but will now have the registration linked to it. Things to know about registration:
+    *Ensure your project is in the state you wish to freeze before registering.
+    *Consider turning links into forks.
+    *Registrations can have embargo periods for up to four years. If you choose an embargo period, the registration will automatically become public when the embargo expires.
+    *Retracting a registration removes the contents of the registrations but will leave behind a log showing when the registration was created and retracted.
+    Continue your registration by selecting a registration form:
+    *Open-Ended Registration
+    *OSF-Standard Pre-Data Collection Registration
+    *Replication Recipe (Brandt et al., 2013): Pre-Registration
+    *Replication Recipe (Brandt et al, 2013): Post-Completion
+    *Prereg Challenge
+    [Cancel][Create Draft]
 
-Clicking "Register" brings the user to a new page titled "Register." Below the title is a paragraph of information::
+The user selects a template and clicks create draft. The user is provided a form through which they can provide information about their project and
+registration. The template may be one page or many pages. At the bottom of each page, the user is presented with the date and time the draft registration was last saved, and two buttons: [Save as Draft][Preview for Submission]. 
 
-    Registration creates a frozen version of the project that can never be edited or deleted but can be retracted.
-    You can register your project by selecting a registration form, entering information about your project, and then
-    confirming. You will be able to continue editing the original project, however, and the frozen version with timestamps
-    will always be linked to the original. Retracting a registration will leave behind metadata about when the registration
-    was created and retracted but removes the contents of the registration.
+Clicking "Save as Draft" saves the draft registration and returns the user to the project's Draft Registrations tab. 
+Clicking "Preview for Submission" presents a preview of the registration, followed by two buttons: [Continue editing] and [Register]. 
 
-    * A registration can be made public immediately or entered into an embargo period of up to four years. At the end of
-    the embargo period, the registration will automatically become public.
-    * Before initiating a registration, make sure that the project is in the state that you wish to freeze. Consider turning links into forks.
-    * Start by selecting a registration form from the list below. You can hit your browser's back button if the selected
-    form is not appropriate for your use.
+Clicking "Continue editing" returns the user to the "Edit draft registration" page. 
+Clicking "Register" brings up a modal::
 
-Below the information is a dropdown with different registration templates: "Open-Ended Registration," "OSF-Standard Pre-Data Collection
-Registration," "Replication Recipe (Brandt et al., 2013): Pre-Registration," "Replication Recipe (Brandt et al., 2013): Post-Completion."
-
-After selecting a template the user is provided a form through which they can provide information about their project and
-registration. There, the user also chooses whether or not to embargo the project. After finishing the form, the user must
-confirm the registration::
-
-    Registration cannot be undone, and the archived content and files cannot be deleted after registration. Please be sure
-    the project is complete and comprehensive for what you wish to register.
-
-    Type "register" if you are sure you want to continue
-
-The user must type "register" into the text field below the instructions. If the user enters
-alternative text, no action occurs. When the user types "register" a blue submit button labeled "Register Now" appears. Pressing
-the return key does not submit the form.
-
-A confirmation modal appears::
-
-    Are you sure you want to register this project?
-    The content and version history of Wiki and OSF Storage will be copied to the registration.
-    [Cancel][Register]
+    Before you continue...
+    *The content and version history of Wiki and OSF Storage will be copied to the registration 
+    Registration choice: 
+    [Dropdown selections:] Make registration public immediately
+    Enter registration into embargo (selecting this option brings up a field, "Embargo End Date" where user must select date to embargo)
+    [Cancel][Continue]
 
 If additional add-ons are connected to the project, the modal includes information about their registration behavior.
 
@@ -117,6 +100,45 @@ registration's overview.
 
 When visiting the :ref:`Project Organizer <organizer>`, a project or component that is still being archived will have "[Archiving]"
 written to the right of its title.
+
+Creating a registration in Preregistration Challenge workflow
+------------
+User navigates from cos.io/prereg to osf.io/prereg, where the user is greeted by two options: login to the OSF or create a new account. 
+
+Whether a user logs into the OSF or creates a new account first, the landing page for prereg provides the user the option to "Start a new preregistration." If the user already has a draft registration, there is also an option to "Continue working on an existing preregistration." If the user has project(s), an option to "Preregister a project you already have on the OSF" is also displayed. 
+
+Clicking "Continue working on an existing preregistration" displays a box::
+    
+    Go to an existing preregistration:
+
+with a text box for users to begin typing the name of the preregistration. A list of matching projects will display below the text box as the user types. Only draft preregistrations that are using the Prereg Challenge template will populare this list. Selecting one fills the text box with the name of the preregistration with an "X" above the box to cancel the selection, and provides a button to "Edit Draft." Clicking "Edit Draft" takes the user to the editable preregistration template.
+
+Clicking "Preregister a project you already have on the OSF" displays a box::
+
+    Preregister an existing project:
+
+with a text box for users to begin typing the name of the project. A list of matching projects will display below the text box as the user types. Selecting one fills the text box with the name of the project with an "X" above the box to cancel the selection, and provides a button, "Preregister." Clicking the "Preregister" button takes the user to the project's Registrations page, with a dismissable notification::
+
+    You have been redirected to the project's registrations page. From here you can initiate a new Draft Registration to complete the registration process. 
+
+From here the user will follow the workflow for creating a registration from the project's registrations page. 
+
+Clicking "Start a new preregistration" will open a box::
+    
+    Please provide a title for your project:
+
+with a text form to type the preregistration title and a button to "Continue >". Clicking continue will open a model containing terms and conditions for the Preregistration Challenge. Accepting the terms will land the user on the "Edit draft registration page" for the Prereg Challenge registration template. 
+
+In each of these cases, the user will have to fill out the Prereg Challenge registration template, which is several pages. At the bottom of each page, the user is provided with buttons, "Save as draft" or "Next page." On the last page, the "Next page" button is replaced by a "Submit for review" button. 
+
+Clicking "Submit for review" pops up a modal with a Notice of Consent for the Preregistration Challenge. The user must agree to the terms and click "Continue." Clicking "Cancel" returns the user to the registration preview page. Clicking "Continue" prompts the user to choose to either make the registration public immediately or choose an embargo (as in the normal workflow). After making this selection, the user lands on the "Registrations" page for the project and is presented with a dissmissable notice::
+
+    Your submission has been received. You will be notified within ten business days regarding the status of your submission. If you have questions, you may contact us at prereg@cos.io. 
+
+The preregistration appears in the "Draft registrations" tab with the label "Pending Review." There are buttons to [Preview] or [Delete] the registration. Clicking [Preview] opens the preview of the registration, with a button to go [Back] to the Registrations tab. Clicking [Delete] pops up a modal:: 
+    
+    Are you sure you want to delete the registration? [Cancel][Delete]
+
 
 Embargos
 ------------
