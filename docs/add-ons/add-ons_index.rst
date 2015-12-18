@@ -266,9 +266,13 @@ When users click the "connect account" link, a modal opens::
 The dropdown instructs users to select a Dataverse to connect. The user can make a choice from the dropdown or select "Other."
 If the user selects "Other" a text field appears below the dropdown requesting a URL to the Dataverse. After a Dataverse
 is indicated, a text field appears on the right for the user to enter their API Token. A link above the text field sends the user
-to Dataverse where a Token is provided. The user must copy this and paste it into the field on the OSF.
+to Dataverse where a Token is provided. The user must copy this and paste it into the field on the OSF. If a user inputs a non-dataverse URL and clicks the "Get from Dataverse" link, the user will receive a 404 error. 
 
-.. todo:: update after bug is fixed (presently, no validation of url and no api token needed)
+If the user inputs a non-dataverse URL, no API token, and clicks "save," he receives an error, "Please enter a Dataverse host and an API token."
+
+If the user inputs an API token and no URL and clicks, "save," he receives an error, "Please enter a Dataverse host and an API token."
+
+If the user inputs a non-dataverse ULR and characters that are not an API token, he receives an error, "Sorry, but there was a problem connecting to that instance of Dataverse. It is likely that the instance hasn't been upgraded to Dataverse 4.0. If you have any questions or believe this to be an error, please contact support@osf.io."
 
 If the user has connected Dataverse to their account previously, the link in the Dataverse row reads "Import Account from Profile."
 Clicking this link opens a modal::

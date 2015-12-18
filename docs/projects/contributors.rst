@@ -10,7 +10,9 @@ Contributors
 **Purpose:** Contributors to a project or component can make changes to the project/component's content and can be included in the
 citation.
 
-The Contributors section of the Contributors page has an "Add" button to the right of the title. Below the title are instructions
+The Contributors page is divided into two parts. To the left are filtering options and to the right is a table of contributors. 
+
+The Table section of the Contributors page has an "Add" button to the right of the title. Below the title are instructions
 referring to the table below them::
 
     Drag and Drop contributors to change listing order.
@@ -70,6 +72,14 @@ labeled "Admins on Parent Project." Hovering over the '?' to the right of this t
 Below the heading is a list of admins on the parent project. Their profile picture and user name are listed, linking to their public
 profile. To the right of their name, under the "Permissions" column is muted text that reads "Read." Below the "Bibliographic Contributor"
 column is a deactivated, emtpy checkbox. This checkbox cannot be filled in.
+
+The left side of the screen, the filtering options, contains a text box for filtering contributors by name and several boxes to filter by Permissions and by Bibliographic Contributor status. The user can type in the "Filter by name" box and the contributor list will dynamically display only contributors who match the entered text. If no contributors match the entered text, a gray bar appears in the contributors table, along with red text, "No contributors found."
+
+Below the filter by name field is "Permissions" and a ? tooltip. If the user mouses over the tooltip icon, he sees text explaining various contributor permissions. Below this are 3 boxes: Administrator, Read+Write, and Read. The user can click to select or deselect 1, 2, or 3 of these. The contributor list will dynamically change to display only contributors who have the chosen permissions. If no contributors match the chosen filter(s), a gray bar appears in the contributors table, along with red text, "No contributors found."
+
+Below this is a "Bibliographic Contributor" filter and a ? tooltip. If the user mouses over the tooltip icon, he sees text explaining what a bibliographic or non-bibliographic contributor means. Below this are two boxes: Bibliographic contributor or non-bibliographic contributor. The user can select one or both of these. The contributor list will dynamically change to display only contributors who have the chosen bibliographic status. If no contributors match the chosen filter(s), a gray bar appears in the contributors table, along with red text, "No contributors found."
+
+All of these filtering options can be used simultaneously (i.e., a user can filter for contributors named "Steve" who have Admin Permissions and are non-bibliographic contributors).
 
 .. _permissions:
 
@@ -344,10 +354,12 @@ column reads yes—otherwise it says no. On the far right of the table is a red 
 Removing the link makes the link inactive and removes it from the table.
 
 Users can share the URL for a view only link with anyone. Anyone with the link can visit the page to see the project's contents—
-even if it is private and even if they do not have an OSF account. When a visitor follows a View-only Link there is a blue, non-dismissable
+even if it is private and even if they do not have an OSF account.  When a visitor follows a View-only Link there is a blue, non-dismissable
 alert at the top of the page::
 
     This project is being viewed through a private, view-only link. Anyone with the link can view this project. Keep the link safe.
 
 If the link was anonymous, the contributors list reads "Anonymous Contributors" instead of providing the names of the contributors. Activity
-logs replace usernames with "A user."
+logs replace usernames with "A user." "Forks" and "Registrations" tabs are not shared via anonymized view-only links because contributors' names may be listed on these projects. Manually navigating to the Forks or Registrations page using an anonymized view-only link returns "Forbidden" error. 
+
+"Forks" and "Registrations" are shared in non-anonymized view-only links. 
