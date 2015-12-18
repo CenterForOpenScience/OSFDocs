@@ -344,10 +344,12 @@ column reads yes—otherwise it says no. On the far right of the table is a red 
 Removing the link makes the link inactive and removes it from the table.
 
 Users can share the URL for a view only link with anyone. Anyone with the link can visit the page to see the project's contents—
-even if it is private and even if they do not have an OSF account. When a visitor follows a View-only Link there is a blue, non-dismissable
+even if it is private and even if they do not have an OSF account.  When a visitor follows a View-only Link there is a blue, non-dismissable
 alert at the top of the page::
 
     This project is being viewed through a private, view-only link. Anyone with the link can view this project. Keep the link safe.
 
 If the link was anonymous, the contributors list reads "Anonymous Contributors" instead of providing the names of the contributors. Activity
-logs replace usernames with "A user."
+logs replace usernames with "A user." "Forks" and "Registrations" tabs are not shared via anonymized view-only links because contributors' names may be listed on these projects. Manually navigating to the Forks or Registrations page using an anonymized view-only link returns "Forbidden" error. 
+
+"Forks" and "Registrations" are shared in non-anonymized view-only links. 
