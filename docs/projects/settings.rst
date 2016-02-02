@@ -2,24 +2,23 @@
 
 The project settings page shows different options for contributors with different permissions.
 
-If the user is an admin on the project, there are five sections in the Settings page that they can configure: "Configure
-Project/Component," "Select Add-ons," "Configure Wiki," "Configure Commenting," "Configure Notifications." Additional sections
-are shown if the project is public or if add-ons are configured. If the project is public, "Configure Wiki" is shown.
+If the user is an admin on the project, there are five sections in the Settings page that they can configure: "Project/Component," "Select Add-ons," "Wiki," "Commenting," "Email Notifications." Additional sections
+are shown if the project is public or if add-ons are configured.
 
-If the user is a read+write contributor, only the "Configure Project," "Select Add-ons," "Configure Add-ons," and
-"Configure Notifications" panels are visible.
+If the user is a read+write contributor, only the "Project," "Select Add-ons," "Add-ons," "Wiki," and
+"Email Notifications" panels are visible.
 
-If the user is a read only contributor, only the "Configure Notifications" panel is visible.
+If the user is a read only contributor, only the "Notifications" panel is visible.
 
-If the user is a contributor on a parent project, but not a sub-project/component, only the "Configure Notifications" panel
+If the user is a contributor on a parent project, but not a sub-project/component, only the "Notifications" panel
 is visible on the settings page.
 
 
-Configure Project/Component
+Project/Component
 ^^^^^^^^^^^^^^^^^
 **Purpose:** Configuring the project or component allows the user to update the category, edit the title or description, or delete the project/component.
 
-The first item in the Configure Project panel is "Category." A dropdown allows admins to select a category to assign to the project.
+The first item in the Project panel is "Category." A dropdown allows admins to select a category to assign to the project.
 Projects cannot change their category—the dropdown is visible but inactive and set to "Project." Muted text below a project's dropdown
 reads::
 
@@ -89,21 +88,18 @@ Select Add-ons
 ^^^^^^^^^^^^^^^^
 See :ref:`the information about add-ons here <add-ons>`.
 
-Configure Add-ons
+Add-ons
 ^^^^^^^^^^^^^^^^^^^
 When an add-on has been activated, an additional section is added to the page—"Configure Add-ons." See
 :ref:`the information about add-ons here <add-ons>`.
 
-Configure Wiki
+Wiki
 ^^^^^^^^^^^^^^
-**Purpose:** Configuring the wiki allows admins to change who can edit a wiki page.
+**Purpose:** Configuring the wiki allows Admins and Read+Write contributors to enable or disble the wiki, and change who can edit a wiki page.
 
-If a project is public or has public children, the Configure Wiki panel is shown. If the "Wiki" option is not
-selected in the "Select Add-ons" panel, the Configure Wiki panel is not shown.
-
-Text below the title reads::
-
-    These settings control who can edit your wiki. To make a wiki editable by all OSF users, make your project/component public.
+A checkbox appears along with the text::
+    
+    Enable the wiki in [project/component name]. 
 
 The project tree is displayed below the instructions. All project and component titles link to their overview pages.
 Below each public project/component in the tree is a row titled "Who can edit." Right justified in this row is a dropdown that allows
@@ -131,12 +127,12 @@ If a user changes to "Contributors (with write access)" from "All OSF users," th
 
 After several seconds, the dropdown returns. No confirmation modal is shown.
 
-Configure Commenting
+Commenting
 ^^^^^^^^^^^^^^^
 **Purpose:** Admins can configure the commenting preferences to determine who can comment on a project.
 
 
-In the Configure Commenting panel, the user is shown two options to choose between—radio buttons allow them to select an option::
+In the Commenting panel, the user is shown two options to choose between—radio buttons allow them to select an option::
 
     [radio button] Only contributors can post comments
     [radio button] When the project is public, any OSF user can post comments
@@ -152,12 +148,12 @@ corner of their Project Overview—clicking opens the :ref:`Comments panel <comm
 Leaving the page without clicking "Save" does not produce a warning for the user.
 
 
-Configure Notifications
+Email Notifications
 ^^^^^^^^^^^^^^^
 **Purpose:** All users can modify the frequency with which they would like to receive notifications about the project.
 
 
-In the Configure Notifications panel, text below the title reads::
+In the Notifications panel, text below the title reads::
 
     These notification settings only apply to you. They do NOT affect any other contributor on this project.
 
