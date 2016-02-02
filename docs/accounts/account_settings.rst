@@ -44,6 +44,10 @@ Under “Connected Accounts,” and then "Unconfirmed emails," the user sees the
 
     To merge an existing account with this one or log in with multiple email addresses, add an alternate email address below.
 
+Following this message is an "i" icon which, when a user mouses over, displays a toolip::
+    
+    Merging accounts will move all projects and components associated with two emails into one account. All projects and components will be displayed under the email address listed as primary. 
+
 Here the user enters the login email for the account they wish to merge into (alternate) the primary account under “Unconfirmed Emails” and clicks “Add Email” or hits the return key.
 
 Users cannot add the primary email as an alternate email; attempting to do so produces an inline error, below the “Add Email” button::
@@ -70,11 +74,10 @@ no ".com"), after submitting their entry a red dismissable error message appears
 
 If the user submits multiple such invalid email addresses, another identical message appears above the last alert.
 
-After successfully adding an email, it is listed below “Unconfirmed Emails” and above the email address field. A green,
-dismissable growlbox alert appears at the top of the page that reads::
+After successfully adding an email, it is listed below “Unconfirmed Emails” and above the email address field. A modal appears::
 
-    [Secondary Email] added to your account.
-    You will receive a confirmation email at [Secondary Email]. Please check your email and confirm.
+    Confirmation email sent
+    [Secondary Email] added to your account. You will receive a confirmation email at [Secondary Email]. Please log out of this account and check your email to confirm this action. 
 
 An email is sent to the alternate email::
 
