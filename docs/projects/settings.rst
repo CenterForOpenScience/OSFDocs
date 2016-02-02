@@ -35,6 +35,8 @@ Category updated successfully
 
 Leaving the page without cancelling or clicking "Change" does not produce a warning for the user.
 
+The available categories are: "Analysis," "Communication," "Data," "Hypothesis," "Instrumentation," "Methods and Measures," "Procedure," "Project," "Software," "Other," "Uncategorized"
+
 .. _todo: log above as enhancement
 
 For admins and read+write contributors on a project or component, the next section allows users to edit the title and description. There is one field for "Title" and one field for "Description," followed by "Save Changes" and "Cancel" buttons. 
@@ -97,9 +99,15 @@ Wiki
 ^^^^^^^^^^^^^^
 **Purpose:** Configuring the wiki allows Admins and Read+Write contributors to enable or disble the wiki, and change who can edit a wiki page.
 
-A checkbox appears along with the text::
+If the user is an Admin or Read+Write contributor, a checkbox appears along with the text::
     
     Enable the wiki in [project/component name]. 
+
+If the project is private, and/or the user is a Read+Write or Read contributor, text below reads, "To allow all OSF users to edit the wiki, [project/component title] must be public and the wiki enabled."
+
+If the project is public and the user is an Admin contributor, the word "Configure" appears next in large text, followed by::
+
+    Control who can edit the wiki of [project/component name]:
 
 The project tree is displayed below the instructions. All project and component titles link to their overview pages.
 Below each public project/component in the tree is a row titled "Who can edit." Right justified in this row is a dropdown that allows
