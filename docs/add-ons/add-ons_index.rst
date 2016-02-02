@@ -101,6 +101,8 @@ a dropdown below. An additional button to the right of "Change" is labeled "Crea
 In the dropdown are all of the user's Amazon S3 buckets. After selecting one, the user must save their changes. Leaving the page without
 saving produces no warning and will not enact the changes.
 
+Amazon's rules for bucket naming are evolving. It is possible that a previously-created bucket will violate updated bucket naming conventions. As the US East (Northern VA) region for storage was the first location, the rules for bucket naming there are more lax than other storage locations. The laxer rules allow bucket names up to 255 characters long, consisting of uppercase letters, lowercase letters, digits, periods, hyphens, and underscores. If a user attempts to connect a bucket that violates this, they will receive an error message that the bucket must follow the stricter naming conventions (though this should not be possible). See section about creating buckets (below) about bucket naming conventions.
+
 Alternative to selecting an existing repo, the user can create a new one by clicking "Create Repo." This opens a modal::
 
     Bucket Name [text field]
@@ -110,6 +112,8 @@ Alternative to selecting an existing repo, the user can create a new one by clic
 If the user saves an empty name field, the modal is closed and red inline text below the dropdown reads::
 
     Bucket name cannot be empty
+
+Bucket names must follow Amazon's guidelines (http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html#bucketnamingrules): Bucket names should look like subdomains, one or more labels joined with periods. A label consists of lowercase letters, numbers, and hyphens. The first and last character of a label may not be a hyphen. The bucket name must be between 3 and 63 characters long. Any character besides those are invalid.    
 
 The "Bucket Location" field allows the user to select the server location where they wish to store their data. "US
 Standard" is selected by default.
