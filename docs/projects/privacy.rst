@@ -10,24 +10,36 @@ When a project or component is created, it is private by default. The selected t
 reads "Make Public." If an admin clicks "Make Public" a modal opens::
 
     Warning
-    Once a component is made public, there is no way to guarantee that access to the data it contains can be completely
-    prevented. Users should assume that once a component is made public, it will always be public. The rest of the project,
-    including other components, will not be made public. Review your component for sensitive or restricted information
-    before making it public. Are you absolutely sure you would like to continue?
-    [Cancel][Make Public]
+    Please review your projects, components, and add-ons for sensitive or restricted information before making them public.
 
-Confirming the choice to make the project public refreshes the page; the toggle then indicates that it is a public project.
+    Once they are made public, you should assume they will always be public. You can return them to private later, but search engines (including Google’s cache) or others may access files before you do.
+    [Cancel][Confirm or Continue]
+
+If the project or component has no components nested within it, the options in the modal are "Cancel" or "Confirm". Confirming the choice to make the project public refreshes the page; the toggle then indicates that it is a public project.
+
+If the project or component has components nested under it, the options in the modal are "Cancel" or "Continue". Selecting "Continue" opens a new modal containing::
+
+    Adjust your privacy settings by checking the boxes below. 
+
+    Checked projects and components will be public. 
+    Unchecked components will be private.
+
+This is followed by links to select all components or none of the components, and a list of components one level below the project/component the user is in. A checkbox appears in the left column of the list. To its right, if there are more components nested below, a "+" appears, followed by the component's name. Clicking the "+" sign reveals the next level of nested component(s), and so on. The checkboxes reflect the current privacy setting of the component, with the exception of the project or component the "make public" or "make private" button was clicked in. A checked box indicates a component is public; an unchecked box indicates the component is private. Clicking the "Make all public" or "Make all private" links sets privacy of all components, including those nested (even if not visible in an unexpanded list). 
+
+Clicking "Cancel" at this point abandons all changes. 
+Clicking "Continue" refreshes the modal to display the names of all projects and components affected by the change in two lists: made public and made private. There are three buttons: "Back," "Cancel," and "Confirm." Clicking "Back" takes the user back to the previous modal to further edit which components are selected. Clicking "Cancel" abandons all changes. Clicking "Confirm" refreshes the page and alters privacy settings of the selected projects and components. 
 
 If an admin clicks "Make Private" on a public project a modal opens::
 
     Warning
-    Making a component private will prevent users from viewing it on this site, but will have no impact on external sites,
-    including Google's cache. Would you like to continue?
-    [Cancel][Make Private]
+    Please review your projects, components, and add-ons for sensitive or restricted information before making them public.
 
-Confirming refreshes the page. The toggle will indicate that the project is private.
+    Once they are made public, you should assume they will always be public. You can return them to private later, but search engines (including Google’s cache) or others may access files before you do.
+    [Cancel][Confirm or Continue]
 
-Adjusting the privacy of a project or component only affects that particular element—not any of its children (sub-projects/components).
+If the project or component has no components nested within it, the options in the modal are "Cancel" or "Confirm". Confirming the choice to make the project private refreshes the page; the toggle then indicates that it is a private project.
+
+If the proejct or component has components nested under it, the options in the modal are "Cancel" or "Continue." Selecting "Continue" opens the same modal described in this step above in the 'make public' scenario. 
 
 Users who have permission to view a private component can see its logged history in the :ref:`Recent Activity <activity>` of
 the component's parent. Users who do not have permission to see the component do not see these logs in the Recent Activity.
