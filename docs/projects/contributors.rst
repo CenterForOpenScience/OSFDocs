@@ -287,9 +287,6 @@ The user can select the radio button corresponding to his/her choice. If the use
 
 Clicking [Back] sends the user back to the previous modal. Clicking [Cancel] sends the user back to the Contributors page with no changes made. Clicking [Remove] removes the contributor from the selected project and components. 
 
-After clicking the 'x' to remove a contributor, but prior to saving changes, the affected contributor's "Permissions" dropdown is
-replaced by text that indicates their current permission setting. Clicking anywhere in the row cancels the change.
-
 When the user has read or read+write permissions and is removing themselves, clicking this 'x' and saving the changes opens a modal::
 
     Delete Contributor?
