@@ -143,7 +143,7 @@ In the Configure Commenting panel, the user is shown two options to choose betwe
     [Save]
 
 
-By default, "Only contributors can post comments" is selected.
+By default, "When the project is public, any OSF user can post comments.
 
 When only contributors can post comments, non-contributors who visit the project page do not see the comment tab in the upper
 right hand corner of the Project Overview. Anyone with permission to comment sees a blue tab with a chat icon in the upper right
