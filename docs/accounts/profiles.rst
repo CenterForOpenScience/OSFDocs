@@ -272,6 +272,21 @@ Saving changes produces a green text alert below the "Save" button::
 
     Settings updated
 
+ResearchGate
+^^^^^^^^^^^^^
+**Purpose:** ResearchGate profile IDs can be provided to link users and visitors to a user's ResearchGate profile. 
+
+To update the "ResearchGate" field, the user clicks into the field and enters their ResearchGate profile ID. If the domain name is included in the field,
+it is automatically removed when the user clicks away.
+
+Academia.edu
+^^^^^^^^^^^^^
+**Purpose:** Academia.edu profile IDs can be provided to link users and visitors to a user's Academia.edu profile. 
+
+To update the "Academia" field, the user clicks into the first field and enters their Institution, then clicks into the second field and enters their profile ID. If the user does not enter one or the other field, the results are accepted anyway. The link in their profile does not work properly.
+
+.. todo:: User should receive error message if one of academia.edu fields is blank. 
+
 Employment Information
 ---------------------
 **Purpose:** Users can share their employment information to help visitors and other users identify them and inform them of their credentials.
