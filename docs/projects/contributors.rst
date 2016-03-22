@@ -263,7 +263,7 @@ Newly added contributors receive an email notifying them of the change::
 
 Removing Contributors
 ^^^^^^^^^^^^^^^^^^^
-**Purpose:** Contributors can be removed to prevent them from being listed in the contribut list or from editing the project.
+**Purpose:** Contributors can be removed to prevent them from being listed in the contributor list or from editing the project.
 
 Admins can remove any contributor to a project. Contributors with read+write or read only permissions can remove themselves from
 a project, but not others.
