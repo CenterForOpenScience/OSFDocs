@@ -182,6 +182,7 @@ Clicking the "Add Component" button opens a modal::
     Add Component
     [text field: "Component Title]
     [dropdown: "--Category--"]
+    [Checkbox: Add contributors from [Parent Project]]
     [Cancel][Add]
 
 The first field in the modal is an empty text field with placeholder text that reads "Component Title." The user can enter a title of any length, however,
@@ -194,7 +195,7 @@ and selects any of the available options. If the user selects a category but doe
     This field is required.
 
 After clicking the "Add" button, the button becomes deactivated and reads "Adding" until the page refreshes and the user is brought into the
-new component.
+new component. If the user selected to add contributors from the parent project, they are all added at the same permissions levels as the parent. 
 
 Clicking the "Add Links" button opens a modal::
 
