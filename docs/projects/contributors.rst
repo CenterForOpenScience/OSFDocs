@@ -270,7 +270,17 @@ a project, but not others.
 
 To remove a contributor, the user must click the red 'Remove' button in the far right column of the "Contributors" table. 
 
-Clicking the button pops up a modal. If the project has components nested within it, the modal reads:: 
+Clicking the button pops up a modal. 
+
+If the project or component does not have components nested within it, the modal reads:: 
+    
+    Remove Contributor
+    Remove [username] from [Project]?
+    [Cancel][Remove]
+
+Clicking [Cancel] returns the user to the Contributors page with no changes made. Clicking [Remove] removes the contributor from the project or component. The user is returned to the Contributors page.
+
+If the project has components nested within it, the modal reads:: 
 
     Remove Contributor
     Do you want to remove [username] from [Project], or from [Project] and ever component in it?
@@ -287,33 +297,17 @@ The user can select the radio button corresponding to his/her choice. If the use
 
 Clicking [Back] sends the user back to the previous modal. Clicking [Cancel] sends the user back to the Contributors page with no changes made. Clicking [Remove] removes the contributor from the selected project and components. 
 
-When the user has read or read+write permissions and is removing themselves, clicking this 'x' and saving the changes opens a modal::
-
-    Delete Contributor?
-    Are you sure you want to remove yourself ([username]) from contributor list?
-    [Cancel][Delete]
-
-Confirming will send the user to the :ref:`My Dashboard <my-dashboard>` page where a green dismissable alert is at the top of the page::
+If the user is removing him or herself in the above scenarios, user is sent to contributors page but sees a forbidden error, with a green dismissable alert at the top of the page::
     
     You have removed yourself as a contributor from this project
 
-When the user has admin permissions and is removing themselves or another contributor, clicking this 'x' and saving the changes opens a modal::
+.. todo:: update when this bug is fixed. "confirming will send the user to the :ref:`My Dashboard <my-dashboard>` page" 
 
-    Save Changes?
-    Are you sure you want to save these changes?
-    [Cancel][Save]
+If the user tries to remove him or herself as a contributor when s/he is the only contributor on a project, a modal appears:: 
 
-Confirming will send the user to the :ref:`My Dashboard <my-dashboard>` page where a green dismissable alert is at the top of the page::
-
-    You have removed yourself as a contributor from this project
-
-.. todo:: update when modal bug is fixed: https://github.com/CenterForOpenScience/osf.io/issues/4016
-
-If the user tries to remove themself as a contributor when they are the only contributor on a project, the red "Discard Changes" button
-appears below the Contributors table. No "Save Changes" button is visible. Two red text alerts appear below the button::
-
-    Must have at least one registered admin contributor
-    Must have at least one bibliographic contributor
+    Remove Contributor
+    You cannot be removed as a contributor. You need at least one administrator, bibliographic contributor, and registered user. 
+    [Cancel]
 
 
 View-only Links
