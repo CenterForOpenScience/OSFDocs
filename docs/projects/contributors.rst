@@ -268,10 +268,24 @@ Removing Contributors
 Admins can remove any contributor to a project. Contributors with read+write or read only permissions can remove themselves from
 a project, but not others.
 
-To remove a contributor, the user must click the red 'x' in the far right column of the "Contributors" table. Hovering over this
-'x' shows a tooltip that reads "Remove Contributor." Clicking the 'x' changes the 'x' to text that reads::
+To remove a contributor, the user must click the red 'Remove' button in the far right column of the "Contributors" table. 
 
-    Save to remove
+Clicking the button pops up a modal. If the project has components nested within it, the modal reads:: 
+
+    Remove Contributor
+    Do you want to remove [username] from [Project], or from [Project] and ever component in it?
+    Remove [username] from [Project]
+    Remove [username] from [Project] and every component in it.
+    [Cancel][Remove]
+
+The user can select the radio button corresponding to his/her choice. If the user selects "Remove [username] from [Project] and every component in it," the red Remove button becomes a gray Continue button. Clicking [Cancel] sends the user back to the Contributors page with no changes made. Clicking [Continue] sends the user to a second modal::
+
+    Remove Contributor
+    [Username] will be removed from the following projects and/or components. 
+    (list of project/components to be altered)
+    [Back][Cancel][Remove]
+
+Clicking [Back] sends the user back to the previous modal. Clicking [Cancel] sends the user back to the Contributors page with no changes made. Clicking [Remove] removes the contributor from the selected project and components. 
 
 After clicking the 'x' to remove a contributor, but prior to saving changes, the affected contributor's "Permissions" dropdown is
 replaced by text that indicates their current permission setting. Clicking anywhere in the row cancels the change.
@@ -283,8 +297,8 @@ When the user has read or read+write permissions and is removing themselves, cli
     [Cancel][Delete]
 
 Confirming will send the user to the :ref:`My Dashboard <my-dashboard>` page where a green dismissable alert is at the top of the page::
-
-    Removed self from project
+    
+    You have removed yourself as a contributor from this project
 
 When the user has admin permissions and is removing themselves or another contributor, clicking this 'x' and saving the changes opens a modal::
 
