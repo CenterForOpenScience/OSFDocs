@@ -279,6 +279,12 @@ ResearchGate
 To update the "ResearchGate" field, the user clicks into the field and enters their ResearchGate profile ID. If the domain name is included in the field,
 it is automatically removed when the user clicks away.
 
+There is no validation that the ResearchGate account belongs to the user.
+
+Saving changes produces a green text alert below the "Save" button::
+
+    Settings updated
+
 Academia.edu
 ^^^^^^^^^^^^^
 **Purpose:** Academia.edu profile IDs can be provided to link users and visitors to a user's Academia.edu profile. 
@@ -286,6 +292,24 @@ Academia.edu
 To update the "Academia" field, the user clicks into the first field and enters their Institution, then clicks into the second field and enters their profile ID. If the user does not enter one or the other field, the results are accepted anyway. The link in their profile does not work properly.
 
 .. todo:: User should receive error message if one of academia.edu fields is blank. 
+
+There is no validation that the Academia.edu account belongs to the user.
+
+Saving changes produces a green text alert below the "Save" button::
+
+    Settings updated
+
+Baidu Scholar
+^^^^^^^^^^^^^
+**Purpose:** Baidu Scholar IDs can be provided to link users and visitors to a user's Academia.edu profile. 
+
+To update the "Baidu Scholar" field, the user clicks into the field and enters their Baidu Scholar profileID. If the domain name is included in the field, it is automatically removed when the user clicks away.
+
+There is no validation that the Baidu Scholar account belongs to the user.
+
+Saving changes produces a green text alert below the "Save" button::
+
+    Settings updated
 
 Employment Information
 ---------------------
