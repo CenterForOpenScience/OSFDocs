@@ -3,9 +3,7 @@
 Files can be accessed via the Files Browser available on the :ref:`Project Overview <overview>` or the Files page. A project
 or component's files page can be accessed by clicking on "Files" in the grey navigation bar.
 
-OSF Storage is the default file storage tool on the OSF. Users are given 2GB of OSF Storage for free when they create an account.
-When a user uploads a file, that uses some of their storage. If a collaborator on a project, however, uploads a file to that project,
-it does not affect all contributor's free storage. Files can be up to 128MB.
+OSF Storage is the default file storage tool on the OSF. Users are given unlimited storage for free when they create an account. Files can be up to 5gb.
 
 Files Browser
 ------------
