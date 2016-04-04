@@ -235,12 +235,6 @@ is public, there is no symbol. Titles link to the project/component/link's overv
 if there are more contributors, they are indicated by the addition of "& __ more." Clicking on a contributor's name brings the user to the contributor's
 public profile. Clicking on "& __ more" brings the user to the overview page for the project/component/link.
 
-Below the list of contributors is a bar indicating the number of contributions. The bars are proportional to one another, meaning that
-the component with the most contributions to it is full, and every other bar is a percentage of that longest bar. Blue portions of the bar
-indicate contributions made by other users. Green portions indicate contributions made by the user themself. The number of contributions
-is listed below the bar—these numbers only account for contributions to that project/component/link, not the cumulative number of contributions
-to that element and its children.
-
 To the right of the element's title is a caret indicating that there is expandable content. Clicking the caret expands the element's information
 to include a "Recent Activity" section. In this section, on the left, are dates and times of logged actions. On the right is a description of each action.
 Only the three most recent actions are listed in the "Recent Activity" section.
