@@ -13,8 +13,7 @@ to that project/component, then components that are housed within that project/c
 all children have been listed. Every project and component displays its OSF Storage folder
 and any contained folders. If any :ref:`add-ons <add-ons>` are connected, they are displayed within the project
 or component. To the left of each add-on, project, component, and file is an icon representing the item. Every item in the
-tree is labeled with its title. Projects are preceded by a label—"Project:" and components are similarly indicated by a "Component:"
-label before their title.
+tree is labeled with its title. 
 
 Nested projects, components, add-ons, and files are indented to indicate their hierarchy.
 On page load, top level storage add-ons and OSF Storage are expanded, meaning their contents are visible.
