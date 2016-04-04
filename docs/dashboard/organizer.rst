@@ -1,115 +1,85 @@
 
-**Purpose:** The Project Organizer houses most of the functionality on the user’s dashboard. It lists projects and allows
-the user to sort and act on those projects.
+**Purpose:** My Projects houses most of the functionality on the user’s dashboard. It lists projects and allows
+the user to sort and act on those projects. The Project Organizer is the center of the My Projects page. 
 
-The Project Organizer is the left half of the "My Dashboard" page. It consists of several action buttons that allow the
-user to manipulate their organizational system as well as a list of all of the user’s projects
-and registrations.
+My Projects is found by clicking "My Projects" in the blue navigation bar or by going to osf.io/myprojects when logged in.  
 
-Contents of the Project Organizer can be searched through by clicking on “Search” in the toolbar above the organizer.
+Contents of the Project Organizer can be searched through by typing in the "Filter displayed projects” field in the top right of the page. 
 
-Projects and Components in the Project Organizer
-----------------
-**Purpose:** Projects and components, as the primary units of content on the OSF, are the focus of the
-Project Organizer. Several basic actions can be performed on projects and components via the organizer.
+My Projects consists of 3 panes. The left pane is a Filter pane and provides options for filtering which projects are displayed. The center pane is the Project Organizer, displaying project titles, contributors, and date last modified. The right pane is the Information Panel, displaying information about or recent activity on a selected project or component. 
 
-To rename a project or component, users can select it and click on the “Rename” button in the toolbar above the organizer.
-
-To open a project or component and visit its overview page, users can click on the title or select it and click on
-“Open” in the toolbar above the organizer.
-
-Smart Folders
------------
-**Purpose:** Smart folders automatically group projects into system-defined categories.
-
-Two smart folders appear by default in the user’s dashboard: “All my registrations” and “All my projects.”
-Smart folders cannot be deleted or removed. In “All my registrations” the user’s complete set of registrations
-appear. Retracted registrations do not appear in this list. In “All my projects” the complete set of the user’s projects are shown.
-
-Smart folders appear at the top of the Project Organizer, above other collections, by default but can be rearranged by sort.
+Filter Pane
+-------------
+**Purpose:** The filter pane provides users with several options for filtering the projects displayed in the Project Organizer. The first section is Collections, followed by Contributors, then Tags. Each section displays only four entries. Forward and backward arrows allow users to access more options for filtering
 
 Collections
-------------
+----------
 **Purpose:** Collections allow users to create a customized organization system on their Project Organizer.
 
 Collections are user defined project groups. Collections can house a user’s projects and :ref:`components <components>` or
 :ref:`public <privacy>` projects and components that they are not contributors on. A project can belong to multiple collections.
 
-To create a collection, the user clicks on “Add Collection” above the list of projects. To add a project to a collection,
+To create a collection, the user clicks on “+” to the right of the word Collections. To add a project to a collection,
 the user selects, from elsewhere on the project organizer, the project they wish to add and drags and drops it into the
-collection. Alternatively, the user can select the collection and then click on “Add Existing Project” in the toolbar above
-the organizer. The user then can search for a project of their own or a public project.
+collection.
 
-To delete a collection, the user must select the collection and then click “Delete” from the toolbar above the organizer.
+To delete a collection, the user clicks the 3 vertical dots to the right of the Collection's name and selects "Delete."
 
-Collections can be nested within one another. To nest collections, the user can select a collection and click
-“Add Collection” from the toolbar above the organizer. After naming the new collection it will appear within the first collection.
+To rename a collection, the user clicks the 3 vertical dots to the right of the Collection's name and selects "Rename."
 
-To rename a collection, the user must select it and click “Rename” in the toolbar above the Project Organizer.
+Mousing over the info icon displays an information box::
 
-Adding and Removing Content to the Project Organizer
-----------------
-**Purpose:** The Project Organizer displays all OSF content that a user wants easy access to. Allowing users to add
-existing, public OSF projects enables users to have access to projects that they are interested in.
+    Collections are groups of projects. You can create custom collections. Drag and drop your projects or bookmarked projects to add them. 
 
-New projects that a user creates will automatically be added to the "All My Projects" smart folder.
-
-Existing projects can be dragged and dropped into a collection or into the overall "Dashboard" folder. To do so, a user
-selects a project from “All My Projects” and then drags it to the desired location. Alternatively, the user can select
-the folder to add the project to and click on “Add Existing Project” from the toolbar above the organizer. In addition
-to the user’s own projects, public OSF projects can be added to collections and the "Dashboard" folder through the
-“Add Existing Project” search.
+By default, the collections "All my projects," "All my registrations," and "Bookmarks" are shown. These collections cannot be removed.
 
 Projects can be removed from collections or the "Dashboard" folder by selecting the project and clicking “Remove From
-Collection.” Removing a project does not delete the project or its contents, but removes it from the containing element.
+Collection” in the right pane. Removing a project does not delete the project or its contents, but removes it from the containing element.
 
-Public projects can also be added to the Project Organizer by visiting them and clicking on the “Add to Dashboard Folder”
+Public projects can also be added to the Project Organizer by visiting them and clicking on the “Add to Bookmarks”
 button on the project overview. This button is depicted by a folder with a plus sign to its right. On hover, “Add to
-Dashboard Folder” appears. Clicking adds the project and all public components within it to the "Dashboard" folder on the
-Project Organizer. When clicked, the plus sign turns into a minus sign and on hover a tooltip reads “Remove from Dashboard Folder.”
+Bookmarks” appears. Clicking adds the project and all public components within it to the "Bookmarks" Collection on the
+Project Organizer. When clicked, the plus sign turns into a minus sign and on hover a tooltip reads “Remove from Bookmarks."
+
+Contributors
+----------
+**Purpose:** Clicking a contributor's name allows the user to filter for only those projects that both he/she and the selected name are contributors on. 
+
+Tags
+----------
+**Purpose:** Clicking on a tag allows the user to filter for only those projects that contain the selected tag. 
+
+..::Todo: What happens when user clicks multiple contributor names or tags. What if the tag is on a file and not a project? 
+
+
+Project Organizer - Projects and Components in the Project Organizer
+-----------
+
+**Purpose:** Projects and components, as the primary units of content on the OSF, are the focus of the
+Project Organizer. The center pane displays projects and components that match the filters the user has applied. If no filters have been applied, this center pane displays all of the users' projects. Nested components can be seen by clicking the "+" sign to the left of the project name. Highlighting (clicking next to a project or component's name) displays information about the project or component in the right pane. Clicking on a project or component takes the user to the Project or Component Overview page. 
+
 
 Sorting Project Organizer Content
 ------------
 **Purpose:** Sorting contents by column headers in the Project Organizer allows users to more quickly find an item that they are looking for.
 
-The Project Organizer can sort its contents by Name, in alphabetical or reverse alphabetical order. Contents are sorted
-within their hierarchy such that top level items like smart folders and any top level collections or projects are sorted
-alphabetically. Within a smart folder, collection, or project, contents are also sorted alphabetically. For example, a
-dashboard that had this content order:
+The Project Organizer can sort its contents by Name, in alphabetical or reverse alphabetical order, or by Date Last Modified. By default, content is sorted by Date Last Modified. Within a collection or project, contents are also sorted according to date last modified by default. 
 
 
-* All my projects
-    * Kiwi
-    * Apples
-    * Melon
-* All my registrations
-    * Melon
-    * Apples
-    * Kiwi
-* Dinosaurs
-    * Reptar
-    * Triceratops
-    * Barney
-* Snakes
-    * Kaa
-    * Nagini
-    * Boa Constrictor
+Information Panel
+----------
 
-When sorted in reverse alphabetical order would appear as:
+**Purpose:** The right pane of the Project Organizer displays information about the selected proejct or component in two tabs: Information and Recent Activity.
 
-* Snakes
-    * Nagini
-    * Kaa
-    * Boa Constrictor
-* Dinosaurs
-    * Triceratops
-    * Reptar
-    * Barney
-* All My registrations
-    * Melon
-    * Kiwi
-    * Apples
-* All my projects
-    * Melon
-    * Kiwi
-    * Apples
+If the project is part of a Collection, a button appears at the top of the panel, "Remove from collection."
+
+Information tells the user::
+    
+    Visibility: (Public or Private)
+    Category: (Project or component category)
+    Last modified: (date last modified)
+    Tags applied to the project
+
+Activity show the user the most recent 6 logged actions on the project as well as which contributor took the action. A link at the end of the list provides the user the option to Show more entries. 
+
+

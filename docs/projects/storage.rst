@@ -3,9 +3,7 @@
 Files can be accessed via the Files Browser available on the :ref:`Project Overview <overview>` or the Files page. A project
 or component's files page can be accessed by clicking on "Files" in the grey navigation bar.
 
-OSF Storage is the default file storage tool on the OSF. Users are given 2GB of OSF Storage for free when they create an account.
-When a user uploads a file, that uses some of their storage. If a collaborator on a project, however, uploads a file to that project,
-it does not affect all contributor's free storage. Files can be up to 128MB.
+OSF Storage is the default file storage tool on the OSF. Users are given unlimited storage for free when they create an account. Files can be up to 5gb.
 
 Files Browser
 ------------
@@ -15,8 +13,7 @@ to that project/component, then components that are housed within that project/c
 all children have been listed. Every project and component displays its OSF Storage folder
 and any contained folders. If any :ref:`add-ons <add-ons>` are connected, they are displayed within the project
 or component. To the left of each add-on, project, component, and file is an icon representing the item. Every item in the
-tree is labeled with its title. Projects are preceded by a label—"Project:" and components are similarly indicated by a "Component:"
-label before their title.
+tree is labeled with its title. 
 
 Nested projects, components, add-ons, and files are indented to indicate their hierarchy.
 On page load, top level storage add-ons and OSF Storage are expanded, meaning their contents are visible.

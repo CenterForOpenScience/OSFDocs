@@ -26,22 +26,37 @@ reads::
 
 Component categories can be changed. Prior to editing the category, two deactivated buttons are visible below the dropdown::
 
-    [Cancel][Change]
+    [Cancel][Save Changes]
 
-After the user makes a new selection, the buttons become active. Clicking "Change" deactivates the buttons and green inline text
+After the user makes a new selection, the buttons become active. Clicking "Save Changes" deactivates the buttons and green inline text
 is added below the buttons::
 
 Category updated successfully
 
-Leaving the page without cancelling or clicking "Change" does not produce a warning for the user.
+Leaving the page without cancelling or clicking "Save Changes" produces a warning for the user::
+
+    "Confirm Navigation. There are unsaved changes in your project settings. Are you sure you want to leave this page? [Stay on this page][Leave this page]""
 
 The available categories are: "Analysis," "Communication," "Data," "Hypothesis," "Instrumentation," "Methods and Measures," "Procedure," "Project," "Software," "Other," "Uncategorized"
 
 .. _todo: log above as enhancement
 
-For admins and read+write contributors on a project or component, the next section allows users to edit the title and description. There is one field for "Title" and one field for "Description," followed by "Save Changes" and "Cancel" buttons. 
+For admins and read+write contributors on a project or component, the next section allows users to edit the title and description. There is one field for "Title" and one field for "Description."
 
-.. TODO:: add in information about read-only permissions (likely not visible at all) and what happens if you make a change + don't save.
+Below this are two buttons::
+
+    [Cancel][Save Changes]
+
+These buttons are active regardless of whether or not a user has made a change in the text fields. Clicking "Save Changes" produces green inline text below the buttons::
+
+Category updated successfully
+
+Leaving the page without cancelling or clicking "Save Changes" produces a warning for the user::
+
+    "Confirm Navigation. There are unsaved changes in your project settings. Are you sure you want to leave this page? [Stay on this page][Leave this page]""
+
+
+.. TODO:: add in information about read-only permissions (likely not visible at all)
 
 For admins on a project or component, another section is visible in the Configure Project panel. Below the Title and Description
 fields is text that explains::

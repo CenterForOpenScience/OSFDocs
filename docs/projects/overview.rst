@@ -117,6 +117,8 @@ with read+write or admin priviliges see "No wiki content" displayed inside the p
 wiki pages with content, but has no content on the Home wiki page, the panel still displays "No wiki content." If the project
 is being viewed by a non-contributor and the Home wiki has no content, then the widget is not displayed at all.
 
+If there is content in the home wiki page, users and non-contributors will see a "Read more" link at the bottom of the wiki widget. This link directs the user to the wiki page.
+
 .. todo:: Ask Erin if it makes sense to hide the widget if there are other pages—especially hide from read only contributors.
 
 Below the Wiki widget is the Files widget.  In the upper right corner of the widget is a button that links the user to the Files page.
@@ -194,8 +196,11 @@ and selects any of the available options. If the user selects a category but doe
 
     This field is required.
 
-After clicking the "Add" button, the button becomes deactivated and reads "Adding" until the page refreshes and the user is brought into the
-new component. If the user selected to add contributors from the parent project, they are all added at the same permissions levels as the parent. 
+After clicking the "Add" button, the button becomes deactivated and reads "Adding" until the page refreshes. The user remains on the Project Overview page, and there is a blue dismissable alert at the top of the page::
+
+    Your component was created successfully. You can keep working on the project page below, or go to the new component.
+
+If the user selected to add contributors from the parent project, they are all added at the same permissions levels as the parent. 
 
 Clicking the "Add Links" button opens a modal::
 
@@ -229,12 +234,6 @@ and a collapsible recent activity section. If one of the items is private, to th
 is public, there is no symbol. Titles link to the project/component/link's overview page. Below the titles are the names of the first three contributors;
 if there are more contributors, they are indicated by the addition of "& __ more." Clicking on a contributor's name brings the user to the contributor's
 public profile. Clicking on "& __ more" brings the user to the overview page for the project/component/link.
-
-Below the list of contributors is a bar indicating the number of contributions. The bars are proportional to one another, meaning that
-the component with the most contributions to it is full, and every other bar is a percentage of that longest bar. Blue portions of the bar
-indicate contributions made by other users. Green portions indicate contributions made by the user themself. The number of contributions
-is listed below the bar—these numbers only account for contributions to that project/component/link, not the cumulative number of contributions
-to that element and its children.
 
 To the right of the element's title is a caret indicating that there is expandable content. Clicking the caret expands the element's information
 to include a "Recent Activity" section. In this section, on the left, are dates and times of logged actions. On the right is a description of each action.
