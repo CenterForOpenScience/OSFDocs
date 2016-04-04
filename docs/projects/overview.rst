@@ -117,6 +117,8 @@ with read+write or admin priviliges see "No wiki content" displayed inside the p
 wiki pages with content, but has no content on the Home wiki page, the panel still displays "No wiki content." If the project
 is being viewed by a non-contributor and the Home wiki has no content, then the widget is not displayed at all.
 
+If there is content in the home wiki page, users and non-contributors will see a "Read more" link at the bottom of the wiki widget. This link directs the user to the wiki page.
+
 .. todo:: Ask Erin if it makes sense to hide the widget if there are other pages—especially hide from read only contributors.
 
 Below the Wiki widget is the Files widget.  In the upper right corner of the widget is a button that links the user to the Files page.
