@@ -196,8 +196,11 @@ and selects any of the available options. If the user selects a category but doe
 
     This field is required.
 
-After clicking the "Add" button, the button becomes deactivated and reads "Adding" until the page refreshes and the user is brought into the
-new component. If the user selected to add contributors from the parent project, they are all added at the same permissions levels as the parent. 
+After clicking the "Add" button, the button becomes deactivated and reads "Adding" until the page refreshes. The user remains on the Project Overview page, and there is a blue dismissable alert at the top of the page::
+
+    Your component was created successfully. You can keep working on the project page below, or go to the new component.
+
+If the user selected to add contributors from the parent project, they are all added at the same permissions levels as the parent. 
 
 Clicking the "Add Links" button opens a modal::
 
