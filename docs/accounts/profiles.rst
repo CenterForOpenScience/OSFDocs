@@ -17,7 +17,7 @@ history is the final tab.
 Social information is listed in rows. The social account name (e.g. LinkedIn or Twitter) is listed on the left and a link to the
 profile is on the right.
 
-Employment information is listed in a table. Table headers include "institution," "department,"
+Employment information is listed in a table. Table headers include "institution," "department/institute,"
 "title," "start date," and "end date." If no employment information is shared, only the table headers are visible.
 
 .. todo:: describe each display format for social.
@@ -317,7 +317,7 @@ Employment Information
 
 Employment information can be updated by clicking on the "Employment" tab on the "Profile Information" page. By default,
 there are empty fields provided for one position. This is indicated by a well labeled "Position 1." The empty fields for the
-user to fill in are: "Institution/Employer," "Department," "Job Title," "Start Date," and "End Date" or "Ongoing." The
+user to fill in are: "Institution/Employer," "Department/Institute," "Job Title," "Start Date," and "End Date" or "Ongoing." The
 "Ongoing" option is a checkbox. Below the "Ongoing" option is a green button labeled "Add another." Below this button are "Cancel" and "Save" buttons.
 
 Clicking the "Add another" button adds new empty fields under the heading "Position 2." When multiple positions are listed,
@@ -328,7 +328,7 @@ to the right of the position number are instructions::
 To the right of this is a red "Remove" link.  Clicking the "Remove" link immediately removes the position and its corresponding
 fields.
 
-Users can enter any text into the first three fields of a position—"Institution/Employer," "Department," and "Job Title." If the user
+Users can enter any text into the first three fields of a position—"Institution/Employer," "Department/Institute," and "Job Title." If the user
 tries to enter information for any field but does not fill in the "Institution/Employer" field, a popover appears over the latter that reads::
 
     Please fill out this field.
