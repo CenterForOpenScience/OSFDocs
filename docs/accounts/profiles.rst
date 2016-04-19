@@ -131,7 +131,7 @@ If the user enters a web address
 with no protocol indicated, when they click out of the field the protocol will be automatically added. Entering a domain with no TLD (e.g. .com or .org)
 or entering a TLD and no domain and attempting to save the changes by clicking the "Save" button produces red text below the button::
 
-    Could not update settings
+    Please enter a valid website
 
 The text disappears after several seconds.
 
