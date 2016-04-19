@@ -312,7 +312,7 @@ If the user tries to remove him or herself as a contributor when s/he is the onl
 
 View-only Links
 --------------
-**Purpose:** View-only Links allow users to share the contents of private projects.
+**Purpose:** View-only Links allow users to share the contents of private (and public) projects.
 
 Only admins on a project can see the View-only Links section on the Contributors page. The section is below the Contributors table.
 To the right of the "View-only Links" title is a green "Add" button. Below the title are instructions::
@@ -358,7 +358,7 @@ column reads yes—otherwise it says no. On the far right of the table is a red 
 
 Removing the link makes the link inactive and removes it from the table.
 
-Users can share the URL for a view only link with anyone. Anyone with the link can visit the page to see the project's contents—
+Users can share the URL for a view-only link with anyone. Anyone with the link can visit the page to see the project's contents—
 even if it is private and even if they do not have an OSF account.  When a visitor follows a View-only Link there is a blue, non-dismissable
 alert at the top of the page::
 
@@ -366,5 +366,7 @@ alert at the top of the page::
 
 If the link was anonymous, the contributors list reads "Anonymous Contributors" instead of providing the names of the contributors. Activity
 logs replace usernames with "A user." "Forks" and "Registrations" tabs are not shared via anonymized view-only links because contributors' names may be listed on these projects. Manually navigating to the Forks or Registrations page using an anonymized view-only link returns "Forbidden" error. 
+
+Anonymized view-only links may be created for public projects. 
 
 "Forks" and "Registrations" are shared in non-anonymized view-only links. 
