@@ -3,7 +3,7 @@
 Registrations create a read only copy of a project. Admins can create a registration of a project, and all sub-projects and components
 to which they also have admin rights by visiting the registrations page via their project's grey navigation bar.
 
-On the registrations page, all pending, retracted, and completed registrations are listed. Each registration lists its project name,
+On the registrations page, all pending, withdrawn, and completed registrations are listed. Each registration lists its project name,
 registration date and time, contributors, and contributions, in the same format as provided for components on the
 :ref:`Project Overview <component-format>`.
 
@@ -57,11 +57,11 @@ Creating a Registration
 Clicking "New Registration" on a project's registrations page opens a modal that reads::
 
     Register
-    Registration creates a frozen version of the project that can never be edited or deleted but can be retracted. Your original project remains editable but will now have the registration linked to it. Things to know about registration:
+    Registration creates a frozen version of the project that can never be edited or deleted but can be withdrawn. Your original project remains editable but will now have the registration linked to it. Things to know about registration:
     *Ensure your project is in the state you wish to freeze before registering.
     *Consider turning links into forks.
     *Registrations can have embargo periods for up to four years. If you choose an embargo period, the registration will automatically become public when the embargo expires.
-    *Retracting a registration removes the contents of the registrations but will leave behind a log showing when the registration was created and retracted.
+    *Withdrawing a registration removes the contents of the registrations but will leave behind a log showing when the registration was created and retracted.
     Continue your registration by selecting a registration form:
     *Open-Ended Registration
     *OSF-Standard Pre-Data Collection Registration
