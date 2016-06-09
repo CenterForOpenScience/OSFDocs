@@ -440,7 +440,9 @@ Clicking the “Request” button displays green, dismissible growlbox notificat
     An OSF administrator will contact you shortly to confirm your deactivation request.
 
 An email is sent to support@osf.io listing OSF user’s GUID and primary email address. The “Request Deactivation” button
-is disabled, but is enabled on refresh.
+is disabled. On refresh, a message appears::
+
+    Your account is currently pending deactivation. 
 
 When a request is sent, a team evaluates the situation before communicating with user.
 
