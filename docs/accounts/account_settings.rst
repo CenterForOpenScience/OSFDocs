@@ -444,6 +444,8 @@ is disabled. On refresh, a message appears::
 
     Your account is currently pending deactivation. 
 
+This message persists until the account is deactivated.
+
 When a request is sent, a team evaluates the situation before communicating with user.
 
 .. todo:: Elaborate on the following:
