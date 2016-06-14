@@ -206,9 +206,9 @@ Clicking the link brings the user to the registration with the following alert a
 
     This project is currently pending registration, awaiting approval from project administrators. This registration will
     be final and enter the embargo period when all project administrators approve the registration or 48 hours pass,
-    whichever comes first.
+    whichever comes first. [Cancel Registration]
 
-If no action is taken by any administrator, the registration is approved.
+The Cancel Registration button appears only for Project Administrators. If no action is taken by any administrator, the registration is approved. The Cancel Registration button appears only for Project Administrators.
 
 If a user attempts to visit a link to or approve a cancelled registration, they are brought to a page that reads::
 
@@ -284,7 +284,9 @@ Visiting the embargoed registration before it is approved shows a non-dismissabl
 
     This project is currently pending registration, awaiting approval from project administrators. This registration will
     be final and enter the embargo period when all project administrators approve the registration or 48 hours pass,
-    whichever comes first. The embargo will keep the registration private until the embargo period ends.
+    whichever comes first. The embargo will keep the registration private until the embargo period ends. [Cancel Registration]
+
+The Cancel Registration button appears only for Project Administrators.
 
 After an embargo is enacted, a red non-dismissable alert is shown at the top of the page::
 
