@@ -315,6 +315,35 @@ Public components or projects in an embargo cannot be made private.
 
 After an embargo ends, the registration and its components are made public.
 
+End embargo early
+---------------
+If an embargoed registration is already approved, it may be made public by the project administrators. One the registration page, a "Make Public" button appears. Clicking it generates the following modal::
+
+    End embargo early
+    By clicking confirm, an email will be sent to project administrator(s) to approve ending the embargo. If approved, this registration, including any components, will be made public immediately. This action is irreversible.
+    [Cancel] [Confirm]  
+
+Selecting "Confirm" reveals a green dismissable alert at the top of the page::
+
+    Email sent
+    The administrator(s) can approve or cancel the action within 48 hours. If 48 hours pass without any action taken, then the registration will become public.
+
+The following email will be sent to project contributors::
+
+    Hello [username],
+
+    You initiated a request to end the embargo for a registration of [project name]. The embargoed registration can be viewed here: URL
+
+    To approve this change and to make this registration public immediately, click the following link: URL
+
+    To cancel this change, click the following link: URL
+
+    Sincerely yours,
+
+    The OSF Robots
+
+Clicking the disapproval link will immediately cancel this request and the original embargo date will remain intact. This registration will be made public when all project administrators approve the change or 48 hours pass, whichever comes first.
+
 Retractions
 ---------------
 **Purpose:** Retractions allow admins to make the contents of a registration private.
