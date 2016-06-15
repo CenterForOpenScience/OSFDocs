@@ -101,6 +101,14 @@ registration's overview.
 When visiting the :ref:`Project Organizer <organizer>`, a project or component that is still being archived will have "[Archiving]"
 written to the right of its title.
 
+Registration failed
+-----------------
+Occasionally, a registration will fail. When a registration fails, the following modal will appear::
+
+    Registration failed
+    There was a problem completing your registration. Please try again later. If this should not have occured and the issue persists, please report it to support@osf.io. 
+    [Back to project]
+
 Creating a registration in Preregistration Challenge workflow
 ------------
 User navigates from cos.io/prereg to osf.io/prereg, where the user is greeted by two options: login to the OSF or create a new account. 
