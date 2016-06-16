@@ -56,18 +56,18 @@ Creating a Registration
 
 Clicking "New Registration" on a project's registrations page opens a modal that reads::
 
-    Register
-    Registration creates a frozen version of the project that can never be edited or deleted but can be retracted. Your original project remains editable but will now have the registration linked to it. Things to know about registration:
+    Registration creates a frozen version of the project that can never be edited or deleted but can be withdrawn. Your original project remains editable but will now have the registration linked to it. Things to know about registration:
     *Ensure your project is in the state you wish to freeze before registering.
     *Consider turning links into forks.
     *Registrations can have embargo periods for up to four years. If you choose an embargo period, the registration will automatically become public when the embargo expires.
-    *Retracting a registration removes the contents of the registrations but will leave behind a log showing when the registration was created and retracted.
+    *Withdrawing a registration removes the contents of the registrations but will leave behind a log showing when the registration was created and withdrawn.
     Continue your registration by selecting a registration form:
-    *Open-Ended Registration
-    *OSF-Standard Pre-Data Collection Registration
-    *Replication Recipe (Brandt et al., 2013): Pre-Registration
-    *Replication Recipe (Brandt et al, 2013): Post-Completion
-    *Prereg Challenge
+    *Prereg Challenge 
+    *Open-Ended Registration 
+    *OSF-Standard Pre-Data Collection Registration 
+    *Replication Recipe (Brandt et al., 2013): Pre-Registration 
+    *Replication Recipe (Brandt et al., 2013): Post-Completion 
+    *Pre-Registration in Social Psychology (van 't Veer & Giner-Sorolla, 2016): Pre-Registration 
     [Cancel][Create Draft]
 
 The user selects a template and clicks create draft. The user is provided a form through which they can provide information about their project and
