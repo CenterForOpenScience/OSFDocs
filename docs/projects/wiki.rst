@@ -81,9 +81,21 @@ the field. To cancel the change, the user can click on the grey ‘x’ button t
 contents of the field, the user can click on a small ‘x’ within the text field. If the user makes changes but clicks out
 of the text box without saving the edits, the changes are lost.
 
+Commenting on Wikis
+---------------
+Users have the ability to comment on wiki pages. Under the "Commenting" section of "Settings," users can select::
+    
+    Commenting
+    *Only contributors can post comments
+    *When the project is public, any OSF user can post comments
+    [Save]
+
+Comments are made by selecting the "Comments" text bubble icon to the far right of the upper project band (right of "Settings"). Selecting the icon will display a panel where comments are viewable and may be added. 
 
 Publicly Editable Wikis
 ^^^^^^^^^^^^^^
 **Purpose:** Publicly editable wikis allow users who are not listed as contributors on a project to edit the wiki contents.
 
 .. _todo: Update with .48 release
+
+
