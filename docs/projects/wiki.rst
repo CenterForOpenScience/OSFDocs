@@ -27,7 +27,7 @@ versions are being compared.
 Additions made to the wiki since the version being viewed was saved are highlighted in green in the Compare panel. Deletions
 are in red strikethrough text.
 
-Contributors with read+write or admin permissions can edit the wiki. These contributors see a third option in the upper right toggle: "Edit."
+Contributors with read+write or admin permissions can edit the wiki. If there is no content in the wiki, it will appear in edit mode by default. If there is already content, these contributors see a third option in the upper right toggle: "Edit."
 Selecting "Edit" opens an additional panel on the page. Within this panel is a text box the user can type into. Line numbers appear on the left hand side of the edit pane and the preview pane. Formatting options are available
 at the top of the page, or the user can make use of Markdown syntax. While the user types, the editor will suggest Markdown syntax. While editing, if the View panel is open, it displays a preview
 of the changes. The user can change this via the dropdown, however.
@@ -81,9 +81,21 @@ the field. To cancel the change, the user can click on the grey ‘x’ button t
 contents of the field, the user can click on a small ‘x’ within the text field. If the user makes changes but clicks out
 of the text box without saving the edits, the changes are lost.
 
+Commenting on Wikis
+---------------
+Users have the ability to comment on wiki pages. Under the "Commenting" section of "Settings," users can select::
+    
+    Commenting
+    *Only contributors can post comments
+    *When the project is public, any OSF user can post comments
+    [Save]
+
+Comments are made by selecting the "Comments" text bubble icon to the far right of the upper project band (right of "Settings"). Selecting the icon will display a panel where comments are viewable and may be added. 
 
 Publicly Editable Wikis
 ^^^^^^^^^^^^^^
 **Purpose:** Publicly editable wikis allow users who are not listed as contributors on a project to edit the wiki contents.
 
 .. _todo: Update with .48 release
+
+

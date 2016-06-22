@@ -42,14 +42,14 @@ Configure Notification Preferences
 **Purpose:** Configuring notification preferences allows the user to choose how often they would like to receive email updates
 about activity related to their OSF projects and comments.
 
-The Configure Notification Preferences panel includes two sections. The first is titled "User Notifications," the second "Project Notifications."
+The Configure Notification Preferences panel includes two sections. The first is titled "Default Notification Settings," the second "Project Notifications."
 By default, there are no project notifications to configure.
 
-Under "User Notifications" there is a dropdown to manage the frequency of emails regarding "replies to your comments." In the
-dropdown next to this category, there are three options: "none," "emails," and "email digest." Selecting "none"—the default choice—will
+Under "Default Notification Settings" there is a dropdown to manage the frequency of emails regarding "replies to your comments." In the
+dropdown next to this category, there are three options: "Never," "Instantly," and "Daily." Selecting "Never" will
 ensure that the user does not receive any email notifications about replies to their
-:ref:`comments <commenting>`. Selecting "emails" will mean that they will receive immediate notification via
-email about replies to their comments. Finally, selecting "email digest" will send them an email with a summary of the commenting
+:ref:`comments <commenting>`. Selecting "Instantly" - the default setting - will mean that they will receive immediate notification via
+email about replies to their comments. Finally, selecting "Daily" will send them an email with a summary of the commenting
 activity for that day—if any comments have been left.
 
 Under "Project Notifications" no projects will appear unless the user has visited a :ref:`project's settings <project-settings>`
@@ -66,9 +66,10 @@ individual components as well as branches of it that contain sub-components.
 
 Below each project or component in the tree is a row that reads::
 
-    Comments Added
+    Comments added
+    Files updated
 
-To the right of this is a dropdown with the three options: "none," "emails," and "email digest." The user can click to make a change.
+To the right of these is a dropdown with the three options: "Never," "Instantly," and "Daily." The user can click to make a change.
 
 Collapsing a component hides the "Comments Added" row, including the dropdown.
 

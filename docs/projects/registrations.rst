@@ -56,18 +56,18 @@ Creating a Registration
 
 Clicking "New Registration" on a project's registrations page opens a modal that reads::
 
-    Register
-    Registration creates a frozen version of the project that can never be edited or deleted but can be retracted. Your original project remains editable but will now have the registration linked to it. Things to know about registration:
+    Registration creates a frozen version of the project that can never be edited or deleted but can be withdrawn. Your original project remains editable but will now have the registration linked to it. Things to know about registration:
     *Ensure your project is in the state you wish to freeze before registering.
     *Consider turning links into forks.
     *Registrations can have embargo periods for up to four years. If you choose an embargo period, the registration will automatically become public when the embargo expires.
-    *Retracting a registration removes the contents of the registrations but will leave behind a log showing when the registration was created and retracted.
+    *Withdrawing a registration removes the contents of the registrations but will leave behind a log showing when the registration was created and withdrawn.
     Continue your registration by selecting a registration form:
-    *Open-Ended Registration
-    *OSF-Standard Pre-Data Collection Registration
-    *Replication Recipe (Brandt et al., 2013): Pre-Registration
-    *Replication Recipe (Brandt et al, 2013): Post-Completion
-    *Prereg Challenge
+    *Prereg Challenge 
+    *Open-Ended Registration 
+    *OSF-Standard Pre-Data Collection Registration 
+    *Replication Recipe (Brandt et al., 2013): Pre-Registration 
+    *Replication Recipe (Brandt et al., 2013): Post-Completion 
+    *Pre-Registration in Social Psychology (van 't Veer & Giner-Sorolla, 2016): Pre-Registration 
     [Cancel][Create Draft]
 
 The user selects a template and clicks create draft. The user is provided a form through which they can provide information about their project and
@@ -100,6 +100,14 @@ registration's overview.
 
 When visiting the :ref:`Project Organizer <organizer>`, a project or component that is still being archived will have "[Archiving]"
 written to the right of its title.
+
+Registration failed
+-----------------
+Occasionally, a registration will fail. When a registration fails, the following modal will appear::
+
+    Registration failed
+    There was a problem completing your registration. Please try again later. If this should not have occured and the issue persists, please report it to support@osf.io. 
+    [Back to project]
 
 Creating a registration in Preregistration Challenge workflow
 ------------
@@ -307,67 +315,95 @@ Public components or projects in an embargo cannot be made private.
 
 After an embargo ends, the registration and its components are made public.
 
-Retractions
+End embargo early
 ---------------
-**Purpose:** Retractions allow admins to make the contents of a registration private.
+If an embargoed registration is already approved, it may be made public by the project administrators. One the registration page, a "Make Public" button appears. Clicking it generates the following modal::
 
-A registration that is not embargoed is public. Users cannot "undo" a registration or make its contents private, but admins
-do have the option to retract the registration. To retract a registration the admin visits the registration's settings page.
-Non-admins do not see the link to the Settings page.
+    End embargo early
+    By clicking confirm, an email will be sent to project administrator(s) to approve ending the embargo. If approved, this registration, including any components, will be made public immediately. This action is irreversible.
+    [Cancel] [Confirm]  
 
-Only the entirety of a registration can be retracted—individual components cannot be retracted. If an admin visits a component's
-settings page to attempt to retract the registration of the individual component, a panel reads::
+Selecting "Confirm" reveals a green dismissable alert at the top of the page::
 
-    Retract Registration
-    Retracting children components of a registration is not allowed. Should you wish to retract this component, please
-    retract its parent registration here.
+    Email sent
+    The administrator(s) can approve or cancel the action within 48 hours. If 48 hours pass without any action taken, then the registration will become public.
 
-Visiting the settings page of the parent registration shows a panel where the admin can retract the registration:
-
-    Retract Registration
-    Retracting a registration will remove its content from the OSF, but leave basic metadata behind. The title of a
-    retracted registration and its contributor list will remain, as will justification or explanation of the retraction,
-    should you wish to provide it. Retracted registrations will be marked with a retracted tag.
-    [Retract Registration]
-
-Clicking "Retract Registration" brings the user to a page where they must provide a justification::
-
-    Retract Registration
-    Retracting a registration will remove its content from the OSF, but leave basic metadata behind. The title of a retracted
-    registration and its contributor list will remain, as will justification or explanation of the retraction, should you
-    wish to provide it. Retracted registrations will be marked with a "retracted" tag. This action is irreversible.
-    Please provide your justification for retracting this registration.
-
-A text field allows the user to enter their reason for retracting the registration. No justification is required, however.
-
-The user must then type the first word of the name of the project into an additional text field to continue.
-
-After retracting the registration, they are brought to the registration's overview where a non-dismissable alert is visible at the top
-of the page::
-
-    This project is currently pending entering into a retracted state.
-
-Visiting the settings shows, instead of the "Retract Registration" button, text that reads::
-
-    This registration is already pending a retraction.
-
-On the registrations page of the registered project, and next to the registered components titles on the registration's overview,
-a tag reads "Pending Retraction."
-
-Admins on the project receive a notification that the retraction has been initiated::
+The following email will be sent to project contributors::
 
     Hello [username],
 
-    We just wanted to let you know that [username] has initiated a retraction for the following registration: URL
+    You initiated a request to end the embargo for a registration of [project name]. The embargoed registration can be viewed here: URL
 
-    To approve this action click the following link: URL
+    To approve this change and to make this registration public immediately, click the following link: URL
 
-    To disapprove this action, click the following link: URL
-
-    Note: Clicking the disapproval link will immediately cancel the pending retraction. If you neither approve nor disapprove
-    the retraction within 48 hours of midnight tonight (EDT) the registration will become retracted. This operation is irreversible.
+    To cancel this change, click the following link: URL
 
     Sincerely yours,
+
+    The OSF Robots
+
+Clicking the disapproval link will immediately cancel this request and the original embargo date will remain intact. This registration will be made public when all project administrators approve the change or 48 hours pass, whichever comes first.
+
+Withdrawals
+---------------
+**Purpose:** Withdrawals allow admins to make the contents of a registration private.
+
+A registration that is not embargoed is public. Users cannot "undo" a registration or make its contents private, but admins
+do have the option to withdraw the registration. To withdraw a registration the admin visits the registration's settings page.
+Non-admins do not see the link to the Settings page.
+
+Only the entirety of a registration can be withdrawn—individual components cannot be withdrawn. If an admin visits a component's
+settings page to attempt to withdraw the registration of the individual component, a panel reads::
+
+    Withdraw Registration
+    Withdrawing children components of a registration is not allowed. Should you wish to withdraw this component, please
+    withdraw its parent registration here.
+
+Visiting the settings page of the parent registration shows a panel where the admin can withdraw the registration:
+
+    Withdraw Registration
+    Withdrawing a registration will remove its content from the OSF, but leave basic metadata behind. The title of a
+    withdrawn registration and its contributor list will remain, as will justification or explanation of the withdrawal,
+    should you wish to provide it. Withdrawn registrations will be marked with a withdrawn tag.
+    [Withdraw Registration]
+
+Clicking "Withdraw Registration" brings the user to a page where they must provide a justification::
+
+    Withdraw Registration
+    Withdrawing a registration will remove its content from the OSF, but leave basic metadata behind. The title of a withdrawn
+    registration and its contributor list will remain, as will justification or explanation of the withdrawal, should you
+    wish to provide it. Withdrawn registrations will be marked with a "withdrawn" tag. This action is irreversible.
+    Please provide your justification for withdrawing this registration.
+
+A text field allows the user to enter their reason for withdrawing the registration. No justification is required, however.
+
+The user must then type the first word of the name of the project into an additional text field to continue.
+
+After withdrawing the registration, they are brought to the registration's overview where a non-dismissable alert is visible at the top
+of the page::
+
+    This project is currently pending entering into a withdrawn state.
+
+Visiting the settings shows, instead of the "Withdraw Registration" button, text that reads::
+
+    This registration is already pending withdrawal.
+
+On the registrations page of the registered project, and next to the registered components titles on the registration's overview,
+a tag reads "Pending withdrawal."
+
+The user will receive a notification that the withdrawal has been initiated::
+
+    Hello [username],
+
+    You initiated a withdrawal of your registration t3st. The registration can be viewed here: URL
+
+    If approved, the registration will be marked as withdrawn. Its content will be removed from the OSF, but leave basic metadata behind. The title of a withdrawn registration and its contributor list will remain, as will justification or explanation of the withdrawal, should you wish to provide it.
+
+    To approve this withdrawal, click the following link: URL
+
+    To cancel this withdrawal, click the following link: URL
+
+    Note: Clicking the disapproval link will immediately cancel the pending withdrawal. If you neither approve nor disapprove the withdrawal within 0 hours of midnight tonight (EDT) the registration will become withdrawn. This operation is irreversible. Sincerely yours,
 
     The OSF Robots
 
@@ -375,43 +411,43 @@ Non-admins also receive an email::
 
     Hello [username],
 
-    We just wanted to let you know that [retractor username] has requested a retraction for the following registration: URL
+    We just wanted to let you know that [withdraw-initiator username] has requested a withdrawal for the following registration: URL
 
     Sincerely yours,
 
     The OSF Robots
 
-If an admin disapproves of the retraction, they are brought to the registration where a green dismissable alert is shown at the
+If an admin disapproves of the withdrawal, they are brought to the registration where a green dismissable alert is shown at the
 top of the page::
 
-    Your disapproval has been accepted and the retraction has been cancelled.
+    Your disapproval has been accepted and the withdrawal has been cancelled.
 
-If an admin disapproves, but then an admin attempts to approve the retraction, they are brought to a pages that reads::
+If an admin disapproves, but then an admin attempts to approve the withdrawal, they are brought to a pages that reads::
 
     Invalid Token
-    This registration is not a pending retraction.
+    This registration is not a pending withdrawal.
 
-If an admin approves the retraction, they are brought to the retraction's page. At the top is a green dismissable alert::
+If an admin approves the withdrawal, they are brought to the withdrawal's page. At the top is a green dismissable alert::
 
     Your approval has been accepted.
 
-Retraction pages show the registration's title, contributors, type of registration supplement (though no link to contents),
+Withdrawn pages show the registration's title, contributors, type of registration supplement (though no link to contents),
 date of the project's creation, date of the registration, and description. At the top of the page is a red, non-dismissable alert
 that reads::
 
-    This project is a retracted registration of this project; the content of the project has been taken down for the reason(s) stated below.
+    This project is a withdrawn registration of this project; the content of the project has been taken down for the reason(s) stated below.
 
-Below the description is the "Justification for Retraction" section. The admin's justification is provided below the header. If
+Below the description is the "Justification for Withdrawal" section. The admin's justification is provided below the header. If
 no justification was entered, the section reads::
 
-    No justification provided during retraction.
+    No justification provided during withdrawal.
 
 No other options or widgets are shown on the page.
 
-If a user visits the registered project's registrations page, the retracted registration is still listed, with a link to the
-retraction page. A red tag to the left of the link reads "Retracted."
+If a user visits the registered project's registrations page, the withdrawn registration is still listed, with a link to the
+withdrawal page. A red tag to the left of the link reads "Withdrawn."
 
-Retracted registrations are shown in search results of the OSF. To the right of their name, in the result, is "(Retracted Registration)."
+Withdrawn registrations are shown in search results of the OSF. To the right of their name, in the result, is "(Withdrawn Registration)."
 
 DOIs and ARKs
 ------------------
