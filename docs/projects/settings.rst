@@ -15,7 +15,7 @@ is visible on the settings page.
 
 
 Project/Component
-^^^^^^^^^^^^^^^^^
+------------
 **Purpose:** Configuring the project or component allows the user to update the category, edit the title or description, or delete the project/component.
 
 The first item in the Project panel is "Category." A dropdown allows admins to select a category to assign to the project.
@@ -102,16 +102,16 @@ is shown at the top of the page::
     Project deleted
 
 Select Add-ons
-^^^^^^^^^^^^^^^^
+------------
 See :ref:`the information about add-ons here <add-ons>`.
 
 Add-ons
-^^^^^^^^^^^^^^^^^^^
+------------
 When an add-on has been activated, an additional section is added to the page—"Configure Add-ons." See
 :ref:`the information about add-ons here <add-ons>`.
 
 Wiki
-^^^^^^^^^^^^^^
+------------
 **Purpose:** Configuring the wiki allows Admins and Read+Write contributors to enable or disble the wiki, and change who can edit a wiki page.
 
 If the user is an Admin or Read+Write contributor, a checkbox appears along with the text::
@@ -151,7 +151,7 @@ If a user changes to "Contributors (with write access)" from "All OSF users," th
 After several seconds, the dropdown returns. No confirmation modal is shown.
 
 Commenting
-^^^^^^^^^^^^^^^
+------------
 **Purpose:** Admins can configure the commenting preferences to determine who can comment on a project.
 
 
@@ -170,9 +170,27 @@ corner of their Project Overview—clicking opens the :ref:`Comments panel <comm
 
 Leaving the page without clicking "Save" does not produce a warning for the user.
 
+Project Affiliation / Branding
+------------
+**Purpose:** Users can affiliate projects with institutions that have created OSF for Institutions accounts.
+
+In the Project Affiliation / Branding panel, text below read::
+
+    Projects can be affiliated with institutions that have created OSF for Institutions accounts. This allows:
+    institutional logos to be displayed on public projects 
+    public projects to be discoverable on specific institutional landing pages 
+    single sign-on to the OSF with institutional credentials
+    FAQ
+
+Underneath the text reads:: 
+
+    Available institutions:
+    [institution name] [Add]
+
+Available institutions are determined by the user's sign-on. If logged in under an OSF for Institutions single sign-on feature, that institution will be available to add. Alternatively, if the user's login email is associated with an OSF4I partner, the option to add will be available. 
 
 Email Notifications
-^^^^^^^^^^^^^^^
+------------
 **Purpose:** All users can modify the frequency with which they would like to receive notifications about the project.
 
 
