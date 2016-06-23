@@ -1,6 +1,6 @@
 
-**Purpose:** The Getting Started page gives instructions on how to use OSF features.
+**Purpose:** The help page gives instructions on how to use OSF features.
 
-How to use the OSF is described in detail, broken down by feature. A video accompanies each feature.
+How to use the OSF is described in detail, broken down by feature.
 
-This page is accessible at https://osf.io/getting-started/.
+This page is accessible at help.osf.io.
