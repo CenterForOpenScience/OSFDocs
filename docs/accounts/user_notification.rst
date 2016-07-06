@@ -50,7 +50,7 @@ dropdown next to this category, there are three options: "Never," "Instantly," a
 ensure that the user does not receive any email notifications about replies to their
 :ref:`comments <commenting>`. Selecting "Instantly" - the default setting - will mean that they will receive immediate notification via
 email about replies to their comments. Finally, selecting "Daily" will send them an email with a summary of the commenting
-activity for that day—if any comments have been left.
+activity for that day—if any comments have been left. "Default Notification Settings" will apply universally to all user projects unless the notification settings for an individual project are changed. 
 
 Under "Project Notifications" no projects will appear unless the user has visited a :ref:`project's settings <project-settings>`
 and configured its notification settings. By default, when no projects are listed, yellow text to the right of the "Project Notifications"

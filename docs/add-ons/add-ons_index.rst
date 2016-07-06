@@ -668,6 +668,22 @@ Clicking "Disconnect" removes the table and connected folder information. The "D
 that reads "Import Account from Profile." Alternatively, the user can uncheck the add-on from the "Select Add-ons" list and save their
 changes.
 
+.. _external link:
+Configuring External Link
+*************
+**Purpose:** Adding an external link allows users to redirect project visitors to the provided URL. 
+
+Users who select the external link add-on are shown the Configure Add-ons pane. The text reads::
+
+    External Link
+    URL
+    Label
+    [Save]
+
+The user may enter the URL beneath URL and have the option to add a label. When the user enters information and selects "Save," the text reads::
+
+    Successfully linked to URL
+
 .. _mendeley:
 
 Configuring Mendeley
@@ -1496,6 +1512,16 @@ No formatting options are available.
 Selecting the "Revisions" button on the detail page opens the revisions pane. All saved versions of the file are listed.
 The version ID and the date of the commit are available. A download button is shown on the right side of the pane.
 
+Viewing External Link
+******
+**Purpose:** Users can connect a project to an external link. They are prompted to redirect to this link upon entering the OSF project. 
+
+ Once this add-on is configured, visitors to the project will immediately receive a window that reads::
+
+    This project contains a forward to URL
+    [Cancel] [Redirect]
+
+Canceling will cause the user to enter the OSF project. Clicking the link or "Redirect" will replace the current tab with the external link. 
 
 Viewing Mendeley Content
 ******
