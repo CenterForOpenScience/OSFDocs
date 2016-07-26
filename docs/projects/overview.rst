@@ -212,9 +212,17 @@ Below the search buttons are two columns, one labeled "Results" and one labeled 
 
 The user can enter their query in the "Search projects" text field. If they select the "Search Projects" button, all public OSF projects,
 components, and registrations whose title matches their query will be returned. Five results will be displayed, with additional pages listed below (see
-the description of pagination on the :ref:`Watchlist <pagination>` for complete documentation or page listing). To the left of each
-project title is a green square button marked with a '+' sign. On the right is the last name of the first listed contributor to the result.
-If a project or component returned as a result has multiple contributors, "et al." is appended to the first contributor's last name.
+the description of pagination on the :ref:`Watchlist <pagination>` for complete documentation or page listing). Hovering over a project title will reveal the created date and time and the most recent modified date and time in the following format::
+
+    Created: YYYY-MM-DD HH:MM AM/PM
+    Modified: YYYY-MM-DD HH:MM AM/PM
+
+Hovering over a registration title will reveal the registered date and time in the following format::
+
+    Registered: YYYY-MM-DD HH:MM AM/PM
+
+To the left of each project title is a green square button marked with a '+' sign. On the right is the last name of the first listed contributor to the result.
+If a project or component returned as a result has multiple contributors, "et al." is appended to the first contributor's last name. 
 
 Clicking the '+' button adds the result to the "Adding" column. Alternatively, the user can click the "Add all" link to the right of the
 "Results" title to add the results shown on the page to the "Adding" column. When a result is moved to the "Adding" column,
