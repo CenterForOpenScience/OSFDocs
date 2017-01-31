@@ -18,9 +18,9 @@ Users must type someting in the Title field but may leave the others blank. Clic
 	New project created successfully!
 	[Keep working here][Go to new project]
 
-Clicking Keep working here returns the user to the dashboard. Clicking "Go to new project" sends the user to the Project Overview page of his/her new project.
+Clicking the "Keep working here" button returns the user to the dashboard. Clicking the "Go to new project" button sends the user to the Project Overview page of his/her new project.
 
-Below this green button is a text field, "Quick search your projects." Below the text box is a table displaying the 10 most recently updated Projects and Components on which the user is a contributor. Typing in the box filters the listings below according to what is typed. Users may type project/component names or Contributor names to filter. Below this text box is text, Go to My Projects (which links to the Project Organizer) or search (links to osf.io/search) the OSF.  
+Below this green button is a search box that reads "Quick search your projects." Below the search box is a table displaying the 10 most recently updated Projects and Components for which the user is a contributor. Typing in the search box filters the list below according to what is typed (pressing "enter" is not necessary). The user may type project/component names or Contributor names to filter the quick search. Below this search box is a sentence that reads "Go to My Projects to organize your work or search the OSF." In this sentence, "My Projects" and "search" are links. The user can go to "My Projects" (links to the Project Organizer) or "search" (links to osf.io/search) the OSF.  
 
 The table of recently updated projects and components contains 3 columns: Title, Contributors, Modified. The user can sort by date last modified (ascending or descending) and Project or Component title (ascending or descending) by clicking the up or down arrows in the table heading. By default, the most recent 10 projects or components are shown. The user can click the down arrow below these 10 to produce more listings in groups of 10. 
 

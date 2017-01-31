@@ -15,7 +15,7 @@ The Contributors page is divided into two parts. To the left are filtering optio
 The Table section of the Contributors page has an "Add" button to the right of the title. Below the title are instructions
 referring to the table below them::
 
-    Drag and Drop contributors to change listing order.
+    Drag and Drop contributors to change listing order
 
 The table has four columns: "Name," "Permissions," "Bibliographic Contributor," and a remove contributor column. When the user
 hovers over a '?' to the right of "Permissions" a popover appears::

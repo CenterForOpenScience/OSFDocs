@@ -55,6 +55,7 @@ Files Browser. Only titles are searched—not file contents. Elements that do no
 Selecting a result returns the file tree and closes the search field. The selected result is then highlighted within
 the file tree.
 
+.. _OSF-storage:
 Uploading to OSF Storage
 ^^^^^^^^^^^^^^^^^
 **Purpose:** Users can upload files to be stored by the OSF.
