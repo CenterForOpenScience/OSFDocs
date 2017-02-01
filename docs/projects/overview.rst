@@ -269,7 +269,7 @@ tag name.
 
 Recent Activity Widget
 --------------------
-**Purpose:** The Recent Activity widget shows users the logged actions for the viewed project or component and its children.
+**Purpose:** The Recent Activity widget shows users the logged actions for the viewed project or component, its children, and its registrations.
 
 The Recent Activity widget appears below the Tags widget. Below the panel title, "Recent Activity," is muted text that reads::
 
@@ -277,7 +277,7 @@ The Recent Activity widget appears below the Tags widget. Below the panel title,
 
 Times are displayed in local time, and the correct offset is indicated in the above text.
 
-Below this is a list of all logged actions on the project or component and its children, displayed in chronological order with the most recent
+Below this is a list of all logged actions on the project or component, its children, and registrations displayed in chronological order with the most recent
 action listed at the top. Actions are listed in two columns—the left shows the date and time (YYYY-MM-DD HH:MM AM/PM).
 Hovering over a time shows a tooltip with the date and time in UTC.
 

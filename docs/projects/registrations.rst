@@ -47,6 +47,15 @@ The Files widget does not allow for editing of file names, reorganization of fil
 downloads are permitted. Files are saved within their storage add-ons and OSF Storage, grouped into folders. The folders are
 titled "Archive of [storage add-on]." These folders are collapsed by default.
 
+The Recent Actity widget only only shows the original OSF project's activity prior to the registration of that project. Activity related to the registration itself, such as the user's creation of the registration, is not shown in the registration's Recent Activity widget. In other words, the registration's Recent Activity widget is a frozen snapshot of the original OSF project's recent activity. 
+
+Activity pertaining to the creation of the registration is logged into the original OSF project's Recent Activity widget:
+
+*Intiated: the administrator who creates the registration is listed in the Recenty Activity widget as the oen who initiated the registration.
+*Approved: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who approved the registration.
+*Canceled: the first adminstrator to cancel the registration is the only admin listed in the Recent Acvitity widget who canceled the registration.
+*Registered: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who registered the registration.
+
 
 Creating a Registration
 -----------------
