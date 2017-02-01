@@ -104,11 +104,11 @@ The Upload Widget
 
 The Upload widget is expanded automatically when the user arrives on the Add Preprint page.
 
-If the user does not complete the upload widget and clicks inside another widget, has not completed the steps within a widget and clicks inside another widget, a red growlbox will appear in the top right corner of the Add preprint page with a warning icon and a message that reads::
+If the user does not complete the upload widget and clicks inside another widget, has not completed the steps within a widget and clicks inside another widget, an alert will appear in the top right corner of the Add preprint page::
 
     Please complete upload section before continuing
     
-The growbox has a timer. When the timer stops, the growlbox disappears, and the Upload widget remains open.
+The alert has an animated reverse progress bar that functions as a timer. When the animation completes, the alert disappears, and the Upload widget remains open.
 
 The widget contains two options for adding a preprint file::
 
@@ -143,11 +143,11 @@ If a user clicks inside the title field without entering a title, and then click
 
 After entering a title, the user can click "Save and continue" to continue on to the "Discipline" widget.
 
-After clicking "Save and continue," a confirmation message will appear in the top right of the page::
+After clicking "Save and continue," an alert confirming the upload will appear in the top right of the page::
   
     Preprint file uploaded!
 
-This message has a timer. When the timer stops, the message disappears.
+This alert has an animated reverse progress bar that functions as a timer. When the animation completes, the alert disappears.
 
 **Connect preprint to existing OSF project**
 
@@ -553,7 +553,7 @@ The user can then drag and drop the new version of their preprint file onto the 
   
     This is not a version of the current preprint file.
 
-The alert has a timer. When the timer ends, the alert disappears and the Preprint File section closes. 
+The alert has an animated reverse progress bar that functions as a timer. When the animation completes, the alert disappears, and the Preprint File section closes. 
 
 If the user uploads a new version of their preprint file with the same filename as the original, the Preprint File section will close after the user drags and drops the file onto the page. The filename will appear in the section with a version number next to it::
     
