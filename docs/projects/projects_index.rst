@@ -44,6 +44,8 @@ Registrations
 
 .. include:: registrations.rst
 
+.. _preprints:
+
 Preprints
 ***************
 
