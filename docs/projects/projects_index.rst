@@ -47,7 +47,7 @@ Registrations
 Preprints
 ***************
 
-.. _include:: preprint.rst
+.. _include:: preprints.rst
 
 .. _forks:
 
