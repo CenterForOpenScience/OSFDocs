@@ -9,7 +9,7 @@ registration date and time, contributors, and contributions, in the same format 
 
 When no registrations have been made, non-contributors see text explaining this::
 
-    There have been no registrations of this component. For a list of the most viewed and most recent public registrations
+    There have been no registrations of this project. For a list of the most viewed and most recent public registrations
     on the Open Science Framework, click here.
 
 The link provided sends the user to the :ref:`Public Activity page <public-activity>`.
@@ -46,6 +46,15 @@ a copy of the template and the registrant's responses.
 The Files widget does not allow for editing of file names, reorganization of files, or deletion of files, however. Only
 downloads are permitted. Files are saved within their storage add-ons and OSF Storage, grouped into folders. The folders are
 titled "Archive of [storage add-on]." These folders are collapsed by default.
+
+The Recent Actity widget only only shows the original OSF project's activity prior to the registration of that project. Activity related to the registration itself, such as the user's creation of the registration, is not shown in the registration's Recent Activity widget. In other words, the registration's Recent Activity widget is a frozen snapshot of the original OSF project's recent activity. 
+
+Activity pertaining to the creation of the registration is logged into the original OSF project's Recent Activity widget:
+
+*Intiated: the administrator who creates the registration is listed in the Recenty Activity widget as the oen who initiated the registration.
+*Approved: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who approved the registration.
+*Canceled: the first adminstrator to cancel the registration is the only admin listed in the Recent Acvitity widget who canceled the registration.
+*Registered: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who registered the registration.
 
 
 Creating a Registration
@@ -216,7 +225,7 @@ Clicking the link brings the user to the registration with the following alert a
     be final and enter the embargo period when all project administrators approve the registration or 48 hours pass,
     whichever comes first. [Cancel Registration]
 
-The Cancel Registration button appears only for Project Administrators. If no action is taken by any administrator, the registration is approved. The Cancel Registration button appears only for Project Administrators.
+The "Cancel Registration" button appears only for Project Administrators. If no action is taken by any administrator, the registration is approved. If one administrator cancels the registration by either clicking the cancel link in the email or by clicking the "Cancel Registration" button on the registration Overview page, the registration is cancelled and logged in the original project's Recent Activity widget. Until all administrators on a registration have clicked the approval link in the email, any registration administrator can click "Cancel Registration" on the registration's Overview (even if the administrator had formerly approved).
 
 If a user attempts to visit a link to or approve a cancelled registration, they are brought to a page that reads::
 
@@ -349,11 +358,13 @@ Withdrawals
 **Purpose:** Withdrawals allow admins to make the contents of a registration private.
 
 A registration that is not embargoed is public. Users cannot "undo" a registration or make its contents private, but admins
-do have the option to withdraw the registration. To withdraw a registration the admin visits the registration's settings page.
+do have the option to withdraw the registration. Both public and embargoed registrations can be withdrawn. 
+
+To withdraw a registration the admin visits the registration's Settings page.
 Non-admins do not see the link to the Settings page.
 
-Only the entirety of a registration can be withdrawn—individual components cannot be withdrawn. If an admin visits a component's
-settings page to attempt to withdraw the registration of the individual component, a panel reads::
+Only the entirety of a registration (a registered project and its registered components) can be withdrawn—individual components cannot be withdrawn. If an admin visits a component's
+Settings page to attempt to withdraw the registration of the individual component, a panel reads::
 
     Withdraw Registration
     Withdrawing children components of a registration is not allowed. Should you wish to withdraw this component, please
