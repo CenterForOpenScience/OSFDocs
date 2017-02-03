@@ -326,7 +326,7 @@ After an embargo ends, the registration and its components are made public.
 
 End embargo early
 ---------------
-If an embargoed registration is already approved, it may be made public by the project administrators. One the registration page, a "Make Public" button appears. Clicking it generates the following modal::
+If an embargoed registration is already approved, it may be made public by the project administrators. On the registration page, a "Make Public" button appears. Clicking it generates the following modal::
 
     End embargo early
     By clicking confirm, an email will be sent to project administrator(s) to approve ending the embargo. If approved, this registration, including any components, will be made public immediately. This action is irreversible.
