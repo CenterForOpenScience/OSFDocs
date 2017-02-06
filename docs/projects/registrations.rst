@@ -39,15 +39,15 @@ says "read-only" repeatedly. At the top of the page is a non-dismissable blue al
 
 The alert links to the project that the registration is a copy of.
 
-In addition to the Project Overview's :ref:`metadata <overview-metadata>`, there is an additional field, "Registration Supplement."
+In addition to the Project Overview's :ref:`metadata <overview-metadata>`, there is an additional field, "Registration Form."
 This field lists the name of the registration template the registrant used. Clicking the name links the user to a page with
-a copy of the template and the registrant's responses.
+a noneditable copy of the registration form and the registrant's responses.
 
 The Files widget does not allow for editing of file names, reorganization of files, or deletion of files, however. Only
 downloads are permitted. Files are saved within their storage add-ons and OSF Storage, grouped into folders. The folders are
 titled "Archive of [storage add-on]." These folders are collapsed by default.
 
-The Recent Actity widget only only shows the original OSF project's activity prior to the registration of that project. Activity related to the registration itself, such as the user's creation of the registration, is not shown in the registration's Recent Activity widget. In other words, the registration's Recent Activity widget is a frozen snapshot of the original OSF project's recent activity. 
+Moreover, a registration's Recent Actity widget only only shows the original OSF project's activity prior to the creation of the registration. In other words, the registration's Recent Activity widget is a frozen snapshot of the original OSF project's recent activity. Activity related to the registration itself, such as the user's creation of the registration, is only logged into the project's Recent Activity widget and not the registration's. 
 
 Activity pertaining to the creation of the registration is logged into the original OSF project's Recent Activity widget:
 
@@ -55,6 +55,8 @@ Activity pertaining to the creation of the registration is logged into the origi
 *Approved: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who approved the registration.
 *Canceled: the first adminstrator to cancel the registration is the only admin listed in the Recent Acvitity widget who canceled the registration.
 *Registered: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who registered the registration.
+
+The blue Comments icon appears in the top right of the registration Overview page. The project's comments are not carried over to the registration. However, any comments made on the project prior to the registration's creation are logged into both the project and registrations's Recent Activity widget.
 
 
 Creating a Registration
@@ -468,12 +470,12 @@ Public, meaning non-embargoed, registrations can be given DOIs and ARKs. To do s
 click the "Create DOI/ARK" link below the "Date Created" field. Clicking opens a modal::
 
     Create identifiers
-    Are you sure you want to create a DOI and ARK for this project?
+    Are you sure you want to create a DOI and ARK for this project? DOI and ARK identifiers are persistent and will always resolve to this page.
     [Cancel][Create]
 
 Clicking "Create" turns the link to text that reads::
 
-    Creating identifiers
+    Creating DOI and ARK. Please wait...
 
 After several seconds, the text changes again to read::
 
@@ -509,3 +511,9 @@ No other add-on produces a similar warning during registration, though they are 
 before completing the registration.
 
 Copies of the most recent version of all other add-ons will be present. OSF Storage maintains complete version history.
+
+External Links
+^^^^^^^^^^^^^^^^^^^
+The user can create external links to both registrations (public and embargoed) and projects/components alike. If an external link points to a project that is registered, the link will point to the project and not the registration. In other words, if the user has Project A and creates an external link to Project B, and registers project B, the external link will still point to Project B and not its registration.
+
+To point a project or component to a registration, the user will need to enter the registration's URL into the "External Link" field when :ref:`configuring the external link <external link>`. If a user has access to an embargoed registration, the user can still create an external link that directs to it.
