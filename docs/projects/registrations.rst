@@ -9,7 +9,7 @@ registration date and time, contributors, and contributions, in the same format 
 
 When no registrations have been made, non-contributors see text explaining this::
 
-    There have been no registrations of this component. For a list of the most viewed and most recent public registrations
+    There have been no registrations of this project. For a list of the most viewed and most recent public registrations
     on the Open Science Framework, click here.
 
 The link provided sends the user to the :ref:`Public Activity page <public-activity>`.
@@ -39,13 +39,24 @@ says "read-only" repeatedly. At the top of the page is a non-dismissable blue al
 
 The alert links to the project that the registration is a copy of.
 
-In addition to the Project Overview's :ref:`metadata <overview-metadata>`, there is an additional field, "Registration Supplement."
+In addition to the Project Overview's :ref:`metadata <overview-metadata>`, there is an additional field, "Registration Form."
 This field lists the name of the registration template the registrant used. Clicking the name links the user to a page with
-a copy of the template and the registrant's responses.
+a noneditable copy of the registration form and the registrant's responses.
 
 The Files widget does not allow for editing of file names, reorganization of files, or deletion of files, however. Only
 downloads are permitted. Files are saved within their storage add-ons and OSF Storage, grouped into folders. The folders are
 titled "Archive of [storage add-on]." These folders are collapsed by default.
+
+Moreover, a registration's Recent Actity widget only only shows the original OSF project's activity prior to the creation of the registration. In other words, the registration's Recent Activity widget is a frozen snapshot of the original OSF project's recent activity. Activity related to the registration itself, such as the user's creation of the registration, is only logged into the project's Recent Activity widget and not the registration's. 
+
+Activity pertaining to the creation of the registration is logged into the original OSF project's Recent Activity widget:
+
+*Intiated: the administrator who creates the registration is listed in the Recenty Activity widget as the oen who initiated the registration.
+*Approved: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who approved the registration.
+*Canceled: the first adminstrator to cancel the registration is the only admin listed in the Recent Acvitity widget who canceled the registration.
+*Registered: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who registered the registration.
+
+The blue Comments icon appears in the top right of the registration Overview page. The project's comments are not carried over to the registration. However, any comments made on the project prior to the registration's creation are logged into both the project and registrations's Recent Activity widget.
 
 
 Creating a Registration
@@ -216,7 +227,7 @@ Clicking the link brings the user to the registration with the following alert a
     be final and enter the embargo period when all project administrators approve the registration or 48 hours pass,
     whichever comes first. [Cancel Registration]
 
-The Cancel Registration button appears only for Project Administrators. If no action is taken by any administrator, the registration is approved. The Cancel Registration button appears only for Project Administrators.
+The "Cancel Registration" button appears only for Project Administrators. If no action is taken by any administrator, the registration is approved. If one administrator cancels the registration by either clicking the cancel link in the email or by clicking the "Cancel Registration" button on the registration Overview page, the registration is cancelled and logged in the original project's Recent Activity widget. Until all administrators on a registration have clicked the approval link in the email, any registration administrator can click "Cancel Registration" on the registration's Overview (even if the administrator had formerly approved).
 
 If a user attempts to visit a link to or approve a cancelled registration, they are brought to a page that reads::
 
@@ -317,7 +328,7 @@ After an embargo ends, the registration and its components are made public.
 
 End embargo early
 ---------------
-If an embargoed registration is already approved, it may be made public by the project administrators. One the registration page, a "Make Public" button appears. Clicking it generates the following modal::
+If an embargoed registration is already approved, it may be made public by the project administrators. On the registration page, a "Make Public" button appears. Clicking it generates the following modal::
 
     End embargo early
     By clicking confirm, an email will be sent to project administrator(s) to approve ending the embargo. If approved, this registration, including any components, will be made public immediately. This action is irreversible.
@@ -349,11 +360,13 @@ Withdrawals
 **Purpose:** Withdrawals allow admins to make the contents of a registration private.
 
 A registration that is not embargoed is public. Users cannot "undo" a registration or make its contents private, but admins
-do have the option to withdraw the registration. To withdraw a registration the admin visits the registration's settings page.
+do have the option to withdraw the registration. Both public and embargoed registrations can be withdrawn. 
+
+To withdraw a registration the admin visits the registration's Settings page.
 Non-admins do not see the link to the Settings page.
 
-Only the entirety of a registration can be withdrawn—individual components cannot be withdrawn. If an admin visits a component's
-settings page to attempt to withdraw the registration of the individual component, a panel reads::
+Only the entirety of a registration (a registered project and its registered components) can be withdrawn—individual components cannot be withdrawn. If an admin visits a component's
+Settings page to attempt to withdraw the registration of the individual component, a panel reads::
 
     Withdraw Registration
     Withdrawing children components of a registration is not allowed. Should you wish to withdraw this component, please
@@ -457,12 +470,12 @@ Public, meaning non-embargoed, registrations can be given DOIs and ARKs. To do s
 click the "Create DOI/ARK" link below the "Date Created" field. Clicking opens a modal::
 
     Create identifiers
-    Are you sure you want to create a DOI and ARK for this project?
+    Are you sure you want to create a DOI and ARK for this project? DOI and ARK identifiers are persistent and will always resolve to this page.
     [Cancel][Create]
 
 Clicking "Create" turns the link to text that reads::
 
-    Creating identifiers
+    Creating DOI and ARK. Please wait...
 
 After several seconds, the text changes again to read::
 
@@ -498,3 +511,9 @@ No other add-on produces a similar warning during registration, though they are 
 before completing the registration.
 
 Copies of the most recent version of all other add-ons will be present. OSF Storage maintains complete version history.
+
+External Links
+^^^^^^^^^^^^^^^^^^^
+The user can create external links to both registrations (public and embargoed) and projects/components alike. If an external link points to a project that is registered, the link will point to the project and not the registration. In other words, if the user has Project A and creates an external link to Project B, and registers project B, the external link will still point to Project B and not its registration.
+
+To point a project or component to a registration, the user will need to enter the registration's URL into the "External Link" field when :ref:`configuring the external link <external link>`. If a user has access to an embargoed registration, the user can still create an external link that directs to it.
