@@ -10,13 +10,13 @@ A user can edit their preprint and upload new versions, but once a preprint is s
 
 Preprint Detail Page
 ---------------
- **Purpose:** The Preprint Detail page is the main page where the user reads and downloads a given preprint.
+ **Purpose:** The "Preprint Detail" page is the main page where the user reads and downloads a given preprint.
 
-At the top of the Preprint Detail page, the preprint's title appears in large typeface. The date when the preprint was shared and the date when the preprint was last edited are listed below the preprint's title.
+At the top of the "Preprint Detail" page, the preprint's title appears in large typeface. The date when the preprint was shared and the date when the preprint was last edited are listed below the preprint's title.
 
-On the left half of the page, the preprint appears in an MFR, below which a "Download preprint" button and the supplemental files (if the user has uploaded any) are shown.
+On the left half of the page, the preprint appears in an MFR, below which a "Download preprint" button, and the supplemental files (if the user has uploaded any) are shown. The preprint file will also be listed below the MFR but only in the event that there are supplemental files.
 
-On the right half of the page, the preprint's abstract, license, disciplines, DOI (if any), tags, and citation styles (MLA, APA, and Chicago) are listed. 
+On the right half of the page, the preprint's abstract, license, disciplines, DOI (if any), tags, and citation styles (MLA, APA, and Chicago) are listed. If an abstract is long, there will be a **See more** button below the abstract that the user can click to expand the remaining text. When the abstract is expanded, the button changes to **See less**. When the user clicks the **See less** button, the abstract shrinks back to its shorter length, and the **See more** button returns.
 
 In the top right of the Preprint Detail page, there is a gray box that includes a series of actions for downloading and sharing a preprint::
 
@@ -122,13 +122,16 @@ When the user clicks "Upload new preprint," a box in which the user uploads thei
     Drop preprint file here to upload
 
 There are two buttons to the bottom right of the file box::
-    [Back](this button is gray)[Save and continue] (this button is blue)
+    [Back][Save and continue]
 
-The user cannot click "Save and continue" until they have uploaded their file and entered a title for their preprint. If the user tries to click "Save and continue," a hazard icon appears on the tail of the cursor, and the user is unable to click the button to progress to the next widget.
+The user cannot click "Save and continue" until they have uploaded their file and entered a title for their preprint. If the user tries to click "Save and continue," a hazard symbol appears on the tail of the cursor, and the user is unable to click the button to progress to the next widget.
 
-After the user drags and drops their file into the box, the file appears in the middle of the file box, where the filename and the file size also appear. 
+The user can add their preprint file in two different ways:
 
-The user can upload a new preprint file to replace the one they previously added. Below the filename and file size, the instructions in the box now read::
+1. The user can drag and drop their file into the file box
+2. The user can click inside (double click for Windows) the file box to open a dialog box from which they can select and upload their file. The dialog box will close when the user clicks the "Choose" button. 
+
+After the user adds their preprint file, the file appears in the middle of the file box, where the preprint's filename and the file size are listed. The user has the option to upload a new preprint file to replace the one they previously added. Below the filename and file size, the instructions in the box now read::
     
     Click or drag another preprint file to replace
 
@@ -136,14 +139,15 @@ After uploading the preprint file, the preprint title field appears below the fi
     
     Enter preprint title
     
-The user must enter a title for their preprint into the field before they can click "Save and continue."
+The user must enter a title for their preprint into the field before they can continue to the next widget.
+
 If a user clicks inside the title field without entering a title, and then clicks elsewhere within the widget, a growlbox appears below the title field that reads::
   
       Title can't be blank
 
-After entering a title, the user can click "Save and continue" to continue on to the "Discipline" widget.
+After entering a title, the user can click "Save and continue" or press the **return** key (Mac) or the **enter** key (Windows) on their computer to continue on to the "Discipline" widget.
 
-After clicking "Save and continue," an alert confirming the upload will appear in the top right of the page::
+An alert confirming the upload will appear in the top right of the page::
   
     Preprint file uploaded!
 
@@ -349,13 +353,13 @@ In the license section, the user has the following options::
     Show full text (clicking this shows an explanation of the license selected)
     Hide full text (this appears in place of Show full text when the user clicks to view the text)
     
-.. _todo: license FAQ currently links to the `Licensing help guide <http://help.osf.io/m/60347/l/611430-licensing>`. Update this section when the link is redirected.
+.. _todo: license FAQ currently links to the `Licensing help guide <http://help.osf.io/m/60347/l/611430-licensing>`. Update this section when the text changes.
 
-When the user selects "No license" from the drop-down menu, the Year and Copyright Holders fields appear below the menu.
+When the user selects "No license" from the drop-down menu, the "Year" and "Copyright Holders" fields appear below the menu.
 
-These two fields are required. In the Year field, the current year is entered automatically. If the user deletes the current year - e.g. "2017"- from the field, the year will reappear automatically in the field. To enter a different year, the user can delete the last 1-3 numbers and type in the correct year from there. If the user deletes the first number- e.g. "2"- the year will reappear automatically in the field.
+These two fields are required. In the "Year" field, the current year is listed automatically. If the user deletes the current year - e.g. "2017"- from the field, the year will reappear automatically in the field. To enter a different year, the user can delete the last 1-3 numbers and type in the correct year from there. If the user deletes the first number- e.g. "2"- the year will reappear automatically in the field.
 
-There is an option to "Apply this preprint license to my OSF project." The user can select "Yes" or "No". "Yes" is selected automatically.
+There is an option to "Apply this preprint license to my OSF project." The user can select "Yes" or "No" to either extend or not extend the preprint license to their OSF project. "Yes" is selected automatically. Note that if the user selects "No license" option from the drop-down menu, they can choose to extend this license to their OSF project, as well.
 
 **The DOI section**
 In the DOI section (if the user's preprint has already been published in a journal), the user can enter their DOI of the associated journal into the DOI field. There is a message above the DOI field that reads::
@@ -401,7 +405,10 @@ Clicking "Discard changes" will cause a growlbox to appear below the Abstract te
     Abstract can't be blank
 
 **Finishing the Basics Widget**
-When the user clicks [Save and continue], the Basics widget closes, and the Authors widget expands.
+ 
+In the event that the user chooses "No license" from the drop-down menu and fills out the "Year" and "Copyright Holders" fields as their last steps before they finish the Basics widget, the user can press the **return** key (Mac) or the **Enter** key (Windows) on their computer to close the Basics widget and open the Authors widget.
+
+The user can also click [Save and continue] to close the Basics widget and open the Authors widget.
 
 This is how the widget appears when closed::
   
@@ -512,14 +519,17 @@ The user can click inside the Authors widget to make changes to the information 
 The Submit Widget
 ^^^^^^^^^^^^^^^^
 **Purpose:** To post their preprint to a preprint server and make it publicly available.
+
 At the top of the Submit widget, there are instructions that read::
   
-    When you share this preprint, it will become publicly accessible via OSF Preprints. You will be unable to delete the preprint file, but you can update or modify it. This also creates an OSF project in case you would like to attach other content to your preprint such as supplementary materials, appendices, data, or protocols. If posting this preprint is your first exposure to the OSF, you will receive an email introducing OSF to you.
+    When you share this preprint, it will become publicly accessible via OSF Preprints. You will be unable to delete the preprint file, but you can update or modify it. This also creates an OSF project in case you would like to attach other content to your preprint such as supplementary materials, appendices, data, or protocols. If posting this preprint is your first exposure to the OSF, you will receive an email introducing OSF to you. By clicking Share, you confirm that all Contributors agree with sharing this preprint, and that you have the right to share it.
 
 If the user has not completed the required information in a given widget, a growlbox will appear below the above instructions that read::
   
     **The following section(s) must be completed before sharing this preprint.**
     [widget title(s)]
+    
+The user could skip the Author widget (either by not clicking inside the widget at all or by not clicking the **Next** button) and submit their preprint without any message or growlbox appearing.
 
 When the user is ready to submit their preprint, they can click the blue "Share" button. Clicking "Share" causes a modal to appear::
 

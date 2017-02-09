@@ -175,8 +175,9 @@ Prior to completing their registration, the user decides on an embargo period. T
     the registration, it will be canceled. If all other administrators approve or do nothing, the registration will be
     confirmed and enter its embargo period.
 
-Below the "Registration Choice" header is a dropdown for the user to make their selection. Options are: "Make registration
-public immediately," "Enter registration into embargo."
+Below the "Registration Choice" header is a drop-down menu from which the user decides to either::
+    [Make registration public immediately]
+    [Enter registration into embargo]
 
 Registrations with No Embargo
 ^^^^^^^^^^^^^^^^
@@ -248,23 +249,30 @@ Registrations with an Embargo
 **Purpose:** Embargo periods allow the user to keep a registration private for a limited period of time.
 
 Selecting "Enter registration into embargo" opens another text field below the dropdown titled "Embargo end date." Clicking
-into the text field opens a calendar widget for the user to select a date for the conclusion of the embargo. On the selected date,
-the registration will become public.
+into the text field opens a calendar widget from which the user can choose the embargo's end date. On the selected end date,the registration will become public.
 
-The date selected must be more than two days in the future but cannot be greater than four years away. If the user attempts to
-select a date not within the appropriate range, after attempting to confirm their registration the calendar widget is opened
-and a dismissable yellow growlbox alert shows at the top right of the page::
+The embargo end date must be more than three days but cannot be greater than four years in the future. 
 
-    Invalid embargo end date
-    Please choose a date more than two days, but less than four years, from today.
+If the user chooses a date that is greater than four years, a growlbox will appear below the "Embargo End Date" field::
+  
+    Embargo end date must be less than four years in the future.
+
+The user cannot click "Continue" until they have chosen an appopriate date.
+    
+If the user chooses a date that is less than three days in the future, the calendar will close and the chosen date will appear in the field (even though this date is invalid). A growlbox will also appear below the "Embargo End Date" field::
+  
+    Embargo end date must be at least three days in the future.
+    
+The user cannot click "Continue" until they have chosen an appopriate date.
+    
+When the user chooses a date within the correct date range, they can click "Continue"
 
 After confirming the registration, the user is brought back to the registrations page for the registered project. A blue alert
 is at the top of the page::
 
     Files are being copied to the newly created registration, and you will receive an email notification when the copying is finished.
 
-If the registration was entered into an embargo period, a lock indicating that the project is private appears to the left
-of the title on the registration page. Before an admin approves the embargo, an additional tag reads "Pending Embargo."
+If the registration was entered into an embargo period, a lock symbol will appear to the left of the registration's title, indicating that the project is embargoed. Before an admin approves the embargo, an additional tag reads "Pending Embargo."
 These also appear to the left of component titles on the registration's overview. After the embargo is approved, the tag
 reads "Embargoed" until the embargo period is concluded.
 
@@ -324,7 +332,9 @@ An admin can change the privacy setting on an embargoed project or components th
 
 Public components or projects in an embargo cannot be made private.
 
-After an embargo ends, the registration and its components are made public.
+After an embargo ends, the registration and its components are made public. 
+
+The cron job runs to end an embargo at midnight.
 
 End embargo early
 ---------------
