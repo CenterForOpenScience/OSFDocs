@@ -415,6 +415,7 @@ Configuring figshare
 ***********
 **Purpose:** Connecting to figshare allows users to create a two way connection between the OSF and figshare.
 
+Refer to this `Google Doc <https://docs.google.com/document/d/1T8c69at_0X2WKficbYEV0z7bfM3jNFoWkYtmNmZjVPg/edit#heading=h.f17owbri8qc3>`_ for information on the allowable figshare actions.
 
 Users who choose to connect their figshare account to the OSF can check appropriate box. They are presented with a
 modal::
@@ -1226,6 +1227,8 @@ link to the dataset on the Dataverse website.
 Viewing figshare Files
 ***********
 **Purpose:** The file tree and file details pages allow users to view and interact with figshare files.
+
+Refer to this `Google Doc <https://docs.google.com/document/d/1T8c69at_0X2WKficbYEV0z7bfM3jNFoWkYtmNmZjVPg/edit#heading=h.f17owbri8qc3>`_ for more information on allowabel figshare actions
 
 figshare appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
 The tree identifies the project::

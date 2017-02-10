@@ -13,10 +13,10 @@ Primary and Alternate Emails
 **Purpose:** Primary emails are the emails to which all correspondence from the OSF will be sent. When merging accounts,
 their :doc:`profile information <../profiles/profiles_index>` is kept while the alternate accounts’ is lost.
 
-The email that the user signs up for the OSF with is their primary email. If the user merges an account, the primary email
-is whichever was used to log in at the time that the merge was initiated.
+The user's primary email address is the one they used when signing up for their OSF account. If the user merges an account, the user's primary email address
+will be the address they used at the time they merged their account.
 
-An alternate email is another email or existing account that is added to the primary account.
+An alternate email is another email address or existing account that the user can add to their primary OSF account.
 
 To change a primary email, the user visits Account Settings. An alternate email must exist already—otherwise they must add
 an alternate email. The user can click “make primary” next to the alternate email they wish to promote to their primary
@@ -42,43 +42,46 @@ Adding an Alternate Email
 Users can merge their accounts by logging into the account they wish to make primary and visiting their Account Settings.
 Under “Connected Accounts,” and then "Unconfirmed emails," the user sees the message::
 
-    To merge an existing account with this one or log in with multiple email addresses, add an alternate email address below.
+    To merge an existing account with this one or to log in with multiple email addresses, add an alternate email address below.
 
 Following this message is an "i" icon which, when a user mouses over, displays a toolip::
     
     Merging accounts will move all projects and components associated with two emails into one account. All projects and components will be displayed under the email address listed as primary. 
 
-Here the user enters the login email for the account they wish to merge into (alternate) the primary account under “Unconfirmed Emails” and clicks “Add Email” or hits the return key.
+Below the message is a field where the user enters the email address that they want to be their alternate email address under their primary account. The user can then click “Add Email” or hit the return key to initiate the merge process.
 
 Users cannot add the primary email as an alternate email; attempting to do so produces an inline error, below the “Add Email” button::
 
     Duplicate Email
 
-Clicking “Add Email” before entering text into the address field produces a popover on the field that reads::
+Clicking “Add Email” before entering text into the address field causes a growlbox to appear below the field::
 
-    ! Please fill out this field.
+    Email cannot be empty.
 
-If the user enters text without an @ symbol, a popover on the field reads::
-
-    ! Please include an '@' in the email address. [Entered text] is missing an '@'.
-
-If the user enters an email address with an '@' symbol but no subsequent text, a popover on the field reads::
-
-    ! Please enter a part following '@'. [Entered text] is incomplete.
-
-If the user enters an email address with characters preceding and following an @ symbol, but it is not a valid email address (e.g. includes
-no ".com"), after submitting their entry a red dismissable error message appears in the top right corner of the page::
+If the user enters text without an @ symbol, a red dismissable error message appears in the top right of the page::
 
     Error
     Invalid Email
 
-If the user submits multiple such invalid email addresses, another identical message appears above the last alert.
+If the user enters an email address with an '@' symbol but no subsequent text, a red dismissable error message appears in the top right of the page::
 
-After successfully adding an email, it is listed below “Unconfirmed Emails” and above the email address field. A modal appears::
+    Error
+    Invalid Email
+
+If the user enters an email address with characters preceding and following an @ symbol, but it is not a valid email address (e.g. includes
+no ".com"), after submitting their entry, a red dismissable error message appears in the top right corner of the page::
+
+    Error
+    Invalid Email
+
+If the user submits multiple such invalid email addresses, the alerts will stack on top of each other along the right side of the page. The user will need to click the gray "x" icon in the top right of each error message in order to dismiss them.
+
+When the user successfully adds an alternate email, the alternate email appears listed in the “Unconfirmed Emails” section and above the email address field. A modal appears::
 
     Confirmation email sent
-    [Secondary Email] added to your account. You will receive a confirmation email at [Secondary Email]. Please log out of this account and check your email to confirm this action. 
-
+    [Secondary Email] was added to your account. You will receive a confirmation email at [Secondary Email]. Please click the link in your email to confirm this action. You will be required to enter your password. 
+    [Close]
+    
 An email is sent to the alternate email::
 
     Hello [Primary Account Username],
@@ -91,13 +94,18 @@ An email is sent to the alternate email::
     If you do not wish to merge these accounts, no action is required on your part. If you have any questions about this
     email, please direct them to support@osf.io.
 
-Clicking on the provided link sends the user to the OSF, logged in as whichever user last was logged in on that computer. The page reads::
+Clicking on the provided link sends the user to the OSF "Sign In" page (logged in as whichever user was last logged in on that computer). A modal appears upon logging in::
 
-    Confirmation Required: Merge Accounts
-    This email is confirmed to another account. Would you like to merge [alternate email] with the account [primary email]?
-    [Confirm Merge]
+    Merge Accounts
+    Would you like to merge [alternate email] into your account? This action is irreverible. 
+    [Do not add email][Add email]
 
-Clicking “Confirm Merge” sends the user to their “Account Settings” page where the email is listed as an alternate email.
+Clicking “Add email” sends the user to their dashboard, where a confirmation message appears in the top right of the page::
+  
+    Success
+    [alternate email] has been added to your account.
+
+When the user goes to their “Account Settings” page, their alternate email is listed below the "Alternate Emails" section.
 
 Alternate accounts cannot be merged into the primary account if they have add-ons connected to a project. The Mendeley and
 Zotero add-ons are exceptions to this rule, however. If a secondary account has a project with an add-on connected to it
@@ -130,6 +138,10 @@ If the user makes changes to their alternate account’s projects or profile aft
 but prior to the confirmation, those changes are reflected in the merged projects.
 
 If the user merges an account that had an alternate email of its own, both emails are made alternate in the new primary account.
+
+If User A merges with User B and keeps User B's profile and information, User A's GUID and profile will still exist. If a user searches for User B, only one user will show up under User B's name. However, a user can still go to User A's GUID and look at their profile. User A's profile will appear with 0 projects and a banner across the top of hte page pointing to User B's profile::
+  
+    This account has been merged with [URL of the merged account]
 
 Removing Emails
 ^^^^^^^^^^
