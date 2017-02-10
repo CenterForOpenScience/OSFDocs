@@ -280,14 +280,13 @@ If a registration is embargoed, all admins on the project, including the registr
 
     Hello [username],
 
-    We just wanted to let you know that [username] has requested an embargoed registration for a project you administer.
-    The proposed registration can be reviewed here: URL.
-    If approved, a registration will be created for the project and it will remain private until it is retracted, manually
+    [username or "You"] initiated an embargoed registration of [project name]. The proposed registration can be viewed here: [URL of registration].
+    If approved, a registration will be created for the project and it will remain private until it is withdrawn, manually
     made public, or the embargo end date has passed on [date].
-    To approve this action click the following link: URL
-    To disapprove this action, click the following link: URL
+    To approve this embargo, click the following link: [URL]
+    To cancel this embargo, click the following link: [URL]
     Note: Clicking the disapproval link will immediately cancel the pending embargo and the registration will
-    be deleted. If you neither approve nor disapprove the embargo within 48 hours from
+    remain in draft state. If you neither approve nor disapprove the embargo within 48 hours from
     midnight tonight (EDT) the registration will remain private and enter into an embargoed state.
 
     Sincerely yours,
@@ -298,10 +297,9 @@ Non-admins also receive an email::
 
     Hello [username],
 
-    We just wanted to let you know that [registrant username] has requested an embargoed registration for a project you
-    contribute to.
-    If approved, a registration will be created for the project, viewable here: URL, and it will remain
-    private until it is retracted, manually made public, or the embargo end date has passed on [date].
+    We just wanted to let you know that [registrant username] has initiated an embargoed registration for the following pending registraiton: [URL].
+    If approved, a registration will be created for the project, viewable here: [URL], and it will remain
+    private until it is withdrawn, manually made public, or the embargo end date has passed on [date].
 
     Sincerely yours,
 
@@ -311,26 +309,14 @@ Visiting the embargoed registration before it is approved shows a non-dismissabl
 
     This project is currently pending registration, awaiting approval from project administrators. This registration will
     be final and enter the embargo period when all project administrators approve the registration or 48 hours pass,
-    whichever comes first. The embargo will keep the registration private until the embargo period ends. [Cancel Registration]
+    whichever comes first. The embargo will keep the registration private until the embargo period ends.
+    [Cancel Registration]
 
-The Cancel Registration button appears only for Project Administrators.
+The **Cancel Registration** button appears only for Project Administrators.
 
 After an embargo is enacted, a red non-dismissable alert is shown at the top of the page::
 
-    This component is currently embargoed. It will remain private until its embargo date, [date], passes or an admin
-    manually makes it public.
-
-An admin can change the privacy setting on an embargoed project or components they are an admin on. If an admin clicks the
-"Make Private" button, a modal appears::
-
-    Warning
-    Once a registration is made public, you will not be able to make the registration private again. After making the
-    registration public, if you discover material in it that should have remained private, your only option will be to
-    retract the registration. This will eliminate the registration, leaving only basic information of the project title,
-    description, and contributors with a notice of retraction.
-    [Cancel] [Make Public]
-
-Public components or projects in an embargo cannot be made private.
+    This project is currently embargoed. It will remain private until its embargo date, [day/month/year].
 
 After an embargo ends, the registration and its components are made public. 
 
@@ -338,7 +324,9 @@ The cron job runs to end an embargo at midnight.
 
 End embargo early
 ---------------
-If an embargoed registration is already approved, it may be made public by the project administrators. On the registration page, a "Make Public" button appears. Clicking it generates the following modal::
+If an embargoed registration is already approved, it may be made public by the project administrators. Public components or projects cannot be made private. 
+
+On the registration page, a "Make Public" button appears. Clicking it generates the following modal::
 
     End embargo early
     By clicking confirm, an email will be sent to project administrator(s) to approve ending the embargo. If approved, this registration, including any components, will be made public immediately. This action is irreversible.
@@ -491,11 +479,9 @@ After several seconds, the text changes again to read::
 
     Identifiers: DOI [DOI identifier] | ARK [ARK identifier]
 
-Both identifiers link to an EZID page for the registration.
-
-When a DOI has been created for a project, the citation widget updates to reflect the doi.org URL instead of the registration's osf.io
-URL.
-
+The OSF begins all DOIs and ARKs with the same number, followed by "/osf.io/GUID." The following structure is the same for all DOIs and ARKs created on the OSF (the GUID is different for each project or registration)::
+  
+    DOI 10.17605/OSF.IO/GUID | ARK c7605/osf.io/GUID
 
 Registering with Add-ons
 ----------------
