@@ -184,7 +184,9 @@ On the lower left hand side is a Tags widget, for files stored on OSF Storage. W
 Contributors with read+write or admin permissions can add a tag by clicking in the “Add a tag” field and typing a keyword. Pressing the return key will add the tag. Adding a comma after a tag and pressing the space bar, as if making a list, will also add a tag. Tags appear in blue boxes with a black ‘x’ to the right of the text. Clicking the ‘x’ allows the user to remove the tag.
 Hovering over a tag darkens the background color. Clicking on a tag brings the user to search results page, where the query was the tag name.
 
-If the file can be rendered, it displays in the rest of the screen. Above the rendered file are three buttons: "Download", "View", "Revisions." 
+If the file can be rendered, it displays in the rest of the screen. For a list of which file types render in the browser, go to `<https://gist.github.com/felliott/8fd378c25c1b7122b6e7992cdb2693a7>`_. 
+
+Above the rendered file are three buttons: "Download", "View", "Revisions." 
 
 For ADMIN and READ+WRITE contributors, a "Delete" button is also present. For these users and plain text files, an "Edit" button appears. 
 

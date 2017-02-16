@@ -415,6 +415,7 @@ Configuring figshare
 ***********
 **Purpose:** Connecting to figshare allows users to create a two way connection between the OSF and figshare.
 
+Refer to this `Google Doc <https://docs.google.com/document/d/1T8c69at_0X2WKficbYEV0z7bfM3jNFoWkYtmNmZjVPg/edit#heading=h.f17owbri8qc3>`_ for information on the allowable figshare actions.
 
 Users who choose to connect their figshare account to the OSF can check appropriate box. They are presented with a
 modal::
@@ -673,16 +674,28 @@ Configuring External Link
 *************
 **Purpose:** Adding an external link allows users to redirect project visitors to the provided URL. 
 
-Users who select the external link add-on are shown the Configure Add-ons pane. The text reads::
+Users can create external links to external sites as well as to internal pages within the OSF, such as projects, components, and registrations, etc.
+
+When a user checks the box next to the external link add-on, the "Settings" page reloads, and a Configure Add-ons pane appears below the "Select Add-ons" section of the "Settings" page. The text reads::
 
     External Link
-    URL
-    Label
+    URL [field]
+    Label [field]
     [Save]
 
-The user may enter the URL beneath URL and have the option to add a label. When the user enters information and selects "Save," the text reads::
+The user can then enter the URL into the URL field. The user has the option to add a label to the external link in the Label field, but this step is not required. After the user enters the information and clicks "Save," a confirmation message appears below the Label field that reads::
 
-    Successfully linked to URL
+    Successfully linked to [URL].
+    
+Now, when a user goes to that project or component and lands on its "Overview" page, a modal will immediately appear::
+  
+  This project contains a forward to
+  [URL]
+  [Cancel] [Redirect]
+
+Clicking "Cancel" will keep the user on the project or component "Overview" page. Clicking "Redirect" will take the user to the site of the URL.
+
+If a user has access to private projects/components or embargoed registrations, the user can create an external link to point to them; however, if project A is public and points to Project B which is private, a visitor who does not have access to Project B will still be prompted by the modal. The visitor can still click "Redirect," but they will be taken to a "Forbidden" page and will not be able to access the private project/component.
 
 .. _mendeley:
 
@@ -690,7 +703,7 @@ Configuring Mendeley
 *************
 **Purpose:** Connecting to Mendeley allows users to create a two way connection between the OSF and Mendeley.
 
-Users who choose to connect their Mendeley account to the OSF can check appropriate box. They are presented with a
+Users who choose to connect their Mendeley account to the OSF can check the appropriate box. They are presented with a
 modal::
 
     Mendeley Add-on Terms
@@ -1214,6 +1227,8 @@ link to the dataset on the Dataverse website.
 Viewing figshare Files
 ***********
 **Purpose:** The file tree and file details pages allow users to view and interact with figshare files.
+
+Refer to this `Google Doc <https://docs.google.com/document/d/1T8c69at_0X2WKficbYEV0z7bfM3jNFoWkYtmNmZjVPg/edit#heading=h.f17owbri8qc3>`_ for more information on allowabel figshare actions
 
 figshare appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
 The tree identifies the project::
