@@ -148,31 +148,33 @@ Removing Emails
 **Purpose:** Unconfirmed and alternate emails can be removed to reduce the number of login emails available.
 
 A primary email cannot be removed. Alternate or unconfirmed emails can be removed by clicking the ‘x’ to the right of the
-email address under “Connected Emails” on the Account Settings page. If the user remove an alternate email, a modal appears
+email address under “Connected Emails” on the Account Settings page. If the user removes an alternate email, a modal appears
 asking them to confirm the removal::
 
     Remove Email?
-    Are you sure that you want to remove [unconfirmed email] from your email list?
-    [cancel][Remove]
+    Are you sure that you want to remove [unconfirmed/alternate email] from your email list?
+    [Cancel][Remove]
 
-Cancelling closes the modal and produces no change. Clicking “Remove” removes the email from the “Unconfirmed Emails” list.
-A green, dismissable growlbox alert appears at the top of the page::
+Cancelling closes the modal and produces no change. Clicking “Remove” removes the email from the “Unconfirmed Emails” list. A green, dismissable alert appears in the top right of the page::
 
     Email Removed
     [removed email address]
 
-When an alternate email is removed, both the primary and alternate emails receive an email. The primary reads:
-
-.. todo:: add email content here when bug is fixed.
-
-The email sent to the removed alternate reads::
-
-    Hello [User Name],
-    I just wanted to let you know, the email address [alternate email] has been removed from your account. For security
-    purposes, a copy of this message has also been sent to you account's primary email address ([primary email]).
-    If you did not request this action, let us know at contact@cos.io.
+When an alternate email is removed, both the primary and alternate emails receive an email. The primary reads::
+  
+    Hello (username),
+    
+    The email address (user's unconfirmed/alternate email address) has been removed from you account. For security purposes, a copy of this message has also been sent to your account's alternate email address ([user's unconfirmed/alternate email address]). If you did not request this action, let us know at contact@cos.io.
     Sincerely yours,
     The OSF Robot
+
+And the alternate receives::
+  
+  Hello (username),
+  
+  The email address (user's unconfirmed/alternate email address) has been removed from you account. For security purposes, a copy of this message has also been sent to your account's primary email address ([user's primary email address]). If you did not request this action, let us know at contact@cos.io.
+  Sincerely yours,
+  The OSF Robot
 
 After removing an alternate email, no project or profile content changes.
 
@@ -180,19 +182,19 @@ If the user removes an unconfirmed email, a modal appears asking them to confirm
 
     Remove Email?
     Are you sure that you want to remove [unconfirmed email] from your email list?
-    [cancel][Remove]
+    [Cancel][Remove]
 
 Cancelling closes the modal and produces no change. Clicking “Remove” removes the email from the “Unconfirmed Emails” list.
-A green, dismissable growlbox alert appears at the top of the page::
+A green, dismissable alert appears in the top right of the page::
 
     Email Removed
     [removed email address]
 
-If the user follows the emailed confirmation link after an unconfirmed email was removed (i.e. the addition was cancelled),
+If the user clicks the confirmation link they received in the email after they removed the unconfirmed email address,
 they are brought to an error page that reads::
 
-    Invalid Token
-    This confirmation link is invalid. Please log in to continue.
+    Bad Token
+    The provided token is invalid.
 
 Effects of a Merge
 ^^^^^^^^^^^^^^
