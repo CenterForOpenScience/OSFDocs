@@ -1,0 +1,46 @@
+**Purpose:** OSf Registries allows users to search for public registrations.
+
+OSF Registries is powered by SHARE. On the OSF Registries landing page, the user can search for registrations by typing a query into the search box or by clicking a registration in the Browse Recent Registrations section. The search results will appear on the Preprint Archive Search page.
+
+The user can search by registration title by entering the title into the search field. To search by an author(s) or a tag(s), the user should use the boolean operaters AND (including x and x) and OR (including x or x). The accepted formats for searching one or more authors is as follows:
+
+* author:(albert einstein)
+
+* author: “albert einstein”
+
+* author: ‘albert einstein’
+
+* authors:(nosek AND spies)
+
+* authors: “nosek AND spies”
+
+* authors:’nosek AND spies’
+
+The syntax for searching one or more keywords is as follows:
+
+* tags:”multimedia”
+
+* tags:(multimedia)
+
+* tags: ‘multimedia’
+
+* tags:”computer AND science”
+
+* tags:(computer AND science)
+
+* tags:’computer AND science’
+
+* tags:”psychology OR neuroscience”
+
+* tags:(psychology OR neuroscience)
+
+* tags:’psychology OR neuroscience’
+
+To browse by subject area, there is a list of disciplines on the OSF Registries landing page. Clicking a registration type will yield registrations within that registration type.
+
+On the OSF Registries search page, there is a "Provider" sidebar that shows all of the registration providers that OSF Registries aggregates. The user can select a registration provider to search for registrations posted to the provider.
+
+Below the "Provider" sidebar, there is a Subject sidebar that is sorted hierarchically. Clicking the arrow next to a subject will unfold the subdisciplines within that subject area. Selecting a subject area will show preprints within that subject area.
+
+Preprint search results display the preprint title first, followed by the author(s), discipline(s), abstract, and preprint provider. To access the rest of the metadata, there is a down arrow that the user can click to unfold the search result on the Preprint Archive Search page. Clicking the down arrow shows external links, such as a link to a preprint’s journal publication, etc., an OAI (if any), tags (if any), and the date and time on which the preprint was added.
+
