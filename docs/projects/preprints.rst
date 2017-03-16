@@ -86,11 +86,11 @@ Adding a Preprint
   
 Clicking the green "Add a preprint" button takes the user to the Add Preprint page where the user must follow five steps in order to share a preprint:
 
-*Upload: The user adds their preprint file and enters a preprint title.
-*Discipline: The user adds disciplines to their preprint.
-*Basics: The user adds a license and includes an abstract of at least 20 characters.
-*Authors: The user adds coauthors, but can also choose to be the only author.
-*Submit: The user uploads their preprint to the preprint server.
+* Upload: The user adds their preprint file and enters a preprint title.
+* Discipline: The user adds disciplines to their preprint.
+* Basics: The user adds a license and includes an abstract of at least 20 characters.
+* Authors: The user adds coauthors, but can also choose to be the only author.
+* Submit: The user uploads their preprint to the preprint server.
 
 After a user clicks "Save and continue" in each widget, a confirmation message appears in to top right corner of the widget::
   
@@ -334,12 +334,12 @@ In the bottom right of the Basics widget, there are two buttons::
 
 These buttons remain unclickable until the user has filled out all of the required sections and fields. The required sections and fields for this widget are:
 
-*Choose a license
-*Abstract
+* Choose a license
+* Abstract
 
 If the user chooses the No license option from the Choose a license drop-down menu, the two fields that appear below the menu are also required:
-*Year
-*Copyright Holders
+* Year
+* Copyright Holders
 
 **The License section**
 
@@ -413,11 +413,11 @@ The user can also click [Save and continue] to close the Basics widget and open 
 This is how the widget appears when closed::
   
     Basics (this is a link that the user can use to click to open the widget; the user can click anywhere inside the widget to open it)
-    *License:* [license type]
-    *DOI:* [DOI] (or) None (if no DOI is provided)
-    *Abstract:*
+    License: [license type]
+    DOI: [DOI] (or) None (if no DOI is provided)
+    Abstract:
     [abstact content]
-    *Click to Edit*
+    Click to Edit
     
 The user can click inside the Basics widget to open it and make changes at any point throughout the preprint upload process. When the user reopens the Basics widget, they cannot click "Discard changes" unless they have made changes to the information they previously provided in the widget. Once the user has made changes to the information, the user can click "Discard changes."
 
@@ -431,8 +431,7 @@ At the top of the Authors widget, there are instructions that read::
   
     Add preprint authors and order them appropriately. All changes to authors are saved immediately. Search looks for authors that have OSF accounts already. Unregistered users can be added and invited to join the preprint.
 
-**Search for an author**
-To add an author, the user must type the author's name into the search field. The search field has a message within it that reads::
+**Search for an author:** To add an author, the user must type the author's name into the search field. The search field has a message within it that reads::
     
     Search by name [magnifying glass symbol]
 
@@ -450,9 +449,9 @@ If the author does not have an OSF account, a Results section will appear below 
 If the user clicks the "Add author by email address" button, the gray box will disappear, and the Add author by email section will appear below the search field with the following form::
   
     Add author by email
-    **Full Name**
+    Full Name
     [full name field] Full name
-    **Email**
+    Email
     [email field] Email
     We will notify the user that they have been added to your preprint.
                                                           [Cancel][Add]
@@ -480,7 +479,7 @@ If the author who the user searches for has an OSF account, a Results section wi
 
 When the user clicks the green "Add" button, the author will be added to the Authors section on the right side of the widget below the user's name.
 
-**Reorder Authors**
+**Reorder Authors:**
 If the user adds more than one author, each author will be added according to the order in which the user adds them.
 
 At the top of the Authors section, there are instructions that read::
@@ -493,13 +492,13 @@ To the left of each author row, there is a hamburger that the user can click to 
 
 Under the Permissions column, each author (except for the user uploading the preprint, who is listed as the administrator) has a Permissions menu. In the Permissions menu, the Read + Write permissions are selected automatically. The user can click inside the menu to open a pop-over from which the user can assign different permissions to their authors. The permissions options are: Read, Read + Write, and Administrator. There is a question mark to the right of the Permissions header. When the user hovers over the question mark, a tooltip appears that explains the permissions levels::
   
-    **Read**
+    Read
         *View a preprint
-    **Read + Write**
+    Read + Write
         *Read privileges
         *Add and configure preprint
         *Add and edit content
-    **Administrator**
+    Administrator
         *Read and write privileges
         *Manage authors
         *Public-private settings
@@ -526,7 +525,7 @@ At the top of the Submit widget, there are instructions that read::
 
 If the user has not completed the required information in a given widget, a growlbox will appear below the above instructions that read::
   
-    **The following section(s) must be completed before sharing this preprint.**
+    The following section(s) must be completed before sharing this preprint.
     [widget title(s)]
     
 The user could skip the Author widget (either by not clicking inside the widget at all or by not clicking the **Next** button) and submit their preprint without any message or growlbox appearing.
@@ -567,7 +566,7 @@ The alert has an animated reverse progress bar that functions as a timer. When t
 
 If the user uploads a new version of their preprint file with the same filename as the original, the Preprint File section will close after the user drags and drops the file onto the page. The filename will appear in the section with a version number next to it::
     
-    [filename] *(Version:x)*
+    [filename](Version:x)
 
 The Preprint's OSF Project
 ---------------
@@ -606,27 +605,27 @@ OSF Preprints is an aggregator of several preprint servers and is powered by SHA
 
 The user can search by preprint title by entering the title into the search field. To search by an author(s) or a tag(s), the user should use the boolean operaters AND (including x and x) and OR (including x or x). The accepted formats for searching one or more authors is as follows:
   
-  *author:(albert einstein)
-  *author: "albert einstein"
-  *author: 'albert einstein'
+  * author:(albert einstein)
+  * author: "albert einstein"
+  * author: 'albert einstein'
   
-  *authors:(nosek AND spies)
-  *authors: "nosek AND spies"
-  *authors:'nosek AND spies'
+  * authors:(nosek AND spies)
+  * authors: "nosek AND spies"
+  * authors:'nosek AND spies'
   
 The accepted formats for searching one or more tags is as follows:
 
-  *tags:"multimedia"
-  *tags:(multimedia)
-  *tags: 'multimedia'
+  * tags:"multimedia"
+  * tags:(multimedia)
+  * tags: 'multimedia'
   
-  *tags:"computer AND science"
-  *tags:(computer AND science)
-  *tags:'computer AND science'
+  * tags:"computer AND science"
+  * tags:(computer AND science)
+  * tags:'computer AND science'
 
-  *tags:"psychology OR neuroscience"
-  *tags:(psychology OR neuroscience)
-  *tags:'psychology OR neuroscience'
+  * tags:"psychology OR neuroscience"
+  * tags:(psychology OR neuroscience)
+  * tags:'psychology OR neuroscience'
 
 To browse by subject area, there is a list of disciplines on the OSF Preprints and community preprint servers' landing pages. Clicking a subject area will yield preprints within that subject on the Preprint Archive Search page.
 
