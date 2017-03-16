@@ -208,7 +208,7 @@ Logs from before the merge will show the old user name—if it was different—b
 If the user had a different user name for an account that was made alternate, searching the OSF for that old username does
 not return the old profile. Similar names may produce relevant results, however.
 
-.. todo:: What if you have different permissions for two accounts on one project?
+If the user has two accounts and both are added to a project with different permissions, when the user merges their accounts, the project will reflect the primary account's permissions on the project.
 
 Changing Passwords
 -------------
