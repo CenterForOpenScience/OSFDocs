@@ -109,13 +109,17 @@ Single File Actions
 Selecting a single file from any add-on or folder adds four additional buttons to the toolbar, beyond the default "Search" and "i:"
 "Download," "View," "Delete," and "Rename." Selecting a file from OSF Storage also adds a "Check-out file" button. 
 
-Clicking the "Rename" button when a file is selected opens a text field with the current folder title editable within it. A "Rename" button
-allows the user to confirm the changes and an 'x' button cancels the changes. If the user attempts to rename the file but leaves
-the text field empty, no changes are saved. After renaming a file, before showing the newly renamed file, the file's row in the table reads::
+Clicking the "Rename" button when a file is selected opens a text field with the current folder title editable within it. A "Rename" button allows the user to confirm the changes and an 'x' button cancels the changes. If the user attempts to rename the file but leaves the text field empty, no changes are saved. 
+
+After renaming a file, before showing the newly renamed file, the file's row in the table reads::
 
     Successfully renamed.
 
-.. todo:: you can change file types by renaming the file but it corrupts them
+When the user renames a file, they must add the file extension to the end of the new name; otherwise, the file will be corrupted and its contents will not show. When the user leaves off the file extension, the icon to the left of the file changes from the file format logo, to an icon with a white page. When the user clicks on the corrupted file to view it on the "File Details" page, a nondismissable yellow alert appears that reads::
+  
+    Unable to detect encoding of source file.
+    
+The user needs to rename the file again and append the file extension to the end of the name. The icon with the file format logo will return to the left of the file, and the file's contents will show on the "File Details" page.
 
 Clicking the "Check out file" button when a file stored in OSF Storage is selected opens a modal::
 
