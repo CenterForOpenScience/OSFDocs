@@ -230,12 +230,12 @@ Clicking the link brings the user to the registration with the following alert a
 
 The "Cancel Registration" button appears only for Project Administrators. If no action is taken by any administrator, the registration is approved. If one administrator cancels the registration by either clicking the cancel link in the email or by clicking the "Cancel Registration" button on the registration Overview page, the registration is cancelled and logged in the original project's Recent Activity widget. Until all administrators on a registration have clicked the approval link in the email, any registration administrator can click "Cancel Registration" on the registration's Overview (even if the administrator had formerly approved).
 
-If a user attempts to visit a link to or approve a cancelled registration, they are brought to a page that reads::
+If a user clicks the link to *approve* an already cancelled registration, they are brought to a page that reads::
 
     Resource Deleted
     This resource has been deleted
-
-.. todo:: after fixed, log what happens if you try to cancel an approved registration
+    
+If a user clicks the link to *cancel* an already approved registration, they are taken to the OSF project for that registration. 
 
 Before a registration has been approved or cancelled, the registrations page shows a tag to the left of the registration
 that reads "Registration Pending." Visiting that registration also shows the tag to the left of the components titles on the
