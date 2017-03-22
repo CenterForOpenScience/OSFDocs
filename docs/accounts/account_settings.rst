@@ -436,12 +436,14 @@ Deactivating an Account
 -------------
 **Purpose:** Users should be able to make an OSF account and ostensibly remove the desired content from the OSF.
 
-Users can deactivate their account by visiting their Account Settings and scrolling to “Request Deactivation.” A yellow
-warning within the “Deactivate Account” section reads::
+Users can deactivate their account by visiting their "Account Settings" and scrolling down to the "Deactivate Account" section of the page. This section has an overview of what account deactivation entails as well as a yellow warning, both of which read::
 
     Warning: This action is irreversible.
+    
+    Deactivating your account will remove you from all public projects to which you are a contributor. Your account will no longer be associated with OSF Projects, and your work on the OSF will be inaccessible.
+    [Request deactivation]
 
-Clicking the “Request Deactivation” button displays a modal asking user to confirm they want to request deactivation::
+To deactivate their account, the user will need to click the red “Request deactivation” button. After clicking the “Request deactivation” button, a modal will appear asking the user to confirm whether they want to deactivate their account::
 
     Request account deactivation?
     Are you sure you want to request account deactivation? An OSF administrator will review your request. If accepted,
@@ -453,14 +455,95 @@ Clicking the “Request” button displays green, dismissible growlbox notificat
     Success
     An OSF administrator will contact you shortly to confirm your deactivation request.
 
-An email is sent to support@osf.io listing OSF user’s GUID and primary email address. The “Request Deactivation” button
-is disabled. On refresh, a message appears::
+An email is sent to support@osf.io listing the OSF user’s GUID, profile URL, and their primary email address. The “Request deactivation” button
+is disabled. If the user refreshes the page, a message appears in place of the button::
 
     Your account is currently pending deactivation. 
 
 This message persists until the account is deactivated.
 
-When a request is sent, a team evaluates the situation before communicating with user.
+When a request is sent, a team evaluates the situation before communicating with the user.
+
+Deactivating an account: no projects
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If the user does not have projects on the OSF, the contact will email the user, explaining what will happen to their account upon deactivation and asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - No projects" that reads as follows::
+  
+    Hello,
+    I am writing to confirm that you wish to deactivate your account on the Open Science Framework (OSF). If you have initiated this request and wish to deactivate your account, please respond to this email and confirm. If you have NOT initiated this request, or initiated this request in error, please respond and let us know. If you take no action, your account will not be deactivated. 
+    Thanks, 
+    
+If the user does not want to deactivate their account, the contact will not take any action, and the user's OSF account will remain.
+
+If the user confirms deactivation, the contact will deactivate the user's account.
+
+
+Deactivating an account: private projects - sole contributor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+If the user has projects that are all private and on which they are the only contributor, the contact will email the user explaining what will happen to their account upon deactivation and asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - Private and sole contrib" that reads as follows::
+  
+  Hello,
+  I am writing to confirm that you wish to deactivate your account on the Open Science Framework (OSF). As your only projects on the OSF are private and do not share other contributors, we will delete their contents upon deactivation of your account. If you’d like to delete these materials yourself, please do so before confirming your account deactivation. If you have initiated this request and wish to deactivate your account, please respond to this email and confirm. If you have NOT initiated this request, or initiated this request in error, please respond and let us know. If you take no action, your account will not be deactivated. 
+  Thanks, 
+
+If the user does not want to deactivate their account, the contact will not take any action, and the user's OSF account will remain.
+
+If the user confirms deactivation, the contact will deactivate the user's account.
+
+Deactivating an account: private projects with other contributors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If the user has all private projects and some or all have other contributors, the contact will email the the user explaining what will happen to their account upon deactivationand asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - Private and other contribs" that reads as follows::
+  
+  Hello,
+  This email is to confirm a deactivation request for your account on the Open Science Framework. Your project(s) on the OSF are private and have other contributors associated with them. If you’d like to remain listed on the project(s), we will show you as a non-claimed contributor (meaning your name will be attached, but you will not have an account). If you do not want your name associated with the project(s), please remove yourself from them prior to confirming deactivation. If you have requested this action and would like your account deactivated, please reply and confirm. If you do not reply to confirm, no action will be taken.
+  Best,
+
+If the user does not want to deactivate their account, the contact will not take any action, and the user's OSF account will remain.
+
+If the user confirms deactivation, the contact will deactivate the user's account.
+
+Deactivating an account: public projects and sole contributor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If the user has public projects on which they are the only contributor, the contact will email the user explaining what will happen to their account upon deactication and asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - Public and sole contrib" that reads as follows::
+
+  Hello,
+  This email is to confirm a deactivation request for your account on the Open Science Framework. Your projects on the OSF are public, and you are the only contributor. If you would like to delete the projects, please do so before confirming your deactivation request. If you’d like the projects to remain, we will show you as a non-claimed contributor (meaning your name will be attached, but you will not have an account). If you have requested this action and would like your account deactivated, please reply and confirm. If you do not reply to confirm, no action will be taken.
+  Best,
+
+If the user does not want to deactivate their account, the contact will not take any action, and the user's OSF account will remain.
+
+If the user confirms deactivation, the contact will deactivate the user's account.
+
+Deactivating an account: public projects with other contributors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If the user has public projects and some or all have other contributors, the contact will email the user explaining what will happen to their account upon deactivation and asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - Public and other contribs" that reads as follows::
+
+  Hello,
+  This email is to confirm a deactivation request for your account on the Open Science Framework. Your project(s) on the OSF are public and have other contributors associated with them. If you’d like to remain listed on the project(s), we will show you as a non-claimed contributor (meaning your name will be attached, but you will not have an account). If you do not want your name associated with the project(s), please remove yourself from them prior to confirming deactivation. If you have requested this action and would like your account deactivated, please reply and confirm. If you do not reply to confirm, no action will be taken.
+  Best,
+
+If the user does not want to deactivate their account, the contact will not take any action, and the user's OSF account will remain.
+
+If the user confirms deactivation, the contact will deactivate the user's account.
+
+User tries to reclaim their account on a project
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+If the user is still listed on a public project, their name will not be hyperlinked to an OSF account but will be plain black text. If the user hovers over their name, the following tooltip will appear::
+  
+    Is this you? Click to claim
+
+If the user goes to claim their account, the following textbox will appear::
+  
+    Claim Account
+    [textbox to enter an email address]
+
+If the user enters their email address into the textbox and clicks the green checkmark to submit their request to claim their account, the textbox becomes outlined in red and the following red dismissable alert appears in the top right of the page::
+  
+    Unable to resolve
+    OSF was unable to resolve your request. If this issue persists, please report it to support@osf.io
 
 .. todo:: Elaborate on the following:
 
