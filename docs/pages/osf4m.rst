@@ -4,6 +4,8 @@
 
 This page is accessible at https://osf.io/meetings/.
 
+See the help guides for more instructions: http://help.osf.io/m/meetings.
+
 OSF for Meetings conference pages
 ---------------------------------
 
@@ -11,5 +13,4 @@ OSF for Meetings conference pages
 
 On a conference page, all submissions are linked to. Download counts for each submitted file are provided.
 
-.. todo:: create and link to complete OSF for Meetings documentation
 
