@@ -51,6 +51,13 @@ Registrations
 
 .. include:: registrations.rst
 
+.. _registries:
+
+Registries
+**********
+
+.. include:: registries.rst
+
 .. _preprints:
 
 Preprints

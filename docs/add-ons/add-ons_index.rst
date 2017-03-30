@@ -1582,7 +1582,7 @@ Viewing OSF Storage Files
 
 Users can obtain and distribute links for their documents in public projects on the OSF so others can then view the same rendered files. In addition, users are provided two different methods of embedding those documents, one in which the iFrame is dynamically rendered and another which provides the iFrame directly.
 
-On the *file details* page, the user sees buttons across the top right::
+If the user is an admin on the project, the following buttons are visible to them in the top right of the "File Details" page::
 
     Delete
     Share
@@ -1590,14 +1590,42 @@ On the *file details* page, the user sees buttons across the top right::
     View
     Revisions
 
-The user clicks the Share button and a popover appears with two tabs::
-    Share
-    Embed
+To any visitor viewing a file on a public project, only the "Share,""Download," "View," and "Revisions" buttons are visible in the top right of the "File Details" page.
 
-The Share Tab provides a URL and a button to copy the URL to the user's clipboard.
-The Embed Tab provides two entries::
+When the user clicks the **Share** button, a popover appears with the following two tabs::
+    
+    [Share][Embed]
+
+The "Share" tab provides a URL and a button to copy the URL to the user's clipboard. Below the URL field are Twitter, Facebook, LinkedIn, and email buttons to share the URL on social media.
+
+The "Embed" tab provides two entries::
+  
     Dynamically Render iFrame with JavaScript (with the associated javascript in a box below)
+    
     Direct iFrame with Fixed Height and Width (with the assocated HTML in a box below)
+    
+When the user clicks the **Download** button, the file is downloaded onto their computer.
 
+The user can toggle the "View" and "Revisions" buttons on and off. The selected button is blue and the unselected button is gray. The "View" button is automatically blue and selected for the user so that the file is displayed in the MFR when the user arrives on the "File Details" page. The "Revisions" button is automatically gray when the user arrives on the page.
 
-.. todo:: Update OSF storage
+When the user clicks the **Revisions** button, the "View" button turns gray and the "Revisions" button turns blue. Clicking the **Revisions** button shows a table of the different versions that the file has gone through (in the order of the most recent version to the oldest). The table format appears as follows::
+  
+    Version ID | Date | User | Download | MD5 [?]| SHA2 [?]
+
+The "Version ID" column displays the version number (e.g. 1,2,3, etc.).
+
+The "Date" column displays the date when the file version was created.
+
+The "User" column displays the user's name which, when clicked, links to their profile page.
+
+The "Download" column displays the number of times the file version has been downloaded.
+
+The "MD5" column displays the MD5 algorithm and a button that the user can click to save the MD5 to their clipboard. The user can hover over the "?" to bring up a tooltip that explains MD5::
+  
+    MD5 is an algorithm used to verify data integrity.
+
+The "SHA2" column displays the SHA2 algorithm and a button that the user can click to save the SHA2 to their clipboard. The user can hover over the "?" to bring up a tooltip that explains SHA2::
+  
+    SHA-2 is a cryptographic hash function designed by the NSA used to verify data integrity.
+
+The user can click the most recent version ID to display the file in the MFR on the "File Details" page. When the user does this, the "View" button is selected and the "Revisions" button is grayed out in the top right of the page. Only the most recent file version can be displayed in the MFR.

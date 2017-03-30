@@ -31,6 +31,12 @@ The next link is to the :ref:`Contributors page <contributors>`. This page lists
 The final link is to the :ref:`Settings page <project-settings>`. This page allows admins to configure the project. This page
 is not visible to non-contributors.
 
+Renaming a Project
+------------------
+**Purpose:** Allows the user to change the name of their project or component after they have created it.
+
+The user must be on the "Project Overview" or "Component Overview" page to rename their project or component. When the user clicks the project or component name in the top left corner of the "Overview" page, the title turns into a textbox where the the user can make changes to the title. To the right of the textbox is a green checkmark and an "x" that the user can click to either save their changes or cancel their changes, respectively. The user can also press **enter** on their keyboard to commit the new name.
+
 .. _overview-metadata:
 
 Metadata
