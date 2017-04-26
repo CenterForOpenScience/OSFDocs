@@ -9,7 +9,7 @@ registration date and time, contributors, and contributions, in the same format 
 
 When no registrations have been made, non-contributors see text explaining this::
 
-    There have been no registrations of this component. For a list of the most viewed and most recent public registrations
+    There have been no registrations of this project. For a list of the most viewed and most recent public registrations
     on the Open Science Framework, click here.
 
 The link provided sends the user to the :ref:`Public Activity page <public-activity>`.
@@ -39,13 +39,24 @@ says "read-only" repeatedly. At the top of the page is a non-dismissable blue al
 
 The alert links to the project that the registration is a copy of.
 
-In addition to the Project Overview's :ref:`metadata <overview-metadata>`, there is an additional field, "Registration Supplement."
+In addition to the Project Overview's :ref:`metadata <overview-metadata>`, there is an additional field, "Registration Form."
 This field lists the name of the registration template the registrant used. Clicking the name links the user to a page with
-a copy of the template and the registrant's responses.
+a noneditable copy of the registration form and the registrant's responses.
 
 The Files widget does not allow for editing of file names, reorganization of files, or deletion of files, however. Only
 downloads are permitted. Files are saved within their storage add-ons and OSF Storage, grouped into folders. The folders are
 titled "Archive of [storage add-on]." These folders are collapsed by default.
+
+Moreover, a registration's Recent Actity widget only only shows the original OSF project's activity prior to the creation of the registration. In other words, the registration's Recent Activity widget is a frozen snapshot of the original OSF project's recent activity. Activity related to the registration itself, such as the user's creation of the registration, is only logged into the project's Recent Activity widget and not the registration's. 
+
+Activity pertaining to the creation of the registration is logged into the original OSF project's Recent Activity widget:
+
+*Intiated: the administrator who creates the registration is listed in the Recenty Activity widget as the oen who initiated the registration.
+*Approved: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who approved the registration.
+*Canceled: the first adminstrator to cancel the registration is the only admin listed in the Recent Acvitity widget who canceled the registration.
+*Registered: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who registered the registration.
+
+The blue Comments icon appears in the top right of the registration Overview page. The project's comments are not carried over to the registration. However, any comments made on the project prior to the registration's creation are logged into both the project and registrations's Recent Activity widget.
 
 
 Creating a Registration
@@ -164,8 +175,9 @@ Prior to completing their registration, the user decides on an embargo period. T
     the registration, it will be canceled. If all other administrators approve or do nothing, the registration will be
     confirmed and enter its embargo period.
 
-Below the "Registration Choice" header is a dropdown for the user to make their selection. Options are: "Make registration
-public immediately," "Enter registration into embargo."
+Below the "Registration Choice" header is a drop-down menu from which the user decides to either::
+    [Make registration public immediately]
+    [Enter registration into embargo]
 
 Registrations with No Embargo
 ^^^^^^^^^^^^^^^^
@@ -216,14 +228,14 @@ Clicking the link brings the user to the registration with the following alert a
     be final and enter the embargo period when all project administrators approve the registration or 48 hours pass,
     whichever comes first. [Cancel Registration]
 
-The Cancel Registration button appears only for Project Administrators. If no action is taken by any administrator, the registration is approved. The Cancel Registration button appears only for Project Administrators.
+The "Cancel Registration" button appears only for Project Administrators. If no action is taken by any administrator, the registration is approved. If one administrator cancels the registration by either clicking the cancel link in the email or by clicking the "Cancel Registration" button on the registration Overview page, the registration is cancelled and logged in the original project's Recent Activity widget. Until all administrators on a registration have clicked the approval link in the email, any registration administrator can click "Cancel Registration" on the registration's Overview (even if the administrator had formerly approved).
 
-If a user attempts to visit a link to or approve a cancelled registration, they are brought to a page that reads::
+If a user clicks the link to *approve* an already cancelled registration, they are brought to a page that reads::
 
     Resource Deleted
     This resource has been deleted
-
-.. todo:: after fixed, log what happens if you try to cancel an approved registration
+    
+If a user clicks the link to *cancel* an already approved registration, they are taken to the OSF project for that registration. 
 
 Before a registration has been approved or cancelled, the registrations page shows a tag to the left of the registration
 that reads "Registration Pending." Visiting that registration also shows the tag to the left of the components titles on the
@@ -237,23 +249,30 @@ Registrations with an Embargo
 **Purpose:** Embargo periods allow the user to keep a registration private for a limited period of time.
 
 Selecting "Enter registration into embargo" opens another text field below the dropdown titled "Embargo end date." Clicking
-into the text field opens a calendar widget for the user to select a date for the conclusion of the embargo. On the selected date,
-the registration will become public.
+into the text field opens a calendar widget from which the user can choose the embargo's end date. On the selected end date,the registration will become public.
 
-The date selected must be more than two days in the future but cannot be greater than four years away. If the user attempts to
-select a date not within the appropriate range, after attempting to confirm their registration the calendar widget is opened
-and a dismissable yellow growlbox alert shows at the top right of the page::
+The embargo end date must be more than three days but cannot be greater than four years in the future. 
 
-    Invalid embargo end date
-    Please choose a date more than two days, but less than four years, from today.
+If the user chooses a date that is greater than four years, a growlbox will appear below the "Embargo End Date" field::
+  
+    Embargo end date must be less than four years in the future.
+
+The user cannot click "Continue" until they have chosen an appopriate date.
+    
+If the user chooses a date that is less than three days in the future, the calendar will close and the chosen date will appear in the field (even though this date is invalid). A growlbox will also appear below the "Embargo End Date" field::
+  
+    Embargo end date must be at least three days in the future.
+    
+The user cannot click "Continue" until they have chosen an appopriate date.
+    
+When the user chooses a date within the correct date range, they can click "Continue"
 
 After confirming the registration, the user is brought back to the registrations page for the registered project. A blue alert
 is at the top of the page::
 
     Files are being copied to the newly created registration, and you will receive an email notification when the copying is finished.
 
-If the registration was entered into an embargo period, a lock indicating that the project is private appears to the left
-of the title on the registration page. Before an admin approves the embargo, an additional tag reads "Pending Embargo."
+If the registration was entered into an embargo period, a lock symbol will appear to the left of the registration's title, indicating that the project is embargoed. Before an admin approves the embargo, an additional tag reads "Pending Embargo."
 These also appear to the left of component titles on the registration's overview. After the embargo is approved, the tag
 reads "Embargoed" until the embargo period is concluded.
 
@@ -261,14 +280,13 @@ If a registration is embargoed, all admins on the project, including the registr
 
     Hello [username],
 
-    We just wanted to let you know that [username] has requested an embargoed registration for a project you administer.
-    The proposed registration can be reviewed here: URL.
-    If approved, a registration will be created for the project and it will remain private until it is retracted, manually
+    [username or "You"] initiated an embargoed registration of [project name]. The proposed registration can be viewed here: [URL of registration].
+    If approved, a registration will be created for the project and it will remain private until it is withdrawn, manually
     made public, or the embargo end date has passed on [date].
-    To approve this action click the following link: URL
-    To disapprove this action, click the following link: URL
+    To approve this embargo, click the following link: [URL]
+    To cancel this embargo, click the following link: [URL]
     Note: Clicking the disapproval link will immediately cancel the pending embargo and the registration will
-    be deleted. If you neither approve nor disapprove the embargo within 48 hours from
+    remain in draft state. If you neither approve nor disapprove the embargo within 48 hours from
     midnight tonight (EDT) the registration will remain private and enter into an embargoed state.
 
     Sincerely yours,
@@ -279,10 +297,9 @@ Non-admins also receive an email::
 
     Hello [username],
 
-    We just wanted to let you know that [registrant username] has requested an embargoed registration for a project you
-    contribute to.
-    If approved, a registration will be created for the project, viewable here: URL, and it will remain
-    private until it is retracted, manually made public, or the embargo end date has passed on [date].
+    We just wanted to let you know that [registrant username] has initiated an embargoed registration for the following pending registraiton: [URL].
+    If approved, a registration will be created for the project, viewable here: [URL], and it will remain
+    private until it is withdrawn, manually made public, or the embargo end date has passed on [date].
 
     Sincerely yours,
 
@@ -292,32 +309,24 @@ Visiting the embargoed registration before it is approved shows a non-dismissabl
 
     This project is currently pending registration, awaiting approval from project administrators. This registration will
     be final and enter the embargo period when all project administrators approve the registration or 48 hours pass,
-    whichever comes first. The embargo will keep the registration private until the embargo period ends. [Cancel Registration]
+    whichever comes first. The embargo will keep the registration private until the embargo period ends.
+    [Cancel Registration]
 
-The Cancel Registration button appears only for Project Administrators.
+The **Cancel Registration** button appears only for Project Administrators.
 
 After an embargo is enacted, a red non-dismissable alert is shown at the top of the page::
 
-    This component is currently embargoed. It will remain private until its embargo date, [date], passes or an admin
-    manually makes it public.
+    This project is currently embargoed. It will remain private until its embargo date, [day/month/year].
 
-An admin can change the privacy setting on an embargoed project or components they are an admin on. If an admin clicks the
-"Make Private" button, a modal appears::
+After an embargo ends, the registration and its components are made public. 
 
-    Warning
-    Once a registration is made public, you will not be able to make the registration private again. After making the
-    registration public, if you discover material in it that should have remained private, your only option will be to
-    retract the registration. This will eliminate the registration, leaving only basic information of the project title,
-    description, and contributors with a notice of retraction.
-    [Cancel] [Make Public]
-
-Public components or projects in an embargo cannot be made private.
-
-After an embargo ends, the registration and its components are made public.
+The cron job runs to end an embargo at midnight.
 
 End embargo early
 ---------------
-If an embargoed registration is already approved, it may be made public by the project administrators. One the registration page, a "Make Public" button appears. Clicking it generates the following modal::
+If an embargoed registration is already approved, it may be made public by the project administrators. Public components or projects cannot be made private. 
+
+On the registration page, a "Make Public" button appears. Clicking it generates the following modal::
 
     End embargo early
     By clicking confirm, an email will be sent to project administrator(s) to approve ending the embargo. If approved, this registration, including any components, will be made public immediately. This action is irreversible.
@@ -349,11 +358,13 @@ Withdrawals
 **Purpose:** Withdrawals allow admins to make the contents of a registration private.
 
 A registration that is not embargoed is public. Users cannot "undo" a registration or make its contents private, but admins
-do have the option to withdraw the registration. To withdraw a registration the admin visits the registration's settings page.
+do have the option to withdraw the registration. Both public and embargoed registrations can be withdrawn. 
+
+To withdraw a registration the admin visits the registration's Settings page.
 Non-admins do not see the link to the Settings page.
 
-Only the entirety of a registration can be withdrawn—individual components cannot be withdrawn. If an admin visits a component's
-settings page to attempt to withdraw the registration of the individual component, a panel reads::
+Only the entirety of a registration (a registered project and its registered components) can be withdrawn—individual components cannot be withdrawn. If an admin visits a component's
+Settings page to attempt to withdraw the registration of the individual component, a panel reads::
 
     Withdraw Registration
     Withdrawing children components of a registration is not allowed. Should you wish to withdraw this component, please
@@ -457,22 +468,20 @@ Public, meaning non-embargoed, registrations can be given DOIs and ARKs. To do s
 click the "Create DOI/ARK" link below the "Date Created" field. Clicking opens a modal::
 
     Create identifiers
-    Are you sure you want to create a DOI and ARK for this project?
+    Are you sure you want to create a DOI and ARK for this project? DOI and ARK identifiers are persistent and will always resolve to this page.
     [Cancel][Create]
 
 Clicking "Create" turns the link to text that reads::
 
-    Creating identifiers
+    Creating DOI and ARK. Please wait...
 
 After several seconds, the text changes again to read::
 
     Identifiers: DOI [DOI identifier] | ARK [ARK identifier]
 
-Both identifiers link to an EZID page for the registration.
-
-When a DOI has been created for a project, the citation widget updates to reflect the doi.org URL instead of the registration's osf.io
-URL.
-
+The OSF begins all DOIs and ARKs with the same number, followed by "/osf.io/GUID." The following structure is the same for all DOIs and ARKs created on the OSF (the GUID is different for each project or registration)::
+  
+    DOI 10.17605/OSF.IO/GUID | ARK c7605/osf.io/GUID
 
 Registering with Add-ons
 ----------------
@@ -498,3 +507,9 @@ No other add-on produces a similar warning during registration, though they are 
 before completing the registration.
 
 Copies of the most recent version of all other add-ons will be present. OSF Storage maintains complete version history.
+
+External Links
+^^^^^^^^^^^^^^^^^^^
+The user can create external links to both registrations (public and embargoed) and projects/components alike. If an external link points to a project that is registered, the link will point to the project and not the registration. In other words, if the user has Project A and creates an external link to Project B, and registers project B, the external link will still point to Project B and not its registration.
+
+To point a project or component to a registration, the user will need to enter the registration's URL into the "External Link" field when :ref:`configuring the external link <external link>`. If a user has access to an embargoed registration, the user can still create an external link that directs to it.
