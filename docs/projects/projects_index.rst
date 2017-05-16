@@ -37,12 +37,26 @@ File Storage
 
 .. include:: storage.rst
 
+.. _commenting:
+
+Commenting
+***********
+
+.. include:: commenting.rst
+
 .. _registrations:
 
 Registrations
 ***************
 
 .. include:: registrations.rst
+
+.. _preprints:
+
+Preprints
+***************
+
+.. include:: preprints.rst
 
 .. _forks:
 
@@ -85,10 +99,3 @@ Project Settings
 ***************
 
 .. include:: settings.rst
-
-.. _commenting:
-
-Commenting
-***********
-
-.. include:: commenting.rst

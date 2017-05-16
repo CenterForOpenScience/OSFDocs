@@ -55,6 +55,7 @@ Files Browser. Only titles are searched—not file contents. Elements that do no
 Selecting a result returns the file tree and closes the search field. The selected result is then highlighted within
 the file tree.
 
+.. _OSF-storage:
 Uploading to OSF Storage
 ^^^^^^^^^^^^^^^^^
 **Purpose:** Users can upload files to be stored by the OSF.
@@ -78,16 +79,16 @@ Folders
 
 Clicking the "Create Folder" opens a text field and two buttons that replace the existing buttons in the toolbar: a "Create" and a
 cancel button labeled with an 'x.'  The user can type a folder name into the text field and press the return key or click "Create"
-to save the change. Folder titles can be any length; if they are too long to fit in the panel, an ellipsis cuts of the excluded content.
+to save the change. Folder titles can be any length; if they are too long to fit in the panel, an ellipsis cuts off the excluded content.
 The folder appears, collapsed, within the OSF Storage folder selected. Any number of folders can be created. Folders can be nested
 within one another.
 
 Clicking on a folder shows the "Upload," "Create Folder," "Search," and "i" buttons in the toolbar as well as two additional options:
 "Delete Folder" and "Rename."
 
-Clicking "Rename" opens a text field with the current folder title editable within it. A "Rename" button
+Clicking "Rename" opens a text field with the current folder title editable within it. A pencil icon
 allows the user to confirm the changes and an 'x' button cancels the changes. If the user attempts to rename the folder but leaves
-the text field empty, no changes are saved. After renaming a folder, before showing the newly renamed folder, the folder's row in the table reads::
+the text field empty, no changes are saved. After renaming a folder, before showing the newly renamed folder, a temporary message appears in the folder's row that reads: "Renaming [folder name]." Once the changes have been saved, a temporary confirmation message in the the folder's row reads::
 
     Successfully renamed.
 
@@ -108,13 +109,17 @@ Single File Actions
 Selecting a single file from any add-on or folder adds four additional buttons to the toolbar, beyond the default "Search" and "i:"
 "Download," "View," "Delete," and "Rename." Selecting a file from OSF Storage also adds a "Check-out file" button. 
 
-Clicking the "Rename" button when a file is selected opens a text field with the current folder title editable within it. A "Rename" button
-allows the user to confirm the changes and an 'x' button cancels the changes. If the user attempts to rename the file but leaves
-the text field empty, no changes are saved. After renaming a file, before showing the newly renamed file, the file's row in the table reads::
+Clicking the "Rename" button when a file is selected opens a text field with the current folder title editable within it. A pencil icon allows the user to confirm the changes and an 'x' button cancels the changes. If the user attempts to rename the file but leaves the text field empty, no changes are saved. 
+
+After renaming a file, before showing the newly renamed file, a temporary message appears in the file's row that reads: "Renaming [filename]." After the save is complete, the file's row reads::
 
     Successfully renamed.
 
-.. todo:: you can change file types by renaming the file but it corrupts them
+When the user renames a file, they must add the file extension to the end of the new name; otherwise, the file will be corrupted and its contents will not show. When the user leaves off the file extension, the icon to the left of the file changes from the file format logo, to an icon with a white page. When the user clicks on the corrupted file to view it on the "File Details" page, a nondismissable yellow alert appears that reads::
+  
+    Unable to detect encoding of source file.
+    
+The user needs to rename the file again and append the file extension to the end of the name. The icon with the file format logo will return to the left of the file, and the file's contents will show on the "File Details" page.
 
 Clicking the "Check out file" button when a file stored in OSF Storage is selected opens a modal::
 
@@ -183,7 +188,9 @@ On the lower left hand side is a Tags widget, for files stored on OSF Storage. W
 Contributors with read+write or admin permissions can add a tag by clicking in the “Add a tag” field and typing a keyword. Pressing the return key will add the tag. Adding a comma after a tag and pressing the space bar, as if making a list, will also add a tag. Tags appear in blue boxes with a black ‘x’ to the right of the text. Clicking the ‘x’ allows the user to remove the tag.
 Hovering over a tag darkens the background color. Clicking on a tag brings the user to search results page, where the query was the tag name.
 
-If the file can be rendered, it displays in the rest of the screen. Above the rendered file are three buttons: "Download", "View", "Revisions." 
+If the file can be rendered, it displays in the rest of the screen. For a list of which file types render in the browser, go to `<https://gist.github.com/felliott/8fd378c25c1b7122b6e7992cdb2693a7>`_. 
+
+Above the rendered file are three buttons: "Download", "View", "Revisions." 
 
 For ADMIN and READ+WRITE contributors, a "Delete" button is also present. For these users and plain text files, an "Edit" button appears. 
 

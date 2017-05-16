@@ -4,6 +4,7 @@
 
 The sign-up form can be accessed only while logged out, from the OSF homepage (osf.io). This form requests the user’s full name, contact email, confirmation of their contact email, and a password. After successfully submitting, the user cannot click into any of the fields.
 
+**Use cases**
 If the user does not complete a field, but clicks into a subsequent field or returns to a previous field or submits the form, an alert below the field(s) reads::
 
     This field is required.
@@ -34,46 +35,36 @@ If the user enters a password that is longer than 256 characters, but submits th
 
 Clicking “Sign up free” while any error alert is still showing produces no result.
 
-
-If the user tries to sign-up with an unregistered email, an inline success alert is shown on the page. The user is told::
-
-    Registration successful. Please check [email] to confirm your email address.
-
-
-If the user tries to sign-up with a registered but unconfirmed email, an inline success alert is shown on the page. The user is told::
-
-    Registration successful. Please check [email] to confirm your email address.
-
-The user receives an email::
-
-    Hello [User Name],
-    Please confirm your email address by visiting this link:
-    URL
-    From the Open Science Framework Robot
-
-If the user tries to sign-up with an email that had been listed as an" :doc:`alternate </account_settings>` but that was removed, an inline success alert is shown on the page. The user is told::
-
-    Registration successful. Please check [email] to confirm your email address.
-
-The user receives an email::
-
-    Hello [User Name],
-    Please confirm your email address by visiting this link:
-    URL
-    From the Open Science Framework Robot
-
-If the user tries to sign-up with a registered email, an inline red alert is shown on the page. The user is told::
+If the user tries to sign-up with a registered email, the following temporary inline red alert appears::
 
     The email [email] has already been registered
 
-No email is sent.
+The alert disappears after several seconds. No email is sent.
 
-If the user tries to sign-up with a :doc:`deactivated </account_settings>` account's email, an inline red alert is shown on the page. The user is told::
+If the user tries to sign up with a :ref:`deactivated account's email </account-settings>`, the following inline red alert appears::
 
     The email [email] has already been registered
 
-No email is sent.
+The alert disappears after several seconds. No email is sent.
 
+**The user signs up correctly**
+If the user signs up with a valid email address (including a previous alternate email that was removed or a registered but unconfirmed email), they receive a confirmation message::
+
+  Registration successful. Please check [email] to confirm your email address.
+
+The user receives the following email::
+  
+  Hello [User Name],
+  Thank you for registering for an account on the Open Science Framework.
+  Please verify your email address by visiting this link:
+  [URL]
+  The OSF Team
+  Center for Open Science
+
+The confirmation link in the email lasts for 24 hours before it expires
+
+When the user clicks the link in the email to confirm their OSF account, they are logged in to their OSF account and taken directly to their :ref:`my-dashboard`.
+  
 Confirming an Unregistered User Account
 ---------------
 
@@ -94,11 +85,24 @@ If a user is added as a contributor to a project, but does not have an OSF accou
     The OSF Team
     If you are not [Name of account being claimed] or you are erroneously being associated with [Project Name] then email contact@osf.io with the subject line "Claiming Error" to report the problem.
 
+When the user clicks the link in the email, they are taken to the "Set Password" page where they will need to claim their account. The page appears::
+  
+    Email: [email address]
+    [password field that is already filled in]
+    Verify Password field
+                I'm not a robot [checkbox]
+    If you are not [user name], or if you were erroneously added as a contributor to the project described in the email invitation, please email contact@osf.io [this is a link that opens an email window]. By clicking "Save" and creating an account you agree to our Terms [links to the COS Terms and Conditions of User] and that you have aread out Private Policy [links to the COS Private Policy], including our information on Cookie Use [links to the COS Private Policy].
+                [Save]
+                
+If the user's passwords do not match, an alert will appear::
+
+    Passwords do not match
+
+When the user enters a matching password, and confirms that they are not a robot, they can click the **Save** button. When they click this button, they will be taken directly to the project to which they were originally added as an unregistered contributor.
+
 If the user has confirmed their account and is signed into the OSF, but follows the email’s link again, they are brought to a page that informs them they are already a contributor.
 
 If the user has confirmed their account and is not signed into the OSF, but follows the email’s link again, they are brought to a page that informs them that the account has already been claimed.
-
-.. todo:: what if they do it right?
 
 Claiming an Account Via the OSF
 ^^^^^^^^^^

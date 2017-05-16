@@ -1,8 +1,9 @@
 **Purpose:** Templates copy one project's structure so that the bare bones of a new project can be easily created.
 
+**Using a public project as a template**
 
 Any public project can be used as a template, meaning that any OSF user can copy the tree structure and component titles of that
-project.
+project. A user can also copy their private projects using this same workflow.
 
 Templates can be created by visiting the project the user wishes to copy and clicking the "Duplicate" button in the upper right
 hand corner. A modal opens, the second column reads::
@@ -25,18 +26,25 @@ Clicking "Create" creates the new project.
 The user is then brought to their new project. The project title is "Templated from ____," referencing the project from
 which it copied its structure. The user who created the templated project is the only contributor.
 
-Alternatively, a project can be created from a template via the :ref:`quick-tasks <Quick Tasks>` panel on the My Dashboard page.
-There, after providing a title an description, the user can select a template::
+**Using a personal project as a template**
 
-    Template (Optional)
-    Start typing to search. Selecting project as template will duplicate its structure in the new project without importing
-    the content of that project.
+Alternatively, if the project that the user wants to use as a template is one of their own, they can create a new templated project from their dashboard.
 
-A dropdown below these instructions allows the user to search their own projects and public projects on the OSF. As the user
-types a query into the dropdown's text field, results matching the query are displayed. Selecting a result and clicking
-"Create" brings the user to their new project based on their selected project's structure.
+Templates can be created by clicking the **Create new project** button on the dashboard. In the modal that appears, the user will need to enter a title for their project and then click **More**. The following drop-down section will unfold::
+  
+    Description
+    Enter project description [texbox]
+    
+    Template (optional)
+    Start typing to search your projects. Selecting project as template will duplicate its structure in the new project without importing the content of that project.
+    Select a project to use as a template [drop-down menu of the user's projects]
+    
+When the user selects one of their projects as a template from the drop-down menu, and then clicks **Create**, the following modal will apppear::
+  
+    New project created successfully!
+    [keep working here][Go to new project]
 
-Projects created from templates copy the tree structure, including all components, subprojects, and subcomponents. The titles of
-components and projects are preserved in the new project. Public links are also copied, though private links are not. No files
-or wiki contents are copied.
+If the user clicks **Go to new project**, they will see the project they created from the template. The new project will be titled according to what the user entered into the modal. "Templated from" will not be part of the title when the user creates a templated project from their dashboard.
 
+If the user clicks **Keep working here**, the page will reload and the user will remain on their dashboard.
+    
