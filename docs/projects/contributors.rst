@@ -15,7 +15,7 @@ The Contributors page is divided into two parts. To the left are filtering optio
 The Table section of the Contributors page has an "Add" button to the right of the title. Below the title are instructions
 referring to the table below them::
 
-    Drag and Drop contributors to change listing order
+    Drag and Drop contributors to change listing order.
 
 The table has four columns: "Name," "Permissions," "Bibliographic Contributor," and a remove contributor column. When the user
 hovers over a '?' to the right of "Permissions" a popover appears::
@@ -265,56 +265,50 @@ Removing Contributors
 ^^^^^^^^^^^^^^^^^^^
 **Purpose:** Contributors can be removed to prevent them from being listed in the contributor list or from editing the project.
 
-Admins can remove any contributor on a project. Contributors with read+write or read-only permissions can remove themselves from
-a project, but they cannot remove other contributors.
+Admins can remove any contributor to a project. Contributors with read+write or read only permissions can remove themselves from
+a project, but not others.
 
 To remove a contributor, the user must click the red 'Remove' button in the far right column of the "Contributors" table. 
 
-Clicking the button causes a modal to appear. 
+Clicking the button pops up a modal. 
 
-If the project or component does not have components nested within it, the modal reads::
+If the project or component does not have components nested within it, the modal reads:: 
     
     Remove Contributor
     Remove [username] from [Project]?
     [Cancel][Remove]
 
-Clicking **Cancel** returns the user to the Contributors page with no changes made. Clicking **Remove** removes the contributor from the project or component. The user is returned to the Contributors page.
+Clicking [Cancel] returns the user to the Contributors page with no changes made. Clicking [Remove] removes the contributor from the project or component. The user is returned to the Contributors page.
 
-If the project has components nested within it, the modal reads::
+If the project has components nested within it, the modal reads:: 
 
     Remove Contributor
-    Do you want to remove [username] from [Project], or from [Project] and every component in it?
+    Do you want to remove [username] from [Project], or from [Project] and ever component in it?
     Remove [username] from [Project]
     Remove [username] from [Project] and every component in it.
     [Cancel][Remove]
 
-The user can select the radio button corresponding to his/her choice. If the user selects **Remove [username] from [Project] and every component in it**, the red **Remove** button turns into a gray **Continue** button. Clicking **Cancel** sends the user back to the Contributors page with no changes made. Clicking **Continue** sends the user to a second modal::
+The user can select the radio button corresponding to his/her choice. If the user selects "Remove [username] from [Project] and every component in it," the red Remove button becomes a gray Continue button. Clicking [Cancel] sends the user back to the Contributors page with no changes made. Clicking [Continue] sends the user to a second modal::
 
     Remove Contributor
     [Username] will be removed from the following projects and/or components. 
     (list of project/components to be altered)
     [Back][Cancel][Remove]
 
-Clicking **Back** sends the user back to the previous modal. Clicking **Cancel** sends the user back to the Contributors page with no changes made. Clicking **Remove** removes the contributor from the selected project and components. 
+Clicking [Back] sends the user back to the previous modal. Clicking [Cancel] sends the user back to the Contributors page with no changes made. Clicking [Remove] removes the contributor from the selected project and components. 
 
-If the user removes him or herself in the above scenarios, the following modal appears::
-  
-    Remove yourself from [project name]?
-                        [Cancel][Remove]
-
-When the user clicks **Remove**, the user is taken to their dashboard which has a green dismissable confirmation message at the top of the page::
+If the user is removing him or herself in the above scenarios, user is sent to contributors page but sees a forbidden error, with a green dismissable alert at the top of the page::
     
     You have removed yourself as a contributor from this project
 
-If the user connected add-ons to the project, a blue dismissible alert will appear above the green alert that reads::
-  
-    Because the [add-on] for Project "[project name]" was authenticated by [username], authentication information has been deleted.
+.. todo:: update when this bug is fixed. "confirming will send the user to the :ref:`My Dashboard <my-dashboard>` page" 
 
-If the user tries to remove him or herself as a contributor when s/he is the only contributor on a project, a modal appears::
+If the user tries to remove him or herself as a contributor when s/he is the only contributor on a project, a modal appears:: 
 
     Remove Contributor
     You cannot be removed as a contributor. You need at least one administrator, bibliographic contributor, and registered user. 
     [Cancel]
+
 
 View-only Links
 --------------
