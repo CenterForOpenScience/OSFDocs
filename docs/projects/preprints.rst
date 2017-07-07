@@ -12,11 +12,11 @@ Preprint Detail Page
 ---------------
  **Purpose:** The "Preprint Detail" page is the main page where the user reads and downloads a given preprint.
 
-At the top of the "Preprint Detail" page, the preprint's title appears in large typeface. The date when the preprint was shared and the date when the preprint was last edited are listed below the preprint's title.
+At the top of the "Preprint Detail" page, the preprint's title appears in large typeface. Below the title is a list of the co-authors on the preprint. If a co-author is a registered contributor, their name will be linked to their OSF profile page. The date when the preprint was shared and the date when the preprint was last edited are listed below the preprint's title.
 
 On the left half of the page, the preprint appears in an MFR, below which a "Download preprint" button, and the supplemental files (if the user has uploaded any) are shown. The preprint file will also be listed below the MFR but only in the event that there are supplemental files.
 
-On the right half of the page, the preprint's abstract, license, disciplines, DOI (if any), tags, and citation styles (MLA, APA, and Chicago) are listed. If an abstract is long, there will be a **See more** button below the abstract that the user can click to expand the remaining text. When the abstract is expanded, the button changes to **See less**. When the user clicks the **See less** button, the abstract shrinks back to its shorter length, and the **See more** button returns.
+On the right half of the page, the preprint's abstract, license, disciplines, DOI (when clicked takes the user to the journal article), tags, and citation styles (MLA, APA, and Chicago) are listed. If an abstract is long, there will be a **See more** button below the abstract that the user can click to expand the remaining text. When the abstract is expanded, the button changes to **See less**. When the user clicks the **See less** button, the abstract shrinks back to its shorter length, and the **See more** button returns.
 
 In the top right of the Preprint Detail page, there is a gray box that includes a series of actions for downloading and sharing a preprint::
 
@@ -27,7 +27,7 @@ At the bottom right of the page, there is a gray box that reads::
   The project for this paper is available on the OSF
   [Visit project] (links to the OSF project connected to a preprint)
 
-The user who uploaded the preprint can see a green "Edit preprint" button in the top right of the Preprint Detail page. Visitors to a Preprint Detail page cannot see this button.
+Admins can see a green "Edit preprint" button in the top right of the Preprint Detail page. Contributors with read access or read+write acces and visitors to a Preprint Detail page cannot see this button.
 
 OSF Preprints Landing Page
 ---------------
