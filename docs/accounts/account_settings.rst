@@ -4,11 +4,11 @@ their OSF account.
 A user can access their account "Settings" page by clicking their name on the far right of the navigation bar. In the drop-down menu that unfolds, the user clicks **Settings** (with the gear icon to the left of it) and is taken to their account "Settings" page.
 
 Merging Accounts (Connected Emails)
---------------------
+-----------------------------------
 **Purpose:** Account merging allows users to consolidate multiple OSF accounts into one and allows the user to login using multiple emails.
 
 Primary and Alternate Emails
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Primary emails are the emails to which all correspondence from the OSF will be sent. When merging accounts,
 their :doc:`profile information <../profiles/profiles_index>` is kept while the alternate accounts’ is lost.
 
@@ -143,7 +143,7 @@ If User A merges with User B and keeps User B's profile and information, User A'
     This account has been merged with [URL of the merged account]
 
 Removing Emails
-^^^^^^^^^^
+^^^^^^^^^^^^^^^
 **Purpose:** Unconfirmed and alternate emails can be removed to reduce the number of login emails available.
 
 A primary email cannot be removed. Alternate or unconfirmed emails can be removed by clicking the ‘x’ to the right of the
@@ -210,12 +210,12 @@ not return the old profile. Similar names may produce relevant results, however.
 If the user has two accounts and both are added to a project with different permissions, when the user merges their accounts, the project will reflect the primary account's permissions on the project.
 
 Changing Passwords
--------------
+------------------
 
 **Purpose:** Passwords can be changed at the user’s request to increase security, make it more memorable, or gain access to the account.
 
 Changing a Password Via Account Settings
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** A user’s account settings can be used to change their password for any reason.
 
 To change a password while logged into the OSF, the user visits their Account Settings. Under “Change Password” there are
@@ -275,7 +275,7 @@ No email is sent to confirm the change.
 The user is able to copy and paste into any of the three fields.
 
 Resetting a Forgotten Password
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** If a user forgets their password and cannot log in to their OSF account, their password can be reset.
 
 There is no limit to the number of times a user can reset their password.
@@ -384,13 +384,13 @@ If the user follows the link after having already reset the password, they are b
 If the user enters their email to reset their password, but does not follow the confirmation link, their password remains the same.
 
 Security Settings
-------------
+-----------------
 **Purpose:** Security settings are available to allow the user to configure how much protection they have on their OSF account and data.
 
 Security Settings are found under Account Settings.
 
 Enabling Two-factor Authentication
-^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Two-factor Authentication allows the user to add an additional step to the login process—making it more secure.
 
 To enable Two-factor Authentication, the user visits their Security Settings on their Account Settings page. A description
@@ -432,7 +432,7 @@ If the user disables Two-factor Authentication but then re-enables it, they must
 code will not be correct.
 
 Disabling Two-Factor Authentication
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Disabling Two-Factor Authentication allows the user to remove the second step of the login process that they
 had previously enabled.
 
@@ -449,7 +449,7 @@ of two-factor authentication is provided below the title.
 After disabling Two-Factor Authentication, the user can login without the extra verification step.
 
 Export Account Data
---------------
+-------------------
 **Purpose:** Some users may wish to leave the OSF or to have an additional copy of their OSF content; in these events,
 exporting account data allows the user to get a copy of the contents of their entire OSF account.
 
@@ -472,7 +472,7 @@ The request is sent to support@osf.io and administrators contact the user via em
 The “Request Export” button becomes disabled, but is re-enabled on refresh.
 
 Deactivating an Account
--------------
+-----------------------
 **Purpose:** Users should be able to make an OSF account and ostensibly remove the desired content from the OSF.
 
 Users can deactivate their account by visiting their "Account Settings" and scrolling down to the "Deactivate Account" section of the page. This section has an overview of what account deactivation entails as well as a yellow warning, both of which read::
@@ -504,7 +504,7 @@ This message persists until the account is deactivated.
 When a request is sent, a team evaluates the situation before communicating with the user.
 
 Deactivating an account: no projects
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If the user does not have projects on the OSF, the contact will email the user, explaining what will happen to their account upon deactivation and asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - No projects" that reads as follows::
   

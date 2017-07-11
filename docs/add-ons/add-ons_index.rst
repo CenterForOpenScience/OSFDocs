@@ -33,7 +33,7 @@ To configure any add-on, the first step is to visit the Settings page and check 
 .. _s3:
 
 Configuring Amazon S3
-**********
+*********************
 **Purpose:** Connecting to Amazon S3 allows users to create a two way connection between the OSF and Amazon S3.
 
 Users who choose to connect their Amazon S3 account to the OSF can check appropriate box. They are presented with a
@@ -141,7 +141,7 @@ changes.
 .. _box:
 
 Configuring Box
-*******
+***************
 **Purpose:** Connecting to Box allows users to create a two way connection between the OSF and Box.
 
 Users who choose to connect their Box account to the OSF can check appropriate box. They are presented with a
@@ -226,7 +226,7 @@ changes.
 .. _dataverse:
 
 Configuring Dataverse
-************
+*********************
 **Purpose:** Connecting to Dataverse allows users to create a two way connection between the OSF and Dataverse.
 
 Users who choose to connect their Dataverse account to the OSF can check appropriate box. They are presented with a
@@ -328,7 +328,7 @@ changes.
 .. _dropbox:
 
 Configuring Dropbox
-************
+*******************
 **Purpose:** Connecting to Dropbox allows users to create a two way connection between the OSF and Dropbox.
 
 Users who choose to connect their Dropbox account to the OSF can check appropriate box. They are presented with a
@@ -411,7 +411,7 @@ changes.
 .. _figshare:
 
 Configuring figshare
-***********
+********************
 **Purpose:** Connecting to figshare allows users to create a two way connection between the OSF and figshare.
 
 Refer to this `Google Doc <https://docs.google.com/document/d/1T8c69at_0X2WKficbYEV0z7bfM3jNFoWkYtmNmZjVPg/edit#heading=h.f17owbri8qc3>`_ for information on the allowable figshare actions.
@@ -497,7 +497,7 @@ changes.
 .. _github:
 
 Configuring GitHub
-***********
+******************
 **Purpose:** Connecting to GitHub allows users to create a two way connection between the OSF and GitHub.
 
 Users who choose to connect their GitHub account to the OSF can check appropriate box. They are presented with a
@@ -587,7 +587,7 @@ changes.
 .. _drive:
 
 Configuring Google Drive
-*************
+************************
 **Purpose:** Connecting to Google Drive allows users to create a two way connection between the OSF and Google Drive.
 
 Users who choose to connect their Google Drive account to the OSF can check appropriate box. They are presented with a
@@ -670,7 +670,7 @@ changes.
 
 .. _external link:
 Configuring External Link
-*************
+*************************
 **Purpose:** Adding an external link allows users to redirect project visitors to the provided URL. 
 
 Users can create external links to external sites as well as to internal pages within the OSF, such as projects, components, and registrations, etc.
@@ -699,7 +699,7 @@ If a user has access to private projects/components or embargoed registrations, 
 .. _mendeley:
 
 Configuring Mendeley
-*************
+********************
 **Purpose:** Connecting to Mendeley allows users to create a two way connection between the OSF and Mendeley.
 
 Users who choose to connect their Mendeley account to the OSF can check the appropriate box. They are presented with a
@@ -782,7 +782,7 @@ changes.
 .. _zotero:
 
 Configuring Zotero
-**************
+******************
 **Purpose:** Connecting to Zotero allows users to create a two way connection between the OSF and Zotero.
 
 Users who choose to connect their v account to the OSF can check appropriate box. They are presented with a
@@ -863,7 +863,7 @@ that reads "Import Account from Profile." Alternatively, the user can uncheck th
 changes.
 
 Viewing Amazon S3 Files
-***********
+***********************
 **Purpose:** The file tree and file details pages allow users to view and interact with Amazon S3 files.
 
 Amazon S3 appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
@@ -939,7 +939,7 @@ Files from other storage add-ons can be moved into Amazon S3 by dragging and dro
 into other add-ons as well.
 
 Viewing Box Files
-***********
+*****************
 **Purpose:** The file tree and file details pages allow users to view and interact with Box files.
 
 Box appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
@@ -1015,7 +1015,7 @@ Files from other storage add-ons can be moved into Box by dragging and dropping.
 into other add-ons as well.
 
 Viewing Dataverse Files
-***********
+***********************
 **Purpose:** The file tree and file details pages allow users to view and interact with Dataverse files.
 
 Dataverse appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
@@ -1142,7 +1142,7 @@ does not appear in the file tree. Published files can be viewed and downloaded.
 
 
 Viewing Dropbox Files
-***********
+*********************
 **Purpose:** The file tree and file details pages allow users to view and interact with Dropbox files.
 
 Dropbox appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
@@ -1224,7 +1224,7 @@ link to the dataset on the Dataverse website.
 
 
 Viewing figshare Files
-***********
+**********************
 **Purpose:** The file tree and file details pages allow users to view and interact with figshare files.
 
 Refer to this `Google Doc <https://docs.google.com/document/d/1T8c69at_0X2WKficbYEV0z7bfM3jNFoWkYtmNmZjVPg/edit#heading=h.f17owbri8qc3>`_ for more information on allowabel figshare actions
@@ -1336,7 +1336,7 @@ Visiting the "revisions" view on a file's detail page shows a yellow alert in th
 
 
 Viewing GitHub Files
-***********
+********************
 **Purpose:** The file tree and file details pages allow users to view and interact with GitHub files.
 
 GitHub appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
@@ -1451,7 +1451,7 @@ of the page for all contributors::
     be viewed on GitHub here.
 
 Viewing Google Drive Files
-***********
+**************************
 **Purpose:** The file tree and file details pages allow users to view and interact with Google Drive files.
 
 Google Drive appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
@@ -1527,7 +1527,7 @@ Selecting the "Revisions" button on the detail page opens the revisions pane. Al
 The version ID and the date of the commit are available. A download button is shown on the right side of the pane.
 
 Viewing External Link
-******
+*********************
 **Purpose:** Users can connect a project to an external link. They are prompted to redirect to this link upon entering the OSF project. 
 
  Once this add-on is configured, visitors to the project will immediately receive a window that reads::
@@ -1538,7 +1538,7 @@ Viewing External Link
 Canceling will cause the user to enter the OSF project. Clicking the link or "Redirect" will replace the current tab with the external link. 
 
 Viewing Mendeley Content
-******
+************************
 **Purpose:** Users can share their citations associated with a project using Mendeley.
 
 From a project's :ref:`overview page <overview>`, Mendeley content can be viewed in a panel below the file tree. The panel is
@@ -1557,7 +1557,7 @@ based on the input will appear as items in the dropdown. If the user selects one
 reformatted accordingly.
 
 Viewing Zotero Content
-******
+**********************
 **Purpose:** Users can share their citations associated with a project using Zotero.
 
 From a project's :ref:`overview page <overview>`, Zotero content can be viewed in a panel below the file tree. The panel is
@@ -1576,7 +1576,7 @@ based on the input will appear as items in the dropdown. If the user selects one
 reformatted accordingly.
 
 Viewing OSF Storage Files
-******
+*************************
 **Purpose**: OSF Storage allows users to store and share files. 
 
 Users can obtain and distribute links for their documents in public projects on the OSF so others can then view the same rendered files. In addition, users are provided two different methods of embedding those documents, one in which the iFrame is dynamically rendered and another which provides the iFrame directly.
