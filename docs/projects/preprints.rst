@@ -362,6 +362,7 @@ These two fields are required. In the "Year" field, the current year is listed a
 There is an option to "Apply this preprint license to my OSF project." The user can select "Yes" or "No" to either extend or not extend the preprint license to their OSF project. "Yes" is selected automatically. Note that if the user selects "No license" option from the drop-down menu, they can choose to extend this license to their OSF project, as well.
 
 **The DOI section**
+
 A DOI is automatically generated for a preprint upon submission. The use does not need to do anything in this section for the DOI to be generated. 
 
 However, (if the user's preprint has already been published in a journal), the user can enter their DOI of the associated journal into the DOI field. There is a message above the DOI field that reads::

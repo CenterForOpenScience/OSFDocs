@@ -6,7 +6,7 @@ My Projects is found by clicking "My Projects" in the blue navigation bar or by 
 
 Contents of the Project Organizer can be searched through by typing in the "Filter displayed projects” field in the top right of the page. 
 
-My Projects consists of 3 panes. The left pane is a Filter pane and provides options for filtering which projects are displayed. The center pane is the Project Organizer, displaying project titles, contributors, and date last modified. The right pane is the Information Panel, displaying information about or recent activity on a selected project or component. 
+My Projects consists of 3 panes. The left pane is a Filter pane and provides options for filtering which projects are displayed. The center pane is the Project Organizer, displaying project titles, contributors, and date last modified. The right pane is the Information Panel, displaying information about or recent activity on a selected project or component, and is collapsed by default. 
 
 Filter Pane
 -------------
@@ -69,7 +69,9 @@ The Project Organizer can sort its contents by Name, in alphabetical or reverse 
 Information Panel
 ----------
 
-**Purpose:** The right pane of the Project Organizer displays information about the selected proejct or component in two tabs: Information and Recent Activity.
+**Purpose:** The right pane of the Project Organizer displays information about the selected project or component in two tabs, Information and Recent Activity, and is collapsed by default.
+
+When the user clicks the left facing arrow in the top right corner of the Project Organizer, the Information panel becomes visible.
 
 If the project is part of a Collection, a button appears at the top of the panel, "Remove from collection."
 
@@ -80,6 +82,6 @@ Information tells the user::
     Last modified: (date last modified)
     Tags applied to the project
 
-Activity show the user the most recent 6 logged actions on the project as well as which contributor took the action. A link at the end of the list provides the user the option to Show more entries. 
+Activity shows the user the most recent 6 logged actions on the project as well as which contributor took the action. A link at the end of the list provides the user the option to "Show more" entries. 
 
 

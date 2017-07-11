@@ -1,6 +1,6 @@
 **Purpose:** Registrations can be created to preserve the state of a project at a given moment in time.
 
-Registrations create a read-only copy of a project. Admins can create a registration of a project, and all sub-projects and components
+Registrations create a read only copy of a project. Admins can create a registration of a project, and all sub-projects and components
 to which they also have admin rights by visiting the registrations page via their project's grey navigation bar.
 
 On the registrations page, all pending, retracted, and completed registrations are listed. Each registration lists its project name,
@@ -9,12 +9,12 @@ registration date and time, contributors, and contributions, in the same format 
 
 When no registrations have been made, non-contributors see text explaining this::
 
-    There have been no completed registrations of this project. Only project administrators can initiate registrations. For a list of the most viewed and most recent public registrations
+    There have been no registrations of this project. For a list of the most viewed and most recent public registrations
     on the Open Science Framework, click here.
 
 The link provided sends the user to the :ref:`Public Activity page <public-activity>`.
 
-Contributors who do not have permissions to register the project or component see the same message. Contributors who do have permissions to register the project or component see the message::
+Contributors who do not have permissions to register the project or component see the same message. Contributors who do have permissions to register the project or component see the message:: 
 
     There have been no completed registrations of this project. You can start a new registration by clicking the “New Registration” button, and you have the option of saving as a draft registration before submission. For a list of the most viewed and most recent public registrations on the Open Science Framework, click here.
 
@@ -30,17 +30,18 @@ Only contributors can comment or view comments on a registration.
 
 Registration Overview
 ---------------
-**Purpose:** A registration's Overview shows the state of the project at the time of registration and links to the registration form.
+**Purpose:** A registration's Overview shows the state of the project at the time of registration and links to the supplement.
 
-The Registration Overview has all the components of a :ref:`Project Overview <overview>`, including a line that indicates when the registration was registered in the top left of the page where the rest of the metadata is::
-    
-    Date registered: year-month-day
+The Registration Overview has all the components of a :ref:`Project Overview <overview>`. A watermark in the background
+says "read-only" repeatedly. At the top of the page is a non-dismissable blue alert::
 
-The registration has a watermark in the background that says "read-only" repeatedly in order to distinguish it from a project. At the top of the page is a non-dismissable blue alert::
+    This project is a registration of this project; the content of the project has been frozen and cannot be edited.
 
-    This registration is a frozen, non-editable version of this project [links to the Project Overview page].
+The alert links to the project that the registration is a copy of.
 
-In the top right of the Registration Overview page is a blue button that reads "View Registration Form." Clicking this button takes the user to a page with a noneditable copy of the user's registration form and their responses.
+In addition to the Project Overview's :ref:`metadata <overview-metadata>`, there is an additional field, "Registration Form."
+This field lists the name of the registration template the registrant used. Clicking the name links the user to a page with
+a noneditable copy of the registration form and the registrant's responses.
 
 The Files widget does not allow for editing of file names, reorganization of files, or deletion of files, however. Only
 downloads are permitted. Files are saved within their storage add-ons and OSF Storage, grouped into folders. The folders are
@@ -156,6 +157,7 @@ Clicking "Submit for review" pops up a modal with a Notice of Consent for the Pr
 The preregistration appears in the "Draft registrations" tab with the label "Pending Review." There are buttons to [Preview] or [Delete] the registration. Clicking [Preview] opens the preview of the registration, with a button to go [Back] to the Registrations tab. Clicking [Delete] pops up a modal:: 
     
     Are you sure you want to delete the registration? [Cancel][Delete]
+
 
 Embargos
 ------------
@@ -386,9 +388,9 @@ Clicking "Withdraw Registration" brings the user to a page where they must provi
 
 A text field allows the user to enter their reason for withdrawing the registration. No justification is required, however.
 
-The user must then type a generated word into an additional text field to continue.
+The user must then type the first word of the name of the project into an additional text field to continue.
 
-After withdrawing the registration, they are brought to the registration's Overview where a non-dismissable alert is visible at the top
+After withdrawing the registration, they are brought to the registration's overview where a non-dismissable alert is visible at the top
 of the page::
 
     This project is currently pending entering into a withdrawn state.
@@ -441,7 +443,7 @@ If an admin approves the withdrawal, they are brought to the withdrawal's page. 
     Your approval has been accepted.
 
 Withdrawn pages show the registration's title, contributors, type of registration supplement (though no link to contents),
-date of the project's creation, date of the registration, date of the registration's withdrawal, and description. At the top of the page is a red, non-dismissable alert
+date of the project's creation, date of the registration, and description. At the top of the page is a red, non-dismissable alert
 that reads::
 
     This project is a withdrawn registration of this project; the content of the project has been taken down for the reason(s) stated below.

@@ -6,7 +6,7 @@ Project Overviews are the landing page for a project when navigating from :ref:`
 as can contributors on a public or private project.
 
 Project Navigation Bar
---------------
+----------------------
 **Purpose:** The Project Navigation Bar allows users to navigate between the settings and information of a project, as well
 as navigate to the project overview.
 
@@ -30,6 +30,12 @@ The next link is to the :ref:`Contributors page <contributors>`. This page lists
 
 The final link is to the :ref:`Settings page <project-settings>`. This page allows admins to configure the project. This page
 is not visible to non-contributors.
+
+Renaming a Project
+------------------
+**Purpose:** Allows the user to change the name of their project or component after they have created it.
+
+The user must be on the "Project Overview" or "Component Overview" page to rename their project or component. When the user clicks the project or component name in the top left corner of the "Overview" page, the title turns into a textbox where the the user can make changes to the title. To the right of the textbox is a green checkmark and an "x" that the user can click to either save their changes or cancel their changes, respectively. The user can also press **enter** on their keyboard to commit the new name.
 
 .. _overview-metadata:
 
@@ -111,27 +117,33 @@ Wiki Widget
 -----------
 **Purpose:** The Wiki widget provides a preview of wiki contents.
 
-The first widget is the Wiki widget.  In the upper right corner of the widget is a button that links the user to the Wiki page.
-When the :ref:`Home wiki page <wiki>` has hot been edited to include content, contributors
-with read+write or admin priviliges see "No wiki content" displayed inside the panel. If the user has created additional
-wiki pages with content, but has no content on the Home wiki page, the panel still displays "No wiki content." If the project
+The first widget is the Wiki widget. In the upper right corner of the widget is a button that links the user to the Wiki page.
+When the :ref:`Home wiki page <wiki>` has hot been edited to include content, contributors with read+write or admin priviliges see "Add important information, links, or images here to describe your project" displayed inside the panel. If the user has created additional
+wiki pages with content, but has no content on the Home wiki page, the panel still displays "Add importnat information, links, or images here to describe your project" but has a "Read More" link below this line that, when clicked, takes the user to the wiki. If the project
 is being viewed by a non-contributor and the Home wiki has no content, then the widget is not displayed at all.
 
-If there is content in the home wiki page, users and non-contributors will see a "Read more" link at the bottom of the wiki widget. This link directs the user to the wiki page.
-
-.. todo:: Ask Erin if it makes sense to hide the widget if there are other pages—especially hide from read only contributors.
-
-Below the Wiki widget is the Files widget.  In the upper right corner of the widget is a button that links the user to the Files page.
-Below the panel header is a grey toolbar. Below the toolbar is the File Browser.
-
+If there is content in the home wiki page, users and non-contributors will the content as well as a "Read More" link at the bottom of the wiki widget. This link directs the user to the wiki page.
 
 Files Widget
 ------------
 **Purpose:** The Files widget provides a comprehensive view of the project's files and allows basic actions like uploading and downloading.
 
+Below the Wiki widget is the Files widget.  In the upper right corner of the widget is a button that links the user to the Files page.
+Below the panel header is a grey toolbar. Below the toolbar is the File Browser.
+
 The Files widget is a smaller instantiation of the :ref:`Files Browser <storage>`. It is displayed, on the Project Overview, below
 the Wiki widget.
 
+The user can view their components and corresponding files in a tree structure in the Files widget. The user can move files from project to components and vice versa (within the same overall project) by dragging and dropping into the designated storage. If the user moves a file to another location within the same project that already has a file with that same name, the following modal appears::
+  
+  Replace "[filename]"?
+  An item named  "Architecture in Chicago.docx" already exists in this location.
+  "Keep Both" will retain both files (and their version histories) in this location.
+  "Replace" will overwrite the existing file in this location. You will lose previous versions of the overwritten file. You will keep previous versions of the moved file.
+  "Cancel" will cancel the move.
+  [Cancel][Keep Both][Replace]
+  
+Clicking **Cancel** cancels the file move. Clicking **Keep Both** keeps the original file and adds the newly moved file to the location. Clicking **Replace** replaces the original file in the second location with the newly moved file. The file always remains in the first location.
 
 Citation Widget
 --------------
@@ -166,18 +178,14 @@ Components Widget
 ---------------
 **Purpose:** The Components widget allows users to view and create new components.
 
-The Components widget is located below the Citation widget. In the panel's heading, two buttons are visible: "Add Component" and "Add Links."
+The Components widget is located below the Citation widget. In the panel's heading, two buttons are visible: "Add Component" and "Link Projects."
 
 When a project has no links or components within it, non-contributors do not see the Components widget. In that same scenario, users with
-read only permissions see the Components widget with no buttons. The body of the panel reads::
+read-only permissions see the Components widget with no buttons.
 
-    No components to display
-
-Contributors with read+write or admin permissions see the two buttons and the panel provides the same message.
-
-If the user is visiting a component with no links or components nested within it, the message reads::
-
-    No components have been added to this component.
+Contributors with read+write or admin permissions see the two buttons and the widget reads::
+  
+    Add components to organize your [project/component]
 
 Clicking the "Add Component" button opens a modal::
 
@@ -254,11 +262,11 @@ Tags Widget
 ----------------
 **Purpose:** The Tags widget allows users to provide keywords relevant to their project, helping OSF visitors more easily find their work.
 
-The Tags widget is located below the components widget. When no tags are added, users with read+write or admin permissions
+The Tags widget is located below the Components widget. When no tags are added, users with read+write or admin permissions
 see text that reads "Add a tag." If the user is not a contributor on the project, or only has read permissions, and no
 tags have been added the Tags widget is not visible.
 
-Contributors with read+write or admin permissions can add a tag by clicking in the "Add a tag" field and typing a keyword.
+Contributors with read+write or admin permissions can add a tag by clicking "Tags" box and typing a keyword. If no tags have been added, the default text in the box reads: "add a tag to enhance discoverability."
 Pressing the return key will add the tag. Adding a comma after a tag and pressing the space bar, as if making a list, will
 also add a tag. Tags appear in blue boxes with a black 'x' to the right of the text. Clicking the 'x' allows the user to remove the tag.
 
@@ -269,7 +277,7 @@ tag name.
 
 Recent Activity Widget
 --------------------
-**Purpose:** The Recent Activity widget shows users the logged actions for the viewed project or component and its children.
+**Purpose:** The Recent Activity widget shows users the logged actions for the viewed project or component, its children, and its registrations.
 
 The Recent Activity widget appears below the Tags widget. Below the panel title, "Recent Activity," is muted text that reads::
 
@@ -277,7 +285,7 @@ The Recent Activity widget appears below the Tags widget. Below the panel title,
 
 Times are displayed in local time, and the correct offset is indicated in the above text.
 
-Below this is a list of all logged actions on the project or component and its children, displayed in chronological order with the most recent
+Below this is a list of all logged actions on the project or component, its children, and registrations displayed in chronological order with the most recent
 action listed at the top. Actions are listed in two columns—the left shows the date and time (YYYY-MM-DD HH:MM AM/PM).
 Hovering over a time shows a tooltip with the date and time in UTC.
 

@@ -31,3 +31,8 @@ Distinguishing Search Results
 *****************
 
 .. include:: distinguishing.rst
+
+.. _share:
+
+SHARE
+*****

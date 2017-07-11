@@ -17,12 +17,12 @@ Public Activity Page
 
 .. include:: public-activity.rst
 
-.. _registry:
+.. _registries:
 
-Registry Search
+Registries Search
 ***********
 
-.. include:: registry.rst
+.. include:: registries.rst
 
 .. _for-meetings:
 
@@ -40,12 +40,6 @@ FAQ
 
 .. _getting-started:
 
-Getting Started
-***************
-
-.. include:: getting_started.rst
-
-.. _public-content:
 
 Public Content on the OSF
 ***************

@@ -14,72 +14,84 @@ network accounts, their education history, and employment history. These optiona
 public profile. They are grouped into tabs; social information is shown by default, employment history is the next tab, and education
 history is the final tab.
 
-Social information is listed in rows. The social account name (e.g. LinkedIn or Twitter) is listed on the left and a link to the
-profile is on the right.
+Social information is listed in rows. The social name (e.g. LinkedIn or Twitter) and logo are listed on the left and a link to the user's profile is on the right.
 
-Employment information is listed in a table. Table headers include "institution," "department/institute,"
-"title," "start date," and "end date." If no employment information is shared, only the table headers are visible.
+Employment information is listed in a table. Table headers include "institution/employer," "department/institute,"
+"job title," "start date," and "end date." If no employment information is shared, the following message appears when a user clicks the "Employment" tab::
+    
+    Not provided
 
-.. todo:: describe each display format for social.
-.. todo:: describe empty columns for projects/ components and breadcrumbs
+A user's public projects and components are displayed at the bottom of the profile page in the following two respective columns::
+  
+  Public Projects    Public Components
 
-To edit profile information, users can visit their User Settings. Alternatively, they can visit their public profile
-and then click the "Edit your profile" link. By default, the "Profile Information" page is shown, and the "Name" tab
-is selected.
+If the user does not have public projects, the following message will appear at the top of the "Public Projects" column::
+  
+  You have no public projects.
+  Find out how to make your projects public [links to the help guides' landing page].
+  
+If the user does not have public components, the following message will appear at the top of the "Public Components" column::
+  
+  You have no public components.
+  Find out how to make your components public [links to the help guides' landing page].
 
-.. todo:: log as a bug: saving changes to social information takes several seconds and there is no indication that the change is being saved in the mean time
+To edit profile information, users can visit their user "Settings." Alternatively, they can visit their public profile
+and then click the "Edit your profile" link. The user is taken to their "Settings" page. The "Settings" page has six pages within it that the user can access using the sidebar. By default, the "Profile Information" page is selected from the sidebar and is shown on the "Settings" page. On the "Public Information" page, the "Name" tab is selected by default.
 
 Usernames
 ------------
 
-**Purpose:** Configuring their username allows the user to change how they are listed in search results and contributor lists as well as
-in citations.
+**Purpose:** Configuring their username allows the user to change how they are listed in search results, contributor lists, and in citations.
 
-Several text fields on the "Name" tab on the "Profile Information" allow the user to configure their citation and username preferences. At the bottom of
-the page is a "Cancel" and a "Save" button.
+Several text fields in the "Name" tab on the "Profile Information" allow the user to configure their citation and username preferences. At the bottom of
+the page are "Discard changes" and "Save" buttons.
+
+Each time the user clicks **Save**, the "Save" button temporarily changes to "Saving," and then changes back to "Save."
 
 The first field is titled::
 
-    Full Name (e.g. Rosalind Eslie Franklin)
+    Full name (e.g. Rosalind Elsie Franklin)
 
-This field is automatically filled in with the name the user provided on sign up. The user can click in this field to edit their name.
+This field is automatically filled in with the name the user provided when signing up for their OSF account. The user can click inside this field to edit their name.
 
-Below this field is muted text that reads::
+If the user deletes the contents from the "Full name" field and clicks **Save**, a black alert appears below the "Full name" field::
+
+    This field is required.
+
+If the user clicks **Save** again, a red alert appears below the previous black one::
+  
+    This field is required.
+
+There is no minimum character limit for the user's full name, nor is there a maximum. If the user updates their name and clicks **Save**, a temporary green alert appears below the "Save" button::
+
+    Settings updated
+
+The alert disappears after several seconds.
+
+The "Full Name" field corresponds to the username. After saving changes to this field, to see the username updated on the far right of the navigation bar,
+the user must refresh the page. If the username is too long, it will be shortened in the navigation bar by the insertion of an ellipsis so
+that the beginning and end of the username are visible, but the middle part of the name is hidden.
+
+Below the "Full name" field is muted text that reads::
 
     Your full name, above, is the name that will be displayed in your profile. To control the way your name will appear
     in citations, you can use the "Auto-fill" button to automatically infer your first name, last name, etc., or edit
     the fields directly below.
+    [Auto-fill]
 
-If the user tries to delete the contents and save an empty field, a red text alert appears below the "Save" button::
+Below the "Auto-fill" button are the following four fields: "Given name (e.g. Rosalind)," "Middle name(s) (e.g. Elsie)," "Family name" (e.g. Franklin), "Suffix."
 
-    Could not update settings
-
-The text disappears after several seconds.
-
-There is no minimum character limit for the user's Full Name, nor is there a maximum. If the user updates their name and presses the "Save"
-button, a green text alert is shown below the "Save" button::
-
-    Settings updated
-
-The text disappears after several seconds.
-
-The "Full Name" field corresponds to the username. After saving changes to this field, to see the username updated in the navigation bar,
-the page must be refreshed. If the username is too long, it will be shortened in the navigation bar by the insertion of an elipses so
-that the beginning and end of the username are visible, but the middle portion of the name is hidden.
-
-Below the "Full Name" field is a button labeled "Auto-fill." Below this button are four additional text fields: "Given Name,"
-"Middle Name(s)," "Family Name," and Suffix. Clicking the "auto-fill" button transfers the first word from the "Full Name" field to
-the "Given Name" field. The last word is transferred to the "Family Name" field and any interevening words are added to the "Middle Name" field.
-If any recognizable suffixes are listed last in the "Full Name" field, such as Jr, Sr, or roman numerals, these will be aded to the "Suffix" field.
+Clicking the **Auto-fill** button automatically fills in these fields with the user's full name as provided in the "Full name (e.g. Rosalind Elsie Franklin)" field: The first word from the "Full Name" field is added to
+the "Given name" field; the last word is added to the "Family name" field; any interevening words are added to the "Middle name(s)" field; if any recognizable suffixes are listed last in the "Full name" field, such as Jr, Sr, or roman numerals, these will be aded to the "Suffix" field.
 Titles are removed. Words entered in quotes are interpreted as nicknames and are removed.
 
 If the user enters their name as "Last name, First name" then the words preceding the comma are entered in as the "Family Name."
 
 The user can edit the four individual name fields (i.e. given, middle, family, and suffix) individually, rather than using the auto-fill function.
-To do so, the user clicks into the field and saves their changes. These four fields do not affect the username—what is shown in
+To do so, the user clicks inside the field and clicks **Save** to save their changes. These four fields do not affect the username—what is shown in
 contributor lists and the navigation bar—but they do affect citations. Any or all of these fields can be left blank. There is no character limit.
 As the user updates and saves these fields, the citation preview is updated, indicating what a :ref:`citation <citations>` of their
-work will look like. After saving changes to any of these fields, a green text alert is shown below the "Save" button::
+work will look like. After saving changes to any of these fields, a green alert appears below the "Save" button::
 
     Settings updated
 
@@ -98,7 +110,7 @@ If the user tries to click to another page, a browser alert appears, requesting 
     Are you sure you want to leave this page?
     [Stay on this Page] [Leave this Page]
 
-Clicking "Cancel" after making changes pulls up a modal that reads::
+Clicking "Discard changes" after making changes prompts the following modal to appear::
 
     Discard changes?
     Are you sure you want to discard your unsaved changes?
@@ -243,8 +255,11 @@ ImpactStory
 ^^^^^^^^^^^
 **Purpose:** ImpactStory usernames can be provided to link users and visitors to a user's ImpactStory profile, listing their publications and other work.
 
-To update the "ImpactStory" field, the user clicks into the field and enters their ImpactStory username. If the user enters special
-characters, the settings can still be updated.
+To update the "ImpactStory" field, the user clicks into the field and enters their ImpactStory username. The format for an ImpactStory username is as followers::
+  
+    impactstory.org/u/USERNAME
+
+If the user enters special characters, the settings can still be updated.
 
 .. todo:: log the above as a bug (also spaces are allowed)
 

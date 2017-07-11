@@ -9,19 +9,23 @@ The Menu lists all visible wiki pages for the viewed project/component and all c
 by default. The menu itself can be collapsed to the left so that none of its content shows. When collapsed, admins and read+write
 contributors can still see the options to create a new page or delete the current one.
 
-The majority of the page is covered by the View panel. At the top of the "View" panel is a dropdown to select which version of the wiki the user would like to see. The dropdown indicates the name of the user who saved that version of the wiki as well as a timestamp of when the edits were saved. Below the "View" title is the wiki's contents. When a wiki is empty its body reads::
+The middle of the page is covered by the "View" panel. At the top of the "View" panel is a drop-down to select which version of the wiki the user would like to see: Preview or Current. "Current" indicates the name of the user who saved that version of the wiki as well as a timestamp of when the edits were saved. The "Current" version is selected automatically. 
 
-    No wiki content
+If no content has been added to the wiki, then the "Preview" option is selected automatically. Selecting "Current" does not show a contributor name or a timestamp.
 
-In the top right hand of the page is a toggle. Options are "View" and "Compare." View will be selected by default. Clicking
+Below the "View" title is the wiki's contents. When a wiki is empty its body reads in italics::
+
+    Add important information, links, or images here to describe your project.
+
+In the top right hand of the page is a toggle. Options are "View," "Edit," and "Compare." View will be selected by default. Clicking
 "Compare" cuts the width of the View panel in half and adds a second panel titled "Compare." The Compare panel header reads::
 
-    Compare ____ version to [dropdown]
+    Compare Current version to [dropdown]
 
-If only one version exists, the viewed version is being compared to "Current," which is selected from the dropdown. If other versions are available,
-the default is to compare the current version to the previous version. Whichever version is being viewed is the basis for comparison.
+If only one version exists, the viewed version is being compared to "Current," which is selected from the drop-down. "Current" lists the name of the contributor who saved the current version and the timestamp of when the save occured. If other versions are available,
+the default is to compare the current version to the previous versions. Whichever version is being viewed is the basis for comparison.
 
-To change the version being viewed, the user can select from the dropdown in the View panel header. This will also change what
+To change the version being viewed, the user can select from the drop-down in the View panel header. This will also change what
 versions are being compared.
 
 Additions made to the wiki since the version being viewed was saved are highlighted in green in the Compare panel. Deletions
