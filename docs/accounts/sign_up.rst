@@ -94,24 +94,11 @@ If a user is added as a contributor to a project, but does not have an OSF accou
     The OSF Team
     If you are not [Name of account being claimed] or you are erroneously being associated with [Project Name] then email contact@osf.io with the subject line "Claiming Error" to report the problem.
 
-When the user clicks the link in the email, they are taken to the "Set Password" page where they will need to claim their account. The page appears::
-  
-    Email: [email address]
-    [password field that is already filled in]
-    Verify Password field
-                I'm not a robot [checkbox]
-    If you are not [user name], or if you were erroneously added as a contributor to the project described in the email invitation, please email contact@osf.io [this is a link that opens an email window]. By clicking "Save" and creating an account you agree to our Terms [links to the COS Terms and Conditions of User] and that you have aread out Private Policy [links to the COS Private Policy], including our information on Cookie Use [links to the COS Private Policy].
-                [Save]
-                
-If the user's passwords do not match, an alert will appear::
-
-    Passwords do not match
-
-When the user enters a matching password, and confirms that they are not a robot, they can click the **Save** button. When they click this button, they will be taken directly to the project to which they were originally added as an unregistered contributor.
-
 If the user has confirmed their account and is signed into the OSF, but follows the email’s link again, they are brought to a page that informs them they are already a contributor.
 
 If the user has confirmed their account and is not signed into the OSF, but follows the email’s link again, they are brought to a page that informs them that the account has already been claimed.
+
+.. todo:: what if they do it right?
 
 Claiming an Account Via the OSF
 ^^^^^^^^^^

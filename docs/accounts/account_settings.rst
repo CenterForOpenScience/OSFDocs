@@ -13,10 +13,10 @@ Primary and Alternate Emails
 **Purpose:** Primary emails are the emails to which all correspondence from the OSF will be sent. When merging accounts,
 their :doc:`profile information <../profiles/profiles_index>` is kept while the alternate accounts’ is lost.
 
-The user's primary email address is the one they used when signing up for their OSF account. If the user merges an account, the user's primary email address
-will be the address they used at the time they merged their account.
+The email that the user signs up for the OSF with is their primary email. If the user merges an account, the primary email
+is whichever was used to log in at the time that the merge was initiated.
 
-An alternate email is another email address or existing account that the user can add to their primary OSF account.
+An alternate email is another email or existing account that is added to the primary account.
 
 To change a primary email, the user visits Account Settings. An alternate email must exist already—otherwise they must add
 an alternate email. The user can click “make primary” next to the alternate email they wish to promote to their primary
@@ -42,46 +42,43 @@ Adding an Alternate Email
 Users can merge their accounts by logging into the account they wish to make primary and visiting their Account Settings.
 Under “Connected Accounts,” and then "Unconfirmed emails," the user sees the message::
 
-    To merge an existing account with this one or to log in with multiple email addresses, add an alternate email address below.
+    To merge an existing account with this one or log in with multiple email addresses, add an alternate email address below.
 
 Following this message is an "i" icon which, when a user mouses over, displays a toolip::
     
     Merging accounts will move all projects and components associated with two emails into one account. All projects and components will be displayed under the email address listed as primary. 
 
-Below the message is a field where the user enters the email address that they want to be their alternate email address under their primary account. The user can then click “Add Email” or hit the return key to initiate the merge process.
+Here the user enters the login email for the account they wish to merge into (alternate) the primary account under “Unconfirmed Emails” and clicks “Add Email” or hits the return key.
 
 Users cannot add the primary email as an alternate email; attempting to do so produces an inline error, below the “Add Email” button::
 
     Duplicate Email
 
-Clicking “Add Email” before entering text into the address field causes a growlbox to appear below the field::
+Clicking “Add Email” before entering text into the address field produces a popover on the field that reads::
 
-    Email cannot be empty.
+    ! Please fill out this field.
 
-If the user enters text without an @ symbol, a red dismissable error message appears in the top right of the page::
+If the user enters text without an @ symbol, a popover on the field reads::
 
-    Error
-    Invalid Email
+    ! Please include an '@' in the email address. [Entered text] is missing an '@'.
 
-If the user enters an email address with an '@' symbol but no subsequent text, a red dismissable error message appears in the top right of the page::
+If the user enters an email address with an '@' symbol but no subsequent text, a popover on the field reads::
 
-    Error
-    Invalid Email
+    ! Please enter a part following '@'. [Entered text] is incomplete.
 
 If the user enters an email address with characters preceding and following an @ symbol, but it is not a valid email address (e.g. includes
-no ".com"), after submitting their entry, a red dismissable error message appears in the top right corner of the page::
+no ".com"), after submitting their entry a red dismissable error message appears in the top right corner of the page::
 
     Error
     Invalid Email
 
-If the user submits multiple such invalid email addresses, the alerts will stack on top of each other along the right side of the page. The user will need to click the gray "x" icon in the top right of each error message in order to dismiss them.
+If the user submits multiple such invalid email addresses, another identical message appears above the last alert.
 
-When the user successfully adds an alternate email, the alternate email appears listed in the “Unconfirmed Emails” section and above the email address field. A modal appears::
+After successfully adding an email, it is listed below “Unconfirmed Emails” and above the email address field. A modal appears::
 
     Confirmation email sent
-    [Secondary Email] was added to your account. You will receive a confirmation email at [Secondary Email]. Please click the link in your email to confirm this action. You will be required to enter your password. 
-    [Close]
-    
+    [Secondary Email] added to your account. You will receive a confirmation email at [Secondary Email]. Please log out of this account and check your email to confirm this action. 
+
 An email is sent to the alternate email::
 
     Hello [Primary Account Username],
@@ -94,18 +91,13 @@ An email is sent to the alternate email::
     If you do not wish to merge these accounts, no action is required on your part. If you have any questions about this
     email, please direct them to support@osf.io.
 
-Clicking on the provided link sends the user to the OSF "Sign In" page (logged in as whichever user was last logged in on that computer). A modal appears upon logging in::
+Clicking on the provided link sends the user to the OSF, logged in as whichever user last was logged in on that computer. The page reads::
 
-    Merge Accounts
-    Would you like to merge [alternate email] into your account? This action is irreverible. 
-    [Do not add email][Add email]
+    Confirmation Required: Merge Accounts
+    This email is confirmed to another account. Would you like to merge [alternate email] with the account [primary email]?
+    [Confirm Merge]
 
-Clicking “Add email” sends the user to their dashboard, where a confirmation message appears in the top right of the page::
-  
-    Success
-    [alternate email] has been added to your account.
-
-When the user goes to their “Account Settings” page, their alternate email is listed below the "Alternate Emails" section.
+Clicking “Confirm Merge” sends the user to their “Account Settings” page where the email is listed as an alternate email.
 
 Alternate accounts cannot be merged into the primary account if they have add-ons connected to a project. The Mendeley and
 Zotero add-ons are exceptions to this rule, however. If a secondary account has a project with an add-on connected to it
@@ -139,42 +131,36 @@ but prior to the confirmation, those changes are reflected in the merged project
 
 If the user merges an account that had an alternate email of its own, both emails are made alternate in the new primary account.
 
-If User A merges with User B and keeps User B's profile and information, User A's GUID and profile will still exist. If a user searches for User B, only one user will show up under User B's name. However, a user can still go to User A's GUID and look at their profile. User A's profile will appear with 0 projects and a banner across the top of hte page pointing to User B's profile::
-  
-    This account has been merged with [URL of the merged account]
-
 Removing Emails
 ^^^^^^^^^^
 **Purpose:** Unconfirmed and alternate emails can be removed to reduce the number of login emails available.
 
 A primary email cannot be removed. Alternate or unconfirmed emails can be removed by clicking the ‘x’ to the right of the
-email address under “Connected Emails” on the Account Settings page. If the user removes an alternate email, a modal appears
+email address under “Connected Emails” on the Account Settings page. If the user remove an alternate email, a modal appears
 asking them to confirm the removal::
 
     Remove Email?
-    Are you sure that you want to remove [unconfirmed/alternate email] from your email list?
-    [Cancel][Remove]
+    Are you sure that you want to remove [unconfirmed email] from your email list?
+    [cancel][Remove]
 
-Cancelling closes the modal and produces no change. Clicking “Remove” removes the email from the “Unconfirmed Emails” list. A green, dismissable alert appears in the top right of the page::
+Cancelling closes the modal and produces no change. Clicking “Remove” removes the email from the “Unconfirmed Emails” list.
+A green, dismissable growlbox alert appears at the top of the page::
 
     Email Removed
     [removed email address]
 
-When an alternate email is removed, both the primary and alternate emails receive an email. The primary reads::
-  
-    Hello (username),
-    
-    The email address (user's unconfirmed/alternate email address) has been removed from you account. For security purposes, a copy of this message has also been sent to your account's alternate email address ([user's unconfirmed/alternate email address]). If you did not request this action, let us know at contact@cos.io.
+When an alternate email is removed, both the primary and alternate emails receive an email. The primary reads:
+
+.. todo:: add email content here when bug is fixed.
+
+The email sent to the removed alternate reads::
+
+    Hello [User Name],
+    I just wanted to let you know, the email address [alternate email] has been removed from your account. For security
+    purposes, a copy of this message has also been sent to you account's primary email address ([primary email]).
+    If you did not request this action, let us know at contact@cos.io.
     Sincerely yours,
     The OSF Robot
-
-And the alternate receives::
-  
-  Hello (username),
-  
-  The email address (user's unconfirmed/alternate email address) has been removed from you account. For security purposes, a copy of this message has also been sent to your account's primary email address ([user's primary email address]). If you did not request this action, let us know at contact@cos.io.
-  Sincerely yours,
-  The OSF Robot
 
 After removing an alternate email, no project or profile content changes.
 
@@ -182,19 +168,19 @@ If the user removes an unconfirmed email, a modal appears asking them to confirm
 
     Remove Email?
     Are you sure that you want to remove [unconfirmed email] from your email list?
-    [Cancel][Remove]
+    [cancel][Remove]
 
 Cancelling closes the modal and produces no change. Clicking “Remove” removes the email from the “Unconfirmed Emails” list.
-A green, dismissable alert appears in the top right of the page::
+A green, dismissable growlbox alert appears at the top of the page::
 
     Email Removed
     [removed email address]
 
-If the user clicks the confirmation link they received in the email after they removed the unconfirmed email address,
+If the user follows the emailed confirmation link after an unconfirmed email was removed (i.e. the addition was cancelled),
 they are brought to an error page that reads::
 
-    Bad Token
-    The provided token is invalid.
+    Invalid Token
+    This confirmation link is invalid. Please log in to continue.
 
 Effects of a Merge
 ^^^^^^^^^^^^^^
@@ -208,7 +194,7 @@ Logs from before the merge will show the old user name—if it was different—b
 If the user had a different user name for an account that was made alternate, searching the OSF for that old username does
 not return the old profile. Similar names may produce relevant results, however.
 
-If the user has two accounts and both are added to a project with different permissions, when the user merges their accounts, the project will reflect the primary account's permissions on the project.
+.. todo:: What if you have different permissions for two accounts on one project?
 
 Changing Passwords
 -------------
@@ -436,14 +422,12 @@ Deactivating an Account
 -------------
 **Purpose:** Users should be able to make an OSF account and ostensibly remove the desired content from the OSF.
 
-Users can deactivate their account by visiting their "Account Settings" and scrolling down to the "Deactivate Account" section of the page. This section has an overview of what account deactivation entails as well as a yellow warning, both of which read::
+Users can deactivate their account by visiting their Account Settings and scrolling to “Request Deactivation.” A yellow
+warning within the “Deactivate Account” section reads::
 
     Warning: This action is irreversible.
-    
-    Deactivating your account will remove you from all public projects to which you are a contributor. Your account will no longer be associated with OSF Projects, and your work on the OSF will be inaccessible.
-    [Request deactivation]
 
-To deactivate their account, the user will need to click the red “Request deactivation” button. After clicking the “Request deactivation” button, a modal will appear asking the user to confirm whether they want to deactivate their account::
+Clicking the “Request Deactivation” button displays a modal asking user to confirm they want to request deactivation::
 
     Request account deactivation?
     Are you sure you want to request account deactivation? An OSF administrator will review your request. If accepted,
@@ -455,95 +439,14 @@ Clicking the “Request” button displays green, dismissible growlbox notificat
     Success
     An OSF administrator will contact you shortly to confirm your deactivation request.
 
-An email is sent to support@osf.io listing the OSF user’s GUID, profile URL, and their primary email address. The “Request deactivation” button
-is disabled. If the user refreshes the page, a message appears in place of the button::
+An email is sent to support@osf.io listing OSF user’s GUID and primary email address. The “Request Deactivation” button
+is disabled. On refresh, a message appears::
 
     Your account is currently pending deactivation. 
 
 This message persists until the account is deactivated.
 
-When a request is sent, a team evaluates the situation before communicating with the user.
-
-Deactivating an account: no projects
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If the user does not have projects on the OSF, the contact will email the user, explaining what will happen to their account upon deactivation and asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - No projects" that reads as follows::
-  
-    Hello,
-    I am writing to confirm that you wish to deactivate your account on the Open Science Framework (OSF). If you have initiated this request and wish to deactivate your account, please respond to this email and confirm. If you have NOT initiated this request, or initiated this request in error, please respond and let us know. If you take no action, your account will not be deactivated. 
-    Thanks, 
-    
-If the user does not want to deactivate their account, the contact will not take any action, and the user's OSF account will remain.
-
-If the user confirms deactivation, the contact will deactivate the user's account.
-
-
-Deactivating an account: private projects - sole contributor
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-If the user has projects that are all private and on which they are the only contributor, the contact will email the user explaining what will happen to their account upon deactivation and asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - Private and sole contrib" that reads as follows::
-  
-  Hello,
-  I am writing to confirm that you wish to deactivate your account on the Open Science Framework (OSF). As your only projects on the OSF are private and do not share other contributors, we will delete their contents upon deactivation of your account. If you’d like to delete these materials yourself, please do so before confirming your account deactivation. If you have initiated this request and wish to deactivate your account, please respond to this email and confirm. If you have NOT initiated this request, or initiated this request in error, please respond and let us know. If you take no action, your account will not be deactivated. 
-  Thanks, 
-
-If the user does not want to deactivate their account, the contact will not take any action, and the user's OSF account will remain.
-
-If the user confirms deactivation, the contact will deactivate the user's account.
-
-Deactivating an account: private projects with other contributors
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If the user has all private projects and some or all have other contributors, the contact will email the the user explaining what will happen to their account upon deactivationand asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - Private and other contribs" that reads as follows::
-  
-  Hello,
-  This email is to confirm a deactivation request for your account on the Open Science Framework. Your project(s) on the OSF are private and have other contributors associated with them. If you’d like to remain listed on the project(s), we will show you as a non-claimed contributor (meaning your name will be attached, but you will not have an account). If you do not want your name associated with the project(s), please remove yourself from them prior to confirming deactivation. If you have requested this action and would like your account deactivated, please reply and confirm. If you do not reply to confirm, no action will be taken.
-  Best,
-
-If the user does not want to deactivate their account, the contact will not take any action, and the user's OSF account will remain.
-
-If the user confirms deactivation, the contact will deactivate the user's account.
-
-Deactivating an account: public projects and sole contributor
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If the user has public projects on which they are the only contributor, the contact will email the user explaining what will happen to their account upon deactication and asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - Public and sole contrib" that reads as follows::
-
-  Hello,
-  This email is to confirm a deactivation request for your account on the Open Science Framework. Your projects on the OSF are public, and you are the only contributor. If you would like to delete the projects, please do so before confirming your deactivation request. If you’d like the projects to remain, we will show you as a non-claimed contributor (meaning your name will be attached, but you will not have an account). If you have requested this action and would like your account deactivated, please reply and confirm. If you do not reply to confirm, no action will be taken.
-  Best,
-
-If the user does not want to deactivate their account, the contact will not take any action, and the user's OSF account will remain.
-
-If the user confirms deactivation, the contact will deactivate the user's account.
-
-Deactivating an account: public projects with other contributors
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If the user has public projects and some or all have other contributors, the contact will email the user explaining what will happen to their account upon deactivation and asking them to confirm deactivation. The contact uses an email macro called "Acct Deactivation - Public and other contribs" that reads as follows::
-
-  Hello,
-  This email is to confirm a deactivation request for your account on the Open Science Framework. Your project(s) on the OSF are public and have other contributors associated with them. If you’d like to remain listed on the project(s), we will show you as a non-claimed contributor (meaning your name will be attached, but you will not have an account). If you do not want your name associated with the project(s), please remove yourself from them prior to confirming deactivation. If you have requested this action and would like your account deactivated, please reply and confirm. If you do not reply to confirm, no action will be taken.
-  Best,
-
-If the user does not want to deactivate their account, the contact will not take any action, and the user's OSF account will remain.
-
-If the user confirms deactivation, the contact will deactivate the user's account.
-
-User tries to reclaim their account on a project
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-If the user is still listed on a public project, their name will not be hyperlinked to an OSF account but will be plain black text. If the user hovers over their name, the following tooltip will appear::
-  
-    Is this you? Click to claim
-
-If the user goes to claim their account, the following textbox will appear::
-  
-    Claim Account
-    [textbox to enter an email address]
-
-If the user enters their email address into the textbox and clicks the green checkmark to submit their request to claim their account, the textbox becomes outlined in red and the following red dismissable alert appears in the top right of the page::
-  
-    Unable to resolve
-    OSF was unable to resolve your request. If this issue persists, please report it to support@osf.io
+When a request is sent, a team evaluates the situation before communicating with user.
 
 .. todo:: Elaborate on the following:
 

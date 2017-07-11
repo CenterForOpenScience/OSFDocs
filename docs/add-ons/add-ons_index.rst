@@ -415,7 +415,6 @@ Configuring figshare
 ***********
 **Purpose:** Connecting to figshare allows users to create a two way connection between the OSF and figshare.
 
-Refer to this `Google Doc <https://docs.google.com/document/d/1T8c69at_0X2WKficbYEV0z7bfM3jNFoWkYtmNmZjVPg/edit#heading=h.f17owbri8qc3>`_ for information on the allowable figshare actions.
 
 Users who choose to connect their figshare account to the OSF can check appropriate box. They are presented with a
 modal::
@@ -674,28 +673,16 @@ Configuring External Link
 *************
 **Purpose:** Adding an external link allows users to redirect project visitors to the provided URL. 
 
-Users can create external links to external sites as well as to internal pages within the OSF, such as projects, components, and registrations, etc.
-
-When a user checks the box next to the external link add-on, the "Settings" page reloads, and a Configure Add-ons pane appears below the "Select Add-ons" section of the "Settings" page. The text reads::
+Users who select the external link add-on are shown the Configure Add-ons pane. The text reads::
 
     External Link
-    URL [field]
-    Label [field]
+    URL
+    Label
     [Save]
 
-The user can then enter the URL into the URL field. The user has the option to add a label to the external link in the Label field, but this step is not required. After the user enters the information and clicks "Save," a confirmation message appears below the Label field that reads::
+The user may enter the URL beneath URL and have the option to add a label. When the user enters information and selects "Save," the text reads::
 
-    Successfully linked to [URL].
-    
-Now, when a user goes to that project or component and lands on its "Overview" page, a modal will immediately appear::
-  
-  This project contains a forward to
-  [URL]
-  [Cancel] [Redirect]
-
-Clicking "Cancel" will keep the user on the project or component "Overview" page. Clicking "Redirect" will take the user to the site of the URL.
-
-If a user has access to private projects/components or embargoed registrations, the user can create an external link to point to them; however, if project A is public and points to Project B which is private, a visitor who does not have access to Project B will still be prompted by the modal. The visitor can still click "Redirect," but they will be taken to a "Forbidden" page and will not be able to access the private project/component.
+    Successfully linked to URL
 
 .. _mendeley:
 
@@ -703,7 +690,7 @@ Configuring Mendeley
 *************
 **Purpose:** Connecting to Mendeley allows users to create a two way connection between the OSF and Mendeley.
 
-Users who choose to connect their Mendeley account to the OSF can check the appropriate box. They are presented with a
+Users who choose to connect their Mendeley account to the OSF can check appropriate box. They are presented with a
 modal::
 
     Mendeley Add-on Terms
@@ -1228,8 +1215,6 @@ Viewing figshare Files
 ***********
 **Purpose:** The file tree and file details pages allow users to view and interact with figshare files.
 
-Refer to this `Google Doc <https://docs.google.com/document/d/1T8c69at_0X2WKficbYEV0z7bfM3jNFoWkYtmNmZjVPg/edit#heading=h.f17owbri8qc3>`_ for more information on allowabel figshare actions
-
 figshare appears in in the file tree as an item in the component to which it has been added. It is on the same level as OSF Storage.
 The tree identifies the project::
 
@@ -1582,7 +1567,7 @@ Viewing OSF Storage Files
 
 Users can obtain and distribute links for their documents in public projects on the OSF so others can then view the same rendered files. In addition, users are provided two different methods of embedding those documents, one in which the iFrame is dynamically rendered and another which provides the iFrame directly.
 
-If the user is an admin on the project, the following buttons are visible to them in the top right of the "File Details" page::
+On the *file details* page, the user sees buttons across the top right::
 
     Delete
     Share
@@ -1590,42 +1575,14 @@ If the user is an admin on the project, the following buttons are visible to the
     View
     Revisions
 
-To any visitor viewing a file on a public project, only the "Share,""Download," "View," and "Revisions" buttons are visible in the top right of the "File Details" page.
+The user clicks the Share button and a popover appears with two tabs::
+    Share
+    Embed
 
-When the user clicks the **Share** button, a popover appears with the following two tabs::
-    
-    [Share][Embed]
-
-The "Share" tab provides a URL and a button to copy the URL to the user's clipboard. Below the URL field are Twitter, Facebook, LinkedIn, and email buttons to share the URL on social media.
-
-The "Embed" tab provides two entries::
-  
+The Share Tab provides a URL and a button to copy the URL to the user's clipboard.
+The Embed Tab provides two entries::
     Dynamically Render iFrame with JavaScript (with the associated javascript in a box below)
-    
     Direct iFrame with Fixed Height and Width (with the assocated HTML in a box below)
-    
-When the user clicks the **Download** button, the file is downloaded onto their computer.
 
-The user can toggle the "View" and "Revisions" buttons on and off. The selected button is blue and the unselected button is gray. The "View" button is automatically blue and selected for the user so that the file is displayed in the MFR when the user arrives on the "File Details" page. The "Revisions" button is automatically gray when the user arrives on the page.
 
-When the user clicks the **Revisions** button, the "View" button turns gray and the "Revisions" button turns blue. Clicking the **Revisions** button shows a table of the different versions that the file has gone through (in the order of the most recent version to the oldest). The table format appears as follows::
-  
-    Version ID | Date | User | Download | MD5 [?]| SHA2 [?]
-
-The "Version ID" column displays the version number (e.g. 1,2,3, etc.).
-
-The "Date" column displays the date when the file version was created.
-
-The "User" column displays the user's name which, when clicked, links to their profile page.
-
-The "Download" column displays the number of times the file version has been downloaded.
-
-The "MD5" column displays the MD5 algorithm and a button that the user can click to save the MD5 to their clipboard. The user can hover over the "?" to bring up a tooltip that explains MD5::
-  
-    MD5 is an algorithm used to verify data integrity.
-
-The "SHA2" column displays the SHA2 algorithm and a button that the user can click to save the SHA2 to their clipboard. The user can hover over the "?" to bring up a tooltip that explains SHA2::
-  
-    SHA-2 is a cryptographic hash function designed by the NSA used to verify data integrity.
-
-The user can click the most recent version ID to display the file in the MFR on the "File Details" page. When the user does this, the "View" button is selected and the "Revisions" button is grayed out in the top right of the page. Only the most recent file version can be displayed in the MFR.
+.. todo:: Update OSF storage

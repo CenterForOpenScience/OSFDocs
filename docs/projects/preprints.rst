@@ -12,11 +12,11 @@ Preprint Detail Page
 ---------------
  **Purpose:** The "Preprint Detail" page is the main page where the user reads and downloads a given preprint.
 
-At the top of the "Preprint Detail" page, the preprint's title appears in large typeface. The date when the preprint was shared and the date when the preprint was last edited are listed below the preprint's title.
+At the top of the "Preprint Detail" page, the preprint's title appears in large typeface. Below the title is a list of the co-authors on the preprint. If a co-author is a registered contributor, their name will be linked to their OSF profile page. The date when the preprint was shared and the date when the preprint was last edited are listed below the preprint's title.
 
 On the left half of the page, the preprint appears in an MFR, below which a "Download preprint" button, and the supplemental files (if the user has uploaded any) are shown. The preprint file will also be listed below the MFR but only in the event that there are supplemental files.
 
-On the right half of the page, the preprint's abstract, license, disciplines, DOI (if any), tags, and citation styles (MLA, APA, and Chicago) are listed. If an abstract is long, there will be a **See more** button below the abstract that the user can click to expand the remaining text. When the abstract is expanded, the button changes to **See less**. When the user clicks the **See less** button, the abstract shrinks back to its shorter length, and the **See more** button returns.
+On the right half of the page, the preprint's abstract, license, disciplines, Preprint DOI (when clicked takes the user to the "Preprint Detail" page), Peer-Review Publication DOI (optional - appears if the user's preprint has been previously published and they have provided it in the metadata when uploading their preprint), tags, and citation styles (MLA, APA, and Chicago) are listed. If an abstract is long, there will be a **See more** button below the abstract that the user can click to expand the remaining text. When the abstract is expanded, the button changes to **See less**. When the user clicks the **See less** button, the abstract shrinks back to its shorter length, and the **See more** button returns.
 
 In the top right of the Preprint Detail page, there is a gray box that includes a series of actions for downloading and sharing a preprint::
 
@@ -27,7 +27,7 @@ At the bottom right of the page, there is a gray box that reads::
   The project for this paper is available on the OSF
   [Visit project] (links to the OSF project connected to a preprint)
 
-The user who uploaded the preprint can see a green "Edit preprint" button in the top right of the Preprint Detail page. Visitors to a Preprint Detail page cannot see this button.
+Admins can see a green "Edit preprint" button in the top right of the Preprint Detail page. Contributors with read access or read+write acces and visitors to a Preprint Detail page cannot see this button.
 
 OSF Preprints Landing Page
 ---------------
@@ -362,15 +362,17 @@ These two fields are required. In the "Year" field, the current year is listed a
 There is an option to "Apply this preprint license to my OSF project." The user can select "Yes" or "No" to either extend or not extend the preprint license to their OSF project. "Yes" is selected automatically. Note that if the user selects "No license" option from the drop-down menu, they can choose to extend this license to their OSF project, as well.
 
 **The DOI section**
-In the DOI section (if the user's preprint has already been published in a journal), the user can enter their DOI of the associated journal into the DOI field. There is a message above the DOI field that reads::
+A DOI is automatically generated for a preprint upon submission. The use does not need to do anything in this section for the DOI to be generated. 
+
+However, (if the user's preprint has already been published in a journal), the user can enter their DOI of the associated journal into the DOI field. There is a message above the DOI field that reads::
   
-    **If published, DOI of associated journal article (optional)**
+    **Peer-reviewed publication DOI (optional)**
     
-If the user enters an invalid DOI, a growlbox appears below the DOI field that reads::
+If the user enters an invalid DOI, a red error message appears below the DOI field that reads::
   
     Please use a valid DOI
     
-The growlbox disappears when the user deletes the invalid DOI.
+The error message disappears when the user deletes the invalid DOI.
 
 When the user clicks inside the DOI field, begins typing, or enters an invalid DOI, the field is outlined in blue. 
 
@@ -568,9 +570,9 @@ If the user uploads a new version of their preprint file with the same filename 
     
     [filename](Version:x)
 
-The Preprint's OSF Project
+The Preprint's OSF Project/Component
 ---------------
-**Purpose**: To add supplemental files to a preprint.
+**Purpose**: Allows the user to add supplemental files to the preprint as well as to view and access the preprint from the OSF side.
 
 On the bottom right of the Preprint Detail page, there is a gray box and a button::
   
@@ -584,6 +586,12 @@ Clicking the "Visit project" button takes the user to the Project Overview page.
 Clicking the "Edit preprint" button takes the user to the Edit Preprint page.
 
 Clicking the "View preprint" button takes the user to the Preprint Detail page.
+
+If the user makes the OSF project/component private, the preprint will also be set to private and will not appear on the preprint server. The following banner will appear on the project or component Overview page::
+  
+    This [node_type] has a preprint, but has been made Private. Make your preprint discoverable by making this [node_type] Public.
+
+Clicking the **Make Public** button on the Overview page will make the preprint public, and the preprint will appear again on the designated preprint server.
 
 Adding Supplemental Files
 ---------------

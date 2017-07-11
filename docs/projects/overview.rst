@@ -31,12 +31,6 @@ The next link is to the :ref:`Contributors page <contributors>`. This page lists
 The final link is to the :ref:`Settings page <project-settings>`. This page allows admins to configure the project. This page
 is not visible to non-contributors.
 
-Renaming a Project
-------------------
-**Purpose:** Allows the user to change the name of their project or component after they have created it.
-
-The user must be on the "Project Overview" or "Component Overview" page to rename their project or component. When the user clicks the project or component name in the top left corner of the "Overview" page, the title turns into a textbox where the the user can make changes to the title. To the right of the textbox is a green checkmark and an "x" that the user can click to either save their changes or cancel their changes, respectively. The user can also press **enter** on their keyboard to commit the new name.
-
 .. _overview-metadata:
 
 Metadata
@@ -275,7 +269,7 @@ tag name.
 
 Recent Activity Widget
 --------------------
-**Purpose:** The Recent Activity widget shows users the logged actions for the viewed project or component, its children, and its registrations.
+**Purpose:** The Recent Activity widget shows users the logged actions for the viewed project or component and its children.
 
 The Recent Activity widget appears below the Tags widget. Below the panel title, "Recent Activity," is muted text that reads::
 
@@ -283,7 +277,7 @@ The Recent Activity widget appears below the Tags widget. Below the panel title,
 
 Times are displayed in local time, and the correct offset is indicated in the above text.
 
-Below this is a list of all logged actions on the project or component, its children, and registrations displayed in chronological order with the most recent
+Below this is a list of all logged actions on the project or component and its children, displayed in chronological order with the most recent
 action listed at the top. Actions are listed in two columns—the left shows the date and time (YYYY-MM-DD HH:MM AM/PM).
 Hovering over a time shows a tooltip with the date and time in UTC.
 
