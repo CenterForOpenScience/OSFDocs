@@ -668,34 +668,6 @@ Clicking "Disconnect" removes the table and connected folder information. The "D
 that reads "Import Account from Profile." Alternatively, the user can uncheck the add-on from the "Select Add-ons" list and save their
 changes.
 
-.. _external link:
-Configuring External Link
-*************************
-**Purpose:** Adding an external link allows users to redirect project visitors to the provided URL. 
-
-Users can create external links to external sites as well as to internal pages within the OSF, such as projects, components, and registrations, etc.
-
-When a user checks the box next to the external link add-on, the "Settings" page reloads, and a Configure Add-ons pane appears below the "Select Add-ons" section of the "Settings" page. The text reads::
-
-    External Link
-    URL [field]
-    Label [field]
-    [Save]
-
-The user can then enter the URL into the URL field. The user has the option to add a label to the external link in the Label field, but this step is not required. After the user enters the information and clicks "Save," a confirmation message appears below the Label field that reads::
-
-    Successfully linked to [URL].
-    
-Now, when a user goes to that project or component and lands on its "Overview" page, a modal will immediately appear::
-  
-  This project contains a forward to
-  [URL]
-  [Cancel] [Redirect]
-
-Clicking "Cancel" will keep the user on the project or component "Overview" page. Clicking "Redirect" will take the user to the site of the URL.
-
-If a user has access to private projects/components or embargoed registrations, the user can create an external link to point to them; however, if project A is public and points to Project B which is private, a visitor who does not have access to Project B will still be prompted by the modal. The visitor can still click "Redirect," but they will be taken to a "Forbidden" page and will not be able to access the private project/component.
-
 .. _mendeley:
 
 Configuring Mendeley

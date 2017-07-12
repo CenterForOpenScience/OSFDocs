@@ -298,3 +298,15 @@ affected component or project. For example::
 User, file, project, component, registration, and wiki names are linked to the relevant pages.
 
 Only the ten most recent logs are shown at once. Pagination behavior is described in detail :ref:`here <pagination>`.
+
+Viewing a redirect Link
+***********************
+**Purpose:** Users who configure a redirect link give visitors the option to follow an external link from the "Overview" page. Visitors are prompted to redirect to this link upon entering the OSF project. 
+
+If configured (see :ref:`Configuring a redirect link <redirect link>`) visitors to the project will immediately see a modal that reads::
+
+    This project contains a forward to 
+    [URL]
+    [Cancel] [Redirect]
+
+Clicking **Cancel** will allow the user to stay on the OSF project. Clicking the link itself or **Redirect** will take the user to the external link. 
