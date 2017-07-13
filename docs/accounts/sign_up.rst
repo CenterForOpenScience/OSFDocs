@@ -2,7 +2,23 @@
 
 **Purpose:** The sign-up form creates an OSF account.
 
-The sign-up form can be accessed only while logged out, from the OSF homepage (osf.io). This form requests the user’s full name, contact email, confirmation of their contact email, and a password. After successfully submitting, the user cannot click into any of the fields.
+The sign-up form can be accessed only while logged out, from the OSF homepage (osf.io). This form requests the user’s full name, contact email, confirmation of their contact email, and a password.
+
+Below these fields is a CAPTCHA section (run by reCAPTCHA) to ensure that the user setting up an account is not spam::
+  
+  [checkbox] I'm not a robot
+
+After the user checks the box to confirm that they are not a robot, a green check mark will appear in place of the check box. The user cannot undue this section.
+
+If the user fills out all of the fields correctly and checks the box but then lets the page sit for several minutes (about five minutes) without submitting their form, reCAPTCHA will expire and the user will need to re-check the checkbox. The checkbox will be outlined in red and the following red error message will appear above it::
+  
+    Verification expired. Check the checkbox again.
+
+If the user clicks **Create account** without checking the box, a red error messaage will appear that reads::
+  
+    Please complete reCAPTCHA
+
+After successfully submitting, the user cannot click into any of the fields.
 
 **Use cases**
 If the user does not complete a field, but clicks into a subsequent field or returns to a previous field or submits the form, an alert below the field(s) reads::
