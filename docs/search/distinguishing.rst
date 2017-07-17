@@ -33,7 +33,7 @@ Filtering by Category
 ^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Filtering by category allows users to focus their search on the correct content type.
 
-When performing a search, there is a left sidebar that shows categories and their counts of how many results fell into each category. The categories are: Projects, Components, Users, Registrations, Files, Institutions, and SHARE.
+When performing a search, there is a left sidebar that shows categories and their counts of how many results fell into each category. The categories are: Projects, Components, Users, Registrations, Preprints (when clicked, takes the user to the preprint "Discover" page with the query in the search box), Files, Institutions, and SHARE.
 A Total category is shown at the top of the sidebar. The sum of the categories amounts to the Total.
 
 By default, the Total results are selected and displayed. The categories are displayed below the Total category in the order from most to least results. If a category has no results, it does not appear in the sidebar.
