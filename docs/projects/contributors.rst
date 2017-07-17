@@ -246,12 +246,15 @@ changes via the "Add" button.
 
 After adding new contributors, the page refreshes and the new contributors are listed.
 
-Newly added contributors receive an email notifying them of the change::
+Newly added contributors to a project, fork, and template receive an email notifying them of the change::
 
     Hello [username],
 
-    You have been added as a contributor to the project "[project name]" on the Open Science Framework: URL
-    If you are erroneously being associated with "[project name]" then you may visit the project contributors page and remove yourself as a contributor.
+    [username] has added you as a contributor to the project "[project name]" on the Open Science Framework: URL
+    
+    You will be automatically subscribed to notification emails for this project. To change your email notification preferences, visit your project or your user settings: https://osf.io/settings/notifications/
+    
+    If you are erroneously being associated with "[project name]," then you may visit the project's "Contributors" page and remove yourself as a contributor.
 
     Sincerely,
 
