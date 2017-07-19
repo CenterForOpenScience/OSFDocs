@@ -1,8 +1,40 @@
-**Purpose:** The registries search is an OSF search, linked to from the "Browse" drop-down menu, that allows the user to browse all public registrations on the OSF.
 
-These results do not include retracted registrations.
+**Purpose:** The registries search is an OSF search, linked to from the "OSF Home" tab, that allows the user to browse all public registrations on the OSF, including withdrawn registrations.
 
 This page is accessible at https://osf.io/registries.
+
+Links included when logged out
+==============================
+
+* OSF Registries
+    
+    * OSF Home: Clicking this link takes the user to their dashboard. 
+    * OSF Preprints: Clicking this link takes the user to the OSF Preprints landing page https://osf.io/preprints/.
+    * OSF Registries: Clicking this link takes the user to the OSF Registries landing page https://osf.io/registries/.
+    * OSF Meetings: Clicking this link takes the user to the OSF for Meetings landing page https://osf.io/meetings/.
+
+* Search: Clicking this tab takes the user to the OSF Registraties "Discover" page https://osf.io/preprints/discover/.
+
+* Support: Clicking this tab takes the user to the OSF Registrations support landing page: http://help.osf.io/m/registrations/
+
+* Sign Up: Clicking this tab takes the user to the :ref:`Create a free account page <sign-up>` where the user needs to fill out a form to create an OSF account.
+
+* Sign In: Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`. After logging in, the user is taken to the OSF Registraties landing page.
+
+Links included when logged in
+=============================
+
+When logged in, the navigation bar is the same, except that the "Sign Up" and "Sign In" links are replaced with the user drop-down menu:
+
+* Username
+     
+    *My Profile: Clicking this link takes the user to their profile page https://osf.io/profile/.
+    *OSF Support: Clicking this link takes the user to the support page https://osf.io/support/.
+    *Settings: Clicking this link takes users to their user settings page https://osf.io/settings/.
+    *Log out: Clicking this link logs the user out of their OSF account and takes them to the OSF homepage, where a confirmation message will appear at the top of the page informing them that they have logged out succesfully: https://osf.io/goodbye/. 
+
+Searching OSF Registries
+========================
 
 OSF Registries is powered by SHARE. On the OSF Registries landing page, the user can search for registrations by typing a query into the search box or by clicking a registration in the "Browse Recent Registrations section."
 
