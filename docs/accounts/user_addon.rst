@@ -121,7 +121,7 @@ and there is blue information text below that reads:
 
     Only Dataverse repositories v4.0 or higher are supported.
 
-If the user has selected the "Other" option but does not specify a web address or provides an invalid one, a red inline alert appears
+If the user has selected the "Other" option but does not specify a web address or provides an invalid one, a red alert appears
 below the three fields::
 
     Sorry, but there was a problem connecting to that instance of Dataverse. It is likely that the instance hasn't been
@@ -129,7 +129,7 @@ below the three fields::
 
 .. todo:: Log this as a bug—if it's empty, it should not say that it's likely that it's because it hasn't been updated.
 
-If the user types in the web address of one of the dropdown options, the entry is still valid.
+If the user types in the web address of one of the drop-down options, the entry is still valid.
 
 If the user tries to save the form without filling in the API token but has provided a valid Dataverse repository, a red
 inline alert appears below the dropdown::
@@ -302,14 +302,12 @@ Below the table is green text that reads::
 
 Clicking on the "Disconnect Account" link opens a modal::
 
-    Disconnect Account?
+    Disconnect Mendeley Account?
     Are you sure you want to disconnect the Mendeley account [Mendeley username]? This will revoke access to Mendeley
     for all projects you have authorized.
-    [Cancel][Delete]
+    [Cancel][Disconnect]
 
-.. todo:: It should say disconnect, not delete. Log the issue.
-
-Clicking "Delete" removes the repository from the table list.
+Clicking "Disconnect" removes the repository from the table list.
 
 Users can connect to multiple Mendeley accounts. To connect to an additional account, they click the blue "Connect Account" link
 and authorize a new connection. The new connection will add another row to the table, listing the "Authorized by" information for the
@@ -351,11 +349,9 @@ Clicking on the "Disconnect Account" link opens a modal::
     Disconnect Account?
     Are you sure you want to disconnect the Zotero account [Zotero username]? This will revoke access to Zotero
     for all projects you have authorized.
-    [Cancel][Delete]
+    [Cancel][Disconnect]
 
-.. todo:: It should say disconnect, not delete. Log the issue.
-
-Clicking "Delete" removes the repository from the table list.
+Clicking "Disconnect" removes the repository from the table list.
 
 Users can connect to multiple Zotero accounts. To connect to an additional account, they click the blue "Connect Account" link
 and authorize a new connection. The new connection will add another row to the table, listing the "Authorized by" information for the

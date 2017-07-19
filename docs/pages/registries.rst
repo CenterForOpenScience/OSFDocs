@@ -1,3 +1,4 @@
+
 **Purpose:** The registries search is an OSF search, linked to from the "OSF Home" tab, that allows the user to browse all public registrations on the OSF, including withdrawn registrations.
 
 This page is accessible at https://osf.io/registries.
@@ -34,6 +35,7 @@ When logged in, the navigation bar is the same, except that the "Sign Up" and "S
 
 Searching OSF Registries
 ========================
+
 OSF Registries is powered by SHARE. On the OSF Registries landing page, the user can search for registrations by typing a query into the search box or by clicking a registration in the "Browse Recent Registrations section."
 
 When the user clicks a registration below the "Browse Recent Registrations section," they are taken to the registration form for that registration. 
