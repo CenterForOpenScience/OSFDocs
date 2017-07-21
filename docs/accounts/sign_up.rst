@@ -1,4 +1,5 @@
-.. _todo: update from 0.47—new flow on login for the first time.
+Creating an Account
+===================
 
 **Purpose:** The sign-up form creates an OSF account.
 
@@ -80,15 +81,55 @@ The user receives the following email::
 The confirmation link in the email lasts for 24 hours before it expires
 
 When the user clicks the link in the email to confirm their OSF account, they are logged in to their OSF account and taken directly to their :ref:`my-dashboard`.
+
+Resend password confirmation email
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Purpose**: If an unconfirmed user tries to log in to the OSF, they have the option to have a confirmation email sent to them.
+
+To get to the "Resend Confirmation Email" page, an unconfirmed user (a user who has registered for an account, but who has not clicked the link in the email to confirm it) tries to log in to the OSF by going to the "Sign In" page; they enter the email address and password they used to register, but they are unable to log in.
+
+The "Sign In" page then reads::
+  
+  Open Science Framework
+  Sign in with your OSF Account to continue
+  Account Not Confirmed
+  This login email has been registered but not confirmed. Please check your email (and spam folder). Click here to resend your password.
+  [Sign in][Back to OSF]
+  [Create Account]
+  
+In the above text, "Click here" is linked to the "Resend Confirmation Email" page, which is accessible at this URL: https://osf.io/resend/.
+
+When the user clicks **Click here** they are taken to the "Resend Confirmation Email" page::
+  
+    Resend Confirmation Email
+    Enter your email address and we'll resend your confirmation link.
+    [text box]
+    [Send]
+
+If the user enters an invalid email address, a yellow dismissable error message will appear at the top of the page::
+  
+    Email address is invalid
+
+If the user enters an email that's different from the one they used to register, the following dismissable confirmation message will appear at the top of the page::
+  
+    If there is an OSF account associated with this unconfirmed address [email address], a confirmation email has been resent to it. If you do not receive an email and believe you should have, please contact OSF Support.
+    
+If the user navigates to that email address, they will not receive the confirmation email.
+
+If the user enters the correct email address, the following dismissable confirmation message will appear at the top of the page::
+  
+    If there is an OSF account associated with this unconfirmed address [email address], a confirmation email has been resent to it. If you do not receive an email and believe you should have, please contact OSF Support.
+
+The user will receive the confirmation email and can click the link in the email to confirm their account.
   
 Confirming an Unregistered User Account
----------------
+---------------------------------------
 
 **Purpose:** Users can be added as contributors to an OSF :doc:`project <../projects/project_index>` without having an account. In this case can claim an account so that they may access the material.
 
 
 Claiming an Account Via Email
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Claiming an account via email allows a user who has been added as a contributor to a project to create an account following their addition.
 
 If a user is added as a contributor to a project, but does not have an OSF account, they will receive an email in their inbox instructing them that they can set a password for their account::
@@ -121,7 +162,7 @@ If the user has confirmed their account and is signed into the OSF, but follows 
 If the user has confirmed their account and is not signed into the OSF, but follows the email’s link again, they are brought to a page that informs them that the account has already been claimed.
 
 Claiming an Account Via the OSF
-^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Claiming an account via the OSF allows a person who does not have an OSF account to identify themselves as a contributor on a project.
 
 If a user finds their name listed on an OSF project but does not have an OSF account, they can claim their account. To do so, the user clicks on their name in contributor list. This name is not linked to a :doc:`public profile <../profiles/profiles_index>`. Hovering over their name shows a tooltip that says “Is this you?  Click to claim.” After clicking, a popover appears. The popover is titled “Claim account” and a blank text field instructs the user to enter their email. The user enters their email into the field and clicks the check mark to the right. Alternatively, the user can click the ‘x’ to the right of the check mark to cancel.
