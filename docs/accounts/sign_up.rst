@@ -112,7 +112,7 @@ If the user enters an invalid email address, a yellow dismissable error message 
 
 If the user enters an email that's different from the one they used to register, the following dismissable confirmation message will appear at the top of the page::
   
-    If there is an OSF account associated with this unconfirmed address [email address], a confirmation email has been resent to it. If you do not receive an email and believe you should have, please contact OSF Support.
+    If there is an OSF account associated with this unconfirmed email address [email address], a confirmation email has been resent to it. If you do not receive an email and believe you should have, please contact OSF Support.
     
 If the user navigates to that email address, they will not receive the confirmation email.
 
