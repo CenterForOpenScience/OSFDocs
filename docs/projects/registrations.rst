@@ -120,10 +120,19 @@ Occasionally, a registration will fail. When a registration fails, the following
     [Back to project]
 
 Creating a registration in Preregistration Challenge workflow
-------------
-User navigates from cos.io/prereg to osf.io/prereg, where the user is greeted by two options: login to the OSF or create a new account. 
+-------------------------------------------------------------
+The "Prereg Challenge" landing page on the OSF is only accessible when logged in. If the user is logged out of the OSF or does not have an account, and they try to go to https://osf.io/prereg/, they will be prompted to either sign in or create an account first. 
 
-Whether a user logs into the OSF or creates a new account first, the landing page for prereg provides the user the option to "Start a new preregistration." If the user already has a draft registration, there is also an option to "Continue working on an existing preregistration." If the user has project(s), an option to "Preregister a project you already have on the OSF" is also displayed. 
+The "Prereg Challenge" landing page appears as follows::
+  
+  The process of creating a preregistration [links to: https://cos.io/prereg/] is beneficial to both the scientific field and to you, the scientist. By writing out detailed data collection methods, analysis plans, and rules for excluding or missing data, you can make important decisions that affect your workflow earlier, without the biases that occur once the data are in front of you.
+
+  Ready for the challenge? Please follow these steps:
+    1. Specify all your study and analysis decisions prior to investigating your data
+    2. Publish your study in an eligible journal [links to: https://cos.io/our-services/prereg-more-information/]
+    3. Receive $1,000
+
+The "Prereg Challenge" landing page provides the user the option to "Start a new preregistration." If the user already has a draft registration, there is also an option to "Continue working on an existing preregistration." If the user has project(s), an option to "Make a preregistration for a project you already have on the OSF" is also displayed. 
 
 Clicking "Continue working on an existing preregistration" displays a box::
     

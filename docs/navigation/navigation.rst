@@ -3,21 +3,20 @@
 The navigation bar appears at the top of the page at all times. When scrolling down, the navigation bar stays stuck to the top of the page.
 
 
+Links included when logged out
+==============================
 
-**Links included when logged out:**
-
-* OSF Home tab:
-
+*  OSF Home tab:
     * OSF Home: Clicking this link takes the user to the OSF homepage.
     * OSF Preprints: Clicking this link takes the users to the OSF Preprints landing page https://osf.io/preprints/.
     * OSF Registries: Clicking this link takes the user to the OSF Registries landing page https://osf.io/registries/.
-    * OSF Meetings. Clicking this link takes the user to the OSF for Meetings page: https://osf.io/meetings/.
+    * Meetings: Clicking this link takes the user to the OSF for Meetings page: https://osf.io/meetings/.
    
-* Search: Clicking this tab takes the user to the OSF Search page (https://osf.io/search/). See :ref:`search`.
+* Search: Clicking this tab takes the user to https://osf.io/search/, where a green search bar stretches across the top of the page, opening below the navigation bar. A "question mark" icon appears on the far right of the search bar. Clicking the question mark prompts the "Search help" modal to appear that explains how to do search queries.
 
 * Support: Clicking this tab takes the user to the support landing page https://osf.io/support/.
 
-* Sign Up: Clicking this button takes users to a form to sign up for an account. 
+* Sign Up button: Clicking the button takes the user to a form to sign up for an account. 
 
 * Sign in: Clicking this button takes the user to a page with email and password fields:
     * SIGN In. Clicking this button logs the user into their OSF dashboard.
@@ -29,16 +28,18 @@ The navigation bar appears at the top of the page at all times. When scrolling d
     * Create Account. Clicking this link takes the user to a form to sign up for an account.
 
 
+Links included when logged in
+=============================
+
 **Links included when logged in:**
 
 * OSF Home tab:
-
     * OSF Home: Clicking this link takes the user to the OSF homepage.
     * OSF Preprints: Clicking this link takes the users to the OSF Preprints landing page https://osf.io/preprints/.
     * OSF Registries: Clicking this link takes the user to the OSF Registries landing page https://osf.io/registries/.
     * OSF Meetings: Clicking this link takes the user to the OSF for Meetings page: https://osf.io/meetings/.
     
-* My Projects tab. Clicking this tab takes the user to his/her Project Organizer.
+* My Projects: Clicking this tab takes the user to his/her Project Organizer.
 
 * Search: Clicking this tab takes the user to the OSF Search page (https://osf.io/search/). See :ref:`search`.
 

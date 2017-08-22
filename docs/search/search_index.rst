@@ -3,7 +3,7 @@
 Searching the OSF
 ================
 
-**Purpose:** The search bar allows users to find relevant content on the OSF or SHARE.
+**Purpose:** The search button allows users to find relevant content on the OSF or SHARE.
 
 .. todo:: Add SHARE docs
 
@@ -31,8 +31,3 @@ Distinguishing Search Results
 *****************
 
 .. include:: distinguishing.rst
-
-.. _share:
-
-SHARE
-*****

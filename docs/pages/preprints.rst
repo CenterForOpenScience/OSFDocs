@@ -14,7 +14,7 @@ OSF Preprints Landing Page
 
 To navigate to the OSF Preprints landing page, the user clicks the **OSF Home** tab from the navigation bar and then clicks **OSF Preprints** from the drop-down menu.
 
-On the OSF Preprints landing page, there is a search field to search for preprints and a green [Add a preprint] button below the search field.
+On the OSF Preprints landing page, there is a search field to search for preprints, a green [Add a preprint] button below the search field, and a section titled "Browse by subject" that shows the 10 top-level subject areas provided by Bepress (see the `Search Preprints`_ section).
 
 In the top right, there's a toolbar with the following actions:
 
@@ -47,7 +47,7 @@ Landing Pages for Community Preprint Servers
 ---------------
 **Purpose:** To search for preprints within and upload preprints to a given preprint server.
 
-When a user navigates to a community preprint server, the landing page is the same as OSF Preprints, except for different color schemes and different actions in the :ref:`navigation bar <navigation-bar>`
+When a user navigates to a community preprint server, the landing page is the same as OSF Preprints, except for different color schemes and different actions in the :ref:`navigation bar <navigation-bar>`. The top-level subject areas highlighted on a community preprint server's landing page vary in subject and number by each provider.
 
 The following tabs appear in the navigation bar when the user is logged out:
 
@@ -327,7 +327,7 @@ When the user clicks "Save and continue," the Discipline widget will close, and 
 The user can return to the Discipline widget to make changes at any point throughout the preprint upload process. 
 
 The Basics Widget
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 **Purpose:** Allows the user to add a license, DOI (if they have one), tags, and an abstract to their preprint.
 
 In the bottom right of the Basics widget, there are two buttons::
@@ -611,9 +611,9 @@ Search Preprints
 ---------------
 **Purpose**: To search for and browse preprints in OSF Preprints and other preprint servers.
 
-OSF Preprints is an aggregator of several preprint servers and is powered by SHARE. On the OSF Preprints and community preprint servers' landing pages, the user can enter a search query to search for preprints. The search results will appear on the Preprint Archive Search page. 
+OSF Preprints is an aggregator of several preprint servers and is powered by SHARE. On the OSF Preprints and community preprint servers' landing pages, the user can enter a search query to search for preprints. The search results will appear on the "Discover" page. 
 
-The user can search by preprint title by entering the title into the search field. To search by an author(s) or a tag(s), the user should use the boolean operaters AND (including x and x) and OR (including x or x). The accepted formats for searching one or more authors is as follows:
+The user can search by preprint title by entering the title into the search field. To search by an author(s) or a tag(s), the user can use the boolean operaters AND (including x and x) and OR (including x or x). The accepted formats for searching one or more authors is as follows:
   
   * author:(albert einstein)
   * author: "albert einstein"
@@ -637,12 +637,12 @@ The accepted formats for searching one or more tags is as follows:
   * tags:(psychology OR neuroscience)
   * tags:'psychology OR neuroscience'
 
-To browse by subject area, there is a list of disciplines on the OSF Preprints and community preprint servers' landing pages. Clicking a subject area will yield preprints within that subject on the Preprint Archive Search page.
+To browse by subject area, there is a list of subject areas on the OSF Preprints and community preprint servers' landing pages. Clicking a subject area will yield preprints within that subject on the "Discover" page.
 
-On the Preprint Archive Search page, there is a Provider side bar that shows all of the preprint servers aggregated in that particular preprint server. The user can select a preprint server to search for preprints uploaded to that server.
+On the "Discover" page, there is a Provider side bar that shows all of the preprint servers aggregated in that particular preprint server. The user can select a preprint server to search for preprints uploaded to that server.
 
-Below the Provider sidebar, there is a Subject sidebar that is sorted hierarchically. Clicking the arrow next to a subject will unfold the subdisciplines within that subject area. Selecting a subject area will show preprints within that subject area.
+Below the Provider sidebar, there is a Subject sidebar that is sorted hierarchically. Clicking the arrow next to a subject will unfold the subdisciplines within that subject area. Selecting a subject area will return all of the preprints within that subject area. Taxonomy that is custom to a community preprint server is not listed in this sidebar on the OSF Preprints "Discover" page. The user would need to go to the community preprint server's "Discover" page to search by their custom taxonomy. The preprints tagged with custom taxonomy are still aggregated in OSF Preprints. The tag does not appear on the preprint in search results, but, when clicked, the tag is listed on the preprint's "Details" page.
 
-Preprint search results display the preprint title first, followed by the author(s), discipline(s), abstract, and preprint provider. To access the rest of the metadata, there is a down arrow that the user can click to unfold the search result on the Preprint Archive Search page. Clicking the down arrow shows external links, such as a link to a preprint's journal publication, etc., an OAI (if any), tags (if any), and the date and time on which the preprint was added.
+Preprint search results display the preprint title first, followed by the author(s), discipline(s), abstract, and preprint provider. To access the rest of the metadata, there is a down arrow that the user can click to unfold the search result on the "Discover" page. Clicking the down arrow shows external links, such as a link to a preprint's journal publication, etc., an OAI (if any), tags (if any), and the date and time on which the preprint was added.
 
 

@@ -6,7 +6,7 @@ Project Overviews are the landing page for a project when navigating from :ref:`
 as can contributors on a public or private project.
 
 Project Navigation Bar
-----------------------
+--------------
 **Purpose:** The Project Navigation Bar allows users to navigate between the settings and information of a project, as well
 as navigate to the project overview.
 
@@ -118,8 +118,8 @@ Wiki Widget
 **Purpose:** The Wiki widget provides a preview of wiki contents.
 
 The first widget is the Wiki widget. In the upper right corner of the widget is a button that links the user to the Wiki page.
-When the :ref:`Home wiki page <wiki>` has hot been edited to include content, contributors with read+write or admin priviliges see "Add important information, links, or images here to describe your project" displayed inside the panel. If the user has created additional
-wiki pages with content, but has no content on the Home wiki page, the panel still displays "Add importnat information, links, or images here to describe your project" but has a "Read More" link below this line that, when clicked, takes the user to the wiki. If the project
+When the :ref:`Home wiki page <wiki>` has not been edited to include content, contributors with read+write or admin priviliges see "Add important information, links, or images here to describe your project" displayed inside the panel. If the user has created additional
+wiki pages with content, but has no content on the Home wiki page, the panel still displays "Add important information, links, or images here to describe your project" but has a "Read More" link below this line that, when clicked, takes the user to the wiki. If the project
 is being viewed by a non-contributor and the Home wiki has no content, then the widget is not displayed at all.
 
 If there is content in the home wiki page, users and non-contributors will the content as well as a "Read More" link at the bottom of the wiki widget. This link directs the user to the wiki page.
@@ -128,7 +128,7 @@ Files Widget
 ------------
 **Purpose:** The Files widget provides a comprehensive view of the project's files and allows basic actions like uploading and downloading.
 
-Below the Wiki widget is the Files widget.  In the upper right corner of the widget is a button that links the user to the Files page.
+Below the Wiki widget is the Files widget. In the upper right corner of the widget is a button that links the user to the Files page.
 Below the panel header is a grey toolbar. Below the toolbar is the File Browser.
 
 The Files widget is a smaller instantiation of the :ref:`Files Browser <storage>`. It is displayed, on the Project Overview, below
@@ -180,47 +180,62 @@ Components Widget
 
 The Components widget is located below the Citation widget. In the panel's heading, two buttons are visible: "Add Component" and "Link Projects."
 
-When a project has no links or components within it, non-contributors do not see the Components widget. In that same scenario, users with
-read-only permissions see the Components widget with no buttons.
+When a project has no links or components within it, read-only contributors do not see the Components widget. In that same scenario, non-contributors see the Components widget with no buttons, and the body of the panel reads::
 
-Contributors with read+write or admin permissions see the two buttons and the widget reads::
+    No components to display
+
+Contributors with read+write or admin permissions see the two buttons and the following message::
   
-    Add components to organize your [project/component]
+  Add components to organize your [project/component]
+
+Add a Component
+^^^^^^^^^^^^^^^
 
 Clicking the "Add Component" button opens a modal::
 
-    Add Component
-    [text field: "Component Title]
-    [dropdown: "--Category--"]
+    Create new component
+    [text field: "Title"]
+    ["Affiliation"]
     [Checkbox: Add contributors from [Parent Project]]
-    [Cancel][Add]
+    [Checkbox: Add tags from [Parent Project]]
+    ["License"]
+    [ drop-down menu: "More"]
+      > [text field: "Description"]
+        [drop-down menu: "Category (for descriptive purposes)"]
+    [Cancel][Create]
 
-The first field in the modal is an empty text field with placeholder text that reads "Component Title." The user can enter a title of any length, however,
+The first field in the modal is an empty text field with placeholder text that reads "Enter component Title." The user can enter a title of any length, however,
 on save, only the first 200 characters will be saved to the title.
 
-The user can add the component without selecting a category. To choose one, however, the user clicks on the dropdown menu labeled "--Category--"
-and selects any of the available options. If the user selects a category but does not enter a title, a red text alert appears below the
-"Component Title" field::
+If the user is affiliated with an institution, the institutional logo will appear in the "Affilation" section. Affiliation are selected automatically and added to a component upon creation. If the user does not want to affiliate their component, they can click the logo to deselect it from the component.
 
-    This field is required.
+If the user wants the component to inherit the parent project's contributors, they can check the box next to "Add contributors from [parent project]." Contributors will not be added from the parent project if this box is left unchecked. If the user selected to add contributors from the parent project, they are all added with the same permissions as the parent. 
 
-After clicking the "Add" button, the button becomes deactivated and reads "Adding" until the page refreshes. The user remains on the Project Overview page, and there is a blue dismissable alert at the top of the page::
+If the user wants the component to inherit the parent project's tags, they can check the box next to "Add tags from [parent project]."
 
-    Your component was created successfully. You can keep working on the project page below, or go to the new component.
+The "License" section simply has a line of text that reads: "This component will inherit the same license as [parent project]. Learn more (links to:http://help.osf.io/s/support/m/projects/l/524050-license-your-project)].
 
-If the user selected to add contributors from the parent project, they are all added at the same permissions levels as the parent. 
+Clicking the **More** drop-down menu causes a sub-section to unfold to show the "Description" and "Category" fields. The user can enter a description into the field or leave it blank. The user can also select a category from the drop-down menu or keep the default option of "Uncategorized." The other categories are: "Analysis," "Communication," "Data," "Hypothesis," "Instrumentation," "Methods and Measures," "Procedure," "Project," "Software," and "Other."
 
-Clicking the "Add Links" button opens a modal::
+After clicking **Create**, a confirmation modal appears::
 
-    Add Links
+  New component created successfully!
+  [Keep working here][Go to new component]
+
+Clicking **Keep working here** keeps the user on the "Project Overview" page. Clicking **Go to new component** takes the user to the new "Component Overview" page.
+
+Add Links
+^^^^^^^^^
+Clicking the "Link Projects" button opens a modal::
+
+    Link other OSF projects
     [text field: "Search projects"]
     [Search all projects][Search my projects]
 
 Below the search buttons are two columns, one labeled "Results" and one labeled "Adding."
 
-The user can enter their query in the "Search projects" text field. If they select the "Search Projects" button, all public OSF projects,
-components, and registrations whose title matches their query will be returned. Five results will be displayed, with additional pages listed below (see
-the description of pagination on the :ref:`Watchlist <pagination>` for complete documentation or page listing). Hovering over a project title will reveal the created date and time and the most recent modified date and time in the following format::
+The user can enter their query into the "Search projects" text field. If they click the **Search Projects** button, all public OSF projects,
+components, and registrations whose title matches their query will be returned. If they click **Search my projects**, all of the user's OSF projects, components, and registrations whose title matches their query will be returned. Five results will be displayed, with additional pages listed below. Hovering over a project title will reveal the created date and time and the most recent modified date and time in the following format::
 
     Created: YYYY-MM-DD HH:MM AM/PM
     Modified: YYYY-MM-DD HH:MM AM/PM
@@ -232,46 +247,68 @@ Hovering over a registration title will reveal the registered date and time in t
 To the left of each project title is a green square button marked with a '+' sign. On the right is the last name of the first listed contributor to the result.
 If a project or component returned as a result has multiple contributors, "et al." is appended to the first contributor's last name. 
 
-Clicking the '+' button adds the result to the "Adding" column. Alternatively, the user can click the "Add all" link to the right of the
+Clicking **+** adds the result to the "Adding" column. Alternatively, the user can click the "Add all" link to the right of the
 "Results" title to add the results shown on the page to the "Adding" column. When a result is moved to the "Adding" column,
 it is removed from the "Results" column. Projects in the "Results" column have, instead of the green button to the left, a grey button with a '-'
-sign. Clicking this button removes the corresponding result from the "Adding" list and returns it to the "Results" page it was found on.
+sign. Clicking this button removes the corresponding result from the "Adding" list and returns it to the "Results" column.
 To the right of the "Adding" title is a "Remove All" link. Clicking this link moves all added results back to the "Results" column.
 
 Only a "Cancel" button is available on the modal until a result has been put in the "Adding" column. Once one result has been added,
-a green "Add" button becomes visible to the right of the "Cancel" button. Clicking "Add" refreshes the page to show the newly linked projects
+a green "Add" button becomes visible to the right of the "Cancel" button. Clicking **Add** refreshes the page to show the newly linked projects
 listed in the Components widget.
 
 
 .. _component-format:
 
-Projects, components, and links are listed in the Components widget with their title, contributors, number of contributions, category and privacy symbols,
-and a collapsible recent activity section. If one of the items is private, to the left of the title and category symbol is a lock. If the element
+Components and links are listed in the Components widget with their title, contributors, number of contributions, category, and privacy symbols. Components are listed in the order in which they were added. Components can be dragged and dropped to re-order. After re-ordering components,
+the user can refresh the page and the changes will be visible.
+
+If one of the components is private, to the left of the title and category symbol is a lock. If the component
 is public, there is no symbol. Titles link to the project/component/link's overview page. Below the titles are the names of the first three contributors;
 if there are more contributors, they are indicated by the addition of "& __ more." Clicking on a contributor's name brings the user to the contributor's
-public profile. Clicking on "& __ more" brings the user to the overview page for the project/component/link.
+public profile. Clicking on "& __ more" brings the user to the Overview page for the project/component/link.
 
-To the right of the element's title is a caret indicating that there is expandable content. Clicking the caret expands the element's information
-to include a "Recent Activity" section. In this section, on the left, are dates and times of logged actions. On the right is a description of each action.
-Only the three most recent actions are listed in the "Recent Activity" section.
+To the right of the element's title is an ellipsis indicating that there is more content. Clicking the ellipsis causes a drop-down menu to appear with the following options::
+  
+    Manage Contributors
+    Settings
+    Delete
+    
+Clicking **Manage Contributors** takes the user to the component's "Contributors" page.
 
-Components are listed in the order in which they were added. Components can be dragged and dropped to re-order. After re-ordering components,
-the user can refresh the page and the changes will still be visible.
+Clicking **Settings** takes the user to the component's "Settings" page.
+
+Clicking **Delete** causes the following modal to appear on the project "Overview" page::
+  
+    Are you sure you want to delete this component?
+    It will no longer be available to other contributors on the project.
+    Type the following to continue: [verification word]
+    [text field]
+    [Cancel][Delete]
+  
+If the user clicks **Delete** without typing the verification word into the text field, or if the user mistypes the verification word, the modal will close, and the following red dismissable error message will appear in the top right of the "Overview" page::
+  
+    Verification failed
+    Strings did not match
+
+If the user successfully deletes their component, a green dismissable confirmation message will appear across the top of the "Overview" page::
+  
+    Component has been successfully deleted.
 
 Tags Widget
 ----------------
 **Purpose:** The Tags widget allows users to provide keywords relevant to their project, helping OSF visitors more easily find their work.
 
-The Tags widget is located below the Components widget. When no tags are added, users with read+write or admin permissions
-see text that reads "Add a tag." If the user is not a contributor on the project, or only has read permissions, and no
-tags have been added the Tags widget is not visible.
+The "Tags" widget is located below the components widget. When no tags are added, users with read+write or admin permissions
+see text that reads: "add a tag to enhance discoverability." If the user is not a contributor on the project, or only has read permissions, and no
+tags have been added, the "Tags" widget is not visible.
 
-Contributors with read+write or admin permissions can add a tag by clicking "Tags" box and typing a keyword. If no tags have been added, the default text in the box reads: "add a tag to enhance discoverability."
-Pressing the return key will add the tag. Adding a comma after a tag and pressing the space bar, as if making a list, will
-also add a tag. Tags appear in blue boxes with a black 'x' to the right of the text. Clicking the 'x' allows the user to remove the tag.
+Contributors with read+write or admin permissions can add a tag by clicking inside the "Tags" box and typing in a keyword.
+Pressing the return key will add the tag. Inserting a comma after a tag will also add the tag. Tags appear in blue boxes. Admins and read+write contributors will see a black 'x' to the right of the tag that they can click to remove the tag.
 
-Hovering over a tag darkens the background color. Clicking on a tag brings the user to search results page, where the query was the
-tag name.
+Hovering over a tag darkens the background color. Clicking on a tag takes the user to the OSF "Search" page where search results containing that tag are listed. The query in the search bar is as follows::
+  
+    (tags:"[keyword]")
 
 .. _activity:
 
@@ -285,7 +322,7 @@ The Recent Activity widget appears below the Tags widget. Below the panel title,
 
 Times are displayed in local time, and the correct offset is indicated in the above text.
 
-Below this is a list of all logged actions on the project or component, its children, and registrations displayed in chronological order with the most recent
+Below this is a list of all logged actions on the project/component, its children, and registrations displayed in chronological order with the most recent
 action listed at the top. Actions are listed in two columns—the left shows the date and time (YYYY-MM-DD HH:MM AM/PM).
 Hovering over a time shows a tooltip with the date and time in UTC.
 
@@ -295,6 +332,18 @@ affected component or project. For example::
     [Username] tagged [project] as [tag]
     [Username] added [Username] as contributor(s) to [project name]
 
-User, file, project, component, registration, and wiki names are linked to the relevant pages.
+Users, files, projects, components, preprints, registrations, and wikis are linked to their corresponding pages.
 
-Only the ten most recent logs are shown at once. Pagination behavior is described in detail :ref:`here <pagination>`.
+Only the ten most recent logs are shown at once. The full list of logs are paginiated. Pagination behavior is described in detail :ref:`here <pagination>`.
+
+Viewing a redirect Link
+***********************
+**Purpose:** Users who configure a redirect link give visitors the option to follow an external link from the "Overview" page. Visitors are prompted to redirect to this link upon entering the OSF project. 
+
+If configured (see :ref:`Configuring a redirect link <redirect link>`) visitors to the project will immediately see a modal that reads::
+
+    This project contains a forward to 
+    [URL]
+    [Cancel] [Redirect]
+
+Clicking **Cancel** will allow the user to stay on the OSF project. Clicking the link itself or **Redirect** will take the user to the external link. 

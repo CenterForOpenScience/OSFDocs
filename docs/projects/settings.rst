@@ -218,3 +218,40 @@ When the user makes a change, the drop-down is temporarily removed and replaced 
 
 After several seconds, the drop-down returns.
 
+.. _redirect link:
+Configuring a redirect Link
+*************
+**Purpose:** Adding an redirect link allows users to redirect project visitors to the provided URL.  
+
+To add a redirect link to a project or component, the user can either scroll to the bottom of the "Settings" page, or click **Redirect Link** from the left sidebar.
+
+The "Redirect Link" section appears as::
+  
+    Redirect Link
+    [check box] Redirect visitors from your project page to an external webpage
+    
+Checking the box causes the following fields to appear::
+  
+  URL [Send people who visit your OSF project page to this link instead]
+  Label [Optional]
+  [Save]
+
+Clicking inside the "URL" field without entering text and then clicking outside of it causes the following error message to appear below the field::
+  
+    This field is required.
+    
+Entering invalid text into the field causes the following error message to appear::
+  
+    Please enter a valid URL.
+    
+Leaving the "URL" field blank and entering only a label into the "Label" field causes the following red error message to appear below the "Label" field::
+  
+    Please fill in the required field.
+    
+The user may enter the URL beneath URL and have the option to add a label. When the user enters information and selects "Save," the text reads::
+
+    Successfully linked to URL
+
+Entering a valid URL into the "URL" field and clicking **Save** causes the following temporary confirmation message to appear below the "Label" field::
+  
+    Succesfully linked to [URL]
