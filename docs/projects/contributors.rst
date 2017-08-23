@@ -159,8 +159,6 @@ labeled "Discard Changes" appears below the contributor list. Below that button 
 Admins can change any contributor's bibliographic setting. Read+Write contributors can change their own setting. Read only contributors
 cannot change any contributor bibliographic settings.
 
-
-
 Adding Contributors
 ^^^^^^^^^^^^^^^^^^
 **Purpose:** Adding contributors allows additional OSF users to be cited on a project or to make edits to that project.
@@ -245,11 +243,11 @@ changes via the "Add" button.
 
 After adding new contributors, the page refreshes and the new contributors are listed.
 
-Newly added contributors to a project, fork, and template receive an email notifying them of the change::
+Newly added contributors to a project, fork, and template receive an email notifying them that they have been added as a contributor. If the recipient is a registered contributor, they will receive the following email notification::
 
     Hello [username],
 
-    [username] has added you as a contributor to the project "[project name]" on the Open Science Framework: URL
+    [username] has added you as a contributor to the project "[project name]" on the Open Science Framework: https://osf.io/GUID/
     
     You will be automatically subscribed to notification emails for this project. To change your email notification preferences, visit your project or your user settings: https://osf.io/settings/notifications/
     
@@ -259,9 +257,25 @@ Newly added contributors to a project, fork, and template receive an email notif
 
     Open Science Framework Robot
 
-    Want more information? Visit http://osf.io/ to learn about the Open Science Framework, or http://cos.io/ for information
+    Want more information? Visit https://osf.io/ to learn about the Open Science Framework, or https://cos.io/ for information
     about its supporting organization, the Center for Open Science.
     Questions? Email contact@osf.io
+
+If the recipient is a non-registered contributor, they will receive the following email notification::
+  
+    Hello [username],
+    You have been added by [username] as a contributor to the project "[project name]" on the Open Science Framework. To set a password for your account, visit:
+    
+    https://osf.io/user/GUID/GUID/claim/?token=[string]
+    
+    Once you have set a password, you will be able to make contributions to "[project name]" and create your own projects. You will automatically be subscribed to notification emails for this project. To change your email notification preferences, visit your project or your user settings: https://osf,io/settings/notifications/
+    To preview "[project name]" click the following link: https://osf.io/GUID/
+    (NOTE: if this project is private, you will not be able to view it until you have confirmed your account)
+    If you are not [username] or you are erroneously being associated with "[project name]" then email contact@osf.io with the subject line "Claiming Error" to report the problem.
+    
+If the project contains a preprint, the email will include the following line below "[username] has added you as a contributor to the project "[project name]"::
+    
+    This project also has a public preprint, discoverable at: <link to preprint>
 
 Removing Contributors
 ^^^^^^^^^^^^^^^^^^^
