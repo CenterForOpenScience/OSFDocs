@@ -332,7 +332,7 @@ The **Cancel Registration** button appears only for Project Administrators.
 
 After an embargo is enacted, a red non-dismissable alert is shown at the top of the page::
 
-    This project is currently embargoed. It will remain private until its embargo date, [day/month/year].
+    This registration is currently embargoed. It will remain private until its embargo end date, [Day, Month date, year].
 
 After an embargo ends, the registration and its components are made public. 
 
