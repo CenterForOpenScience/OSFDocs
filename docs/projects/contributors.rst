@@ -320,7 +320,9 @@ If the user tries to remove him or herself as a contributor when s/he is the onl
 
 View-only Links
 --------------
-**Purpose:** View-only Links allow users to share the contents of private projects.
+**Purpose:** View-only Links allow users to share the contents of private projects with non-contributors.
+
+View-only links can also be configured in the project's :ref:`Settings <settings>`. If a view-only link is created via the "Contributors" tab, the link will be listed in the "View-only Links" section on the "Settings" page.
 
 Only admins on a project can see the View-only Links section on the Contributors page. The section is below the Contributors table.
 To the right of the "View-only Links" title is a green "Add" button. Below the title are instructions::
@@ -350,7 +352,7 @@ To create the View-only Link the user clicks the blue "Create" button. The new l
 When the link is created, a table appears below the "Add" button that displays the information for the link.
 
 The link URL and title are displayed in the "Link" column of the table. If no title was provided, it is automatically titled "Shared
-project link." The view-only link is provided below the name with a button the user can click to add the link to their clipboard.
+project link." The view-only link is provided below the name with a button the user can click to add the link to their clipboard. Clicking the "copy to clipboard" button brings up a tooltip that says: Copied!
 
 The project and its sub-projects and components that were shared are listed, in their tree structure, under
 "Shared Components" Only the first two elements are listed, with a down arrow that the user can click to show more. The "Created Date" column lists the day and time
