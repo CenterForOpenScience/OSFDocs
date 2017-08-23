@@ -175,8 +175,7 @@ Below the search bar and links are two columns, one labeled "Results" and one la
 
 Users can enter the name of an OSF user into the "Search by name" field. Clicking the "Search" button or pressing the return key submits
 their query. The "Results" column shows up to five recent collaborators by default, and these are replaced by search results when
-a query has been submitted. If multiple pages of results are returned pagination appears in the same way that it does on the
-:ref:`Watchlist <pagination>`.
+a query has been submitted. If multiple pages of results are returned pagination appears.
 
 To the left of each OSF user returned as a result is either a white box with a gray check mark, indicating that the user is already a contributor on the project, or a green square button marked with a ‘+’ sign. Hovering over the checkmark shows a tooltip that reads::
 
