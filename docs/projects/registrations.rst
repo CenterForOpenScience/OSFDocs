@@ -121,9 +121,18 @@ Occasionally, a registration will fail. When a registration fails, the following
 
 Creating a registration in Preregistration Challenge workflow
 -------------------------------------------------------------
-The "Prereg Challenge" landing page on the OSF is only accessible when logged in. If the user is logged out of the OSF or does not have an account, and they try to go to https://osf.io/prereg/, they will be prompted to either sign in or create an account first. 
+The full "Prereg Challenge" landing page on the OSF is only accessible when logged in. If the user is logged out of the OSF or does not have an account, and they go to https://osf.io/prereg/, they will have access to a landing page that contains basic information about the Prereg Challenge and invites non-users to create accounts::
+  
+    Improve your research with preregistration
+    The process of creating a preregistration [links to https://cos.io/prereg/] is beneficial to both the scientific field and to you, the scientist. By writing out detailed data collection methods, analysis plans, and rules for excluding or missing data, you can make important decisions that affect your workflow earlier, without the biases that occur once the data are in front of you.
+    [Preregister]
 
-The "Prereg Challenge" landing page appears as follows::
+Clicking **Preregister** takes the non-user and logged-out user to the account registration page which shows the Prereg Challenge logo and the following message::
+  
+    Preregistration Challenge
+    Please login to the Open Science Framework or create a free account to continue.
+
+The full "Prereg Challenge" landing page appears as follows::
   
   The process of creating a preregistration [links to: https://cos.io/prereg/] is beneficial to both the scientific field and to you, the scientist. By writing out detailed data collection methods, analysis plans, and rules for excluding or missing data, you can make important decisions that affect your workflow earlier, without the biases that occur once the data are in front of you.
 
