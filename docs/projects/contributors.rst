@@ -159,8 +159,6 @@ labeled "Discard Changes" appears below the contributor list. Below that button 
 Admins can change any contributor's bibliographic setting. Read+Write contributors can change their own setting. Read only contributors
 cannot change any contributor bibliographic settings.
 
-
-
 Adding Contributors
 ^^^^^^^^^^^^^^^^^^
 **Purpose:** Adding contributors allows additional OSF users to be cited on a project or to make edits to that project.
@@ -175,8 +173,7 @@ Below the search bar and links are two columns, one labeled "Results" and one la
 
 Users can enter the name of an OSF user into the "Search by name" field. Clicking the "Search" button or pressing the return key submits
 their query. The "Results" column shows up to five recent collaborators by default, and these are replaced by search results when
-a query has been submitted. If multiple pages of results are returned pagination appears in the same way that it does on the
-:ref:`Watchlist <pagination>`.
+a query has been submitted. If multiple pages of results are returned pagination appears.
 
 To the left of each OSF user returned as a result is either a white box with a gray check mark, indicating that the user is already a contributor on the project, or a green square button marked with a ‘+’ sign. Hovering over the checkmark shows a tooltip that reads::
 
@@ -246,11 +243,11 @@ changes via the "Add" button.
 
 After adding new contributors, the page refreshes and the new contributors are listed.
 
-Newly added contributors to a project, fork, and template receive an email notifying them of the change::
+Newly added contributors to a project, fork, and template receive an email notifying them that they have been added as a contributor. If the recipient is a registered contributor, they will receive the following email notification::
 
     Hello [username],
 
-    [username] has added you as a contributor to the project "[project name]" on the Open Science Framework: URL
+    [username] has added you as a contributor to the project "[project name]" on the Open Science Framework: https://osf.io/GUID/
     
     You will be automatically subscribed to notification emails for this project. To change your email notification preferences, visit your project or your user settings: https://osf.io/settings/notifications/
     
@@ -260,9 +257,25 @@ Newly added contributors to a project, fork, and template receive an email notif
 
     Open Science Framework Robot
 
-    Want more information? Visit http://osf.io/ to learn about the Open Science Framework, or http://cos.io/ for information
+    Want more information? Visit https://osf.io/ to learn about the Open Science Framework, or https://cos.io/ for information
     about its supporting organization, the Center for Open Science.
     Questions? Email contact@osf.io
+
+If the recipient is a non-registered contributor, they will receive the following email notification::
+  
+    Hello [username],
+    You have been added by [username] as a contributor to the project "[project name]" on the Open Science Framework. To set a password for your account, visit:
+    
+    https://osf.io/user/GUID/GUID/claim/?token=[string]
+    
+    Once you have set a password, you will be able to make contributions to "[project name]" and create your own projects. You will automatically be subscribed to notification emails for this project. To change your email notification preferences, visit your project or your user settings: https://osf,io/settings/notifications/
+    To preview "[project name]" click the following link: https://osf.io/GUID/
+    (NOTE: if this project is private, you will not be able to view it until you have confirmed your account)
+    If you are not [username] or you are erroneously being associated with "[project name]" then email contact@osf.io with the subject line "Claiming Error" to report the problem.
+    
+If the project contains a preprint, the email will include the following line below "[username] has added you as a contributor to the project "[project name]"::
+    
+    This project also has a public preprint, discoverable at: <link to preprint>
 
 Removing Contributors
 ^^^^^^^^^^^^^^^^^^^
@@ -321,7 +334,9 @@ If the user tries to remove him or herself as a contributor when s/he is the onl
 
 View-only Links
 --------------
-**Purpose:** View-only Links allow users to share the contents of private projects.
+**Purpose:** View-only Links allow users to share the contents of private projects with non-contributors.
+
+View-only links can also be configured in the project's :ref:`Settings <settings>`. If a view-only link is created via the "Contributors" tab, the link will be listed in the "View-only Links" section on the "Settings" page.
 
 Only admins on a project can see the View-only Links section on the Contributors page. The section is below the Contributors table.
 To the right of the "View-only Links" title is a green "Add" button. Below the title are instructions::
@@ -351,7 +366,7 @@ To create the View-only Link the user clicks the blue "Create" button. The new l
 When the link is created, a table appears below the "Add" button that displays the information for the link.
 
 The link URL and title are displayed in the "Link" column of the table. If no title was provided, it is automatically titled "Shared
-project link." The view-only link is provided below the name with a button the user can click to add the link to their clipboard.
+project link." The view-only link is provided below the name with a button the user can click to add the link to their clipboard. Clicking the "copy to clipboard" button brings up a tooltip that says: Copied!
 
 The project and its sub-projects and components that were shared are listed, in their tree structure, under
 "Shared Components" Only the first two elements are listed, with a down arrow that the user can click to show more. The "Created Date" column lists the day and time
