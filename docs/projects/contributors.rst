@@ -160,13 +160,12 @@ Admins can change any contributor's bibliographic setting. Read+Write contributo
 cannot change any contributor bibliographic settings.
 
 
-
 Adding Contributors
 ^^^^^^^^^^^^^^^^^^
 **Purpose:** Adding contributors allows additional OSF users to be cited on a project or to make edits to that project.
 
 To add a contributor, the user must be an admin on the project. The user first clicks the green "Add" button to the right of the "Contributors"
-title on the Contributors page. A modal appears::
+title on the "Contributors" page. A modal appears::
 
     Add Contributors
     [text field: Search by name][Search]
@@ -174,13 +173,12 @@ title on the Contributors page. A modal appears::
 Below the search bar and links are two columns, one labeled "Results" and one labeled "Adding."
 
 Users can enter the name of an OSF user into the "Search by name" field. Clicking the "Search" button or pressing the return key submits
-their query. The "Results" column shows up to five recent collaborators by default, and these are replaced by search results when
-a query has been submitted. If multiple pages of results are returned pagination appears in the same way that it does on the
-:ref:`Watchlist <pagination>`.
+their query. The "Results" column shows five users at at time (the remainder are paginated) when
+a query has been submitted. If multiple pages of results are returned, pagination appears below the results.
 
-To the left of each OSF user returned as a result is either a white box with a gray check mark, indicating that the user is already a contributor on the project, or a green square button marked with a ‘+’ sign. Hovering over the checkmark shows a tooltip that reads::
+To the left of each OSF user returned is either a white box with a gray check mark, indicating that the user is already a contributor on the project, or a green square button marked with a ‘+’ sign. Hovering over the checkmark shows a tooltip that reads::
 
-    Already a contributor
+    Already added
 
 Hovering over the '+' button
 shows a tooltip that reads::
@@ -201,8 +199,8 @@ button to the left, a grey button with a ‘-‘ sign. Hovering over the '-' sig
 Clicking this button removes the corresponding result from the “Adding” list and returns it to the “Results” page it was found on.
 To the right of the “Adding” title is a “Remove All” link. Clicking this link moves all added results back to the “Results” column.
 
-If the results do not list the user being searched for, or it returns no results at all, the user can click the link to "add
-[username] as an unregistered contributor. Clicking this link changes the modal contents to read::
+If the results do not list the user being searched for, or it returns no results at all, the user can click the "Add
+[username] as an unregistered contributor" link. Clicking this link changes the modal contents to read::
 
     Add Unregistered Contributor
     Full name
@@ -214,20 +212,27 @@ The user provides a name for the to-be-added contributor and an email in the app
 unregistered user is listed in the "Adding" column with "(unregistered) to the right of their name. The added contributor can
 :ref:`claim their account <sign-up>` via email or by visiting the OSF.
 
-The  names and profile pictures of users moved into the "Adding" column are listed under a "Name" column within the "Adding" column.
-A second column on the right is labeled "Permissions."  When the user hovers over a '?' to the right of "Permissions" a popover appears::
+The names and profile pictures of users moved below the "Adding" section. There are three columns within the "Adding" section: "Name," "Bibliographic Contributor," and "Permissions." 
+
+In the "Name" column, the user's profile picture and name are listed. In the "Bibliographic Contributor" column, a checkbox is included to designate the user as bibliographic or non-bibligraphic (the box is checked by default). A question mark appears to the right of the column header. Hovering over the question mark opens the followng tooltip::
+  
+    Bibliographic Contributor Information
+    Only bibliographic contributors will be displayed in the Contributors list and in project citations. Non-bibliographic contributors can read and modify the project as normal.
+    
+  
+In the "Permissions" column, the level of permissions is listed in a drop-downb menu. "Read + Write" is selected by default. To change the selection, the user clicks inside the drop-down menu and selects a new option: Read, Read+Write, or Administrator.
+
+To the right of the column header is a question mark. When the user hovers over a '?' to the right of "Permissions" a tooltip appears::
 
     Permission Information
     Read
     View project content and comment
 
     Read+Write
-    Read privileges plus add and configure components; add and edit content
+    Read privileges; add and configure components; add and edit content
 
     Administrator
-    Read and write privileges; manage contributors; delete and register project; public-private settings
-
-By default, "Read + Write" is selected. To change the selection, the user clicks on the dropdown and chooses a new option.
+    Read and write privileges; manage contributor; delete and register project; public-private settings
 
 Only a “Cancel” button is available on the modal until a result has been put in the “Adding” column. If applicable, the user can then
 select which components or projects they wish to add the new contributors to. To do so, the user clicks the blue "Next" button that appears.
@@ -263,6 +268,17 @@ Newly added contributors to a project, fork, and template receive an email notif
     Want more information? Visit http://osf.io/ to learn about the Open Science Framework, or http://cos.io/ for information
     about its supporting organization, the Center for Open Science.
     Questions? Email contact@osf.io
+    
+Importing contributors from a parent project to a component
+**Purpose**: To make adding contributors from a parent project to a component quick and easy.
+
+Admins on a component can import contirbutors fmor the parent project to that component. To do so, the user follows the same steps to adding a contributor. When the "Add Contributors" modal opens, there will be a blue link below the search fiels to import contributors. This link reads::
+  
+    Import contributors from [project name]
+
+Clicking this link adds all of the contributors from the parent project to the "Adding" section of the modal. Contributor permissions and bibliographic settings are also brought over from the parent. The user can modify these settings within the modal itself. To exclude a contributor from being imported, the user can click the white "-" button to remove them. The removed contributor will be removed from the modal (they will not appear in the "Results" section of the modal).
+
+To finish importing the contributors, the user clicks the green **Add** button in the bottom right of the modal. The contributors from the parent project will be added to the component.
 
 Removing Contributors
 ^^^^^^^^^^^^^^^^^^^
