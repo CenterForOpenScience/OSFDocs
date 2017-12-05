@@ -542,7 +542,32 @@ When the user is ready to submit their preprint, they can click the blue "Share"
     
 Clicking "Cancel" will return the user to the "Add Preprint" page with all of their preprint upload information still intact.
 
-Clicking "Share" will take the user directly to the Preprint Detail page.
+Clicking "Share" will take the user directly to the Preprint Detail page. 
+
+The authors will receive an email notification that they have been added as authors to the preprint. If the recipient is a non-registered user, they will receive the following email notification::
+  
+   Hello [username],
+   
+   You have been added by [username] as a contributor to the preprint “[preprint name]” on the Open Science Framework. To set a password for your account, visit:
+   
+   https://osf.io/user/GUID/GUID/claim/?token=[string]
+   
+   Once you have set a password, you will be able to make contributions to “[preprint name]” and create your own preprints and projects. You will automatically be subscribed to notification emails for this project. To change your email notification preferences, visit your project or your user settings: https://staging.osf.io/settings/notifications/
+   To preview “Measurements of Newtonian Fluids” click the following link: https://osf.io/GUID/
+
+   (NOTE: if this project is private, you will not be able to view it until you have confirmed your account)
+
+   If you are not [username] or you are erroneously being associated with “[preprint name]” then email contact@osf.io with the subject line “Claiming Error” to report the problem.
+   
+If the recipient is a registered user, they will receive the following email notification::
+    
+    Hello [username],
+    [username] has added you as a contributor to the preprint “[preprint name]” on the Open Science Framework: https://osf.io/GUID/
+
+    You will be automatically subscribed to notification emails for this project. To change your email notification preferences, visit your project or your user settings: https://staging.osf.io/settings/notifications/
+
+    If you are erroneously being associated with “[preprint name],” then you may visit the project's “Contributors” page and remove yourself as a contributor.
+
 
 Edit a Preprint
 ---------------

@@ -2,7 +2,7 @@
 
 The project settings page shows different options for contributors with different permissions.
 
-If the user is an admin or a read+write contributor on the project, there are five sections on the "Settings" page that they can configure: "Project/Component," "Select Add-ons," "Configure Add-ons" (only shows if add-ons are connected),"Wiki," "Commenting," and "Email Notifications."
+If the user is an admin or a read+write contributor on the project, there are five sections on the "Settings" page that they can configure: "Project/Component," "Select Add-ons," "View-Only Links," "Configure Add-ons" (only shows if add-ons are connected),"Wiki," "Commenting," "Email Notifications," and "Redirect Link."
 The "Settings" page has a sidebar that the user can use to navigate through the sections of the page.
   
 Additional sections are shown if the project is public or if add-ons are configured.
@@ -105,6 +105,68 @@ See :ref:`the information about add-ons here <add-ons>`.
 Add-ons
 ------------
 When an add-on has been activated, an additional section is added to the page—"Configure Add-ons." See :ref:`the information about add-ons here <add-ons>`.
+
+View-Only Links
+---------------
+**Purpose**: View-only Links allow users to share the contents of private projects with non-contributors.
+
+View-only links can also be configured in the project's :ref:`"Contributors" tab <contributors>`. If a view-only link is created via the "Settings" tab, the link will be listed in the "View-only Links" section on the "Contributors" page.
+
+Only admins on a project can see the View-only Links section on the Contributors page. The section is below the Contributors table.
+To the right of the "View-only Links" title is a green "Add" button. Below the title are instructions::
+
+    Create a link to share this project so those who have the link can view—but not edit—the project.
+
+To add a link, the user clicks "Add." A modal opens::
+
+    Create a new link to share your project
+    Link name
+    Anonymize contributor list for this link (e.g., for blind peer review).
+    Ensure the wiki pages, files, registration forms and add-ons do not contain identifying information.
+    Which components would you like to associate with this link? Anyone with the private link can view—but not edit—the
+    components associated with the link.
+    [Select all] [Deselect all]
+    [Cancel][Create]
+
+The user can enter a name into the "Link name" field. Names can be any length.
+
+Users can anonymize the contributor list by clicking the checkbox next to the "Anonymize."
+
+Below the text asking "Which components..." is a project tree showing all components on which the user is an admin.
+A "Select all" and "De-select all" option checks and unchecks all elements at once.
+
+To create the View-only Link the user clicks the blue "Create" button. The new link is shown in a table. While the link is being created, the "Create" button temporarily reads "Please wait."
+
+When the link is created, a table appears below the "Add" button that displays the information for the link.
+
+The link URL and title are displayed in the "Link" column of the table. If no title was provided, it is automatically titled "Shared
+project link." The view-only link is provided below the name with a button the user can click to add the link to their clipboard. Clicking the "copy to clipboard" button brings up a tooltip that says: Copied!
+
+The project and its sub-projects and components that were shared are listed, in their tree structure, under
+"Shared Components" Only the first two elements are listed, with a down arrow that the user can click to show more. The "Created Date" column lists the day and time
+the link was created. "Created By" lists the admin who created the link. If the contributor list was anonymized, the "Anonymous"
+column reads yes—otherwise it says no. On the far right of the table is a red "Remove" button. Clicking the **Remove** opens a modal::
+
+    Remove view-only link?
+
+    Are you sure you want to remove this view-only link?
+
+    [Cancel][Remove]
+
+Removing the link makes the link inactive and removes it from the table.
+
+Users can share the URL for a view only link with anyone. Anyone with the link can visit the page to see the project's contents—
+even if it is private and even if they do not have an OSF account. When a visitor follows a View-only Link there is a blue, non-dismissable
+alert at the top of the page::
+
+    This project is being viewed through a private, view-only link. Anyone with the link can view this project. Keep the link safe.
+
+If the link was anonymous, the contributors list reads "Anonymous Contributors" instead of providing the names of the contributors. Activity
+logs replace usernames with "A user." "Forks" and "Registrations" tabs are not shared via anonymized view-only links because contributors' names may be listed on these projects. Manually navigating to the Forks or Registrations page using an anonymized view-only link returns "Forbidden" error. 
+
+"Forks" and "Registrations" are shared in non-anonymized view-only links. 
+
+The Commenting panel is not available with a view-only link.
 
 Wiki
 ------------
@@ -219,7 +281,7 @@ When the user makes a change, the drop-down is temporarily removed and replaced 
 After several seconds, the drop-down returns.
 
 .. _redirect link:
-Configuring a redirect Link
+Redirect Link
 *************
 **Purpose:** Adding an redirect link allows users to redirect project visitors to the provided URL.  
 
