@@ -332,6 +332,10 @@ affected component or project. For example::
     [Username] tagged [project] as [tag]
     [Username] added [Username] as contributor(s) to [project name]
 
+When an admin adds more than three contributors to a project at a time, only the first three contributors are shown in the log, and the rest are represented by the remaining number::
+  
+    [Username] added [username], [username], [username] and [#] others as contributor(s) to [project name]
+
 Users, files, projects, components, preprints, registrations, and wikis are linked to their corresponding pages.
 
 Only the ten most recent logs are shown at once. The full list of logs are paginiated. Pagination behavior is described in detail :ref:`here <pagination>`.
