@@ -132,6 +132,7 @@ Clicking **Preregister** takes the non-user and logged-out user to the account r
     Preregistration Challenge
     Please login to the Open Science Framework or create a free account to continue.
 
+
 The full "Prereg Challenge" landing page appears as follows::
   
   The process of creating a preregistration [links to: https://cos.io/prereg/] is beneficial to both the scientific field and to you, the scientist. By writing out detailed data collection methods, analysis plans, and rules for excluding or missing data, you can make important decisions that affect your workflow earlier, without the biases that occur once the data are in front of you.

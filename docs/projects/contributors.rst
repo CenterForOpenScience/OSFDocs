@@ -159,6 +159,7 @@ labeled "Discard Changes" appears below the contributor list. Below that button 
 Admins can change any contributor's bibliographic setting. ReadWrite contributors can change their own setting. Read only contributors
 cannot change any contributor bibliographic settings.
 
+
 Adding Contributors
 ^^^^^^^^^^^^^^^^^^
 **Purpose:** Adding contributors allows additional OSF users to be cited on a project or to make edits to that project.
@@ -172,11 +173,11 @@ title on the "Contributors" page. A modal appears::
 Below the search bar and links are two columns, one labeled "Results" and one labeled "Adding."
 
 Users can enter the name of an OSF user into the "Search by name" field. Clicking the "Search" button or pressing the return key submits
-their query. The "Results" column shows five users at at time (the remainder are paginated) when
+their query. The "Results" column shows five users at a time (the remainder are paginated) when
 a query has been submitted. If multiple pages of results are returned, pagination appears below the results.
 
-To the left of each OSF user returned is either a white box with a gray check mark, indicating that the user is already a contributor on the project, or a green square button marked with a ‘’ sign. Hovering over the checkmark shows a tooltip that reads::
-    
+To the left of each OSF user returned is either a white box with a gray check mark, indicating that the user is already a contributor on the project, or a green square button marked with a ‘+’ sign. Hovering over the checkmark shows a tooltip that reads::
+
     Already added
 
 Hovering over the '' button
@@ -198,6 +199,7 @@ button to the left, a grey button with a ‘-‘ sign. Hovering over the '-' sig
 Clicking this button removes the corresponding result from the “Adding” list and returns it to the “Results” page it was found on.
 To the right of the “Adding” title is a “Remove All” link. Clicking this link moves all added results back to the “Results” column.
 
+
 If the results do not list the user being searched for, or it returns no results at all, the user can click the "Add [username] as an unregistered contributor" link. Clicking this link changes the modal contents to read::
 
     Add Unregistered Contributor
@@ -211,14 +213,15 @@ unregistered user is listed in the "Adding" column with "(unregistered) to the r
 :ref:`claim their account <sign-up>` via email or by visiting the OSF.
 
 The names and profile pictures of users moved below the "Adding" section. There are three columns within the "Adding" section: "Name," "Bibliographic Contributor," and "Permissions." 
+
   
 In the "Name" column, the user's profile picture and name are listed. In the "Bibliographic Contributor" column, a checkbox is included to designate the user as bibliographic or non-bibligraphic (the box is checked by default). A question mark appears to the right of the column header. Hovering over the question mark opens the followng tooltip::
 
   Bibliographic Contributor Information
   Only bibliographic contributors will be displayed in the Contributors list and in project citations. Non-bibliographic contributors can read and modify the project as normal.
 
-In the "Permissions" column, the level of permissions is listed in a drop-downb menu. "Read  Write" is selected by default. To change the selection, the user clicks inside the drop-down menu and selects a new option: Read, ReadWrite, or Administrator.
-
+In the "Permissions" column, the level of permissions is listed in a drop-downb menu. "Read  Write" is selected by default. To change the selection, the user clicks inside the drop-down menu and selects a new option: Read, ReadWrite, or Administrator
+  
 To the right of the column header is a question mark. When the user hovers over a '?' to the right of "Permissions" a tooltip appears::
 
     Permission Information
@@ -267,6 +270,33 @@ Newly added contributors to a project, fork, and template receive an email notif
     Want more information? Visit https://osf.io/ to learn about the Open Science Framework, or https://cos.io/ for information
     about its supporting organization, the Center for Open Science.
     Questions? Email contact@osf.io
+    
+Importing contributors from a parent project to a component
+**Purpose**: To make adding contributors from a parent project to a component quick and easy.
+
+Admins on a component can import contirbutors fmor the parent project to that component. To do so, the user follows the same steps to adding a contributor. When the "Add Contributors" modal opens, there will be a blue link below the search fiels to import contributors. This link reads::
+  
+    Import contributors from [project name]
+
+Clicking this link adds all of the contributors from the parent project to the "Adding" section of the modal. Contributor permissions and bibliographic settings are also brought over from the parent. The user can modify these settings within the modal itself. To exclude a contributor from being imported, the user can click the white "-" button to remove them. The removed contributor will be removed from the modal (they will not appear in the "Results" section of the modal).
+
+To finish importing the contributors, the user clicks the green **Add** button in the bottom right of the modal. The contributors from the parent project will be added to the component.
+
+If the recipient is a non-registered contributor, they will receive the following email notification::
+  
+    Hello [username],
+    You have been added by [username] as a contributor to the project "[project name]" on the Open Science Framework. To set a password for your account, visit:
+    
+    https://osf.io/user/GUID/GUID/claim/?token=[string]
+    
+    Once you have set a password, you will be able to make contributions to "[project name]" and create your own projects. You will automatically be subscribed to notification emails for this project. To change your email notification preferences, visit your project or your user settings: https://osf,io/settings/notifications/
+    To preview "[project name]" click the following link: https://osf.io/GUID/
+    (NOTE: if this project is private, you will not be able to view it until you have confirmed your account)
+    If you are not [username] or you are erroneously being associated with "[project name]" then email contact@osf.io with the subject line "Claiming Error" to report the problem.
+    
+If the project contains a preprint, the email will include the following line below "[username] has added you as a contributor to the project "[project name]"::
+    
+    This project also has a public preprint, discoverable at: <link to preprint>
 
 If the recipient is a non-registered contributor, they will receive the following email notification::
   
