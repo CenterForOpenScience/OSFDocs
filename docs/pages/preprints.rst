@@ -569,6 +569,64 @@ If the recipient is a registered user, they will receive the following email not
     If you are erroneously being associated with “[preprint name],” then you may visit the project's “Contributors” page and remove yourself as a contributor.
 
 
+Upon sharing the preprint, the user will receive the following confirmation email with call-to-action prompts.
+
+For OSF Preprints::
+    
+      
+    Hello ${user.fullname},
+
+    Congratulations on sharing your preprint  "${node.title}" on OSF Preprints: ${node.absolute_url}
+
+    Now that you’ve shared your preprint, take advantage of more OSF features:
+    Upload supplemental, materials, data, and code to the OSF project (link to project overview page) associated with your preprint. Learn how (link to http://help.osf.io/m/preprints/l/685323-add-supplemental-files-to-a-preprint)
+    Preregister your next study and become eligible for a $1000 prize (link to osf.io/prereg)
+    Track your impact with preprint downloads
+
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="${osf_url}${nid}/" data-text="I shared my preprint on OSF Preprints" data-count="none">Tweet</a>
+            <br>
+            <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+            </script>
+
+    You will ${'not receive ' if all_global_subscriptions_none else 'be automatically subscribed to '} notification emails for this project. To change your email notification preferences, visit your project or your user settings: ${settings.DOMAIN + "settings/notifications/"}
+
+    Sincerely,
+
+    Your OSF Team
+
+    Want more information? Visit https://osf.io/ to learn about the Open Science Framework, or https://cos.io/ for information about its supporting organization, the Center for Open Science.
+
+    Questions? Email contact@osf.io
+
+For community preprints services::
+  
+  Hello ${user.fullname},
+
+  Congratulations on sharing your preprint  "${node.title}" on <Branded Server Name>, powered by OSF Preprints: ${node.absolute_url}
+
+  Now that you’ve shared your preprint, take advantage of more OSF features:
+  Upload supplemental materials, data, and code to the OSF project associated with your preprint
+  Preregister your next study and become eligible for a $1000 prize (link to osf.io/prereg)
+  Track your impact with preprint downloads
+
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="${osf_url}${nid}/" data-text="I shared my preprint on <Branded Server Name>!" data-count="none">Tweet</a>
+        <br>
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        </script>
+
+  You will ${'not receive ' if all_global_subscriptions_none else 'be automatically subscribed to '}notification emails for this project. To change your email notification preferences, visit your project or your user settings: ${settings.DOMAIN + "settings/notifications/"}
+
+  Sincerely,
+
+  Your ${branded_service_name} and OSF teams
+
+  Want more information? Visit https://osf.io/preprints/${branded_service_name.lower()} to learn about ${branded_service_name} or https://osf.io/ to learn about the Open Science Framework, or https://cos.io/ for information about its supporting organization, the Center for Open Science.
+
+  Questions? Email support+${branded_service_name.lower()}@osf.io
+
+
 Edit a Preprint
 ---------------
 **Purpose:** To upload a new version of a preprint and/or edit the preprint's metadata.

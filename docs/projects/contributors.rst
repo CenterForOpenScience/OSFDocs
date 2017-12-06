@@ -24,7 +24,7 @@ hovers over a '?' to the right of "Permissions" a popover appears::
     Read
     View project content and comment
 
-    Read+Write
+    ReadWrite
     Read privileges plus add and configure components; add and edit content
 
     Administrator
@@ -75,7 +75,7 @@ column is a deactivated, emtpy checkbox. This checkbox cannot be filled in.
 
 The left side of the screen, the filtering options, contains a text box for filtering contributors by name and several boxes to filter by Permissions and by Bibliographic Contributor status. The user can type in the "Filter by name" box and the contributor list will dynamically display only contributors who match the entered text. If no contributors match the entered text, a gray bar appears in the contributors table, along with red text, "No contributors found."
 
-Below the filter by name field is "Permissions" and a ? tooltip. If the user mouses over the tooltip icon, he sees text explaining various contributor permissions. Below this are 3 boxes: Administrator, Read+Write, and Read. The user can click to select or deselect 1, 2, or 3 of these. The contributor list will dynamically change to display only contributors who have the chosen permissions. If no contributors match the chosen filter(s), a gray bar appears in the contributors table, along with red text, "No contributors found."
+Below the filter by name field is "Permissions" and a ? tooltip. If the user mouses over the tooltip icon, he sees text explaining various contributor permissions. Below this are 3 boxes: Administrator, ReadWrite, and Read. The user can click to select or deselect 1, 2, or 3 of these. The contributor list will dynamically change to display only contributors who have the chosen permissions. If no contributors match the chosen filter(s), a gray bar appears in the contributors table, along with red text, "No contributors found."
 
 Below this is a "Bibliographic Contributor" filter and a ? tooltip. If the user mouses over the tooltip icon, he sees text explaining what a bibliographic or non-bibliographic contributor means. Below this are two boxes: Bibliographic contributor or non-bibliographic contributor. The user can select one or both of these. The contributor list will dynamically change to display only contributors who have the chosen bibliographic status. If no contributors match the chosen filter(s), a gray bar appears in the contributors table, along with red text, "No contributors found."
 
@@ -88,8 +88,8 @@ Changing Permissions
 **Purpose:** Dropdowns allow users to change permission settings for contributors, affecting what kinds of edits the contributor
 can make to a project.
 
-Below the "Permissions" column is a dropdown for each contributor. Dropdown options are: "Read," "Read+Write," "Administrator."
-Users with admin or read+write permissions can change all contributors' or their own permissions, respectively. Contributors with
+Below the "Permissions" column is a dropdown for each contributor. Dropdown options are: "Read," "ReadWrite," "Administrator."
+Users with admin or readwrite permissions can change all contributors' or their own permissions, respectively. Contributors with
 read permissions do not see the dropdown, just muted text stating each contributor's permission setting.
 
 When a project or component only has one registered contributor, that contributor must be an admin. If that user attempts to change their own
@@ -119,7 +119,7 @@ corner of the page::
 
 If the user makes a change, but manually changes it back, the "Discard Changes" and "Save Changes" buttons disappear.
 
-Admins can change any contributor's permission setting. Read+Write contributors can change their own setting. Read only contributors
+Admins can change any contributor's permission setting. ReadWrite contributors can change their own setting. Read only contributors
 cannot change any contributor permission settings.
 
 
@@ -156,13 +156,10 @@ labeled "Discard Changes" appears below the contributor list. Below that button 
 
     Must have at least one registered admin contributor
 
-Admins can change any contributor's bibliographic setting. Read+Write contributors can change their own setting. Read only contributors
+Admins can change any contributor's bibliographic setting. ReadWrite contributors can change their own setting. Read only contributors
 cannot change any contributor bibliographic settings.
 
-<<<<<<< HEAD
 
-=======
->>>>>>> _124
 Adding Contributors
 ^^^^^^^^^^^^^^^^^^
 **Purpose:** Adding contributors allows additional OSF users to be cited on a project or to make edits to that project.
@@ -176,19 +173,14 @@ title on the "Contributors" page. A modal appears::
 Below the search bar and links are two columns, one labeled "Results" and one labeled "Adding."
 
 Users can enter the name of an OSF user into the "Search by name" field. Clicking the "Search" button or pressing the return key submits
-<<<<<<< HEAD
-their query. The "Results" column shows five users at at time (the remainder are paginated) when
+their query. The "Results" column shows five users at a time (the remainder are paginated) when
 a query has been submitted. If multiple pages of results are returned, pagination appears below the results.
-=======
-their query. The "Results" column shows up to five recent collaborators by default, and these are replaced by search results when
-a query has been submitted. If multiple pages of results are returned pagination appears.
->>>>>>> _124
 
 To the left of each OSF user returned is either a white box with a gray check mark, indicating that the user is already a contributor on the project, or a green square button marked with a ‘+’ sign. Hovering over the checkmark shows a tooltip that reads::
 
     Already added
 
-Hovering over the '+' button
+Hovering over the '' button
 shows a tooltip that reads::
 
     Add contributor
@@ -197,7 +189,7 @@ To the right of this button is the user's profile picture and name. The name lin
 If any employer or education information was provided in the user's profile, the most affiliation is listed below the user name.
 The number of projects, if any, that the result user has in common with the searching user is listed below affiliations.
 
-Clicking the ‘+’ button adds the result to the “Adding” column. Alternatively, the user can click the “Add all” link to
+Clicking the ‘’ button adds the result to the “Adding” column. Alternatively, the user can click the “Add all” link to
 the right of the “Results” title to add the results shown on the page to the “Adding” column. When a result is moved to
 the “Adding” column, it is removed from the “Results” column. Projects in the “Results” column have, instead of the green
 button to the left, a grey button with a ‘-‘ sign. Hovering over the '-' sign shows a tooltip tha reads::
@@ -207,8 +199,8 @@ button to the left, a grey button with a ‘-‘ sign. Hovering over the '-' sig
 Clicking this button removes the corresponding result from the “Adding” list and returns it to the “Results” page it was found on.
 To the right of the “Adding” title is a “Remove All” link. Clicking this link moves all added results back to the “Results” column.
 
-If the results do not list the user being searched for, or it returns no results at all, the user can click the "Add
-[username] as an unregistered contributor" link. Clicking this link changes the modal contents to read::
+
+If the results do not list the user being searched for, or it returns no results at all, the user can click the "Add [username] as an unregistered contributor" link. Clicking this link changes the modal contents to read::
 
     Add Unregistered Contributor
     Full name
@@ -222,25 +214,27 @@ unregistered user is listed in the "Adding" column with "(unregistered) to the r
 
 The names and profile pictures of users moved below the "Adding" section. There are three columns within the "Adding" section: "Name," "Bibliographic Contributor," and "Permissions." 
 
+  
 In the "Name" column, the user's profile picture and name are listed. In the "Bibliographic Contributor" column, a checkbox is included to designate the user as bibliographic or non-bibligraphic (the box is checked by default). A question mark appears to the right of the column header. Hovering over the question mark opens the followng tooltip::
-  
-    Bibliographic Contributor Information
-    Only bibliographic contributors will be displayed in the Contributors list and in project citations. Non-bibliographic contributors can read and modify the project as normal.
-    
-  
-In the "Permissions" column, the level of permissions is listed in a drop-downb menu. "Read + Write" is selected by default. To change the selection, the user clicks inside the drop-down menu and selects a new option: Read, Read+Write, or Administrator.
 
+  Bibliographic Contributor Information
+  Only bibliographic contributors will be displayed in the Contributors list and in project citations. Non-bibliographic contributors can read and modify the project as normal.
+
+In the "Permissions" column, the level of permissions is listed in a drop-downb menu. "Read  Write" is selected by default. To change the selection, the user clicks inside the drop-down menu and selects a new option: Read, ReadWrite, or Administrator
+  
 To the right of the column header is a question mark. When the user hovers over a '?' to the right of "Permissions" a tooltip appears::
 
     Permission Information
     Read
     View project content and comment
 
-    Read+Write
+    ReadWrite
     Read privileges; add and configure components; add and edit content
 
     Administrator
-    Read and write privileges; manage contributor; delete and register project; public-private settings
+    Read and write privileges; manage contributors; delete and register project; public-private settings
+
+By default, "Read  Write" is selected. To change the selection, the user clicks on the dropdown and chooses a new option.
 
 Only a “Cancel” button is available on the modal until a result has been put in the “Adding” column. If applicable, the user can then
 select which components or projects they wish to add the new contributors to. To do so, the user clicks the blue "Next" button that appears.
@@ -304,11 +298,27 @@ If the project contains a preprint, the email will include the following line be
     
     This project also has a public preprint, discoverable at: <link to preprint>
 
+If the recipient is a non-registered contributor, they will receive the following email notification::
+  
+    Hello [username],
+    You have been added by [username] as a contributor to the project "[project name]" on the Open Science Framework. To set a password for your account, visit:
+    
+    https://osf.io/user/GUID/GUID/claim/?token=[string]
+    
+    Once you have set a password, you will be able to make contributions to "[project name]" and create your own projects. You will automatically be subscribed to notification emails for this project. To change your email notification preferences, visit your project or your user settings: https://osf,io/settings/notifications/
+    To preview "[project name]" click the following link: https://osf.io/GUID/
+    (NOTE: if this project is private, you will not be able to view it until you have confirmed your account)
+    If you are not [username] or you are erroneously being associated with "[project name]" then email contact@osf.io with the subject line "Claiming Error" to report the problem.
+    
+If the project contains a preprint, the email will include the following line below "[username] has added you as a contributor to the project "[project name]"::
+    
+    This project also has a public preprint, discoverable at: <link to preprint>
+
 Removing Contributors
 ^^^^^^^^^^^^^^^^^^^
 **Purpose:** Contributors can be removed to prevent them from being listed in the contributor list or from editing the project.
 
-Admins can remove any contributor on a project. Contributors with read+write or read-only permissions can remove themselves from
+Admins can remove any contributor on a project. Contributors with readwrite or read-only permissions can remove themselves from
 a project, but they cannot remove other contributors.
 
 To remove a contributor, the user must click the red 'Remove' button in the far right column of the "Contributors" table. 
@@ -358,6 +368,20 @@ If the user tries to remove him or herself as a contributor when s/he is the onl
     Remove Contributor
     You cannot be removed as a contributor. You need at least one administrator, bibliographic contributor, and registered user. 
     [Cancel]
+    
+    
+Importing contributors from a parent project to a component
+-----------------------------------------------------------
+ **Purpose**: To make adding contributors from a parent project to a component quick and easy.
+ 
+Admins on a component can import contirbutors from the parent project to that component. To do so, the user follows the same steps to adding a contributor. When the "Add Contributors" modal opens, there will be a blue link below the search field to import contributors. This link reads::
+   
+     Import contributors from [project name]
+ 
+Clicking this link adds all of the contributors from the parent project to the "Adding" section of the modal. Contributor permissions and bibliographic settings are also brought over from the parent. The user can modify these settings within the modal itself. To exclude a contributor from being imported, the user can click the white "-" button to remove them. The removed contributor will be removed from the modal (they will not appear in the "Results" section of the modal).
+ 
+To finish importing the contributors, the user clicks the green **Add** button in the bottom right of the modal. The contributors from the parent project will be added to the component.
+
 
 View-only Links
 --------------
