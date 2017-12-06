@@ -175,9 +175,49 @@ The preregistration appears in the "Draft registrations" tab with the label "Pen
 
     Are you sure you want to delete the registration? [Cancel][Delete]
 
+Accepted Preregistrations
+-------------------------
+**Purpose**: Accepted preregistrations will be eligible for the $1,000 prize.
+
+If the reviewers of the preregistrations accept the preregistration, and all of the admins on the preregistration click the approval link in the confirmation email, the user receives the following email::
+  
+  Subject: Your research plan has been registered and accepted for the Preregistration Challenge
+
+  Dear [first name] [last name],
+
+  We are happy to let you know that your research plan has been verified for completeness and registered on the OSF at the following URL: [GIVE COMPLETE URL].  
+
+  What’s Next?
+
+  Reach out to others: The Prereg Challenge seeks to change how research is conducted for the better. Take part in the movement by getting the word out and telling your peers about why this practice matters.. Consider emailing your department, your professional society, or other outlets. Let them know you preregistered your research and tell them to check out the Prereg Leaderboard [link]. Share it now!
+  Share on social media: Tell your friends on <twitter> <LinkedIn> <Facebook> or <Email>
+
+  Conduct your study: It’s time to start your study and its analysis exactly as specified in your preregistration. 
+
+  Publish your study: In order to remain eligible for the Preregistration Challenge, any deviations from your preregistration (e.g. sample size, timing, analysis) must be documented and appear in the final publication. Any additional analyses must be noted separately from the registered, confirmatory, hypothesis testing analyses. Such new analyses must be described as hypothesis generating or exploratory tests. You must also refer to your preregistration in the publication by using its URL [GIVE COMPLETE URL]. Publication must occur in an eligible journal.
+
+  Submit your article for review: We will review your final, published article once you submit it on the OSF. We will verify that your study and its analyses were conducted as specified in your preregistration. In order to avoid any unintended oversights, please reach out to us (prereg@cos.io) and refer to our guidelines and FAQ on our website when writing up your results.
+
+  Receive the prize! $1,000 rewards will be distributed to eligible entrants according to the schedule on our website.
+
+  Thank you for entering the Preregistration Challenge. Feel free to submit another research plan at any time.
+
+  Sincerely,
+  The team at the Center for Open Science
+
+
+  Action via Twitter: tweet: “I just took the #PreregChallenge on the @OSFramework to improve rigor. You can too https://googleQBvsfb.  #openscience”
+
+  Action via Linkedin: “I just took the Preregistration Challenge hosted by the Center for Open Science. It’s an easy way to add rigor and transparency to my research, and you can do it too: https://google/QBvsfb.” 
+
+  Action via Facebook: “I just took the Preregistration Challenge hosted by the Center for Open Science. It’s an easy way to add rigor and transparency to my research, and you can do it too: https://google/QBvsfb.” 
+
+  Action via email: “Hello, I just wanted to let you know about this initiative at the Center for Open Science. They are advocating for preregistration, which is an easy way to add rigor and transparency to research. They want to increase awareness about its benefits to the research community and have funds to reward $1000 prizes to researchers who publish the results of a preregistered study. See where our university ranks in the number of preregistered studies: https://osf.io/x5w7h/wiki/06%20LeaderBoard/. You can learn more and start your preregistration at https://goo.gl/QBvsfb.” 
+
+
 Rejected Preregistrations
 -------------------------
-**Purpose**: If the research is non eligible for the Prereg Challengen, the user is notified with a chance to make changes and resubmit.
+**Purpose**: If the research is non eligible for the Prereg Challenge, the user is notified with a chance to make changes and resubmit.
     
 If the reviewers of the preregistration reject the preregistration and provide feedback, the user receieves the following eamil::
   
