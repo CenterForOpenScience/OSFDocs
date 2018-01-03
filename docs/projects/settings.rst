@@ -2,7 +2,7 @@
 
 The project settings page shows different options for contributors with different permissions.
 
-If the user is an admin or a read+write contributor on the project, there are five sections on the "Settings" page that they can configure: "Project/Component," "Select Add-ons," "View-Only Links," "Configure Add-ons" (only shows if add-ons are connected),"Wiki," "Commenting," "Email Notifications," and "Redirect Link."
+If the user is an admin or a read+write contributor on the project, there are five sections on the "Settings" page that they can configure: "Project/Component," "Select Add-ons," "View-only Links," "Configure Add-ons" (only shows if add-ons are connected),"Wiki," "Commenting," "Email Notifications," and "Redirect Link."
 The "Settings" page has a sidebar that the user can use to navigate through the sections of the page.
   
 Additional sections are shown if the project is public or if add-ons are configured.
@@ -147,7 +147,7 @@ Add-ons
 ------------
 When an add-on has been activated, an additional section is added to the page—"Configure Add-ons." See :ref:`the information about add-ons here <add-ons>`.
 
-View-Only Links
+View-only Links
 ---------------
 **Purpose**: View-only Links allow users to share the contents of private projects with non-contributors.
 
