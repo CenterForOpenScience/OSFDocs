@@ -23,10 +23,10 @@ The next link is to the :ref:`Analytics page <analytics>`. This page shows analy
 
 The next link is to the :ref:`Registrations page <registrations>`. This page lists all registrations of the viewed project.
 
-The next link is to the :ref:`Forks page <forks>`. This page lists all the forks of the viewed project.
-
 The next link is to the :ref:`Contributors page <contributors>`. This page lists the project's contributors and allows the user to create
 :ref:`view-only links <view-only>`. This page is not visible to non-contributors.
+
+The next link is to the :ref:`Add-ons page <add-ons`. This pages lists the third-party services supported by the OSF that users can connect to from their project.
 
 The final link is to the :ref:`Settings page <project-settings>`. This page allows admins to configure the project. This page
 is not visible to non-contributors.
@@ -147,7 +147,7 @@ Clicking **Cancel** cancels the file move. Clicking **Keep Both** keeps the orig
 
 Citation Widget
 --------------
-**Purpose:** The Citation widget provides a pre-formatted citation referencing the viewed OSF project or component.
+**Purpose:** The "Citation" widget provides a pre-formatted citation referencing the viewed OSF project or component.
 
 The Citation widget is locate to the right of the Wiki widget. Every project and component on the OSF has a unique and permanent URL, allowing
 each one to be cited.
@@ -175,16 +175,14 @@ Any user visiting a public project can view the Citation widget and select an ad
 .. _component-widget:
 
 Components Widget
----------------
-**Purpose:** The Components widget allows users to view and create new components.
+-----------------
+**Purpose:** The "Components" widget allows users to view and create new components as well as link projects.
 
-The Components widget is located below the Citation widget. In the panel's heading, two buttons are visible: "Add Component" and "Link Projects."
+The "Components" widget is located below the "Citation" widget. In the panel's heading, two buttons are visible: "Add Component" and "Link Projects."
 
-When a project has no links or components within it, read-only contributors do not see the Components widget. In that same scenario, non-contributors see the Components widget with no buttons, and the body of the panel reads::
+When a project has no links or components within it, the "Components" widget is not displayed for either read-only contributors or non-contributors do not see the "Components" widget. 
 
-    No components to display
-
-Contributors with read+write or admin permissions see the two buttons and the following message::
+When a project has no links or components within it, the "Components" widget *is* dislpayed for contributors with read+write or admin permissions. These contributors see the two buttons and the following message::
   
   Add components to organize your [project/component]
 
@@ -226,49 +224,102 @@ Clicking **Keep working here** keeps the user on the "Project Overview" page. Cl
 
 Add Links
 ^^^^^^^^^
-Clicking the "Link Projects" button opens a modal::
+**Purpose**: This feature enables users to link between personal or public projects, components, and registrations.
+
+Clicking the **Link Projects** button opens a modal::
 
     Link other OSF projects
-    [text field: "Search projects"]
+    <text field> "Search projects"
     [Search all projects][Search my projects]
+    
+The "Search my projects" button is selected by default. 
 
-Below the search buttons are two columns, one labeled "Results" and one labeled "Adding."
+Below the search buttons are two tabs, one labeled "Projects" and one labeled "Registrations." "Projects" is selected by default. Below "Projects" are the results::
+  
+    Results: My Projects
 
-The user can enter their query into the "Search projects" text field. If they click the **Search Projects** button, all public OSF projects,
-components, and registrations whose title matches their query will be returned. If they click **Search my projects**, all of the user's OSF projects, components, and registrations whose title matches their query will be returned. Five results will be displayed, with additional pages listed below. Hovering over a project title will reveal the created date and time and the most recent modified date and time in the following format::
+The results are paginated, displaying 4 at a time. Selecting the "Registrations" tab shows the user's registrations::
+  
+    Results: My Registrations
 
-    Created: YYYY-MM-DD HH:MM AM/PM
-    Modified: YYYY-MM-DD HH:MM AM/PM
+Like projects, the results are paginated, displaying 4 at a time.
 
-Hovering over a registration title will reveal the registered date and time in the following format::
+The user can type a project or registration title into the "Search projects" field, and click the either the **Search all projects** button or the **Search my projects** button to find the project/registration.
+If the user clicks the **Search all Projects** button, all public OSF projects, components, and registrations whose title matches the query will be returned. If the user clicks the **Search my projects** button,
+all of the user's OSF projects, components, and registrations whose title matches their query will be returned. 
 
-    Registered: YYYY-MM-DD HH:MM AM/PM
+Project results are displayed in a table format, as follows::
+  
+  <project title> | Created: YYYY-MM-DD HH:MM AM/PM | <lastname of first listed contributor>
+                    Modified: YYYY-MM-DD HH:MM AM/PM
 
-To the left of each project title is a green square button marked with a '+' sign. On the right is the last name of the first listed contributor to the result.
-If a project or component returned as a result has multiple contributors, "et al." is appended to the first contributor's last name. 
+In the author column, if more than one author is listed on project, the last names appear as "<lastname et al.>".
 
-Clicking **+** adds the result to the "Adding" column. Alternatively, the user can click the "Add all" link to the right of the
-"Results" title to add the results shown on the page to the "Adding" column. When a result is moved to the "Adding" column,
-it is removed from the "Results" column. Projects in the "Results" column have, instead of the green button to the left, a grey button with a '-'
-sign. Clicking this button removes the corresponding result from the "Adding" list and returns it to the "Results" column.
-To the right of the "Adding" title is a "Remove All" link. Clicking this link moves all added results back to the "Results" column.
+Registration results are also displayed in a table format, as follows::
+  
+    <registration title> | Registered: YYYY-MM-DD HH:MM AM/PM | <lastname of first listed contributor>
+    
+In the author column, if more than one author is listed on project, the last names appear as "<lastname et al.>".
 
-Only a "Cancel" button is available on the modal until a result has been put in the "Adding" column. Once one result has been added,
-a green "Add" button becomes visible to the right of the "Cancel" button. Clicking **Add** refreshes the page to show the newly linked projects
-listed in the Components widget.
+To the left of each project and registration title is a green square button marked with a '+' sign. 
 
+Clicking **+** selects the project or registration from the results. The "+" sign is replaced by a gray button with a "-" sign.
+Clicking **-** loads the button until it returns back to the green "+" button. 
+
+The user can select up to any number of projects or registrations from the results. The user can switch between the "Projects" and
+"Registrations" tabs, selecting from each, and selected results will be saved and applied upon adding. After the user has selected
+the project(s)/registration(s), they can click the **Done** button in the bottom right of the modal to add the linked projects/registrations to their project. Upon
+clicking **Done**, the page refreshes and the linked project(s)/registration(s) will appear in the list in the "Components" widget.
+
+Linked projects/registrations are formatted as described in the :ref:`Component widget format section <component-format>` below. Links are marked by a lock symbol to the left of the project/registration title. To the right of the title are an "x" icon and "fork" icon.
+Hovering over the **x** opens the following tooltip::
+  
+  Remove link
+
+Clicking the **x** opens the following confirmation modal::
+  
+    Remove this link?
+    Are you sure you want to remove this link? This will not remove the project this link refers to.
+    [Cancel][Remove]
+    
+Clicking the **Cancel** button cancels the action and closes the modal. Clicking the **Remove** button closes the modal and removes the linked project/registration from the "Components" widget.
+
+Hovering over the **fork** icon opens the following tooltip::
+  
+    Create a fork of <project title>
+    
+Clicking the **fork** icon opens the following confirmation modal::
+  
+    Fork this project?
+    Are you sure you want to fork this project?
+    [Cancel][Fork]
+
+Clicking the **Cancel** button cancels the action and closes the modal. Clicking the **Fork** button closes the modal, but the page is grayed out and a message appears::
+  
+    Please wait
+
+After the fork is created, the following confirmation modal appears::
+  
+    Fork created successfully@
+    [Keep working here][Go to new fork]
+
+Clicking the **Keep working here** button closes the modal, and the user stays on their project "Overview" page. Clicking the **Go to new fork** button takes the user to the
+forked project's "Overview" page.
+
+Clicking the **fork** icon on a linked registration creates a regular forked project out of the registration. To make a registration out of the fork, the user would need to register themselves.
 
 .. _component-format:
-
-Components and links are listed in the Components widget with their title, contributors, number of contributions, category, and privacy symbols. Components are listed in the order in which they were added. Components can be dragged and dropped to re-order. After re-ordering components,
-the user can refresh the page and the changes will be visible.
+Component widget format
+^^^^^^^^^^^^^^^^^^^^^^^
+Components and links are listed in the Components widget with their title, contributors, number of contributions, category, and privacy symbols. Components are listed
+in the order in which they were added. Components can be dragged and dropped to re-order. After re-ordering components, the user can refresh the page and the changes will be visible.
 
 If one of the components is private, to the left of the title and category symbol is a lock. If the component
 is public, there is no symbol. Titles link to the project/component/link's overview page. Below the titles are the names of the first three contributors;
 if there are more contributors, they are indicated by the addition of "& __ more." Clicking on a contributor's name brings the user to the contributor's
 public profile. Clicking on "& __ more" brings the user to the Overview page for the project/component/link.
 
-To the right of the element's title is an ellipsis indicating that there is more content. Clicking the ellipsis causes a drop-down menu to appear with the following options::
+To the right of the element's title is an ellipsis indicating that there is more content. Linked projects/registrations do not contain these ellipses. Clicking the ellipsis causes a drop-down menu to appear with the following options::
   
     Manage Contributors
     Settings
