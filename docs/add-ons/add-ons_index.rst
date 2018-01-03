@@ -1489,7 +1489,7 @@ File names from the indicated GitHub repo are shown in the file tree on the OSF.
 Selecting the GitHub repo shows an "Open" button in the toolbar. Clicking sends the user to the GitHub website where the repo's
 contents are shown.
 
-A "Download" button appears when any user selects the GitHub repo. Clicking downloads the contents of the repo as a zip file.
+A "Download as zip" button appears when a user selects the GitHub repo or any Github folder. Clicking **Download as zip** downloads the contents of the repo or folder as a zip file.
 
 A "Create Folder" button is shown when the add-on is selected by a user with editing permission. The user types a
 folder name and confirms creation. The folder is then shown inside the GitHub add-on. Files can be moved into and out
