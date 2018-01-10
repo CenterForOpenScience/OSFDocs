@@ -70,3 +70,25 @@ If the user submits a blank form, a red inline error is shown below the empty pa
 If the passcode the user enters is incorrect, a red inline error is shown below the empty passcode field::
 
     The passcode you entered is incorrect.
+
+No log in activity
+-----------------
+
+If a user has not signed in to their account in 1 month, they receive the following engagement email::
+
+  Hello <fullname>,
+        
+          We’ve noticed it’s been a while since you used the Open Science Framework (OSF). We are constantly adding and improving features, so we thought it might be time to check in with you.
+          Most researchers begin using the OSF by creating a project to organize their files and notes. Projects are equipped with powerful features to help you manage your research:
+              You can keep your work private, or make it public and share it with others
+              You can use the wiki to live-edit content with your collaborators
+              You can connect to third-party services like Dropbox or Google Drive
+          To get started now, visit your dashboard and click on “Create a project.”
+          Need help getting started with a project? Check out the <a href="http://help.osf.io">OSF Help Guides</a> or one of our recent <a href="https://www.youtube.com/channel/UCGPlVf8FsQ23BehDLFrQa-g">OSF 101 webinars</a>.
+          
+          Best,
+          
+          COS Support Team
+      
+      The Open Science Framework<https://osf.io> is provided as a free, open source service from the Center for Open Science<https://cos.io/">.
+  </%def>
