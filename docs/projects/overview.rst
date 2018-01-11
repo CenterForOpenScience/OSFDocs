@@ -26,7 +26,7 @@ The next link is to the :ref:`Registrations page <registrations>`. This page lis
 The next link is to the :ref:`Contributors page <contributors>`. This page lists the project's contributors and allows the user to create
 :ref:`view-only links <view-only>`. This page is not visible to non-contributors.
 
-The next link is to the :ref:`Add-ons page <add-ons`. This pages lists the third-party services supported by the OSF that users can connect to from their project.
+The next link is to the :ref:`Add-ons page <add-ons>`. This pages lists the third-party services supported by the OSF that users can connect to from their project.
 
 The final link is to the :ref:`Settings page <project-settings>`. This page allows admins to configure the project. This page
 is not visible to non-contributors.
@@ -222,7 +222,7 @@ After clicking **Create**, a confirmation modal appears::
 
 Clicking **Keep working here** keeps the user on the "Project Overview" page. Clicking **Go to new component** takes the user to the new "Component Overview" page.
 
-Add Links
+Adding Links
 ^^^^^^^^^
 **Purpose**: This feature enables users to link between personal or public projects, components, and registrations.
 
@@ -308,6 +308,11 @@ forked project's "Overview" page.
 
 Clicking the **fork** icon on a linked registration creates a regular forked project out of the registration. To make a registration out of the fork, the user would need to register themselves.
 
+Viewing links
+^^^^^^^^^^^^^
+See the :ref:`Analytics page <analytics_links>` for information.
+
+
 .. _component-format:
 Component widget format
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -319,15 +324,23 @@ is public, there is no symbol. Titles link to the project/component/link's overv
 if there are more contributors, they are indicated by the addition of "& __ more." Clicking on a contributor's name brings the user to the contributor's
 public profile. Clicking on "& __ more" brings the user to the Overview page for the project/component/link.
 
-To the right of the element's title is an ellipsis indicating that there is more content. Linked projects/registrations do not contain these ellipses. Clicking the ellipsis causes a drop-down menu to appear with the following options::
+To the right of the element's title is an ellipsis that, when clicked, gives contributors options to manage the component directly from the parent's "Overview" page.
+The ellipsis is visible only to contributors. Linked projects/registrations do not contain these ellipses. 
+
+When an admin clicks the ellipsis, a drop-down menu appears with the following options::
   
     Manage Contributors
     Settings
     Delete
     
-Clicking **Manage Contributors** takes the user to the component's "Contributors" page.
+Read and read+write contributors only see::
+  
+    Manage Contributors
+    Settings
+    
+Clicking **Manage Contributors** takes the user to the component's "Contributors" page - the view depeonds to the user's level of permissions.
 
-Clicking **Settings** takes the user to the component's "Settings" page.
+Clicking **Settings** takes the user to the component's "Settings" page - the view depeonds to the user's level of permissions.
 
 Clicking **Delete** causes the following modal to appear on the project "Overview" page::
   
@@ -346,18 +359,29 @@ If the user successfully deletes their component, a green dismissable confirmati
   
     Component has been successfully deleted.
 
+.. _tags:
+
 Tags Widget
 ----------------
-**Purpose:** The Tags widget allows users to provide keywords relevant to their project, helping OSF visitors more easily find their work.
+**Purpose:** The Tags widget allows users to provide keywords relevant to their project to enhance discoverability of their work.
 
-The "Tags" widget is located below the components widget. When no tags are added, users with read+write or admin permissions
+The "Tags" widget is located below the components widget. When no tags are added, contributors with read+write or admin permissions
 see text that reads: "add a tag to enhance discoverability." If the user is not a contributor on the project, or only has read permissions, and no
 tags have been added, the "Tags" widget is not visible.
 
-Contributors with read+write or admin permissions can add a tag by clicking inside the "Tags" box and typing in a keyword.
-Pressing the return key will add the tag. Inserting a comma after a tag will also add the tag. Tags appear in blue boxes. Admins and read+write contributors will see a black 'x' to the right of the tag that they can click to remove the tag.
+Contributors with read+write or admin permissions can add a tag by clicking inside the "Tags" widget and typing in a word. 
+Pressing the return key will add the tag. Inserting a comma after a tag will also add the tag. Entering the same tag more
+than once is not supported. If the user attempts to enter the same tag twice, the tag will not be added. Read contributors
+and non-contributors see the tags but cannot edit or remove them. Admins and read+write contributors will see a
+black 'x' to the right of the tag that they can click to remove the tag.
 
-Hovering over a tag darkens the background color. Clicking on a tag takes the user to the OSF "Search" page where search results containing that tag are listed. The query in the search bar is as follows::
+After the user has added tag(s), the text "Add a tag" appears to the right of the last tag. If the user deletes all tags, the text in the widget reads "add a tag." 
+Refreshing the page returns the original text "add a tag to enhance discoverability" to the widget. 
+
+Clicking on a tag takes the user to the OSF "Search" page where other projects, registrations, or preprints with the same tag are returned. If no results are returned,
+the message "No results found" appears at the top of the page.
+
+The query in the search bar is as follows::
   
     (tags:"[keyword]")
 
