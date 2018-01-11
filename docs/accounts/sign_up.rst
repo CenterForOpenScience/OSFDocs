@@ -3,15 +3,22 @@ Creating an Account
 
 **Purpose:** The sign-up form creates an OSF account.
 
-The sign-up form can be accessed only while logged out, from the OSF homepage (osf.io). This form requests the user’s full name, contact email, confirmation of their contact email, and a password.
+The sign-up form can be accessed only while logged out, from the OSF homepage (osf.io). This form requests the user’s
+full name, contact email, confirmation of their contact email, and a password.
+
+The maximum character count for the "Full Name" field is 186 characters. The maximum character count for the "Email"
+field is 255 characters. The maximum character count for the "Password" field is 256 characters.
 
 Below these fields is a CAPTCHA section (run by reCAPTCHA) to ensure that the user setting up an account is not spam::
   
   [checkbox] I'm not a robot
 
-After the user checks the box to confirm that they are not a robot, a green check mark will appear in place of the check box. The user cannot undue this section.
+After the user checks the box to confirm that they are not a robot, a green check mark will appear in place of the
+check box. The user cannot undue this section.
 
-If the user fills out all of the fields correctly and checks the box but then lets the page sit for several minutes (about five minutes) without submitting their form, reCAPTCHA will expire and the user will need to re-check the checkbox. The checkbox will be outlined in red and the following red error message will appear above it::
+If the user fills out all of the fields correctly and checks the box but then lets the page sit for several minutes
+(about five minutes) without submitting their form, reCAPTCHA will expire and the user will need to re-check the
+checkbox. The checkbox will be outlined in red and the following red error message will appear above it::
   
     Verification expired. Check the checkbox again.
 
@@ -22,31 +29,38 @@ If the user clicks **Create account** without checking the box, a red error mess
 After successfully submitting, the user cannot click into any of the fields.
 
 **Use cases**
-If the user does not complete a field, but clicks into a subsequent field or returns to a previous field or submits the form, an alert below the field(s) reads::
+If the user does not complete a field, but clicks into a subsequent field or returns to a previous field or
+submits the form, an alert below the field(s) reads::
 
     This field is required.
 
-If the user enters a name that has fewer than three characters, but clicks into a subsequent field or submits the form, an alert written in red below the name field reads::
+If the user enters a name that has fewer than three characters, but clicks into a subsequent field or
+submits the form, an alert written in red below the name field reads::
 
     Please enter at least 3 characters.
 
-If the user enters no email address, but clicks into another field or submits the form, an alert below the field reads::
+If the user enters no email address, but clicks into another field or submits the form, an alert below
+the field reads::
 
     This field is required.
 
-If the user does not enter a complete email address, but clicks into another field, an alert written in red below the email field reads::
+If the user does not enter a complete email address, but clicks into another field, an alert written in
+red below the email field reads::
 
     Please enter a proper email address.
 
-If the user enters two different email addresses and clicks into another field, an alert written in red below the field reads::
+If the user enters two different email addresses and clicks into another field, an alert written in red
+elow the field reads::
 
     Emails must match.
 
-If the user does not enter a password that has at least 6 characters, but clicks into another field, an alert written in red below the email field reads::
+If the user does not enter a password that has at least 6 characters, but clicks into another field, an
+alert written in red below the email field reads::
 
     Please enter at least 6 characters.
 
-If the user enters a password that is longer than 256 characters, but submits the form, an alert written in red below the email field reads::
+If the user enters a password that is longer than 256 characters, but submits the form, an alert written
+in red below the email field reads::
 
     Please enter at least 6 characters.
 
@@ -58,14 +72,16 @@ If the user tries to sign-up with a registered email, the following temporary in
 
 The alert disappears after several seconds. No email is sent.
 
-If the user tries to sign up with a :ref:`deactivated account's email </account-settings>`, the following inline red alert appears::
+If the user tries to sign up with a :ref:`deactivated account's email </account-settings>`, the following
+inline red alert appears::
 
     The email [email] has already been registered
 
 The alert disappears after several seconds. No email is sent.
 
 **The user signs up correctly**
-If the user signs up with a valid email address (including a previous alternate email that was removed or a registered but unconfirmed email), they receive a confirmation message::
+If the user signs up with a valid email address (including a previous alternate email that was removed or
+a registered but unconfirmed email), they receive a confirmation message::
 
   Registration successful. Please check [email] to confirm your email address.
 
@@ -80,13 +96,18 @@ The user receives the following email::
 
 The confirmation link in the email lasts for 24 hours before it expires
 
-When the user clicks the link in the email to confirm their OSF account, they are logged in to their OSF account and taken directly to their :ref:`my-dashboard`.
+When the user clicks the link in the email to confirm their OSF account, they are logged in to their OSF
+account and taken directly to their :ref:`my-dashboard`.
 
 Resend password confirmation email
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Purpose**: If an unconfirmed user tries to log in to the OSF, they have the option to have a confirmation email sent to them.
+**Purpose**: If an unconfirmed user tries to log in to the OSF, they have the option to have a
+confirmation email sent to them.
 
-To get to the "Resend Confirmation Email" page, an unconfirmed user (a user who has registered for an account, but who has not clicked the link in the email to confirm it) tries to log in to the OSF by going to the "Sign In" page; they enter the email address and password they used to register, but they are unable to log in.
+To get to the "Resend Confirmation Email" page, an unconfirmed user (a user who has registered for an
+account, but who has not clicked the link in the email to confirm it) tries to log in to the OSF by
+going to the "Sign In" page; they enter the email address and password they used to register, but
+they are unable to log in.
 
 The "Sign In" page then reads::
   
@@ -97,7 +118,8 @@ The "Sign In" page then reads::
   [Sign in][Back to OSF]
   [Create Account]
   
-In the above text, "Click here" is linked to the "Resend Confirmation Email" page, which is accessible at this URL: https://osf.io/resend/.
+In the above text, "Click here" is linked to the "Resend Confirmation Email" page, which is
+accessible at this URL: https://osf.io/resend/.
 
 When the user clicks **Click here** they are taken to the "Resend Confirmation Email" page::
   
@@ -106,33 +128,39 @@ When the user clicks **Click here** they are taken to the "Resend Confirmation E
     [text box]
     [Send]
 
-If the user enters an invalid email address, a yellow dismissable error message will appear at the top of the page::
+If the user enters an invalid email address, a yellow dismissable error message will appear
+at the top of the page::
   
     Email address is invalid
 
-If the user enters an email that's different from the one they used to register, the following dismissable confirmation message will appear at the top of the page::
+If the user enters an email that's different from the one they used to register, the 
+following dismissable confirmation message will appear at the top of the page::
   
     If there is an OSF account associated with this unconfirmed email address [email address], a confirmation email has been resent to it. If you do not receive an email and believe you should have, please contact OSF Support.
     
 If the user navigates to that email address, they will not receive the confirmation email.
 
-If the user enters the correct email address, the following dismissable confirmation message will appear at the top of the page::
+If the user enters the correct email address, the following dismissable confirmation
+message will appear at the top of the page::
   
     If there is an OSF account associated with this unconfirmed address [email address], a confirmation email has been resent to it. If you do not receive an email and believe you should have, please contact OSF Support.
 
-The user will receive the confirmation email and can click the link in the email to confirm their account.
+The user will receive the confirmation email and can click the link in the email to
+confirm their account.
   
 Confirming an Unregistered User Account
 ---------------------------------------
 
-**Purpose:** Users can be added as contributors to an OSF :doc:`project <../projects/project_index>` without having an account. In this case can claim an account so that they may access the material.
+**Purpose:** Users can be added as contributors to an OSF :doc:`project <../projects/project_index>`
+without having an account. In this case can claim an account so that they may access the material.
 
 
 Claiming an Account Via Email
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Claiming an account via email allows a user who has been added as a contributor to a project to create an account following their addition.
 
-If a user is added as a contributor to a project, but does not have an OSF account, they will receive an email in their inbox instructing them that they can set a password for their account::
+If a user is added as a contributor to a project, but does not have an OSF account, they will
+receive an email in their inbox instructing them that they can set a password for their account::
 
     Hello [Name of account being claimed],
     You have been added by  [User who added unclaimed account as contributor] as a contributor to the project "[Project Name]" on the Open Science Framework. To set a password for your account, visit:
@@ -142,7 +170,8 @@ If a user is added as a contributor to a project, but does not have an OSF accou
     The OSF Team
     If you are not [Name of account being claimed] or you are erroneously being associated with [Project Name] then email contact@osf.io with the subject line "Claiming Error" to report the problem.
 
-When the user clicks the link in the email, they are taken to the "Set Password" page where they will need to claim their account. The page appears::
+When the user clicks the link in the email, they are taken to the "Set Password" page where they
+will need to claim their account. The page appears::
   
     Email: [email address]
     [password field that is already filled in]
@@ -155,19 +184,33 @@ If the user's passwords do not match, an alert will appear::
 
     Passwords do not match
 
-When the user enters a matching password, and confirms that they are not a robot, they can click the **Save** button. When they click this button, they will be taken directly to the project to which they were originally added as an unregistered contributor.
+When the user enters a matching password, and confirms that they are not a robot, they can click
+the **Save** button. When they click this button, they will be taken directly to the project to
+which they were originally added as an unregistered contributor.
 
-If the user has confirmed their account and is signed into the OSF, but follows the email’s link again, they are brought to a page that informs them they are already a contributor.
+If the user has confirmed their account and is signed into the OSF, but follows the email’s link
+again, they are brought to a page that informs them they are already a contributor.
 
-If the user has confirmed their account and is not signed into the OSF, but follows the email’s link again, they are brought to a page that informs them that the account has already been claimed.
+If the user has confirmed their account and is not signed into the OSF, but follows the email’s
+link again, they are brought to a page that informs them that the account has already been claimed.
 
 Claiming an Account Via the OSF
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Purpose:** Claiming an account via the OSF allows a person who does not have an OSF account to identify themselves as a contributor on a project.
+**Purpose:** Claiming an account via the OSF allows a person who does not have an OSF account to
+identify themselves as a contributor on a project.
 
-If a user finds their name listed on an OSF project but does not have an OSF account, they can claim their account. To do so, the user clicks on their name in contributor list. This name is not linked to a :doc:`public profile <../profiles/profiles_index>`. Hovering over their name shows a tooltip that says “Is this you?  Click to claim.” After clicking, a popover appears. The popover is titled “Claim account” and a blank text field instructs the user to enter their email. The user enters their email into the field and clicks the check mark to the right. Alternatively, the user can click the ‘x’ to the right of the check mark to cancel.
+If a user finds their name listed on an OSF project but does not have an OSF account, they can claim
+their account. To do so, the user clicks on their name in contributor list. This name is not linked
+to a :doc:`public profile <../profiles/profiles_index>`. Hovering over their name shows a tooltip
+that says “Is this you?  Click to claim.” After clicking, a popover appears. The popover is titled
+“Claim account” and a blank text field instructs the user to enter their email. The user enters their
+email into the field and clicks the check mark to the right. Alternatively, the user can click the ‘x’
+to the right of the check mark to cancel.
 
-After submitting, a dismissable success growl-box alert appears in the upper right corner of the page. It reads “Email will arrive shortly. Please check [email].” An email is sent automatically to the entered address. The email does not allow them to sign into the account, but instead informs them that their request to claim the account has been received::
+After submitting, a dismissable success growl-box alert appears in the upper right corner of the page.
+It reads “Email will arrive shortly. Please check [email].” An email is sent automatically to the entered
+address. The email does not allow them to sign into the account, but instead informs them that their
+request to claim the account has been received::
 
     Hello [Name of account being claimed],
     We received your request to claim an OSF account and become a contributor for "[Project name]".
@@ -177,7 +220,8 @@ After submitting, a dismissable success growl-box alert appears in the upper rig
     Sincerely,
     The OSF Team
 
-The user who added the unclaimed account as a contributor is also sent an email. This email asks the user to forward the message to the correct person::
+The user who added the unclaimed account as a contributor is also sent an email. This email asks the
+user to forward the message to the correct person::
 
     Hello [User who added unclaimed account as contributor],
     You recently added [Name of account being claimed] to "[Project Name]". [Name of account being claimed] wants to claim their account, but the email address they provided is different from the one you provided.  To maintain security of your project, we are sending the account confirmation to you first.
