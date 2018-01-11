@@ -164,17 +164,16 @@ Adding Contributors
 ^^^^^^^^^^^^^^^^^^
 **Purpose:** Adding contributors allows additional OSF users to be cited on a project or to make edits to that project.
 
-To add a contributor, the user must be an admin on the project. The user first clicks the green "Add" button to the right of the "Contributors"
-title on the "Contributors" page. A modal appears::
-
+The user must be an admin on the project in order to add contributors. The user first clicks the green "Add" button to the right of the "Contributors"
+title on the Contributors page. A modal appears::
+  
     Add Contributors
     [text field: Search by name][Search]
 
 Below the search bar and links are two columns, one labeled "Results" and one labeled "Adding."
 
 Users can enter the name of an OSF user into the "Search by name" field. Clicking the "Search" button or pressing the return key submits
-their query. The "Results" column shows five users at a time (the remainder are paginated) when
-a query has been submitted. If multiple pages of results are returned, pagination appears below the results.
+their query. The "Results" column shows up to five users at a time. If multiple pages of results are returned, pagination appears.
 
 To the left of each OSF user returned is either a white box with a gray check mark, indicating that the user is already a contributor on the project, or a green square button marked with a ‘+’ sign. Hovering over the checkmark shows a tooltip that reads::
 
@@ -186,12 +185,15 @@ shows a tooltip that reads::
     Add contributor
 
 To the right of this button is the user's profile picture and name. The name links to the user's public profile.
-If any employer or education information was provided in the user's profile, the most affiliation is listed below the user name.
-The number of projects, if any, that the result user has in common with the searching user is listed below affiliations.
 
-Clicking the ‘’ button adds the result to the “Adding” column. Alternatively, the user can click the “Add all” link to
-the right of the “Results” title to add the results shown on the page to the “Adding” column. When a result is moved to
-the “Adding” column, it is removed from the “Results” column. Projects in the “Results” column have, instead of the green
+If a user has added information to their profile, this information is returned in the contributor search results to better differentiate between users.
+Education, employment, number of common projects (if applicable), and social links (displayed as social icons) from user profiles appear with their
+names in search results. Clicking on the social icons takes the user to the user's page on the corresponding website. Searching for someone's twitter
+handle, personal website, ORCID ID, etc., will show matches in the results. 
+
+Clicking the ‘+’ button adds the user result to the “Adding” column. The user's name and profile picture is carried over (but not social information).
+Alternatively, the user can click the “Add all” link to the right of the “Results” title to add the results shown on the page to the “Adding” column.
+When a result is moved to the “Adding” column, it is removed from the “Results” column. Projects in the “Results” column have, instead of the green
 button to the left, a grey button with a ‘-‘ sign. Hovering over the '-' sign shows a tooltip tha reads::
 
     Remove contributor
