@@ -61,7 +61,7 @@ Activity pertaining to the creation of the registration is logged into the origi
 
 The blue Comments icon appears in the top right of the registration Overview page. The project's comments are not carried over to the registration. However, any comments made on the project prior to the registration's creation are logged into both the project and registrations's Recent Activity widget.
 
-Admins and read+write contributors can add tags to the registration after it has been registered. The behavior is the same as described in the :href: `Tags section <tags>`_
+Admins and read+write contributors can add tags to the registration after it has been registered. The behavior is the same as described in the :ref:`Tags section <tags>`.
 for the project "Overview" page.
 
 Creating a Registration

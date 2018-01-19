@@ -20,15 +20,24 @@ Google Drive: https://github.com/CenterForOpenScience/osf.io/issues/3748
 
 Mendeley: https://github.com/CenterForOpenScience/osf.io/pull/3900
 
+Users with administrator and read+write permissions can connect and configure add-ons via the "Add-ons" tab in the project's navigation bar. For users
+who are non-contributors and contributors with read-only permissions, the "Add-ons" tab will not be visible.
 
-Users with administrative and read+write privileges can connect and configure storage add-ons from their :ref:`Settings page <settings>`.
-To do this from the main project page, users can click the “Settings” button in the grey navigation bar. For users
-with read only privileges, the “Settings” button will be visible, but options to connect and configure add-ons will
-not be available. Visitors to a project (i.e. those who are not contributors on a project) will not see the “Settings”
-button and will not be able to connect and configure add-ons.
+To configure an add-on, the first step is to click the **Add-ons** tab page. The "Addons" page lists all third-party services that users can connect to, including
+storage providers and citation services. 
 
+The "Add-ons" page is made up of two sections: "Select Add-ons" and "Configure Add-ons." These two sections are visible in the left sidebar menu that the user
+can use to quickly navigate the page. When no add-ons have been configured, the "Select Add-ons" section is the only section on the page. However, the "Configure Add-ons"
+button in the sidebar is clickable but does not lead the user anywhere on the page.
 
-To configure any add-on, the first step is to visit the Settings page and check the corresponding box under "Select Add-ons."
+The following language appears across the top of the "Select Add-ons"::
+  Sync your projects with external services to help stay connected and organized. Select a category and browse the options.
+
+There is "Categories" sidebar menu that the user can use to filter through the add-on types: "All," "Citations," and "Storage."
+"All" is selected by default. To the right of the sidebar is the list of add-ons. Each add-on has an "Enable" link to the right
+of it that the user must click to initiate the connection between the add-on and their OSF project.
+
+After enabling an add-on, the add-on will appear in the "Configure Add-ons" section.
 
 .. _s3:
 
@@ -36,8 +45,7 @@ Configuring Amazon S3
 *********************
 **Purpose:** Connecting to Amazon S3 allows users to create a two way connection between the OSF and Amazon S3.
 
-Users who choose to connect their Amazon S3 account to the OSF can check appropriate box. They are presented with a
-modal::
+Clicking the **Enable** link presents the user with a modal::
 
     Amazon S3 Add-on Terms
     Function | Status
@@ -144,8 +152,7 @@ Configuring Box
 ***************
 **Purpose:** Connecting to Box allows users to create a two way connection between the OSF and Box.
 
-Users who choose to connect their Box account to the OSF can check appropriate box. They are presented with a
-modal::
+Clicking the **Enable** link presents the user with a modal::
 
     Box Add-on Terms
     Function | Status
@@ -229,8 +236,7 @@ Configuring Dataverse
 *********************
 **Purpose:** Connecting to Dataverse allows users to create a two way connection between the OSF and Dataverse.
 
-Users who choose to connect their Dataverse account to the OSF can check appropriate box. They are presented with a
-modal::
+Clicking the **Enable** link presents the user with a modal::
 
     Dataverse Add-on Terms
     Function | Status
@@ -331,10 +337,9 @@ Configuring Dropbox
 *******************
 **Purpose:** Connecting to Dropbox allows users to create a two way connection between the OSF and Dropbox.
 
-Users who choose to connect their Dropbox account to the OSF can check appropriate box. They are presented with a
-modal::
+Clicking the **Enable** link presents the user with a modal::
 
-    Google Drive Add-on Terms
+    Dropbox Add-on Terms
     Function | Status
     Permissions: Making an OSF project public or private is independent of Dropbox privacy. The OSF does not alter the permissions of linked Dropbox folders.
     View / download file versions: Dropbox files and their versions can be viewed/downloaded via OSF.
@@ -416,8 +421,7 @@ Configuring figshare
 
 Refer to this `Google Doc <https://docs.google.com/document/d/1T8c69at_0X2WKficbYEV0z7bfM3jNFoWkYtmNmZjVPg/edit#heading=h.f17owbri8qc3>`_ for information on the allowable figshare actions.
 
-Users who choose to connect their figshare account to the OSF can check appropriate box. They are presented with a
-modal::
+Clicking the **Enable** link presents the user with a modal::
 
     figshare Add-on Terms
     Function | Status
@@ -500,8 +504,7 @@ Configuring GitHub
 ******************
 **Purpose:** Connecting to GitHub allows users to create a two way connection between the OSF and GitHub.
 
-Users who choose to connect their GitHub account to the OSF can check appropriate box. They are presented with a
-modal::
+Clicking the **Enable** link presents the user with a modal::
 
     GitHub Add-on Terms
     Function | Status
@@ -673,8 +676,7 @@ Configuring Google Drive
 ************************
 **Purpose:** Connecting to Google Drive allows users to create a two way connection between the OSF and Google Drive.
 
-Users who choose to connect their Google Drive account to the OSF can check appropriate box. They are presented with a
-modal::
+Clicking the **Enable** link presents the user with a modal::
 
     Google Drive Add-on Terms
     Function | Status
@@ -819,8 +821,7 @@ Configuring Mendeley
 ********************
 **Purpose:** Connecting to Mendeley allows users to create a two way connection between the OSF and Mendeley.
 
-Users who choose to connect their Mendeley account to the OSF can check the appropriate box. They are presented with a
-modal::
+Clicking the **Enable** link presents the user with a modal::
 
     Mendeley Add-on Terms
     Function | Status
@@ -902,8 +903,7 @@ Configuring Zotero
 ******************
 **Purpose:** Connecting to Zotero allows users to create a two way connection between the OSF and Zotero.
 
-Users who choose to connect their v account to the OSF can check appropriate box. They are presented with a
-modal::
+Clicking the **Enable** link presents the user with a modal::
 
     Zotero Add-on Terms
     Function | Status
