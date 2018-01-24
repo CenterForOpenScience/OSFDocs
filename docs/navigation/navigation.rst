@@ -49,5 +49,3 @@ Links included when logged in
     *OSF Support: Clicking this link takes the user to the support page https://osf.io/support/.
     *Settings: Clicking this link takes users to their user settings page https://osf.io/settings/.
     *Log out: Clicking this link logs the user out of their OSF account and takes them to the OSF homepage, where a confirmation message will appear at the top of the page informing them that they have logged out succesfully. URL is https://osf.io/goodbye/.
-
-

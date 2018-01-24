@@ -3,6 +3,7 @@
 The project settings page shows different options for contributors with different permissions.
 
 If the user is an admin or a read+write contributor on the project, there are five sections on the "Settings" page that they can configure: "Project/Component," "Select Add-ons," "View-Only Links," "Configure Add-ons" (only shows if add-ons are connected),"Wiki," "Commenting," "Email Notifications," and "Redirect Link."
+
 The "Settings" page has a sidebar that the user can use to navigate through the sections of the page.
   
 Additional sections are shown if the project is public or if add-ons are configured.
@@ -69,7 +70,6 @@ Leaving the page without cancelling or clicking "Save Changes" produces a browse
 
   Confirm Navigation. There are unsaved changes in your project settings. Are you sure you want to leave this page? [Stay on this page][Leave this page]
 
-
 Only admins can delete a project or a component. When the admin clicks the **Delete project** or **Delete component** button, the following modal appears::
   
     Are you sure you want to delete this project/component?
@@ -96,7 +96,6 @@ If a user clicks the "Delete project/component" button when the project or compo
     Any child components must be deleted prior to deleting this project.
 
 The user must delete the child components prior to deleting a parent project or component.
-
 
 Select Add-ons
 ------------
