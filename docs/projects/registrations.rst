@@ -9,8 +9,7 @@ registration date and time, contributors, and contributions, in the same format 
 
 When no registrations have been made, non-contributors see text explaining this::
 
-    There have been no completed registrations of this project. Only project administrators can initiate registrations. For a list of the most viewed and most recent public registrations
-    on the Open Science Framework, click here.
+    There have been no completed registrations of this project. Only project administrators can initiate registrations. For a list of the most viewed and most recent public registrations on the Open Science Framework, click here.
 
 The link provided sends the user to the :ref:`Public Activity page <public-activity>`.
 
