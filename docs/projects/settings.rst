@@ -32,7 +32,7 @@ If the user is an admin on a parent project, but is not a contributor on a compo
 If the contributor on the parent project has read or read+write permissions, the component's "Settings" tab will not be visible.
 
 Project/Component
------------
+-----------------
 **Purpose:** The "Project" or "Component" section allows the user to update the category, edit the title or description, or delete the project/component.
 
 The "Project" or "Component" section is formatted in the following way::
@@ -69,6 +69,9 @@ When the user makes changes to the title and/or description and clicks **Save Ch
 Leaving the page without cancelling or clicking "Save Changes" produces a browser warning::
 
   Confirm Navigation. There are unsaved changes in your project settings. Are you sure you want to leave this page? [Stay on this page][Leave this page]
+  
+Deleting projects/components
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Only admins can delete a project or a component. When the admin clicks the **Delete project** or **Delete component** button, the following modal appears::
   
@@ -89,16 +92,55 @@ If the admin types the wrong word into the textbox, a red, dismissable alert app
 
     Verification failed
     Strings did not match
+    
+Deleting a project with nested components
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If a user clicks the "Delete project/component" button when the project or component has children, a red, dismissable alert appears in the top right of the "Settings" page::
+A user must be an admin on the top-level project and all nested components in order to bulk delete them. When a user wants to delete a project or component that has nested children, the following modal appears upon clicking the **Delete project** button::
+  
+    Delete Project
+    It looks like your project has components within it. To delete this project, you must also delete all child components
+    Select: All components
+    [list of components]
+    [Continue]
 
-    Error
-    Any child components must be deleted prior to deleting this project.
+Below the "All components" link is a list of the nested components. Clicking this link selects all components in the list. Alternatively, each component has a check box to its left that the user can select. However, all components, including the top-level project, must be selected in order for the parent project/component to be deleted. If a component is left unchecked, the blue "Continue" button will be grayed out and unclickable. 
 
-The user must delete the child components prior to deleting a parent project or component.
+If a user is not an admin on all of the nested components, the checkboxes next to the components where they are *not* an admin will be disabled. If a component is private, and they are not a contributor at all, a closed lock symbol will appear to the left of the component name, and the component name will read "Private Project." When a contributor is a non-admin on any of the listed components, clicking the **All components** link will select only the top-level project (and any components where they *are* an admin). If the user hovers over a listed component where they are not an admin, the following tooltip appears::
+  
+    You must have admin permissions on this component to be able to delete it.
+
+If the user is an admin on all of the nested components, and they select all checkboxes in the modal, the "Continue" button will become enabled, and the user can click **Continue**.
+
+After clicking **Continue**, the "Delete Project and Components" modal will appear::
+  
+    Delete Project and Components
+    The following project and components will be deleted
+    [list of projects/components]
+    Please ntoe that deleting your project will erase all your project data and this process is IRREVERSIBLE.
+    Type the following to continue: (confirmation word)
+    [Back][Cancel][Delete]
+    
+Clicking **Back** takes the user to the previous "Delete Project" modal. Clicking **Cancel** closes the "Delete Project and Components" modal and cancels the delete process.
+
+If the user enters a word that does not match the confirmation word, or if the user clicks **Delete** without providing the confirmation word, the modal closes, the project/components do not get deleted, and the following red, dismissable error message appears in the top right of the page::
+  
+    Verification failed
+    Strings did not match
+
+When the user enters the confirmation word into the text field, and clicks **Delete**, a temporary loading message appears::
+  
+    Deleting project
+
+This message gets replaced by the following dismissable modal::
+  
+    Project has been successfully deleted.
+    [OK]
+
+Clicking **OK** takes the user to their dashboard.
 
 Select Add-ons
-------------
+--------------
 See :ref:`the information about add-ons here <add-ons>`.
 
 Add-ons
@@ -281,7 +323,7 @@ After several seconds, the drop-down returns.
 
 .. _redirect link:
 Redirect Link
-*************
+-------------
 **Purpose:** Adding an redirect link allows users to redirect project visitors to the provided URL.  
 
 To add a redirect link to a project or component, the user can either scroll to the bottom of the "Settings" page, or click **Redirect Link** from the left sidebar.

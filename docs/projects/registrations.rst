@@ -28,7 +28,7 @@ Admins see an additional "New Registration" button.
 Only contributors can comment or view comments on a registration.
 
 Registration Overview
----------------
+---------------------
 **Purpose:** A registration's Overview shows the state of the project at the time of registration and links to the registration form.
 
 The Registration Overview has all the components of a :ref:`Project Overview <overview>`, including a line that indicates when the registration was registered in the top left of the page where the rest of the metadata is::
@@ -58,7 +58,7 @@ The blue Comments icon appears in the top right of the registration Overview pag
 
 
 Creating a Registration
------------------
+-----------------------
 
 **The following describes creating a registration from the project page. Subsequent documentation covers the Preregistration Challenge workflow**
 
@@ -111,7 +111,7 @@ When visiting the :ref:`Project Organizer <organizer>`, a project or component t
 written to the right of its title.
 
 Registration failed
------------------
+--------------------
 Occasionally, a registration will fail. When a registration fails, the following modal will appear::
 
     Registration failed
@@ -130,6 +130,7 @@ Clicking **Preregister** takes the non-user and logged-out user to the account r
   
     Preregistration Challenge
     Please login to the Open Science Framework or create a free account to continue.
+
 
 The full "Prereg Challenge" landing page appears as follows::
   
@@ -170,9 +171,97 @@ Clicking "Submit for review" pops up a modal with a Notice of Consent for the Pr
 
     Your submission has been received. You will be notified within ten business days regarding the status of your submission. If you have questions, you may contact us at prereg@cos.io. 
 
-The preregistration appears in the "Draft registrations" tab with the label "Pending Review." There are buttons to [Preview] or [Delete] the registration. Clicking [Preview] opens the preview of the registration, with a button to go [Back] to the Registrations tab. Clicking [Delete] pops up a modal:: 
-    
+The preregistration appears in the "Draft registrations" tab with the label "Pending Review." There are buttons to [Preview] or [Delete] the registration. Clicking [Preview] opens the preview of the registration, with a button to go [Back] to the Registrations tab. Clicking [Delete] pops up a modal::
+
     Are you sure you want to delete the registration? [Cancel][Delete]
+
+Accepted Preregistrations
+-------------------------
+**Purpose**: Accepted preregistrations will be eligible for the $1,000 prize.
+
+If the reviewers of the preregistrations accept the preregistration, and all of the admins on the preregistration click the approval link in the confirmation email, the user receives the following email::
+  
+  Subject: Your research plan has been registered and accepted for the Preregistration Challenge
+
+  Dear [first name] [last name],
+
+  We are happy to let you know that your research plan has been verified for completeness and registered on the OSF at the following URL: [GIVE COMPLETE URL].  
+
+  What’s Next?
+
+  Reach out to others: The Prereg Challenge seeks to change how research is conducted for the better. Take part in the movement by getting the word out and telling your peers about why this practice matters.. Consider emailing your department, your professional society, or other outlets. Let them know you preregistered your research and tell them to check out the Prereg Leaderboard [link]. Share it now!
+  Share on social media: Tell your friends on <twitter> <LinkedIn> <Facebook> or <Email>
+
+  Conduct your study: It’s time to start your study and its analysis exactly as specified in your preregistration. 
+
+  Publish your study: In order to remain eligible for the Preregistration Challenge, any deviations from your preregistration (e.g. sample size, timing, analysis) must be documented and appear in the final publication. Any additional analyses must be noted separately from the registered, confirmatory, hypothesis testing analyses. Such new analyses must be described as hypothesis generating or exploratory tests. You must also refer to your preregistration in the publication by using its URL [GIVE COMPLETE URL]. Publication must occur in an eligible journal.
+
+  Submit your article for review: We will review your final, published article once you submit it on the OSF. We will verify that your study and its analyses were conducted as specified in your preregistration. In order to avoid any unintended oversights, please reach out to us (prereg@cos.io) and refer to our guidelines and FAQ on our website when writing up your results.
+
+  Receive the prize! $1,000 rewards will be distributed to eligible entrants according to the schedule on our website.
+
+  Thank you for entering the Preregistration Challenge. Feel free to submit another research plan at any time.
+
+  Sincerely,
+  The team at the Center for Open Science
+
+
+  Action via Twitter: tweet: “I just took the #PreregChallenge on the @OSFramework to improve rigor. You can too https://googleQBvsfb.  #openscience”
+
+  Action via Linkedin: “I just took the Preregistration Challenge hosted by the Center for Open Science. It’s an easy way to add rigor and transparency to my research, and you can do it too: https://google/QBvsfb.” 
+
+  Action via Facebook: “I just took the Preregistration Challenge hosted by the Center for Open Science. It’s an easy way to add rigor and transparency to my research, and you can do it too: https://google/QBvsfb.” 
+
+  Action via email: “Hello, I just wanted to let you know about this initiative at the Center for Open Science. They are advocating for preregistration, which is an easy way to add rigor and transparency to research. They want to increase awareness about its benefits to the research community and have funds to reward $1000 prizes to researchers who publish the results of a preregistered study. See where our university ranks in the number of preregistered studies: https://osf.io/x5w7h/wiki/06%20LeaderBoard/. You can learn more and start your preregistration at https://goo.gl/QBvsfb.” 
+
+
+Rejected Preregistrations
+-------------------------
+**Purpose**: If the research is non eligible for the Prereg Challenge, the user is notified with a chance to make changes and resubmit.
+    
+If the reviewers of the preregistration reject the preregistration and provide feedback, the user receieves the following eamil::
+  
+  Dear ${user.fullname},
+
+  Thank you for submitting your research plan to the Preregistration Challenge. 
+
+  Reviewers have made comments on your plan. We require that you address the comments found on ${draft_url} and resubmit. 
+
+  Each submission must pass this review process in which the statistical methods of the proposed study and its analyses are checked for completeness and adherence to Preregistration Challenge eligibility requirements (https://cos.io/prereg). This review does not assess the substance of the research, or the validity of the research design or statistical methodology. This review has no impact on the independent editorial decisions of any journal.
+
+  Prereg Challenge administrators and reviewers review the submitted study design and analysis descriptions, and determine whether all question fields are answered with enough detail to fully pre-specify the design and analysis plan, and follow the eligibility requirements. See https://osf.io/h4ga8/ to learn more about the guidelines that reviewers use when evaluating your submitted plans.
+
+  Sincerely,
+
+  The team at the Center for Open Science
+
+  Center for Open Science
+
+  210 Ridge McIntire Road, Suite 500, Charlottesville, VA 22903-5083
+
+  Privacy Policy: https://github.com/CenterForOpenScience/cos.io/blob/master/PRIVACY_POLICY.md
+  
+The user can click the link in the email to be taken to their draft preregistration form. Alternatively, they can access their draft by navigating to their project and clicking the "Registrations" tab> "Draft Registrations." The draft is listed on the page in the following format::
+  
+  Prereg Challenge
+  Initiated by: [user name]
+  Started: [day month date year][hh:mm:ss] GMT -0x00 (XXX)
+  
+A rejected preregistration will have a message highlighted in yellow at the bottom of the listed draft that reads::
+  
+    Unseen Comments
+
+At the bottom of the pages in the form that have feedback, there will be a "Comments" box where the reviewers have provided feedback::
+  
+  Comments
+  (Comments are not included in your preregistration and are not made public)
+
+In the "Comments" section is a text box with the reviewer's comments. The first text in the box reads::
+  
+    The Prereg Admin said...
+    
+Which is then followed by their commentary.
+
 
 Embargos
 ------------
@@ -195,7 +284,7 @@ Below the "Registration Choice" header is a drop-down menu from which the user d
     [Enter registration into embargo]
 
 Registrations with No Embargo
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Registrations that have no embargo are public immediately after confirmation.
 
 If the user selects "Make registration public immediately" the registration is never private—regardless of the project's
@@ -260,7 +349,7 @@ Prior to a registration's approval, the privacy settings from the registered pro
 the entirety of the registration is public.
 
 Registrations with an Embargo
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Embargo periods allow the user to keep a registration private for a limited period of time.
 
 Selecting "Enter registration into embargo" opens another text field below the dropdown titled "Embargo end date." Clicking
@@ -338,7 +427,7 @@ After an embargo ends, the registration and its components are made public.
 The cron job runs to end an embargo at midnight.
 
 End embargo early
----------------
+-----------------
 If an embargoed registration is already approved, it may be made public by the project administrators. Public components or projects cannot be made private. 
 
 On the registration page, a "Make Public" button appears. Clicking it generates the following modal::
@@ -499,7 +588,7 @@ The OSF begins all DOIs and ARKs with the same number, followed by "/osf.io/GUID
     DOI 10.17605/OSF.IO/GUID | ARK c7605/osf.io/GUID
 
 Registering with Add-ons
-----------------
+------------------------
 **Purpose:** The OSF can archive the contents of add-ons to include them in registrations.
 
 Add-on contents can often be copied and included in registrations, but certain limits affect how complete this action is.
@@ -528,3 +617,28 @@ External Links
 The user can create external links to both registrations (public and embargoed) and projects/components alike. If an external link points to a project that is registered, the link will point to the project and not the registration. In other words, if the user has Project A and creates an external link to Project B, and registers project B, the external link will still point to Project B and not its registration.
 
 To point a project or component to a registration, the user will need to enter the registration's URL into the "External Link" field when :ref:`configuring the external link <external link>`. If a user has access to an embargoed registration, the user can still create an external link that directs to it.
+
+
+Adding institutional affiliations to registrations
+--------------------------------------------------
+**Purpose**: To allow registrations to have affiliations and/or to have different affiliations from the corresponding project. 
+
+Only read+write and admins can add and remove registration affiliations. Read+write can only add/remove affiliations with which they are affiliated.
+ 
+By default, registrations inherit the corresponding project's affiliations. If the project is not affiliated, the registration is also not affiliated by default.
+
+To add an affiliation to a registration, the user clicks the **Settings** tab in the registration's navigation bar. 
+
+On the "Settings" page there is a "Project Affiliation / Branding" button in the left side bar menu below the "Withdraw" option. 
+
+Below the "Withdraw Registration" section of the "Settings" page is the "Project Affiliation / Branding" section with the following language::
+  
+  Projects can be affiliated with institutions that have created OSF for Institutions accounts. This allows:
+  institutional logos to be displayed on public projects
+  public projects to be discoverable on specific institutional landing pages
+  single sign-on to the OSF with institutional credentials
+  FAQ [links to help.osf.io]
+
+Below this text block are a list of institutions with which the admin or read+write user are affiliated. To the right of the institution is a greed "Add" button. Clicking **Add** adds the institution as an affiliation to the registration. The green "Add" button turns into a red "Remove" button upon click. Clicking the red "Remove" button removes the affiation, and the button turns back into the green "Add" button.
+  
+The institutioal logo will appear in the top left of the registration "Overview" page.

@@ -584,6 +584,89 @@ Clicking "Disconnect" removes the dropdown and connected repo information. The "
 that reads "Import Account from Profile." Alternatively, the user can uncheck the add-on from the "Select Add-ons" list and save their
 changes.
 
+.. _gitlab:
+Configuring GitLab
+******************
+**Purpose:** Connecting to GitLab allows users to create a two way connection between the OSF and GitLab.
+
+Users who choose to connect their GitLab account to the OSF can check appropriate box. They are presented with a
+modal::
+
+  GitLab Add-on Terms
+  Function | Status
+  Permissions	| Making an OSF project public or private is independent of making a GitLab repo public or private. The OSF does not alter the permissions of linked GitLab repos.
+  View / download file versions |	GitLab files and their versions can be viewed/downloaded via OSF.
+  Add / update files | Adding/updating files in the project via OSF is not implemented yet.
+  Delete files	| Deleting files via OSF is not implemented yet.
+  Logs | OSF does not keep track of changes made using Gitlab directly.
+  Forking	| Forking a project or component does not copy GitLab authorization unless the user forking the project is the same user who authorized the GitLab add-on in the source project being forked.
+  Registering	| GitLab content will be registered, but version history will not be copied to the registration.
+  This add-on connects your OSF project to an external service. Use of this service is bound by its terms and conditions. The OSF is not responsible for the service or for your use thereof.
+  This add-on allows you to store files using an external service. Files added to this add-on are not stored within the OSF.
+  [Cancel][Confirm]
+  
+On this modal, users can click “Cancel” to cancel this action and close the modal or click “Confirm” to continue configuring GitLab.
+
+If the user clicks **Confirm** the modal closes, and GitLab appears in the "Configure Add-ons" section. If the user does not have GitLab connected in their user Settings, a "Connect Account" link is listed beside GitLab. Clicking this link brings up the following modal::
+  
+  Connect a GitLab Account
+  GitLab Repository 
+  [menu]
+  [Cancel] [Save]
+  
+The text inside the menu reads: Select a GitLab repository. Clicking inside this menu shows two options::
+
+  gitlab.com
+  Other (Please specify)
+  
+Clicking **Cancel** closes the modal. Clicking **Save** without choosing a repository causes a red error message to appear below the menu::
+  
+    Please select a GitLab repository.
+
+Clicking **gitlab.com** causes a second field to apepar on the right side of the modal::
+  
+    Personal Access Token (Get from GitLab)
+    [field]
+
+Clicking **Save** without entering personal access token causes a red error message to appear below the repository menu::
+    
+    Please enter your Personal Access Token.
+
+Clicking the **Get from GitLab** link takes the user to the GitLab "Sign in" page. 
+If the user is already signed in to GitLab, clicking the link takes them to their "Personal Access Tokens" page.
+
+When the user enters their token into the modal and clicks **Save**, the modal closes, and the following one opens::
+  
+  Import GitLab Account?
+  Are you sure you want to link your GitLab account with this project?
+  [Cancel][Import]
+
+Clicking **Cancel** closes the modal. Clicking **Import** closes the modal, the page reloads, and the user's GitLab account is imported into the project. A drop-down menu appears with the user's GitLab repositories in the "Configure Add-ons" section::
+  
+  GitLab authorized by Rebecca Rosenblatt Disconnect Account
+  Current Repo:
+  [menu] [Save]
+  
+After choosing a repository from the menu, the user can click **Save**. A green confirmation message appears below the "Configure Add-ons" section::
+  
+  Settings updated
+
+After importing their account, the user will see a red "Disconnect Account" link to the right of the drop-down section. 
+
+Clicking this link opens a modal::
+
+  Disconnect GitLab Account?
+  Are you sure you want to remove this GitLab account?
+  [Cancel][Disconnect]
+
+Clicking "Disconnect" removes GitLab and connected GitLab information. The "Disconnect Account" link is replaced by a link
+that reads "Import Account from Profile." Alternatively, the user can uncheck the add-on from the "Select Add-ons" list and save their
+changes.
+
+The user can change the folder connected to the project. Below the GitLab section below "Configure Add-ons", there is a menu with the available repos with a green "Save" button the the right. To select a new folder, the user clicks inside the repo menu, selects a different folder, then clicks **Save**. A confirmation message appears below the menu::
+  
+   Settings updated
+
 .. _drive:
 
 Configuring Google Drive
@@ -667,6 +750,68 @@ To disconnect Google Drive, the user clicks the red "Disconnect Account" link. T
 Clicking "Disconnect" removes the table and connected folder information. The "Disconnect Account" link is replaced by a link
 that reads "Import Account from Profile." Alternatively, the user can uncheck the add-on from the "Select Add-ons" list and save their
 changes.
+
+
+.. _onedrive:
+
+Configuring OneDrive
+**Purpose**: Connecting to OneDrive allows users to create a two way connection between the OSF and OneDrive.
+
+Users who choose to connect their Mendeley account to the OSF can check the appropriate box. They are presented with a
+modal::
+  
+  OneDrive Add-on Terms
+  Function	| Status
+  Permissions:	Making an OSF project public or private is independent of OneDrive privacy. The OSF does not alter the permissions of linked OneDrive folders.
+  View / download file versions	OneDrive files and their versions can be viewed/downloaded via OSF. OneNote files are unexportable and cannot be downloaded or viewed.
+  Add / update files	The OneDrive add-on is read-only.
+  Delete files	The OneDrive add-on is read-only.
+  Logs	OSF keeps track of changes you make to your OneDrive add-on configuration. It does not track changes to OneDrive content.
+  Forking: Forking a project or component does not copy OneDrive authorization unless the user forking the project is the same user who authorized the OneDrive add-on in the source project being forked.
+  Registering	OneDrive content will be registered, but version history will not be copied to the registration. OneNote files are unexportable and will not be archived.
+
+  This add-on connects your OSF project to an external service. Use of this service is bound by its terms and conditions. The OSF is not responsible for the service or for your use thereof.
+  This add-on allows you to store files using an external service. Files added to this add-on are not stored within the OSF.
+
+On this modal, users can click “Cancel” to cancel this action and close the window or “Confirm” to continue configuring OneDrive.
+
+After confirming, OneDrive will appear in the "Configure Add-ons" section of the page. If the user has never connected OneDrive to their project or account, they will see a blue "Connect Account" link to the right of OneDrive. Clicking **Connect Account** takes the user
+to the Microsoft "Sign In" page, where they will need to enter their Microsoft username and password. After entering the login credentials, they will be taken back to their OSF project's "Add-ons" page, where a list of their OneDrive folders will be listed
+in the "Configure Add-ons" section, and a red "Disconnect Account" link appears to the right of OneDrive. 
+
+The table has two columns—"Folders" and "Select." Under "Folders" is a list of all top level OneDrive folders the user has. Folders can be expanded and collapsed.
+Each folder has a corresponding radio button in the "Select" column. When the use selects a folder, text appears at the bottom of the table::
+  
+    Connect "[folder name]"?
+
+Two buttons, "Cancel" and "Save" appear below the table. Clicking **Cancel** removes the two buttons, while the folder remains selected.
+
+Clicking **Save** connects the selected folder to the project, and a green inline confirmation message appears below the table, replacing the buttons::
+
+    Successfully linked "[folder title]". Go to the Files page [links to https://osf.io/GUID/files/] to view your content.
+
+To disconnect OneDrive, the user clicks the red "Disconnect Account" link. This opens a modal::
+  
+  Disconnect Microsoft OneDrive Account?
+  Are you sure you want to remove this Microsoft OneDrive account?
+  [Cancel][Disconnect]
+
+Clicking **Cancel** keeps OneDrive connected. Clicking **Disconnect** removes the table and connected folder information, and a temporary inline confirmation message appears below OneDrive::
+  
+    Disconnected Microsoft OneDrive.  
+    
+The "Disconnect Account" link is replaced by a link that reads "Import Account from Profile." Alternatively, the user can uncheck the add-on from the "Select Add-ons" list and save their
+changes.
+
+
+The user can change the folder connected to the project. In the "OneDrive" section below "Configure Add-ons", there is a blue "Change" button. Clicking **Change** opens a table that displays the OneDrive folders. The table
+has two columns "Folders" and "Select". Below "Select" is a column of radio buttons. To change the folder, the users selects a new folder, which causes "Cancel" and "Save" buttons to appear at the bottom of the page. Above
+these buttons is a blue message::
+  
+    Connect "[folder name]"
+    
+Clicking **Save** changes the folder.
+
 
 .. _mendeley:
 
@@ -909,6 +1054,29 @@ After confirming, the files are removed from the OSF and Amazon S3.
 
 Files from other storage add-ons can be moved into Amazon S3 by dragging and dropping. Files from Amazon S3 can be moved
 into other add-ons as well.
+
+Viewing OneDrive Files
+**********************
+**Purpose**: The file tree and file details pages allow users to view and interact with OneDrive files. The connection between OneDrive and the OSF is read-only.
+
+OneDrive appears in in the file tree as a storage provider that is on the same level as OSF Storage::
+
+    OneDrive: "[Folder name]"
+
+File and folder names from the connected OneDrive folder are shown in the file tree on the OSF project.
+
+Selecting OneDrive or a OneDrive subfolder in the file tree shows a "Download as zip" button in the toolbar. Clicking **Download as zip** downloads the entire
+contents of the folder as a zip folder.
+
+If a OneDrive file is selected by a user, "Download," "View," and "View on OneDrive" buttons appear in the toolbar. Clicking **Download** downloads the file. Clicking **View** takes the user to "File Detail" page. 
+Clicking **View on OneDrive** opens the file in OneDrive where the user can view it. 
+
+On the "File Detail" page, the file is rendered in the default "view" pane. A blue "Download" and "View" button appears in the toolbar, along with a "Revisions" button. 
+Clicking **Download** downloads the file. The "View" and "Revisions" buttons are toggled, where "View" is selected by default. Clicking **Revisions** highlights the
+button in blue and the "View" button in white, and the revision history for the file replaces the rendered file. The date of the revision is available, and a "Download" button is shown on the right side of the pane.
+
+
+Files from OneDrive can be dragged annd dropped into other storage providers, but files from other storage providers cannot be added to OneDrive. 
 
 Viewing Box Files
 *****************
@@ -1421,6 +1589,53 @@ of the page for all contributors::
 
     Warning: This OSF component is private, but the GitHub repo [repo name] is public. The files in this GitHub repo can
     be viewed on GitHub here.
+    
+    
+GitLab
+******
+**Purpose**: The file tree and file details pages allow users to view and interact with GitLab files. The connection with GitLab is read-only.
+
+GitLab appears in in the file tree as a storage provider. It is on the same level as OSF Storage::
+
+    GitLab: [repo name] / (branch)
+
+File names from the connected GitLab repo are shown in the file tree on the OSF.
+
+Selecting the GitLab repo shows "Branch" menu, a "Download" button, and an "Open" button in the toolbar. The user can click inside the "Branch" menu
+to select a branch from the repo. Clicking **Download** downloads the connected folder as a zip. Clicking **Open** opens the repo in GitLab.
+
+The "Download" and "View" buttons appear when any user selects a GitLab file. Clicking **Download** downloads the contents of the repo as a zip file. Clicking **View** opens the file in the "File Details" page.
+No link is provided to view the file on GitLab. 
+
+Files from other storage add-ons cannot be moved into GitHub. Files from GitHub can be copied into other add-ons by dragging
+and dropping, however.
+
+If the project is public, but the connected repo is private, a blue banner appears at the top of the "File Details" page::
+  
+    Warning: This OSF project is public, but the GitLab repo beccarosenblatt / Data is private. Users can view the contents of this private GitLab repository through this public project.
+  
+On the "File Detail" page, the file is rendered in the default "view" pane. A blue "Download" and "View" button appears in the toolbar, along with a "Revisions" button. 
+Clicking **Download** downloads the file. The "View" and "Revisions" buttons are toggled, where "View" is selected by default. Clicking **Revisions** highlights the
+button in blue and the "View" button in white, and the revision history for the file replaces the rendered file. The date of the revision is available, and a "Download" button is shown on the right side of the pane.
+
+If the project is public, a "Share" button will also be available in the toolbar. The "Share" tab provides a URL and a button to copy the URL to the user's clipboard. Below the URL field
+are Twitter, Facebook, LinkedIn, and email buttons to share the URL on social media. The "Embed" tab provides two entries::
+  
+    Dynamically Render iFrame with JavaScript (with the associated javascript in a box below)
+    
+    Direct iFrame with Fixed Height and Width (with the assocated HTML in a box below)
+
+If the GitLab repo connected is public, but the OSF project is private, a blue non-dismissable banner is visible at the top
+of the page for all contributors::
+
+    Warning: This OSF project is private, but the GitLab repo beccarosenblatt / Project_1 is public. The files in this GitLab
+    repo can be viewed on GitLab here [links to the GitLab repo on GitLab].
+    
+
+    
+    
+    
+    
 
 Viewing Google Drive Files
 **************************
@@ -1498,16 +1713,7 @@ No formatting options are available.
 Selecting the "Revisions" button on the detail page opens the revisions pane. All saved versions of the file are listed.
 The version ID and the date of the commit are available. A download button is shown on the right side of the pane.
 
-Viewing External Link
-*********************
-**Purpose:** Users can connect a project to an external link. They are prompted to redirect to this link upon entering the OSF project. 
 
- Once this add-on is configured, visitors to the project will immediately receive a window that reads::
-
-    This project contains a forward to URL
-    [Cancel] [Redirect]
-
-Canceling will cause the user to enter the OSF project. Clicking the link or "Redirect" will replace the current tab with the external link. 
 
 Viewing Mendeley Content
 ************************
