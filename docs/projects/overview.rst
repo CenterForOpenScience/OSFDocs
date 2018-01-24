@@ -322,8 +322,7 @@ The Recent Activity widget appears below the Tags widget. Below the panel title,
 
 Times are displayed in local time, and the correct offset is indicated in the above text.
 
-Below this is a list of all logged actions on the project/component, its children, and registrations displayed in chronological order with the most recent
-action listed at the top. Actions are listed in two columns—the left shows the date and time (YYYY-MM-DD HH:MM AM/PM).
+Below this is a list of all logged actions on the project/component, its children, and registrations displayed in chronological order with the most recent action listed at the top. Actions are listed in two columns—the left shows the date and time (YYYY-MM-DD HH:MM AM/PM).
 Hovering over a time shows a tooltip with the date and time in UTC.
 
 In the right column is a description of the log, first listing the user who committed the action, then the action and the
