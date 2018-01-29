@@ -51,6 +51,10 @@ The user will receive an email titled "Your fork has completed", and the body re
 
 Clicking the link in the email takes the user to their forked project.
 
+If a fork fails, the following email is sent to the user::
+  
+    An error has occurred, and the fork of <node title> on The Open Science Framework was not successfully created. Please log in and try this action again. If the problem persists, please email support@osf.io.
+
 "Overview" page of forked projects
 ----------------------------------
 A fork's "Overview" page is the same as a regular project "Overview" page, except that an additional line of metadata
