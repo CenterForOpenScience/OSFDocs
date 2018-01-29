@@ -211,21 +211,29 @@ Wiki
 
 If the user is an admin or read+write contributor, a checkbox appears along with the text::
     
-    Enable the wiki in [project/component name]. 
+    Enable the wiki in <project>. 
 
-If the project is private, and/or the user is a read+write contributor, text below reads::
+When the user selects the checkbox, the following green confirmation message appears below it::
   
-   To allow all OSF users to edit the wiki, [project/component title] must be public and the wiki enabled.
+    Wiki Enabled.
 
-If the project is public and the user is an admin, the word "Configure" appears below the checkbox in large text, followed by::
+The page refreshes, and a "Configure" section appears below the checkbox. This section is always visible when the box is checked.
 
-    Control who can edit the wiki of [project/component name]:
+Below this section is text that reads::
+  
+    Control who can edit your wiki. To allow all OSF users to edit the wiki, <project> must be public.
 
-The project tree is displayed below these instructions. All project and component titles link to their "Overview" pages.
-Below each public project/component in the tree is a row titled "Who can edit." Right justified in this row is a drop-down that allows
-admins to indicate who can edit that project/component's wiki pages.
+The project tree is displayed below these instructions. The project and any component titles link to their "Overview" pages. If the read+write contributor is not a contributor on the component(s), they cannot see the component name in the list. It simply reads "Private Project" without linked text. The parent project is expanded by default, and any child components are collapsed.
 
-Components are collapsed by default, meaning their "Who can edit" rows are not visible until expanded.
+To the right of each project/component level is a drop-down menu to select editing privelages. If the project is private, this menu is disabled. If the user scrolls over the menu, their cursor carries the prohibition sign.
+
+If the project/component is private, and the user is an admin, the following line appears below the project/component in the file tree::
+  
+    This feature is disabled for wikis of private [projects][components].
+
+If the user has read+write access, the following line appears below the project in the file tree, whether the project is public or private::
+  
+    Only admins may change permissions of this wiki.
 
 The drop-down options are: "Contributors (with write access)" or "All OSF users." By default, "Contributors (with write access)" is
 selected. Changing the option to "All OSF users" means that any logged in user can visit the wiki pages of the identified
