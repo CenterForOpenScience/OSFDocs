@@ -5,6 +5,8 @@ Project Overviews are the landing page for a project when navigating from :ref:`
 :ref:`public profiles <profiles>`, or the :ref:`"My Dashboard" <my-dashboard>` page. Visitors to a public project can view the overview
 as can contributors on a public or private project.
 
+Projects and components contain metatags in order to make the metadata available for export (e.g. Zotero).
+
 Project Navigation Bar
 --------------
 **Purpose:** The Project Navigation Bar allows users to navigate between the settings and information of a project, as well
