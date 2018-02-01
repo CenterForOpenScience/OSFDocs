@@ -120,12 +120,9 @@ Wiki Widget
 -----------
 **Purpose:** The Wiki widget provides a preview of wiki contents.
 
-The first widget is the Wiki widget. In the upper right corner of the widget is a button that links the user to the Wiki page.
-When the :ref:`Home wiki page <wiki>` has not been edited to include content, contributors with read+write or admin priviliges see "Add important information, links, or images here to describe your project" displayed inside the panel. If the user has created additional
-wiki pages with content, but has no content on the Home wiki page, the panel still displays "Add important information, links, or images here to describe your project" but has a "Read More" link below this line that, when clicked, takes the user to the wiki. If the project
-is being viewed by a non-contributor and the Home wiki has no content, then the widget is not displayed at all.
+The first widget is the Wiki widget. In the upper right corner of the widget is a button that links the user to the Wiki page. When the :ref:`Home wiki page <wiki>` has not been edited to include content, contributors with read+write or admin priviliges see "Add important information, links, or images here to describe your project" displayed inside the panel. If the user has created additional wiki pages with content, but has no content on the Home wiki page, the panel still displays "Add important information, links, or images here to describe your project." If the project is being viewed by a non-contributor and the "Home" wiki page has no content, then the widget is not displayed at all.
 
-If there is content in the home wiki page, users and non-contributors will the content as well as a "Read More" link at the bottom of the wiki widget. This link directs the user to the wiki page.
+If there are 393-400 characters on the "Home" wiki page, the "Wiki" widget will preview the full content. If there are more than 400 characters on the "Home" wiki page, the content will be truncated by an ellipsis, and a "Read More" link will appear at the bottom widget. This link directs the user to the "Home" wiki page.
 
 Files Widget
 ------------
