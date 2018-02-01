@@ -31,7 +31,11 @@ The user must provide a title in the "Title" field but can leave the other field
 
 Clicking **Keep working here** returns the user to the dashboard. Clicking **Go to new project** sends the user to the "Project Overview" page of their new project.
 
-Below this green button is a search box that reads "Quick search your projects." Below the search box is a table displaying the 10 most recently updated projects and components on which the user is a contributor. If the user has more than 10 projects, there will be a down arrow that the use can click to show more projects. The arrow will show up to an additional 10 projects at a time. 
+Below this green button is a search box with placeholder text that reads::
+	
+	 Search your projects 
+
+Below the search box is a table displaying the 10 most recently updated projects and components on which the user is a contributor. If the user has more than 10 projects, there will be a down arrow that the use can click to show more projects. The arrow will show up to an additional 10 projects at a time. 
 
 The user can type project/component titles and contributor names into the textbox to filter their projects (pressing "enter" is not necessary).
 

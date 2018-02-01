@@ -6,7 +6,7 @@ This page is divided into three columns: "Frequently Asked Questions," "OSF Guid
 The "Frequently Asked Questions" column is layed out in the following way::
   
     Frequently Asked Questions
-    How can it be free? How will the OSF be useful to my research? What is a registration? Get your questions about the Open Science Framework answered on our FAQ page [links to http://help.osf.io/m/faqs/].
+    How can it be free? How will the OSF be useful to my research? What is a registration? Get your questions about the Open Science Framework answered on our FAQ page [links to http://help.osf.io/m/faqs/l/726460-faqs].
     [Visit FAQ]
     
 The user can click the title of the column, the link to the FAQ page, or the **Visit FAQ** button to navigate to the FAQs.

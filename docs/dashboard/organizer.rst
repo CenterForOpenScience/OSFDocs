@@ -8,6 +8,10 @@ Contents of the Project Organizer can be searched through by typing in the "Filt
 
 My Projects consists of 3 panes. The left pane is a Filter pane and provides options for filtering which projects are displayed. The center pane is the Project Organizer, displaying project titles, contributors, and date last modified. The right pane is the Information Panel, displaying information about or recent activity on a selected project or component, and is collapsed by default. 
 
+If the "My Projects" page is slow to load, the following error message appears::
+  This is taking longer than normal. 
+  Try reloading the page. If the problem persists, contact us at support@cos.io.
+
 Filter Pane
 -------------
 **Purpose:** The filter pane provides users with several options for filtering the projects displayed in the Project Organizer. The first section is Collections, followed by Contributors, then Tags. Each section displays only four entries. Forward and backward arrows allow users to access more options for filtering

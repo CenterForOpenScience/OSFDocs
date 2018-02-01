@@ -52,17 +52,18 @@ The first field is titled::
 
     Full name (e.g. Rosalind Elsie Franklin)
 
-This field is automatically filled in with the name the user provided when signing up for their OSF account. The user can click inside this field to edit their name.
+This field is automatically filled with the name the user provided when signing up for their OSF account. The user can click inside this field to edit their name.
+The maximum character count for the "Full name" field is 186 characters.
 
 If the user deletes the contents from the "Full name" field and clicks **Save**, a black alert appears below the "Full name" field::
 
     This field is required.
 
-If the user clicks **Save** again, a red alert appears below the previous black one::
+If the user clicks **Save** again, a red alert appears below the previous one::
   
     This field is required.
 
-There is no minimum character limit for the user's full name, nor is there a maximum. If the user updates their name and clicks **Save**, a temporary green alert appears below the "Save" button::
+If the user updates their name and clicks **Save**, a temporary green alert appears below the "Save" button::
 
     Settings updated
 
@@ -89,7 +90,11 @@ If the user enters their name as "Last name, First name" then the words precedin
 
 The user can edit the four individual name fields (i.e. given, middle, family, and suffix) individually, rather than using the auto-fill function.
 To do so, the user clicks inside the field and clicks **Save** to save their changes. These four fields do not affect the username—what is shown in
-contributor lists and the navigation bar—but they do affect citations. Any or all of these fields can be left blank. There is no character limit.
+contributor lists and the navigation bar—but they do affect citations. Any or all of these fields can be left blank.
+
+The maximum character count for the "Given name" field is 256 characters. The maximum character count for the "Middle name" field is 256 characters.
+The maximum character count for the "Family name" field is 256 characters. The maximum character count for the "Suffix" field is 256 characters.
+
 As the user updates and saves these fields, the citation preview is updated, indicating what a :ref:`citation <citations>` of their
 work will look like. After saving changes to any of these fields, a green alert appears below the "Save" button::
 

@@ -2,11 +2,11 @@
 
 The project settings page shows different options for contributors with different permissions.
 
-If the user is an admin or a read+write contributor on the project, there are five sections on the "Settings" page that they can configure: "Project/Component," "Select Add-ons," "View-Only Links," "Configure Add-ons" (only shows if add-ons are connected),"Wiki," "Commenting," "Email Notifications," and "Redirect Link."
+If the user is an admin or a read+write contributor on the project, there are seven sections on the "Settings" page that they can configure: "Project," "View-only Links," "Wiki," "Commenting," "Email Notifications," "Redirect Link," and "Project Affiliation / Branding."
 
 The "Settings" page has a sidebar that the user can use to navigate through the sections of the page.
   
-Additional sections are shown if the project is public or if add-ons are configured.
+Additional sections are shown if the project is public.
 
 If the user is a read-only contributor on a project/component, the sidebar is not visible and only the "Project Affiliation/Branding" and "Notifications" sections are visible. The read-only contributor can configure their notification preferences in the "Email Notifications" section but will only have view-access to the "Project/Affiliation/Branding" section. This section reads::
   
@@ -143,11 +143,7 @@ Select Add-ons
 --------------
 See :ref:`the information about add-ons here <add-ons>`.
 
-Add-ons
-------------
-When an add-on has been activated, an additional section is added to the page—"Configure Add-ons." See :ref:`the information about add-ons here <add-ons>`.
-
-View-Only Links
+View-only Links
 ---------------
 **Purpose**: View-only Links allow users to share the contents of private projects with non-contributors.
 
@@ -210,26 +206,34 @@ logs replace usernames with "A user." "Forks" and "Registrations" tabs are not s
 The Commenting panel is not available with a view-only link.
 
 Wiki
-------------
+--------------
 **Purpose:** Configuring the wiki allows admins and read+write contributors to enable or disable the wiki and change who can edit a wiki page.
 
 If the user is an admin or read+write contributor, a checkbox appears along with the text::
     
-    Enable the wiki in [project/component name]. 
+    Enable the wiki in <project>. 
 
-If the project is private, and/or the user is a read+write contributor, text below reads::
+When the user selects the checkbox, the following green confirmation message appears below it::
   
-   To allow all OSF users to edit the wiki, [project/component title] must be public and the wiki enabled.
+    Wiki Enabled.
 
-If the project is public and the user is an admin, the word "Configure" appears below the checkbox in large text, followed by::
+The page refreshes, and a "Configure" section appears below the checkbox. This section is always visible when the box is checked.
 
-    Control who can edit the wiki of [project/component name]:
+Below this section is text that reads::
+  
+    Control who can edit your wiki. To allow all OSF users to edit the wiki, <project> must be public.
 
-The project tree is displayed below these instructions. All project and component titles link to their "Overview" pages.
-Below each public project/component in the tree is a row titled "Who can edit." Right justified in this row is a drop-down that allows
-admins to indicate who can edit that project/component's wiki pages.
+The project tree is displayed below these instructions. The project and any component titles link to their "Overview" pages. If the read+write contributor is not a contributor on the component(s), they cannot see the component name in the list. It simply reads "Private Project" without linked text. The parent project is expanded by default, and any child components are collapsed.
 
-Components are collapsed by default, meaning their "Who can edit" rows are not visible until expanded.
+To the right of each project/component level is a drop-down menu to select editing privelages. If the project is private, this menu is disabled. If the user scrolls over the menu, their cursor carries the prohibition sign.
+
+If the project/component is private, and the user is an admin, the following line appears below the project/component in the file tree::
+  
+    This feature is disabled for wikis of private [projects][components].
+
+If the user has read+write access, the following line appears below the project in the file tree, whether the project is public or private::
+  
+    Only admins may change permissions of this wiki.
 
 The drop-down options are: "Contributors (with write access)" or "All OSF users." By default, "Contributors (with write access)" is
 selected. Changing the option to "All OSF users" means that any logged in user can visit the wiki pages of the identified
@@ -277,31 +281,8 @@ Then the "Settings" page refreshes and the confirmation message disappears.
 
 Leaving the page without clicking **Save** does not produce a warning for the user.
 
-Project Affiliation / Branding
-------------------------------
-**Purpose:** Users can affiliate projects with institutions that have created OSF for Institutions accounts.
-
-At the top of the "Project Affiliation / Branding" section, there is text that reads::
-
-    Projects can be affiliated with institutions that have created OSF for Institutions accounts. This allows:
-    * institutional logos to be displayed on public projects 
-    * public projects to be discoverable on specific institutional landing pages 
-    * single sign-on to the OSF with institutional credentials
-    * FAQ [links to the help guides]
-    
-Underneath the text reads::
-
-    Available institutions:
-    [institutional logo] [institution name] [Add]
-
-Available institutions are determined by the user's sign-on. If logged in under an OSF for Institutions single sign-on feature, that institution will be available to add. Alternatively, if the user's login email is associated with an OSF4I partner, the option to add will be available. 
-
-When the user clicks **Add**, the institution is added to their "Project Overview" page. When an institution is added from the "Settings" page, a red "Remove" button replaces the green "Add" button to the right of an institution.
-
-If an institution is affiliated with the project/component, the above introductory text is not visible. Only the affiliated and available institutions are visible to add or remove.
-
 Email Notifications
-------------
+-------------------
 **Purpose:** All users can modify the frequency with which they would like to receive notifications about the project/component.
 
 In the "Email Notifications" section, text below the title reads::
@@ -358,3 +339,27 @@ The user may enter the URL beneath URL and have the option to add a label. When 
 Entering a valid URL into the "URL" field and clicking **Save** causes the following temporary confirmation message to appear below the "Label" field::
   
     Succesfully linked to [URL]
+
+
+Project Affiliation / Branding
+------------------------------
+**Purpose:** Users can affiliate projects with institutions that have created OSF for Institutions accounts.
+
+At the top of the "Project Affiliation / Branding" section, there is text that reads::
+
+    Projects can be affiliated with institutions that have created OSF for Institutions accounts. This allows:
+        * institutional logos to be displayed on public projects 
+        * public projects to be discoverable on specific institutional landing pages 
+        * single sign-on to the OSF with institutional credentials
+        * FAQ [links to the help guides]
+        
+Underneath the text reads::
+
+    Available institutions:
+    [institutional logo] [institution name] [Add]
+
+Available institutions are determined by the user's sign-on. If logged in under an OSF for Institutions single sign-on feature, that institution will be available to add. Alternatively, if the user's login email is associated with an OSF4I partner, the option to add will be available. 
+
+When the user clicks **Add**, the institution is added to their "Project Overview" page. When an institution is added from the "Settings" page, a red "Remove" button replaces the green "Add" button to the right of an institution.
+
+If an institution is affiliated with the project/component, the above introductory text is not visible. Only the affiliated and available institutions are visible to add or remove.
