@@ -2,7 +2,6 @@
 
 The navigation bar appears at the top of the page at all times. When scrolling down, the navigation bar stays stuck to the top of the page.
 
-
 Links included when logged out
 ==============================
 
@@ -15,6 +14,8 @@ Links included when logged out
 * Search: Clicking this tab takes the user to https://osf.io/search/, where a green search bar stretches across the top of the page, opening below the navigation bar. A "question mark" icon appears on the far right of the search bar. Clicking the question mark prompts the "Search help" modal to appear that explains how to do search queries.
 
 * Support: Clicking this tab takes the user to the support landing page https://osf.io/support/.
+
+* Donate: Clicking this link takes the user to https://cos.io/donate-to-cos/.
 
 * Sign Up button: Clicking the button takes the user to a form to sign up for an account. 
 
@@ -39,9 +40,15 @@ Links included when logged in
     * OSF Registries: Clicking this link takes the user to the OSF Registries landing page https://osf.io/registries/.
     * OSF Meetings: Clicking this link takes the user to the OSF for Meetings page: https://osf.io/meetings/.
     
-* My Projects: Clicking this tab takes the user to his/her Project Organizer.
+* My Quick Files: Clicking this tab takes the user to https://osf.io/<user GUID>/quickfiles
+    
+* My Projects: Clicking this tab takes the user to https://osf.io/myprojects/. See :ref:`the Project Organizer page <organizer>`. 
 
 * Search: Clicking this tab takes the user to the OSF Search page (https://osf.io/search/). See :ref:`search`.
+
+* Support: Clicking this tab takes the user to the support landing page https://osf.io/support/.
+
+* Donate: Clicking this link takes the user to https://cos.io/donate-to-cos/.
 
 * User name and avatar: Clicking this button causes a drop-down menu to appear:
     
