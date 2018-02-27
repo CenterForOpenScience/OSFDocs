@@ -6,10 +6,10 @@ When a user uploads a new preprint (and does not use an existing project or comp
 
 A user can access their preprint through their OSF project or component. On the project or component’s Overview page, there will be an alert saying “This [project] [component] represents a preprint. Learn more (this links to preprints help guides] about how to work with preprints.” A user can also access their preprint through the “My Projects” tab and  clicking “All my preprints” from the left sidebar and then clicking the preprint they want to view. 
 
-A user can edit their preprint and upload new versions, but once a preprint is submitted, it cannot be taken down. 
+A user can edit their preprint and upload new versions. Once a preprint is shared, it should be assumed that it will always be public and available.
 
-OSF Preprints Landing Page
----------------
+OSF Preprints
+-------------
 **Purpose:** To search for preprints, upload a preprint, and access the preprint community servers.
 
 To navigate to the OSF Preprints landing page, the user clicks the **OSF Home** tab from the navigation bar and then clicks **OSF Preprints** from the drop-down menu.
@@ -18,9 +18,8 @@ On the OSF Preprints landing page, there is a search field to search for preprin
 
 In the top right, there's a toolbar with the following actions:
 
-*An "Add a preprint" tab that takes the user to the "Add a preprint" page.
-
-*A "Search" tab that takes the user to the Preprint Archive Search page.
+* An "Add a preprint" tab that takes the user to the "Add a preprint" page.
+* A "Search" tab that takes the user to the Preprint Archive Search page.
 
 The following tabs appear in the navigation bar when the user is logged out OSF Preprints:
 
@@ -35,56 +34,33 @@ The following tabs appear in the navigation bar when the user is logged out OSF 
 * Search: Clicking this link takes the user to the Preprints Discover page https://osf.io/preprints/discover/.
 * Support: Clicking this link takes the user to the landing page for the preprints help guides http://help.osf.io/m/preprints/.
 
-*Sign Up: Clicking this tab takes the user to the :ref:`Create a free account page <sign-up>` where the user needs to fill out a form to create an OSF account.
-*Sign In: Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`. After logging in, the user is taken to the OSF Preprints landing page.
+* Sign Up: Clicking this tab takes the user to the :ref:`Create a free account page <sign-up>` where the user needs to fill out a form to create an OSF account.
+* Sign In: Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`. After logging in, the user is taken to the OSF Preprints landing page.
 
-The community preprint servers are listed with their logos below the search field. Clicking on a community preprint server takes the user to the community preprint server's landing page.
+The community preprint servers are listed with their logos below the search field. Clicking on a community preprint server logo takes the user to that preprint server's landing page.
 
 When logged in, the navigation bar is the same except that the "Sign up" and "Sign in" buttons are replaced with the user drop-down menu.
 
-
-Landing Pages for Community Preprint Servers
----------------
+Community Preprint Servers
+--------------------------
 **Purpose:** To search for preprints within and upload preprints to a given preprint server.
 
-When a user navigates to a community preprint server, the landing page is the same as OSF Preprints, except for different color schemes and different actions in the :ref:`navigation bar <navigation-bar>`. The top-level subject areas highlighted on a community preprint server's landing page vary in subject and number by each provider.
+When a user navigates to a community preprint server, the landing page is the same as OSF Preprints, except for different color schemes and different actions in the :ref:`navigation bar <navigation-bar>`. The top-level subject areas highlighted on a community preprint server's landing page vary in subject and number by each provider. If the preprint provider has chosen their own custom taxonomy as well as highlighted subjeccts, the "Browse by subjects" section is instead titled "Browse by featured subjects." When the section is "Browse by featured subjects," a link is included below the title to "See all subjects available," that, when clicked, takes the user to the "Discover" page to view all subjects available.
 
 The following tabs appear in the navigation bar when the user is logged out:
 
-*"Add a preprint": Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`.
-*"Search". Clicking this tab takes the user to the preprint server's Discover page https://osf.io/preprints/preprintserver/discover.
-*"Sign Up". Clicking this tab takes the user to the :ref:`Create a free account page <sign-up>` where the user needs to fill out a form to create an OSF account in order to be able to upload a preprint to the community preprint server. 
-*"Sign In". Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`. After logging in, the user is taken to their OSF dashboard.
+* "Add a preprint": Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`.
+* "Search". Clicking this tab takes the user to the preprint server's Discover page https://osf.io/preprints/preprintserver/discover.
+* "Sign Up". Clicking this tab takes the user to the :ref:`Create a free account page <sign-up>` where the user needs to fill out a form to create an OSF account in order to be able to upload a preprint to the community preprint server. 
+* "Sign In". Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`. After logging in, the user is taken to their OSF dashboard.
 
 When logged in, the navigation bar is the same except that it contains a "My OSF Projects" tab which, when clicked, takes the user to https://osf.io/myprojects/ and the "Sign up" and "Sign in" buttons are replaced by the user drop-down menu.
-
-
-Preprint Detail Page
----------------
- **Purpose:** The "Preprint Detail" page is the main page where the user reads and downloads a given preprint.
-
-At the top of the "Preprint Detail" page, the preprint's title appears in large typeface. Below the title is a list of the co-authors on the preprint. If a co-author is a registered contributor, their name will be linked to their OSF profile page. The date when the preprint was shared and the date when the preprint was last edited are listed below the preprint's title.
-
-On the left half of the page, the preprint appears in an MFR, below which a "Download preprint" button, and the supplemental files (if the user has uploaded any) are shown. The preprint file will also be listed below the MFR but only in the event that there are supplemental files.
-
-On the right half of the page, the preprint's abstract, license, disciplines, Preprint DOI (when clicked takes the user to the "Preprint Detail" page), Peer-Review Publication DOI (optional - appears if the user's preprint has been previously published and they have provided it in the metadata when uploading their preprint), tags, and citation styles (MLA, APA, and Chicago) are listed. If an abstract is long, there will be a **See more** button below the abstract that the user can click to expand the remaining text. When the abstract is expanded, the button changes to **See less**. When the user clicks the **See less** button, the abstract shrinks back to its shorter length, and the **See more** button returns.
-
-In the top right of the Preprint Detail page, there is a gray box that includes a series of actions for downloading and sharing a preprint::
-
-   [Download preprint], the number of downloads [Downloads: x], and social media sharing options
-
-At the bottom right of the page, there is a gray box that reads::
-  
-  The project for this paper is available on the OSF
-  [Visit project] (links to the OSF project connected to a preprint)
-
-Admins can see a green "Edit preprint" button in the top right of the Preprint Detail page. Contributors with read access or read+write acces and visitors to a Preprint Detail page cannot see this button.
 
 .. _adding-preprint: 
 
 Adding a Preprint
 ---------------
-  **The following describes the upload process when sharing a preprint with OSF Preprints.The upload process is the same when a user shares a preprint with a community preprint server.**
+**Purpose**: To submit a preprint, the user must upload their file and fill out required information related to their preprint in the following form.
   
 Clicking the green "Add a preprint" button takes the user to the Add Preprint page where the user must follow five steps in order to share a preprint:
 
@@ -98,10 +74,10 @@ After a user clicks "Save and continue" in each widget, a confirmation message a
   
     Changes Saved!
 
-A user must complete the required steps within each widget before they can upload their preprint. 
+A user must complete the required steps within each widget before they can upload their preprint. Abandoning the preprint by navigating away from the page will create the OSF project, but will not create the preprint. If the user navigates away from the page, a browser alert appears, confirming that the user wants to leave the page.
     
-The Upload Widget
-^^^^^^^^^^^^^^^^
+Upload
+^^^^^^
 **Purpose**: Allows the user to upload their preprint file.
 
 The Upload widget is expanded automatically when the user arrives on the Add Preprint page.
@@ -283,8 +259,8 @@ When returning to the Upload widget, the user can click inside the the widget to
   
 The user cannot click "Discard changes" unless they have made changes to the preprint file or title. Once the user has made changes, they can click this button or click within whichever widget they are currently working on to discard the changes they made to the Upload widget.
     
-The Discipline Widget
-^^^^^^^^^^^^^^^^
+Discipline
+^^^^^^^^^^
 **Purpose:** Allows the user to add disciplines and subdisciplines (optional) to their preprint to make it more discoverable.
 
 The taxonomy for the disciplines comes from BePress.
@@ -326,15 +302,15 @@ When the user clicks "Save and continue," the Discipline widget will close, and 
 
 The user can return to the Discipline widget to make changes at any point throughout the preprint upload process. 
 
-The Basics Widget
-^^^^^^^^^^^^^^^^^
-**Purpose:** Allows the user to add a license, DOI (if they have one), tags, and an abstract to their preprint.
+Basics
+^^^^^^^
+**Purpose:** The Basics widget is where the user can add a license, DOI, tags, and an abstract to their preprint.
 
 In the bottom right of the Basics widget, there are two buttons::
   
     [Discard changes][Save and continue]
 
-These buttons remain unclickable until the user has filled out all of the required sections and fields. The required sections and fields for this widget are:
+These buttons are disabled until the user has filled the required fields. The required sections and fields for this widget are:
 
 * Choose a license
 * Abstract
@@ -343,7 +319,7 @@ If the user chooses the No license option from the Choose a license drop-down me
 * Year
 * Copyright Holders
 
-**The License section**
+**License**
 
 In the license section, the user has the following options::
     
@@ -354,8 +330,6 @@ In the license section, the user has the following options::
     License FAQ (this links to the license FAQ page)
     Show full text (clicking this shows an explanation of the license selected)
     Hide full text (this appears in place of Show full text when the user clicks to view the text)
-    
-.. _todo: license FAQ currently links to the `Licensing help guide <http://help.osf.io/m/60347/l/611430-licensing>`. Update this section when the text changes.
 
 When the user selects "No license" from the drop-down menu, the "Year" and "Copyright Holders" fields appear below the menu.
 
@@ -379,6 +353,12 @@ The error message disappears when the user deletes the invalid DOI.
 When the user clicks inside the DOI field, begins typing, or enters an invalid DOI, the field is outlined in blue. 
 
 When the user enters a valid DOI into the DOI field, the field is outlined in green.
+
+**Original Publication Date**
+
+If their preprint has been previously published, the user can include the publication year, month, and day into this field. Clicking inside this field opens a calender picker from which the user can select and apply the publication date.
+
+This publication date will appear in the preprint's metadata, as well as in the preprint citations.
 
 **The Keywords section**
     
@@ -425,9 +405,9 @@ This is how the widget appears when closed::
     
 The user can click inside the Basics widget to open it and make changes at any point throughout the preprint upload process. When the user reopens the Basics widget, they cannot click "Discard changes" unless they have made changes to the information they previously provided in the widget. Once the user has made changes to the information, the user can click "Discard changes."
 
-The Authors widget
-^^^^^^^^^^^^^^^
-**Purpose:** To add authors and sort the authorship order.
+Authors
+^^^^^^^
+**Purpose:** The Authors widger is where the user can add and reorder their preprint authors.
 
 A user can search for and add authors to their preprint.
 
@@ -519,30 +499,51 @@ After the user clicks the "Next" button, the widget will close and the Submit wi
 
 The user can click inside the Authors widget to make changes to the information after the user has continued on to the next widget. When the user reopens the Authors widget, they can click the "Next" button at any time, with or without making changes to the information within the widget.
 
-The Submit Widget
-^^^^^^^^^^^^^^^^
-**Purpose:** To post their preprint to a preprint server and make it publicly available.
+Submit
+^^^^^^
 
 At the top of the Submit widget, there are instructions that read::
   
-    When you share this preprint, it will become publicly accessible via OSF Preprints. You will be unable to delete the preprint file, but you can update or modify it. This also creates an OSF project in case you would like to attach other content to your preprint such as supplementary materials, appendices, data, or protocols. If posting this preprint is your first exposure to the OSF, you will receive an email introducing OSF to you. By clicking Share, you confirm that all Contributors agree with sharing this preprint, and that you have the right to share it.
+    When you create this preprint, it will be assigned a DOI and become publicly accessible via <preprint server>. The preprint file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your preprint.
 
-If the user has not completed the required information in a given widget, a growlbox will appear below the above instructions that read::
+    By creating this preprint, you confirm that all contributors agree with sharing it and that you have the right to share this preprint.
+    [Cancel][Create]
+    
+If the preprint server uses post-moderation, the instructions will read::
+  
+    When you submit this paper, it will be assigned a DOI. The paper file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your paper.
+
+    By creating this paper, you confirm that all contributors agree with sharing it and that you have the right to share this paper.
+
+    <preprint server> uses post-moderation. Therefore, your paper will become publicly accessible after creation and will only become private if rejected by a moderator.  
+    [Cancel][Create]
+
+If the preprint server uses pre-moderation, the instructions will read::
+  
+  When you submit this preprint, it will be assigned a DOI. The preprint file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your preprint.
+
+  By submitting this preprint, you confirm that all contributors agree with sharing it and that you have the right to share this preprint.
+
+  <preprint server> uses pre-moderation. Therefore, your preprint will not become publicly accessible until a moderator accepts the submission.
+  [Cancel][Submit]
+
+
+If the user has not finished all required sections, and they click the **Create** button, a message will appear below the instructions that reads with a list of the unfinished sections::
   
     The following section(s) must be completed before sharing this preprint.
-    [widget title(s)]
+    <widget title(s)>
     
 The user could skip the Author widget (either by not clicking inside the widget at all or by not clicking the **Next** button) and submit their preprint without any message or growlbox appearing.
 
 When the user is ready to submit their preprint, they can click the blue "Share" button. Clicking "Share" causes a modal to appear::
 
-    Share Preprint
+    Create Preprint
     Once this preprint is made public, you should assume that it will always be public. Even if you delete it, search engines or others may access the files before you do so.
-    [Cancel][Share]
+    [Cancel][Create preprint]
     
 Clicking "Cancel" will return the user to the "Add Preprint" page with all of their preprint upload information still intact.
 
-Clicking "Share" will take the user directly to the Preprint Detail page. 
+Clicking the final button will take the user directly to the Preprint Detail page. 
 
 The authors will receive an email notification that they have been added as authors to the preprint. If the recipient is a non-registered user, they will receive the following email notification::
   
@@ -626,6 +627,72 @@ For community preprints services::
 
   Questions? Email support+${branded_service_name.lower()}@osf.io
 
+Preprint Detail Page
+---------------------
+ **Purpose:** The "Preprint Detail" page is the main page where the user reads and downloads a given preprint.
+
+The preprint title appears at the top of the "Preprint Detail" page. Below the title is a list of the co-authors on the preprint. If a co-author is a registered contributor, their name will be linked to their OSF profile page. The date when the preprint was shared and the date when the preprint was last edited are listed below the preprint's title.
+
+On the left half of the page, the preprint appears in an MFR, below which a "Download preprint" button, and the supplemental files (if the user has uploaded any) are shown. The preprint file will also be listed below the MFR but only in the event that there are supplemental files.
+
+On the right half of the page, the preprint's abstract, license, disciplines, Preprint DOI (when clicked takes the user to the "Preprint Detail" page), Peer-Review Publication DOI (optional - appears if the user's preprint has been previously published and they have provided it in the metadata when uploading their preprint), Original Publication Date, tags, and citation styles (MLA, APA, and Chicago) are listed.
+
+It can take up to 24 hours for a preprint to be minted, in which case the DOI is listed, but not linked, and the following message appears below the Preprint DOI:
+  
+    DOIs are minted by a third party, and may take up to 24 hours to be registered
+
+If an abstract is long, there will be a **See more** button below the abstract that the user can click to expand the remaining text. When the abstract is expanded, the button changes to **See less**. When the user clicks the **See less** button, the abstract shrinks back to its shorter length, and the **See more** button returns.
+
+In the top right of the Preprint Detail page, there is a gray box that includes a series of actions for downloading and sharing a preprint::
+
+   [Download preprint], the number of downloads [Downloads: x], and social media sharing options
+
+At the bottom right of the page, there is a gray box that reads::
+     
+    The project for this paper is available on the OSF
+   [Visit project] (links to the OSF project connected to a preprint)
+
+Admins can see a green "Edit preprint" button in the top right of the Preprint Detail page. Contributors with read access or read+write acces and visitors to a Preprint Detail page cannot see this button.
+   
+Moderated preprints
+^^^^^^^^^^^^^^^^^^^
+**Purpose**: Preprints will be pending until accepted or rejected by a moderator. Banners help inform the user of the state of their preprint. These banners are only visible to the preprint authors and moderator.
+
+If the user submitted to a preprint service that uses pre-moderation, the preprint will be private until a moderator accepts or rejects it. While the preprint is pending, a yellow banner will appear at the top of the page::
+  
+    Pending: <preprint service> uses pre-moderation. this preprint is not publically available or searchable until approved by a moderator.
+
+If the user submitted to a preprint service that uses post-moderation, the preprint will be public upon submission. Until a moderator accepts or rejects the preprint, a blue banner will appear at the top of the page::
+
+    Pending: OSF uses post-moderation. This preprint is publically available and searchable but is subject to removal by a moderator.
+
+
+If the moderator accepts the preprint, a green banner will appear at the top of the preprint page::
+  
+    Accepted: <preprint service> uses [pre][post]-moderation. This preprint has been accepted by a moderator and is publically available and searchable.
+    
+If the moderator rejects the preprint, a red banner will appear at the top of the preprint page::
+
+    Rejected: <preprint service> uses [pre][post]-moderation. This preprint has been rejected by a moderator and is not publically available or searchable.
+
+Upon rejection, the preprint will be made private.
+
+If the moderator provides feedback with their decision, there will be a **Moderator feedback** button on the right side of the banner. Clicking this button opens a drop-down. If accepted, the drop-down will read::
+  
+    Moderator feedback
+    Accepted
+    This preprint has been accepted by a moderator and is publically available and searchable.
+
+The moderator's feedback will follow, along with their name (or not, if anonymized).
+
+If rejected, the drop-down will read::
+  
+    Moderator Feedback
+    Rejected
+    This preprint has been rejected by a moderator and is not publically available or searchable.
+
+The moderator's feedback will follow, along with their name (or not, if anonymized).
+
 
 Edit a Preprint
 ---------------
@@ -655,8 +722,8 @@ If the user uploads a new version of their preprint file with the same filename 
     
     [filename](Version:x)
 
-The Preprint's OSF Project/Component
----------------
+The OSF Project
+----------------
 **Purpose**: Allows the user to add supplemental files to the preprint as well as to view and access the preprint from the OSF side.
 
 On the bottom right of the Preprint Detail page, there is a gray box and a button::
@@ -679,7 +746,7 @@ If the user makes the OSF project/component private, the preprint will also be s
 Clicking the **Make Public** button on the Overview page will make the preprint public, and the preprint will appear again on the designated preprint server.
 
 Adding Supplemental Files
----------------
+-------------------------
 **Purpose:** Allows the user to add supplemental files, code, and other matierals to their preprint.
 
 Adding supplemental files to a preprint works in the same way as adding files to a regular OSF project using the :ref:`OSF storage <OSF-storage>`. The user can only add supplemental files at the top level. Files uploaded to storage add-ons will not appear as *supplemental files* on the Preprint Detail page.
@@ -694,7 +761,7 @@ Search Preprints
 ---------------
 **Purpose**: To search for and browse preprints in OSF Preprints and other preprint servers.
 
-OSF Preprints is an aggregator of several preprint servers and is powered by SHARE. On the OSF Preprints and community preprint servers' landing pages, the user can enter a search query to search for preprints. The search results will appear on the "Discover" page. 
+OSF Preprints is an aggregator of several preprint servers and is powered by SHARE. On the OSF Preprints and community preprint servers' landing pages, the user can enter a query to search for preprints. The search results will appear on the respsctive "Discover" page. 
 
 The user can search by preprint title by entering the title into the search field. To search by an author(s) or a tag(s), the user can use the boolean operaters AND (including x and x) and OR (including x or x). The accepted formats for searching one or more authors is as follows:
   
@@ -724,7 +791,9 @@ To browse by subject area, there is a list of subject areas on the OSF Preprints
 
 On the "Discover" page, there is a Provider side bar that shows all of the preprint servers aggregated in that particular preprint server. The user can select a preprint server to search for preprints uploaded to that server.
 
-Below the Provider sidebar, there is a Subject sidebar that is sorted hierarchically. Clicking the arrow next to a subject will unfold the subdisciplines within that subject area. Selecting a subject area will return all of the preprints within that subject area. Taxonomy that is custom to a community preprint server is not listed in this sidebar on the OSF Preprints "Discover" page. The user would need to go to the community preprint server's "Discover" page to search by their custom taxonomy. The preprints tagged with custom taxonomy are still aggregated in OSF Preprints. The tag does not appear on the preprint in search results, but, when clicked, the tag is listed on the preprint's "Details" page.
+Below the Provider sidebar, there is a Subject sidebar that is sorted hierarchically. Clicking a facet next to a subject will unfold the subdisciplines within that subject area. Selecting a subject area will return all of the preprints that have that subject area as a discpline. Taxonomy that is custom to a community preprint server is not listed in this sidebar on the OSF Preprints "Discover" page. The user would need to go to the community preprint server's "Discover" page to search by their custom taxonomy. The preprints tagged with custom taxonomy are still aggregated in OSF Preprints. The tag does not appear on the preprint in search results, but, when clicked, the tag is listed on the preprint's "Details" page.
+
+Selected search facets are defined in the URL, so that a user can share/navigate to that URL and see that search facet and its parent expanded on the "Discover" page.
 
 Preprint search results display the preprint title first, followed by the author(s), discipline(s), abstract, and preprint provider. To access the rest of the metadata, there is a down arrow that the user can click to unfold the search result on the "Discover" page. Clicking the down arrow shows external links, such as a link to a preprint's journal publication, etc., an OAI (if any), tags (if any), and the date and time on which the preprint was added.
 
