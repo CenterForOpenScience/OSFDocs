@@ -73,6 +73,8 @@ Clicking "New Registration" on a project's registrations page opens a modal that
     Continue your registration by selecting a registration form:
     *Prereg Challenge 
     *Open-Ended Registration 
+    *AsPredicted Preregistration
+    *Registered Report Protocol Preregistration
     *OSF-Standard Pre-Data Collection Registration 
     *Replication Recipe (Brandt et al., 2013): Pre-Registration 
     *Replication Recipe (Brandt et al., 2013): Post-Completion 
