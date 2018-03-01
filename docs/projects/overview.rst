@@ -65,6 +65,14 @@ within :ref:`components <components>` that are children of the viewed project, t
 When a contributor makes a change to a project, the page does not refresh, meaning that the "Last Updated" field does not automatically
 update; the page must be reloaded to show an accurate time.
 
+The "Create DOI" link appears below the "Date created" field for public projects. This link is not visible for private projects. Clicking this link allows a project admin to generate a DOI for their project. Clicking this link opens the following modal::
+  
+    Create DOI
+    Are you sure you want to create a DOI for this project? A DOI is persistent and will always resolve to this page.
+    [Cancel][Create]
+
+Clicking **Cancel** cancels the action and closes the modal. Clicking **Create** generates the DOI. All DOIs generated on OSF have the same format: DOI 10.17605/OSF.IO/GUID.
+
 The "Category" field displays the category of that particular project or component, as specified on its creation or by changes from the
 :ref:`project settings page <project-settings>`. Categories can be: project, hypothesis, methods and measures, procedure, instrumentation,
 data, analysis, communication, other, or‚ if it is a component, it can be uncategorized. To the right of the category listed is an icon,
