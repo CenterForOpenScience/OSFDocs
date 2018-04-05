@@ -74,13 +74,27 @@ After a user clicks "Save and continue" in each widget, a confirmation message a
   
     Changes Saved!
 
-A user must complete the required steps within each widget before they can upload their preprint. Abandoning the preprint by navigating away from the page will create the OSF project, but will not create the preprint. If the user navigates away from the page, a browser alert appears, confirming that the user wants to leave the page.
+A user must complete the required steps within each widget before they can upload their preprint. Abandoning the preprint by navigating away from the page will create the OSF project, but will not create the preprint. If the user navigates away from the page, a browser alert appears, confirming that the user wants to leave the page. This alert gets triggered when the user is on the "Upload" step.
     
 Upload
 ^^^^^^
 **Purpose**: Allows the user to upload their preprint file.
 
-The Upload widget is expanded automatically when the user arrives on the Add Preprint page.
+There is an additional section at the start of the preprint form for OSF Preprints: "Select a preprint service." This widget is not available on community preprint services. This widget gives users the choice to upload their preprint to OSF Preprints or a community preprint service. This widget consists of a carousel showing the preprint service logos that the user must select to choose a preprint service. The "OSF Preprints" logo is selected by default. Hovering over a logo shows the name of the preprint provider in a tooltip. The user can click the navigational arrows to navigate through the carousel. 
+
+If the user clicks inside another widget before saving their changes, a temporary, red error message appears in the top right of the page::
+  
+    Please select a preprint service before continuing
+
+At the bottom of the widget are "Discard changes" and "Save and continue" buttons. The "Discard changes" button is disabled. It becomes enabled if the user clicks **Save and continue**, reopens the widget, and selects a different preprint service. Clicking **Discard changes** re-selects the first preprint service from the list, and disables the "Discard changes" button. Clicking **Save and continue** closes the "Select a preprint service" widget, where a temporary, green confirmation message appears in the top right::
+  
+    Changes Saved!
+    
+The "Select a preprint service" widget shows the service that was selected::
+  
+    Preprint service: <preprint service name>
+
+Once the "Select a preprint service" widget closes, the "Upload" widget opens (the user must click inside widget to expand it on community preprint services).
 
 If the user does not complete the upload widget and clicks inside another widget, has not completed the steps within a widget and clicks inside another widget, an alert will appear in the top right corner of the Add preprint page::
 
