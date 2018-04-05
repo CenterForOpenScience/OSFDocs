@@ -74,13 +74,27 @@ After a user clicks "Save and continue" in each widget, a confirmation message a
   
     Changes Saved!
 
-A user must complete the required steps within each widget before they can upload their preprint. Abandoning the preprint by navigating away from the page will create the OSF project, but will not create the preprint. If the user navigates away from the page, a browser alert appears, confirming that the user wants to leave the page.
+A user must complete the required steps within each widget before they can upload their preprint. Abandoning the preprint by navigating away from the page will create the OSF project, but will not create the preprint. If the user navigates away from the page, a browser alert appears, confirming that the user wants to leave the page. This alert gets triggered when the user is on the "Upload" step.
     
 Upload
 ^^^^^^
 **Purpose**: Allows the user to upload their preprint file.
 
-The Upload widget is expanded automatically when the user arrives on the Add Preprint page.
+There is an additional section at the start of the preprint form for OSF Preprints: "Select a preprint service." This widget is not available on community preprint services. This widget gives users the choice to upload their preprint to OSF Preprints or a community preprint service. This widget consists of a carousel showing the preprint service logos that the user must select to choose a preprint service. The "OSF Preprints" logo is selected by default. Hovering over a logo shows the name of the preprint provider in a tooltip. The user can click the navigational arrows to navigate through the carousel. 
+
+If the user clicks inside another widget before saving their changes, a temporary, red error message appears in the top right of the page::
+  
+    Please select a preprint service before continuing
+
+At the bottom of the widget are "Discard changes" and "Save and continue" buttons. The "Discard changes" button is disabled. It becomes enabled if the user clicks **Save and continue**, reopens the widget, and selects a different preprint service. Clicking **Discard changes** re-selects the first preprint service from the list, and disables the "Discard changes" button. Clicking **Save and continue** closes the "Select a preprint service" widget, where a temporary, green confirmation message appears in the top right::
+  
+    Changes Saved!
+    
+The "Select a preprint service" widget shows the service that was selected::
+  
+    Preprint service: <preprint service name>
+
+Once the "Select a preprint service" widget closes, the "Upload" widget opens (the user must click inside widget to expand it on community preprint services).
 
 If the user does not complete the upload widget and clicks inside another widget, has not completed the steps within a widget and clicks inside another widget, an alert will appear in the top right corner of the Add preprint page::
 
@@ -139,7 +153,17 @@ Clicking the Connect Preprint to existing OSF project brings up the Choose Proje
     [drop-down selections][a list of the user's OSF projects and components]
     **The list of projects appearing in the selector are projects and components for which you have admin access. Registrations are not included here.
     
-After the user selects a project or component from the drop-down list, the Choose Project section closes, and the Choose File section appears below it. The Choose Project section is still viewable and accessible to the user. The box reads::
+Clicking inside the menu opens a drop-down menu with the following helper text::
+  
+    Type to search.
+
+Typing into the field, shows the following loading message::
+  
+    Loading options...
+    
+A maximum of 7 projects are shown at a time from the menu. If there are more than 7, the user can scroll through the menu.
+    
+After the user types in and selects a project or component from the drop-down list, the Choose Project section closes, and the Choose File section appears below it. The Choose Project section is still viewable and accessible to the user. The box reads::
 
     Choose Project
     [project or component name]
@@ -789,7 +813,7 @@ The accepted formats for searching one or more tags is as follows:
 
 To browse by subject area, there is a list of subject areas on the OSF Preprints and community preprint servers' landing pages. Clicking a subject area will yield preprints within that subject on the "Discover" page.
 
-On the "Discover" page, there is a Provider side bar that shows all of the preprint servers aggregated in that particular preprint server. The user can select a preprint server to search for preprints uploaded to that server.
+On the "Discover" page, there is a Provider side bar that shows all of the preprint servers aggregated in that particular preprint server. The user can select a preprint server to search for preprints uploaded to that server. If searching by subject area from the landing page, that subject will be expanded in its hierarchy in the sidebar when the user gets to the "Discover" page. Some community preprint services will have the top-level subjects expanded by default in the sidebar.
 
 Below the Provider sidebar, there is a Subject sidebar that is sorted hierarchically. Clicking a facet next to a subject will unfold the subdisciplines within that subject area. Selecting a subject area will return all of the preprints that have that subject area as a discpline. Taxonomy that is custom to a community preprint server is not listed in this sidebar on the OSF Preprints "Discover" page. The user would need to go to the community preprint server's "Discover" page to search by their custom taxonomy. The preprints tagged with custom taxonomy are still aggregated in OSF Preprints. The tag does not appear on the preprint in search results, but, when clicked, the tag is listed on the preprint's "Details" page.
 
