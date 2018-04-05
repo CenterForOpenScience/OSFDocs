@@ -184,9 +184,9 @@ File Detail Page
 
 On the top left hand side is a widget enabling access to the other files associated with the project. 
 
-On the lower left hand side is a Tags widget, for files stored on OSF Storage. When no tags are added, users with read+write or admin permissions see text that reads “Add a tag.” If the user is not a contributor on the project, or only has read permissions, and no tags have been added the Tags widget is not visible.
-Contributors with read+write or admin permissions can add a tag by clicking in the “Add a tag” field and typing a keyword. Pressing the return key will add the tag. Adding a comma after a tag and pressing the space bar, as if making a list, will also add a tag. Tags appear in blue boxes with a black ‘x’ to the right of the text. Clicking the ‘x’ allows the user to remove the tag.
-Hovering over a tag darkens the background color. Clicking on a tag brings the user to search results page, where the query was the tag name.
+On the lower left hand side is a Tags widget, for files stored on OSF Storage. When no tags are added, users with read+write or admin permissions see text that reads “Add a tag.” If the user is not a contributor on the project, or only has read permissions, and no tags have been added, the Tags widget is not visible.
+Contributors with read+write or admin permissions can add a tag by clicking inside the widget and typing a keyword. Pressing the return key will add the tag. Adding a comma after a tag and pressing the space bar, as if making a list, will also add a tag. Admins and read+write contributors will see an ‘x’ to the right of the tag that they can click to remove the tag.
+Clicking on a tag brings the user to search results page, where the query was the tag name.
 
 If the file can be rendered, it displays in the rest of the screen. For a list of which file types render in the browser, go to `<https://gist.github.com/felliott/8fd378c25c1b7122b6e7992cdb2693a7>`_. 
 
@@ -198,6 +198,15 @@ For ADMIN contributors and files stored on OSF Storage, the "Check Out" button a
 
 If the file is stored on a 3rd party add-on, a link to view the file on the 3rd party service appears above the rendered file. 
 
+Admin and read+write contributors can rename the file directly from the "File Detail" page. The workflow and behavior is the same
+as :ref:`Renaming a project <renaming_project>`. Clicking the filename in the top left of the page page turns the title into a textbox wherein the the user can
+make changes to the title. To the right of the textbox is a green checkmark and an "x" that the user can click to either save their
+changes or cancel their changes, respectively. The user can also press **enter** on their keyboard to commit the new name.
+
+After clicking the green check mark, the following dismissable confirmation message appears in the top right of the page::
+  
+    Success
+    Your file was successfully renamed. To view the new filename in the file tree below, refresh the page.
 
 Storage Add-Ons
 ----------

@@ -31,7 +31,7 @@ Registration Overview
 ---------------------
 **Purpose:** A registration's Overview shows the state of the project at the time of registration and links to the registration form.
 
-The Registration Overview has all the components of a :ref:`Project Overview <overview>`, including a line that indicates when the registration was registered in the top left of the page where the rest of the metadata is::
+The Registration Overview has all the widgets of a :ref:`Project Overview <overview>`, including a line that indicates when the registration was registered in the top left of the page where the rest of the metadata is::
     
     Date registered: year-month-day
 
@@ -41,11 +41,15 @@ The registration has a watermark in the background that says "read-only" repeate
 
 In the top right of the Registration Overview page is a blue button that reads "View Registration Form." Clicking this button takes the user to a page with a noneditable copy of the user's registration form and their responses.
 
+If the registration does not have wiki content, the Wiki Widget is not included on the Registration Overview page, but it is included in the registration's navigation bar. Clicking the tab takes the user to the "Wiki Home" page with the message::
+  
+    Add important information, links, or images here to describe your project.
+
 The Files widget does not allow for editing of file names, reorganization of files, or deletion of files, however. Only
 downloads are permitted. Files are saved within their storage add-ons and OSF Storage, grouped into folders. The folders are
 titled "Archive of [storage add-on]." These folders are collapsed by default.
 
-Moreover, a registration's Recent Actity widget only only shows the original OSF project's activity prior to the creation of the registration. In other words, the registration's Recent Activity widget is a frozen snapshot of the original OSF project's recent activity. Activity related to the registration itself, such as the user's creation of the registration, is only logged into the project's Recent Activity widget and not the registration's. 
+Moreover, a registration's Recent Actity widget only shows the original OSF project's activity prior to the creation of the registration. In other words, the registration's Recent Activity widget is a frozen snapshot of the original OSF project's recent activity. Activity related to the registration itself, such as the user's creation of the registration, is only logged into the project's Recent Activity widget and not the registration's. 
 
 Activity pertaining to the creation of the registration is logged into the original OSF project's Recent Activity widget:
 
@@ -56,6 +60,8 @@ Activity pertaining to the creation of the registration is logged into the origi
 
 The blue Comments icon appears in the top right of the registration Overview page. The project's comments are not carried over to the registration. However, any comments made on the project prior to the registration's creation are logged into both the project and registrations's Recent Activity widget.
 
+Admins and read+write contributors can add tags to the registration after it has been registered. The behavior is the same as described in the :ref:`Tags section <tags>`.
+for the project "Overview" page.
 
 Creating a Registration
 -----------------------
@@ -169,9 +175,22 @@ with a text form to type the preregistration title and a button to "Continue >".
 
 In each of these cases, the user will have to fill out the Prereg Challenge registration template, which is several pages. At the bottom of each page, the user is provided with buttons, "Save as draft" or "Next page." On the last page, the "Next page" button is replaced by a "Submit for review" button. 
 
-Clicking "Submit for review" pops up a modal with a Notice of Consent for the Preregistration Challenge. The user must agree to the terms and click "Continue." Clicking "Cancel" returns the user to the registration preview page. Clicking "Continue" prompts the user to choose to either make the registration public immediately or choose an embargo (as in the normal workflow). After making this selection, the user lands on the "Registrations" page for the project and is presented with a dissmissable notice::
+If a user saves their preregistration as a draft and has not opened the draft preregistration after 2 weeks time, the OSF sends trigger emails for users who have started, but not yet submitted a preregistration::
+  
+    Reminder: Your draft preregistration on the OSF is not yet finished
+    
+    Dear <user name>, 
 
-    Your submission has been received. You will be notified within ten business days regarding the status of your submission. If you have questions, you may contact us at prereg@cos.io. 
+    You have an unsubmitted preregistration on the Open Science Framework that could be eligible for a $1,000 prize as part of the Prereg Challenge. If you would like this to be considered for a prize, please complete your preregistration <links to prereg draft> from your project <project name> and submit it for review, available on the last page of the preregistration form. This review process is required for a prize and simply checks to make sure the preregistration includes a complete analysis plan. If you have questions about a particular field in the preregistration, you may review the FAQ on the website <links to https://cos.io/prereg/>, email us with a question <links to prereg@cos.io>, or use our free statistical consulting services <links to https://cos.io/our-services/training-services/>. Thank you for using the OSF! 
+
+    Sincerely, 
+    The team at the Center for Open Science
+
+Users are only emailed once per draft. If the user starts another draft of the same project or another project, after 2 weeks of being unfinished, the user gets an email. A user should get no more than 3 emails in a 2 week period.
+
+Clicking the "Submit for review" button opens a modal with a Notice of Consent for the Preregistration Challenge. The user must agree to the terms and click "Continue." Clicking "Cancel" returns the user to the registration preview page. Clicking "Continue" prompts the user to choose to either make the registration public immediately or choose an embargo (as in the normal workflow). After making this selection, the user lands on the "Registrations" page for the project and is presented with a dissmissable notice::
+
+  Your submission has been received. You will be notified within two business days regarding the status of your submission. If you have questions you may contact us at prereg@cos.io. 
 
 The preregistration appears in the "Draft registrations" tab with the label "Pending Review." There are buttons to [Preview] or [Delete] the registration. Clicking [Preview] opens the preview of the registration, with a button to go [Back] to the Registrations tab. Clicking [Delete] pops up a modal::
 

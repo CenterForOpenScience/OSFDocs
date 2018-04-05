@@ -44,7 +44,11 @@ When the user selects one of their projects as a template from the drop-down men
     New project created successfully!
     [keep working here][Go to new project]
 
-If the user clicks **Go to new project**, they will see the project they created from the template. The new project will be titled according to what the user entered into the modal. "Templated from" will not be part of the title when the user creates a templated project from their dashboard.
+If the user clicks **Go to new project**, they will see the project they created from the template. The new project will be titled according to
+what the user entered into the modal. "Templated from" will not be part of the title when the user creates a templated project from their dashboard.
+A log in the "Recent Activity" section will appear as follows::
+  
+    <user name> created <project tile> based on <project title>
+    YYYY-MM-DD hh:mm:ss AM/PM
 
 If the user clicks **Keep working here**, the page will reload and the user will remain on their dashboard.
-    

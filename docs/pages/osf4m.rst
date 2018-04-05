@@ -1,6 +1,6 @@
 
 
-**Purpose:** The OSF for Meetings landing page shows information about the OSF for Meetings service as well as links to meetings that have had more than five submissions.
+**Purpose:** The OSF Meetings landing page shows information about the OSF Meetings service as well as links to meetings that have had more than five submissions.
 
 This page is accessible at https://osf.io/meetings/.
 
@@ -9,14 +9,14 @@ See the help guides for more instructions: http://help.osf.io/m/meetings.
 The landing page can also be accessed by either 1) clicking the **Browse** tab in the navigation bar, and then clicking **Meeting** from the drop-down menu 2) or, by going to the dashboard and scrolling to the bottom of the page where the following section appears::
   
     Hosting a conference or meeting?
-    Use the OSF for Meetings service to provide a central location for conference submissions.
+    Use the OSF Meetings service to provide a central location for conference submissions.
     [View meetings]
     
-Clicking the **View meetings** button takes the user to the OSF for Meetings landing page.
+Clicking the **View meetings** button takes the user to the OSF Meetings landing page.
 
 The top section of the landing page introduces the user to the meeting feature::
   
-  OSF for Meetings
+  OSF Meetings
   A free poster and presentation sharing service for academic meetings and conferences
 
 Below this are two sections: One is on the left side of the page and the second is on the right side of the page. The left-hand section reads as follows::
@@ -41,7 +41,7 @@ Clicking **Upload** causes a drop-down section to unfold. The drop-down section 
   
   The OSF can host posters and talks for scholarly meetings. Submitting a presentation is easy:
     * Find the email address for your conference by clicking on its name in the list below
-    * Send your materials to the OSF for Meetings email address for your conference
+    * Send your materials to the OSF Meetings email address for your conference
   We'll create an OSF project for you. You'll get a permanent link to your presentation, plus analytics about who has viewed and downloaded your work.
   
 Below the top section of the landing page is the list of conferences. At the top of the list are a search bar and instructions that read::
@@ -59,10 +59,10 @@ By default, the conferences are sorted by number of submissions, from greatest t
 Clicking on a conference takes the user to the landing page for the conference.
 
 
-OSF for Meetings conference pages
+OSF Meetings conference pages
 ---------------------------------
 
-**Purpose:** Submissions to a particular conference via OSF for Meetings are aggregated on one page that is visible to visitors.
+**Purpose:** Submissions to a particular conference via OSF Meetings are aggregated on one page that is visible to visitors.
 
 Users can submit their talks/presentations to the conference on the conference page. All submissions are listed and linked to their respective OSF projects. Download counts for each submitted file are provided.
 

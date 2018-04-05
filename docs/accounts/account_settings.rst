@@ -477,9 +477,9 @@ Deactivating an Account
 
 Users can deactivate their account by visiting their "Account Settings" and scrolling down to the "Deactivate Account" section of the page. This section has an overview of what account deactivation entails as well as a yellow warning, both of which read::
 
-    Warning: This action is irreversible.
+    Warning: Once your deactivation has been approved the effects are irreversible.
     
-    Deactivating your account will remove you from all public projects to which you are a contributor. Your account will no longer be associated with OSF Projects, and your work on the OSF will be inaccessible.
+    Deactivating your account will remove you from all public projects to which you are a contributor. Your account will no longer be associated with OSF projects, and your work on the OSF will be inaccessible.
     [Request deactivation]
 
 To deactivate their account, the user will need to click the red “Request deactivation” button. After clicking the “Request deactivation” button, a modal will appear asking the user to confirm whether they want to deactivate their account::
@@ -489,20 +489,31 @@ To deactivate their account, the user will need to click the red “Request deac
     you will NOT be able to reactivate your account.
     [Cancel][Request]
 
-Clicking the “Request” button displays green, dismissible growlbox notification that reads::
+Clicking the “Request” button submits the request, and a green, dismissible notification will appear in the top right of the page::
 
     Success
     An OSF administrator will contact you shortly to confirm your deactivation request.
 
 An email is sent to support@osf.io listing the OSF user’s GUID, profile URL, and their primary email address. The “Request deactivation” button
-is disabled. If the user refreshes the page, a message appears in place of the button::
-
+is disabled. After a deactivation request is sent, a green "Cancel deactivation request" replaces the red "Request deactivation" button. Above this button is the following message::
+  
     Your account is currently pending deactivation. 
 
-This message persists until the account is deactivated.
+This message persists until the account is deactivated. When a deactivation request is sent, a team evaluates the situation before communicating with the user.
 
-When a request is sent, a team evaluates the situation before communicating with the user.
+The user can click the button to cancel their account deactivation at any time until their account is deactivated. Clicking **Cancel deactivation request** brings up the following confirmation modal::
+  
+    Cancel deactivation request?
+    Are you sure you want to rescind your account deactivation request? This will preserve your account status.
+    [Cancel][Cancel Deactivation Request]
+    
+Clicking **Cancel** retains the deactivation request and closes the modal. Clicking **Cancel Deactivation Request** cancels the deactivation request, and a green, dismissable confirmation message will appear in the top right of the page::
+  
+    Success
+    An OSF account is no longer up for review.
 
+The red "Request deactivation" button is restored on the "Account settings" page.
+    
 Deactivating an account: no projects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
