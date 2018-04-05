@@ -813,7 +813,7 @@ The accepted formats for searching one or more tags is as follows:
 
 To browse by subject area, there is a list of subject areas on the OSF Preprints and community preprint servers' landing pages. Clicking a subject area will yield preprints within that subject on the "Discover" page.
 
-On the "Discover" page, there is a Provider side bar that shows all of the preprint servers aggregated in that particular preprint server. The user can select a preprint server to search for preprints uploaded to that server.
+On the "Discover" page, there is a Provider side bar that shows all of the preprint servers aggregated in that particular preprint server. The user can select a preprint server to search for preprints uploaded to that server. If searching by subject area from the landing page, that subject will be expanded in its hierarchy in the sidebar when the user gets to the "Discover" page. Some community preprint services will have the top-level subjects expanded by default in the sidebar.
 
 Below the Provider sidebar, there is a Subject sidebar that is sorted hierarchically. Clicking a facet next to a subject will unfold the subdisciplines within that subject area. Selecting a subject area will return all of the preprints that have that subject area as a discpline. Taxonomy that is custom to a community preprint server is not listed in this sidebar on the OSF Preprints "Discover" page. The user would need to go to the community preprint server's "Discover" page to search by their custom taxonomy. The preprints tagged with custom taxonomy are still aggregated in OSF Preprints. The tag does not appear on the preprint in search results, but, when clicked, the tag is listed on the preprint's "Details" page.
 
