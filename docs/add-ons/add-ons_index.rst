@@ -898,10 +898,7 @@ that reads "Import Account from Profile." Alternatively, the user can uncheck th
 changes.
 
 .. _zotero:
-
-Configuring Zotero
-******************
-**Purpose:** Connecting to Zotero allows users to create a two way connection between the OSF and Zotero.
+**Purpose**: Connecting to Zotero allows users to create a two-way connection between the OSF and Zotero.
 
 Clicking the **Enable** link presents the user with a modal::
 
@@ -917,67 +914,82 @@ Clicking the **Enable** link presents the user with a modal::
     The OSF is not responsible for the service or for your use thereof.
     This add-on allows you to store files using an external service. Files added to this add-on are not stored within the OSF.
     [Cancel][Confirm]
+    
+Clicking **Cancel** cancels this action and closes the modal. Clicking **Confirm** sets up the Zotero configuration.
 
-On this modal, users can click “Cancel” to cancel this action and close the window or “Confirm” to continue configuring Box.
+After confirming, Zotero will appear in the "Configure Add-ons" section below the "Select Add-ons" section. A blue box appears below Zotero to instructs users on what to do if they do not see their Zotero libraries::
+  
+  Don’t see your Zotero group libraries?
+  You may need to reauthorize your Zotero access token. Follow the steps in the help guide to resolve the issue.  
+  Please contact support@osf.io if you have questions.
 
-If user clicks “Confirm” but does not click “Apply,” and navigates away from page, a browser popup appears asking user to
-confirm navigation away from the page because pending add-on changes were not saved.
+The text "help guide" links to this help guide: http://help.osf.io/a/850167-reauthorize-zotero.
 
-After confirming, users will see a green “Apply” button appear at the bottom of the Select Add-ons panel. Clicking “Apply”
-will apply the settings. Green inline text appears for a few seconds below the "Apply" button::
-
-    Settings updated
-
-If the user has not connected Zotero to their account previously, a row titled "Zotero" is listed in the
-Configure Add-ons panel with a link—"connect account."
-
-When users click the "connect account" link, they will be navigated to a new window where they can confirm the
-connection with Zotero before being taken back to the Settings page on the OSF. When they return to the OSF a modal appears::
+If the user has not previously connected Zotero to their account, they will see a "Connect account" link. Clicking **Connect account** will take the user to Zotero where they will need to authorize OSF access to their Zotero content. After granting access to OSF, the user will be taken back to their OSF "Add-ons" page, where they will see a modal in which they will need to import their Zotero access token::
 
     Import Zotero access token
     Are you sure you want to link your Zotero account with this project?
     [Cancel][Import]
+    
+If the user has previously connected Zotero to their account, the link in the Zotero row will read "Import Account from Profile." Clicking this link opens the "Import Zotero access token" modal.
+    
+After the user clicks **Import**, a temporary green, inline confirmation message appears above the blue box::
+  
+    Successfully imported Zotero account from profile
 
-If the user has connected Zotero to their account previously, the link in the Zotero row reads "Import Account from Profile."
-Clicking opens a modal that reads::
+The user can then select the library that they want to connect to their project::
 
-    Import Zotero access token
-    Are you sure you want to link your Zotero account with this project?
-    [Cancel][Import]
+    Current Library: None
+    [Change]
 
-Importing an account loads the users' Zotero collections.
+Clicking the **Change** button opens a table of the user's individual and group libaries::
+  
+    Libraries | Select
+    
+Clicking the radio button next to a library selects the library, and shows "Cancel" and "Save" buttons below the table. Clicking **Cancel** hides these buttons, while the library remains selected. Clicking **Save** shows a green, inline confirmation message above the blue box::
+  
+    Successfully linked "<library>". Next, choose which folder to link above.
 
-To the right of the the Zotero title is text that reads::
+The "Current Library" field will read::
+  
+    Current Library: <library>
 
-    authorized by [user who configured add-on]
+The user can then select the folder within the library that they want to connect to their project::
+  
+    Current Folder: None
+    [Change]
 
-The "Connect Account" link is replaced by a red "Disconnect Account" link.
+Clicking the **Change** button opens a table of the user's library folders::
+  
+      Folders | Select
 
-Below that row is bold text that reads "Current Folder: None." This is updated when the user selects a folder. A blue button labeled
-"Change" is below the "Current Folder" text. Clicking this button expands and collapses a table below.
+Clicking the radio button next to a library selects the library. The user can choose to select **All Documents** to connect all their folders to their project. After selecting a folder, a blue message appears below the table::
+  
+    Connect "<folder>"?
 
-The table has two columns—"Folders" and "Select." Under "Folders" is a list of all top level Zotero folders the user has.
-Folders can be expanded and collapsed. Each folder has a corresponding radio button in the "Select" column. When the user
-selects a folder, text appears at the bottom of the table::
+"Cancel" and "Save" buttons also appear below the table. Clicking **Cancel** hides these buttons. Clicking **Save** connects the selected library and folder to the user's project. A green, inline confirmation message appears above the blue box::
+  
+    Successfully linked "<folder>". Go to the Overview page to view your citations.
 
-    Connect [folder title]?
+The text "Overview page" links to the project Overview page.
 
-Two buttons, "Cancel" and "Save" appear below the table. Cancelling removes the two buttons and confirmatory text but the folder
-is still selected.
-
-Clicking "Save" updates the "Current Folder" text and green inline text appears below the table, replacing the buttons::
-
-    Successfully linked "[folder title]". Go to the Overview page to view your citations.
-
-To disconnect Zotero, the user clicks the red "Disconnect Account" link. This opens a modal::
-
+To disconnect Zotero from their project, the user must click the red **Disconnect Account** link. Clicking this link opens a confirmation modal::
+    
     Disconnect Zotero Account?
     Are you sure you want to remove this Zotero account?
     [Cancel][Disconnect]
-
-Clicking "Disconnect" removes the table and connected folder information. The "Disconnect Account" link is replaced by a link
-that reads "Import Account from Profile." Alternatively, the user can uncheck the add-on from the "Select Add-ons" list and save their
-changes.
+    
+Clicking **Cancel** cancels the action and closes the modal. Clicking **Disconnect** disconnects the user's library and folder from their project. The "Disconnect Account" link is replaced by a link that reads "Import Account from Profile." A temporary, yellow confirmation message appears above the blue box::
+  
+    Disconnected Zotero
+ 
+To remove the Zotero configuration, the user can click the **Disable** link next to Zotero in the "Select Add-ons" list. Clicking this link opens a modal::
+  
+  Disable Add-on?
+  Are you sure you want to disable this add-on?
+  [Cancel][Disable]
+  
+Clicking **Cancel** cancels the action and closes the modal. Zotero will remain in the "Configure Add-ons" section. Clicking **Disable** removes Zotero from the ""Configure Add-ons" section, and replaces the red "Disable" link with the green "Enable" link in the "Select Add-ons" section.
 
 Viewing Amazon S3 Files
 ***********************
