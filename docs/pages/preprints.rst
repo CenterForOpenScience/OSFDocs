@@ -153,7 +153,17 @@ Clicking the Connect Preprint to existing OSF project brings up the Choose Proje
     [drop-down selections][a list of the user's OSF projects and components]
     **The list of projects appearing in the selector are projects and components for which you have admin access. Registrations are not included here.
     
-After the user selects a project or component from the drop-down list, the Choose Project section closes, and the Choose File section appears below it. The Choose Project section is still viewable and accessible to the user. The box reads::
+Clicking inside the menu opens a drop-down menu with the following helper text::
+  
+    Type to search.
+
+Typing into the field, shows the following loading message::
+  
+    Loading options...
+    
+A maximum of 7 projects are shown at a time from the menu. If there are more than 7, the user can scroll through the menu.
+    
+After the user types in and selects a project or component from the drop-down list, the Choose Project section closes, and the Choose File section appears below it. The Choose Project section is still viewable and accessible to the user. The box reads::
 
     Choose Project
     [project or component name]
