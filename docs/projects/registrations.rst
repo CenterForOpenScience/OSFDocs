@@ -568,15 +568,13 @@ If an admin approves the withdrawal, they are brought to the withdrawal's page. 
     Your approval has been accepted.
 
 Withdrawn pages show the registration's title, contributors, type of registration supplement (though no link to contents),
-date of the project's creation, date of the registration, date of the registration's withdrawal, and description. At the top of the page is a red, non-dismissable alert
-that reads::
+date of the project's creation, date of the registration, date of the registration's withdrawal, DOI (if any), description (if any), and justification for withdrawal (if any). If no justification is given, a message appears in place of an explanation::
+  
+    No justification provided during withdrawal.
+
+At the top of the page is a red, non-dismissable banner::
 
     This project is a withdrawn registration of this project; the content of the project has been taken down for the reason(s) stated below.
-
-Below the description is the "Justification for Withdrawal" section. The admin's justification is provided below the header. If
-no justification was entered, the section reads::
-
-    No justification provided during withdrawal.
 
 No other options or widgets are shown on the page.
 

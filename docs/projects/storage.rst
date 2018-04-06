@@ -148,7 +148,7 @@ Clicking the "Delete" button when a file is selected opens a modal within the Fi
     This action is irreversible.
     [Cancel][Delete]
 
-Confirming the deletion removes the file from the Files Browser.
+Confirming the deletion removes the file from the Files Browser. Provenance information is left behind for deleted files - including files deleted on third-party add-ons. Information includes: file name, provider, name of user who deleted the file, timestamp of deletion, hashes, file size, date the file was last seen, and provider path.
 
 Clicking the "View" button brings the user to the file's :ref:`Details page <details>`.
 
