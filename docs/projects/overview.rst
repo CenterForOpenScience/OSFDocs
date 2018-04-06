@@ -188,17 +188,20 @@ Components Widget
 -----------------
 **Purpose:** The "Components" widget allows users to view and create new components as well as link projects.
 
-The "Components" widget is located below the "Citation" widget. In the panel's heading, two buttons are visible: "Add Component" and "Link Projects."
+The "Components" widget is located below the "Citation" widget. This widget shows all child components and any linked projects.
 
-When a project has no links or components within it, the "Components" widget is not displayed for either read-only contributors or non-contributors do not see the "Components" widget. 
+When a project has no links or components within it, the "Components" widget is not displayed for both read-only contributors and non-contributors. 
 
 When a project has no links or components within it, the "Components" widget *is* dislpayed for contributors with read+write or admin permissions. These contributors see the two buttons and the following message::
   
   Add components to organize your [project/component]
+  
+Components within this widget show basic metadata about the component: 
+  
+In the widget's heading, two buttons are visible: "Add Component" and "Link Projects."
 
 Add a Component
 ^^^^^^^^^^^^^^^
-
 Clicking the "Add Component" button opens a modal::
 
     Create new component
@@ -322,17 +325,18 @@ Viewing links
 ^^^^^^^^^^^^^
 See the :ref:`Analytics page <analytics_links>` for information.
 
-
 .. _component-format:
 Component widget format
 ^^^^^^^^^^^^^^^^^^^^^^^
-Components and links are listed in the Components widget with their title, contributors, number of contributions, category, and privacy symbols. Components are listed
+Components and links are listed in the Components widget with their title, contributors, description, category, and privacy symbols. Components are listed
 in the order in which they were added. Components can be dragged and dropped to re-order. After re-ordering components, the user can refresh the page and the changes will be visible.
 
 If one of the components is private, to the left of the title and category symbol is a lock. If the component
 is public, there is no symbol. Titles link to the project/component/link's overview page. Below the titles are the names of the first three contributors;
-if there are more contributors, they are indicated by the addition of "& __ more." Clicking on a contributor's name brings the user to the contributor's
-public profile. Clicking on "& __ more" brings the user to the Overview page for the project/component/link.
+if there are more contributors, they are indicated by the addition of "& <#> more."" Clicking on a contributor's name brings the user to the contributor's
+public profile. Clicking on "& <#> more" brings the user to the Overview page for the project/component/link.
+
+The component shows a snippet of the description of up to 3 lines. If the description is longer, the snippet will be tailored off by an ellipsis. If the component does not have a description, no description is displayed for the component in the "Components" section of the parent project.
 
 To the right of the element's title is an ellipsis that, when clicked, gives contributors options to manage the component directly from the parent's "Overview" page.
 The ellipsis is visible only to contributors. Linked projects/registrations do not contain these ellipses. 

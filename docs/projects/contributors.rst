@@ -57,11 +57,11 @@ corner of the page::
     Error:
     Your contributor list has unsaved changes. Please save or cancel your changes before adding contributors.
 
-In addition to managing project settings and contributor permissions, admins on a project can see the contents of all children of
-that project regardless of the privacy setting—even if they are not explicitly made a contributor on the child components or projects.
+In addition to managing project settings and contributor permissions, admins on a parent project can see the contents of all children of
+that project regardless of the privacy setting—even if they are not explicitly made a contributor on the child components.
 
 When an admin on a parent project visits a child that they are not a contributor to, they see the project as if they were a
-read only contributor, meaning they have no access to the Contributors page and have limited settings options. Contributors to
+read-only contributor, meaning they have no access to the Contributors page and have limited settings options. Contributors to
 the child project, when visiting the Contributors page, see an additional section under the "Contributors" section. This section is
 labeled "Admins on Parent Project." Hovering over the '?' to the right of this title shows a popover that reads::
 
@@ -69,9 +69,9 @@ labeled "Admins on Parent Project." Hovering over the '?' to the right of this t
     These users are not contributors on this component but can view and register it because they are administrators on a parent
     project.
 
-Below the heading is a list of admins on the parent project. Their profile picture and user name are listed, linking to their public
-profile. To the right of their name, under the "Permissions" column is muted text that reads "Read." Below the "Bibliographic Contributor"
-column is a deactivated, emtpy checkbox. This checkbox cannot be filled in.
+Below the heading is a list of the admins on the parent project. Their profile picture and user name are listed, linking to their public
+profile. To the right of their name, under the "Permissions" column, is muted text that reads "Read." Below the "Bibliographic Contributor"
+column is a disabled, empty checkbox. To the far right of the user is a green "+Add" button. The admin on the child component can click this button to add the implicit admins as read contributors with bibliographic permissions to the component. The contributor permissions can be modified after adding the user. The user will no longer appear in the "Admins on Parent Project" section, and will now be listed in the "Contributors" section (and can be removed).
 
 The left side of the screen, the filtering options, contains a text box for filtering contributors by name and several boxes to filter by Permissions and by Bibliographic Contributor status. The user can type in the "Filter by name" box and the contributor list will dynamically display only contributors who match the entered text. If no contributors match the entered text, a gray bar appears in the contributors table, along with red text, "No contributors found."
 
@@ -191,16 +191,14 @@ Education, employment, number of common projects (if applicable), and social lin
 names in search results. Clicking on the social icons takes the user to the user's page on the corresponding website. Searching for someone's twitter
 handle, personal website, ORCID ID, etc., will show matches in the results. 
 
-Clicking the ‘+’ button adds the user result to the “Adding” column. The user's name and profile picture is carried over (but not social information).
-Alternatively, the user can click the “Add all” link to the right of the “Results” title to add the results shown on the page to the “Adding” column.
-When a result is moved to the “Adding” column, it is removed from the “Results” column. Projects in the “Results” column have, instead of the green
-button to the left, a grey button with a ‘-‘ sign. Hovering over the '-' sign shows a tooltip tha reads::
+Clicking the ‘+’ button adds the user result to the “Adding” column, and clears the search box of their name. The user's name and profile picture is carried over (but not social information) to the "Adding" column. Alternatively, the user can click the “Add all” link to the right of the “Results” title to add the results shown on the page to the “Adding” column. 
+
+When a result is moved to the “Adding” column, it is removed from the “Results” column. Users in the “Results” column have, instead of the green button to the left, a grey button with a ‘-‘ sign. Hovering over the '-' sign shows a tooltip tha reads::
 
     Remove contributor
 
 Clicking this button removes the corresponding result from the “Adding” list and returns it to the “Results” page it was found on.
 To the right of the “Adding” title is a “Remove All” link. Clicking this link moves all added results back to the “Results” column.
-
 
 If the results do not list the user being searched for, or it returns no results at all, the user can click the "Add [username] as an unregistered contributor" link. Clicking this link changes the modal contents to read::
 
