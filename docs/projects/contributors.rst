@@ -191,10 +191,9 @@ Education, employment, number of common projects (if applicable), and social lin
 names in search results. Clicking on the social icons takes the user to the user's page on the corresponding website. Searching for someone's twitter
 handle, personal website, ORCID ID, etc., will show matches in the results. 
 
-Clicking the ‘+’ button adds the user result to the “Adding” column. The user's name and profile picture is carried over (but not social information).
-Alternatively, the user can click the “Add all” link to the right of the “Results” title to add the results shown on the page to the “Adding” column.
-When a result is moved to the “Adding” column, it is removed from the “Results” column. Projects in the “Results” column have, instead of the green
-button to the left, a grey button with a ‘-‘ sign. Hovering over the '-' sign shows a tooltip tha reads::
+Clicking the ‘+’ button adds the user result to the “Adding” column, and clears the search box of their name. The user's name and profile picture is carried over (but not social information) to the "Adding" column. Alternatively, the user can click the “Add all” link to the right of the “Results” title to add the results shown on the page to the “Adding” column. 
+
+When a result is moved to the “Adding” column, it is removed from the “Results” column. Users in the “Results” column have, instead of the green button to the left, a grey button with a ‘-‘ sign. Hovering over the '-' sign shows a tooltip tha reads::
 
     Remove contributor
 
