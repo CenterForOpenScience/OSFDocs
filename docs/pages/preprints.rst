@@ -94,7 +94,7 @@ The "Select a preprint service" widget shows the service that was selected::
   
     Preprint service: <preprint service name>
 
-Once the "Select a preprint service" widget closes, the "Upload" widget opens (the user must click inside widget to expand it on community preprint services).
+Once the "Select a preprint service" widget closes, the "Upload" widget opens (this widget is auto-expanded for community preprint services).
 
 If the user does not complete the upload widget and clicks inside another widget, has not completed the steps within a widget and clicks inside another widget, an alert will appear in the top right corner of the Add preprint page::
 
