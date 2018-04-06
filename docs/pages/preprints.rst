@@ -2,7 +2,7 @@
 
 Anyone with an OSF account can create a preprint and upload it to OSF Preprints or a community preprint server. A user can upload a new preprint or turn an existing OSF project or component into a preprint. 
 
-When a user uploads a new preprint (and does not use an existing project or component), an OSF project is automatically created to connect to it. The conneced OSF project allows the user to upload supplemental files to their preprint. When a user turns an existing OSF project or component into a preprint, the user can add supplemental files to that project and access the files that they previously added to that project.
+When a user uploads a new preprint (and does not use an existing project or component), an OSF project is automatically created to connect to it. The connected OSF project allows the user to upload supplemental files to their preprint. When a user turns an existing OSF project or component into a preprint, the user can add supplemental files to that project and access the files that they previously added to that project.
 
 A user can access their preprint through their OSF project or component. On the project or component’s Overview page, there will be an alert saying “This [project] [component] represents a preprint. Learn more (this links to preprints help guides] about how to work with preprints.” A user can also access their preprint through the “My Projects” tab and  clicking “All my preprints” from the left sidebar and then clicking the preprint they want to view. 
 
@@ -362,11 +362,7 @@ These two fields are required. In the "Year" field, the current year is listed a
 There is an option to "Apply this preprint license to my OSF project." The user can select "Yes" or "No" to either extend or not extend the preprint license to their OSF project. "Yes" is selected automatically. Note that if the user selects "No license" option from the drop-down menu, they can choose to extend this license to their OSF project, as well.
 
 **The DOI section**
-A DOI is automatically generated for a preprint upon submission. The use does not need to do anything in this section for the DOI to be generated. 
-
-However, (if the user's preprint has already been published in a journal), the user can enter their DOI of the associated journal into the DOI field. There is a message above the DOI field that reads::
-  
-    **Peer-reviewed publication DOI (optional)**
+A DOI is automatically generated for a preprint upon submission. If the user's preprint has previously been published in a journal, they can enter their peer-reviewed DOI into this field: Peer-reviewed publication DOI (optional).
     
 If the user enters an invalid DOI, a red error message appears below the DOI field that reads::
   
@@ -664,6 +660,8 @@ On the right half of the page, the preprint's abstract, license, disciplines, Pr
 It can take up to 24 hours for a preprint to be minted, in which case the DOI is listed, but not linked, and the following message appears below the Preprint DOI:
   
     DOIs are minted by a third party, and may take up to 24 hours to be registered
+
+If the user has entered a peer-reviewed DOI and an original publication date, these metadata will appear in the citations (not all citation styles use DOIs). If the user has not entered a peer-reviewed DOI, the preprint DOI is used in the citations.
 
 If an abstract is long, there will be a **See more** button below the abstract that the user can click to expand the remaining text. When the abstract is expanded, the button changes to **See less**. When the user clicks the **See less** button, the abstract shrinks back to its shorter length, and the **See more** button returns.
 
