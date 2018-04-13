@@ -284,6 +284,48 @@ In the "Comments" section is a text box with the reviewer's comments. The first 
 Which is then followed by their commentary.
 
 
+Creating a registered report
+-----------------------------
+**Purpose**: the registered report landing page and workflow provides users an easy way to create and share registered reports.
+
+The "Registered Report" landing page is accessible at https://osf.io/rr. This page gives uesrs an onboarder to create registered reports following stage 1 peer review. Users must receive an in principle acceptance by a journal following stage 1 peer review in order to be eligible for the form. 
+
+The page header is titled "Simple Registered Report Protocol Preregistration". Introductory text below the header reads::
+  
+  Registered Reports benefit science by improving rigor and reducing publication bias.
+
+  When to use this form:
+
+  Use this form after you have received “in principle acceptance” (IPA) by a journal following Stage 1 Peer Review, and before you have begun the study.
+
+At the bottom of the page are options to start a registered report::
+  
+    [Create a Registered Report]
+
+If the user is logged out when clicking this button, they will be prompted to sign in or create an account.
+
+If the user has pre-existing OSF projects, a second button will be visible (the user must be logged in to see this option)::
+  
+    [Preregister an analysis plan for an OSF Project]
+    
+If the user previously started a registered report and left it in a draft state, a third button will be visible (the user must be logged in to see this option)::
+  
+    [Continue working on an existing draft of Registered Report]
+
+Clicking **Create a Registered Report** opens a "Title" field below the button where the user must enter the title of their registered report before proceeding. Clicking **Create** takes the user to the form.
+
+Clicking **Continue working on an existing draft of Registered Report** opens a search field below the button with helper text::
+  
+    Go to an existing registration:
+
+Typing the name of the project that has a draft registered report into the field pulls up matching results. Typing existing project names that do not have draft registered reports associated with them will not show search results. After selecting the project and clicking **Continue**, the user is taken to their draft registered report.
+
+Clicking **Preregister an analysis plan for an OSF project** opens a search field with helper text::
+  
+    Register existing project:
+
+Typing the name of an existing project into the field pulls up matching results. After selecting the project and clicking **Register**, the user is taken to the form. The rest of the workflow follows regular registrations.
+
 Embargos
 ------------
 **Purpose:** Users can opt to make their registration public immediately or after a period of time.
@@ -583,28 +625,28 @@ withdrawal page. A red tag to the left of the link reads "Withdrawn."
 
 Withdrawn registrations are shown in search results of the OSF. To the right of their name, in the result, is "(Withdrawn Registration)."
 
-DOIs and ARKs
-------------------
-**Purpose:** DOIs and ARKs can be issued to provide means of citation alternate to the OSF URL.
+DOIs
+-----
+**Purpose:** DOIs can be issued to provide means of citation alternate to the OSF URL.
 
-Public, meaning non-embargoed, registrations can be given DOIs and ARKs. To do so, admins visit the registration's page and
-click the "Create DOI/ARK" link below the "Date Created" field. Clicking opens a modal::
+Public, meaning non-embargoed, registrations can be given DOIs. To do so, admins visit the registration's page and
+click the "Create DOI" link below the "Date Created" field. Clicking opens a modal::
 
     Create identifiers
-    Are you sure you want to create a DOI and ARK for this project? DOI and ARK identifiers are persistent and will always resolve to this page.
+    Are you sure you want to create a DOI for this project? DOI identifiers are persistent and will always resolve to this page.
     [Cancel][Create]
 
 Clicking "Create" turns the link to text that reads::
 
-    Creating DOI and ARK. Please wait...
+    Creating DOI. Please wait...
 
 After several seconds, the text changes again to read::
 
-    Identifiers: DOI [DOI identifier] | ARK [ARK identifier]
+    Identifiers: DOI [DOI identifier]
 
-The OSF begins all DOIs and ARKs with the same number, followed by "/osf.io/GUID." The following structure is the same for all DOIs and ARKs created on the OSF (the GUID is different for each project or registration)::
+The OSF begins all DOIs with the same number, followed by "/osf.io/GUID." The following structure is the same for all DOIs created on the OSF (the GUID is different for each project or registration)::
   
-    DOI 10.17605/OSF.IO/GUID | ARK c7605/osf.io/GUID
+    DOI 10.17605/OSF.IO/GUID
 
 Registering with Add-ons
 ------------------------
