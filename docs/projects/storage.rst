@@ -182,26 +182,58 @@ File Detail Page
 
 **Purpose:** Most files can be rendered in the browser on the File Detail Page. The File Detail page also provides access to previous versions of a file. 
 
-On the top left hand side is a widget enabling access to the other files associated with the project. 
+File Detail Page
+----------
 
-On the lower left hand side is a Tags widget, for files stored on OSF Storage. When no tags are added, users with read+write or admin permissions see text that reads “Add a tag.” If the user is not a contributor on the project, or only has read permissions, and no tags have been added, the Tags widget is not visible.
-Contributors with read+write or admin permissions can add a tag by clicking inside the widget and typing a keyword. Pressing the return key will add the tag. Adding a comma after a tag and pressing the space bar, as if making a list, will also add a tag. Admins and read+write contributors will see an ‘x’ to the right of the tag that they can click to remove the tag.
-Clicking on a tag brings the user to search results page, where the query was the tag name.
+**Purpose:** Most files can be rendered in the browser on the File Detail Page. The File Detail page also provides access to previous versions of a file. 
 
-If the file can be rendered, it displays in the rest of the screen. For a list of which file types render in the browser, go to `<https://gist.github.com/felliott/8fd378c25c1b7122b6e7992cdb2693a7>`_. 
+Along the left side of the page is a sidebar enabling access to the other files associated with the project. 
 
-Above the rendered file are three buttons: "Download", "View", "Revisions." 
+In the bottom left is a Tags widget, for files stored on OSF Storage. When no tags are added, users with read+write or admin permissions see text that reads “Add a tag.” If the user is not a contributor on the project, or only has read permissions, and no tags have been added, the Tags widget is not visible.
+Contributors with read+write or admin permissions can add a tag by clicking inside the widget and typing a keyword. Pressing the return key will add the tag. Adding a comma after a tag and pressing the space bar, as if making a list, will also add a tag. Admins and read+write contributors will see an ‘x’ to the right of the tag that they can click to remove the tag. Clicking on a tag brings the user to the OSF search results page with the tag name query.
 
-For ADMIN and READ+WRITE contributors, a "Delete" button is also present. For these users and plain text files, an "Edit" button appears. 
+If the file can be rendered, it displays in the MFR on the page. For a list of which file types render in the browser, go to `<https://gist.github.com/felliott/8fd378c25c1b7122b6e7992cdb2693a7>`_. 
+
+If the file is an image with a height greater than 200, the user can click anywhere on the image to zoom in on details. Once zoomed in, the user can scroll around the image to navigate to different details. Above the image is a question mark icon. The user can hover over the question mark to view on-screen instructions in a tooltip::
+  
+    HiRes: Click on the image to view in higher resolution when available
+    
+    Zoom: Click on the image and use the mouse wheel to zoom in and out
+    
+    Navigate: Move the mouse cursor to navigate through the magnified image
+    
+For images that have a height less than 200, zoom is disabled and no instructions are available.
+
+Above the rendered file are three buttons: "Download", "View", "Revisions." If the project is public, a "Share" button is also visible.
 
 For ADMIN contributors and files stored on OSF Storage, the "Check Out" button appears. 
 
-If the file is stored on a 3rd party add-on, a link to view the file on the 3rd party service appears above the rendered file. 
+For ADMIN and READ+WRITE contributors, a "Delete" button is also present. For these users and plain text files, an "Edit" button appears. If the "Edit" button is present, the "View" and "Edit" buttons can be toggled on and off, so that the user can edit and view the changes simultaneously. Clicking the "Edit" button opens the "Edit" pane, where the user can make changes to their file. At the top of pane is a green "Live editing mode" button that, when clicked, opens the following modal::
+  
+  Connected to collaborative file editing
+  This page is currently connected to collaborative file editing. All edits made will be visible to contributors with write permission in real time. Changes will be stored but not published until you click the "Save" button.
+  [Close]
+
+At the bottom of the pane are "Revert" and "Save" buttons. Clicking **Revert** reverts to the last saved version of the file. Clicking **Save** saves the newest changes and updates the file to a new version. 
+
+If the file is stored on a 3rd-party add-on, a link to view the file on the 3rd-party service appears above the rendered file.
+
+Clicking the **Revisions** button shows all versions of the file in a table format::
+  
+    Version ID | Date | User | Download | MD5 | SHA2
+
+The latest version (indicated by the version ID) is displayed in the MFR by default. All IDs of the previous verisons are linked and render in the MFR when clicked. The "Download" column presents a button to download the version of the file. The MD5 column shows the hash value with a button to copy the hash to the user's clipboard. To the right of MD5 is a question mark icon that, when clicked, gives a definition of the hash in a tooltip::
+
+    MD5 is an algorithm used to verify data integrity.
+
+The SHA2 column shows the hash value with a button to copy the hash to the user's clipboard. To the right of SHA2  is a question mark that, when clicked, gives a definiton of the hash in a tooltop::
+  
+    SHA-2 is a cryptographic hash function designed by the NSA used to verify data integrity.
 
 Admin and read+write contributors can rename the file directly from the "File Detail" page. The workflow and behavior is the same
-as :ref:`Renaming a project <renaming_project>`. Clicking the filename in the top left of the page page turns the title into a textbox wherein the the user can
-make changes to the title. To the right of the textbox is a green checkmark and an "x" that the user can click to either save their
-changes or cancel their changes, respectively. The user can also press **enter** on their keyboard to commit the new name.
+as :ref:`Renaming a project <renaming_project>`. Clicking the filename in the top left of the page turns the title into a textbox wherein the user can
+make changes to the title. To the right of the textbox are a green checkmark and an "x" that the user can click to either save their
+changes or cancel their changes, respectively.
 
 After clicking the green check mark, the following dismissable confirmation message appears in the top right of the page::
   
