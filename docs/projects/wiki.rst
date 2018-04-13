@@ -56,21 +56,33 @@ edit other users' work.
 If the user makes changes but attempts to navigate away from the page, no alerts or warnings appear. When the user returns to the Edit
 panel, however, their in-progress edits are still available.
 
+Adding Files
+^^^^^^^^^^^^
+**Purpose**: to allow users to add files stored in their OSF Storage to their wiki.
+
+The user can embed files uploaded to OSF Storage (from Quick Files or any of their projects) in their wiki. They must enter the file's GUID directly into the editor using the following markdown syntax::
+  
+    @[osf](GUID)
+
 Embedding images
 ^^^^^^^^^^^^^^^^
 **Purpose**: To allow users to add images to their wiki content.
 
-To embed an image into a wiki page, the user clicks the **Image** icon in the toolbar, and the following modal appears for the user to enter the URL of the desired image:
+To embed an external image into a wiki page, the user must click the **Image** icon in the toolbar, and enter the URL of the desired image into the modal that appears.
 
-If the image the user wants to embed in the wiki is one that is stored within their OSF project, they will need to navigate to the file's "File Detail" page. Once on the page, they user can right click on the image and select "Copy image address" to copy the URL for the image (Note: the URL will have the form:
-
-https://mfr.osf.io/export?url=https://osf.io/vfq7g/?action=download%26direct%26mode=render&initialWidth=628&childId=mfrIframe&format=1200x1200.jpeg
-
--- NOTE the short URL points to the File Detail page). The user can then copy this URL and paste it into the image modal to insert it within their wiki page.  
-
-To resize an embedded image, the user can add the following syntax to the end of the image markdown::
+The user can also drop and drop local images directly into the wiki editor, and have those images rendered in the wiki.
+  
+To resize an embedded image to an exact size, the user can add the following syntax to the end of the image markdown::
   
     ![enter image description here](http://osf.io/GUID/download =[number]x[number])
+    
+To resize the image to fit the page, the user must add the following syntax after the URL::
+
+  ![enter image description here](image URL =100%x)
+
+To resize the image to a relative size, the user must use a percentage::
+
+    ![enter image description here](image URL =n%x)
     
     
 Adding a new wiki page
