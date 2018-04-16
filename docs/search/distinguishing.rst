@@ -1,5 +1,5 @@
 
-**Purpose:** Results returned include projects, components, users, registrations, and SHARE results. Each is distinguished
+**Purpose:** Results returned include projects, components, users, registrations, preprints, files, and SHARE results. Each is distinguished
 from one another so that the user can best find the appropriate resource.
 
 Links from each search result bring the user to the relevant page.
@@ -9,8 +9,7 @@ their user profiles. If tags or descriptions are provided, these are listed belo
 the homepage wiki or the files page are provided.
 
 If a returned result is a component, the parent project title precedes the component title using the standard breadcrumbs
-format: Project / Component. Both the project and component titles are linked to the relevant "Overview" pages. Projects
-that are children of projects do not display breadcrumbs.
+format: Project / Component. Both the project and component titles are linked to their corresponding "Overview" pages. If a parent project is private, and its component is public, the project hierarchy will be hidden in search results.
 
 Registration results also show the title and contributors with links to the registration’s "Overview" page and user profiles.
 In addition, registrations are indicated by text to the right of their name that reads “(Registration).” Below the title
