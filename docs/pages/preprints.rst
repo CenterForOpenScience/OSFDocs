@@ -348,14 +348,12 @@ If the user chooses the No license option from the Choose a license drop-down me
 In the license section, the user has the following options::
     
     **Choose a license:** (required)
-    [Drop-down selections:] CCO 1.0 Universal (this one is selected automatically)
-                            CC-By Attribution 4.0 International
-                            No license
+    [Drop-down selections]
     License FAQ (this links to the license FAQ page)
     Show full text (clicking this shows an explanation of the license selected)
     Hide full text (this appears in place of Show full text when the user clicks to view the text)
 
-When the user selects "No license" from the drop-down menu, the "Year" and "Copyright Holders" fields appear below the menu.
+The licenses available vary by preprint provider. OSF Preprints offers No license, CC0 1.0 Universal, and CC-By Attribution 4.0 International. If the user selects "No license" from the drop-down menu, the "Year" and "Copyright Holders" fields appear below the menu.
 
 These two fields are required. In the "Year" field, the current year is listed automatically. If the user deletes the current year - e.g. "2017"- from the field, the year will reappear automatically in the field. To enter a different year, the user can delete the last 1-3 numbers and type in the correct year from there. If the user deletes the first number- e.g. "2"- the year will reappear automatically in the field.
 

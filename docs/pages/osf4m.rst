@@ -6,7 +6,7 @@ This page is accessible at https://osf.io/meetings/.
 
 See the help guides for more instructions: http://help.osf.io/m/meetings.
 
-The landing page can also be accessed by either 1) clicking the **Browse** tab in the navigation bar, and then clicking **Meeting** from the drop-down menu 2) or, by going to the dashboard and scrolling to the bottom of the page where the following section appears::
+The landing page can also be accessed by either 1) clicking the **Browse** tab in the navigation bar, and then clicking **OSF Meetings** from the drop-down menu 2) or, by going to the dashboard and scrolling to the bottom of the page where the following section appears::
   
     Hosting a conference or meeting?
     Use the OSF Meetings service to provide a central location for conference submissions.
@@ -27,15 +27,16 @@ Below this are two sections: One is on the left side of the page and the second 
 
 Clicking **Register** causes a drop-down section to unfold. This sub-section reads as follows::
   
-    OSF for Meetings is a product that we offer to academic conferences at no cost. To request poster and talk hosting for a conference:
-        Email us at contact@cos.io
+    OSF Meetings is a product that we offer to academic conferences at no cost. To request poster and talk hosting for a conference:
+        Submit this set-up form
     We'll review and add your conference within one business day.
     
+The text "set-up form" links to the Google form for meeting requests: https://docs.google.com/forms/d/e/1FAIpQLSeBq4CfC5CjTBz49TP2dO9ZIsQc6QAAJFUoUbkS767Le9twLw/viewform
+
 The right-hand section reads as follows::
   
-  For Conference Participants
-  Share your posters and presentations along with any supporting data and materials. Get persistent links and usage analytics.
-  [Upload]
+    Share your posters and presentations along with supporting data and materials. Get persistent links and usage analytics.
+    [Upload]
   
 Clicking **Upload** causes a drop-down section to unfold. The drop-down section reads as follows::
   
@@ -62,11 +63,11 @@ Clicking on a conference takes the user to the landing page for the conference.
 OSF Meetings conference pages
 ---------------------------------
 
-**Purpose:** Submissions to a particular conference via OSF Meetings are aggregated on one page that is visible to visitors.
+**Purpose:** Submissions to a particular conference via OSF Meetings are aggregated on one page that is publicly visible.
 
 Users can submit their talks/presentations to the conference on the conference page. All submissions are listed and linked to their respective OSF projects. Download counts for each submitted file are provided.
 
-The title of the conference is displayed in large font at the top of the page. Below the title are two links::
+The title of the conference is across the top of the page. Below the title are two links::
   
   Add your poster or talk | Conference homepage
   
@@ -90,11 +91,11 @@ Clicking **Add your poster or talk** causes a drop-down section to unfold that e
 
 Clicking the **Conference homepage** link takes the user to the external conference webpage/site.
 
-Below these two links is the list of conference submissions. The submissions are divided into the following columns::
+Below these two links is the list of conference submissions in table-format::
   
     Title | Author | Category | Date Created | Downloads
 
-The user can click the up or down arrows to the right of each column header to sort the submissions. Clicking the up arrow in the "Title" and "Author" columns sorts submissions alphabetically, and clicking the down arrow sorts them in reverse alphabetical order. Clicking the up arrow in the "Category" column sorts submissions by all posters appearing first in the list, and clicking the down arrow sorts by all talks appearing first in the list. Clicking the up arrow in the "Date Created" column sorts submissions by oldest to the most recent date submitted, and clicking the down arrow sorts by the most recent date to the oldest date submitted. Clicking the up arrow in the "Downloads" column sorts submissions by least number of downloads to the most, and clicking the down arrow sorts by the most number of downloads to the least.
+By default, submissions are sorted by the most recent date created. The user can click the up or down arrows to the right of each column header to sort the submissions. Clicking the up arrow in the "Title" and "Author" columns sorts submissions alphabetically, and clicking the down arrow sorts them in reverse alphabetical order. Clicking the up arrow in the "Category" column sorts submissions by all posters appearing first in the list, and clicking the down arrow sorts by all talks appearing first in the list. Clicking the up arrow in the "Date Created" column sorts submissions by oldest to the most recent date submitted, and clicking the down arrow sorts by the most recent date to the oldest date submitted. Clicking the up arrow in the "Downloads" column sorts submissions by least number of downloads to the most, and clicking the down arrow sorts by the most number of downloads to the least.
   
 Submitting to a conference
 --------------------------

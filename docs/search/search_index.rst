@@ -5,8 +5,6 @@ Searching the OSF
 
 **Purpose:** The search button allows users to find relevant content on the OSF or SHARE.
 
-.. todo:: Add SHARE docs
-
 The search bar is accessible via a magnifying glass link on the :doc:`navigation bar <../navigation/navigation>`.
 The search bar stretches the width of the page and is attached below the navigation bar. Users can type in their query
 using `Lucene search syntax <http://extensions.xwiki.org/xwiki/bin/view/Extension/Search+Application+Query+Syntax>`_
