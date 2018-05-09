@@ -99,3 +99,10 @@ Project Settings
 ***************
 
 .. include:: settings.rst
+
+.. _request_access:
+
+Request access
+**************
+
+.. include:: request_access.rst
