@@ -1,14 +1,14 @@
 **Purpose:** Project settings allow users to configure the project settings and their notifications for that project.
 
-The project settings page shows different options for contributors with different permissions.
+The project "Settings" page is configured differently depending on the contributor's level of permissions.
 
-If the user is an admin or a read+write contributor on the project, there are seven sections on the "Settings" page that they can configure: "Project," "View-only Links," "Wiki," "Commenting," "Email Notifications," "Redirect Link," and "Project Affiliation / Branding."
+If the contributor has admin or read+write permissions, they see eight sections on the "Settings" page: "Project," "View-only Links," "Access Requests," "Wiki," "Commenting," "Email Notifications," "Redirect Link," and "Project Affiliation / Branding."
 
 The "Settings" page has a sidebar that the user can use to navigate through the sections of the page.
   
 Additional sections are shown if the project is public.
 
-If the user is a read-only contributor on a project/component, the sidebar is not visible and only the "Project Affiliation/Branding" and "Notifications" sections are visible. The read-only contributor can configure their notification preferences in the "Email Notifications" section but will only have view-access to the "Project/Affiliation/Branding" section. This section reads::
+If the contributor has read-only permissions, the sidebar is not visible and only the "Email Notifications" and "Project Affiliation/Branding" sections are visible. The read-only contributor can configure their notification preferences in the "Email Notifications" section but will only have view-access to the "Project/Affiliation/Branding" section. This section reads::
   
     Project Affiliation/Branding
     Contributors with read-only permissions to this project cannot add or remove institutional affiliations.
@@ -21,7 +21,7 @@ If the user is a read-only contributor on a project/component, the sidebar is no
     Available institutions:
     [instutional logo][institution]
 
-If the user is an admin on a parent project, but is not a contributor on a component, only the "Project Affiliation/Branding" and "Notifications" sections will be visible on the component's "Settings" page. The admin is not, however, a contributor to the component. The component's "Contributors" tab is not visible to the admin. The admin can configure their notification preferences in the "Email Notifications" section of the component's "Settings" page. However, the admin has view-only access to the "Project Affiliation/Branding" section. This section reads as follows::
+If the user is an admin on the parent project but is not a contributor on a component, only the "Email Notifications" and "Project Affiliation/Branding" sections will be visible on the component's "Settings" page. The admin is not, however, a contributor to the component. The component's "Contributors" tab is not visible to the admin. The admin can configure their notification preferences in the "Email Notifications" section of the component's "Settings" page. However, the admin has view-only access to the "Project Affiliation/Branding" section. This section reads as follows::
   
     Project Affiliation/Branding
     Contributors with ready-only permissions to this project cannot add or remove institutional affiliations.
@@ -70,8 +70,8 @@ Leaving the page without cancelling or clicking "Save Changes" produces a browse
 
   Confirm Navigation. There are unsaved changes in your project settings. Are you sure you want to leave this page? [Stay on this page][Leave this page]
   
-Deleting projects/components
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Deleting a project
+^^^^^^^^^^^^^^^^^^
 
 Only admins can delete a project or a component. When the admin clicks the **Delete project** or **Delete component** button, the following modal appears::
   
@@ -204,6 +204,35 @@ logs replace usernames with "A user." "Forks" and "Registrations" tabs are not s
 "Forks" and "Registrations" are shared in non-anonymized view-only links. 
 
 The Commenting panel is not available with a view-only link.
+
+Access Requests
+---------------
+**Purpose**: Configuring the Request Access feature allows admins to disable or enable this feature on the project.
+
+Only admins can see and configure the Request Access feature in the project Settings. Below the header in this section is a checkbox (which is selected by default)::
+  
+    Allow users to request access to this project.
+
+If the admin unchecks this box, a red confirmation message will appear below it::
+  
+    Request access disabled
+    
+Then the page will refresh, and the project settings will be updated to disable the Request Access feature on the project. If the project is public, the "Request access" button will be removed from the "ellipsis" drop-down menu on the "Overview" page. If the project is private, non-contributors will see a private page that reads::
+  
+  Forbidden
+  User has restricted access to this page. If this should not have occurred and the issue persists, please report it to support@osf.io.
+
+If the admin selects the checkbox, a green confirmation message will appear below it::
+  
+      Request access enabled
+      
+Then the page will refresh, and the project settings will be updated to enable the Request Access feature on the project. If the project is public, the "Request access" button will be added to the "ellipsis" drop-down menu on the "Overview" page. If the project is private, non-contributors will see a private page that reads::
+  
+  You Need permission
+  Ask for access, or switch to an account with permission.
+  [Request access][Switch account]
+  If this should not have occurred, please contact support@osf.io.
+
 
 Wiki
 --------------
