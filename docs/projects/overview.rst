@@ -40,7 +40,7 @@ Privacy settings and quick actions
 -----------------------------------
 In the top right of the "Overview" page are the privacy buttons, the "Forks" button, and the ellipsis button.
 
-Contributors see the privacy settings, the "Forks" button and the ellipsis button. 
+Contributors always see the privacy settings, the "Forks" button, and the ellipsis button. 
 
 If the project is public, non-contributors see the "Public" setting, the "Forks" button, and the ellipsis button.
 
