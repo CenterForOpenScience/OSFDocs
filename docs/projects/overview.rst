@@ -7,15 +7,17 @@ as can contributors on a public or private project.
 
 Projects and components contain metatags in order to make the metadata available for export (e.g. Zotero).
 
-Project Navigation Bar
+Project Title
 --------------
-**Purpose:** The Project Navigation Bar allows users to navigate between the settings and information of a project, as well
-as navigate to the project overview.
+**Purpose:** The Project title helps identify and distinguish between projects on a user's dashboard or through the general search.
 
-When viewing a project, the first item in the Project Navigation Bar is the Project Title. If the project title is too long, it will be shortened with
-an ellipsis. The project title has a blue background and white font. If the user is viewing a project or component that is the child of
-another project or component, an arrow appears to the left of the project's title. The arrow makes a right angle, turning left then up. Hovering over
-the arrow shows a tooltip with the parent project or component's title. Clicking on the arrow brings the user to the parent project or component's Overview.
+When viewing a project, the first item in the Project Navigation Bar is the Project Title. If the project title is too long, it will be shortened with an ellipsis. The project title has a blue background and white font. If the user is viewing a project or component that is the child of another project or component, an arrow appears to the left of the project's title. The arrow makes a right angle, turning left then up. Hovering over the arrow shows a tooltip with the parent project or component's title. Clicking on the arrow brings the user to the parent project or component's Overview. 
+
+To rename the title of the project, the user must be on the "Project Overview" or "Component Overview" page. When the user clicks the project or component name in the top left corner of the "Overview" page, the title turns into a textbox wherein the the user can make changes to the title. To the right of the textbox is a green checkmark and an "x" that the user can click to either save their changes or cancel their changes, respectively. The user can also press **enter** on their keyboard to commit the new name.
+
+Project Navigation Bar
+----------------------
+**Purpose:** The Project Navigation Bar allows users to navigate between the settings and information of a project, as well as navigate to the project overview.
 
 The next link in the Project Navigation Bar is to the Files page. This page shows the :ref:`Files Browser <storage>`.
 
@@ -25,22 +27,52 @@ The next link is to the :ref:`Analytics page <analytics>`. This page shows analy
 
 The next link is to the :ref:`Registrations page <registrations>`. This page lists all registrations of the viewed project.
 
-The next link is to the :ref:`Contributors page <contributors>`. This page lists the project's contributors and allows the user to create
-:ref:`view-only links <view-only>`. This page is not visible to non-contributors.
+The next link is to the :ref:`Contributors page <contributors>`. This page lists the project's contributors and allows the user to create :ref:`view-only links <view-only>`. This page is not visible to non-contributors.
 
 The next link is to the :ref:`Add-ons page <add-ons>`. This pages lists the third-party services supported by the OSF that users can connect to from their project.
 
-The final link is to the :ref:`Settings page <project-settings>`. This page allows admins to configure the project. This page
-is not visible to non-contributors.
+The next link is to the :ref:`Settings page <project-settings>`. This page allows admins to configure the project. This page is not visible to non-contributors.
 
-Renaming a Project
-------------------
-**Purpose:** Allows the user to change the name of their project or component after they have created it.
+If enabled on the project, the final link is the :ref:`commenting icon <commenting>`. Clicking the icon opens the commenting panel.
 
-The user must be on the "Project Overview" or "Component Overview" page to rename their project or component. When the user clicks
-the project or component name in the top left corner of the "Overview" page, the title turns into a textbox wherein the the user can
-make changes to the title. To the right of the textbox is a green checkmark and an "x" that the user can click to either save their
-changes or cancel their changes, respectively. The user can also press **enter** on their keyboard to commit the new name.
+
+Privacy settings and quick actions
+-----------------------------------
+In the top right of the "Overview" page are the privacy buttons, the "Forks" button, and the ellipsis button.
+
+Contributors always see the privacy settings, the "Forks" button, and the ellipsis button. 
+
+If the project is public, non-contributors see the "Public" setting, the "Forks" button, and the ellipsis button.
+
+If a contributor and a non-contributor, alike, click the **Forks** button, a drop-down menu will appear with the following options::
+  
+      [Fork this Project]
+      [Duplicate template]
+      [View forks]
+      
+See the :ref:`forks page <forks>` and the :ref:`templates page <templates>` for details.
+
+If the project is private, an admin will see the following options when clicking the **ellipsis** button::
+  
+    Bookmark
+    Create view-only link
+
+If the project is private, a read or read+write contributor will see the following options when clicking the **ellipsis** button::
+  
+    Bookmark
+
+If the project is public, all contributors will see the same options as when the project is private, except they will also see the **Share** button appended to the list.
+
+Clicking the **Create view-only link** button will take admins to the "View-only links" section of the :ref:`project settings page <project-settings>` where they can generate a view-only link for the project.
+
+If the project is public, all non-contributors will see the following options when clicking the **ellipsis** button::
+  
+    Bookmark
+    Share
+    Request access
+
+See the :ref:`request access page <request_access>` for details.
+
 
 .. _overview-metadata:
 
