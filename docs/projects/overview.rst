@@ -63,6 +63,8 @@ If the project is private, a read or read+write contributor will see the followi
 
 If the project is public, all contributors will see the same options as when the project is private, except they will also see the **Share** button appended to the list.
 
+Clicking the **Create view-only link** button will take admins to the "View-only links" section of the :ref:`project settings page <project-settings>` where they can generate a view-only link for the project.
+
 If the project is public, all non-contributors will see the following options when clicking the **ellipsis** button::
   
     Bookmark
