@@ -222,6 +222,11 @@ Then the page will refresh, and the project settings will be updated to disable 
   Forbidden
   User has restricted access to this page. If this should not have occurred and the issue persists, please report it to support@osf.io.
 
+Disabling access requests will be logged in the "Recent Activity" section as::
+  
+    <user name> disabled access requests for <project name>
+    YYYY-MM-DD hh:mm AM/PM
+
 If the admin selects the checkbox, a green confirmation message will appear below it::
   
       Request access enabled
@@ -232,6 +237,11 @@ Then the page will refresh, and the project settings will be updated to enable t
   Ask for access, or switch to an account with permission.
   [Request access][Switch account]
   If this should not have occurred, please contact support@osf.io.
+  
+Enabling access requests will be logged in the "Recent Activity" section as::
+    
+      <user name> enabled access requests for <project name>
+      YYYY-MM-DD hh:mm AM/PM
 
 
 Wiki
