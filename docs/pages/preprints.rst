@@ -587,63 +587,45 @@ If the recipient is a registered user, they will receive the following email not
 
     If you are erroneously being associated with “[preprint name],” then you may visit the project's “Contributors” page and remove yourself as a contributor.
 
-
-Upon sharing the preprint, the user will receive the following confirmation email with call-to-action prompts.
+Upon submitting the preprint, the user will receive the following call-to-action email titled "Confirmation of your submission to OSF Preprints."
 
 For OSF Preprints::
-    
       
-    Hello ${user.fullname},
+  Hello <user name>,
 
-    Congratulations on sharing your preprint  "${node.title}" on OSF Preprints: ${node.absolute_url}
+  Your preprint <preprint title> has been successfully submitted to OSF Preprints.
 
-    Now that you’ve shared your preprint, take advantage of more OSF features:
-    Upload supplemental, materials, data, and code to the OSF project (link to project overview page) associated with your preprint. Learn how (link to http://help.osf.io/m/preprints/l/685323-add-supplemental-files-to-a-preprint)
-    Preregister your next study and become eligible for a $1000 prize (link to osf.io/prereg)
-    Track your impact with preprint downloads
-
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="${osf_url}${nid}/" data-text="I shared my preprint on OSF Preprints" data-count="none">Tweet</a>
-            <br>
-            <script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-            </script>
-
-    You will ${'not receive ' if all_global_subscriptions_none else 'be automatically subscribed to '} notification emails for this project. To change your email notification preferences, visit your project or your user settings: ${settings.DOMAIN + "settings/notifications/"}
-
-    Sincerely,
-
-    Your OSF Team
-
-    Want more information? Visit https://osf.io/ to learn about the Open Science Framework, or https://cos.io/ for information about its supporting organization, the Center for Open Science.
-
-    Questions? Email contact@osf.io
-
-For community preprints services::
+  Now that you've shared your preprint, take advantage of more OSF features:
+  * Upload supplemental, materials, data, and code to the OSF project associated with your preprint. Learn how <http://help.osf.io/m/preprints/l/685323-add-supplemental-files-to-a-preprint>
+  * Preregister your next study. Read more <http://help.osf.io/m/registrations/l/524205-register-your-project>
+  * Or share on social media: Tell your friends through:   twitter	 facebook	 LinkedIn
   
-  Hello ${user.fullname},
-
-  Congratulations on sharing your preprint  "${node.title}" on <Branded Server Name>, powered by OSF Preprints: ${node.absolute_url}
-
-  Now that you’ve shared your preprint, take advantage of more OSF features:
-  Upload supplemental materials, data, and code to the OSF project associated with your preprint
-  Preregister your next study and become eligible for a $1000 prize (link to osf.io/prereg)
-  Track your impact with preprint downloads
-
-  <a href="https://twitter.com/share" class="twitter-share-button" data-url="${osf_url}${nid}/" data-text="I shared my preprint on <Branded Server Name>!" data-count="none">Tweet</a>
-        <br>
-        <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-        </script>
-
-  You will ${'not receive ' if all_global_subscriptions_none else 'be automatically subscribed to '}notification emails for this project. To change your email notification preferences, visit your project or your user settings: ${settings.DOMAIN + "settings/notifications/"}
+  Learn more about OSF Preprints or OSF.
 
   Sincerely,
+  Your OSF team
+  
+In the last line of the email, "OSF Preprints" and "OSF" link to the "OSF Preprints" landing page and OSF dashboard, respectively.
 
-  Your ${branded_service_name} and OSF teams
+For community preprints services::
+    
+  Hello <user name>,
 
-  Want more information? Visit https://osf.io/preprints/${branded_service_name.lower()} to learn about ${branded_service_name} or https://osf.io/ to learn about the Open Science Framework, or https://cos.io/ for information about its supporting organization, the Center for Open Science.
+  Your preprint <preprint title> has been successfully submitted to <preprint service>.
 
-  Questions? Email support+${branded_service_name.lower()}@osf.io
+  Now that you've shared your paper, take advantage of more OSF features:
+  * Upload supplemental, materials, data, and code to the OSF project associated with your paper. Learn how <http://help.osf.io/m/preprints/l/685323-add-supplemental-files-to-a-preprint>
+  * Preregister your next study. Read more <http://help.osf.io/m/registrations/l/524205-register-your-project>
+  * Or share on social media: Tell your friends through:   twitter	 facebook	 LinkedIn
+  
+  You will receive a separate notification informing you of any status changes.
+  Learn more about <preprint service> or OSF.
+
+
+  Sincerely,
+  Your <preprint service> and OSF teams
+
+In the last line of the email, the "preprint service" and "OSF" link to the preprint service landing page and OSF dashboard, respectively.
 
 Preprint Detail Page
 ---------------------
@@ -678,20 +660,96 @@ Moderated preprints
 ^^^^^^^^^^^^^^^^^^^
 **Purpose**: Preprints will be pending until accepted or rejected by a moderator. Banners help inform the user of the state of their preprint. These banners are only visible to the preprint authors and moderator.
 
-If the user submitted to a preprint service that uses pre-moderation, the preprint will be private until a moderator accepts or rejects it. While the preprint is pending, a yellow banner will appear at the top of the page::
+If the user submitted to a preprint service that uses pre-moderation, they will receive a confirmation email upon submission titled "Confirmation of your submission to <preprint service>"::
+  
+  Hello Rebecca Rosenblatt,
+
+  Your preprint <preprint title> has been successfully submitted to <preprint service>.
+
+  <preprint service> has chosen to moderate their submissions using a pre-moderation workflow, which means your submission is pending until accepted by a moderator. You will receive a separate notification informing you of any status changes.
+
+  Learn more about <preprint service> or OSF.
+
+  Sincerely,
+  Your <preprint service> and OSF teams
+
+In the last line of the email, the "preprint service" and "OSF" link to the preprint service landing page and OSF dashboard, respectively.
+
+The premoderated preprint will be private until a moderator accepts or rejects it. While the preprint is pending, a yellow banner will appear at the top of the page::
   
     Pending: <preprint service> uses pre-moderation. this preprint is not publically available or searchable until approved by a moderator.
 
-If the user submitted to a preprint service that uses post-moderation, the preprint will be public upon submission. Until a moderator accepts or rejects the preprint, a blue banner will appear at the top of the page::
+If the user submitted to a preprint service that uses post-moderation, the user will receive a confirmation email upon submission titled "Confirmation of your submission to <preprint service>"::
+  
+  Hello <user name>,
+
+  Your preprint <preprint title> has been successfully submitted to <preprint service>.
+
+  <preprint service> has chosen to moderate their submissions using a post-moderation workflow, which means your submission is public and discoverable, while still pending acceptance by a moderator. You will receive a separate notification informing you of any status changes.
+
+  Learn more about <preprint service> or OSF.
+
+  Sincerely,
+  Your <preprint service> and OSF teams
+
+In the last line of the email, the "preprint service" and "OSF" link to the preprint service landing page and OSF dashboard, respectively.
+  
+The preprint will be public upon submission. Until a moderator accepts or rejects the preprint, a blue banner will appear at the top of the page::
 
     Pending: OSF uses post-moderation. This preprint is publically available and searchable but is subject to removal by a moderator.
-
 
 If the moderator accepts the preprint, a green banner will appear at the top of the preprint page::
   
     Accepted: <preprint service> uses [pre][post]-moderation. This preprint has been accepted by a moderator and is publically available and searchable.
+
+The user will receive a call-to-action email titled "OSF Notifications".
+
+For pre-moderation::
+  
+  Hello <user name>,
+
+  Your submission <preprint title>, submitted to <preprint service> has been accepted by the moderator and is now discoverable to others.
+
+  Now that you've shared your preprint, take advantage of more OSF features:
+  * Upload supplemental, materials, data, and code to the OSF project associated with your preprint. Learn how <http://help.osf.io/m/preprints/l/685323-add-supplemental-files-to-a-preprint>
+  * Preregister your next study. Read more <http://help.osf.io/m/registrations/l/524205-register-your-project>
+  * Or share on social media: Tell your friends through:   twitter	 facebook	 LinkedIn
+  
+  Learn more about <preprint service> or OSF.
+
+  Sincerely,
+  Your <preprint service> and OSF teams
+  
+For post-moderation::
+  
+  Hello <user name>,
+
+  Your submission <preprint title>, submitted to <preprint service> has been accepted by the moderator and remains discoverable to others.
+
+  Now that you've shared your preprint, take advantage of more OSF features:
+  * Upload supplemental, materials, data, and code to the OSF project associated with your thesis. Learn how <http://help.osf.io/m/preprints/l/685323-add-supplemental-files-to-a-preprint>
+  * Preregister your next study. Read more <http://help.osf.io/m/registrations/l/524205-register-your-project>
+  * Or share on social media: Tell your friends through:   twitter	 facebook	 LinkedIn
+  
+  Learn more about <preprint service> or OSF.
+
+  Sincerely,
+  Your <preprint service> and OSF teams
+  
+In the last line of the email, the "preprint service" and "OSF" link to the preprint service landing page and OSF dashboard, respectively.
+      
+If the moderator rejects the preprint, the user will receive an email notification titled "OSF Notifications"::
+  
+  Hello <user name>,
+
+  Your submission <preprint title>, submitted to <preprint service> has not been accepted. Contributors with admin permissions may edit the preprint and resubmit, at which time it will return to a pending state and be reviewed by a moderator.
+
+  Learn more about <preprint service> or OSF.
+
+  Sincerely,
+  Your <preprint service> and OSF teams
     
-If the moderator rejects the preprint, a red banner will appear at the top of the preprint page::
+A red banner will appear at the top of the preprint page::
 
     Rejected: <preprint service> uses [pre][post]-moderation. This preprint has been rejected by a moderator and is not publically available or searchable.
 
