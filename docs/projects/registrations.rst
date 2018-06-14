@@ -69,26 +69,26 @@ Creating a Registration
 **The following describes creating a registration from the project page. Subsequent documentation covers the Preregistration Challenge workflow**
 
 
-Clicking "New Registration" on a project's registrations page opens a modal that reads::
+Clicking "New Registration" on a project's registrations page opens an initiation modal::
 
-    Registration creates a frozen version of the project that can never be edited or deleted but can be withdrawn. Your original project remains editable but will now have the registration linked to it. Things to know about registration:
-    *Ensure your project is in the state you wish to freeze before registering.
-    *Consider turning links into forks.
-    *Registrations can have embargo periods for up to four years. If you choose an embargo period, the registration will automatically become public when the embargo expires.
-    *Withdrawing a registration removes the contents of the registrations but will leave behind a log showing when the registration was created and withdrawn.
-    Continue your registration by selecting a registration form:
-    *Prereg Challenge 
-    *Open-Ended Registration 
-    *AsPredicted Preregistration
-    *Registered Report Protocol Preregistration
-    *OSF-Standard Pre-Data Collection Registration 
-    *Replication Recipe (Brandt et al., 2013): Pre-Registration 
-    *Replication Recipe (Brandt et al., 2013): Post-Completion 
-    *Pre-Registration in Social Psychology (van 't Veer & Giner-Sorolla, 2016): Pre-Registration 
-    [Cancel][Create Draft]
+  Registration creates a frozen version of the project. Your original project remains editable and will have the registration linked. Things to know about registration:
 
-The user selects a template and clicks create draft. The user is provided a form through which they can provide information about their project and
-registration. The template may be one page or many pages. At the bottom of each page, the user is presented with the date and time the draft registration was last saved, and two buttons: [Save as Draft][Preview for Submission]. 
+  * Registrations cannot be edited or deleted.
+  * Withdrawing a registration removes its contents, but leaves behind basic metadata: title, contributors, date registered, date withdrawn, and justification (if provided).
+  * Registrations can be public or embargoed for up to four years. Embargoed registrations will be made public automatically when the embargo expires.
+  * Continue your registration by selecting a registration form:
+
+  Prereg Challenge 
+  Open-Ended Registration 
+  AsPredicted Preregistration 
+  Registered Report Protocol Preregistration 
+  OSF-Standard Pre-Data Collection Registration 
+  Replication Recipe (Brandt et al., 2013): Pre-Registration 
+  Replication Recipe (Brandt et al., 2013): Post-Completion 
+  Pre-Registration in Social Psychology (van 't Veer & Giner-Sorolla, 2016): Pre-Registration 
+  [Cancel][Create draft]
+
+The user must select a form and click **Create draft** to initiate a registration of their project. Each form follows a different template that is either one-page or multiple-pages long.At the bottom of each page, the user is presented with the date and time the draft registration was last saved, and two buttons: [Save as Draft][Preview for Submission]. 
 
 Clicking "Save as Draft" saves the draft registration and returns the user to the project's Draft Registrations tab. 
 Clicking "Preview for Submission" presents a preview of the registration, followed by two buttons: [Continue editing] and [Register]. 
@@ -97,8 +97,8 @@ Clicking "Continue editing" returns the user to the "Edit draft registration" pa
 Clicking "Register" brings up a modal::
 
     Before you continue...
-    *The content and version history of Wiki and OSF Storage will be copied to the registration 
-    Registration choice: 
+    * Registrations cannot be modified or deleted once completed.
+    * The content and version history of Wiki and OSF Storage will be copied to the registration.
     [Dropdown selections:] Make registration public immediately
     Enter registration into embargo (selecting this option brings up a field, "Embargo End Date" where user must select date to embargo)
     [Cancel][Continue]
@@ -129,9 +129,9 @@ Occasionally, a registration will fail. When a registration fails, the following
 Creating a registration in Preregistration Challenge workflow
 -------------------------------------------------------------
 The full "Prereg Challenge" landing page on the OSF is only accessible when logged in. If the user is logged out of the OSF or does not have an account, and they go to https://osf.io/prereg/, they will have access to a landing page that contains basic information about the Prereg Challenge and invites non-users to create accounts::
-  
-    Improve your research with preregistration
-    The process of creating a preregistration [links to https://cos.io/prereg/] is beneficial to both the scientific field and to you, the scientist. By writing out detailed data collection methods, analysis plans, and rules for excluding or missing data, you can make important decisions that affect your workflow earlier, without the biases that occur once the data are in front of you.
+
+    Articles must be published by an approved journal <https://cos.io/our-services/prereg-more-information/> by December 31, 2018, to be eligible for a prize.
+    Improve your research with preregistration. The process of creating a preregistration <https://cos.io/prereg/> is beneficial to both the scientific field and to you, the scientist. By writing out detailed data collection methods, analysis plans, and rules for excluding or missing data, you can make important decisions that affect your workflow earlier, without the biases that occur once the data are in front of you.
     [Preregister]
 
 Clicking **Preregister** takes the non-user and logged-out user to the account registration page which shows the Prereg Challenge logo and the following message::
@@ -142,12 +142,13 @@ Clicking **Preregister** takes the non-user and logged-out user to the account r
 
 The full "Prereg Challenge" landing page appears as follows::
   
-  The process of creating a preregistration [links to: https://cos.io/prereg/] is beneficial to both the scientific field and to you, the scientist. By writing out detailed data collection methods, analysis plans, and rules for excluding or missing data, you can make important decisions that affect your workflow earlier, without the biases that occur once the data are in front of you.
+    Articles must be published by an approved journal <https://cos.io/our-services/prereg-more-information/> by December 31, 2018, to be eligible for a prize.
+    Improve your research with preregistration.The process of creating a preregistration <https://cos.io/prereg/> is beneficial to both the scientific field and to you, the scientist. By writing out detailed data collection methods, analysis plans, and rules for excluding or missing data, you can make important decisions that affect your workflow earlier, without the biases that occur once the data are in front of you.
 
-  Ready for the challenge? Please follow these steps:
-    1. Specify all your study and analysis decisions prior to investigating your data
-    2. Publish your study in an eligible journal [links to: https://cos.io/our-services/prereg-more-information/]
-    3. Receive $1,000
+    Ready for the challenge? Please follow these steps:
+      1. Specify all your study and analysis decisions prior to investigating your data
+      2. Publish your study in an eligible journal [links to: https://cos.io/our-services/prereg-more-information/]
+      3. Receive $1,000
 
 The "Prereg Challenge" landing page provides the user the option to "Start a new preregistration." If the user already has a draft registration, there is also an option to "Continue working on an existing preregistration." If the user has project(s), an option to "Make a preregistration for a project you already have on the OSF" is also displayed. 
 
@@ -171,9 +172,23 @@ Clicking "Start a new preregistration" will open a box::
     
     Please provide a title for your project:
 
-with a text form to type the preregistration title and a button to "Continue >". Clicking continue will open a model containing terms and conditions for the Preregistration Challenge. Accepting the terms will land the user on the "Edit draft registration page" for the Prereg Challenge registration template. 
+with a text form to type the preregistration title and a button to "Continue". Clicking continue will open a model containing terms and conditions for the Preregistration Challenge. Accepting the terms will land the user on the "Edit draft registration page" for the Prereg Challenge registration template. 
 
-In each of these cases, the user will have to fill out the Prereg Challenge registration template, which is several pages. At the bottom of each page, the user is provided with buttons, "Save as draft" or "Next page." On the last page, the "Next page" button is replaced by a "Submit for review" button. 
+In each workflow, the user will be prompted to agree to the prereg challenge terms before continuing::
+  
+    Pregistration challenge
+    Notice
+    Below are some important items for those who choose to enter the Preregistration Challenge. If you do not agree to the terms you may still continue, use the form, and register your research study without entering the Challenge. Only Preregistrations that enter the challenge and undergo review are eligible for a $1,000 prize. We welcome questions and comments (learn more here or email us at prereg@cos.io).
+
+    After submitting your research plan for review, it is not yet registered. Your research plan will become a static, time stamped preregistration after it passes review. Please do not begin your study until it is registered. You will hear back from the review team within 2 business days.
+    The published article must also be reviewed before receiving the prize.
+    Prizes will be awarded at predetermined dates to eligible entrants. If more eligible entrants exist than available prizes, entrants will be ranked based on the date of registration.
+    Articles must be published in an eligible journal.
+    Residents of countries on the U.S. State Department's list of embargoed countries may not participate in the Preregistration Challenge.
+    Entering the Preregistration Challenge requires that you agree to all of its terms.
+     [check box] I have read these terms. I understand that articles must be published by December 31, 2018, in order to be eligible for a prize.
+
+Clicking **Continue** will take the user to a draft version of the preregistration form within their OSF project. At the bottom of each page, the user is provided with buttons, "Save as draft" or "Next page." On the last page, the "Next page" button is replaced by a "Submit for review" button. 
 
 If a user saves their preregistration as a draft and has not opened the draft preregistration after 2 weeks time, the OSF sends trigger emails for users who have started, but not yet submitted a preregistration::
   
@@ -188,7 +203,23 @@ If a user saves their preregistration as a draft and has not opened the draft pr
 
 Users are only emailed once per draft. If the user starts another draft of the same project or another project, after 2 weeks of being unfinished, the user gets an email. A user should get no more than 3 emails in a 2 week period.
 
-Clicking the "Submit for review" button opens a modal with a Notice of Consent for the Preregistration Challenge. The user must agree to the terms and click "Continue." Clicking "Cancel" returns the user to the registration preview page. Clicking "Continue" prompts the user to choose to either make the registration public immediately or choose an embargo (as in the normal workflow). After making this selection, the user lands on the "Registrations" page for the project and is presented with a dissmissable notice::
+Clicking the "Submit for review" button opens a modal with a Notice of Consent for the Preregistration Challenge::
+  
+    Preregistration challenge
+    Notice of Consent
+    Articles must be published by an approved journal by December 31, 2018, to be eligible for a prize.
+
+    Please read and agree to the terms before submitting your research plan to the Preregistration Challenge.
+
+    After submitting your research plan for review, it is not yet registered. Your research plan will become a static, time stamped preregistration after it passes review. Please do not begin your study until it is registered. You will hear back from the review team within 2 business days.
+    The published article must also be reviewed before receiving the prize.
+    Prizes will be awarded at predetermined dates to eligible entrants. If more eligible entrants exist than available prizes, entrants will be ranked based on the date of registration.
+    Articles must be published in an eligible journal.
+    Residents of countries on the U.S. State Department's list of embargoed countries may not participate in the Preregistration Challenge.
+    Entering the Preregistration Challenge requires that you agree to all of its terms.
+      [check box] I agree. I understand that articles must be published by December 31, 2018, in order to be eligible for a prize.
+
+The user must agree to the terms and click "Continue." Clicking "Cancel" returns the user to the registration preview page. Clicking "Continue" prompts the user to choose to either make the registration public immediately or choose an embargo (as in the normal workflow). After making this selection, the user lands on the "Registrations" page for the project and is presented with a dissmissable notice::
 
   Your submission has been received. You will be notified within two business days regarding the status of your submission. If you have questions you may contact us at prereg@cos.io. 
 
@@ -200,40 +231,30 @@ Accepted Preregistrations
 -------------------------
 **Purpose**: Accepted preregistrations will be eligible for the $1,000 prize.
 
-If the reviewers of the preregistrations accept the preregistration, and all of the admins on the preregistration click the approval link in the confirmation email, the user receives the following email::
+If the reviewers of the preregistrations accept the preregistration, and all admins on the preregistration click the approval link in the confirmation email, the user receives the following email::
   
   Subject: Your research plan has been registered and accepted for the Preregistration Challenge
 
-  Dear [first name] [last name],
+  Dear {user name},
 
-  We are happy to let you know that your research plan has been verified for completeness and registered on the OSF at the following URL: [GIVE COMPLETE URL].  
+  We are happy to let you know that your research plan has been verified for completeness and registered on the OSF at the following URL: <a href="${registration_url}">${registration_url}</a>.
 
-  What’s Next?
+  What happens now?
+  Conduct your study: It's time to start your study and its analysis exactly as specified in your preregistration.
+  Publish your study: The published study must appear online by December 31, 2018.
+  Reminders: Any deviations from your preregistration (e.g. sample size, timing, analysis) must be documented and appear in the final publication. Any additional analyses must be noted separately from the registered, confirmatory, hypothesis testing analyses. Such new analyses must be described as hypothesis generating or exploratory tests. You must also refer to your preregistration in the publication by using its URL: <a href="${registration_url}">${registration_url}</a>. Publication must occur in an <a href="https://cos.io/preregjournals">eligible journal</a>.
 
-  Reach out to others: The Prereg Challenge seeks to change how research is conducted for the better. Take part in the movement by getting the word out and telling your peers about why this practice matters.. Consider emailing your department, your professional society, or other outlets. Let them know you preregistered your research and tell them to check out the Prereg Leaderboard [link]. Share it now!
-  Share on social media: Tell your friends on <twitter> <LinkedIn> <Facebook> or <Email>
-
-  Conduct your study: It’s time to start your study and its analysis exactly as specified in your preregistration. 
-
-  Publish your study: In order to remain eligible for the Preregistration Challenge, any deviations from your preregistration (e.g. sample size, timing, analysis) must be documented and appear in the final publication. Any additional analyses must be noted separately from the registered, confirmatory, hypothesis testing analyses. Such new analyses must be described as hypothesis generating or exploratory tests. You must also refer to your preregistration in the publication by using its URL [GIVE COMPLETE URL]. Publication must occur in an eligible journal.
-
-  Submit your article for review: We will review your final, published article once you submit it on the OSF. We will verify that your study and its analyses were conducted as specified in your preregistration. In order to avoid any unintended oversights, please reach out to us (prereg@cos.io) and refer to our guidelines and FAQ on our website when writing up your results.
+  Submit your article for review: We will review your final, published article once you submit it on the OSF. We will verify that your study and its analyses were conducted as specified in your preregistration. In order to avoid any unintended oversights, please reach out to us (<a href="mailto:prereg@cos.io">prereg@cos.io</a>) and refer to our guidelines and FAQ on our <a href="https://cos.io/prereg">website</a> when writing up your results.
 
   Receive the prize! $1,000 rewards will be distributed to eligible entrants according to the schedule on our website.
 
   Thank you for entering the Preregistration Challenge. Feel free to submit another research plan at any time.
 
   Sincerely,
+
   The team at the Center for Open Science
 
-
-  Action via Twitter: tweet: “I just took the #PreregChallenge on the @OSFramework to improve rigor. You can too https://googleQBvsfb.  #openscience”
-
-  Action via Linkedin: “I just took the Preregistration Challenge hosted by the Center for Open Science. It’s an easy way to add rigor and transparency to my research, and you can do it too: https://google/QBvsfb.” 
-
-  Action via Facebook: “I just took the Preregistration Challenge hosted by the Center for Open Science. It’s an easy way to add rigor and transparency to my research, and you can do it too: https://google/QBvsfb.” 
-
-  Action via email: “Hello, I just wanted to let you know about this initiative at the Center for Open Science. They are advocating for preregistration, which is an easy way to add rigor and transparency to research. They want to increase awareness about its benefits to the research community and have funds to reward $1000 prizes to researchers who publish the results of a preregistered study. See where our university ranks in the number of preregistered studies: https://osf.io/x5w7h/wiki/06%20LeaderBoard/. You can learn more and start your preregistration at https://goo.gl/QBvsfb.” 
+  Center for Open Science210 Ridge McIntire Road, Suite 500, Charlottesville, VA 22903
 
 
 Rejected Preregistrations
