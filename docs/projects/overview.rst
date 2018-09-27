@@ -222,7 +222,7 @@ Components Widget
 
 The "Components" widget is located below the "Citation" widget. This widget shows all child components and any linked projects.
 
-When a project has no links or components within it, the "Components" widget is not displayed for both read-only contributors and non-contributors. 
+When a project has no links or components within it, the "Components" widget is not displayed for either read-only contributors and non-contributors. 
 
 When a project has no links or components within it, the "Components" widget *is* dislpayed for contributors with read+write or admin permissions. These contributors see the two buttons and the following message::
   
@@ -371,7 +371,8 @@ public profile. Clicking on "& <#> more" brings the user to the Overview page fo
 The component shows a snippet of the description of up to 3 lines. If the description is longer, the snippet will be tailored off by an ellipsis. If the component does not have a description, no description is displayed for the component in the "Components" section of the parent project.
 
 To the right of the element's title is an ellipsis that, when clicked, gives contributors options to manage the component directly from the parent's "Overview" page.
-The ellipsis is visible only to contributors. Linked projects/registrations do not contain these ellipses. 
+
+The ellipsis is visible only to contributors, and is only on components. 
 
 When an admin clicks the ellipsis, a drop-down menu appears with the following options::
   
@@ -388,22 +389,49 @@ Clicking **Manage Contributors** takes the user to the component's "Contributors
 
 Clicking **Settings** takes the user to the component's "Settings" page - the view depeonds to the user's level of permissions.
 
-Clicking **Delete** causes the following modal to appear on the project "Overview" page::
+Clicking **Delete** enables the user to delete the component and its children. If the component has children, a modal will appear from which the user must select all child components before deleting the parent component::
+  
+    Delete component
+    This component contains subcomponents. To delete this component, you must also delete all subcomponents. This action is irreversible.
+    Select: All components                  * project or component contains a preprint
+    <component hierarchy>      
+    [Cancel][Continue]
+    
+Clicking the **All components** link selects all child components to be deleted. If a child component is left unselected, the "Continue" button at the bottom of the modal will be disabled. If the user deleting the component does not have admin permissions on all child components, they will be unable to delete these child components and, therefore, the parent component. The checkboxes next to these child components will be disabled, along with the "Continue" button at the bottom of the modal. The user can hover over the checkboxes to see a tooltip explaining why these components cannot be deleted::
+  
+    You must have admin permissions on this component to be able to delete it.
+    
+If a child component contains a preprint, an asterisk will appear next to its title in the modal. Deleting a child component with a preprint will also delete the preprint.
+
+Once the user selects all child components from the modal, they will be able to click the **Continue** button. Upon clicking **Continue**, the user will be directed to a final confirmation modal::
+  
+    Delete component and subcomponents
+    The following component and subcomponents will be deleted
+    <component hierachy>
+    Please note that deleting your component will erase all your component data and this process is IRREVERSIBLE. Deleted component and subcomponents will no longer be available to other contributors on the component.
+    Type the following to continue: <confirmation word>
+    [Back][Cancel][Delete]
+
+The "Delete" button will be disabled until the user enters the confirmation word into the field. Upon entering the confirmation word, the user can click **Delete**.
+
+If the component does not contain child components, the user will go through only one modal to confirm the deletion of the component::
   
     Are you sure you want to delete this component?
     It will no longer be available to other contributors on the project.
-    Type the following to continue: [verification word]
-    [text field]
+    Type the following to continue: <confirmation word>
     [Cancel][Delete]
-  
-If the user clicks **Delete** without typing the verification word into the text field, or if the user mistypes the verification word, the modal will close, and the following red dismissable error message will appear in the top right of the "Overview" page::
-  
-    Verification failed
-    Strings did not match
 
-If the user successfully deletes their component, a green dismissable confirmation message will appear across the top of the "Overview" page::
+After deleting the component, the user will see a dismissable confirmation banner on the top-level project "Overview" page::
   
     Component has been successfully deleted.
+
+If the component contained children, the user will see a confirmation modal::
+    
+    Your component has been successfully deleted.
+    [OK]
+
+Clicking the **OK** button dismisses the modal, and returns the user to the parent project "Overview" page.
+
 
 .. _tags:
 
