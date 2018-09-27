@@ -253,7 +253,7 @@ Clicking the **Enable** link presents the user with a modal::
     This add-on allows you to store files using an external service. Files added to this add-on are not stored within the OSF.
 
 
-On this modal, users can click “Cancel” to cancel this action and close the window or “Confirm” to continue configuring GitHub.
+On this modal, users can click “Cancel” to cancel this action and close the window or “Confirm” to continue configuring Dataverse.
 
 If user clicks “Confirm” but does not click “Apply,” and navigates away from page, a browser popup appears asking user to
 confirm navigation away from the page because pending add-on changes were not saved.
@@ -542,9 +542,17 @@ After authorizing, the user is returned to the OSF.
 
 If the user has connected GitHub to their account previously, the link in the GitHub row reads "Import Account from Profile."
 
-.. _todo: Log lack of confirmation modal as issue.
+After authorizing GitHub or clicking the **Import Account from Profile** link, the user will see a modal, asking to confirm importing their GitHub content into OSF::
+  
+    Import GitHub Account?
+    Are you sure you want to link your GitHub account with this project?
+    [Cancel][Import]
 
-Importing or connecting an account loads the users' GitHub information.
+Clicking the **Import** button imports the user's GitHub content. The GitHub connection will appear in the "Configure Add-ons" section of the page. Below GitHub is a blue dismissible banner that instructs users on what to do if their GitHub organizations do not load::
+  
+    Don't see your GitHub organization repositories?
+    You may need to reauthorize your GitHub access token. Follow the steps in the help guide <http://help.osf.io/a/850865-reauthorize-github> to resolve the issue.
+    Please contact support@osf.io if you have questions.
 
 To the right of the the "GitHub" title is text that reads::
 
