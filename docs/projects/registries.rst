@@ -48,13 +48,23 @@ On the OSF Registries search page, there are two left sidebars with filters by w
 
 The user can select a registration provider to search for registrations posted to a specific provider.
 
-The "OSF Registration Type" sidebar will only be available to the user if they select **OSF Registries** and only **OSF Registries** from the "Provider" sidebar. Otherwise, the "OSF Registration Type" sidebar will be grayed out and will have a red alert above it that reads::
+The "OSF Registration Type" sidebar will be disabled, and will become activatead if select (only) **OSF Registries** from the "Provider" sidebar. When the sidebar is disabled, a red alertis displayed above it::
   
     Only available with OSF Registries
 
-If the user selects **OSF Registries** and any additional providers, the "OSF Registration Type" sidebar will be unavailable to use. 
+If the user selects **OSF Registries** and any additional providers, the "OSF Registration Type" sidebar will be disabled. 
 
-When the user selects **OSF Registries**, the red alert disappears and the sidebar becomes available. The user can check the boxes next to the registration types by which they want to filter search results. Checking the boxes will show the public registrations that are of those registration types.
+When the user selects **OSF Registries**, the red alert disappears and the sidebar becomes available. The user can check the boxes next to the registration types by which they want to filter search results. Checking the boxes will show the public registrations that are of those registration types. The registration types available are::
+  
+    AsPredicted Preregistration
+    Election Research Preacceptance Competition
+    OSF-Standard Pre-Data Collection Registration
+    Open-Ended Registration
+    Pre-Registration in Social Psychology (van 't Veer & Giner-Sorolla, 2016): Pre-registration
+    Prereg Challenge
+    Registered Report Protocol Preregistration
+    Replication Recipe (Brandt et al., 2013): Post-Completion
+    Replication Recipe (Brandt et al., 2013): Pre-Registration
 
 Registration search results display the registration title first, followed by the author(s), description, provider, date the project was registered, links, and the date on which the registration was added.
 
