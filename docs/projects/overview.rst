@@ -108,7 +108,7 @@ The "Create DOI" link appears below the "Date created" field for public projects
     Are you sure you want to create a DOI for this project? A DOI is persistent and will always resolve to this page.
     [Cancel][Create]
 
-Clicking **Cancel** cancels the action and closes the modal. Clicking **Create** generates the DOI. All DOIs generated on OSF have the same format: DOI 10.17605/OSF.IO/GUID.
+Clicking **Cancel** cancels the action and closes the modal. Clicking **Create** generates the DOI. DOIs for OSF projects are minted through DataCite, and have the prefix: DOI 10.17605/OSF.IO/GUID. 
 
 The "Category" field displays the category of that particular project or component, as specified on its creation or by changes from the
 :ref:`project settings page <project-settings>`. Categories can be: project, hypothesis, methods and measures, procedure, instrumentation,
