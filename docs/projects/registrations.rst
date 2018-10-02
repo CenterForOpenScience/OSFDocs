@@ -665,9 +665,7 @@ After several seconds, the text changes again to read::
 
     Identifiers: DOI [DOI identifier]
 
-The OSF begins all DOIs with the same number, followed by "/osf.io/GUID." The following structure is the same for all DOIs created on the OSF (the GUID is different for each project or registration)::
-  
-    DOI 10.17605/OSF.IO/GUID
+DOIs for projects and registations are minted through DataCite, and have the prefix: DOI 10.17605/OSF.IO/GUID.
 
 Registering with Add-ons
 ------------------------
