@@ -1,6 +1,6 @@
 **Purpose:** The "Analytics" page of a project is designed to provide contributors and visitors with additional information about project visits and pages.
 
-Project analytics come from Keen. Analytics pages are accessible via the grey navigation bar in every project. When a project is private, only the contributors
+A project's "Analytics" page is accessible via the grey navigation bar in every project. When a project is private, only the contributors
 have access to the "Analytics page." When a project is public, any visitor can view the analytics. 
 
 The "Analytics" page provides analytics for forks, links, template copies, and visitor behavior.
@@ -58,35 +58,47 @@ Hovering over a popular page along the y-axis shows the following tooltip::
 
 Viewing forks
 -------------
-**Purpose**: The "Forks" page lists all forks that have been created from the orgininal project, and allows users to fork the project directly from the page.
-  
-Clicking the **View all forks** link takes the user to the "Forks" page at <https://osf.io/GUID/forks/>.
+**Purpose**: The "Forks" page lists all forks that have been created from the original project, and allows users to fork the project directly from the page.
 
-The "Forks" page lists all projects that have been forked from the original project. A blue "Back to Analytics" link is located
-at the top of the page for users to navigate back to the "Analytics" page. A green "New fork" button
-is located in the top right of the page. Clicking this button follows the same workflow as `Forking a project`_.
+Clicking the **View all forks** link on the "Analytics" page takes the user to the "Forks" page at <https://osf.io/GUID/forks/>.
 
-If no forks have been created, the following message appears at the top of the page::
+If no forks have been created from the project, the following message appears at the top of the page::
   
     This project has no forks. A fork is a copy of a project that you can change without affecting the original project.
-
-Both public and private forks are displayed on this page. If a fork is private, no information is disclosed, and only the following message is listed::
+    
+If >10 forks have been created from the project, the results on this page become paginated. Both public and private forks are displayed. If a fork is private, no metadata is visible, and only the following message is listed::
   
     Private Fork
 
-If a fork is public, the information is presented in the following format::
+If a fork is public, the metadata appears in the following format::
   
     Fork of <project name> | Forked: YYYY-MM-DD hh:mm UTC
-    <author lastname>
-    # contributions
+    <contributor lastnames>
+    <description (if any)>
+    
+If a fork is private, it is visible to the contributors of the fork on the "Forks" page.
+The fork is displayed as a public fork would be, and includes a "lock" symbol to indicate its private status.
+
+If contributors of a fork view the fork from this list, an ellipsis button will appear next to the fork. The **ellipsis** button offers the same functions as described in the :ref:`Component formatting section <component-format>`.
+
+A "Back to Analytics" link is located at the top of the page that users can click to return to the "Analytics" page. Helper text appears below the link to help users view the page::
   
-When a fork is private, contributors on the fork can view it in the list on the "Forks" page.
-The fork is displayed as a public fork would be, with an addition of a "lock" symbol in front of it to indicate that it is private.
+    Forks you have permission to view are shown here.
 
-When contributors on the fork view the fork from the list, an ellipsis will appear on the far right of the item,
-visible only to them. When clicked, a drop-down appears, giving contributors on the fork options to manage the
-fork directly from the "Forks" page. The ellipsis and behavior are the same as described in the :ref:`Component formatting section <component-format>`.
+A green "Create fork" button is located in the top right of the page. Clicking this button opens a confirmation modal::
+  
+    Are you sure you want to fork this project?
+    [Cancel][Fork]
 
+Clicking **Cancel** from the modal cancels the action and closes the modal. Clicking **Fork** from the modal initiates the fork. While the fork is being created, the "Create Fork" button becomes disabled and, while loading, temporarily reads: "Creating new fork." When the fork is ready, a dismissable message appears in the top right of the page::
+  
+    Fork status
+    Your fork is being created. You'll receive an email when it is complete.
+    
+The user receives a confirmation email that includes a link to the fork::
+  
+    Your fork has completed
+    The fork of <title> has been successfully created here: https://osf.io/GUID
 
 .. _analytics_links:
 

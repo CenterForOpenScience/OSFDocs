@@ -24,7 +24,7 @@ Registries Search
 
 .. include:: registries.rst
 
-.. _for-meetings:
+.. _meetings:
 
 OSF for Meetings
 ***************
@@ -40,8 +40,14 @@ FAQ
 
 .. _getting-started:
 
-
 Public Content on the OSF
 ***************
 
 .. include:: content.rst
+
+.. _institutions:
+
+OSF institutions
+
+.. include:: institutions.rst
+

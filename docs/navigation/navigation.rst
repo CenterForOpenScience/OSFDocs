@@ -9,7 +9,8 @@ Links included when logged out
     * OSF Home: Clicking this link takes the user to the OSF homepage.
     * OSF Preprints: Clicking this link takes the users to the OSF Preprints landing page https://osf.io/preprints/.
     * OSF Registries: Clicking this link takes the user to the OSF Registries landing page https://osf.io/registries/.
-    * Meetings: Clicking this link takes the user to the OSF for Meetings page: https://osf.io/meetings/.
+    * OSF Meetings: Clicking this link takes the user to the OSF Meetings landing page: https://osf.io/meetings/.
+    * OSF Institutions: Clicking this link takes the user to the OSF Institutions landing page: https://osf.io/institutions/.
    
 * Search: Clicking this tab takes the user to https://osf.io/search/, where a green search bar stretches across the top of the page, opening below the navigation bar. A "question mark" icon appears on the far right of the search bar. Clicking the question mark prompts the "Search help" modal to appear that explains how to do search queries.
 
@@ -39,6 +40,7 @@ Links included when logged in
     * OSF Preprints: Clicking this link takes the users to the OSF Preprints landing page https://osf.io/preprints/.
     * OSF Registries: Clicking this link takes the user to the OSF Registries landing page https://osf.io/registries/.
     * OSF Meetings: Clicking this link takes the user to the OSF for Meetings page: https://osf.io/meetings/.
+    * OSF Institutions: Clicking this link takes the user to the OSF Institutions landing page: https://osf.io/institutions/.
     
 * My Quick Files: Clicking this tab takes the user to https://osf.io/<user GUID>/quickfiles
     
