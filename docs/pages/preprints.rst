@@ -360,17 +360,13 @@ These two fields are required. In the "Year" field, the current year is listed a
 There is an option to "Apply this preprint license to my OSF project." The user can select "Yes" or "No" to either extend or not extend the preprint license to their OSF project. "Yes" is selected automatically. Note that if the user selects "No license" option from the drop-down menu, they can choose to extend this license to their OSF project, as well.
 
 **The DOI section**
-A DOI is automatically generated for a preprint upon submission. If the user's preprint has previously been published in a journal, they can enter their peer-reviewed DOI into this field: Peer-reviewed publication DOI (optional).
+A DOI is automatically generated for a preprint upon submission, and is minted through Crossref. Each preprint provider has a unique DOI prefix. If the  preprint has been published in a journal, the user can enter the peer-reviewed DOI into the "Peer-reviewed publication DOI (optional)" field.
     
-If the user enters an invalid DOI, a red error message appears below the DOI field that reads::
+If the user enters an invalid DOI, a red error message appears below the field::
   
     Please use a valid DOI
     
-The error message disappears when the user deletes the invalid DOI.
-
-When the user clicks inside the DOI field, begins typing, or enters an invalid DOI, the field is outlined in blue. 
-
-When the user enters a valid DOI into the DOI field, the field is outlined in green.
+The error message disappears when the user removes the invalid DOI.
 
 **Original Publication Date**
 
