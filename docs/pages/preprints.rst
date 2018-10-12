@@ -871,4 +871,205 @@ Selected search facets are defined in the URL, so that a user can share/navigate
 
 Preprint search results display the preprint title first, followed by the author(s), discipline(s), abstract, and preprint provider. To access the rest of the metadata, there is a down arrow that the user can click to unfold the search result on the "Discover" page. Clicking the down arrow shows external links, such as a link to a preprint's journal publication, etc., an OAI (if any), tags (if any), and the date and time on which the preprint was added.
 
+---------------------
+**Purpose**: Enables users to comment on and annotate preprints.
+
+Hypothes.is is integrated as an annotation tool on the "Preprint Detail" pages for preprint services who have this tool enabled. The annotation tool can only be used for users who have signed up for an account on the Hypothes.is site. After creating an account and logging in, the user can view public annotations made on the preprint, as well as highlight and annotate the preprint themselves.
+
+Users who are not logged in to Hypothes.is can view public annotertions made on the preprint.
+
+Hypothes.is is integrated directly on the preprint in the MFR, and can be accessed as an interactive panel that can be expanded or closed.
+
+Opening Hypothesis
+^^^^^^^^^^^^^^^^^^
+To open the annotation tool, the user must click the **<** icon in the top right of the MFR. The annotation panel will expand part way across the MFR. There are two tabs that the user can toggle between: Annotations | Page Notes. The "Annotations" tab is open by default. 
+
+If no public annotations have been made on the preprint, the following message appears in the "Annotations" tab::
+  
+  There are no annotations in this group. 
+  Create one by selecting some text and clicking the <quotation icon> button.
+
+The quotation icon is not visible to a logged-out user. If public annotations have been made on the preprint, the user can view and share but cannot reply to annotations or flag annotations as spam without being logged in to Hypothesis. If the user clicks the **Reply** button below the annotation without being logged in, they will see the following message::
+  
+    You must be logged in to create annotations.
+    
+If the user clicks the **flag** icon below the annotation, a temporary error message will appear::
+  
+    Login to flag annotations
+    You must be logged in to report an annotation to the moderators.
+
+Clicking the **Page notes** tab opens page notes made by the user. If no public page notes have been made, the following message appears in the "Page Notes" tab::
+  
+  There are no page notes in this group. 
+  Create one by clicking the <paper icon> button.
+
+The paper icon *is* visible to a logged-out user, but, when the user clicks this button, they are prompted to log in or create an account in order to add a page note::
+  
+    You must be logged in to create annotations.
+
+If public page notes have been made on the preprint, the user can view and share them but cannot reply to page notes or flag page notes as spam without being logged in to Hypothesis. If the user clicks the **Reply** icon below the page note without being logged in, they will see the following message::
+  
+    You must be logged in to create annotations.
+    
+If the user clicks the **flag** icon below the annotation, a temporary error message will appear::
+      
+    Login to flag annotations
+    You must be logged in to report an annotation to the moderators.
+
+
+Annotating, adding page notes, and highlighting
+-----------------------------------------------
+Once logged in, the user can annotate, add pages notes, and  highlight the preprint. 
+
+Annotating
+^^^^^^^^^^
+**Purpose**: Annotations are comments that respond and link to excerpts of text in a document, and allow users to leave feedback on a preprint.
+
+To add an annotation, the user must first higlight the text with their cursor, after which two buttons will appear in a popover::
+  
+    Annotate | Highlight
+
+After clicking **Annotate**, the annotation panel will expand, and an editable textbox will appear in which the user can write their annotation. The highlighted text is previewed above the textbox in grayed-out italics. A statement about using the CC0 lisence appears at the bottom of the annotation when in edit mode::
+  
+    CC0 Annotations can be freely reused by anyone for any purpose.
+
+The user can format their annotation using the following toolbox features:
+
+* Embolden text
+* Italicize text
+* Quote text
+* Insert link
+* Insert image
+* Insert mathematical notation (LaTex is supported)
+* Insert numbered list
+* Insert list
+* Markdown
+* Preview
+
+The user can add tags to the annotation to make it easily discoverable by others.
+
+The user can cancel the annotation by clicking the **Cancel** link at the bottom of the annotation. 
+
+After writing an annotation, the user can post it. Next to the "Post" button is a drop-down menu where the user can choose to either make the annotation public or private::
+  
+    Public
+    Only Me
+
+An annotation is public by default. If the annotation is public, the "Post" button will read "Post to Public;" if the annotation is private, the "Post" button will read "Post to Only Me." A private message is only visible to the user writing the annotation, and is distinguished from public annotations by a "lock" symbol at the top. Once posted, the annotation will link to the excerpt of text that the user highlighted. The annotation will have a tick mark next to the excerpt. In the panel, annotations appear next to the text to which they correspond.
+
+The user's annotations can be edited at any time. Below the user's annotation is a "pencil" icon. Clicking this icon opens the annotation in editing mode. 
+
+Clicking the **Cancel** link returns the annotation to the regular viewing mode.
+
+The user can delete their annotations at any time but cannot delete annotations made by others. Clicking the **trashcan** icon opens a confirmation modal::
+  
+    Are you sure you want to delete this annotation?
+    [Cancel][OK]
+    
+Clicking **Cancel** closes the modal and cancels the action. Clicking **OK** removes the annotation from the panel, and scrolls the preprint back to the top.
+
+The user can reply to their own annotations by clicking the **Reply** icon, which will open a new annotation box below the original annotation.
+
+ The user can share their annotation by clicking the **Share** icon, which will open a drop-down containing the share link, a copy-to-clipboard button,  and social media options: Twitter, Facebook, Google Plus, and email. If the annotation is private, helper text appears below the share link::
+   
+    Only me. No one else will be able to view this annotation.
+    
+If not the owner of the annotation or if the owner is logged out of Hypothesis, pasting the link into the browser will take the user to the Hypothesis site, where they will be prompted to log in::
+  
+    This annotation is not available. You may need to log in to see it.
+    
+The owner will be able to log in to Hypothesis to view the annotation.
+
+The user cannot flag their own annotations as spam. In this way, the "Spam" icon is not available on the user's annotations from their end. The user can flag annotations written by other users as spam. Hovering over the **Flag** icon shows a tooltip::
+  
+    Report this annotation to the moderators
+
+Clicking the **Flag** icon turns the flag red, and flags the page note as spam. Hovering over the red flag shows a new tooltip::
+  
+    Annotation has been reported to the moderators
+    
+
+Adding Page notes
+^^^^^^^^^^^^^^^^^
+**Purpose**: Page notes allow users to give feedback on the preprint as a whole.
+
+Page notes are comments made in response to the preprint as a whole, and do not link to excerpts of text.
+
+To add a page note, the user must click the **Paper** icon along the side of the panel, after which the panel will expand, and an editable textbox will appear in which the user can write their page note. A statement about using the CC0 lisence appears at the bottom of the annotation when in edit mode::
+  
+    CC0 Annotations can be freely reused by anyone for any purpose.
+
+The user can format their page note using the following toolbox features:
+
+* Embolden text
+* Italicize text
+* Quote text
+* Insert link
+* Insert image
+* Insert mathematical notation (LaTex is supported)
+* Insert numbered list
+* Insert list
+* Markdown
+* Preview
+
+The user can add tags to the page note to make it easily discoverable by others.
+
+The user can cancel the page note by clicking the **Cancel** link at the bottom of the annotation. 
+
+After writing a page note, the user can post it. Next to the "Post" button is a drop-down menu where the user can choose to either make the page note public or private::
+  
+    Public
+    Only Me
+
+A page note is public by default. If the page note is public, the "Post" button will read "Post to Public;" if the page note is private, the "Post" button will read "Post to Only Me." A private page note is only visible to the user who wrote the page note, and is distinguished from public page notes by a "lock" symbol at the top. In the panel, page notes appear in chronological order, starting at the earliest date posted to the latest.
+
+The user's page notes can be edited at any time. Below the user's page notes is a "pencil" icon. Clicking this icon opens the page note in editing mode.
+
+Clicking the **Cancel** link returns the page note to the regular viewing mode.
+
+The user can delete their page notes at any time but cannot delete page notes made by others. Clicking the **trashcan** icon opens a confirmation modal::
+  
+    Are you sure you want to delete this annotation?
+    [Cancel][OK]
+    
+Clicking **Cancel** closes the modal and cancels the action. Clicking **OK** removes the page note from the panel.
+
+The user can reply to their own page notes by clicking the **Reply** icon, which will open a new page note text box below the original page note.
+
+The user can share their page note by clicking the **Share** icon, which will open a drop-down containing the share link, a copy-to-clipboard button, and social media options: Twitter, Facebook, Google Plus, and email. If the page note is private, helper text appears below the share link::
+   
+    Only me. No one else will be able to view this annotation.
+    
+If not the owner of the page note or if the owner is logged out of Hypothesis, pasting the link into the browser will take the user to the Hypothesis site, where they will be prompted to log in::
+  
+    This annotation is not available. You may need to log in to see it.
+    
+The owner will be able to log in to Hypothesis to view the annotation.
+
+The user cannot flag their own page notes as spam. In this way, the "Spam" icon is not available on the user's page notes from their end. The user can flag annotations written by other users as spam. Hovering over the **Flag** icon shows a tooltip::
+  
+    Report this annotation to the moderators
+
+Clicking the **Flag** icon turns the flag red, and flags the page note as spam. Hovering over the red flag shows a new tooltip::
+  
+    Annotation has been reported to the moderators
+
+Highlighting
+^^^^^^^^^^^^
+**Purpose**: The highlighting tool allows users to highlight text in the preprint as they read.
+
+To highlight text, the user must first select the text they want to higlight using their cursor, after which two buttons will appear in a pop-over::
+  
+    Annotate | Highlight
+
+Clicking **Highlight** will highlight the selected text in yellow.
+
+The highlighted text is only visible to the user highlighting the text. To view the preprint without the highlighted text, the user can click the **eye** icon along the side of the panel. Clicking this icon will show a strikethrough through the icon. The user can still highlight text with the highlighting tool disabled. If the user highlightes text while the highlighting tool is disabled, all the highlights the user made will be visible on the document again, but the icon will still show a strikethrough. The user can click the **eye** icon to show the highlighted text again. 
+
+Orphaned Annotations
+^^^^^^^^^^^^^^^^^^^^
+**Purpose**: Orphaned annotations allow previous annotations to persist even when a new version of the document has replaced the originally annotated text.
+
+
+
 
