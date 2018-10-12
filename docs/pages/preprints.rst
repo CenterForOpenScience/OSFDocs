@@ -871,6 +871,7 @@ Selected search facets are defined in the URL, so that a user can share/navigate
 
 Preprint search results display the preprint title first, followed by the author(s), discipline(s), abstract, and preprint provider. To access the rest of the metadata, there is a down arrow that the user can click to unfold the search result on the "Discover" page. Clicking the down arrow shows external links, such as a link to a preprint's journal publication, etc., an OAI (if any), tags (if any), and the date and time on which the preprint was added.
 
+Annotating a preprint
 ---------------------
 **Purpose**: Enables users to comment on and annotate preprints.
 
@@ -1070,6 +1071,8 @@ Orphaned Annotations
 ^^^^^^^^^^^^^^^^^^^^
 **Purpose**: Orphaned annotations allow previous annotations to persist even when a new version of the document has replaced the originally annotated text.
 
+Orphaned annotations occur when a new version of the preprint has been uploaded, and an annotation does not map to the new version's text. Since annotations link to specific text in the preprint, only annotations can be orphaned - page notes cannot be orphaned as they do not link to text. 
 
+If a new version of the preprint has been uploaded and has orphaned any of the annotations, a tab called "Orphans" will appear in the panel next to "Annotations" and "Page Notes." Clicking the **Orphans** tab will list all orphaned annotations. An orphaned annotation looks the same as an unorphaned annotation, except the preview of the text at the top of the annotation has a strikethrough. Orphaned annotations retain the same functionality as unorphaned annotations - if the user wrote an orphaned annotation, they will still be able to edit, add tags, share, and delete the annotation. Orphaned annotations do not link to or otherwise indicate which version of the preprint they map to; the text preview above the annotation is the only way to trace the annotation back to its mapped version.
 
 
