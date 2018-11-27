@@ -1,5 +1,5 @@
 Creating an Account
-===================
+-------------------
 
 **Purpose:** The sign-up form creates an OSF account.
 

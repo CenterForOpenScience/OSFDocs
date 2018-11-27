@@ -3,7 +3,7 @@
 The navigation bar appears at the top of the page at all times. When scrolling down, the navigation bar stays stuck to the top of the page.
 
 Links included when logged out
-==============================
+------------------------------
 
 *  OSF Home tab:
     * OSF Home: Clicking this link takes the user to the OSF homepage.
@@ -31,7 +31,7 @@ Links included when logged out
 
 
 Links included when logged in
-=============================
+-----------------------------
 
 **Links included when logged in:**
 
