@@ -4,7 +4,7 @@
 This page is accessible at https://osf.io/registries.
 
 Links included when logged out
-==============================
+------------------------------
 
 * OSF Registries
     
@@ -22,7 +22,7 @@ Links included when logged out
 * Sign In: Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`. After logging in, the user is taken to the OSF Registraties landing page.
 
 Links included when logged in
-=============================
+-----------------------------
 
 When logged in, the navigation bar is the same, except that the "Sign Up" and "Sign In" links are replaced with the user drop-down menu:
 
@@ -34,7 +34,7 @@ When logged in, the navigation bar is the same, except that the "Sign Up" and "S
     *Log out: Clicking this link logs the user out of their OSF account and takes them to the OSF homepage, where a confirmation message will appear at the top of the page informing them that they have logged out succesfully: https://osf.io/goodbye/. 
 
 Searching OSF Registries
-========================
+------------------------
 
 OSF Registries is powered by SHARE. On the OSF Registries landing page, the user can search for registrations by typing a query into the search box or by clicking a registration in the "Browse Recent Registrations section."
 

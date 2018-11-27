@@ -48,6 +48,7 @@ Public Content on the OSF
 .. _institutions:
 
 OSF institutions
+****************
 
 .. include:: institutions.rst
 
