@@ -835,7 +835,7 @@ Search Preprints
 ---------------
 **Purpose**: To search for and browse preprints in OSF Preprints and other preprint servers.
 
-OSF Preprints is an aggregator of several preprint servers and is powered by SHARE. On the OSF Preprints and community preprint servers' landing pages, the user can enter a query to search for preprints. The search results will appear on the respsctive "Discover" page. 
+OSF Preprints is an aggregator of several preprint servers and is powered by SHARE. On the OSF Preprints and community preprint servers' landing pages, the user can enter a query to search for preprints. The search results will appear on the respective "Discover" page. 
 
 The user can search by preprint title by entering the title into the search field. To search by an author(s) or a tag(s), the user can use the boolean operaters AND (including x and x) and OR (including x or x). The accepted formats for searching one or more authors is as follows:
   
@@ -869,7 +869,7 @@ Below the Provider sidebar, there is a Subject sidebar that is sorted hierarchic
 
 Selected search facets are defined in the URL, so that a user can share/navigate to that URL and see that search facet and its parent expanded on the "Discover" page.
 
-Preprint search results display the preprint title first, followed by the author(s), discipline(s), abstract, and preprint provider. To access the rest of the metadata, there is a down arrow that the user can click to unfold the search result on the "Discover" page. Clicking the down arrow shows external links, such as a link to a preprint's journal publication, etc., an OAI (if any), tags (if any), and the date and time on which the preprint was added.
+Preprint search results display the preprint title first, followed by the author(s), discipline(s), abstract, and preprint provider. To access the rest of the metadata, there is a down arrow that the user can click to unfold the search result on the "Discover" page. Clicking the down arrow shows external links, such as a link to a preprint's journal publication, etc., an OAI (if any), tags (if any), and the date and time on which the preprint was added. A "Share" icon is located in the top right of each preprint result so that viewers can quickly share a preprint of interest. Clicking the **Share** icon opens a pop-over with social media sharing options: Twitter, LinkedIn, Email. Selecting a social media platform from the pop-over pulls the preprint information into a modal from which the user can share or email the preprint directly from the "Discover" page.
 
 Annotating a preprint
 ---------------------
