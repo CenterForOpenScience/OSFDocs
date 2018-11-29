@@ -599,13 +599,9 @@ If the user enters their email address into the textbox and clicks the green che
 
     * If a user has no projects: Email is sent to user, asking to confirm deactivation.
 
-    * User has only private projects, and user is the only contributor on those projects: Email is sent to user indicating
-    that we will delete the projects upon confirmation of deactivation request. User is invited to delete these projects
-    prior to confirming deactivation request, if user wishes.
+    * User has only private projects, and user is the only contributor on those projects: Email is sent to user indicating that we will delete the projects upon confirmation of deactivation request. User is invited to delete these projects prior to confirming deactivation request, if user wishes.
 
-    * User has only private projects, and projects have other contributors: Team checks if user is sole admin on the projects.
-    If not, then communicate to user that s/he will be turned to unregistered user on those projects (name will appear as
-    contributor, but not linked to anything else). User can remove him/herself from projects before deactivation if s/he wishes.
+    * User has only private projects, and projects have other contributors: Team checks if user is sole admin on the projects. If not, then communicate to user that s/he will be turned to unregistered user on those projects (name will appear as contributor, but not linked to anything else). User can remove him/herself from projects before deactivation if s/he wishes.
 
     * User has private and public projects with no other contributors
 
