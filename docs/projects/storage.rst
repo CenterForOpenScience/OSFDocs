@@ -6,7 +6,7 @@ or component's files page can be accessed by clicking on "Files" in the grey nav
 OSF Storage is the default file storage tool on the OSF. Users are given unlimited storage for free when they create an account. Files can be up to 5gb.
 
 Files Browser
-------------
+-------------
 The Files Browser displays the project tree and, above that, a toolbar with available actions.
 The project or component that the user is currently visiting is at the top of the project tree, followed by the files uploaded
 to that project/component, then components that are housed within that project/component. The tree continues to extend until
@@ -45,7 +45,7 @@ Clicking on the information button pulls up a modal that is displayed inside the
     [Close]
 
 Searching in the Files Browser
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** The search bar in the Files Browser allows the user to quickly find a file they are seeking.
 
 Clicking the "Search" button opens a text field for the user to enter their query into. The "Search" button disappears when
@@ -57,7 +57,7 @@ the file tree.
 
 .. _OSF-storage:
 Uploading to OSF Storage
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Users can upload files to be stored by the OSF.
 
 If the user is a contributor with read+write or admin :ref:`privileges <contributors>`, then selecting an OSF Storage element
@@ -74,7 +74,7 @@ admin privileges on.
 .. _folders:
 
 Folders
-^^^^^^^^^
+^^^^^^^
 **Purpose:** Folders allow users to organize items within a project or component's OSF Storage.
 
 Clicking the "Create Folder" opens a text field and two buttons that replace the existing buttons in the toolbar: a "Create" and a
@@ -105,7 +105,7 @@ Clicking this button immediately issues the download of a zip file containing al
 element. On refresh, the download count for each file in the folder is incremented by one.
 
 Single File Actions
-^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 Selecting a single file from any add-on or folder adds four additional buttons to the toolbar, beyond the default "Search" and "i:"
 "Download," "View," "Delete," and "Rename." Selecting a file from OSF Storage also adds a "Check-out file" button. 
 
@@ -155,7 +155,7 @@ Clicking the "View" button brings the user to the file's :ref:`Details page <det
 Clicking the "Download" button downloads the file. On refresh, the download count for the file increments by one.
 
 Multiselection of items
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Selecting multiple items at once allows users to perform batch actions.
 
 Users can select multiple items by holding down the Command or Shift keys.
@@ -178,12 +178,12 @@ Only files and folders from within the same project or component can be multi-se
 Multiple files cannot be downloaded at once unless they are in a :ref:`folder <folders>`.
 
 File Detail Page
-----------
+----------------
 
 **Purpose:** Most files can be rendered in the browser on the File Detail Page. The File Detail page also provides access to previous versions of a file. 
 
 File Detail Page
-----------
+----------------
 
 **Purpose:** Most files can be rendered in the browser on the File Detail Page. The File Detail page also provides access to previous versions of a file. 
 
@@ -241,7 +241,7 @@ After clicking the green check mark, the following dismissable confirmation mess
     Your file was successfully renamed. To view the new filename in the file tree below, refresh the page.
 
 Storage Add-Ons
-----------
+---------------
 **Purpose:** Storage add-ons can be used to connect a user's OSF account to another file storage system, increasing their
 capacity to share files via the OSF and bringing more functionality to their projects.
 

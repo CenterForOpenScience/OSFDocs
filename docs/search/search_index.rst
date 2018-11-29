@@ -1,7 +1,7 @@
 .. _search:
 
 Searching the OSF
-================
+=================
 
 **Purpose:** The search button allows users to find relevant content on the OSF or SHARE.
 
@@ -26,6 +26,6 @@ page, but a new query can be submitted.
 .. _distinguishing:
 
 Distinguishing Search Results
-*****************
+*****************************
 
 .. include:: distinguishing.rst

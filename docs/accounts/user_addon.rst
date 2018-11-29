@@ -10,7 +10,7 @@ that have specific add-ons associated with them.
 Connections to particular projects must be managed through the :ref:`project’s settings <project-settings>`.
 
 Amazon S3
------------
+---------
 **Purpose:** Configuring Amazon S3 from the user’s settings page allows the user to manage their connection between the OSF and Amazon S3.
 To connect Amazon S3 to an OSF account via the user settings page, the user must enter their Access Key and Secret Key.
 Empty fields for each are available below the Amazon S3 title. Clicking the “Save” button or hitting the return key allows
@@ -60,7 +60,7 @@ Clicking “Remove” disconnects the add-on from the project. If all projects a
 If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
 
 Box
---------
+---
 **Purpose:** Configuring Box from the user’s settings page allows the user to manage their connection between the OSF and Box.
 
 To connect a Box account via the user settings page, the user must click the blue “Connect Account” link to the right of
@@ -101,7 +101,7 @@ If the user visits a disconnected project’s settings page, they will see that 
 
 
 Dataverse
-------------
+---------
 **Purpose:** Configuring Dataverse from the user’s settings page allows the user to manage their connection between the OSF and Dataverse.
 
 To connect a Dataverse account from the user's settings page, the user must click the blue “Connect Account” link to the right of the Dateverse title.
@@ -175,7 +175,7 @@ project’s settings page, they will see that the add-on is still selected but i
 
 
 Dropbox
-------------
+-------
 **Purpose:** Configuring Dropbox from the user’s settings page allows the user to manage their connection between the OSF and Dropbox.
 
 To connect a Dropbox account from the user's settings page, the user must click the blue “Connect Account” link to the right of the Dropbox title.
@@ -207,7 +207,7 @@ Clicking “Remove” disconnects the add-on from the project. If all projects a
 If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
 
 figshare
-----------
+--------
 **Purpose:** Configuring figshare from the user’s settings page allows the user to manage their connection between the OSF and figshare.
 
 To connect a figshare account from the user's settings page, the user must click the blue “Connect Account” link to the right of the figshare title.
@@ -232,7 +232,7 @@ Clicking “Remove” disconnects the add-on from the project. If all projects a
 If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
 
 GitHub
-----------
+------
 **Purpose:** Configuring GitHub from the user’s settings page allows the user to manage their connection between the OSF and GitHub.
 
 To connect a GitHub account from the user's settings page, the user must click the blue “Connect Account” link to the right of the GitHub title.
@@ -257,7 +257,7 @@ Clicking “Remove” disconnects the add-on from the project. If all projects a
 If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
 
 Google Drive
-----------
+------------
 **Purpose:** Configuring Google Drive from the user’s settings page allows the user to manage their connection between the OSF and Google Drive.
 
 To connect a Google Drive account from the user's settings page, the user must click the blue “Connect Account” link to the right of the Google Drive title.
@@ -282,7 +282,7 @@ Clicking “Remove” disconnects the add-on from the project. If all projects a
 If the user visits a disconnected project’s settings page, they will see that the add-on is still selected but is not configured.
 
 Mendeley
-----------
+--------
 **Purpose:** Configuring Mendeley from the user’s settings page allows the user to manage their connection between the OSF and Mendeley.
 
 To connect a Mendeley account from the user's settings page, the user must click the blue “Connect Account” link to the right of the Mendeley title.
@@ -326,7 +326,7 @@ authorized to connect to the user's account, the "Authorized by" row is still vi
 project’s settings page, they will see that the add-on is still selected but is not configured.
 
 Zotero
-----------
+------
 **Purpose:** Configuring Zotero from the user’s settings page allows the user to manage their connection between the OSF and Zotero.
 
 To connect a Zotero account from the user's settings page, the user must click the blue “Connect Account” link to the right of the Zotero title.

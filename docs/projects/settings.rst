@@ -245,7 +245,7 @@ Enabling access requests will be logged in the "Recent Activity" section as::
 
 
 Wiki
---------------
+----
 **Purpose:** Configuring the wiki allows admins and read+write contributors to enable or disable the wiki and change who can edit a wiki page.
 
 If the user is an admin or read+write contributor, a checkbox appears along with the text::
@@ -299,7 +299,7 @@ If a user changes to "Contributors (with write access)" from "All OSF users," th
 After several seconds, the drop-down returns. No confirmation modal is shown.
 
 Commenting
-------------
+----------
 **Purpose:** Admins and read+write contributors can configure the commenting preferences to determine who can comment on a project.
 
 In the "Commenting" section, the user is shown two options from which they can select—radio buttons allow them to select an option::

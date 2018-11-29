@@ -39,7 +39,7 @@ To edit profile information, users can visit their user "Settings." Alternativel
 and then click the "Edit your profile" link. The user is taken to their "Settings" page. The "Settings" page has six pages within it that the user can access using the sidebar. By default, the "Profile Information" page is selected from the sidebar and is shown on the "Settings" page. On the "Public Information" page, the "Name" tab is selected by default.
 
 Usernames
-------------
+---------
 
 **Purpose:** Configuring their username allows the user to change how they are listed in search results, contributor lists, and in citations.
 
@@ -122,7 +122,7 @@ Clicking "Discard changes" after making changes prompts the following modal to a
     [Cancel][Discard]
 
 Social Information
--------------------
+------------------
 **Purpose:** A user's social information can be edited and shared to allow visitors to easily find the user's relevant social media account.
 
 Social information can be edited by visiting the "Social" tab on the "Profile Information" page. There are eight social profiles
@@ -139,7 +139,7 @@ Clicking "Cancel" after making changes pulls up a modal that reads::
     [Cancel][Discard]
 
 Personal Site
-^^^^^^^^^^^^
+^^^^^^^^^^^^^
 **Purpose:** Personal websites can be provided to link users and visitors to a user's personal webpage.
 
 To update the "Your website" field, the user clicks into the field and enters a web address. By default, there is an empty field for one website. Below the field is a button labeled "Add website" to add additional fields. The order of the websites can be adjusted by dragging and dropping. 
@@ -167,7 +167,7 @@ There is no validation that the webpage belongs to the user.
 
 
 ORCID
-^^^^^^^^
+^^^^^
 **Purpose:** ORCIDs can be provided to link users and visitors to a user's ORCID page, listing their published works.
 
 To update the "ORCID" field, the user clicks into the field and enters their 16 digit ORCID. Hyphens can be omitted.
@@ -184,7 +184,7 @@ Saving changes produces a green text alert below the "Save" button::
     Settings updated
 
 ResearcherID
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 **Purpose:** ResearcherIDs can be provided to link users and visitors to a user's ResearcherID page, listing their published works.
 
 To update the "ResearcherID" field, the user clicks into the field and enters their nine character ResearcherID. Hyphens must be included to produce
@@ -204,7 +204,7 @@ Saving changes produces a green text alert below the "Save" button::
     Settings updated
 
 Twitter
-^^^^^^^^
+^^^^^^^
 **Purpose:** Twitter handles can be provided to link users and visitors to a user's Twitter profile.
 
 To update the "Twitter" field, the user clicks into the field and enters their Twitter handle. If the user enters special characters, the settings can still be updated.
@@ -241,7 +241,7 @@ Saving changes produces a green text alert below the "Save" button::
 If the user types "github.com/[username]" into the field and then clicks away, the domain name is automatically removed from the field.
 
 LinkedIn
-^^^^^^^^^
+^^^^^^^^
 **Purpose:** LinkedIn usernames can be provided to link users and visitors to a user's LinkedIn profile.
 
 To update the "LinkedIn" field, the user clicks into the field and enters their LinkedIn user ID, pub ID, or profile ID. If the user enters special
@@ -277,7 +277,7 @@ Saving changes produces a green text alert below the "Save" button::
     Settings updated
 
 Google Scholar
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 **Purpose:** Google Scholar IDs can be provided to link users and visitors to a user's Google Scholar profile, listing their publications.
 
 To update the "Google Scholar" field, the user clicks into the field and enters their Google Scholar ID. If the user enters their ID
@@ -293,7 +293,7 @@ Saving changes produces a green text alert below the "Save" button::
     Settings updated
 
 ResearchGate
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 **Purpose:** ResearchGate profile IDs can be provided to link users and visitors to a user's ResearchGate profile. 
 
 To update the "ResearchGate" field, the user clicks into the field and enters their ResearchGate profile ID. If the domain name is included in the field,
@@ -306,7 +306,7 @@ Saving changes produces a green text alert below the "Save" button::
     Settings updated
 
 Academia.edu
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 **Purpose:** Academia.edu profile IDs can be provided to link users and visitors to a user's Academia.edu profile. 
 
 To update the "Academia" field, the user clicks into the first field and enters their Institution, then clicks into the second field and enters their profile ID. If the user does not enter one or the other field, the results are accepted anyway. The link in their profile does not work properly.
@@ -332,7 +332,7 @@ Saving changes produces a green text alert below the "Save" button::
     Settings updated
 
 Employment Information
----------------------
+----------------------
 **Purpose:** Users can share their employment information to help visitors and other users identify them and inform them of their credentials.
 
 Employment information can be updated by clicking on the "Employment" tab on the "Profile Information" page. By default,
@@ -402,7 +402,7 @@ Clicking "Cancel" after making changes pulls up a modal that reads::
     [Cancel][Discard]
 
 Education Information
------------------
+---------------------
 **Purpose:** Users can share their education information to help visitors and other users identify them and inform them of their credentials.
 
 Education information can be updated by clicking on the "Education" tab on the "Profile Information" page. By default,

@@ -1,7 +1,7 @@
 .. _my-dashboard:
 
 Dashboard
-============
+=========
 
 **Purpose:** The Dashboard provides users quick access to their projects and allows them to create new projects. 
 
@@ -58,6 +58,6 @@ Below this section is a marketing section that displays information about OSF fo
 .. _organizer:
 
 Project Organizer
-******************
+*****************
 
 .. include:: organizer.rst

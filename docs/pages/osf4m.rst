@@ -61,7 +61,7 @@ Clicking on a conference takes the user to the landing page for the conference.
 
 
 OSF Meetings conference pages
----------------------------------
+-----------------------------
 
 **Purpose:** Submissions to a particular conference via OSF Meetings are aggregated on one page that is publicly visible.
 

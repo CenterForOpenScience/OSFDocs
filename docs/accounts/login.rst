@@ -53,7 +53,7 @@ shown on the page. The user is told::
 No email is sent.
 
 Logging in with Two-factor Authentication
-------------
+-----------------------------------------
 
 **Purpose:** Two-factor authentication provides added security to the user. It requires one additional step to ensure that
 the user logging in is, in fact, the account holder.
@@ -72,7 +72,7 @@ If the passcode the user enters is incorrect, a red inline error is shown below 
     The passcode you entered is incorrect.
 
 No log in activity
------------------
+------------------
 
 If a user has not signed in to their account in 1 month, they receive the following engagement email::
 

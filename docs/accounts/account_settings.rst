@@ -35,7 +35,7 @@ The user receives an email at their *previous* primary email that reads::
     The OSF Robot
 
 Adding an Alternate Email
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Adding an alternate email initiates the merge process.
 
 Users can merge their accounts by logging into the account they wish to make primary and visiting their Account Settings.
@@ -196,7 +196,7 @@ they are brought to an error page that reads::
     The provided token is invalid.
 
 Effects of a Merge
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 **Purpose:** An account merge should condense OSF content into one account, but remove old user information.
 
 Any projects that were associated with one of the alternate emails are added to :ref:`Project Organizer <organizer>`. If

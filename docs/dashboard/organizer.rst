@@ -13,11 +13,11 @@ If the "My Projects" page is slow to load, the following error message appears::
   Try reloading the page. If the problem persists, contact us at support@cos.io.
 
 Filter Pane
--------------
+-----------
 **Purpose:** The filter pane provides users with several options for filtering the projects displayed in the Project Organizer. The first section is Collections, followed by Contributors, then Tags. Each section displays only four entries. Forward and backward arrows allow users to access more options for filtering
 
 Collections
-----------
+-----------
 **Purpose:** Collections allow users to create a customized organization system on their Project Organizer.
 
 Collections are user defined project groups. Collections can house a user’s projects and :ref:`components <components>` or
@@ -46,32 +46,32 @@ Bookmarks” appears. Clicking adds the project and all public components within
 Project Organizer. When clicked, the plus sign turns into a minus sign and on hover a tooltip reads “Remove from Bookmarks."
 
 Contributors
-----------
+------------
 **Purpose:** Clicking a contributor's name allows the user to filter for only those projects that both he/she and the selected name are contributors on. 
 
 Tags
-----------
+----
 **Purpose:** Clicking on a tag allows the user to filter for only those projects that contain the selected tag. 
 
 ..::Todo: What happens when user clicks multiple contributor names or tags. What if the tag is on a file and not a project? 
 
 
 Project Organizer - Projects and Components in the Project Organizer
------------
+--------------------------------------------------------------------
 
 **Purpose:** Projects and components, as the primary units of content on the OSF, are the focus of the
 Project Organizer. The center pane displays projects and components that match the filters the user has applied. If no filters have been applied, this center pane displays all of the users' projects. Nested components can be seen by clicking the "+" sign to the left of the project name. Highlighting (clicking next to a project or component's name) displays information about the project or component in the right pane. Clicking on a project or component takes the user to the Project or Component Overview page. 
 
 
 Sorting Project Organizer Content
-------------
+---------------------------------
 **Purpose:** Sorting contents by column headers in the Project Organizer allows users to more quickly find an item that they are looking for.
 
 The Project Organizer can sort its contents by Name, in alphabetical or reverse alphabetical order, or by Date Last Modified. By default, content is sorted by Date Last Modified. Within a collection or project, contents are also sorted according to date last modified by default. 
 
 
 Information Panel
-----------
+-----------------
 
 **Purpose:** The right pane of the Project Organizer displays information about the selected project or component in two tabs, Information and Recent Activity, and is collapsed by default.
 

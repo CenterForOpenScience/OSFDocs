@@ -59,7 +59,7 @@ When logged in, the navigation bar is the same except that it contains a "My OSF
 .. _adding-preprint: 
 
 Adding a Preprint
----------------
+-----------------
 **Purpose**: To submit a preprint, the user must upload their file and fill out required information related to their preprint in the following form.
   
 Clicking the green "Add a preprint" button takes the user to the Add Preprint page where the user must follow five steps in order to share a preprint:
@@ -327,7 +327,7 @@ When the user clicks "Save and continue," the Discipline widget will close, and 
 The user can return to the Discipline widget to make changes at any point throughout the preprint upload process. 
 
 Basics
-^^^^^^^
+^^^^^^
 **Purpose:** The Basics widget is where the user can add a license, DOI, tags, and an abstract to their preprint.
 
 In the bottom right of the Basics widget, there are two buttons::
@@ -624,7 +624,7 @@ For community preprints services::
 In the last line of the email, the "preprint service" and "OSF" link to the preprint service landing page and OSF dashboard, respectively.
 
 Preprint Detail Page
----------------------
+--------------------
  **Purpose:** The "Preprint Detail" page is the main page where the user reads and downloads a given preprint.
 
 The preprint title appears at the top of the "Preprint Detail" page. Below the title is a list of the co-authors on the preprint. If a co-author is a registered contributor, their name will be linked to their OSF profile page. The date when the preprint was shared and the date when the preprint was last edited are listed below the preprint's title.
@@ -779,7 +779,7 @@ The user can edit the widgets in any order, but the user cannot leave any of the
 The preprint editing process is the same as the preprint uploading process. The only differences are that the Upload widget has a different workflow, and the submit widget and "Share" button are now called the Upload widget and the "Complete" button, respectively.
 
 Editing the Upload Widget
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 The user cannot edit the Preprint Location section (i.e. the OSF project or component to which their preprint is connected). The Preprint Location section is grayed out and has a lock symbol next to the project/component name.
 
 To upload a new version of their preprint, the user must click to open the Preprint File section. There is a message at the top of this section::
@@ -797,7 +797,7 @@ If the user uploads a new version of their preprint file with the same filename 
     [filename](Version:x)
 
 The OSF Project
-----------------
+---------------
 **Purpose**: Allows the user to add supplemental files to the preprint as well as to view and access the preprint from the OSF side.
 
 On the bottom right of the Preprint Detail page, there is a gray box and a button::
@@ -832,7 +832,7 @@ The metadata and citation styles for the preprint stay the same along the right 
 If a user clicks on a supplemental file (any file that is not labelled "Primary"), the "Download preprint" button located below the MFR changes to "Download file." The "Download preprint" button located in the top right of the page stays the same and downloads the primary preprint file even if a supplemental file is displayed in the MFR.
 
 Search Preprints
----------------
+----------------
 **Purpose**: To search for and browse preprints in OSF Preprints and other preprint servers.
 
 OSF Preprints is an aggregator of several preprint servers and is powered by SHARE. On the OSF Preprints and community preprint servers' landing pages, the user can enter a query to search for preprints. The search results will appear on the respective "Discover" page. 

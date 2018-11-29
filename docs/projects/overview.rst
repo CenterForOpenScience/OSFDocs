@@ -8,7 +8,7 @@ as can contributors on a public or private project.
 Projects and components contain metatags in order to make the metadata available for export (e.g. Zotero).
 
 Project Title
---------------
+-------------
 **Purpose:** The Project title helps identify and distinguish between projects on a user's dashboard or through the general search.
 
 When viewing a project, the first item in the Project Navigation Bar is the Project Title. If the project title is too long, it will be shortened with an ellipsis. The project title has a blue background and white font. If the user is viewing a project or component that is the child of another project or component, an arrow appears to the left of the project's title. The arrow makes a right angle, turning left then up. Hovering over the arrow shows a tooltip with the parent project or component's title. Clicking on the arrow brings the user to the parent project or component's Overview. 
@@ -37,7 +37,7 @@ If enabled on the project, the final link is the :ref:`commenting icon <commenti
 
 
 Privacy settings and quick actions
------------------------------------
+----------------------------------
 In the top right of the "Overview" page are the privacy buttons, the "Forks" button, and the ellipsis button.
 
 Contributors always see the privacy settings, the "Forks" button, and the ellipsis button. 
@@ -77,7 +77,7 @@ See the :ref:`request access page <request_access>` for details.
 .. _overview-metadata:
 
 Metadata
--------
+--------
 **Purpose:** Every project has associated information about that project—its title, contributors, etc. This is metadata about that project.
 The metadata is displayed at the top of the Project Overview to orient users to the project's basic information.
 
@@ -188,7 +188,7 @@ The user can view their components and corresponding files in a tree structure i
 Clicking **Cancel** cancels the file move. Clicking **Keep Both** keeps the original file and adds the newly moved file to the location. Clicking **Replace** replaces the original file in the second location with the newly moved file. The file always remains in the first location.
 
 Citation Widget
---------------
+---------------
 **Purpose:** The "Citation" widget provides a pre-formatted citation referencing the viewed OSF project or component.
 
 The Citation widget is locate to the right of the Wiki widget. Every project and component on the OSF has a unique and permanent URL, allowing
@@ -268,7 +268,7 @@ After clicking **Create**, a confirmation modal appears::
 Clicking **Keep working here** keeps the user on the "Project Overview" page. Clicking **Go to new component** takes the user to the new "Component Overview" page.
 
 Adding Links
-^^^^^^^^^
+^^^^^^^^^^^^
 **Purpose**: This feature enables users to link between personal or public projects, components, and registrations.
 
 Clicking the **Link Projects** button opens a modal::
@@ -436,7 +436,7 @@ Clicking the **OK** button dismisses the modal, and returns the user to the pare
 .. _tags:
 
 Tags Widget
-----------------
+-----------
 **Purpose:** The Tags widget allows users to provide keywords relevant to their project to enhance discoverability of their work.
 
 The "Tags" widget is located below the components widget. When no tags are added, contributors with read+write or admin permissions
@@ -462,7 +462,7 @@ The query in the search bar is as follows::
 .. _activity:
 
 Recent Activity Widget
---------------------
+----------------------
 **Purpose:** The Recent Activity widget shows users the logged actions for the viewed project or component, its children, and its registrations.
 
 The Recent Activity widget appears below the Tags widget. Below the panel title, "Recent Activity," is muted text that reads::

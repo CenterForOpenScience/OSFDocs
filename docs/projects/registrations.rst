@@ -119,7 +119,7 @@ When visiting the :ref:`Project Organizer <organizer>`, a project or component t
 written to the right of its title.
 
 Registration failed
---------------------
+-------------------
 Occasionally, a registration will fail. When a registration fails, the following modal will appear::
 
     Registration failed
@@ -306,7 +306,7 @@ Which is then followed by their commentary.
 
 
 Creating a registered report
------------------------------
+----------------------------
 **Purpose**: the registered report landing page and workflow provides users an easy way to create and share registered reports.
 
 The "Registered Report" landing page is accessible at https://osf.io/rr. This page gives uesrs an onboarder to create registered reports following stage 1 peer review. Users must receive an in principle acceptance by a journal following stage 1 peer review in order to be eligible for the form. 
@@ -348,7 +348,7 @@ Clicking **Preregister an analysis plan for an OSF project** opens a search fiel
 Typing the name of an existing project into the field pulls up matching results. After selecting the project and clicking **Register**, the user is taken to the form. The rest of the workflow follows regular registrations.
 
 Embargos
-------------
+--------
 **Purpose:** Users can opt to make their registration public immediately or after a period of time.
 
 Prior to completing their registration, the user decides on an embargo period. Text explains the embargo period to the user::
@@ -542,7 +542,7 @@ The following email will be sent to project contributors::
 Clicking the disapproval link will immediately cancel this request and the original embargo date will remain intact. This registration will be made public when all project administrators approve the change or 48 hours pass, whichever comes first.
 
 Withdrawals
----------------
+-----------
 **Purpose:** Withdrawals allow admins to make the contents of a registration private.
 
 A registration that is not embargoed is public. Users cannot "undo" a registration or make its contents private, but admins
@@ -693,7 +693,7 @@ before completing the registration.
 Copies of the most recent version of all other add-ons will be present. OSF Storage maintains complete version history.
 
 External Links
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 The user can create external links to both registrations (public and embargoed) and projects/components alike. If an external link points to a project that is registered, the link will point to the project and not the registration. In other words, if the user has Project A and creates an external link to Project B, and registers project B, the external link will still point to Project B and not its registration.
 
 To point a project or component to a registration, the user will need to enter the registration's URL into the "External Link" field when :ref:`configuring the external link <external link>`. If a user has access to an embargoed registration, the user can still create an external link that directs to it.

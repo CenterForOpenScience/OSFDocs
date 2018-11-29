@@ -25,11 +25,11 @@ If no search results are returned, the right side of the page shows “No result
 show the Total and SHARE categories, with a count of zero relevant results.
 
 Filtering Search Results
-----------------------
+------------------------
 **Purpose:** Filtering allows the user to remove extraneous results.
 
 Filtering by Category
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Filtering by category allows users to focus their search on the correct content type.
 
 When performing a search, there is a left sidebar that shows categories and their counts of how many results fell into each category. The categories are: Projects, Components, Users, Registrations, Preprints (when clicked, takes the user to the preprint "Discover" page with the query in the search box), Files, Institutions, and SHARE.
@@ -44,7 +44,7 @@ Users can select one of the other categories by clicking on its title. Only sear
 are then shown on the right hand side of the page. Only one category can be selected at a time.
 
 Filtering by Tag
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 **Purpose:** Filtering by tag narrows the search frame and raises the topic relevance of results.
 
 When performing a search, below the left sidebar of categories are a list of tags that the search results are associated with. This section of tags is titled "Improve your search." "If no tags

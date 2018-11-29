@@ -1,7 +1,7 @@
 .. _add-ons:
 
 Add-Ons
-==========
+=======
 **Purpose:** Add-ons can be used to connect a third party service to the OSF. This increases the amount of storage the user
 can make use of via the OSF.
 

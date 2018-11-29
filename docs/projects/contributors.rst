@@ -6,7 +6,7 @@ see this link. Non-contributors cannot access a project or component's Contribut
 The top half of the Contributors page is devoted to managing contributors. The bottom half allows configuration of View-only Links.
 
 Contributors
---------------
+------------
 **Purpose:** Contributors to a project or component can make changes to the project/component's content and can be included in the
 citation.
 
@@ -124,7 +124,7 @@ cannot change any contributor permission settings.
 
 
 Changing Bibliographic Settings
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** A user can be set to be non-bibliographic so that their name is hidden from the contributor list.
 
 When a user is made non-bibliographic, their name is removed from the contributor list and the citation, regardless of their position
@@ -161,7 +161,7 @@ cannot change any contributor bibliographic settings.
 
 
 Adding Contributors
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 **Purpose:** Adding contributors allows additional OSF users to be cited on a project or to make edits to that project.
 
 The user must be an admin on the project in order to add contributors. The user first clicks the green "Add" button to the right of the "Contributors"
@@ -315,7 +315,7 @@ If the project contains a preprint, the email will include the following line be
     This project also has a public preprint, discoverable at: <link to preprint>
 
 Removing Contributors
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Contributors can be removed to prevent them from being listed in the contributor list or from editing the project.
 
 Admins can remove any contributor on a project. Contributors with readwrite or read-only permissions can remove themselves from
@@ -384,7 +384,7 @@ To finish importing the contributors, the user clicks the green **Add** button i
 
 
 View-only Links
---------------
+---------------
 **Purpose:** View-only Links allow users to share the contents of private projects with non-contributors.
 
 View-only links can also be configured in the project's :ref:`Settings <settings>`. If a view-only link is created via the "Contributors" tab, the link will be listed in the "View-only Links" section on the "Settings" page.
