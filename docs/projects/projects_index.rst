@@ -51,13 +51,6 @@ Registrations
 
 .. include:: registrations.rst
 
-.. _preprints:
-
-Preprints
-*********
-
-.. include:: preprints.rst
-
 .. _forks:
 
 Forks
