@@ -53,10 +53,10 @@ Moreover, a registration's Recent Actity widget only shows the original OSF proj
 
 Activity pertaining to the creation of the registration is logged into the original OSF project's Recent Activity widget:
 
-*Intiated: the administrator who creates the registration is listed in the Recenty Activity widget as the oen who initiated the registration.
-*Approved: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who approved the registration.
-*Canceled: the first adminstrator to cancel the registration is the only admin listed in the Recent Acvitity widget who canceled the registration.
-*Registered: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who registered the registration.
+* Intiated: the administrator who creates the registration is listed in the Recenty Activity widget as the oen who initiated the registration.
+* Approved: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who approved the registration.
+* Canceled: the first adminstrator to cancel the registration is the only admin listed in the Recent Acvitity widget who canceled the registration.
+* Registered: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who registered the registration.
 
 The blue Comments icon appears in the top right of the registration Overview page. The project's comments are not carried over to the registration. However, any comments made on the project prior to the registration's creation are logged into both the project and registrations's Recent Activity widget.
 
