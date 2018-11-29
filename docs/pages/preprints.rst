@@ -107,6 +107,7 @@ The widget contains two options for adding a preprint file::
     [Upload new preprint][Connect preprint to existing OSF project]
 
 .. _new-preprint:
+
 **Upload new preprint**
 
 When the user clicks "Upload new preprint," a box in which the user uploads their preprint file appears with instructions that read::

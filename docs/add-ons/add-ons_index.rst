@@ -596,6 +596,7 @@ that reads "Import Account from Profile." Alternatively, the user can uncheck th
 changes.
 
 .. _gitlab:
+
 Configuring GitLab
 ******************
 **Purpose:** Connecting to GitLab allows users to create a two way connection between the OSF and GitLab.
@@ -906,6 +907,7 @@ that reads "Import Account from Profile." Alternatively, the user can uncheck th
 changes.
 
 .. _zotero:
+
 **Purpose**: Connecting to Zotero allows users to create a two-way connection between the OSF and Zotero.
 
 Clicking the **Enable** link presents the user with a modal::

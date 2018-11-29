@@ -358,6 +358,7 @@ Viewing links
 See the :ref:`Analytics page <analytics_links>` for information.
 
 .. _component-format:
+
 Component widget format
 ^^^^^^^^^^^^^^^^^^^^^^^
 Components and links are listed in the Components widget with their title, contributors, description, category, and privacy symbols. Components are listed

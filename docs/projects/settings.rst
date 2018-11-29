@@ -342,6 +342,7 @@ When the user makes a change, the drop-down is temporarily removed and replaced 
 After several seconds, the drop-down returns.
 
 .. _redirect link:
+
 Redirect Link
 -------------
 **Purpose:** Adding an redirect link allows users to redirect project visitors to the provided URL.  

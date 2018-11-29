@@ -56,6 +56,7 @@ Selecting a result returns the file tree and closes the search field. The select
 the file tree.
 
 .. _OSF-storage:
+
 Uploading to OSF Storage
 ^^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Users can upload files to be stored by the OSF.
