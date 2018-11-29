@@ -489,7 +489,7 @@ Users, files, projects, components, preprints, registrations, and wikis are link
 Only the ten most recent logs are shown at once. The full list of logs are paginiated. Pagination behavior is described in detail :ref:`here <pagination>`.
 
 Viewing a redirect Link
-***********************
+-----------------------
 **Purpose:** Users who configure a redirect link give visitors the option to follow an external link from the "Overview" page. Visitors are prompted to redirect to this link upon entering the OSF project. 
 
 If configured (see :ref:`Configuring a redirect link <redirect link>`) visitors to the project will immediately see a modal that reads::

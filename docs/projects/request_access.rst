@@ -1,10 +1,10 @@
 Request Access
---------------
+**************
 The request access feature gives non-contributors the opportunity to collaborate on and access both public and private projects. This feature must be enabled on the project for non-contributors to request access. Admins on the project can enable or disable request access via their :ref:`project Settings page <project-settings>`.
 
 
 Request access on private projects
-**********************************
+----------------------------------
 **Purpose**: To allow users who have the URL of a private project to request access to it.
 
 To request access on a private project, the user must navigate to the project's URL. They will be taken to a restricted page that reads::
@@ -22,14 +22,14 @@ Clicking the **Switch account** button takes the user to the :ref:`OSF login pag
 
 
 Request access on public projects
-*********************************
+---------------------------------
 **Purpose**: Gives the opportunity for users to collaborate on research they find on OSF.
 
 To request access on a public project, the user must click the **ellipsis** button in the top right of the project "Overview" page. After clicking the button, a drop-down menu will unfold, from which the user can click the **Request access** button. Upon clicking the **Request Access** button, the button becomes disabled and updates to read **Access requested**, indicating to the user that their request has been submitted.
 
 
 Grant or reject access
-**********************
+----------------------
 **Purpose**: To allow admins to choose who can contribute to their project.
 
 When a user requests access to a project, the admins will receive an email notification titled "An OSF user has requested access to your project"::
