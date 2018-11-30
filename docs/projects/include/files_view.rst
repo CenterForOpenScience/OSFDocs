@@ -1,3 +1,5 @@
+.. _files-view:
+
 Viewing a file
 **************
 

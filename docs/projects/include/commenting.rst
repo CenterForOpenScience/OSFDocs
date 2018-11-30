@@ -1,3 +1,8 @@
+.. _commenting:
+
+Commenting
+**********
+
 **Purpose:** Commenting allows contributors on private projects and OSF users on public projects - when allowed by the project administrator(s) - to discuss the project's contents. 
 
 When a user has commenting permissions, a blue chat icon will appear along the project banner in the top right.

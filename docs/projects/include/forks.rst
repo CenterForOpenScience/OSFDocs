@@ -1,3 +1,8 @@
+.. _forks:
+
+Forks
+*****
+
 **Purpose:** Forking a project copies the projects contents and creates a new project.
 
 Any public project can be forked, meaning that any OSF user can create their own copy of a project. Forking one project creates

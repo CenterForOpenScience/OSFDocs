@@ -1,3 +1,8 @@
+.. _contributors:
+
+Contributors
+************
+
 **Purpose:** The Contributors page allows users to configure contributors' permissions and create View-only Links.
 
 The Contributors page is accessible via the grey navigation bar within a project or component. All contributors on a project can

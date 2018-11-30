@@ -1,6 +1,9 @@
-Request Access
+.. _request_access:
+
+Request access
 **************
-The request access feature gives non-contributors the opportunity to collaborate on and access both public and private projects. This feature must be enabled on the project for non-contributors to request access. Admins on the project can enable or disable request access via their :ref:`project Settings page <project-settings>`.
+
+**Purpose**: The request access feature gives non-contributors the opportunity to collaborate on and access both public and private projects. This feature must be enabled on the project for non-contributors to request access. Admins on the project can enable or disable request access via their :ref:`project Settings page <project-settings>`.
 
 
 Request access on private projects

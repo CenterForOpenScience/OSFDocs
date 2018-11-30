@@ -1,3 +1,8 @@
+.. _analytics:
+
+Analytics
+*********
+
 **Purpose:** The "Analytics" page of a project is designed to provide contributors and visitors with additional information about project visits and pages.
 
 A project's "Analytics" page is accessible via the grey navigation bar in every project. When a project is private, only the contributors

@@ -1,3 +1,8 @@
+.. _project-settings:
+
+Project Settings
+****************
+
 **Purpose:** Project settings allow users to configure the project settings and their notifications for that project.
 
 The project "Settings" page is configured differently depending on the contributor's level of permissions.

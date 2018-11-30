@@ -1,3 +1,8 @@
+.. _sign-up:
+
+Sign Up
+*******
+
 Creating an Account
 -------------------
 

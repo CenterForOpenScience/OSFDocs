@@ -55,9 +55,4 @@ Below this section is a marketing section that displays information about OSF fo
 		Browser the latest research
 		Check out the latest Preprints hosted on the OSF covering a variety of research areas. [View preprints]
 
-.. _organizer:
-
-Project Organizer
-*****************
-
 .. include:: include/organizer.rst

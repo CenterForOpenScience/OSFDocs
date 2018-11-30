@@ -1,3 +1,7 @@
+.. _institutions:
+
+OSF institutions
+****************
 
 OSF Institutions landing page
 -----------------------------

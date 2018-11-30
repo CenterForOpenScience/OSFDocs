@@ -1,3 +1,7 @@
+.. _getting-started:
+
+Public Content on the OSF
+*************************
 
 **Purpose:** The OSF is a repository and project management tool that allows users to make their content publicly available.
 Public projects are shared in order to increase access to scientific knowledge.

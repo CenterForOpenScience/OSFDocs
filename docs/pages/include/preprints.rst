@@ -1,3 +1,8 @@
+.. _preprints:
+
+Preprints
+*********
+
 **Purpose:** Sharing a preprint helps the user quickly disseminate their work and receive feedback from peers without having to wait for journal peer review. 
 
 Anyone with an OSF account can create a preprint and upload it to OSF Preprints or a community preprint server. A user can upload a new preprint or turn an existing OSF project or component into a preprint. 

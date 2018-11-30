@@ -1,3 +1,7 @@
+.. _support:
+
+Support
+*******
 
 **Purpose:** This is the support landing page for FAQS, help guides, and contact information.
 

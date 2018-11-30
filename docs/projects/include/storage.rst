@@ -1,3 +1,8 @@
+.. _storage:
+
+File Storage
+************
+
 **Purpose:** The OSF allows users to store, view, and share files. Users can take advantage of the built in OSF Storage or connect to an add-on.
 
 Files can be accessed via the Files Browser available on the :ref:`Project Overview <overview>` or the Files page. A project

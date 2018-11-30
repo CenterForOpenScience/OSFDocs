@@ -1,3 +1,7 @@
+.. _user-addon:
+
+User Level Add-on Settings
+**************************
 
 **Purpose:** Accessing add-on settings through the user’s settings allows the user to have a complete view of their add-on
 use and can disable an add-on globally.

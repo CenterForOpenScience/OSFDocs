@@ -1,3 +1,8 @@
+.. _templates:
+
+Templates
+*********
+
 **Purpose:** Templates copy one project's structure so that the bare bones of a new project can be easily created.
 
 **Using a public project as a template**

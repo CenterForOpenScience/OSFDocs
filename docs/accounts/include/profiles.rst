@@ -1,5 +1,8 @@
 .. _profiles:
 
+Public Profiles
+***************
+
 **Purpose:**  A user's public profile is a homepage for information about the user and their public OSF projects.
 
 The contents of public profiles are visible to any OSF visitor or user. An OSF user can access their public profile by clicking

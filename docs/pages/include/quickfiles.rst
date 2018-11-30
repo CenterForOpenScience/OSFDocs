@@ -1,3 +1,8 @@
+.. _quickfiles:
+
+Quickfiles
+**********
+
 **Purpose**: To allow users to upload public files quickly and independently from projects.
 
 Every user has their own Quick Files page and can be found in the :ref:`OSF navigation bar <navigation>` as the "My Quick Files" tab. Clicking this tab takes the user to a list where they can upload and access their quick files.
@@ -177,4 +182,3 @@ The "File Detail" page is the same as a regular file's (see the :ref:`File Detai
 
  * files cannot be edited
  * files cannot renamed on this page
- 

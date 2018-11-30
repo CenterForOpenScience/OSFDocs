@@ -1,4 +1,7 @@
+.. _meetings:
 
+OSF for Meetings
+****************
 
 **Purpose:** The OSF Meetings landing page shows information about the OSF Meetings service as well as links to meetings that have had more than five submissions.
 

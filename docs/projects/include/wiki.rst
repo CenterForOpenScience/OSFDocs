@@ -1,3 +1,7 @@
+.. _wiki:
+
+Wikis
+*****
 
 **Purpose:** Wikis can be used as means for documentation, supplementary to files.
 

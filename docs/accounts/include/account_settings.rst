@@ -1,3 +1,8 @@
+.. _account-settings:
+
+Account Settings
+****************
+
 **Purpose:** A user’s account settings allow them to configure their login and password information, as well as close out
 their OSF account.
 

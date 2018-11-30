@@ -1,3 +1,7 @@
+.. _registries:
+
+Registries Search
+*****************
 
 **Purpose:** The registries search is an OSF search, linked to from the "OSF Home" tab, that allows the user to browse all public registrations on the OSF, including withdrawn registrations.
 

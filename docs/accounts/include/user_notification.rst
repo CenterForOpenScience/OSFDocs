@@ -1,3 +1,7 @@
+.. _user-notification:
+
+User Level Notification Settings
+********************************
 
 **Purpose:** A user's notification settings allow them to manage their email preferences regarding newsletters and comments.
 

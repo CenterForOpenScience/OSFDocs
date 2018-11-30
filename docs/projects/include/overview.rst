@@ -1,3 +1,7 @@
+.. _overview:
+
+Project Overview
+****************
 
 **Purpose:** The Project Overview provides a comprehensive view of a project's structure and contents.
 

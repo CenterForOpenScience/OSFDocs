@@ -1,4 +1,7 @@
+.. _faq:
 
+FAQ
+***
 
 **Purpose:** The FAQ provides answers to common questions about the OSF.
 

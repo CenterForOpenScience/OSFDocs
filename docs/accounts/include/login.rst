@@ -1,3 +1,8 @@
+.. _login:
+
+Login
+*****
+
 **Purpose:** The login form allows a user to access their existing OSF account.
 
 When signed out, users can login by clicking the “sign in” button at the top right of the page in the :ref:`navigation bar <navigation-bar>`.

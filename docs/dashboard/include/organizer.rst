@@ -1,3 +1,7 @@
+.. _organizer:
+
+Project Organizer
+*****************
 
 **Purpose:** My Projects houses most of the functionality on the user’s dashboard. It lists projects and allows
 the user to sort and act on those projects. The Project Organizer is the center of the My Projects page. 

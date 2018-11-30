@@ -1,3 +1,8 @@
+.. _privacy:
+
+Privacy Settings
+****************
+
 **Purpose:** Privacy settings allow the user to make their work visible or invisible to non-contributors.
 
 Privacy settings are adjustable on the project/component level. Individual files or wiki pages cannot be made private or public.

@@ -23,9 +23,4 @@ To the right of the question mark icon is an ‘x.’ Clicking the ‘x’ close
 Upon submitting a query, the user is brought to the search results page. The search bar can not be closed on the search
 page, but a new query can be submitted.
 
-.. _distinguishing:
-
-Distinguishing Search Results
-*****************************
-
 .. include:: include/distinguishing.rst

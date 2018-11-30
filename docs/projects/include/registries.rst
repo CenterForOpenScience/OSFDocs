@@ -1,3 +1,8 @@
+.. _project-registries:
+
+Registries
+**********
+
 **Purpose:** OSF Registries allows users to search for public registrations.
 
 OSF Registries is powered by SHARE. On the OSF Registries landing page, the user can search for registrations by typing a query into the search box or by clicking a registration in the "Browse Recent Registrations section."

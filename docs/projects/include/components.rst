@@ -1,3 +1,8 @@
+.. _components:
+
+Components
+**********
+
 **Purpose:** Components allow users to break up their research into relevant elements.
 
 A component is a piece of a project, typically comprised of thematically related files or information.

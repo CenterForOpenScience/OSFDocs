@@ -1,3 +1,8 @@
+.. _share-search:
+
+SHARE
+*****
+
 **Purpose:** Aggregates data from several different sources to make research easily searchable and accessible.
 
 The user can navigate to SHARE either by searching the OSF or by going to `<http://www.share.osf.io/>`_. When the user goes directly to share.osf.io, they are taken to the SHARE landing page.

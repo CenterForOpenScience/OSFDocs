@@ -1,3 +1,7 @@
+.. _distinguishing:
+
+Distinguishing Search Results
+*****************************
 
 **Purpose:** Results returned include projects, components, users, registrations, preprints, files, and SHARE results. Each is distinguished
 from one another so that the user can best find the appropriate resource.
