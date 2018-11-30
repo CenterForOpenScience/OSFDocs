@@ -1,0 +1,591 @@
+Projects:
+	 A project is the fundamental means of organization and content sharing on the OSF.
+
+Project Settings:
+	 Project settings allow users to configure the project settings and their notifications for that project.
+
+Project/Component:
+	 The "Project" or "Component" section allows the user to update the category, edit the title or description, or delete the project/component.
+
+View-only Links:
+	 View-only Links allow users to share the contents of private projects with non-contributors.
+
+Access Requests:
+	 Configuring the Request Access feature allows admins to disable or enable this feature on the project.
+
+Wiki:
+	 Configuring the wiki allows admins and read+write contributors to enable or disable the wiki and change who can edit a wiki page.
+
+Commenting:
+	 Admins and read+write contributors can configure the commenting preferences to determine who can comment on a project.
+
+Email Notifications:
+	 All users can modify the frequency with which they would like to receive notifications about the project/component.
+
+Redirect Link:
+	 Adding an redirect link allows users to redirect project visitors to the provided URL.  
+
+Project Affiliation / Branding:
+	 Users can affiliate projects with institutions that have created OSF for Institutions accounts.
+
+Wikis:
+	 Wikis can be used as means for documentation, supplementary to files.
+
+Adding Files:
+	 to allow users to add files stored in their OSF Storage to their wiki.
+
+Embedding images:
+	 To allow users to add images to their wiki content.
+
+Publicly Editable Wikis:
+	 Publicly editable wikis allow users who are not listed as contributors on a project to edit the wiki contents.
+
+Templates:
+	 Templates copy one project's structure so that the bare bones of a new project can be easily created.
+
+Commenting:
+	 Commenting allows contributors on private projects and OSF users on public projects - when allowed by the project administrator(s) - to discuss the project's contents. 
+
+Registries:
+	 OSF Registries allows users to search for public registrations.
+
+Registrations:
+	 Registrations can be created to preserve the state of a project at a given moment in time.
+
+Registration Overview:
+	 A registration's Overview shows the state of the project at the time of registration and links to the registration form.
+
+Accepted Preregistrations:
+	 Accepted preregistrations will be eligible for the $1,000 prize.
+
+Rejected Preregistrations:
+	 If the research is non eligible for the Prereg Challenge, the user is notified with a chance to make changes and resubmit.
+
+Creating a registered report:
+	 the registered report landing page and workflow provides users an easy way to create and share registered reports.
+
+Embargos:
+	 Users can opt to make their registration public immediately or after a period of time.
+
+Registrations with No Embargo:
+	 Registrations that have no embargo are public immediately after confirmation.
+
+Registrations with an Embargo:
+	 Embargo periods allow the user to keep a registration private for a limited period of time.
+
+Withdrawals:
+	 Withdrawals allow admins to make the contents of a registration private.
+
+DOIs:
+	 DOIs can be issued to provide means of citation alternate to the OSF URL.
+
+Registering with Add-ons:
+	 The OSF can archive the contents of add-ons to include them in registrations.
+
+Adding institutional affiliations to registrations:
+	 To allow registrations to have affiliations and/or to have different affiliations from the corresponding project. 
+
+Project Overview:
+	 The Project Overview provides a comprehensive view of a project's structure and contents.
+
+Project Title:
+	 The Project title helps identify and distinguish between projects on a user's dashboard or through the general search.
+
+Project Navigation Bar:
+	 The Project Navigation Bar allows users to navigate between the settings and information of a project, as well as navigate to the project overview.
+
+Metadata:
+	 Every project has associated information about that project—its title, contributors, etc. This is metadata about that project.
+
+Wiki Widget:
+	 The Wiki widget provides a preview of wiki contents.
+
+Files Widget:
+	 The Files widget provides a comprehensive view of the project's files and allows basic actions like uploading and downloading.
+
+Citation Widget:
+	 The "Citation" widget provides a pre-formatted citation referencing the viewed OSF project or component.
+
+Components Widget:
+	 The "Components" widget allows users to view and create new components as well as link projects.
+
+Adding Links:
+	 This feature enables users to link between personal or public projects, components, and registrations.
+
+Tags Widget:
+	 The Tags widget allows users to provide keywords relevant to their project to enhance discoverability of their work.
+
+Recent Activity Widget:
+	 The Recent Activity widget shows users the logged actions for the viewed project or component, its children, and its registrations.
+
+Viewing a redirect Link:
+	 Users who configure a redirect link give visitors the option to follow an external link from the "Overview" page. Visitors are prompted to redirect to this link upon entering the OSF project. 
+
+Forks:
+	 Forking a project copies the projects contents and creates a new project.
+
+File Storage:
+	 The OSF allows users to store, view, and share files. Users can take advantage of the built in OSF Storage or connect to an add-on.
+
+Searching in the Files Browser:
+	 The search bar in the Files Browser allows the user to quickly find a file they are seeking.
+
+Uploading to OSF Storage:
+	 Users can upload files to be stored by the OSF.
+
+Folders:
+	 Folders allow users to organize items within a project or component's OSF Storage.
+
+Multiselection of items:
+	 Selecting multiple items at once allows users to perform batch actions.
+
+File Detail Page:
+	 Most files can be rendered in the browser on the File Detail Page. The File Detail page also provides access to previous versions of a file. 
+
+File Detail Page:
+	 Most files can be rendered in the browser on the File Detail Page. The File Detail page also provides access to previous versions of a file. 
+
+Storage Add-Ons:
+	 Storage add-ons can be used to connect a user's OSF account to another file storage system, increasing their
+
+Analytics:
+	 The "Analytics" page of a project is designed to provide contributors and visitors with additional information about project visits and pages.
+
+Viewing forks:
+	 The "Forks" page lists all forks that have been created from the original project, and allows users to fork the project directly from the page.
+
+Viewing links:
+	 The "Analytics" page shows how many and which projects link to the current project. This page does not display information regarding projects to which the current project links. 
+
+Viewing template copies:
+	 This box shows users how many templates have been created based on the current project.
+
+Privacy Settings:
+	 Privacy settings allow the user to make their work visible or invisible to non-contributors.
+
+Contributors:
+	 The Contributors page allows users to configure contributors' permissions and create View-only Links.
+
+Contributors:
+	 Contributors to a project or component can make changes to the project/component's content and can be included in the
+
+Changing Permissions:
+	 Dropdowns allow users to change permission settings for contributors, affecting what kinds of edits the contributor
+
+Changing Bibliographic Settings:
+	 A user can be set to be non-bibliographic so that their name is hidden from the contributor list.
+
+Adding Contributors:
+	 Adding contributors allows additional OSF users to be cited on a project or to make edits to that project.
+
+Removing Contributors:
+	 Contributors can be removed to prevent them from being listed in the contributor list or from editing the project.
+
+Importing contributors from a parent project to a component:
+	 To make adding contributors from a parent project to a component quick and easy.
+
+View-only Links:
+	 View-only Links allow users to share the contents of private projects with non-contributors.
+
+Components:
+	 Components allow users to break up their research into relevant elements.
+
+Request access:
+	 The request access feature gives non-contributors the opportunity to collaborate on and access both public and private projects. This feature must be enabled on the project for non-contributors to request access. Admins on the project can enable or disable request access via their :ref:`project Settings page <project-settings>`.
+
+Request access on private projects:
+	 To allow users who have the URL of a private project to request access to it.
+
+Request access on public projects:
+	 Gives the opportunity for users to collaborate on research they find on OSF.
+
+Grant or reject access:
+	 To allow admins to choose who can contribute to their project.
+
+OSF Navigation Bar:
+	 The navigation bar links the user to the primary pages they will need to access while on the OSF.
+
+Navigating the OSF:
+	 Navigation bars allow users to move through OSF content and projects.
+
+Add-Ons:
+	 Add-ons can be used to connect a third party service to the OSF. This increases the amount of storage the user
+
+Configuring Amazon S3:
+	 Connecting to Amazon S3 allows users to create a two way connection between the OSF and Amazon S3.
+
+Configuring Box:
+	 Connecting to Box allows users to create a two way connection between the OSF and Box.
+
+Configuring Dataverse:
+	 Connecting to Dataverse allows users to create a two way connection between the OSF and Dataverse.
+
+Configuring Dropbox:
+	 Connecting to Dropbox allows users to create a two way connection between the OSF and Dropbox.
+
+Configuring figshare:
+	 Connecting to figshare allows users to create a two way connection between the OSF and figshare.
+
+Configuring GitHub:
+	 Connecting to GitHub allows users to create a two way connection between the OSF and GitHub.
+
+Configuring GitLab:
+	 Connecting to GitLab allows users to create a two way connection between the OSF and GitLab.
+
+Configuring Google Drive:
+	 Connecting to Google Drive allows users to create a two way connection between the OSF and Google Drive.
+
+Configuring Mendeley:
+	 Connecting to Mendeley allows users to create a two way connection between the OSF and Mendeley.
+
+Viewing Amazon S3 Files:
+	 The file tree and file details pages allow users to view and interact with Amazon S3 files.
+
+Viewing OneDrive Files:
+	 The file tree and file details pages allow users to view and interact with OneDrive files. The connection between OneDrive and the OSF is read-only.
+
+Viewing Box Files:
+	 The file tree and file details pages allow users to view and interact with Box files.
+
+Viewing Dataverse Files:
+	 The file tree and file details pages allow users to view and interact with Dataverse files.
+
+Viewing Dropbox Files:
+	 The file tree and file details pages allow users to view and interact with Dropbox files.
+
+Viewing figshare Files:
+	 The file tree and file details pages allow users to view and interact with figshare files.
+
+Viewing GitHub Files:
+	 The file tree and file details pages allow users to view and interact with GitHub files.
+
+GitLab:
+	 The file tree and file details pages allow users to view and interact with GitLab files. The connection with GitLab is read-only.
+
+Viewing Google Drive Files:
+	 The file tree and file details pages allow users to view and interact with Google Drive files.
+
+Viewing Mendeley Content:
+	 Users can share their citations associated with a project using Mendeley.
+
+Viewing Zotero Content:
+	 Users can share their citations associated with a project using Zotero.
+
+Viewing OSF Storage Files:
+	 OSF Storage allows users to store and share files. 
+
+Distinguishing Search Results:
+	 Results returned include projects, components, users, registrations, preprints, files, and SHARE results. Each is distinguished
+
+Filtering Search Results:
+	 Filtering allows the user to remove extraneous results.
+
+Filtering by Category:
+	 Filtering by category allows users to focus their search on the correct content type.
+
+Filtering by Tag:
+	 Filtering by tag narrows the search frame and raises the topic relevance of results.
+
+Filtering by license:
+	 Filtering by license narrows the search results to show those items with a particular license.
+
+SHARE:
+	 Aggregates data from several different sources to make research easily searchable and accessible.
+
+Searching from the OSF:
+	 Takes the user to `<http://www.share.osf.io/>`_ 
+
+The SHARE Landing Page:
+	 Allows users to search for content in SHARE by either using the search bar or adding filters.
+
+Searching the OSF:
+	 The search button allows users to find relevant content on the OSF or SHARE.
+
+Project Organizer:
+	 My Projects houses most of the functionality on the user’s dashboard. It lists projects and allows
+
+Filter Pane:
+	 The filter pane provides users with several options for filtering the projects displayed in the Project Organizer. The first section is Collections, followed by Contributors, then Tags. Each section displays only four entries. Forward and backward arrows allow users to access more options for filtering
+
+Collections:
+	 Collections allow users to create a customized organization system on their Project Organizer.
+
+Contributors:
+	 Clicking a contributor's name allows the user to filter for only those projects that both he/she and the selected name are contributors on. 
+
+Tags:
+	 Clicking on a tag allows the user to filter for only those projects that contain the selected tag. 
+
+Project Organizer - Projects and Components in the Project Organizer:
+	 Projects and components, as the primary units of content on the OSF, are the focus of the
+
+Sorting Project Organizer Content:
+	 Sorting contents by column headers in the Project Organizer allows users to more quickly find an item that they are looking for.
+
+Information Panel:
+	 The right pane of the Project Organizer displays information about the selected project or component in two tabs, Information and Recent Activity, and is collapsed by default.
+
+Dashboard:
+	 The Dashboard provides users quick access to their projects and allows them to create new projects. 
+
+Accounts:
+	 OSF accounts allow users to store and access OSF content.
+
+Account Settings:
+	 A user’s account settings allow them to configure their login and password information, as well as close out
+
+Merging Accounts (Connected Emails):
+	 Account merging allows users to consolidate multiple OSF accounts into one and allows the user to login using multiple emails.
+
+Primary and Alternate Emails:
+	 Primary emails are the emails to which all correspondence from the OSF will be sent. When merging accounts,
+
+Adding an Alternate Email:
+	 Adding an alternate email initiates the merge process.
+
+Removing Emails:
+	 Unconfirmed and alternate emails can be removed to reduce the number of login emails available.
+
+Effects of a Merge:
+	 An account merge should condense OSF content into one account, but remove old user information.
+
+Changing Passwords:
+	 Passwords can be changed at the user’s request to increase security, make it more memorable, or gain access to the account.
+
+Changing a Password Via Account Settings:
+	 A user’s account settings can be used to change their password for any reason.
+
+Resetting a Forgotten Password:
+	 If a user forgets their password and cannot log in to their OSF account, their password can be reset.
+
+Security Settings:
+	 Security settings are available to allow the user to configure how much protection they have on their OSF account and data.
+
+Enabling Two-factor Authentication:
+	 Two-factor Authentication allows the user to add an additional step to the login process—making it more secure.
+
+Disabling Two-Factor Authentication:
+	 Disabling Two-Factor Authentication allows the user to remove the second step of the login process that they
+
+Export Account Data:
+	 Some users may wish to leave the OSF or to have an additional copy of their OSF content; in these events,
+
+Deactivating an Account:
+	 Users should be able to make an OSF account and ostensibly remove the desired content from the OSF.
+
+Login:
+	 The login form allows a user to access their existing OSF account.
+
+Logging in with Two-factor Authentication:
+	 Two-factor authentication provides added security to the user. It requires one additional step to ensure that
+
+Creating an Account:
+	 The sign-up form creates an OSF account.
+
+Resend password confirmation email:
+	 If an unconfirmed user tries to log in to the OSF, they have the option to have a
+
+Confirming an Unregistered User Account:
+	 Users can be added as contributors to an OSF :doc:`project <../projects/project_index>`
+
+Claiming an Account Via Email:
+	 Claiming an account via email allows a user who has been added as a contributor to a project to create an account following their addition.
+
+Claiming an Account Via the OSF:
+	 Claiming an account via the OSF allows a person who does not have an OSF account to
+
+User Level Notification Settings:
+	 A user's notification settings allow them to manage their email preferences regarding newsletters and comments.
+
+Email Preferences:
+	 A user's email preferences enable them to identify what kind of newsletters they are most interested in receiving.
+
+Configure Notification Preferences:
+	 Configuring notification preferences allows the user to choose how often they would like to receive email updates
+
+User Level Add-on Settings:
+	 Accessing add-on settings through the user’s settings allows the user to have a complete view of their add-on
+
+Amazon S3:
+	 Configuring Amazon S3 from the user’s settings page allows the user to manage their connection between the OSF and Amazon S3.
+
+Dataverse:
+	 Configuring Dataverse from the user’s settings page allows the user to manage their connection between the OSF and Dataverse.
+
+Dropbox:
+	 Configuring Dropbox from the user’s settings page allows the user to manage their connection between the OSF and Dropbox.
+
+figshare:
+	 Configuring figshare from the user’s settings page allows the user to manage their connection between the OSF and figshare.
+
+GitHub:
+	 Configuring GitHub from the user’s settings page allows the user to manage their connection between the OSF and GitHub.
+
+Google Drive:
+	 Configuring Google Drive from the user’s settings page allows the user to manage their connection between the OSF and Google Drive.
+
+Mendeley:
+	 Configuring Mendeley from the user’s settings page allows the user to manage their connection between the OSF and Mendeley.
+
+Zotero:
+	 Configuring Zotero from the user’s settings page allows the user to manage their connection between the OSF and Zotero.
+
+Public Profiles:
+	  A user's public profile is a homepage for information about the user and their public OSF projects.
+
+Usernames:
+	 Configuring their username allows the user to change how they are listed in search results, contributor lists, and in citations.
+
+Social Information:
+	 A user's social information can be edited and shared to allow visitors to easily find the user's relevant social media account.
+
+Personal Site:
+	 Personal websites can be provided to link users and visitors to a user's personal webpage.
+
+ORCID:
+	 ORCIDs can be provided to link users and visitors to a user's ORCID page, listing their published works.
+
+ResearcherID:
+	 ResearcherIDs can be provided to link users and visitors to a user's ResearcherID page, listing their published works.
+
+Twitter:
+	 Twitter handles can be provided to link users and visitors to a user's Twitter profile.
+
+GitHub:
+	 GitHub usernames can be provided to link users and visitors to a user's GitHub profile.
+
+LinkedIn:
+	 LinkedIn usernames can be provided to link users and visitors to a user's LinkedIn profile.
+
+ImpactStory:
+	 ImpactStory usernames can be provided to link users and visitors to a user's ImpactStory profile, listing their publications and other work.
+
+Google Scholar:
+	 Google Scholar IDs can be provided to link users and visitors to a user's Google Scholar profile, listing their publications.
+
+ResearchGate:
+	 ResearchGate profile IDs can be provided to link users and visitors to a user's ResearchGate profile. 
+
+Academia.edu:
+	 Academia.edu profile IDs can be provided to link users and visitors to a user's Academia.edu profile. 
+
+Baidu Scholar:
+	 Baidu Scholar IDs can be provided to link users and visitors to a user's Academia.edu profile. 
+
+Employment Information:
+	 Users can share their employment information to help visitors and other users identify them and inform them of their credentials.
+
+Education Information:
+	 Users can share their education information to help visitors and other users identify them and inform them of their credentials.
+
+Public Pages:
+	 The OSF is a free resource that is available to any visitor, whether an account holder or not. Several pages exist to help route visitors to information about the OSF and to OSF content.
+
+OSF for Meetings:
+	 The OSF Meetings landing page shows information about the OSF Meetings service as well as links to meetings that have had more than five submissions.
+
+OSF Meetings conference pages:
+	 Submissions to a particular conference via OSF Meetings are aggregated on one page that is publicly visible.
+
+Submitting to a conference:
+	 Users can email their poster/talk to the email address on the conference site and an OSF project will be created automatically.
+
+Preprints:
+	 Sharing a preprint helps the user quickly disseminate their work and receive feedback from peers without having to wait for journal peer review. 
+
+OSF Preprints:
+	 To search for preprints, upload a preprint, and access the preprint community servers.
+
+Community Preprint Servers:
+	 To search for preprints within and upload preprints to a given preprint server.
+
+Adding a Preprint:
+	 To submit a preprint, the user must upload their file and fill out required information related to their preprint in the following form.
+
+Upload:
+	 Allows the user to upload their preprint file.
+
+Discipline:
+	 Allows the user to add disciplines and subdisciplines (optional) to their preprint to make it more discoverable.
+
+Basics:
+	 The Basics widget is where the user can add a license, DOI, tags, and an abstract to their preprint.
+
+Authors:
+	 The Authors widger is where the user can add and reorder their preprint authors.
+
+Preprint Detail Page:
+	 The "Preprint Detail" page is the main page where the user reads and downloads a given preprint.
+
+Moderated preprints:
+	 Preprints will be pending until accepted or rejected by a moderator. Banners help inform the user of the state of their preprint. These banners are only visible to the preprint authors and moderator.
+
+Edit a Preprint:
+	 To upload a new version of a preprint and/or edit the preprint's metadata.
+
+The OSF Project:
+	 Allows the user to add supplemental files to the preprint as well as to view and access the preprint from the OSF side.
+
+Adding Supplemental Files:
+	 Allows the user to add supplemental files, code, and other matierals to their preprint.
+
+Search Preprints:
+	 To search for and browse preprints in OSF Preprints and other preprint servers.
+
+Annotating a preprint:
+	 Enables users to comment on and annotate preprints.
+
+Annotating:
+	 Annotations are comments that respond and link to excerpts of text in a document, and allow users to leave feedback on a preprint.
+
+Adding Page notes:
+	 Page notes allow users to give feedback on the preprint as a whole.
+
+Highlighting:
+	 The highlighting tool allows users to highlight text in the preprint as they read.
+
+Orphaned Annotations:
+	 Orphaned annotations allow previous annotations to persist even when a new version of the document has replaced the originally annotated text.
+
+Quickfiles:
+	 To allow users to upload public files quickly and independently from projects.
+
+Quick Files toolbar:
+	 allows the user to perform general actions to files.
+
+File toolbar:
+	 allows the user to perform actions to specific files.
+
+Moving Quick Files to Projects:
+	 allows the user to move a Quick File to a project.
+
+Deleting Quick Files:
+	 allows the user to delete single or multiple quick files.
+
+Renaming Quick Files:
+	 allows the user to rename their quick file after uploading it.
+
+File Detail page:
+	 allows the user to view the file on a dedicated page.
+
+Registries Search:
+	 The registries search is an OSF search, linked to from the "OSF Home" tab, that allows the user to browse all public registrations on the OSF, including withdrawn registrations.
+
+Support:
+	 This is the support landing page for FAQS, help guides, and contact information.
+
+Public Content on the OSF:
+	 The OSF is a repository and project management tool that allows users to make their content publicly available.
+
+Public Activity Page:
+	 The "Public Activity" page is a summary of recent and popular OSF projects and registrations.
+
+OSF Homepage:
+	 The OSF homepage describes the basic purpose and advantages of using the OSF. It also allows users to sign up for the service.
+
+OSF Institutions landing page:
+	 The OSF Institutions page provides a landing page for users to search for and navigate to each institutional landing page on OSF.
+
+Institutional langing page:
+	 Institutional landing pages provide users a place to search for and navigate public projects and registrations affiliated with their institution.
+
