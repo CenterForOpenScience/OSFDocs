@@ -349,7 +349,7 @@ In the license section, the user has the following options::
     
     **Choose a license:** (required)
     [Drop-down selections]
-    License FAQ (this links to the license FAQ page)
+    `License FAQ <http://help.osf.io/m/preprints/l/726873-preprint-faqs#how_should_i_license_my_preprint>`_. 
     Show full text (clicking this shows an explanation of the license selected)
     Hide full text (this appears in place of Show full text when the user clicks to view the text)
 
