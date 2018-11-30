@@ -17,5 +17,8 @@ Public Pages
 
 .. include:: include/institutions.rst
 
+.. include:: include/quickfiles.rst
 
+.. include:: include/preprints.rst
 
+.. include:: include/support.rst

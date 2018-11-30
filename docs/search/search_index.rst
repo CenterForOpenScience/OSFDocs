@@ -24,3 +24,5 @@ Upon submitting a query, the user is brought to the search results page. The sea
 page, but a new query can be submitted.
 
 .. include:: include/distinguishing.rst
+
+.. include:: include/share.rst

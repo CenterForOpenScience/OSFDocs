@@ -35,4 +35,8 @@ projects and components and organizing them within one another.
 
 .. include:: include/request_access.rst
 
+.. include:: include/registries.rst
 
+.. include:: include/files_view.rst
+
+.. include:: include/notifications.rst
