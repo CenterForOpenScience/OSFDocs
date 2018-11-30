@@ -14,88 +14,88 @@ projects and components and organizing them within one another.
 Project Overview
 ****************
 
-.. include:: overview.rst
+.. include:: include/overview.rst
 
 .. _contributors:
 
 Contributors
 ************
 
-.. include:: contributors.rst
+.. include:: include/contributors.rst
 
 .. _wiki:
 
 Wikis
 *****
 
-.. include:: wiki.rst
+.. include:: include/wiki.rst
 
 .. _storage:
 
 File Storage
 ************
 
-.. include:: storage.rst
+.. include:: include/storage.rst
 
 .. _commenting:
 
 Commenting
 **********
 
-.. include:: commenting.rst
+.. include:: include/commenting.rst
 
 .. _registrations:
 
 Registrations
 *************
 
-.. include:: registrations.rst
+.. include:: include/registrations.rst
 
 .. _forks:
 
 Forks
 *****
 
-.. include:: forks.rst
+.. include:: include/forks.rst
 
 .. _templates:
 
 Templates
 *********
 
-.. include:: templates.rst
+.. include:: include/templates.rst
 
 .. _analytics:
 
 Analytics
 *********
 
-.. include:: analytics.rst
+.. include:: include/analytics.rst
 
 .. _privacy:
 
 Privacy Settings
 ****************
 
-.. include:: privacy.rst
+.. include:: include/privacy.rst
 
 .. _components:
 
 Components
 **********
 
-.. include:: components.rst
+.. include:: include/components.rst
 
 .. _project-settings:
 
 Project Settings
 ****************
 
-.. include:: settings.rst
+.. include:: include/settings.rst
 
 .. _request_access:
 
 Request access
 **************
 
-.. include:: request_access.rst
+.. include:: include/request_access.rst

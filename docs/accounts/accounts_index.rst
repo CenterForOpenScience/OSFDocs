@@ -7,39 +7,40 @@ Accounts
 
 Sign Up
 *******
-.. include:: sign_up.rst
+.. include:: include/sign_up.rst
 
 .. _login:
 
 Login
 *****
 
-.. include:: login.rst
+.. include:: include/login.rst
 
 .. _profiles:
 
 Public Profiles
 ***************
 
-.. include:: profiles.rst
+.. include:: include/profiles.rst
 
 .. _account-settings:
 
 Account Settings
 ****************
 
-.. include:: account_settings.rst
+.. include:: include/account_settings.rst
 
 .. _user-addon:
 
 User Level Add-on Settings
 **************************
 
-.. include:: user_addon.rst
+.. include:: include/user_addon.rst
 
 .. _user-notification:
 
 User Level Notification Settings
 ********************************
 
-.. include:: user_notification.rst
+.. include:: include/user_notification.rst
+

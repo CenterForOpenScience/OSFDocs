@@ -7,11 +7,11 @@ Navigating the OSF
 OSF Navigation Bar
 ******************
 
-.. include:: navigation.rst
+.. include:: include/navigation.rst
 
 .. _project_nav:
 
 Project Navigation
 ******************
 
-.. include:: project_nav.rst
+.. include:: include/project_nav.rst

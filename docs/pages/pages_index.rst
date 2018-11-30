@@ -8,47 +8,47 @@ Public Pages
 OSF Homepage
 ************
 
-.. include:: homepage.rst
+.. include:: include/homepage.rst
 
 .. _public-activity:
 
 Public Activity Page
 ********************
 
-.. include:: public-activity.rst
+.. include:: include/public-activity.rst
 
 .. _registries:
 
 Registries Search
 *****************
 
-.. include:: registries.rst
+.. include:: include/registries.rst
 
 .. _meetings:
 
 OSF for Meetings
 ****************
 
-.. include:: osf4m.rst
+.. include:: include/osf4m.rst
 
 .. _faq:
 
 FAQ
 ***
 
-.. include:: faq.rst
+.. include:: include/faq.rst
 
 .. _getting-started:
 
 Public Content on the OSF
 *************************
 
-.. include:: content.rst
+.. include:: include/content.rst
 
 .. _institutions:
 
 OSF institutions
 ****************
 
-.. include:: institutions.rst
+.. include:: include/institutions.rst
 

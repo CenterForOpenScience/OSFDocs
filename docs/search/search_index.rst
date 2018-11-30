@@ -28,4 +28,4 @@ page, but a new query can be submitted.
 Distinguishing Search Results
 *****************************
 
-.. include:: distinguishing.rst
+.. include:: include/distinguishing.rst

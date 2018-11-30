@@ -60,4 +60,4 @@ Below this section is a marketing section that displays information about OSF fo
 Project Organizer
 *****************
 
-.. include:: organizer.rst
+.. include:: include/organizer.rst
