@@ -57,7 +57,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'OSF Feature Docs'
-copyright = '2014-2015, Center for Open Science'
+copyright = '2014-2018, Center for Open Science'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
