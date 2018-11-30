@@ -1,4 +1,4 @@
-.. _search:
+.. _osf-search:
 
 Searching the OSF
 =================
