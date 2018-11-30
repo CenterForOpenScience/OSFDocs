@@ -283,7 +283,7 @@ If the user inputs an API token and no URL and clicks, "save," he receives an er
 
 If the user inputs a non-dataverse ULR and characters that are not an API token, he receives an error, "Sorry, but there was a problem connecting to that instance of Dataverse. It is likely that the instance hasn't been upgraded to Dataverse 4.0. If you have any questions or believe this to be an error, please contact support@osf.io."
 
-::todo: bad error handling was fixed for user settings page, but not for project settings page. put in bug ticket. 
+.. todo:: bad error handling was fixed for user settings page, but not for project settings page. put in bug ticket.
 
 If the user has connected Dataverse to their account previously, the link in the Dataverse row reads "Import Account from Profile."
 Clicking this link opens a modal::

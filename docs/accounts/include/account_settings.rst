@@ -355,7 +355,7 @@ If the user does not click the link in the email within 15 minutes of receiving 
   Invalid Request.
   The requested URL is invalid, has expired, or was already used
   
-.. _todo: update the ability to click the link more than once when the Outlook fix goes out.
+.. todo:: update the ability to click the link more than once when the Outlook fix goes out.
 
 The link leads the user to a page on the OSF titled “Reset Password.” The user is given two fields to enter their new password
 password and to verify that password. A “Reset Password” button allows them to submit the form.

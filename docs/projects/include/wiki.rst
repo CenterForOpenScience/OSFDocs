@@ -148,6 +148,6 @@ Publicly Editable Wikis
 ^^^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Publicly editable wikis allow users who are not listed as contributors on a project to edit the wiki contents.
 
-.. _todo: Update with .48 release
+.. todo:: Update with .48 release
 
 
