@@ -532,14 +532,12 @@ If the preprint server uses post-moderation, the instructions will read::
     <preprint server> uses post-moderation. Therefore, your paper will become publicly accessible after creation and will only become private if rejected by a moderator.  
     [Cancel][Create]
 
-If the preprint server uses pre-moderation, the instructions will read::
+If the preprint service uses pre-moderation, the instructions will read::
   
-  When you submit this preprint, it will be assigned a DOI. The preprint file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your preprint.
-
-  By submitting this preprint, you confirm that all contributors agree with sharing it and that you have the right to share this preprint.
-
-  <preprint server> uses pre-moderation. Therefore, your preprint will not become publicly accessible until a moderator accepts the submission.
-  [Cancel][Submit]
+    <service> uses pre-moderation. If your <submission_type> is accepted, it will become publicly accessible via <service> and assigned a DOI. The <submission_type> file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your <submission_type>.
+    
+    By submitting this <submission_type>, you confirm that all contributors agree with sharing it and that you have the right to share this <submission_type>.
+    [Cancel][Submit <submission_type>]
 
 
 If the user has not finished all required sections, and they click the **Create** button, a message will appear below the instructions that reads with a list of the unfinished sections::
