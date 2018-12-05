@@ -518,9 +518,9 @@ Submit
 
 At the top of the Submit widget, there are instructions that read::
   
-    When you create this preprint, it will be assigned a DOI and become publicly accessible via <preprint server>. The preprint file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your preprint.
+    <service> uses post-moderation. When you submit this <submission_type>, it will become publicly accessible via <service> and assigned a DOI. Your <submission_type> will onlu become private if rejected by a moderator. The <submission_type> file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your <submission_type>.
 
-    By creating this preprint, you confirm that all contributors agree with sharing it and that you have the right to share this preprint.
+    By submitting this <submission_type>, you confirm that all contributors agree with sharing it and that you have the right to share this <submission_type>.
     [Cancel][Create]
     
 If the preprint server uses post-moderation, the instructions will read::
