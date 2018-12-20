@@ -1,5 +1,5 @@
 Projects
-===============
+========
 **Purpose:** A project is the fundamental means of organization and content sharing on the OSF.
 
 To store or share any documents or other content on the OSF, a user must create a project. :ref:`Project creation <quick-tasks>`
@@ -9,100 +9,34 @@ and can discover public projects through the :ref:`search function <search>`.
 Projects can be nested within one another, creating a tree structure. Users can create the structure of their choice by creating
 projects and components and organizing them within one another.
 
-.. _overview:
+.. include:: include/overview.rst
 
-Project Overview
-***************
+.. include:: include/contributors.rst
 
-.. include:: overview.rst
+.. include:: include/wiki.rst
 
-.. _contributors:
+.. include:: include/storage.rst
 
-Contributors
-************
+.. include:: include/commenting.rst
 
-.. include:: contributors.rst
+.. include:: include/registrations.rst
 
-.. _wiki:
+.. include:: include/forks.rst
 
-Wikis
-***************
+.. include:: include/templates.rst
 
-.. include:: wiki.rst
+.. include:: include/analytics.rst
 
-.. _storage:
+.. include:: include/privacy.rst
 
-File Storage
-***************
+.. include:: include/components.rst
 
-.. include:: storage.rst
+.. include:: include/settings.rst
 
-.. _commenting:
+.. include:: include/request_access.rst
 
-Commenting
-***********
+.. include:: include/registries.rst
 
-.. include:: commenting.rst
+.. include:: include/files_view.rst
 
-.. _registrations:
-
-Registrations
-***************
-
-.. include:: registrations.rst
-
-.. _preprints:
-
-Preprints
-***************
-
-.. include:: preprints.rst
-
-.. _forks:
-
-Forks
-***************
-
-.. include:: forks.rst
-
-.. _templates:
-
-Templates
-***************
-
-.. include:: templates.rst
-
-.. _analytics:
-
-Analytics
-**********
-
-.. include:: analytics.rst
-
-.. _privacy:
-
-Privacy Settings
-**************
-
-.. include:: privacy.rst
-
-.. _components:
-
-Components
-***************
-
-.. include:: components.rst
-
-.. _project-settings:
-
-Project Settings
-***************
-
-.. include:: settings.rst
-
-.. _request_access:
-
-Request access
-**************
-
-.. include:: request_access.rst
+.. include:: include/notifications.rst

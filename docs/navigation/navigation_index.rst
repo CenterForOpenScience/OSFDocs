@@ -2,16 +2,6 @@ Navigating the OSF
 ==================
 **Purpose:** Navigation bars allow users to move through OSF content and projects.
 
-.. _navigation-bar:
+.. include:: include/navigation.rst
 
-OSF Navigation Bar
-***************
-
-.. include:: navigation.rst
-
-.. _project_nav:
-
-Project Navigation
-**************
-
-.. include:: project_nav.rst
+.. include:: include/project_nav.rst

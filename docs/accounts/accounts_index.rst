@@ -1,45 +1,17 @@
 Accounts
-=========
+========
 
 **Purpose:** OSF accounts allow users to store and access OSF content.
 
-.. _sign-up:
+.. include:: include/sign_up.rst
 
-Sign Up
-*********
-.. include:: sign_up.rst
+.. include:: include/login.rst
 
-.. _login:
+.. include:: include/profiles.rst
 
-Login
-*********
+.. include:: include/account_settings.rst
 
-.. include:: login.rst
+.. include:: include/user_addon.rst
 
-.. _profiles:
+.. include:: include/user_notification.rst
 
-Public Profiles
-****************
-
-.. include:: profiles.rst
-
-.. _account-settings:
-
-Account Settings
-****************
-
-.. include:: account_settings.rst
-
-.. _user-addon:
-
-User Level Add-on Settings
-****************************
-
-.. include:: user_addon.rst
-
-.. _user-notification:
-
-User Level Notification Settings
-*********************************
-
-.. include:: user_notification.rst

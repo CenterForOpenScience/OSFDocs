@@ -3,52 +3,22 @@ Public Pages
 
 **Purpose:** The OSF is a free resource that is available to any visitor, whether an account holder or not. Several pages exist to help route visitors to information about the OSF and to OSF content.
 
-.. _homepage:
+.. include:: include/homepage.rst
 
-OSF Homepage
-***************
+.. include:: include/public-activity.rst
 
-.. include:: homepage.rst
+.. include:: include/registries.rst
 
-.. _public-activity:
+.. include:: include/osf4m.rst
 
-Public Activity Page
-******************
+.. include:: include/faq.rst
 
-.. include:: public-activity.rst
+.. include:: include/content.rst
 
-.. _registries:
+.. include:: include/institutions.rst
 
-Registries Search
-***********
+.. include:: include/quickfiles.rst
 
-.. include:: registries.rst
+.. include:: include/preprints.rst
 
-.. _meetings:
-
-OSF for Meetings
-***************
-
-.. include:: osf4m.rst
-
-.. _faq:
-
-FAQ
-***************
-
-.. include:: faq.rst
-
-.. _getting-started:
-
-Public Content on the OSF
-***************
-
-.. include:: content.rst
-
-.. _institutions:
-
-OSF institutions
-****************
-
-.. include:: institutions.rst
-
+.. include:: include/support.rst
