@@ -16,19 +16,23 @@ To navigate to the OSF Preprints landing page, the user clicks the **OSF Home** 
 
 On the OSF Preprints landing page, there is a search field to search for preprints, a green [Add a preprint] button below the search field, and a section titled "Browse by subject" that shows the 10 top-level subject areas provided by Bepress (see the `Search Preprints`_ section).
 
-In the top right, there's a toolbar with the following actions:
+For the preprint services, the navigation bar is laid out as follows:
 
-* An "Add a preprint" tab that takes the user to the "Add a preprint" page.
-* A "Search" tab that takes the user to the Preprint Archive Search page.
+* **Add a preprint** takes the user to the "Submission" page
+* **Search** takes the user to the "Discover" page
+* **Support** takes the user to the preprints help guides
+* **Donate** takes the user to the COS "Donate" page
+
+If the service uses moderation, the "Add a preprint" button reads "Submit a <submission_type>".
 
 The following tabs appear in the navigation bar when the user is logged out OSF Preprints:
 
 * OSF Preprints. Clicking this tab causes a drop-down menu to appear with the following options: 
 
-    * OSF Home: Clicking this link takes the user to their dashboard. 
-    * OSF Preprints: Clicking this link takes the user to the OSF Preprints landing page https://osf.io/preprints/.
-    * OSF Registries: Clicking this link takes the user to the OSF Registries landing page https://osf.io/registries/.
-    * OSF Meetings: Clicking this link takes the user to the OSF for Meetings landing page https://osf.io/meetings/.
+    * **OSF Home** takes the user to their dashboard. 
+    * **OSF Preprints** takes the user to the OSF Preprints landing page https://osf.io/preprints/.
+    * **OSF Registries** takes the user to the OSF Registries landing page https://osf.io/registries/.
+    * **OSF Meetings** takes the user to the OSF for Meetings landing page https://osf.io/meetings/.
     
 * Add a preprint: Clicking this link takes the user to the sign-in page https://accounts.osf.io/login?service=https%3A%2F%2Fosf.io%2Flogin%2F%3Fnext%3D%252Fpreprints%252Fsubmit.
 * Search: Clicking this link takes the user to the Preprints Discover page https://osf.io/preprints/discover/.
@@ -516,23 +520,23 @@ The user can click inside the Authors widget to make changes to the information 
 Submit
 ^^^^^^
 
-At the top of the Submit widget, there are instructions that read::
+Once the user has filled out the required fields and reaches the bottom of the page, they can submit their preprint. Instructions and a submit button walk the user through what will happen after submission.
+
+For services who do not use moderation, the "submit" button in the navigation bar reads "Add a <submission_type>" and the submission the language is as follows::
   
-    <service> uses post-moderation. When you submit this <submission_type>, it will become publicly accessible via <service> and assigned a DOI. Your <submission_type> will onlu become private if rejected by a moderator. The <submission_type> file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your <submission_type>.
-
-    By submitting this <submission_type>, you confirm that all contributors agree with sharing it and that you have the right to share this <submission_type>.
-    [Cancel][Create]
-    
-If the preprint server uses post-moderation, the instructions will read::
+  When you add this <submission_type>, it will become publicly accessible via <service> and assigned a DOI. The <submissions_type> file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your <submission_type>.
   
-    When you submit this paper, it will be assigned a DOI. The paper file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your paper.
+  By adding this <submission_type>, you confirm that all contributors agree with sharing it and that you have the right to share this <submission_type>.
+  [Cancel][Add <submission_type>]
 
-    By creating this paper, you confirm that all contributors agree with sharing it and that you have the right to share this paper.
+For services that use post-moderation, the "submit" button in the navigation bar reads "Submit a <submission_type>" and the submission language is as follows::
+  
+  <service> uses post-moderation. When you submit this <submission_type>, it will become publicly accessible via <service> and assigned a DOI. Your <submission_type> will only become private if rejected by a moderator. The <submission_type> file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your <submission_type>.
 
-    <preprint server> uses post-moderation. Therefore, your paper will become publicly accessible after creation and will only become private if rejected by a moderator.  
-    [Cancel][Create]
+  By submitting this <submission_type>, you confirm that all contributors agree with sharing it and that you have the right to share this <submission_type>.
+  [Cancel][Submit <submission_type>]
 
-If the preprint service uses pre-moderation, the instructions will read::
+For services that use pre-moderation, the "submit" button in the navigation bar reads "Submit a <submission_type>, and the submission language is as follows::
   
     <service> uses pre-moderation. If your <submission_type> is accepted, it will become publicly accessible via <service> and assigned a DOI. The <submission_type> file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your <submission_type>.
     
