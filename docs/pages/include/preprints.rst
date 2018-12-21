@@ -21,19 +21,23 @@ To navigate to the OSF Preprints landing page, the user clicks the **OSF Home** 
 
 On the OSF Preprints landing page, there is a search field to search for preprints, a green [Add a preprint] button below the search field, and a section titled "Browse by subject" that shows the 10 top-level subject areas provided by Bepress (see the `Search Preprints`_ section).
 
-In the top right, there's a toolbar with the following actions:
+For the preprint services, the navigation bar is laid out as follows:
 
-* An "Add a preprint" tab that takes the user to the "Add a preprint" page.
-* A "Search" tab that takes the user to the Preprint Archive Search page.
+* **Add a preprint** takes the user to the "Submission" page
+* **Search** takes the user to the "Discover" page
+* **Support** takes the user to the preprints help guides
+* **Donate** takes the user to the COS "Donate" page
+
+If the service uses moderation, the "Add a preprint" button reads "Submit a <submission_type>".
 
 The following tabs appear in the navigation bar when the user is logged out OSF Preprints:
 
 * OSF Preprints. Clicking this tab causes a drop-down menu to appear with the following options: 
 
-    * OSF Home: Clicking this link takes the user to their dashboard. 
-    * OSF Preprints: Clicking this link takes the user to the OSF Preprints landing page https://osf.io/preprints/.
-    * OSF Registries: Clicking this link takes the user to the OSF Registries landing page https://osf.io/registries/.
-    * OSF Meetings: Clicking this link takes the user to the OSF for Meetings landing page https://osf.io/meetings/.
+    * **OSF Home** takes the user to their dashboard. 
+    * **OSF Preprints** takes the user to the OSF Preprints landing page https://osf.io/preprints/.
+    * **OSF Registries** takes the user to the OSF Registries landing page https://osf.io/registries/.
+    * **OSF Meetings** takes the user to the OSF for Meetings landing page https://osf.io/meetings/.
     
 * Add a preprint: Clicking this link takes the user to the sign-in page https://accounts.osf.io/login?service=https%3A%2F%2Fosf.io%2Flogin%2F%3Fnext%3D%252Fpreprints%252Fsubmit.
 * Search: Clicking this link takes the user to the Preprints Discover page https://osf.io/preprints/discover/.
@@ -85,7 +89,7 @@ Upload
 ^^^^^^
 **Purpose**: Allows the user to upload their preprint file.
 
-There is an additional section at the start of the preprint form for OSF Preprints: "Select a preprint service." This widget is not available on community preprint services. This widget gives users the choice to upload their preprint to OSF Preprints or a community preprint service. This widget consists of a carousel showing the preprint service logos that the user must select to choose a preprint service. The "OSF Preprints" logo is selected by default. Hovering over a logo shows the name of the preprint provider in a tooltip. The user can click the navigational arrows to navigate through the carousel. 
+There is an additional section at the start of the preprint form for OSF Preprints: "Select a preprint service." This widget is not available on community preprint services. This widget gives users the choice to upload their preprint to OSF Preprints or a community preprint service. This widget consists of a carousel showing the preprint service logos that the user must select to choose a preprint service. The "OSF Preprints" logo is selected by default. Hovering over a logo shows the name of the preprint provider in a tooltip. The user can click the navigational arrows to navigate through the carousel. When selecting a preprint service, an inline description of the service appears below the carousel.
 
 If the user clicks inside another widget before saving their changes, a temporary, red error message appears in the top right of the page::
   
@@ -355,7 +359,7 @@ In the license section, the user has the following options::
     
     **Choose a license:** (required)
     [Drop-down selections]
-    License FAQ (this links to the license FAQ page)
+    `License FAQ <http://help.osf.io/m/preprints/l/726873-preprint-faqs#how_should_i_license_my_preprint>`_. 
     Show full text (clicking this shows an explanation of the license selected)
     Hide full text (this appears in place of Show full text when the user clicks to view the text)
 
@@ -522,30 +526,28 @@ The user can click inside the Authors widget to make changes to the information 
 Submit
 ^^^^^^
 
-At the top of the Submit widget, there are instructions that read::
-  
-    When you create this preprint, it will be assigned a DOI and become publicly accessible via <preprint server>. The preprint file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your preprint.
+Once the user has filled out the required fields and reaches the bottom of the page, they can submit their preprint. Instructions and a submit button walk the user through what will happen after submission.
 
-    By creating this preprint, you confirm that all contributors agree with sharing it and that you have the right to share this preprint.
-    [Cancel][Create]
+For services who do not use moderation, the "submit" button in the navigation bar reads "Add a <submission_type>" and the submission the language is as follows::
+  
+  When you add this <submission_type>, it will become publicly accessible via <service> and assigned a DOI. The <submissions_type> file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your <submission_type>.
+  
+  By adding this <submission_type>, you confirm that all contributors agree with sharing it and that you have the right to share this <submission_type>.
+  [Cancel][Add <submission_type>]
+
+For services that use post-moderation, the "submit" button in the navigation bar reads "Submit a <submission_type>" and the submission language is as follows::
+  
+  <service> uses post-moderation. When you submit this <submission_type>, it will become publicly accessible via <service> and assigned a DOI. Your <submission_type> will only become private if rejected by a moderator. The <submission_type> file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your <submission_type>.
+
+  By submitting this <submission_type>, you confirm that all contributors agree with sharing it and that you have the right to share this <submission_type>.
+  [Cancel][Submit <submission_type>]
+
+For services that use pre-moderation, the "submit" button in the navigation bar reads "Submit a <submission_type>, and the submission language is as follows::
+  
+    <service> uses pre-moderation. If your <submission_type> is accepted, it will become publicly accessible via <service> and assigned a DOI. The <submission_type> file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your <submission_type>.
     
-If the preprint server uses post-moderation, the instructions will read::
-  
-    When you submit this paper, it will be assigned a DOI. The paper file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your paper.
-
-    By creating this paper, you confirm that all contributors agree with sharing it and that you have the right to share this paper.
-
-    <preprint server> uses post-moderation. Therefore, your paper will become publicly accessible after creation and will only become private if rejected by a moderator.  
-    [Cancel][Create]
-
-If the preprint server uses pre-moderation, the instructions will read::
-  
-  When you submit this preprint, it will be assigned a DOI. The preprint file cannot be deleted, but it can be updated or modified. The related OSF project can be used to manage supplementary materials, appendices, data, or protocols for your preprint.
-
-  By submitting this preprint, you confirm that all contributors agree with sharing it and that you have the right to share this preprint.
-
-  <preprint server> uses pre-moderation. Therefore, your preprint will not become publicly accessible until a moderator accepts the submission.
-  [Cancel][Submit]
+    By submitting this <submission_type>, you confirm that all contributors agree with sharing it and that you have the right to share this <submission_type>.
+    [Cancel][Submit <submission_type>]
 
 
 If the user has not finished all required sections, and they click the **Create** button, a message will appear below the instructions that reads with a list of the unfinished sections::
@@ -841,7 +843,7 @@ Search Preprints
 ----------------
 **Purpose**: To search for and browse preprints in OSF Preprints and other preprint servers.
 
-OSF Preprints is an aggregator of several preprint servers and is powered by SHARE. On the OSF Preprints and community preprint servers' landing pages, the user can enter a query to search for preprints. The search results will appear on the respective "Discover" page. 
+OSF Preprints is an aggregator of several preprint servers and is powered by SHARE. On the OSF Preprints and community preprint servers' landing pages, the user can enter a query to search for preprints. The search results will appear on the respsctive "Discover" page. 
 
 The user can search by preprint title by entering the title into the search field. To search by an author(s) or a tag(s), the user can use the boolean operaters AND (including x and x) and OR (including x or x). The accepted formats for searching one or more authors is as follows:
   
@@ -875,7 +877,7 @@ Below the Provider sidebar, there is a Subject sidebar that is sorted hierarchic
 
 Selected search facets are defined in the URL, so that a user can share/navigate to that URL and see that search facet and its parent expanded on the "Discover" page.
 
-Preprint search results display the preprint title first, followed by the author(s), discipline(s), abstract, and preprint provider. To access the rest of the metadata, there is a down arrow that the user can click to unfold the search result on the "Discover" page. Clicking the down arrow shows external links, such as a link to a preprint's journal publication, etc., an OAI (if any), tags (if any), and the date and time on which the preprint was added. A "Share" icon is located in the top right of each preprint result so that viewers can quickly share a preprint of interest. Clicking the **Share** icon opens a pop-over with social media sharing options: Twitter, LinkedIn, Email. Selecting a social media platform from the pop-over pulls the preprint information into a modal from which the user can share or email the preprint directly from the "Discover" page.
+Preprint search results display the preprint title first, followed by the author(s), discipline(s), abstract, and preprint provider. To access the rest of the metadata, there is a down arrow that the user can click to unfold the search result on the "Discover" page. Clicking the down arrow shows external links, such as a link to a preprint's journal publication, etc., an OAI (if any), tags (if any), and the date and time on which the preprint was added.
 
 Annotating a preprint
 ---------------------
@@ -1077,8 +1079,8 @@ Orphaned Annotations
 ^^^^^^^^^^^^^^^^^^^^
 **Purpose**: Orphaned annotations allow previous annotations to persist even when a new version of the document has replaced the originally annotated text.
 
-Orphaned annotations occur when a new version of the preprint has been uploaded, and an annotation does not map to the new version's text. Since annotations link to specific text in the preprint, only annotations can be orphaned - page notes cannot be orphaned as they do not link to text. 
+Orphaned annotations occur when a new version of the preprint has been uploaded, and an annotation does not map to the new version's text. Since annotations link to specific text in the preprint, only annotations can be orphaned - page notes cannot be orphaned as they do not link to text. A tab called "Orphans" will appear in the panel next to "Annotations" and "Page Notes."
 
-If a new version of the preprint has been uploaded and has orphaned any of the annotations, a tab called "Orphans" will appear in the panel next to "Annotations" and "Page Notes." Clicking the **Orphans** tab will list all orphaned annotations. An orphaned annotation looks the same as an unorphaned annotation, except the preview of the text at the top of the annotation has a strikethrough. Orphaned annotations retain the same functionality as unorphaned annotations - if the user wrote an orphaned annotation, they will still be able to edit, add tags, share, and delete the annotation. Orphaned annotations do not link to or otherwise indicate which version of the preprint they map to; the text preview above the annotation is the only way to trace the annotation back to its mapped version.
+Clicking the **Orphans** tab will list all orphaned annotations. An orphaned annotation looks the same as an unorphaned annotation, except the preview of the text at the top of the annotation has a strikethrough. Orphaned annotations retain the same functionality as unorphaned annotations - if the user wrote an orphaned annotation, they will still be able to edit, add tags, share, and delete the annotation. Orphaned annotations do not link to or otherwise indicate which version of the preprint they map to; the text preview above the annotation is the only way to trace the annotation back to its mapped version.
 
 
