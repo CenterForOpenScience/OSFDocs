@@ -57,7 +57,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'OSF Feature Docs'
-copyright = '2014-2015, Center for Open Science'
+copyright = '2014-2018, Center for Open Science'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -80,7 +80,7 @@ release = '1.0'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build']
+exclude_patterns = ['_build', '*/include/*']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.

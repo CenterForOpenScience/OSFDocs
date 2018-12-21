@@ -1,7 +1,7 @@
 .. _add-ons:
 
 Add-Ons
-==========
+=======
 **Purpose:** Add-ons can be used to connect a third party service to the OSF. This increases the amount of storage the user
 can make use of via the OSF.
 
@@ -283,7 +283,7 @@ If the user inputs an API token and no URL and clicks, "save," he receives an er
 
 If the user inputs a non-dataverse ULR and characters that are not an API token, he receives an error, "Sorry, but there was a problem connecting to that instance of Dataverse. It is likely that the instance hasn't been upgraded to Dataverse 4.0. If you have any questions or believe this to be an error, please contact support@osf.io."
 
-::todo: bad error handling was fixed for user settings page, but not for project settings page. put in bug ticket. 
+.. todo:: bad error handling was fixed for user settings page, but not for project settings page. put in bug ticket.
 
 If the user has connected Dataverse to their account previously, the link in the Dataverse row reads "Import Account from Profile."
 Clicking this link opens a modal::
@@ -596,6 +596,7 @@ that reads "Import Account from Profile." Alternatively, the user can uncheck th
 changes.
 
 .. _gitlab:
+
 Configuring GitLab
 ******************
 **Purpose:** Connecting to GitLab allows users to create a two way connection between the OSF and GitLab.
@@ -906,6 +907,7 @@ that reads "Import Account from Profile." Alternatively, the user can uncheck th
 changes.
 
 .. _zotero:
+
 **Purpose**: Connecting to Zotero allows users to create a two-way connection between the OSF and Zotero.
 
 Clicking the **Enable** link presents the user with a modal::
