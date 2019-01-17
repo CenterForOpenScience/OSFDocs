@@ -804,6 +804,22 @@ If the user uploads a new version of their preprint file with the same filename 
     
     [filename](Version:x)
 
+Accessing previous versions
+---------------------------
+**Purpose**: With version control, users should have access to all previous versions of a file.
+
+Versions and version numbers are accessible below the MFR on the "Preprint Detail" page. If only one version has been uploaded, the version number appears as::
+  
+    Version: 1
+
+If more than one version has been uploaded, the version number increases accordingly. The most recent version is rendered in the MFR. To access previous versions, a drop-down menu appears next to the version number. The drop-down button has the call-to-action: "Download previous versions." Clicking the button pulls all previous versions with their upload dates and times, and displays the versions from newest to oldest. For example::
+
+  Version 3, 01/18/2019 10:33:79
+  Version 2, 11/14/2018 8:45:15
+  Version 1, 09/01/2018 4:29:33
+
+Clicking on any version from the menu (even the most recent) will download the file to your browser.
+
 The OSF Project
 ---------------
 **Purpose**: Allows the user to add supplemental files to the preprint as well as to view and access the preprint from the OSF side.
