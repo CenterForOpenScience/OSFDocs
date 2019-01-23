@@ -195,21 +195,15 @@ Citation Widget
 ---------------
 **Purpose:** The "Citation" widget provides a pre-formatted citation referencing the viewed OSF project or component.
 
-The Citation widget is locate to the right of the Wiki widget. Every project and component on the OSF has a unique and permanent URL, allowing
-each one to be cited.
+The Citation widget is located to the right of the Wiki widget. Every project and component on the OSF has a unique and permanent URL, allowing each one to be cited. The source is branded as "OSF" in the citations.
 
-The Citation widget is collapsed by default, showing only the panel header, "Citation," on the left and the project's URL on the right.
-Clicking the expand button to the right of the project's URL expands the widget. Three citations of the project are provided within the
-panel's body. The first is a citation in APA format, the second in MLA format, the third in Chicago format. A dropdown below the three options
-allows the user to select another citation format.
+The Citation widget is collapsed by default, showing only the panel header, "Citation," on the left and the project's URL on the right. Clicking the expand button to the right of the project's URL expands the widget. Three citations of the project are provided within the panel's body. The first is a citation in APA format, the second in MLA format, the third in Chicago format. A dropdown below the three options allows the user to select another citation format.
 
 Clicking on the dropdown opens a text field with directions below the entry field reading::
 
     Please enter 1 or more character
 
-When the user enters a query the results return relevant citation formats. Selecting one creates a well below the dropdown, providing the citation
-for the project or component in the requested format. The user can clear their selection by clicking an 'x' in the dropdown. If
-the query returns no results the dropdown returns, below the text field::
+When the user enters a query the results return relevant citation formats. Selecting one creates a well below the dropdown, providing the citation for the project or component in the requested format. The user can clear their selection by clicking an 'x' in the dropdown. If the query returns no results the dropdown returns, below the text field::
 
     No matches found
 
