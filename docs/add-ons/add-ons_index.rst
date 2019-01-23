@@ -1768,8 +1768,8 @@ At the top of the panel is a dropdown with placeholder text::
 
 Below this are the citations that the user who connected the add-on has stored in the linked folder. Citations are listed in a table.
 Below the "Citation" column is the citation for each resource, formatted according to the style selected in the dropdown.
-In the "Actions" column there is a paper icon. Hovering over the icon shows a tooltip that reads "Copy Citation." Clicking the paper icon
-copies the citation to the user's clipboard.
+In the "Actions" column there is a "Copy to clipboard" button. Hovering over the button shows a tooltip that reads "Copy Citation." Clicking the button
+copies the citation to the user's clipboard. The "Copy to clipboard" button is only supported on the file-level, and not the folder-level.
 
 Users can change the citation style from the default APA by clicking in the dropdown and beginning to type a citation style. Suggestions
 based on the input will appear as items in the dropdown. If the user selects one, the citations in the Citation column are
