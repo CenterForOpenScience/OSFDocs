@@ -17,34 +17,28 @@ OSF Preprints
 -------------
 **Purpose:** To search for preprints, upload a preprint, and access the preprint community servers.
 
-To navigate to the OSF Preprints landing page, the user clicks the **OSF Home** tab from the navigation bar and then clicks **OSF Preprints** from the drop-down menu.
+To navigate to the OSF Preprints landing page, the user must click the **OSF Home** button in the navigation bar and then click **OSF Preprints** from the drop-down menu.
 
-On the OSF Preprints landing page, there is a search field to search for preprints, a green [Add a preprint] button below the search field, and a section titled "Browse by subject" that shows the 10 top-level subject areas provided by Bepress (see the `Search Preprints`_ section).
+On the OSF Preprints landing page, there is a search field to search for preprints, a green **Add a preprint** button below the search field, and a section titled "Browse by subject" that shows the 10 top-level subject areas provided by Bepress (see the `Search Preprints`_ section).
 
-For the preprint services, the navigation bar is laid out as follows:
+For all preprint services, the navigation bar is laid out as follows:
 
-* **Add a preprint** takes the user to the "Submission" page
-* **Search** takes the user to the "Discover" page
-* **Support** takes the user to the preprints help guides
-* **Donate** takes the user to the COS "Donate" page
+* **My Preprints** takes the user to their preprints list on the :ref:`My Projects page <organizer>`.
+* **Add a preprint** takes the user to the "Submission" page.
+* **Search** takes the user to the "Discover" page.
+* **Support** takes the user to the preprints help guides.
+* **Donate** takes the user to the COS "Donate" page.
 
 If the service uses moderation, the "Add a preprint" button reads "Submit a <submission_type>".
 
-The following tabs appear in the navigation bar when the user is logged out OSF Preprints:
+The following tabs appear in the navigation bar when the user is *logged out of* OSF Preprints:
 
-* OSF Preprints. Clicking this tab causes a drop-down menu to appear with the following options: 
-
-    * **OSF Home** takes the user to their dashboard. 
-    * **OSF Preprints** takes the user to the OSF Preprints landing page https://osf.io/preprints/.
-    * **OSF Registries** takes the user to the OSF Registries landing page https://osf.io/registries/.
-    * **OSF Meetings** takes the user to the OSF for Meetings landing page https://osf.io/meetings/.
-    
-* Add a preprint: Clicking this link takes the user to the sign-in page https://accounts.osf.io/login?service=https%3A%2F%2Fosf.io%2Flogin%2F%3Fnext%3D%252Fpreprints%252Fsubmit.
-* Search: Clicking this link takes the user to the Preprints Discover page https://osf.io/preprints/discover/.
-* Support: Clicking this link takes the user to the landing page for the preprints help guides http://help.osf.io/m/preprints/.
-
-* Sign Up: Clicking this tab takes the user to the :ref:`Create a free account page <sign-up>` where the user needs to fill out a form to create an OSF account.
-* Sign In: Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`. After logging in, the user is taken to the OSF Preprints landing page.
+* **OSF Preprints** Clicking this tab prompts a drop-down menu with the OSF Products: OSFHome, OSFPreprints, OSFRegistries, OSFMeetings, OSFInstitutions.
+* **Add a preprint**: Clicking this link takes the user to the :ref:`sign-in page <login>`.
+* **Search**: Clicking this link takes the user to the corresponding preprints "Discover" page.
+* **Support**: Clicking this link takes the user to the preprints help guides.
+* **Sign Up**: Clicking this button takes the user to the :ref:`Create a free account page <sign-up>`.
+* **Sign In**: Clicking this button takes the user to the :ref:`OSF sign-in page <login>`. After logging in, the user is taken to the OSF Preprints landing page.
 
 The community preprint servers are listed with their logos below the search field. Clicking on a community preprint server logo takes the user to that preprint server's landing page.
 
@@ -58,10 +52,11 @@ When a user navigates to a community preprint server, the landing page is the sa
 
 The following tabs appear in the navigation bar when the user is logged out:
 
-* "Add a preprint": Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`.
-* "Search". Clicking this tab takes the user to the preprint server's Discover page https://osf.io/preprints/preprintserver/discover.
-* "Sign Up". Clicking this tab takes the user to the :ref:`Create a free account page <sign-up>` where the user needs to fill out a form to create an OSF account in order to be able to upload a preprint to the community preprint server. 
-* "Sign In". Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`. After logging in, the user is taken to their OSF dashboard.
+* **Add a preprint**:  Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`.
+* **Search**: Clicking this tab takes the user to the preprint server's Discover page https://osf.io/preprints/preprintserver/discover.
+* **Donate** takes the user to the COS "Donate" page.
+* **Sign Up**: Clicking this tab takes the user to the :ref:`Create a free account page <sign-up>` where the user needs to fill out a form to create an OSF account in order to be able to upload a preprint to the community preprint server. 
+* **Sign In**: Clicking this tab takes the user to the :ref:`OSF sign-in page <login>`. After logging in, the user is taken to their OSF dashboard.
 
 When logged in, the navigation bar is the same except that it contains a "My OSF Projects" tab which, when clicked, takes the user to https://osf.io/myprojects/ and the "Sign up" and "Sign in" buttons are replaced by the user drop-down menu.
 
@@ -803,6 +798,22 @@ The alert has an animated reverse progress bar that functions as a timer. When t
 If the user uploads a new version of their preprint file with the same filename as the original, the Preprint File section will close after the user drags and drops the file onto the page. The filename will appear in the section with a version number next to it::
     
     [filename](Version:x)
+
+Accessing previous versions
+---------------------------
+**Purpose**: With version control, users should have access to all previous versions of a file.
+
+Versions and version numbers are accessible below the MFR on the "Preprint Detail" page. If only one version has been uploaded, the version number appears as::
+  
+    Version: 1
+
+If more than one version has been uploaded, the version number increases accordingly. The most recent version is rendered in the MFR. To access previous versions, a drop-down menu appears next to the version number. The drop-down button has the call-to-action: "Download previous versions." Clicking the button pulls all previous versions with their upload dates and times, and displays the versions from newest to oldest. For example::
+
+  Version 3, 01/18/2019 10:33:79
+  Version 2, 11/14/2018 8:45:15
+  Version 1, 09/01/2018 4:29:33
+
+Clicking on any version from the menu (even the most recent) will download the file to your browser.
 
 The OSF Project
 ---------------
