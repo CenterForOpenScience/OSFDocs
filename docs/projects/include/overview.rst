@@ -197,7 +197,7 @@ Citation Widget
 
 The Citation widget is located to the right of the Wiki widget. Every project and component on the OSF has a unique and permanent URL, allowing each one to be cited. The source is branded as "OSF" in the citations.
 
-The Citation widget is collapsed by default, showing only the panel header, "Citation," on the left and the project's URL on the right. Clicking the expand button to the right of the project's URL expands the widget. Three citations of the project are provided within the panel's body. The first is a citation in APA format, the second in MLA format, the third in Chicago format. A dropdown below the three options allows the user to select another citation format.
+The Citation widget is collapsed by default, showing only the panel header, "Citation," and an option to expand. Clicking the expand button expands the widget. The project citation is displayed in MLA, APA, and Chicago styles by default in the body of the widget. A dropdown below the three options allows the user to select another citation format.
 
 Clicking on the dropdown opens a text field with directions below the entry field reading::
 
@@ -211,6 +211,29 @@ If the user collapses the citation widget with an alternative format selected fr
 and the citation is still provided.
 
 Any user visiting a public project can view the Citation widget and select an additional citation style from the dropdown.
+
+Custom citations
+^^^^^^^^^^^^^^^^
+**Purpose**: To enable the user to choose how they want their project to be cited.
+
+Custom citations can be created for projects and registrations. A contributor must have admin permissions on the project in order to create a custom citation. Only one custom citation can be generated per project -- multiple custom citations are not supported. Custom citations do not copy over to forks and registrations of projects/components.
+
+After expanding the "Citation" widget, a link labeled "Customize" will appear in the top right of the body. Clicking this link replaces the body of the widget with a text box, wherein the user must enter the custom citation. The helper text in the text box reads "Enter custom citation." Below the text box are "Cancel," "Remove," and "Save" buttons. The "Save" button will be disabled until text has been entered into the  text box. The "Remove" button becomes enabled only *after* a custom citation has been entered and saved. Clicking the **Cancel** button returns the user to the default citations.
+
+There is no limit to the type of content users may enter as a custom citation. After entering the custom citation, the user must click the **Save** button to display their custom citation on their project. After clicking the **Save** button, the widget loads the changes, and the custom citation is displayed in the widget, in place of the default citations.
+
+Once the custom citation is displayed in the widget, there is copy button to the left of the custom citation for users to copy the citation to their clipboard. After clicking the **Copy** button, a temporary pop-over confirmation appears and reads::
+    
+    Copied!
+    
+If the user hovers over the "Copy" button, the popover will still appear. The hover message disappears upon refreshing the page.
+
+After a custom citation has been added, the "Customize" link changes to "Edit." To edit or remove a custom citation, the user must click the **Edit** link, and they will be returned to the text box view. To edit a citation, the user must enter their changes into the text box, and then click the **Save** button. To remove a custom citation and revert to the default citations, the user must click the **Remove** button. After clicking the **Remove** button, the widget loads the changes, and the default citations are displayed in the widget, replacing the custom citation.
+
+Project logs indicate when a custom citation has been added, edited, and removed on a project/component::
+    <User name> created a custom citation for <project name>
+    <User name> edited a custom citation for <project name>
+    <user name> removed a custom citation for <project name>
 
 .. _component-widget:
 
