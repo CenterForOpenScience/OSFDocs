@@ -3,10 +3,8 @@
 Distinguishing Search Results
 *****************************
 
-**Purpose:** Results returned include projects, components, users, registrations, preprints, files, and SHARE results. Each is distinguished
+**Purpose:** Results returned include projects, components, users, registrations, preprints, files, institutions, and SHARE results. Each is distinguished
 from one another so that the user can best find the appropriate resource.
-
-Links from each search result bring the user to the relevant page.
 
 Project and component results show the title with a link to the "Overview" page as well as the contributors and links to
 their user profiles. If tags or descriptions are provided, these are listed below the project title. Options to jump to
@@ -36,13 +34,15 @@ Filtering by Category
 ^^^^^^^^^^^^^^^^^^^^^
 **Purpose:** Filtering by category allows users to focus their search on the correct content type.
 
-When performing a search, there is a left sidebar that shows categories and their counts of how many results fell into each category. The categories are: Projects, Components, Users, Registrations, Preprints (when clicked, takes the user to the preprint "Discover" page with the query in the search box), Files, Institutions, and SHARE.
-A Total category is shown at the top of the sidebar. The sum of the categories amounts to the Total.
+When performing a search, there is a left sidebar that shows categories and their counts of how many results fell into each category. The categories are: Projects, Components, Users, Registrations, Preprints, Files, Institutions, and SHARE. A Total category is shown at the top of the sidebar. The sum of the categories amounts to the Total.
 
 By default, the Total results are selected and displayed. The categories are displayed below the Total category in the order from most to least results. If a category has no results, it does not appear in the sidebar.
 
-Clicking on the SHARE category does not filter results but brings the user to the separate SHARE search page with the
-relevant results. SHARE results do not contribute to the Total category result count.
+Selecting the "Preprints" and "Institutions" filters takes the user to the respective search pages for that product. For preprints, the search query parameter is carried over to the OSF Preprints "Discover" page, and filtered results will appear. For institutions, the search query parameter is not carried over, and the user is simply taken to the OSF Institutions search page.
+
+Links from each search result take the user to the respective page. For example, selecting an institution from the search results will take the user to that institution's landing page, and selecting a preprint will take the user to the preprint "Detail" page.
+
+Clicking on the SHARE category from the sidebar takes the user to the SHARE search page with the search query parameter. SHARE results do not contribute to the Total category result count.
 
 Users can select one of the other categories by clicking on its title. Only search results that fall into that category
 are then shown on the right hand side of the page. Only one category can be selected at a time.
