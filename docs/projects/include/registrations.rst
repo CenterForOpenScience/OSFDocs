@@ -85,7 +85,7 @@ Clicking "New Registration" on a project's registrations page opens an initiatio
 
   Prereg Challenge 
   Open-Ended Registration 
-  AsPredicted Preregistration 
+  Preregistration Template from AsPredicted.org
   Registered Report Protocol Preregistration 
   OSF-Standard Pre-Data Collection Registration 
   Replication Recipe (Brandt et al., 2013): Pre-Registration 
