@@ -58,9 +58,9 @@ Moreover, a registration's Recent Actity widget only shows the original OSF proj
 
 Activity pertaining to the creation of the registration is logged into the original OSF project's Recent Activity widget:
 
-* Intiated: the administrator who creates the registration is listed in the Recenty Activity widget as the oen who initiated the registration.
+* Initiated: the administrator who creates the registration is listed in the Recenty Activity widget as the oen who initiated the registration.
 * Approved: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who approved the registration.
-* Canceled: the first adminstrator to cancel the registration is the only admin listed in the Recent Acvitity widget who canceled the registration.
+* Canceled: the first administrator to cancel the registration is the only admin listed in the Recent Acvitity widget who canceled the registration.
 * Registered: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who registered the registration.
 
 The blue Comments icon appears in the top right of the registration Overview page. The project's comments are not carried over to the registration. However, any comments made on the project prior to the registration's creation are logged into both the project and registrations's Recent Activity widget.
@@ -72,7 +72,6 @@ Creating a Registration
 -----------------------
 
 **The following describes creating a registration from the project page. Subsequent documentation covers the Preregistration Challenge workflow**
-
 
 Clicking "New Registration" on a project's registrations page opens an initiation modal::
 
@@ -93,35 +92,166 @@ Clicking "New Registration" on a project's registrations page opens an initiatio
   Pre-Registration in Social Psychology (van 't Veer & Giner-Sorolla, 2016): Pre-Registration 
   [Cancel][Create draft]
 
-The user must select a form and click **Create draft** to initiate a registration of their project. Each form follows a different template that is either one-page or multiple-pages long.At the bottom of each page, the user is presented with the date and time the draft registration was last saved, and two buttons: [Save as Draft][Preview for Submission]. 
+The user must select a form and click **Create draft** to initiate a registration of their project. Each form follows a different template that is either one-page or multiple-pages long. At the bottom of each page, the user is presented with the date and time the draft registration was last saved, and two buttons: **Save as Draft** and **Preview for Submission**. 
 
-Clicking "Save as Draft" saves the draft registration and returns the user to the project's Draft Registrations tab. 
-Clicking "Preview for Submission" presents a preview of the registration, followed by two buttons: [Continue editing] and [Register]. 
+Clicking **Save as Draft** saves the draft registration and returns the user to the project's Draft Registrations tab. 
+Clicking **Preview for Submission** generates a preview of the registration, followed by two buttons: **Continue editing** and **Register**. 
 
-Clicking "Continue editing" returns the user to the "Edit draft registration" page. 
-Clicking "Register" brings up a modal::
-
-    Before you continue...
-    * Registrations cannot be modified or deleted once completed.
-    * The content and version history of Wiki and OSF Storage will be copied to the registration.
-    [Dropdown selections:] Make registration public immediately
-    Enter registration into embargo (selecting this option brings up a field, "Embargo End Date" where user must select date to embargo)
+Clicking **Continue editing** returns the user to the "Edit draft registration" page. Clicking **Register** initiates the submission process. If the project has components, a modal will appear from which the user can select components to include and exclude from the registration. All components are selected by default::
+  
+    Register Project
+    Select components to be included in the registration.
+    Select: <Select All> | <Clear All>
+    <components>
     [Cancel][Continue]
 
+The user can click **Select All** or **Clear All** to mass select or deselect components from the list. If a component has a child-component under it, the child component cannot be registered without the top-level component. Deselect the top-level while the child component is selected throws an error::
+  
+    To register a subcomponent, you must also register the component above it.
+
+The "Continue" button will be disabled in this state.
+
+Once the user has (de)selected the components to be included in the registration, they can click the **Continue** button to proceed. Clicking **Continue** shows a confirmation modal for the list of components::
+  
+    Confirm
+    The following projects and components will be registered:
+    <components>
+    [Cancel][Continue]
+
+Clicking **Back** takes the user back to the component list view to select or deselect components. Clicking **Continue** opens the "Embargo" modal::
+
+    Embargo
+    * Registrations cannot be modified or deleted once completed.
+    * The content and version history of Wiki and OSF Storage will be copied to the registration.
+    Registration choice
+    [Cancel][Register]
+  
 If additional add-ons are connected to the project, the modal includes information about their registration behavior.
 
-Clicking the "Register" button brings the user to the registrations page for their project. The new registration is listed.
-A dismissable blue alert is at the top of the page::
+If keeping the registration public, the user can click the **Register** button to finalize the registration.
 
-    Files are being copied to the newly created registration, and you will receive an email notification containing a
-    link to the registration when the copying is finished.
+Selecting **Enter registration into embargo** opens another text field below the dropdown titled "Embargo end date." Clicking
+into the text field opens a calendar widget from which the user can choose the embargo's end date. On the selected end date, the registration will become public.
 
-While the files are being copied, a tag to the left of the registration's title reads "Archiving." While the registration
-is archiving, it cannot be visited. Once the archival is complete, the tag is removed and the title becomes a link to the
-registration's overview.
+The embargo end date must be more than three days but cannot be greater than four years in the future. 
 
-When visiting the :ref:`Project Organizer <organizer>`, a project or component that is still being archived will have "[Archiving]"
-written to the right of its title.
+If the user chooses a date that is greater than four years, an inline red alert will appear below the "Embargo End Date" field::
+  
+    Embargo end date must be less than four years in the future.
+
+The user cannot click "Continue" until they have chosen an appropriate date.
+    
+If the user chooses a date that is less than three days in the future, the calendar will close and the chosen date will appear in the field (even though this date is invalid). A red inline error will also appear below the "Embargo End Date" field::
+  
+    Embargo end date must be at least three days in the future.
+    
+The user cannot click **Continue** until they have chosen an appropriate date.
+    
+When the user chooses a date within the correct date range, they can click **Register**, after which they are brought to the registration "Overview" page with a pending status::
+  
+    This project is currently pending registration, awaiting approval from project administrators. This registration will be final and enter the embargo period when all project administrators approve the registration or 48 hours pass, whichever comes first. The embargo will keep the registration private until the embargo period ends. [Cancel registration]
+    
+If the registration is public, the pending status reads::
+  
+    This is a pending registration of this project, awaiting approval from project administrators. This registration will be final when all project administrators approve the registration or 48 hours pass, whichever comes first.
+    
+The **Cancel Registration** button appears only for Project Administrators.
+
+Registration confirmation emails
+--------------------------------
+**Purpose**: Admins can either approve or cancel the registration for up to 48 hours.
+
+If the user opts to make their registration public, the user and all other admins on the project receive an email::
+
+    Hello [username],
+
+    [You or username] initiated a registration of your project [project name].
+    To approve this registration, click the following link: URL
+    To immediately cancel this registration, click the following link: URL
+    Note: If you take no action within 48 hours, the registration will be automatically approved. This operation is irreversible.
+
+    Sincerely yours,
+
+    The OSF Robots
+
+Clicking to approve the registration brings the user to the registration's "Overview" page, where a green dismissable alert appears
+at the top of the page::
+
+    Your registration approval has been accepted.
+
+Clicking to disapprove the registration brings the user to the project's "Overview" page, where a green dismissable alert appears
+at the top of the page::
+
+    Your disapproval has been accepted and the registration has been cancelled.
+
+Non-admins also receive an email notifying them of the registration::
+
+    Hello [username],
+
+    We just wanted to let you know that [registrant username] has initiated the following pending registration: URL
+
+    Sincerely yours,
+
+    The OSF Robots
+
+Clicking the link brings the user to the registration with the following alert at the top of the page::
+
+    This project is currently pending registration, awaiting approval from project administrators. This registration will
+    be final and enter the embargo period when all project administrators approve the registration or 48 hours pass,
+    whichever comes first. [Cancel Registration]
+
+The "Cancel Registration" button appears only for Project Administrators. If no action is taken by any administrator, the registration is approved. If one administrator cancels the registration by either clicking the cancel link in the email or by clicking the "Cancel Registration" button on the registration Overview page, the registration is cancelled and logged in the original project's Recent Activity widget. Until all administrators on a registration have clicked the approval link in the email, any registration administrator can click "Cancel Registration" on the registration's Overview (even if the administrator had formerly approved).
+
+If a user clicks the link to *approve* an already cancelled registration, they are brought to a page that reads::
+
+    Resource Deleted
+    This resource has been deleted
+    
+If a user clicks the link to *cancel* an already approved registration, they are taken to the OSF project for that registration. 
+
+Before a registration has been approved or cancelled, the registrations page shows a tag to the left of the registration
+that reads "Registration Pending." Visiting that registration also shows the tag to the left of the components titles on the
+overview page.
+
+Prior to a registration's approval, the privacy settings from the registered project and its components apply. After approval,
+the entirety of the registration is public.
+
+If a registration is embargoed, all admins on the project, including the registrant, receive an email::
+
+    Hello [username],
+
+    [username or "You"] initiated an embargoed registration of [project name]. The proposed registration can be viewed here: [URL of registration].
+    If approved, a registration will be created for the project and it will remain private until it is withdrawn, manually
+    made public, or the embargo end date has passed on [date].
+    To approve this embargo, click the following link: [URL]
+    To cancel this embargo, click the following link: [URL]
+    Note: Clicking the disapproval link will immediately cancel the pending embargo and the registration will
+    remain in draft state. If you neither approve nor disapprove the embargo within 48 hours from
+    midnight tonight (EDT) the registration will remain private and enter into an embargoed state.
+
+    Sincerely yours,
+
+    The OSF Robots
+
+Non-admins also receive an email::
+
+    Hello [username],
+
+    We just wanted to let you know that [registrant username] has initiated an embargoed registration for the following pending registraiton: [URL].
+    If approved, a registration will be created for the project, viewable here: [URL], and it will remain
+    private until it is withdrawn, manually made public, or the embargo end date has passed on [date].
+
+    Sincerely yours,
+
+    The OSF Robots
+
+After an embargo is enacted, a red non-dismissable alert is shown at the top of the page::
+
+    This registration is currently embargoed. It will remain private until its embargo end date, [Day, Month date, year].
+
+After an embargo ends, the registration and its components are made public. 
+
+The cron job runs to end an embargo at midnight.
 
 Registration failed
 -------------------
@@ -371,149 +501,6 @@ Prior to completing their registration, the user decides on an embargo period. T
 Below the "Registration Choice" header is a drop-down menu from which the user decides to either::
     [Make registration public immediately]
     [Enter registration into embargo]
-
-Registrations with No Embargo
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Purpose:** Registrations that have no embargo are public immediately after confirmation.
-
-If the user selects "Make registration public immediately" the registration is never private—regardless of the project's
-privacy setting. After confirming the registration, the user is brought to their registrations Page. A blue dismissable alert
-is at the top of the page::
-
-    Files are being copied to the newly created registration, and you will receive an email notification when the copying is finished.
-
-The user and all other admins on the project receive an email::
-
-    Hello [username],
-
-    [You or username] initiated a registration of your project [project name].
-    To approve this registration, click the following link: URL
-    To immediately cancel this registration, click the following link: URL
-    Note: If you take no action within 48 hours, the registration will be automatically approved. This operation is irreversible.
-
-    Sincerely yours,
-
-    The OSF Robots
-
-Clicking to approve the registration brings the user to the registration's overview. There, a green dismissable alert is
-at the top of the page::
-
-    Your registration approval has been accepted.
-
-Clicking to disapprove the registration brings the user to the project's overview. There, a green dismissable alert is
-at the top of the page::
-
-    Your disapproval has been accepted and the registration has been cancelled.
-
-Non-admins also receive an email notifying them of the registration::
-
-    Hello [username],
-
-    We just wanted to let you know that [registrant username] has initiated the following pending registration: URL
-
-    Sincerely yours,
-
-    The OSF Robots
-
-Clicking the link brings the user to the registration with the following alert at the top of the page::
-
-    This project is currently pending registration, awaiting approval from project administrators. This registration will
-    be final and enter the embargo period when all project administrators approve the registration or 48 hours pass,
-    whichever comes first. [Cancel Registration]
-
-The "Cancel Registration" button appears only for Project Administrators. If no action is taken by any administrator, the registration is approved. If one administrator cancels the registration by either clicking the cancel link in the email or by clicking the "Cancel Registration" button on the registration Overview page, the registration is cancelled and logged in the original project's Recent Activity widget. Until all administrators on a registration have clicked the approval link in the email, any registration administrator can click "Cancel Registration" on the registration's Overview (even if the administrator had formerly approved).
-
-If a user clicks the link to *approve* an already cancelled registration, they are brought to a page that reads::
-
-    Resource Deleted
-    This resource has been deleted
-    
-If a user clicks the link to *cancel* an already approved registration, they are taken to the OSF project for that registration. 
-
-Before a registration has been approved or cancelled, the registrations page shows a tag to the left of the registration
-that reads "Registration Pending." Visiting that registration also shows the tag to the left of the components titles on the
-overview page.
-
-Prior to a registration's approval, the privacy settings from the registered project and its components apply. After approval,
-the entirety of the registration is public.
-
-Registrations with an Embargo
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Purpose:** Embargo periods allow the user to keep a registration private for a limited period of time.
-
-Selecting "Enter registration into embargo" opens another text field below the dropdown titled "Embargo end date." Clicking
-into the text field opens a calendar widget from which the user can choose the embargo's end date. On the selected end date,the registration will become public.
-
-The embargo end date must be more than three days but cannot be greater than four years in the future. 
-
-If the user chooses a date that is greater than four years, a growlbox will appear below the "Embargo End Date" field::
-  
-    Embargo end date must be less than four years in the future.
-
-The user cannot click "Continue" until they have chosen an appopriate date.
-    
-If the user chooses a date that is less than three days in the future, the calendar will close and the chosen date will appear in the field (even though this date is invalid). A growlbox will also appear below the "Embargo End Date" field::
-  
-    Embargo end date must be at least three days in the future.
-    
-The user cannot click "Continue" until they have chosen an appopriate date.
-    
-When the user chooses a date within the correct date range, they can click "Continue"
-
-After confirming the registration, the user is brought back to the registrations page for the registered project. A blue alert
-is at the top of the page::
-
-    Files are being copied to the newly created registration, and you will receive an email notification when the copying is finished.
-
-If the registration was entered into an embargo period, a lock symbol will appear to the left of the registration's title, indicating that the project is embargoed. Before an admin approves the embargo, an additional tag reads "Pending Embargo."
-These also appear to the left of component titles on the registration's overview. After the embargo is approved, the tag
-reads "Embargoed" until the embargo period is concluded.
-
-If a registration is embargoed, all admins on the project, including the registrant, receive an email::
-
-    Hello [username],
-
-    [username or "You"] initiated an embargoed registration of [project name]. The proposed registration can be viewed here: [URL of registration].
-    If approved, a registration will be created for the project and it will remain private until it is withdrawn, manually
-    made public, or the embargo end date has passed on [date].
-    To approve this embargo, click the following link: [URL]
-    To cancel this embargo, click the following link: [URL]
-    Note: Clicking the disapproval link will immediately cancel the pending embargo and the registration will
-    remain in draft state. If you neither approve nor disapprove the embargo within 48 hours from
-    midnight tonight (EDT) the registration will remain private and enter into an embargoed state.
-
-    Sincerely yours,
-
-    The OSF Robots
-
-Non-admins also receive an email::
-
-    Hello [username],
-
-    We just wanted to let you know that [registrant username] has initiated an embargoed registration for the following pending registraiton: [URL].
-    If approved, a registration will be created for the project, viewable here: [URL], and it will remain
-    private until it is withdrawn, manually made public, or the embargo end date has passed on [date].
-
-    Sincerely yours,
-
-    The OSF Robots
-
-Visiting the embargoed registration before it is approved shows a non-dismissable alert at the top of the page::
-
-    This project is currently pending registration, awaiting approval from project administrators. This registration will
-    be final and enter the embargo period when all project administrators approve the registration or 48 hours pass,
-    whichever comes first. The embargo will keep the registration private until the embargo period ends.
-    [Cancel Registration]
-
-The **Cancel Registration** button appears only for Project Administrators.
-
-After an embargo is enacted, a red non-dismissable alert is shown at the top of the page::
-
-    This registration is currently embargoed. It will remain private until its embargo end date, [Day, Month date, year].
-
-After an embargo ends, the registration and its components are made public. 
-
-The cron job runs to end an embargo at midnight.
 
 End embargo early
 -----------------
