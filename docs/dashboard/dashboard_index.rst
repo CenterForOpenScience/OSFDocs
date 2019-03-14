@@ -7,24 +7,26 @@ Dashboard
 
 When logging in to the OSF, the dashboard is the default landing page.
 
-When the user wants to navigate to the dashboard from another page on the OSF, they can do so by clicking the **Dashboard** button in the :ref:`navigation bar <navigation-bar>` at the top of the page; the url is https://osf.io/dashboard.
-
-There is a blue banner for the Prereg Challenge across the top of the dashboard::
-	
-		Improve your next study. Enter the Prereg Challenge and you could win $1,000. [Start Prereg Challenge]
+When the user wants to navigate to the dashboard from another page on the OSF, they can do so by clicking **OSFHome** from the navigation bar.
 
 In the top right of the dashboard, there is a green "Create new project" button. Clicking it allows a user to create a new project. A modal appears::
 	
 		Create new project
 		Title
 		Affiliation[Select all][Remove all]
+		Storage location
 		More
-		    Description
-				Template (optional)
-				Start typing to search your projects. Selecting project as template will duplicate its structure in the new project without importing the content of that project.
 		[Cancel][Create]
 		
-The user must provide a title in the "Title" field but can leave the other fields blank. Clicking **Cancel** returns the user to the dashboard without saving the project. Clicking **Create** creates the new project and prompts the following modal to appear::
+The "Title" field is required but the other sections are optional. Affiliations associated with the user account will appear. Selecting an institution will add the affiliation to the project. The user's default storage location (United States by default, unless specified in the user's settings) will be selected by default. The user can click inside the menu to select a different storage location. Clicking **More** opens a drop-down section where the user can enter a description or select an existing project to use as a template for this new project. Helper text in the description field reads::
+	
+		Enter a project description
+	
+Helper text in the "Template" section reads::
+	
+		Start typing to search your projects. Selecting project as template will duplicate its structure in the new project without importing the content of that project.
+
+Clicking **Cancel** returns the user to the dashboard without saving the project. Clicking **Create** creates the new project and prompts the following modal to appear::
 
 	New project created successfully!
 	[Keep working here][Go to new project]
