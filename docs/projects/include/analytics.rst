@@ -2,62 +2,33 @@
 
 Analytics
 *********
+**Purpose:** provides analytics on visits, forks, links, and templates on a project.
 
-**Purpose:** The "Analytics" page of a project is designed to provide contributors and visitors with additional information about project visits and pages.
+A project's "Analytics" page is accessible from the project's "Analytics" tab in the navigation bar. The "Analytics" page provides analytics for forks, links, templates, and visits.
 
-A project's "Analytics" page is accessible via the grey navigation bar in every project. When a project is private, only the contributors
-have access to the "Analytics page." When a project is public, any visitor can view the analytics. 
+Counts for the number forks, links, and templates occurring from/to the project appear at the top of the page. If none have occurred, the values are 0. 
 
-The "Analytics" page provides analytics for forks, links, template copies, and visitor behavior.
-
-At the top of the page are three large boxes for forks, links, and templates::
-  
-       Fork       | Links to Project | Template Copies
-         #                #                   #
-  <View all forks>| <View all links> |
-
-The "Template Copies" box does not have a link to view all templates made of the project.
-
-A blue dismissable message separates the boxes from the widgets::
+The visits appear below the forks, links, and template data. A blue dismissable alert appears above the visits::
   
     The use of adblocking software may prevent site analytics from loading properly.
     
-Below the message are four graphs displaying visitor behavior: Unique visits, Time of day visits, Top referrers, and Popular pages.
-
-If a project is private, these widgets are grayed out and disabled. However, the boxes at the top of the page
-remain enabled.
-
-Above the widgets on the right is a date range::
+Below the alert are four graphs displaying visitor behavior: Unique visits, Time of day visits, Top referrers, and Popular pages. Above the graphs is a filter to sort the analytics by date. Helper text next to the filter reads::
   
-    Showing analytics from m/d/year until m/d/year [Update]
+    Show analytics for date range
 
-The last month's data is displayed by default. Users can click the **Update** button to select a new date range. Clicking the button replaces
-the "Showing analytics from m/d/year until m/d/year [Update]" line with "From" and "Until" fields. The "Update" button is replaced by an
-"Update date range" button. Clicking inside the fields opens a calendar selector from which users can select "from" and "until" dates, respectively.
-After the user has selected the new date range, they can click **Update date range** to filter the data displayed in the widgets accordingly.
+Projects are filterable by past week, past two weeks, and past month. "Past week" is selected by default. Selecting a different date range from the menu reloads and displays the visits accordingly. Analytics beyond the past month are not available. 
 
-The "Unique Visits" widget is a graph that displays the date (MM/YY) along the x-axis, and the number of visits along the y-axis.
-Hovering over a date along the x-axis shows the following tooltip::
-  
-    Day Month Date Year
-    Visits | #
- 
-The "Time of day of visits" widget is a column bar chart that displays the hour (0-24) along the x-axis, and the number of visits along the y-axis.
-Hovering over an hour along the x-axis shows the following tooltip::
-  
-    Hour
-    Visits | #
-    
-The "Top Referrers" widget is a pie chart that displays the top referrers to the project. A legend in the top right lists the color code next to its corresponding
-means of referral. Hovering over a section of the pie chart shows the following tooltip::
-  
-    <referrer> | #
+Analytics on visits are disabled for private projects but forks, links, and templates are still enabled. Navigating to a private project's "Analytics" page shows the page as normal but the analytics widgets are grayed out. Helper text appears above these widgets and reads::
+      
+    Analytics are not available for private projects. To view Analytics, make your project public by selecting Make Public from the project overview page. Public projects:
+    * are discoverable
+    * are citable
+    * can be affiliated with OSF for Institutions partners
+    * promote open practices among peers
+      
+    Receive data on visitors to your project by enabling Analytics and begin discovering the impact of your work.
 
-The "Popular pages" widget is a horizontal bar chart that displays the number of visits along the x-axis, and the popular project pages along the y-axis.
-Hovering over a popular page along the y-axis shows the following tooltip::
-  
-    <page or filename>
-    Visits | #
+Making the project public enables the analytics.
 
 .. _analytics_forks:
 
