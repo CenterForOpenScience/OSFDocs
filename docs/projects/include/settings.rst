@@ -253,6 +253,8 @@ Wiki
 ----
 **Purpose:** Configuring the wiki allows admins and read+write contributors to enable or disable the wiki and change who can edit a wiki page.
 
+If the wiki is disabled on a project, the "Wiki" tab is removed from the navigation bar. 
+
 If the user is an admin or read+write contributor, a checkbox appears along with the text::
     
     Enable the wiki in <project>. 
