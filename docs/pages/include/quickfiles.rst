@@ -105,7 +105,7 @@ Clicking the **Create new project** button changes the modal screen to initiate 
 
 The "Move file" button is disabled until the user enters text into the "Title" field. If the user enters a title, and navigates away from the "Quick Files" page, the project will not be created and the file will remain in "Quick Files. Clicking the **Cancel** button cancels the action and closes the modal. Clicking the **Back** button takes the user to the first modal screen, where they can choose to create a new project or choose an existing project.
 
-To move the file to a new project, the user must enter a title into the field, then click the **Move file** button. Clicking **Move file** moves the file into the newly created project. The following confirmation modal appears::
+To move the file to a new project, the user must enter a title into the field, and select the storage region (if different from the default setting). Then click the **Move file** button. Clicking **Move file** moves the file into the newly created project. The following confirmation modal appears::
   
     File was moved successfully!
     [Keep working here][Go to new project]
