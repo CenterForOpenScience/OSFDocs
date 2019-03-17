@@ -5,32 +5,49 @@ Registrations
 
 **Purpose:** Registrations can be created to preserve the state of a project at a given moment in time.
 
-Registrations create a read-only copy of a project. Admins can create a registration of a project, and all sub-projects and components
-to which they also have admin rights by visiting the registrations page via their project's grey navigation bar.
+Registrations create a frozen copy of a project. Admins can create a registration of a project and selected components to which they also have admin rights by visiting the registrations page on the project.
 
-On the registrations page, all pending, retracted, and completed registrations are listed. Each registration lists its project name,
-registration date and time, contributors, and contributions, in the same format as provided for components on the
-:ref:`Project Overview <component-format>`.
+On the registrations page, all pending, withdrawn, and completed registrations are listed. Each registration card lists the project title, date registered, registration title (if applicable), form type, contributors, project description (if applicable), and tags (if applicable). 
 
-When no registrations have been made, non-contributors see text explaining this::
+When no registrations have been made, non-contributors see the following helper text::
 
-    There have been no completed registrations of this project. Only project administrators can initiate registrations. For a list of the most viewed and most recent public registrations on the Open Science Framework, click here.
+  There have been no completed registrations of this project.
+  Learn more about registrations here <help guide>.
 
-The link provided sends the user to the :ref:`Public Activity page <public-activity>`.
+Non project admins see the same helper text. Admins on the project see the following helper text::
 
-Contributors who do not have permissions to register the project or component see the same message. Contributors who do have permissions to register the project or component see the message::
+  There have been no completed registrations of this project.
+  Start a new registration by clicking the “New registration” button. Once created, registrations cannot be edited or deleted.
+  Learn more about registrations here <help guide>.
 
-    There have been no completed registrations of this project. You can start a new registration by clicking the “New Registration” button, and you have the option of saving as a draft registration before submission. For a list of the most viewed and most recent public registrations on the Open Science Framework, click here.
+On a component, however, the helper text reads::
 
-If it is a sub-project or component, however, they see additional text::
-
-    To register the entire project "[project name]" instead, click here.
-
-The link provided sends the user to the parent project's registrations page.
-
-Admins see an additional "New Registration" button.
+  There have been no completed registrations of this project.
+  Start a new registration by clicking the “New registration” button. Once created, registrations cannot be edited or deleted.
+  Learn more about registrations here <help guide>.
+  
+  To register the entire project <project title> instead, click here <project_registration_page>.
 
 Only contributors can comment or view comments on a registration.
+
+A "Draft registrations" tab is also visible on the "Registrations" page, and is always visible to admins whether or not a draft exists. This page also provides the user with the option to create a new registration. Draft registration cards list the form type, initiator, start date, last updated date, and edit, delete, and register buttons. Clicking **Delete** on a draft registration opens a confirmation modal::
+  
+    Please confirmation
+    Are you sure you want to delete this draft registration?
+    [Cancel][Delete]
+
+Clicking **Delete** deletes the draft and directs the user to the list of drafts.
+
+Clicking **Edit** directs the user to the draft form.
+
+The **Register** button is disabled when the form is an incomplete state. Clicking **Register** when enabled directs the user to draft form.
+
+When no draft registrations have been made, helper text reads::
+  
+  There are no draft registrations of this project.
+  Start a new registration by clicking the “New registration” button. Once created, registrations cannot be edited or deleted.
+
+  Learn more about registrations here <help guide>.
 
 Registration Overview
 ---------------------
@@ -48,25 +65,22 @@ In the top right of the Registration Overview page is a blue button that reads "
 
 If the registration does not have wiki content, the Wiki Widget is not included on the Registration Overview page, but it is included in the registration's navigation bar. Clicking the tab takes the user to the "Wiki Home" page with the message::
   
-    Add important information, links, or images here to describe your project.
+    No wiki content.
 
-The Files widget does not allow for editing of file names, reorganization of files, or deletion of files, however. Only
+The Files widget does not allow for editing of file names, reorganization of files, or deletion of files. Only
 downloads are permitted. Files are saved within their storage add-ons and OSF Storage, grouped into folders. The folders are
 titled "Archive of [storage add-on]." These folders are collapsed by default.
 
-Moreover, a registration's Recent Actity widget only shows the original OSF project's activity prior to the creation of the registration. In other words, the registration's Recent Activity widget is a frozen snapshot of the original OSF project's recent activity. Activity related to the registration itself, such as the user's creation of the registration, is only logged into the project's Recent Activity widget and not the registration's. 
+A registration's Recent Activity widget only shows the original OSF project's activity prior to the creation of the registration. Activity related to the registration itself, such as the user's creation of the registration, is only logged into the live project's Recent Activity widget and not the registration's. Logs on the project are as follows:
 
-Activity pertaining to the creation of the registration is logged into the original OSF project's Recent Activity widget:
-
-* Initiated: the administrator who creates the registration is listed in the Recenty Activity widget as the oen who initiated the registration.
+* Initiated: the administrator who creates the registration is listed in the Recent Activity widget as the oen who initiated the registration.
 * Approved: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who approved the registration.
 * Canceled: the first administrator to cancel the registration is the only admin listed in the Recent Acvitity widget who canceled the registration.
 * Registered: the last administrator to approve the registration is the only admin listed in the Recent Activity widget who registered the registration.
 
-The blue Comments icon appears in the top right of the registration Overview page. The project's comments are not carried over to the registration. However, any comments made on the project prior to the registration's creation are logged into both the project and registrations's Recent Activity widget.
+The project's comments are not carried over to the registration.
 
-Admins and read+write contributors can add tags to the registration after it has been registered. The behavior is the same as described in the :ref:`Tags section <tags>`.
-for the project "Overview" page.
+Admins and read+write contributors can add tags to the registration after it has been registered. The behavior is the same as described in the :ref:`Tags section <tags>`. for the project "Overview" page.
 
 Creating a Registration
 -----------------------
@@ -91,10 +105,9 @@ Clicking **New registration** on a project's registrations page opens an initiat
   Pre-Registration in Social Psychology (van 't Veer & Giner-Sorolla, 2016): Pre-Registration 
   [Cancel][Create draft]
 
-The user must select a form and click **Create draft** to initiate a registration of their project. Each form follows a different template that is either one-page or multiple-pages long. At the bottom of each page, the user is presented with the date and time the draft registration was last saved, and two buttons: **Save as Draft** and **Preview for Submission**. 
+The user must select a form and click **Create draft** to initiate a registration of their project. Each form follows a different template that is either one-page or multiple-pages long. At the bottom of each page, the user is presented with the date and time that the draft registration was last saved, and two buttons: **Save draft** and **Preview for submission**. 
 
-Clicking **Save as Draft** saves the draft registration and returns the user to the project's Draft Registrations tab. 
-Clicking **Preview for Submission** generates a preview of the registration, followed by two buttons: **Continue editing** and **Register**. 
+Clicking **Save draft** saves the draft registration and returns the user to the project's Draft Registrations tab. Clicking **Preview for submission** generates a preview of the registration, followed by two buttons: **Continue editing** and **Register**. 
 
 Clicking **Continue editing** returns the user to the "Edit draft registration" page. Clicking **Register** initiates the submission process. If the project has components, a modal will appear from which the user can select components to include and exclude from the registration. All components are selected by default::
   
@@ -123,13 +136,13 @@ Clicking **Back** takes the user back to the component list view to select or de
     * Registrations cannot be modified or deleted once completed.
     * The content and version history of Wiki and OSF Storage will be copied to the registration.
     Registration choice
-    [Cancel][Register]
+    [Register]
   
 If additional add-ons are connected to the project, the modal includes information about their registration behavior.
 
 If keeping the registration public, the user can click the **Register** button to finalize the registration.
 
-Selecting **Enter registration into embargo** opens another text field below the dropdown titled "Embargo end date." Clicking
+Selecting **Enter registration into embargo** opens another text field below the drop-down titled "Embargo End Date." Clicking
 into the text field opens a calendar widget from which the user can choose the embargo's end date. On the selected end date, the registration will become public.
 
 The embargo end date must be more than three days but cannot be greater than four years in the future. 
@@ -144,7 +157,7 @@ If the user chooses a date that is less than three days in the future, the calen
   
     Embargo end date must be at least three days in the future.
     
-The user cannot click **Continue** until they have chosen an appropriate date.
+The "Continue" button remains disabled until the user chooses an appropriate date.
     
 When the user chooses a date within the correct date range, they can click **Register**, after which they are brought to the registration "Overview" page with a pending status::
   
@@ -154,7 +167,15 @@ If the registration is public, the pending status reads::
   
     This is a pending registration of this project, awaiting approval from project administrators. This registration will be final when all project administrators approve the registration or 48 hours pass, whichever comes first.
     
-The **Cancel Registration** button appears only for Project Administrators.
+The **Cancel registration** button appears only for admins. Clicking **Cancel registration** cancels the registration and directs the user to the project "Overview" page where a dismissable confirmation message appears at the top of the page::
+  
+  Your disapproval has been accepted and the registration has been cancelled.
+  
+If the canceled registration was under embargo, this helper text reads::
+  
+    Your disapproval has been accepted and the embargo has been cancelled.
+
+Canceled registrations return to a draft state and appear in the "Draft registrations" tab of the "Registrations" page.
 
 Registration confirmation emails
 --------------------------------
@@ -257,7 +278,7 @@ Registration failed
 Occasionally, a registration will fail. When a registration fails, the following modal will appear::
 
     Registration failed
-    There was a problem completing your registration. Please try again later. If this should not have occured and the issue persists, please report it to support@osf.io. 
+    There was a problem completing your registration. Please try again later. If this should not have occurred and the issue persists, please report it to support@osf.io. 
     [Back to project]
 
 OSF Preregistration
@@ -342,29 +363,9 @@ Clicking **Preregister an analysis plan for an OSF project** opens a search fiel
 
 Typing the name of an existing project into the field pulls up matching results. After selecting the project and clicking **Register**, the user is taken to the form. The rest of the workflow follows regular registrations.
 
-Embargos
---------
-**Purpose:** Users can opt to make their registration public immediately or after a period of time.
-
-Prior to completing their registration, the user decides on an embargo period. Text explains the embargo period to the user::
-
-    You can choose whether to make your registration public immediately or embargo it for up to four years. At the end
-    of the embargo period the registration is automatically made public. After becoming public, the only way to remove a
-    registration is to retract it. Retractions show only the registration title, contributors, and description to indicate
-    that a registration was made and later retracted.
-
-    If you choose to embargo your registration, a notification will be sent to all other project contributors. Other
-    administrators will have 48 hours to approve or cancel creating the registration. If any other administrator rejects
-    the registration, it will be canceled. If all other administrators approve or do nothing, the registration will be
-    confirmed and enter its embargo period.
-
-Below the "Registration Choice" header is a drop-down menu from which the user decides to either::
-    [Make registration public immediately]
-    [Enter registration into embargo]
-
 End embargo early
 -----------------
-If an embargoed registration is already approved, it may be made public by the project administrators. Public components or projects cannot be made private. 
+If an embargoed registration is already approved, it may be made public by the project administrators. This action is irreversible.
 
 On the registration page, a "Make Public" button appears. Clicking it generates the following modal::
 
@@ -410,7 +411,7 @@ Settings page to attempt to withdraw the registration of the individual componen
     Withdrawing children components of a registration is not allowed. Should you wish to withdraw this component, please
     withdraw its parent registration here.
 
-Visiting the settings page of the parent registration shows a panel where the admin can withdraw the registration:
+Visiting the settings page of the parent registration shows a panel where the admin can withdraw the registration::
 
     Withdraw Registration
     Withdrawing a registration will remove its content from the OSF, but leave basic metadata behind. The title of a
@@ -571,6 +572,6 @@ Below the "Withdraw Registration" section of the "Settings" page is the "Project
   single sign-on to the OSF with institutional credentials
   FAQ [links to help.osf.io]
 
-Below this text block are a list of institutions with which the admin or read+write user are affiliated. To the right of the institution is a greed "Add" button. Clicking **Add** adds the institution as an affiliation to the registration. The green "Add" button turns into a red "Remove" button upon click. Clicking the red "Remove" button removes the affiation, and the button turns back into the green "Add" button.
+Below this text block are a list of institutions with which the admin or read+write user are affiliated. To the right of the institution is a greed "Add" button. Clicking **Add** adds the institution as an affiliation to the registration. The green "Add" button turns into a red "Remove" button upon click. Clicking the red "Remove" button removes the affiliation, and the button turns back into the green "Add" button.
   
-The institutioal logo will appear in the top left of the registration "Overview" page.
+The institutional logo will appear in the top left of the registration "Overview" page.
