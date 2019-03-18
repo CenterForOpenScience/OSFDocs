@@ -17,7 +17,7 @@ Links included when logged out
     * OSF Registries: Clicking this link takes the user to the OSF Registries landing page https://osf.io/registries/.
     * OSF Meetings: Clicking this link takes the user to the OSF for Meetings landing page https://osf.io/meetings/.
 
-* Search: Clicking this tab takes the user to the OSF Registraties "Discover" page https://osf.io/preprints/discover/.
+* Search: Clicking this tab takes the user to the OSF Registries "Discover" page https://osf.io/preprints/discover/.
 
 * Support: Clicking this tab takes the user to the OSF Registrations support landing page: http://help.osf.io/m/registrations/
 
@@ -28,23 +28,23 @@ Links included when logged out
 Links included when logged in
 -----------------------------
 
-When logged in, the navigation bar is the same, except that the "Sign Up" and "Sign In" links are replaced with the user drop-down menu:
-
-* Username
-     
-    * My Profile: Clicking this link takes the user to their profile page https://osf.io/profile/.
-    * OSF Support: Clicking this link takes the user to the support page https://osf.io/support/.
-    * Settings: Clicking this link takes users to their user settings page https://osf.io/settings/.
-    * Log out: Clicking this link logs the user out of their OSF account and takes them to the OSF homepage, where a confirmation message will appear at the top of the page informing them that they have logged out succesfully: https://osf.io/goodbye/. 
+* OSF Registries: Clicking this tab directs the user to the Registries landing page.
+* My Registrations: Clicking this tab takes the user to their registrations on the "My Projects" page: https://osf.io/myprojects/#registrations
+* Search: Clicking this tab directs the user to the OSF search page: https://osf.io/search/
+* Support: Clicking this tab directs the user to the support page: https://osf.io/support
+* Donate: Clicking this tab directs the user to https://cos.io/about/donate-to-cos/
+* OSF profile
 
 Searching OSF Registries
 ------------------------
 
-OSF Registries is powered by SHARE. On the OSF Registries landing page, the user can search for registrations by typing a query into the search box or by clicking a registration in the "Browse Recent Registrations section."
+OSF Registries is powered by SHARE. On the OSF Registries landing page, the user can search for registrations by typing a query into the search box or by clicking a registration in the "Browse Registrations" section.
 
-When the user clicks a registration below the "Browse Recent Registrations section," they are taken to the registration form for that registration. 
+When the user selects a registration below the "Browse Registrations" section, they are taken to the registration form for that registration. 
 
 When the user types a query into the search box on the landing page, search results relevant to that query will appear.
+
+Registration cards on the "Discover" page list the registration title, authors, registry, registration form, and include the URLs of the registration "Overview" page and SHARE entry. In the top right of each card is a sharing icon. Clicking this icon displays a drop-down menu with options to share the registration on Twitter, Linkedin, or by email.
 
 To search by registration titles, the user can simply enter the title into the search box and press **enter** on their keyboard or click the **search** button. To search by author(s) or keyword(s), the user should use the boolean operators *AND* and *OR*. To refine a search with boolean operators, the user should type any of the following syntaxes:
 
@@ -97,4 +97,3 @@ If the user selects **OSF Registries** and any additional providers, the "OSF Re
 When the user selects **OSF Registries**, the red alert disappears and the sidebar becomes available. The user can check the boxes next to the registration types by which they want to filter search results. Checking the boxes will show the public registrations that are of those registration types.
 
 Registration search results display the registration title first, followed by the author(s), description, provider, date the project was registered, links, and the date on which the registration was added.
-
