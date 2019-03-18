@@ -188,11 +188,6 @@ File Detail Page
 
 **Purpose:** Most files can be rendered in the browser on the File Detail Page. The File Detail page also provides access to previous versions of a file. 
 
-File Detail Page
-----------------
-
-**Purpose:** Most files can be rendered in the browser on the File Detail Page. The File Detail page also provides access to previous versions of a file. 
-
 Along the left side of the page is a sidebar enabling access to the other files associated with the project. 
 
 In the bottom left is a Tags widget, for files stored on OSF Storage. When no tags are added, users with read+write or admin permissions see text that reads “Add a tag.” If the user is not a contributor on the project, or only has read permissions, and no tags have been added, the Tags widget is not visible.
