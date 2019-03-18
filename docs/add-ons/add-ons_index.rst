@@ -5,20 +5,22 @@ Add-Ons
 **Purpose:** Add-ons can be used to connect a third party service to the OSF. This increases the amount of storage the user
 can make use of via the OSF.
 
+Files can be uploaded to the storage provider via the OSF interface. The individual file limits are as follows:
+
+Amazon S3: 5gb
+Bitbucket: read-only connection
+Box: 5gb
+Dataverse: 2gb
+Dropbox: 5gb
+figshare: 50mb
+GitHub: 100 mb
+GitLab: read-only connection
+Google Drive: 5gb
+OneDrive: read-only connection
+ownCloud: 512mb
+
 For information on linking an OSF account to an add-on, visit :ref:`User Level Add-on Settings <user-addon>`
 
-Include linking to add-on, overview widget, files browser behavior, file detail page.
-
-
-Dataverse: if they have multiple linked to their user profile then when the connect the account they can choose from a dropdown (if they don't have multiple connected...)
-
-
-Amazon S3: https://github.com/CenterForOpenScience/osf.io/pull/3363
-https://github.com/CenterForOpenScience/osf.io/pull/3812
-
-Google Drive: https://github.com/CenterForOpenScience/osf.io/issues/3748
-
-Mendeley: https://github.com/CenterForOpenScience/osf.io/pull/3900
 
 Users with administrator and read+write permissions can connect and configure add-ons via the "Add-ons" tab in the project's navigation bar. For users
 who are non-contributors and contributors with read-only permissions, the "Add-ons" tab will not be visible.
