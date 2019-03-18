@@ -20,6 +20,9 @@ and any contained folders. If any :ref:`add-ons <add-ons>` are connected, they a
 or component. To the left of each add-on, project, component, and file is an icon representing the item. Every item in the
 tree is labeled with its title. 
 
+New versions of files that the user has previously viewed will be formatted in bold in the file tree, indicating that a new version of the file is available. Selecting the file to view will unbold the file in the file tree.
+
+
 Nested projects, components, add-ons, and files are indented to indicate their hierarchy.
 On page load, top level storage add-ons and OSF Storage are expanded, meaning their contents are visible.
 Projects and components nested immediately within the top level project/component are expanded as well, as are their storage
